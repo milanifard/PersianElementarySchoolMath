@@ -1,0 +1,112 @@
+
+.page-header {
+    margin-bottom: 100px;
+
+    position: relative;
+    display: block;
+    &.page-header-right {
+        &::after {
+            right: $paging_margin - 0.3rem;
+        }
+        &::before {
+            right:$paging_margin;
+            left:0;   
+            border-top-right-radius: 0.5rem;
+            border-right: solid;    
+            border-color: $lighter_pink;
+
+        }
+    }
+    &.page-header-left {
+        &::after {
+            left: $paging_margin - 0.3rem;
+
+        }
+        &::before {
+            left:$paging_margin;
+            right:0;
+            border-top-left-radius: 0.5rem;
+            border-left: solid;    
+            border-color: $lighter_pink;
+
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top:5rem;
+        bottom:0;
+        z-index: -100;
+        border-top: solid;
+        border-width: 2px;
+        border-color: $lighter_pink;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -0.7rem;
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 0.7rem;
+        background-color: $lighter_pink;
+    }
+    .page-title {
+        background-color: $light_blue;
+        color: $darker_orange;
+        font-family: 'ZarBold';
+        width: fit-content;
+        padding: 4rem 1.25rem 1.25rem;
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        margin: 0 auto;
+        font-size: 2.25rem;
+        text-shadow: 
+            -8px -4px 0.2rem $light_orange,
+            -7px -4px 0.2rem $light_orange,
+            -6px -5px 0.2rem $light_orange,
+            -5px -5px 0.2rem $light_orange,
+            -4px -6px 0.2rem $light_orange,
+            -3px -6px 0.2rem $light_orange,
+            -2px -7px 0.2rem $light_orange,
+            -1px -7px 0.2rem $light_orange,
+            0px -8px 0.2rem $light_orange,
+            1px -7px 0.2rem $light_orange,
+            2px -7px 0.2rem $light_orange,
+            3px -6px 0.2rem $light_orange,
+            4px -6px 0.2rem $light_orange,
+            5px -5px 0.2rem $light_orange,
+            6px -5px 0.2rem $light_orange,
+            7px -4px 0.2rem $light_orange,
+            8px -4px 0.2rem $light_orange,
+            -12px 0px 0.2rem $light_orange,
+            -8px 0px 0.2rem $light_orange,
+            -8px 0px 0.2rem $light_orange,
+            -8px 0px 0.2rem $light_orange,
+            -8px 1px 0.2rem $light_orange,
+            -8px 1px 0.2rem $light_orange,
+            -8px 2px 0.2rem $light_orange,
+            -8px 2px 0.2rem $light_orange,
+            -8px 3px 0.2rem $light_orange,
+            -8px 3px 0.2rem $light_orange,
+            -8px 4px 0.2rem $light_orange,
+            -7px 4px 0.2rem $light_orange,
+            -6px 5px 0.2rem $light_orange,
+            -5px 5px 0.2rem $light_orange,
+            -4px 6px 0.2rem $light_orange,
+            -3px -6px 0.2rem $light_orange,
+            -2px 7px 0.2rem $light_orange,
+            -1px 7px 0.2rem $light_orange,
+            0px 8px 0.2rem $light_orange,
+            1px 7px 0.2rem $light_orange,
+            2px 7px 0.2rem $light_orange,
+            3px 6px 0.2rem $light_orange,
+            4px 6px 0.2rem $light_orange,
+            5px 5px 0.2rem $light_orange,
+            6px 5px 0.2rem $light_orange,
+            7px 4px 0.2rem $light_orange,
+            8px 4px 0.2rem $light_orange,
+            ;
+    }
+}
+

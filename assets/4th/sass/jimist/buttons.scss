@@ -1,0 +1,40 @@
+a,a:hover,a:link,a:active,a:focus,a:focus-within,a:visited {
+    text-decoration: none;
+}
+
+.prev-button,.next-button {
+    position: absolute;
+    top: 2rem;
+    font-size: 1rem;
+    z-index: 100;
+    color: $darker_orange;
+    &::before {
+        content: '';
+        width: 0.5rem;
+        height: 0.5rem;
+        border-top: solid;
+        border-right: solid;
+        position: absolute;
+        top: 0.25rem;
+    }
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.prev-button {
+    right: 0.5rem;
+    padding-right: 1rem;
+    &::before {
+        right: 0.25rem;        
+        transform: rotate(45deg);
+    }
+}
+.next-button {
+    left: 0.5rem;
+    padding-left: 1rem;    
+    &::before {
+        left: 0.25rem;        
+        transform: rotate(-135deg);
+    }   
+}
