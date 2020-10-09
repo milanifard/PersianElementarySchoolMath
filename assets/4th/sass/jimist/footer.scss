@@ -1,26 +1,3 @@
-.page-footer{
-    width: 100%;
-    display: block;
-    float: right;
-    background-color: $dark_blue;
-    height: 3.5rem;
-    
-    .pagination-number {
-        color: $white;
-        background-color: $light_orange;
-        display: block;
-        // align-items: center;
-        // justify-content: center;
-        text-align: center;
-        width: fit-content;
-        font-size: 1rem;
-        padding: 0.25rem 0.75rem 0;
-        border-radius: 0.5rem;
-        margin: 0;
-        margin-top: 0.25rem;
-    }
-}
-
 .page-footer-right {
     .pagination-number {
         margin-right: $paging_margin;
@@ -34,3 +11,35 @@
         float: left;
     }
 }
+
+.page-footer{
+    width: 100%;
+    display: block;
+    float: right;
+    background-color: $dark_blue;
+    height: 3.5rem;
+    
+    .pagination-number {
+        color: $white;
+        background-color: $light_orange;
+        display: block;
+        text-align: center;
+        width: fit-content;
+        font-size: 1rem;
+        padding: 0.25rem 0.75rem 0;
+        border-radius: 0.5rem;
+        margin-top: 0.25rem;
+
+        @include breakpoint(xs) {
+            margin: 0 auto;
+            float: none;
+        }
+    }
+
+    @include breakpoint(xs) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
