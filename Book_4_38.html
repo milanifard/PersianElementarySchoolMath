@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<body style="background-color:whitesmoke;">
+<div style = "text-align:center;">
+    <canvas id="myCanvas" width="1260" height="140" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.fillStyle = "#edb3c8";
+    ctx.fillRect(530, 0, 200, 140);
+    ctx.stroke();
+
+</script>
 
 </body>
 </html>
