@@ -5,9 +5,14 @@ a,a:hover,a:link,a:active,a:focus,a:focus-within,a:visited {
 .prev-button,.next-button {
     position: absolute;
     top: 2rem;
-    font-size: 1rem;
+    height: 1.5rem;
     z-index: 100;
     color: $darker_orange;
+    span {
+        font-family: 'Faraz';
+        font-size: 1.1rem;
+        vertical-align: middle;
+    }
     &::before {
         content: '';
         width: 0.5rem;
@@ -15,7 +20,7 @@ a,a:hover,a:link,a:active,a:focus,a:focus-within,a:visited {
         border-top: solid;
         border-right: solid;
         position: absolute;
-        top: 0.25rem;
+        top: 0.4rem;
     }
     &:hover {
         opacity: 0.5;
