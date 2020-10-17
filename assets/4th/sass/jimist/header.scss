@@ -3,6 +3,7 @@
     margin-bottom: 1rem;
     position: relative;
     display: block;
+    min-height: 8rem;
     &.page-header-right {
         &::after {
             right: $paging_margin - 0.3rem;
@@ -54,6 +55,11 @@
         &::before, &::after {
             display: none;
         }    
+    }
+    &.no-style {
+        &::before,&::after {
+            content: none;
+        }
     }
     .page-title {
         background-color: $light_blue;

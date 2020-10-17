@@ -132,7 +132,7 @@
             background-size: 2.2rem;
             background-repeat: no-repeat;
             background-position-y: -12px;
-            background-position-x: 100% ;
+            background-position-x: 100%;
             padding-top: 25px;
             color: $dark_green;
         }
@@ -191,4 +191,110 @@
         }
 
     }
+}
+
+.table {}
+
+.explanation-table {
+    width: 100%;
+    direction: ltr;
+    text-align: left;
+    margin: 0.75rem 0;    
+    td {
+        font-size: 0.8rem;
+        max-height: 1rem;
+        direction: ltr;
+    }
+}
+
+.visual-value-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    direction: ltr;
+    float: left;
+    flex-wrap: wrap;
+    height: 2rem;
+    // &.size-sm {
+    //     width: 2rem;
+    // }
+    // &.size-md {
+    //     width: 3rem;
+    // }
+    // &.size-lg {
+    //     width: 4rem;
+    // }
+}
+
+.pink-circle,.white-circle,.blue-circle {
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 0.75rem;
+    margin: 0 1px 2px 0;
+    display: inline-block;
+}
+.pink-circle {
+    background-color: $dark_pink;
+}
+.white-circle {
+    background-color: $white;
+}
+.blue-circle {
+    background-color: $dark_blue;
+}
+
+.small-assets {
+    .pink-circle, .blue-circle {
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 0.66rem;
+
+    }
+}
+.visual-value-border-left tr td {
+    .visual-value-container {
+        border-left: 1px solid #e0e0e0;
+        padding-left: 4px;
+        
+    }
+    &:first-child .visual-value-container {
+        border: none;
+        padding: 0;
+    }
+}
+.drawed-border-container {
+    width: fit-content;
+    height: 1.2rem;
+    float: left;
+    padding: 0.25rem 0.4rem 0;
+    border-radius: 5rem;
+    border: 1px solid #000;
+    &.vertical {
+        .pink-circle {
+            float: right;
+
+        }
+    }
+}
+
+.vertical-visuals {
+    td {
+        width: fit-content;
+        // display: flex;
+        
+        // justify-content: flex-start;
+        // align-items: flex-end;
+    }
+    .drawed-border-container {
+        width: 0.5rem;
+        text-align: center;
+        height: 100%;
+        display: inline-block;
+    }
+}
+.border-none {
+    border: none;
 }
