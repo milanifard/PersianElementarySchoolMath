@@ -24,7 +24,7 @@
         
     }
     .component-brand-text {
-        height: 1.35rem;
+        height: 1.5rem;
         text-align: center;
         background-color: $dark_orange;
         color: $white;
@@ -135,6 +135,9 @@
             background-position-x: 100%;
             padding-top: 25px;
             color: $dark_green;
+            bottom: -20px;
+            left: 0;
+            right: 0;
         }
 
         &:last-child .empty-value {
@@ -297,4 +300,58 @@
 }
 .border-none {
     border: none;
+}
+
+.bordered-with-background-table {
+    padding: 0;
+    float: left;;
+    white-space: nowrap;
+
+    td {
+        width: 1rem;
+        height: 1rem;
+        float: left;
+    }
+}
+
+.bordered {
+    border: 1px solid;
+}
+
+.bordered-table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    th, td {
+        border: 1px solid #000;
+    }
+    td {
+        min-width: 1rem;
+        height: 1rem;
+    }
+    margin-right: 4rem;
+}
+.bordered-table.pink-bordered {
+    td {
+        border-color: $dark_pink;
+        background-color: $lighter_pink;
+    }
+}
+
+.green-bordered {
+    td {
+        border-color: $darker_green;
+        background-color: $light_green;
+    }
+}
+
+.table-value-list {
+    direction: ltr;
+    td {
+        padding: 0.25rem 0.5rem;
+        text-align: center;
+    }
+    float: left;
+    tr,td {
+    direction: ltr;
+    }
 }
