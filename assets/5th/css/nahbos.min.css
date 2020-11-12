@@ -21,15 +21,31 @@
     height: 15vw;
     position: relative;
 }
-.header-with-title{
-    left: 0px;
-    right: 0px;
-    margin: auto;
+.header-title{
+    left: 30vw;
+    right: 30vw;
     position: absolute;
-    bottom: -3vw;
+    bottom: -2.5vw;
     color: var(--red_titles_color);
     font-size: 4.5vw;
     text-align: center;
+}
+
+.header-dots {
+    height: 2vw;
+    width: 2vw;
+    background-color: var(--darker_green);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.header-border{
+    width: 100vw;
+    position: absolute;
+    color: var(--darker_green);
+    border-style: solid;
+    bottom: 0vw;
 }
 
 .right-container{
@@ -52,4 +68,6 @@
     text-align: center;
     font-size: 3.5vw
 }
+
+
 
