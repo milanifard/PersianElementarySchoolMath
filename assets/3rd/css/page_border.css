@@ -5,6 +5,7 @@
 /*    width: 30%;*/
 /*}*/
 .page-border{
+    direction : rtl;
     width: 80%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
