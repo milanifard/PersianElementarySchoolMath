@@ -1,5 +1,14 @@
+/*.page-border{*/
+/*    text-align: center;*/
+/*    border: solid 2px;*/
+/*    float: right;*/
+/*    width: 30%;*/
+/*}*/
 .page-border{
-    border-left: solid 1px;
-    
-
+    width: 80%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-left: solid 2px red;
+    border-bottom: solid 2px red;
+    border-top: solid 2px red;
 }
