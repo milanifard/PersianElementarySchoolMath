@@ -4,10 +4,9 @@
 /*    float: right;*/
 /*    width: 30%;*/
 /*}*/
-body {
+.page-bg {
     height: 100%;
-    background: linear-gradient(to bottom, white 67%, #e5555a 33%);
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, white 67%, #e5555a 33%) no-repeat;
 }
 .page-border{
     direction: rtl;
@@ -21,10 +20,11 @@ body {
 }
 .page-number{
     text-align: center;
-    background: #e5555a ;
+    background: #fcb84b;
     padding: 0.1vw;
-    border: 0.1vw solid #e5555a;
+    border: 0.1vw solid #fcb84b;
     border-radius: 20px;
+
 }
 .outer-number{
     width: 5vw;
