@@ -5,6 +5,7 @@
 /*    width: 30%;*/
 /*}*/
 .page-border{
+    direction: rtl;
     width: 80%;
     float: right;
     border: 10px double red;
