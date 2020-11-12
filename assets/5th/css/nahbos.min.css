@@ -104,6 +104,19 @@
     padding-left: 10vw;
 }
 
+.page-number{
+    background-color: var(--darker_green);
+    border-radius: 40%;
+    display: inline-block;
+    text-align: center;
+    padding: 1.5vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    margin: 2vw;
+    font-size: 3vw;
+    font-family: Koodak;
+}
+
 /*.arrow-right:after {*/
 /*    content: "";*/
 /*    display: inline-block !important;*/
@@ -125,21 +138,6 @@
 /*    vertical-align: middle;*/
 /*}*/
 
-
-.page-number{
-    background-color: var(--darker_green);
-    border-radius: 40%;
-    display: inline-block;
-    text-align: center;
-    padding: 1.5vw;
-    padding-right: 2vw;
-    padding-left: 2vw;
-    margin: 2vw;
-    font-size: 3vw;
-    font-family: Koodak;
-}
-
-
 @font-face {
     font-family: 'Zar';
     src: url("/assets/fonts/Zar.eot");
@@ -157,5 +155,5 @@
     src: url("/assets/fonts/Faraz.eot");
     src: url("/assets/fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Faraz.woff2") format("woff2"), url("/assets/fonts/Faraz.woff") format("woff"), url("/assets/fonts/Faraz.ttf") format("truetype"), url("/assets/fonts/Faraz.svg#svgFontName") format("svg")
 }
-}
+
 
