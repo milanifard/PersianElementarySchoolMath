@@ -20,6 +20,7 @@
     background-color: var(--light_green_header_color);
     height: 15vw;
     position: relative;
+    font-family: Koodak;
 }
 .header-title{
     left: 30vw;
@@ -71,6 +72,60 @@
     font-family: Koodak;
 }
 
+.text-config{
+    padding-right: 8vw;
+    padding-left: 3vw;
+    margin-top: 5vw; ;
+    font-family: Zar;
+    font-size: 3vw;
+    direction: rtl;
+    white-space: pre-wrap;
+}
+
+
+.questions-arrows-fit{
+    width: 80vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-top: 5vw;
+}
+
+.questions-arrows{
+    width: 65vw;
+    padding-right: 17.5vw;
+    padding-left: 17.5vw;
+    padding-top: 5vw;
+}
+
+.questions-images{
+    float: left;
+    width: 30vw;
+    padding: 3vw;
+    padding-left: 10vw;
+}
+
+/*.arrow-right:after {*/
+/*    content: "";*/
+/*    display: inline-block !important;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-left: 8px solid #C8A962;*/
+/*    border-top: 8px solid transparent;*/
+/*    border-bottom: 8px solid transparent;*/
+/*    vertical-align: middle;*/
+
+/*}*/
+
+/*.arrow-right:before {*/
+/*    width: 20px;*/
+/*    height: 2px;*/
+/*    background: #C8A962;*/
+/*    content: "";*/
+/*    display: inline-block;*/
+/*    vertical-align: middle;*/
+/*}*/
+
+
 .page-number{
     background-color: var(--darker_green);
     border-radius: 40%;
@@ -102,5 +157,5 @@
     src: url("/assets/fonts/Faraz.eot");
     src: url("/assets/fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Faraz.woff2") format("woff2"), url("/assets/fonts/Faraz.woff") format("woff"), url("/assets/fonts/Faraz.ttf") format("truetype"), url("/assets/fonts/Faraz.svg#svgFontName") format("svg")
 }
-
+}
 
