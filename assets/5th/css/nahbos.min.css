@@ -25,9 +25,10 @@
     left: 30vw;
     right: 30vw;
     position: absolute;
-    bottom: -2.5vw;
+    bottom: -4vw;
     color: var(--red_titles_color);
     font-size: 4.5vw;
+    font-family: Koodak;
     text-align: center;
 }
 
@@ -62,12 +63,31 @@
     position: absolute;
     color: var(--blue_activity_color);
     background-color: white;
-    bottom: -2vw;
-    padding-right: 3vw;
-    padding-left: 3vw;
+    bottom: -2.5vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
     text-align: center;
-    font-size: 3.5vw
+    font-size: 3vw;
+    font-family: Koodak;
 }
 
+
+@font-face {
+    font-family: 'Zar';
+    src: url("/assets/fonts/Zar.eot");
+    src: url("/assets/fonts/Zar.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Zar.woff2") format("woff2"), url("/assets/fonts/Zar.woff") format("woff"), url("/assets/fonts/Zar.ttf") format("truetype"), url("/assets/fonts/Zar.svg#svgFontName") format("svg")
+}
+
+@font-face {
+    font-family: 'ZarBold';
+    src: url("/assets/fonts/ZarBold.eot");
+    src: url("/assets/fonts/ZarBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/ZarBold.woff2") format("woff2"), url("/assets/fonts/ZarBold.woff") format("woff"), url("/assets/fonts/ZarBold.ttf") format("truetype"), url("/assets/fonts/ZarBold.svg#svgFontName") format("svg")
+}
+
+@font-face {
+    font-family: 'Faraz';
+    src: url("/assets/fonts/Faraz.eot");
+    src: url("/assets/fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Faraz.woff2") format("woff2"), url("/assets/fonts/Faraz.woff") format("woff"), url("/assets/fonts/Faraz.ttf") format("truetype"), url("/assets/fonts/Faraz.svg#svgFontName") format("svg")
+}
 
 
