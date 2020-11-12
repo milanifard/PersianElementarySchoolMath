@@ -27,12 +27,11 @@
 
 }
 .outer-number{
-    width: 5vw;
+    width: 7vw;
     border: 0.1vw solid #e5555a;
     border-radius: 20px;
 }
-
-* {
+*{
     font-family:'B Zar';
     font-size: 1rem;
     font-weight: normal
