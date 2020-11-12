@@ -7,9 +7,8 @@
 .page-border{
     direction: rtl;
     width: 80%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-left: solid 2px red;
-    border-bottom: solid 2px red;
-    border-top: solid 2px red;
+    float: right;
+    border: 0.5vw double red;
+    /*outline: 5px solid red;*/
+    border-radius: 5px;
 }
