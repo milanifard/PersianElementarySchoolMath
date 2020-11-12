@@ -6,14 +6,13 @@
 /*}*/
 .page-bg {
     height: 100%;
-    background: linear-gradient(to bottom, white 67%, #e5555a 33%);
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, white 67%, #e5555a 33%) no-repeat;
 }
 .page-border{
     direction: rtl;
     width: 95%;
     background: white;
-    border: 0.5vw double #e5555a;
+    border: 0.5vw double red;
     /*outline: 5px solid red;*/
     border-radius: 5px;
     margin: auto;
@@ -21,15 +20,14 @@
 }
 .page-number{
     text-align: center;
-    background: #e5555a ;
+    background: #fcb84b ;
     padding: 0.1vw;
-    border: 0.1vw solid #e5555a;
+    border: 0.1vw solid #fcb84b;
     border-radius: 20px;
 
 }
 .outer-number{
-    width: 5vw;
-    border: 0.1vw solid #e5555a;
+    width: 7vw;
+    border: 0.1vw solid #fcb84b;
     border-radius: 20px;
 }
-
