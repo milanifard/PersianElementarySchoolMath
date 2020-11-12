@@ -1,0 +1,4 @@
+Make a folder for ur own pages and add ur images in it.
+and plz dont put images in same folder.
+for example put ur images in assets/5th/images/gholi_images
+tnx.
