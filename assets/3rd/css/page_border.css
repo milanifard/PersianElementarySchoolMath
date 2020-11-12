@@ -1,4 +1,22 @@
-.page border{
-    border-left: solid 1px;
-
+/*.page-border{*/
+/*    text-align: center;*/
+/*    border: solid 2px;*/
+/*    float: right;*/
+/*    width: 30%;*/
+/*}*/
+body {
+    height: 100%;
+    background: linear-gradient(0deg, #fcb84b 33%, white 67%);
+    background-repeat: no-repeat;
 }
+.page-border{
+    direction: rtl;
+    width: 95%;
+    background: white;
+    border: 0.5vw double red;
+    /*outline: 5px solid red;*/
+    border-radius: 5px;
+    margin: auto;
+    padding :1.5vw;
+}
+
