@@ -7,8 +7,12 @@
 .page-border{
     direction: rtl;
     width: 80%;
-    float: right;
     border: 0.5vw double red;
     /*outline: 5px solid red;*/
     border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
 }
