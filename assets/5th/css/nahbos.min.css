@@ -1,4 +1,3 @@
-
 :root {
     --light_green_header_color: #e2edc1;
     --darker_green: #b8d65f;
@@ -19,7 +18,7 @@
 .page-header{
     width: 100vw;
     background-color: var(--light_green_header_color);
-    height: 5rem;
+    height: 15vw;
     position: relative;
 }
 .header-with-title{
@@ -27,6 +26,30 @@
     right: 0px;
     margin: auto;
     position: absolute;
-    bottom: -10px;
+    bottom: -3vw;
     color: var(--red_titles_color);
+    font-size: 4.5vw;
+    text-align: center;
 }
+
+.right-container{
+    width: 100vw;
+    position: relative;
+    color: var(--blue_activity_color);
+    border-style: solid;
+    margin-top: 5vw;
+}
+
+.right-container-tag{
+    right: 0px;
+    margin-right: 20vw;
+    position: absolute;
+    color: var(--blue_activity_color);
+    background-color: white;
+    bottom: -2vw;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    text-align: center;
+    font-size: 3.5vw
+}
+
