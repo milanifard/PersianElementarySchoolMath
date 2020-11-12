@@ -49,7 +49,7 @@
     bottom: 0vw;
 }
 
-.right-container{
+.activity-container{
     width: 100vw;
     position: relative;
     color: var(--blue_activity_color);
@@ -57,7 +57,7 @@
     margin-top: 5vw;
 }
 
-.right-container-tag{
+.activity-container-tag{
     right: 0px;
     margin-right: 20vw;
     position: absolute;
@@ -67,6 +67,19 @@
     padding-right: 2vw;
     padding-left: 2vw;
     text-align: center;
+    font-size: 3vw;
+    font-family: Koodak;
+}
+
+.page-number{
+    background-color: var(--darker_green);
+    border-radius: 40%;
+    display: inline-block;
+    text-align: center;
+    padding: 1.5vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    margin: 2vw;
     font-size: 3vw;
     font-family: Koodak;
 }
