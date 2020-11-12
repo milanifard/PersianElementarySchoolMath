@@ -4,7 +4,7 @@
 /*    float: right;*/
 /*    width: 30%;*/
 /*}*/
-body {
+.page-bg {
     height: 100%;
     background: linear-gradient(to bottom, white 67%, #e5555a 33%);
     background-repeat: no-repeat;
@@ -25,6 +25,7 @@ body {
     padding: 0.1vw;
     border: 0.1vw solid #e5555a;
     border-radius: 20px;
+
 }
 .outer-number{
     width: 5vw;
