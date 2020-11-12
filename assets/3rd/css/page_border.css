@@ -4,19 +4,35 @@
 /*    float: right;*/
 /*    width: 30%;*/
 /*}*/
-body {
+.page-bg {
     height: 100%;
-    background: linear-gradient(0deg, #fcb84b 33%, white 67%);
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, white 67%, #e5555a 33%) no-repeat;
 }
 .page-border{
     direction: rtl;
     width: 95%;
     background: white;
-    border: 0.5vw double red;
+    border: 0.5vw double #e5555a;
     /*outline: 5px solid red;*/
     border-radius: 5px;
     margin: auto;
     padding :1.5vw;
 }
+.page-number{
+    text-align: center;
+    background: #e5555a;
+    padding: 0.1vw;
+    border: 0.1vw solid #e5555a;
+    border-radius: 20px;
 
+}
+.outer-number{
+    width: 7vw;
+    border: 0.1vw solid #e5555a;
+    border-radius: 20px;
+}
+*{
+    font-family:'B Zar';
+    font-size: 1rem;
+    font-weight: normal
+}
