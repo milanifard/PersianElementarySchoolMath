@@ -1,15 +1,32 @@
-.header_green_color {
-    background-color: #e2edc1;
-}
 
-.header_green_color {
-    background-color: #e2edc1;
+:root {
+    --light_green_header_color: #e2edc1;
+    --darker_green: #b8d65f;
+
+    --red_titles_color: #ee372f;
+
+    --blue_activity_color: #0cb1ef;
+
+    --pink: #ed0086;
+
+    --orange: #fbc69f;
+    --light_orange: #fef4d8;
+
+    --black: #2E2014;
+    --white: #FFF;
 }
 
 .page-header{
-    width: 100%;
-    display: block;
-    float: right;
-    background-color: #e2edc1;
-    height: 3.5rem;
+    width: 100vw;
+    background-color: var(--light_green_header_color);
+    height: 5rem;
+    position: relative;
+}
+.header-with-title{
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    position: absolute;
+    bottom: -10px;
+    color: var(--red_titles_color);
 }
