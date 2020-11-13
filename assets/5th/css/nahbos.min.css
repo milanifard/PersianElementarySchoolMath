@@ -77,11 +77,22 @@
     padding-left: 3vw;
     margin-top: 5vw; ;
     font-family: Zar;
-    font-size: 3vw;
+    font-size: 2.5vw;
     direction: rtl;
     white-space: pre-wrap;
 }
 
+.text-config-koodak-font{
+    font-family: Koodak;
+    font-size: 2vw;
+    direction: rtl;
+    white-space: pre-wrap;
+    color: var(--red_titles_color);
+    padding-left: 4vw;
+    padding-right: 3vw;
+    padding-top: 5vw;
+    float: left;
+}
 
 .questions-arrows-fit{
     width: 80vw;
@@ -101,6 +112,7 @@
     float: left;
     width: 30vw;
     padding: 3vw;
+    padding-top: 0vw;
     padding-left: 10vw;
 }
 
@@ -110,23 +122,24 @@
     border-style: hidden;
     font-size: 2vw;
     font-family: Koodak;
-    float: left;
 
 }
 
 .td{
     width: 3vw;
-    padding: 0.5rem;
+    padding: 0.5vw;
     border: 0.5vw solid black;
     font-size: 2vw;
     font-family: Koodak;
     text-align: center;
 }
 
-.td-designe-blue-line{
+.td-design-blue-line{
     border-right: 0.5vw solid var(--blue_activity_color);
 
-}.td-designe-white-line{
+}
+
+.td-design-white-line{
     border-bottom: 0.5vw solid white;
 }
 
