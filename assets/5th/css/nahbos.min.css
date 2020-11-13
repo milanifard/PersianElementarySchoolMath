@@ -28,7 +28,7 @@
     position: absolute;
     bottom: -4vw;
     color: var(--red_titles_color);
-    font-size: 4.5vw;
+    font-size: 5vw;
     font-family: Koodak;
     text-align: center;
 }
@@ -68,7 +68,7 @@
     padding-right: 2vw;
     padding-left: 2vw;
     text-align: center;
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-family: Koodak;
 }
 
@@ -84,7 +84,7 @@
 
 .text-config-koodak-font{
     font-family: Koodak;
-    font-size: 2vw;
+    font-size: 1.7vw;
     direction: rtl;
     white-space: pre-wrap;
     color: var(--red_titles_color);
@@ -143,43 +143,25 @@
     border-bottom: 0.5vw solid white;
 }
 
-
-
-
+.rounded-border{
+    border: 0.3vw solid var(--darker_green);
+    border-radius: 100%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
 
 .page-number{
     background-color: var(--darker_green);
     border-radius: 40%;
     display: inline-block;
     text-align: center;
-    padding: 1.5vw;
-    padding-right: 2vw;
-    padding-left: 2vw;
-    margin: 2vw;
-    font-size: 3vw;
+    padding: 1vw;
+    padding-right: 1.8vw;
+    padding-left: 1.8vw;
+    margin: 5vw;
+    font-size: 2.5vw;
     font-family: Koodak;
 }
-
-/*.arrow-right:after {*/
-/*    content: "";*/
-/*    display: inline-block !important;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    border-left: 8px solid #C8A962;*/
-/*    border-top: 8px solid transparent;*/
-/*    border-bottom: 8px solid transparent;*/
-/*    vertical-align: middle;*/
-
-/*}*/
-
-/*.arrow-right:before {*/
-/*    width: 20px;*/
-/*    height: 2px;*/
-/*    background: #C8A962;*/
-/*    content: "";*/
-/*    display: inline-block;*/
-/*    vertical-align: middle;*/
-/*}*/
 
 @font-face {
     font-family: 'Zar';
