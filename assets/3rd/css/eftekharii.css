@@ -1,5 +1,6 @@
 :root {
     --base_color:#47a758;
+
 }
 #center_pic_style{
         display: flex ;
@@ -7,18 +8,20 @@
         justify-content: center;
 }
 .input_text{
-    border-radius: 10px;
+    border-radius: 1vw;
     border-color: var(--base_color);
-    width: 50px;
-    max-width: 50px;
+    width: 5vw;
+    max-width: 5vw;
+
 }
 
 .submit_button {
     text-align: center;
-    border-radius: 10px;
+    border-radius: 1vw;
     border-color: var(--base_color);
     background: var(--base_color);
-    width: 100px;
-    max-width: 100px;
+    width: 10vw;
+    max-width: 10vw;
+
 
 }
