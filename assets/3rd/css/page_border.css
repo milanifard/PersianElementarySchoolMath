@@ -23,27 +23,33 @@
     background: var(--base_color);
     padding: 0.1vw;
     border: 0.1vw solid var(--base_color);
-    border-radius: 20px;
-    width: 50px;
-    max-width: 50px;
+    border-radius: 2vw;
+    width: 5vw;
+    max-width: 5vw;
     color: white;
 }
 .outer-number{
+
     float : right;
     width: 5vw;
     border: 0.1vw solid var(--base_color);
     border-radius: 20px;
-    width: 50px;
-    max-width: 50px;
+    width: 5vw;
+    max-width: 5vw;
 }
 .outer-number-left{
     float : left;
     width: 5vw;
     border: 0.1vw solid var(--base_color);
+
+    width: 7vw;
+    border: 0.1vw solid #e5555a;
+
     border-radius: 20px;
-    width: 50px;
-    max-width: 50px;
+    width: 5vw;
+    max-width: 5vw;
 }
+
 
 .topic-title {
     text-align: center;
@@ -63,8 +69,9 @@
     float:right;
     display: inline-flex;
 }
-* {
+
+*{
     font-family:'B Zar';
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: normal
 }
