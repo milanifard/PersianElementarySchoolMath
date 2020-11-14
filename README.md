@@ -3,4 +3,4 @@
 ---------------------
 FrontEnd (HTML+CSS+JS)
 
-Check out [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution instructions. 
+Check out [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions on how to contribute. 
