@@ -1,6 +1,6 @@
 :root {
     --base_color:#47a758;
-
+    --footer_color: #ff001f;
 }
 #center_pic_style{
         display: flex ;
@@ -23,5 +23,5 @@
     width: 10vw;
     max-width: 10vw;
 
-
 }
+
