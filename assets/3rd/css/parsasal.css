@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.2em;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.masale {
+  margin: 5em;
+}
