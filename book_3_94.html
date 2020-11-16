@@ -4,49 +4,198 @@
 <head>
     <meta charset="UTF-8">
     <title>صفحه ۹۴ - سوم ابتدایی</title>
-    <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
     <link rel="stylesheet" href="./assets/3rd/css/bootstrap-rtl.min.css">
-    <link rel="stylesheet" href="./assets/3rd/">
+    <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
     <meta name="author" content="Parsa Salehipour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container-full">
 
-        <nav class="navbar navbar-light bg-light" id="main-header">
+        <nav class="navbar navbar-dark bg-primary" id="main-header">
             <a type="submit" href="/book_3_95.html" class="btn btn-default">صفحه بعدی</a>
             <h3>مرور فصل</h3>
             <a type="submit" href="/book_3_93.html" class="btn btn-default">صفحه قبلی</a>
         </nav>
-        <section >
-            <header class="section-header"><h5>فرهنگ نوشتن</h5></header>
+        <section>
+            <header class="section-header navbar navbar-expand-lg navbar-secondary bg-secondary">
+                <h5>فرهنگ نوشتن</h5>
+            </header>
             <div class="masale">
                 <p>از شما خواسته شده است که اندازه ی خط رو به رو را به کمک یک تکه نخ پیدا کنید.<br>
                     روش کار خود را توضیح دهید.
                 </p>
-                <textarea name="farhange_neveshtan_input" id="farhange_neveshtan_input" cols="60" rows="10"></textarea>
+                <textarea class="form-control" name="farhange_neveshtan_input" id="farhange_neveshtan_input"></textarea>
             </div>
 
 
         </section>
         <section>
 
-            <header class="section-header"><h5>تمرین</h5></header>
+            <header class="section-header navbar navbar-expand-lg navbar-secondary bg-secondary">
+                <h5>تمرین</h5>
+            </header>
             <div class="masale">
 
                 <p>محیط مثلث ها را پیدا کنید. چه نتیجه ای می گیرید؟ </p>
-                <img src="./assets/3rd/images/parsasal/first_triangle.png" alt="first triangle">
-                <img src="./assets/3rd/images/parsasal/second_triangle.png" alt="second triangle">
-                <img src="./assets/3rd/images/parsasal/third_triangle.png" alt="third triangle">
-            </div>
-            <div class="masale">
-                <p>مساحت و محیط مستطیل ها را به دست آورید.
-                    <br>همان طور که میبینید، مساحت ها برابرند. محیط کدام شکل از همه کمتر است؟
-                </p>
+                <div class="row">
+                    <div class="col-xs">
+                        <div class="row">
+                            <div class="col">
+                                <img class="responsive-img" src="./assets/3rd/images/parsasal/first_triangle.png"
+                                    alt="first triangle">
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col mohit_label">محیط = </div>
+                            <div class="col">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs">
+                        <div class="row">
+                            <div class="col">
+                                <img class="responsive-img" src="./assets/3rd/images/parsasal/second_triangle.png"
+                                    alt="second triangle">
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col mohit_label">محیط = </div>
+                            <div class="col">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs">
+                        <div class="row">
+                            <div class="col">
+                                <img class="responsive-img" src="./assets/3rd/images/parsasal/third_triangle.png"
+                                    alt="third triangle">
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col mohit_label">محیط = </div>
+                            <div class="col">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
             </div>
 
+            <div class="masale">
+
+                <p>مساحت و محیط مستطیل ها را به دست آورید. </p>
+                <div class="row">
+                    <div class="col-xs">
+                        <div class="row small-vertical-margin">
+                            <div class="col">
+                                <img class="responsive-img center" src="./assets/3rd/images/parsasal/rectangle1.png"
+                                    alt="rectangle1">
+                            </div>
+
+                        </div>
+                        <div class="row small-vertical-margin">
+                            <div class="col-2"></div>
+                            <div class="col mohit_label">محیط = </div>
+                            <div class="col">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-2"></div>
+
+                        </div>
+                        <div class="row small-vertical-margin">
+                            <div class="col-2"></div>
+                            <div class="col mohit_label">مساحت = </div>
+                            <div class="col">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-2"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-xs">
+                        <div class="row small-vertical-margin" >
+                            <div class="col">
+                                <img class="responsive-img  center" src="./assets/3rd/images/parsasal/rectangle2.png"
+                                alt="rectangle2">
+                            </div>
+
+                        </div>
+                        <div class="row small-vertical-margin">
+                            <div class="col-2"></div>
+                            <div class="col mohit_label">محیط = </div>
+                            <div class="col">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-2"></div>
+
+                        </div>
+                        <div class="row small-vertical-margin">
+                            <div class="col-2"></div>
+                            <div class="col mohit_label">مساحت = </div>
+                            <div class="col">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-2"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-xs">
+                        <div class="row small-vertical-margin">
+                            <div class="col">
+                                <img class="responsive-img center" src="./assets/3rd/images/parsasal/rectangle3.png"
+                                alt="rectangle3">
+                            </div>
+
+                        </div>
+                        <div class="row small-vertical-margin">
+                            <div class="col-2"></div>
+                            <div class="col mohit_label">محیط = </div>
+                            <div class="col">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-2"></div>
+
+                        </div>
+                        <div class="row small-vertical-margin">
+                            <div class="col-2"></div>
+                            <div class="col mohit_label">مساحت = </div>
+                            <div class="col">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-2"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <p>همان طور که میبینید، مساحت ها برابرند. محیط کدام شکل از همه کمتر است؟ برروی آن کلیک کنید.</p>
+            </div>
         </section>
     </div>
 

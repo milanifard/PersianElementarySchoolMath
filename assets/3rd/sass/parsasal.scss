@@ -5,15 +5,23 @@ a {
 }
 
 * {
-    margin: 0px
+    margin: 0px;
+    box-sizing: border-box;
 }
-
+.center{
+    margin: auto;
+}
 body {
     line-height: 1.8em;
     background-color: white;
 }
 
-.container {}
+@media (min-width:1025px) {
+    .container-full {
+        width: 70% !important;
+        margin: auto;
+    }
+}
 
 .navbar.center .navbar-inner {
     text-align: center;
@@ -28,22 +36,42 @@ body {
     h3 {
         margin: 0 auto;
     }
+
+    * {
+        color: white;
+    }
 }
 
+.responsive-img {
+    width: 14em;
+    max-width: 100%;
+    height: auto;
+}
+.row{
+    margin: 0;
+}
 .masale {
+    padding-inline-start: 1.5em;
+    padding-inline-end: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     clear: right;
     float: right;
     text-align: start;
-    margin: 1em 5em;
+}
+
+textarea {
+    width: auto;
+    min-height: 10em;
+    max-width: 100% !important;
 }
 
 section {
-    width: 100%;
-    margin: 1em 0;
+    margin: 0.8em 0;
 
     .section-header {
-
-        clear: both;
+        border-radius: 0.2em;
+        padding: 0.3em;
         width: 100%;
         background-color: bisque;
         overflow: hidden;
@@ -56,4 +84,29 @@ section {
 
 
     }
+}
+.small-vertical-margin{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.mohit_label {
+    margin: auto;
+    text-align: end;
+
+}
+
+#rectangle1{
+    width: calc(12em*1.5);
+    height:calc(1em*1.5);
+    background:blue;
+}
+#rectangle2{
+    width:calc(4em*1.5);
+    height:calc(6em*1.5);
+    background:greenyellow;
+}
+#rectangle3{
+    width: calc(6em*1.5);
+    height:calc(2em*1.5);
+    background:cyan;
 }
