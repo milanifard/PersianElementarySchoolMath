@@ -1,15 +1,59 @@
+@import "./parsasal/_fonts.scss";
+
 a {
     text-decoration: none;
 }
-body{
-    font-size: 1.2em;
-}
-.container {
-    width: 80%;
-    margin: auto;
+
+* {
+    margin: 0px
 }
 
-.masale{
+body {
+    line-height: 1.8em;
+    background-color: white;
+}
 
-    margin: 5em;
+.container {}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display: inline-block;
+    float: none;
+}
+
+#main-header {
+    h3 {
+        margin: 0 auto;
+    }
+}
+
+.masale {
+    clear: right;
+    float: right;
+    text-align: start;
+    margin: 1em 5em;
+}
+
+section {
+    width: 100%;
+    margin: 1em 0;
+
+    .section-header {
+
+        clear: both;
+        width: 100%;
+        background-color: bisque;
+        overflow: hidden;
+
+        h5 {
+            float: right;
+            margin: 0 1em;
+
+        }
+
+
+    }
 }
