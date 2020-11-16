@@ -1,9 +1,6 @@
-/*.page-border{*/
-/*    text-align: center;*/
-/*    border: solid 2px;*/
-/*    float: right;*/
-/*    width: 30%;*/
-/*}*/
+:root {
+    --base_color:##ed474d;
+}
 .page-bg {
     height: 100%;
     background: linear-gradient(to bottom, white 67%, var(--base_color) 33%) no-repeat;
