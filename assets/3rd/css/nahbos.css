@@ -60,17 +60,16 @@
 .page-number{
 
     background-color: var(--yellow_level4_guessbox);
-    border-radius: 5vw;
-    border: 0.5vw solid white;
+    border-radius: 3vw;
+    border: 1vw double white;
 
     text-align: center;
-    font-size: 3vw;
     color: white;
 
-    padding: 0.5vw 4vw;
+    padding: 0 4vw;
     position: absolute;
     bottom: -0.5vw;
-    right: -6vw;
+    right: -7vw;
 }
 
 .title-style{
@@ -131,11 +130,63 @@
 }
 
 .text-config{
-    padding-right: 5vw;
-    padding-left: 3vw;
-    margin-top: 5vw; ;
     font-family: Zar;
     font-size: 2.8vw;
     direction: rtl;
     white-space: pre-wrap;
+}
+
+.questions-text-config{
+    padding-right: 5vw;
+    padding-left: 3vw;
+    padding-bottom: 2vw;
+    margin-top: 2vw;
+}
+
+.colored-table{
+    width: 70vw;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 2vw;
+    font-family: Koodak;
+
+}
+
+.colored-td{
+    padding: 1vw;
+    border: 0.3vw solid var(--blue_level2);
+    font-size: 2vw;
+    font-family: Koodak;
+    text-align: center;
+}
+
+/* circle sectors detection for Q1 */
+
+.wrapper {
+    width: 20vw;
+    height: 20vw;
+    border: 2px solid var(--purple);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10vw;
+    transform: rotate(15deg);
+}
+
+.sector {
+    width: 5000px;
+    height: 5000px;
+
+    position: absolute;
+    transform-origin: 100% 100%;
+
+    left: 50%;
+    top: 50%;
+    border: 1px solid var(--purple);
+    margin-top: -5000px;
+    margin-left: -5000px;
+}
+
+.sector-selector:hover{
+    background: var(--red_level2);
 }
