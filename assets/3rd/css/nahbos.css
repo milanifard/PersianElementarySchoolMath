@@ -188,5 +188,15 @@
 }
 
 .sector-selector:hover{
-    background: var(--red_level2);
+    background: var(--red_level1);
+}
+
+.color-picker{
+    width: 3vw;
+    height: 3vw;
+    border: 0.3vw solid var(--purple);
+    border-radius: 2vw;
+    position: relative;
+    margin-top: 0.5vw;
+
 }
