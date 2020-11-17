@@ -23,3 +23,35 @@
     --pink: #f287b6;
 
 }
+
+
+.right_border{
+
+    width: 90vw;
+    height: 125vw;
+    max-width: 100%;
+
+    border: 0.8vw double var(--yellow_level2_border);
+
+    margin: 10vw 10vw 10vw 0;
+    border-left: none;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: relative;
+    background-color: white;
+
+}
+
+.background-style{
+
+    width: 100vw;
+    height: 50vw;
+
+    background-image: repeating-linear-gradient(0deg, #ffdd2b, #ffdd2b 1vw, #fecc4e 0vw, #fecc4e 2.5vw);    background-color: var(--red_level1);
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    bottom: -15vw;
+    z-index: -1;
+}
