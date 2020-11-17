@@ -76,24 +76,22 @@
 .title-style{
 
     background-color: var(--yellow_level3_border);
-    border-radius: 5vw;
-
+    border-radius: 3vw;
 
     text-align: center;
     font-family: Koodak;
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: black;
 
-    padding-right: 1.5vw;
-    padding-left: 1.5vw;
+    padding: 1vw;
     position: absolute;
     left: 35vw;
-    right: 25vw;
-    top: -4vw;
+    right: 32vw;
+    top: -4.5vw;
 }
 
 .that-ridiculous-red-parts-in-title{
-    width: 31.4vw;
+    width: 24.5vw;
     height: 1.5vw;
 
     background-color: var(--red_level2);
@@ -104,4 +102,40 @@
     left: 34vw;
     right: 40vw;
     top: -1.5vw;
+}
+
+.activity-text{
+
+    background-color: var(--yellow_level3_border);
+    border-radius: 1.5vw;
+
+    text-align: center;
+    font-family: Koodak;
+    font-size: 3vw;
+    color: white;
+
+    padding: 0.1vw 4vw;
+    position: absolute;
+    right: 11vw;
+    top: 3vw;
+    z-index: 1;
+}
+
+.activity-image{
+
+    width: 15vw;
+    position: absolute;
+    right: -2.5vw;
+    top: 1vw;
+    z-index: 2;
+}
+
+.text-config{
+    padding-right: 5vw;
+    padding-left: 3vw;
+    margin-top: 5vw; ;
+    font-family: Zar;
+    font-size: 2.8vw;
+    direction: rtl;
+    white-space: pre-wrap;
 }
