@@ -47,7 +47,7 @@
     width: 100vw;
     height: 50vw;
 
-    background-image: repeating-linear-gradient(0deg, var(--yellow_level2_border), var(--yellow_level2_border) 1vw, var(--yellow_level3_border) 0vw, var(--yellow_level3_border) 2.5vw);    background-color: var(--red_level1);
+    background-image: repeating-linear-gradient(0deg, var(--yellow_level2_border), var(--yellow_level2_border) 1vw, var(--yellow_level3_border) 0vw, var(--yellow_level3_border) 2.5vw);
     background-position: bottom;
     background-repeat: no-repeat;
 
