@@ -25,10 +25,10 @@
 }
 
 
-.right_border{
+.right-border{
 
     width: 90vw;
-    height: 125vw;
+    height: 110vw;
     max-width: 100%;
 
     border: 0.8vw double var(--yellow_level2_border);
@@ -57,7 +57,7 @@
 }
 
 
-.page_number{
+.page-number{
 
     background-color: var(--yellow_level4_guessbox);
     border-radius: 5vw;
@@ -71,4 +71,37 @@
     position: absolute;
     bottom: -0.5vw;
     right: -6vw;
+}
+
+.title-style{
+
+    background-color: var(--yellow_level3_border);
+    border-radius: 5vw;
+
+
+    text-align: center;
+    font-family: Koodak;
+    font-size: 4vw;
+    color: black;
+
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    position: absolute;
+    left: 35vw;
+    right: 25vw;
+    top: -4vw;
+}
+
+.that-ridiculous-red-parts-in-title{
+    width: 31.4vw;
+    height: 1.5vw;
+
+    background-color: var(--red_level2);
+    color: var(--red_level2);
+    border-style: solid;
+
+    position: absolute;
+    left: 34vw;
+    right: 40vw;
+    top: -1.5vw;
 }
