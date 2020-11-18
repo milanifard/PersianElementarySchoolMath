@@ -28,7 +28,7 @@
 .right-border{
 
     width: 90vw;
-    height: 110vw;
+    height: 140vw;
     max-width: 100%;
 
     border: 0.8vw double var(--yellow_level2_border);
@@ -45,7 +45,7 @@
 .background-style{
 
     width: 100vw;
-    height: 50vw;
+    height: 60vw;
 
     background-image: repeating-linear-gradient(0deg, var(--yellow_level2_border), var(--yellow_level2_border) 1vw, var(--yellow_level3_border) 0vw, var(--yellow_level3_border) 2.5vw);
     background-position: bottom;

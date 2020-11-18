@@ -25,55 +25,110 @@
             <div class="activity-text">فعّالیت</div>
         </div>
 
-        <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 15vw; margin-top: 5vw">1ــ کارهایی که یک دانش آموز از ساعت 6 صبح تا 6 بعدازظهر انجام می دهد، در جدول زیر نشان داده شده است. </div>
-        <div id="Q1_table">
-            <table class="colored-table">
-                <tr>
-                    <td class="colored-td">درس خواندن و انجام دادن تکلیفها در منزل</td>
-                    <td class="colored-td">حضور در مدرسه</td>
-                    <td class="colored-td">رفت وآمد به مدرسه</td>
-                    <td class="colored-td">غذا خوردن، نماز خواندن و استراحت</td>
-                    <td class="colored-td">کار</td>
-                </tr>
-                <tr>
-                    <td class="colored-td" style="background-color: var(--yellow_level3_border)">3</td>
-                    <td class="colored-td" style="background-color: var(--blue_level1)">5</td>
-                    <td class="colored-td" style="background-color: var(--red_level1)">2</td>
-                    <td class="colored-td" style="background-color: var(--green_level2)">2</td>
-                    <td class="colored-td">زمان(ساعت)</td>
-                </tr>
-            </table>
-        </div>
-        <div id="Q1_continue" class="text-config questions-text-config">دایره ی زیر 12 قسمت دارد. کارهای روزانه ی این دانش آموز را با رنگ کردن این قسمت ها نشان دهید.</div>
+        <div id="Q1_container">
+            <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 15vw; margin-top: 5vw">1ــ کارهایی که یک دانش آموز از ساعت 6 صبح تا 6 بعدازظهر انجام می دهد، در جدول زیر نشان داده شده است. </div>
+            <div id="Q1_table">
+                <table class="colored-table">
+                    <tr>
+                        <td class="colored-td">درس خواندن و انجام دادن تکلیفها در منزل</td>
+                        <td class="colored-td">حضور در مدرسه</td>
+                        <td class="colored-td">رفت وآمد به مدرسه</td>
+                        <td class="colored-td">غذا خوردن، نماز خواندن و استراحت</td>
+                        <td class="colored-td">کار</td>
+                    </tr>
+                    <tr>
+                        <td class="colored-td" style="background-color: var(--yellow_level3_border)">3</td>
+                        <td class="colored-td" style="background-color: var(--blue_level1)">5</td>
+                        <td class="colored-td" style="background-color: var(--red_level1)">2</td>
+                        <td class="colored-td" style="background-color: var(--green_level2)">2</td>
+                        <td class="colored-td">زمان(ساعت)</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="Q1_continue" class="text-config questions-text-config">دایره ی زیر 12 قسمت دارد. کارهای روزانه ی این دانش آموز را با رنگ کردن این قسمت ها نشان دهید.</div>
 
-        <div style="float: left">
-            <div id="circle_Q1" class="wrapper" style="float: left; margin-right: 15vw">
-                <div id="Q1_sector1" class="sector sector-selector" style="transform: rotate(75deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
-                <div id="Q1_sector2" class="sector sector-selector" style="transform: rotate(105deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
-                <div id="Q1_sector3" class="sector sector-selector" style="transform: rotate(135deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
-                <div id="Q1_sector4" class="sector sector-selector" style="transform: rotate(165deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
-                <div id="Q1_sector5" class="sector sector-selector" style="transform: rotate(195deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
-                <div id="Q1_sector6" class="sector sector-selector" style="transform: rotate(225deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
-                <div id="Q1_sector7" class="sector sector-selector" style="transform: rotate(255deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
-                <div id="Q1_sector8" class="sector sector-selector" style="transform: rotate(285deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
-                <div id="Q1_sector9" class="sector sector-selector" style="transform: rotate(315deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
-                <div id="Q1_sector10" class="sector sector-selector" style="transform: rotate(345deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
-                <div id="Q1_sector11" class="sector sector-selector" style="transform: rotate(375deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
-                <div id="Q1_sector12" class="sector sector-selector" style="transform: rotate(405deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+            <div style="float: left">
+                <div id="circle_Q1" class="wrapper" style="float: left; margin-right: 15vw">
+                    <div id="Q1_sector1" class="sector sector-selector" style="transform: rotate(75deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector2" class="sector sector-selector" style="transform: rotate(105deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector3" class="sector sector-selector" style="transform: rotate(135deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector4" class="sector sector-selector" style="transform: rotate(165deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector5" class="sector sector-selector" style="transform: rotate(195deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector6" class="sector sector-selector" style="transform: rotate(225deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector7" class="sector sector-selector" style="transform: rotate(255deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector8" class="sector sector-selector" style="transform: rotate(285deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector9" class="sector sector-selector" style="transform: rotate(315deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector10" class="sector sector-selector" style="transform: rotate(345deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector11" class="sector sector-selector" style="transform: rotate(375deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector12" class="sector sector-selector" style="transform: rotate(405deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                </div>
+
+                <div style="float: left; margin-left: -12vw">
+                    <div id="Q1_yellow_color" class="color-picker" style="background-color: var(--yellow_level3_border); margin-top: 2.5vw" onclick="color_picker(id)"></div>
+                    <div id="Q1_blue_color" class="color-picker" style="background-color: var(--blue_level1);" onclick="color_picker(id)"></div>
+                    <div id="Q1_red_color" class="color-picker" style="background-color: var(--red_level1);" onclick="color_picker(id)"></div>
+                    <div id="Q1_green_color" class="color-picker" style="background-color: var(--green_level2);" onclick="color_picker(id)"></div>
+                </div>
             </div>
 
-            <div style="float: left; margin-left: -12vw">
-                <div id="Q1_yellow_color" class="color-picker" style="background-color: var(--yellow_level3_border); margin-top: 2.5vw" onclick="color_picker(id)"></div>
-                <div id="Q1_blue_color" class="color-picker" style="background-color: var(--blue_level1);" onclick="color_picker(id)"></div>
-                <div id="Q1_red_color" class="color-picker" style="background-color: var(--red_level1);" onclick="color_picker(id)"></div>
-                <div id="Q1_green_color" class="color-picker" style="background-color: var(--green_level2);" onclick="color_picker(id)"></div>
+            <div style="float: left">
+                <div id="Q1_feedback" class="text-config"> </div>
+                <img id="Q1_clock_img" src="assets/3rd/images/nahbos/clock_124.png" alt="clock_Q1" style="width: 15vw; padding-left: 7vw;">
             </div>
         </div>
 
-        <div style="float: left">
-            <div id="Q1_feedback" class="text-config"> </div>
-            <img id="Q1_clock_img" src="assets/3rd/images/nahbos/clock_124.png" alt="clock_Q1" style="width: 15vw; padding-left: 7vw;">
+        <div id="Q2_container" style="clear: both">
+            <div id="Q2" class="text-config questions-text-config" style="padding-top: 5vw">2ــ تعداد کتاب های فرید و موضوع آن ها در جدول زیر مشخص شده است.</div>
+            <div id="Q2_table">
+                <table class="colored-table">
+                    <tr>
+                        <td class="colored-td">کمک درسی</td>
+                        <td class="colored-td">سرگرمی</td>
+                        <td class="colored-td">علمی</td>
+                        <td class="colored-td">درسی</td>
+                        <td class="colored-td">نوع کتاب</td>
+                    </tr>
+                    <tr>
+                        <td class="colored-td" style="background-color: var(--yellow_level3_border)">15</td>
+                        <td class="colored-td" style="background-color: var(--red_level1)">25</td>
+                        <td class="colored-td" style="background-color: var(--blue_level1)">10</td>
+                        <td class="colored-td" style="background-color: var(--green_level2)">10</td>
+                        <td class="colored-td">تعداد کتاب</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="Q2_continue" class="text-config questions-text-config">ــ هر قسمت از دایره ی روبه رو، نشان دهنده ی 5 کتاب است. با رنگ کردن این نمودار دایره ای، اطلّاعات مربوط به کتاب های فرید را نشان دهید.</div>
+
+            <div style="float: left">
+                <div id="circle_Q2" class="wrapper" style="float: left; margin-right: 15vw">
+                    <div id="Q2_sector1" class="sector sector-selector" style="transform: rotate(75deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector2" class="sector sector-selector" style="transform: rotate(105deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector3" class="sector sector-selector" style="transform: rotate(135deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector4" class="sector sector-selector" style="transform: rotate(165deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector5" class="sector sector-selector" style="transform: rotate(195deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector6" class="sector sector-selector" style="transform: rotate(225deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector7" class="sector sector-selector" style="transform: rotate(255deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector8" class="sector sector-selector" style="transform: rotate(285deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector9" class="sector sector-selector" style="transform: rotate(315deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector10" class="sector sector-selector" style="transform: rotate(345deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector11" class="sector sector-selector" style="transform: rotate(375deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector12" class="sector sector-selector" style="transform: rotate(405deg) skew(60deg);" onclick="sector_coloring(id);" onmouseover="hover(id)"></div>
+                </div>
+
+                <div style="float: left; margin-left: -12vw">
+                    <div id="Q2_yellow_color" class="color-picker" style="background-color: var(--yellow_level3_border); margin-top: 2.5vw" onclick="color_picker(id)"></div>
+                    <div id="Q2_blue_color" class="color-picker" style="background-color: var(--blue_level1);" onclick="color_picker(id)"></div>
+                    <div id="Q2_red_color" class="color-picker" style="background-color: var(--red_level1);" onclick="color_picker(id)"></div>
+                    <div id="Q2_green_color" class="color-picker" style="background-color: var(--green_level2);" onclick="color_picker(id)"></div>
+                </div>
+            </div>
+
+            <div style="float: left">
+                <div id="Q2_feedback" class="text-config"> </div>
+                <img id="Q2_clock_img" src="assets/3rd/images/nahbos/book_124.png" alt="clock_Q1" style="width: 15vw; padding-left: 7vw;">
+            </div>
         </div>
+
 
 
 
