@@ -8,9 +8,16 @@ a {
     margin: 0px;
     box-sizing: border-box;
 }
-.center{
+
+.zero-padding-margin{
+
+    margin: 0;
+    padding: 0;
+}
+.center {
     margin: auto;
 }
+
 body {
     line-height: 1.8em;
     background-color: white;
@@ -47,66 +54,131 @@ body {
     max-width: 100%;
     height: auto;
 }
-.row{
+
+.row {
     margin: 0;
 }
+
+ol {
+    /* Remove default list numbering style */
+    list-style: none;
+}
+  
+  
+ol {
+    
+    padding: .5em 1em;
+    background-color: #fff;
+    width: 50%;
+    margin: 1em auto;
+    border-radius: 2px;
+    color: #666;
+  }
 .masale {
+    
     padding-inline-start: 1.5em;
     padding-inline-end: 0.5em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    clear: right;
+    clear: both;
     float: right;
+    width: 100%;
     text-align: start;
+    counter-increment: big-num;
+    position: relative;
+    p {
+        display: inline-block;
+        position: relative;
+        padding-inline-start: 0.5em;
+    }
 }
+.masale:before {
+    display: inline-block;
+    float: right;
+    content: counter(big-num);
+    background: cornflowerblue;
+    color: #fff;
+    border-radius: 0.2em;
+    padding: 0 0.5em;
+    position: relative;
+    min-width: 1.0em;
+    text-align: center;
+  }
 
+.align-left
+{
+    float: left;
+}
 textarea {
     width: auto;
     min-height: 10em;
-    max-width: 100% !important;
 }
 
 section {
     margin: 0.8em 0;
-
     .section-header {
         border-radius: 0.2em;
         padding: 0.3em;
         width: 100%;
         background-color: bisque;
         overflow: hidden;
-
+        button{
+            float: left;
+            margin-left: 1em;
+            margin-right: auto;
+        }
         h5 {
             float: right;
             margin: 0 1em;
-
+            color: white;
         }
 
 
     }
 }
-.small-vertical-margin{
+hr {
+    clear: both;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.small-vertical-margin {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
 .mohit_label {
     margin: auto;
     text-align: end;
 
 }
 
-#rectangle1{
-    width: calc(12em*1.5);
-    height:calc(1em*1.5);
-    background:blue;
+#rectangle1 {
+    width: calc(12em*1.2);
+    height: calc(1em*1.2);
+    background: blue;
 }
-#rectangle2{
-    width:calc(4em*1.5);
-    height:calc(6em*1.5);
-    background:greenyellow;
+
+#rectangle2 {
+    width: calc(4em*1.2);
+    height: calc(6em*1.2);
+    background: greenyellow;
 }
-#rectangle3{
-    width: calc(6em*1.5);
-    height:calc(2em*1.5);
-    background:cyan;
+
+#rectangle3 {
+    width: calc(6em*1.2);
+    height: calc(2em*1.2);
+    background: cyan;
 }
+
+.hover-glow:hover{
+    border-color: #66afe9;
+    box-shadow: 0 0 8px skyblue;
+}
+
+.hover-glow:active{
+    border-color: #66afe9;
+    box-shadow: 0 0 8px blue;
+}
+
