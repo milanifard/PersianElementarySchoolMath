@@ -95,7 +95,7 @@
     let pre_color = null;
     function hover(id){
         if (color_picker_item != null) {
-            $(id).onmouseover = function () {
+            $(id).onmouseenter = function () {
                 pre_color = $(id).style.backgroundColor;
                 $(id).style.backgroundColor = color_picker_item.style.backgroundColor;
             }
@@ -170,7 +170,7 @@
 
         if (JSON.stringify(Q1_ans) === JSON.stringify(Q1_P124_check_count)){
 
-            $("Q1_feedback").textContent = "آفرین. درست حل کردی.";
+            $("Q1_feedback").textContent = "آفرین عزیزم. درست حل کردی.";
             $("Q1_clock_img").classList.add("shaking-animation");
             $("Q1_feedback").style.color= "#44b869";
         }
