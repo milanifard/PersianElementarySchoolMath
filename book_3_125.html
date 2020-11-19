@@ -28,6 +28,7 @@
                 <div id="Q1_sector3" class="sector" style="transform: rotate(255deg); background-color: var(--red_level2); border: 1px solid black;" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
                 <div id="Q1_sector4" class="sector" style="transform: rotate(345deg); background-color: var(--green_level3); border: 1px solid black;" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
             </div>
+            <div class="clock-hand" style="position:absolute; padding-left: 13vw; padding-top: 16vw; transform: rotate(-45deg)"></div>
 
             <div id="Q1_table" style="clear: both; padding-top: 3vw; float: right">
                 <table class="simple-table">
@@ -85,16 +86,16 @@
             <div class="guess-box-text-left" >حدس بزن</div>
             <div class="text-config" style="padding-top: 5vw;">با کاغذ دو مخروط درست کنید. با توّجه به شکل هاي زير، مخروط ها را از محل مشخّص شده، برش بزنید.<br>قسمت های بریده شده را روی کاغذ بگذارید و دور آن ها خط بکشید.<br>در کدام برش، شکل به دست آمده دایره است؟</div>
             <div class="guess-box-level2">
-                <img src="assets/3rd/images/nahbos/left_scissor_125.png" style="width: 20vw;" alt="left_scissor">
-                <img src="assets/3rd/images/nahbos/right_scissor_125.png" style="width: 20vw;" alt="right_scissor">
+                <img src="assets/3rd/images/nahbos/left_scissor_125.png" style="width: 19vw;" alt="left_scissor">
+                <img src="assets/3rd/images/nahbos/right_scissor_125.png" style="width: 19vw;" alt="right_scissor">
             </div>
 
-            <div style="float: right; margin-top: -18vw; margin-right: 10vw">
-                <div>
-                    <label class="text-config"><input type="radio" name="guess" value="right" id="radio_right" onclick="guess_checker(id)">شکل راست</label>
+            <div style="float: right; margin-top: -18vw; margin-right: 5vw;">
+                <div style="height: 4vw;">
+                    <label class="text-config"><input type="radio" name="guess" value="right" id="radio_right" style="width: 2vw; height: 2vw;" onclick="guess_checker(id)">شکل راست</label>
                 </div>
-                <div>
-                    <label class="text-config"><input type="radio" name="guess" value="left" id="radio_left" onclick="guess_checker(id)">شکل چپ</label>
+                <div style="height: 4vw;">
+                    <label class="text-config"><input type="radio" name="guess" value="left" id="radio_left" style="width: 2vw; height: 2vw;" onclick="guess_checker(id)">شکل چپ</label>
                 </div>
             </div>
 
@@ -102,7 +103,7 @@
 
         </div>
 
-<!--        <div class="page-number">124</div>-->
+        <div class="page-number" style="left: -5vw; right: auto">125</div>
 
     </div>
 </div>
@@ -111,6 +112,14 @@
 <script>
     function $(id){ return document.getElementById(id);}
 
+    // function rotatea(id) {
+    //     let degree = parseInt(Math.random() * 360 + 180);
+    //     let miliseconds = 2;
+    //     document.getElementsByClassName("continues-rotation").
+    // }
+
+
+
 
     function guess_checker(id) {
         let btn = $(id).value;
@@ -118,6 +127,7 @@
             $("guess_box_feedback").textContent = "دقت کن عزيزم. غلط حدس زدي.";
             $("guess_box_feedback").style.color = "#c8242b";
             $("guess_box_feedback").classList.add("shaking-animation");
+            // rotatea("guess_box_feedback");
         }
         else if (btn == "left"){
             $("guess_box_feedback").textContent = "آفرين عزيزم. درست حدس زدي.";

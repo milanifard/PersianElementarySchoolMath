@@ -304,3 +304,32 @@
     margin-right: 30vw;
 }
 
+.clock-hand:after{
+    width: 0;
+    height: 0;
+    border-bottom: 0.8vw solid transparent;
+    border-top: 0.8vw solid transparent;
+    border-left: 1.3vw solid black;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+
+}
+
+.clock-hand:before{
+    width: 4vw;
+    height: 0.5vw;
+    background-color: black;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+}
+
+.continues-rotation{
+    animation: rotation 1s infinite;
+}
+
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+}
