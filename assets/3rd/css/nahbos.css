@@ -40,6 +40,20 @@
     background-color: white;
 }
 
+.left-border{
+    width: 90vw;
+    max-width: 100%;
+
+    border: 0.8vw double var(--yellow_level2_border);
+
+    margin: 6vw 0 0 10vw;
+    border-right: none;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+
 .background-style{
 
     width: 100vw;
@@ -152,6 +166,22 @@
 .colored-td{
     padding: 0.7vw;
     border: 0.25vw solid var(--blue_level2);
+    font-size: 1.5vw;
+    font-family: Koodak;
+    text-align: center;
+}
+
+.simple-table{
+    width: 55vw;
+    margin: 0 10vw 0 5vw;
+    border-collapse: collapse;
+    font-size: 1.5vw;
+    font-family: Koodak;
+}
+
+.simple-td{
+    padding: 0.7vw;
+    border: 0.3vw solid var(--orange_level3);
     font-size: 1.5vw;
     font-family: Koodak;
     text-align: center;

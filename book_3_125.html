@@ -6,9 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/nahbos.css">
     <title>ریاضی سوم دبستان</title>
-
 </head>
-<body>
+
+<body style="margin: 0;">
+<div>
+    <div class="left-border">
+        <div class="background-style" style="left: -10vw;"></div>
+
+        <div id="activity_item">
+            <img class="activity-image" style="margin-right: 5vw" src="assets/3rd/images/classwork.png" alt="activity_image">
+            <div class="activity-text" style="margin-right: 3vw">کار در کلاس</div>
+        </div>
+
+        <div id="Q1_container">
+
+            <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 17vw; margin-top: 3vw; float: right">1ــ چرخنده ی روبه رو را ده بار بچرخانید. هر بار عقربه روی<br> چه رنگی می ایستد؟ جواب هایتان را در جدول زیر بنویسید.</div>
+
+            <div id="circle_Q1" class="wrapper" style="float: left; margin-top: 5vw; border: 2px solid black;">
+                <div id="Q1_sector1" class="sector" style="transform: rotate(75deg); background-color: var(--red_level2); border: 1px solid black;" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                <div id="Q1_sector2" class="sector" style="transform: rotate(165deg); background-color: var(--green_level3); border: 1px solid black;" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                <div id="Q1_sector3" class="sector" style="transform: rotate(255deg); background-color: var(--red_level2); border: 1px solid black;" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                <div id="Q1_sector4" class="sector" style="transform: rotate(345deg); background-color: var(--green_level3); border: 1px solid black;" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+            </div>
+
+            <div id="Q1_table" style="clear: both; padding-top: 3vw; float: right">
+                <table class="simple-table">
+                    <tr>
+                        <td class="simple-td">10</td>
+                        <td class="simple-td">9</td>
+                        <td class="simple-td">8</td>
+                        <td class="simple-td">7</td>
+                        <td class="simple-td">6</td>
+                        <td class="simple-td">5</td>
+                        <td class="simple-td">4</td>
+                        <td class="simple-td">3</td>
+                        <td class="simple-td">2</td>
+                        <td class="simple-td">1</td>
+                        <td class="simple-td" style="background-color: var(--orange_level1)">آزمایش</td>
+                    </tr>
+                    <tr>
+                        <td class="simple-td"> </td>
+                        <td class="simple-td"> </td>
+                        <td class="simple-td"> </td>
+                        <td class="simple-td"> </td>
+                        <td class="simple-td"> </td>
+                        <td class="simple-td"> </td>
+                        <td class="simple-td"> </td>
+                        <td class="simple-td"> </td>
+                        <td class="simple-td"> </td>
+                        <td class="simple-td"> </td>
+                        <td class="simple-td" style="background-color: var(--orange_level1)">رنگ</td>
+                    </tr>
+                </table>
+            </div>
+
+            <img src="assets/3rd/images/nahbos/pencil_125.png" alt="pencil" style="float: left; width: 12vw; margin-left: 5vw; margin-top: 2vw">
+
+            <div id="Q1_continue" class="text-config questions-text-config" style="padding-right: 8vw; float: right">با توجه به جدول، دایره ی روبه رو را با رنگ های قرمز و سبز رنگ آمیزی کنید.<br>اگر چرخنده را ١٠ بار دیگر بچرخانیم، پیش بینی می کنید که<br>ــ چه مقدار از این نمودار به رنگ سبز باشد؟<br>ــ چه کسری از نمودار قرمز باشد؟</div>
+
+            <div>
+                <div id="circle_Q1_ans" class="wrapper" style="float: left;">
+                    <div id="Q1_ans_sector1" class="sector" style="transform: rotate(75deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector2" class="sector" style="transform: rotate(111deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector3" class="sector" style="transform: rotate(147deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector4" class="sector" style="transform: rotate(183deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector5" class="sector" style="transform: rotate(219deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector6" class="sector" style="transform: rotate(255deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector7" class="sector" style="transform: rotate(291deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector8" class="sector" style="transform: rotate(327deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector9" class="sector" style="transform: rotate(363deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector10" class="sector" style="transform: rotate(399deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="guess-box-level1" style="clear:both;">
+            <div class="guess-box-text">حدس بزن</div>
+            <div class="text-config" style="padding-top: 5vw; padding-right: 2vw">دو استوانه ی کاغذی درست کنید. مثل شکل زیر، استوانه ها را از محل های مشخص شده برش بزنید. قسمت های بریده شده را روی کاغذ بگذارید و دور آنها خط بکشید. در کدام برش، شکل به دست آمده دایره است؟</div>
+            <div class="guess-box-level2">
+                <img src="assets/3rd/images/nahbos/left_scissor_124.png" style="width: 20vw;" alt="left_scissor">
+                <img src="assets/3rd/images/nahbos/right_scissor_124.png" style="width: 20vw;" alt="right_scissor">
+            </div>
+        </div>
+
+        <div class="page-number">124</div>
+
+    </div>
+</div>
 
 </body>
+<script>
+    function $(id){ return document.getElementById(id);}
+
+
+</script>
 </html>
