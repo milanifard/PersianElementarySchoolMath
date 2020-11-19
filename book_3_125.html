@@ -81,17 +81,28 @@
 
         </div>
 
-
-        <div class="guess-box-level1" style="clear:both;">
-            <div class="guess-box-text">حدس بزن</div>
-            <div class="text-config" style="padding-top: 5vw; padding-right: 2vw">دو استوانه ی کاغذی درست کنید. مثل شکل زیر، استوانه ها را از محل های مشخص شده برش بزنید. قسمت های بریده شده را روی کاغذ بگذارید و دور آنها خط بکشید. در کدام برش، شکل به دست آمده دایره است؟</div>
+        <div class="guess-box-level1" style="clear:both; left: -6vw; margin-top: 50vw">
+            <div class="guess-box-text-left" >حدس بزن</div>
+            <div class="text-config" style="padding-top: 5vw;">با کاغذ دو مخروط درست کنید. با توّجه به شکل هاي زير، مخروط ها را از محل مشخّص شده، برش بزنید.<br>قسمت های بریده شده را روی کاغذ بگذارید و دور آن ها خط بکشید.<br>در کدام برش، شکل به دست آمده دایره است؟</div>
             <div class="guess-box-level2">
-                <img src="assets/3rd/images/nahbos/left_scissor_124.png" style="width: 20vw;" alt="left_scissor">
-                <img src="assets/3rd/images/nahbos/right_scissor_124.png" style="width: 20vw;" alt="right_scissor">
+                <img src="assets/3rd/images/nahbos/left_scissor_125.png" style="width: 20vw;" alt="left_scissor">
+                <img src="assets/3rd/images/nahbos/right_scissor_125.png" style="width: 20vw;" alt="right_scissor">
             </div>
+
+            <div style="float: right; margin-top: -18vw; margin-right: 10vw">
+                <div>
+                    <label class="text-config"><input type="radio" name="guess" value="right" id="radio_right" onclick="guess_checker(id)">شکل راست</label>
+                </div>
+                <div>
+                    <label class="text-config"><input type="radio" name="guess" value="left" id="radio_left" onclick="guess_checker(id)">شکل چپ</label>
+                </div>
+            </div>
+
+            <div id="guess_box_feedback" class="text-config" style="margin-right: 5vw; float: right; margin-top: -8vw"></div>
+
         </div>
 
-        <div class="page-number">124</div>
+<!--        <div class="page-number">124</div>-->
 
     </div>
 </div>
@@ -100,6 +111,20 @@
 <script>
     function $(id){ return document.getElementById(id);}
 
+
+    function guess_checker(id) {
+        let btn = $(id).value;
+        if (btn == "right"){
+            $("guess_box_feedback").textContent = "دقت کن عزيزم. غلط حدس زدي.";
+            $("guess_box_feedback").style.color = "#c8242b";
+            $("guess_box_feedback").classList.add("shaking-animation");
+        }
+        else if (btn == "left"){
+            $("guess_box_feedback").textContent = "آفرين عزيزم. درست حدس زدي.";
+            $("guess_box_feedback").style.color = "#44b869";
+            $("guess_box_feedback").classList.add("shaking-animation");
+        }
+    }
 
 </script>
 </html>
