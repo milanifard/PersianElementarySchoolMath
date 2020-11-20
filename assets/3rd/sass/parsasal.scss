@@ -1,15 +1,229 @@
+@import "./parsasal/_fonts.scss";
+@import "./parsasal/scss/bootstrap";
+
+$color-1 : #F13F52;
+$color-2 : #DC302F;
+
 a {
     text-decoration: none;
 }
-body{
-    font-size: 1.2em;
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
 }
-.container {
-    width: 80%;
+
+.zero-padding-margin {
+
+    margin: 0;
+    padding: 0;
+}
+
+.center {
     margin: auto;
 }
 
-.masale{
+.color1 {
+    background-color: $color-1;
+}
 
-    margin: 5em;
+.color2 {
+    background-color: $color-2;
+}
+
+body {
+    line-height: 1.8em;
+    background-color: white;
+}
+
+@media (min-width:992px) {
+    .container-full {
+        width: 80% !important;
+        margin: auto;
+    }
+}
+
+@media (min-width:1200px) {
+    .container-full {
+        width: 70% !important;
+        margin: auto;
+    }
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display: inline-block;
+    float: none;
+}
+
+#main-header {
+    @extend .navbar;
+    @extend .navbar-dark;
+    @extend .bg-primary;
+
+    * {
+        color: white;
+    }
+
+    h3 {
+        margin: 0 auto;
+    }
+
+}
+
+.full-size-fit {
+    @extend .col-lg-4;
+    @extend .col-md-6;
+    @extend .col-11;
+    @extend .justify-content-center;
+
+
+}
+
+.responsive-img {
+    max-width: 95%;
+    height: auto;
+}
+
+.row {
+    margin: 0;
+}
+.row-centered {
+    @extend .row;
+    @extend .justify-content-center;
+}
+
+ol {
+    /* Remove default list numbering style */
+    list-style: none;
+}
+
+
+ol {
+
+    padding: .5em 1em;
+    background-color: #fff;
+    width: 50%;
+    margin: 1em auto;
+    border-radius: 2px;
+    color: #666;
+}
+
+.masale {
+
+    padding-inline-start: 1.5em;
+    padding-inline-end: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    clear: both;
+    float: right;
+    width: 100%;
+    text-align: start;
+    counter-increment: big-num;
+    position: relative;
+
+    p {
+        display: inline-block;
+        position: relative;
+        padding-inline-start: 0.5em;
+    }
+}
+
+.masale:before {
+    float: right;
+    content: counter(big-num);
+    background: cornflowerblue;
+    color: #fff;
+    border-radius: 0.2em;
+    padding: 0 0.5em;
+    position: relative;
+    min-width: 1.0em;
+    text-align: center;
+}
+
+
+section {
+    margin: 0.8em 0;
+
+    .section-header {
+        @extend .navbar;
+        @extend .navbar-expand-lg;
+        @extend .bg-secondary;
+        border-radius: 0.2em;
+        padding: 0.3em;
+        width: 100%;
+        overflow: hidden;
+
+        button {
+            float: left;
+            margin-left: 1em;
+            margin-right: auto;
+        }
+
+        h5 {
+            float: right;
+            margin: 0 1em;
+            color: white;
+        }
+
+
+    }
+}
+
+hr {
+    clear: both;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.small-vertical-margin {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.mohit_label {
+    @extend .col-5;
+    @extend .col-sm-5;
+    text-align: end;
+    margin: auto 0;
+
+}
+.small-input{
+    @extend .col-5;
+    @extend .col-sm-5;
+}
+
+.input-style {
+    @extend .form-control;
+
+}
+
+$paper-color: #F1EDE9;
+$paper-line: #94ACD4;
+
+.explain-textarea {
+    @extend .input-style;
+    @extend .hand-written;
+    min-height: 6em;
+    padding: 0.5em 2em;
+    background: repeating-linear-gradient($paper-color, $paper-color 31px, $paper-line 31px, $paper-line 32px);
+    line-height: 32px;
+    outline: 0;
+    font-size: 30px;
+}
+
+
+.hover-glow:hover {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px skyblue;
+}
+
+.hover-glow:active {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px blue;
 }
