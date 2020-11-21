@@ -62,10 +62,13 @@ body {
 #main-header {
     @extend .navbar;
     @extend .navbar-dark;
-    @extend .bg-primary;
-
+    // @extend .bg-primary;
+    background-image: linear-gradient(45deg, #f46d57 25%, #ef3f52 25%, #ef3f52 50%, #f46d57 50%, #f46d57 75%, #ef3f52 75%, #ef3f52 100%);
+    background-size: 56.57px 56.57px;
     * {
         color: white;
+        font-weight: bold;
+        font-size: 1.4em;
     }
 
     h3 {
@@ -96,6 +99,12 @@ body {
     @extend .justify-content-center;
 }
 
+// #page-body{
+//     border-radius: 20px;
+//     border-color: #DC302F;
+//     border-style: solid;
+// }
+
 ol {
     /* Remove default list numbering style */
     list-style: none;
@@ -113,7 +122,6 @@ ol {
 }
 
 .masale {
-
     padding-inline-start: 1.5em;
     padding-inline-end: 0.5em;
     padding-top: 0.5em;
@@ -135,7 +143,7 @@ ol {
 .masale:before {
     float: right;
     content: counter(big-num);
-    background: cornflowerblue;
+    background: #f03f52;
     color: #fff;
     border-radius: 0.2em;
     padding: 0 0.5em;
