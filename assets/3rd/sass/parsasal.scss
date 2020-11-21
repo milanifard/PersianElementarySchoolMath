@@ -1,8 +1,12 @@
+$color-1 : #F13F52;
+$color-2 : #DC302F;
+$theme-colors: ("primary": $color-1,
+    "light": #f0cacf//   "secondary": $color-2
+);
+
 @import "./parsasal/_fonts.scss";
 @import "./parsasal/scss/bootstrap";
 
-$color-1 : #F13F52;
-$color-2 : #DC302F;
 
 a {
     text-decoration: none;
@@ -33,6 +37,10 @@ a {
 
 body {
     line-height: 1.8em;
+
+}
+
+#page-body {
     background-color: white;
 }
 
@@ -62,13 +70,21 @@ body {
 #main-header {
     @extend .navbar;
     @extend .navbar-dark;
-    // @extend .bg-primary;
-    background-image: linear-gradient(45deg, #f46d57 25%, #ef3f52 25%, #ef3f52 50%, #f46d57 50%, #f46d57 75%, #ef3f52 75%, #ef3f52 100%);
-    background-size: 56.57px 56.57px;
-    * {
+    background-image: linear-gradient(0deg, #f46d57 25%, #f03f52 25%, #f03f52 50%, #f46d57 50%, #f46d57 75%, #f03f52 75%, #f03f52 100%);
+    background-size: 36.00px 36.00px;
+
+    a {
+        @extend .bg-light;
+        color: #214252;
+        padding: 0.3em;
+        font-size: calc(0.9em + 0.5vw);
+
+    }
+
+    h3 {
         color: white;
         font-weight: bold;
-        font-size: 1.4em;
+        font-size: calc(1.4em + 0.6vw);
     }
 
     h3 {
@@ -94,6 +110,7 @@ body {
 .row {
     margin: 0;
 }
+
 .row-centered {
     @extend .row;
     @extend .justify-content-center;
@@ -201,7 +218,8 @@ hr {
     margin: auto 0;
 
 }
-.small-input{
+
+.small-input {
     @extend .col-5;
     @extend .col-sm-5;
 }
@@ -234,4 +252,42 @@ $paper-line: #94ACD4;
 .hover-glow:active {
     border-color: #66afe9;
     box-shadow: 0 0 8px blue;
+}
+
+
+.go-top {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 30px;
+    position: fixed;
+    z-index: 1;
+    bottom: -40px;
+    right: 20px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    background-color: #214252;
+    color: #FFFFFF;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.go-top.show {
+    bottom: 20px;
+}
+
+.go-top:hover {
+    background-color: #ce6262;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.go-top .glyphicon {
+    top: 5px;
 }
