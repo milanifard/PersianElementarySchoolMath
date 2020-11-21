@@ -6206,15 +6206,13 @@ button.close {
   vertical-align: text-top !important;
 }
 
-.bg-primary, #main-header {
+.bg-primary {
   background-color: #007bff !important;
 }
 
-a.bg-primary:hover, a#main-header:hover, a.bg-primary:focus, a#main-header:focus,
+a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
-button#main-header:hover,
-button.bg-primary:focus,
-button#main-header:focus {
+button.bg-primary:focus {
   background-color: #0062cc !important;
 }
 
@@ -9180,8 +9178,15 @@ body {
   float: none;
 }
 
+#main-header {
+  background-image: linear-gradient(45deg, #f46d57 25%, #ef3f52 25%, #ef3f52 50%, #f46d57 50%, #f46d57 75%, #ef3f52 75%, #ef3f52 100%);
+  background-size: 56.57px 56.57px;
+}
+
 #main-header * {
   color: white;
+  font-weight: bold;
+  font-size: 1.4em;
 }
 
 #main-header h3 {
@@ -9236,7 +9241,7 @@ ol {
 .masale:before {
   float: right;
   content: counter(big-num);
-  background: cornflowerblue;
+  background: #f03f52;
   color: #fff;
   border-radius: 0.2em;
   padding: 0 0.5em;
