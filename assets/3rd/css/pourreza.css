@@ -170,9 +170,9 @@
 .box-level2{
     background-color: white;
     border: 0.3vw solid #f8b0a0;
-    border-radius: 6vw;
+    border-radius: 4vw;
     position: relative;
-    padding: 1.5vw;
+    padding: 1vw;
     margin: 1.5vw 0vw 0vw -5vw;
 }
 .box-level1{
