@@ -185,3 +185,9 @@
     padding-bottom: 0vw;
     margin: 18vw 1.5vw 5vw 16vw;
 }
+.textBox-style{
+    text-align: center;
+    width: 10vw;
+    border: none;
+    border-bottom: 2px solid #555;
+}
