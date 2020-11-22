@@ -189,5 +189,57 @@
     text-align: center;
     width: 10vw;
     border: none;
-    border-bottom: 2px solid #555;
+    border-bottom: 2px solid #79c2d2;
+}
+.arrow {
+    width: 120px;
+}
+.line {
+    margin-top: 2vw;
+    width: 0.75vw;
+    background: #0c9ec3;
+    height: 0.75vw;
+    float: left;
+}
+.point {
+    width: 0;
+    height: 0;
+    border-top: 0.75vw solid transparent;
+    border-bottom: 0.75vw solid transparent;
+    border-left: 0.75vw solid #0c9ec3;
+    float: right;
+}
+.left-point{
+    width: 0;
+    height: 0;
+    border-top: 0.75vw solid transparent;
+    border-bottom: 0.75vw solid transparent;
+    border-right: 0.75vw solid #0c9ec3;
+    float: right;
+}
+.dot {
+    background-color: #fecc4e;
+    border: none;
+    color: black;
+    height: 4.5vw;
+    width: 4.5vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    border-radius: 50%;
+}
+.square {
+    font-size: 1vw;
+    background-color: white;
+    height: 4.5vw;
+    width: 4.5vw;
+    color: black;
+    border: 0.2vw solid #79c2d2;
+    transition-duration: 0.4s;
+}
+.square:hover {
+    background-color: #79c2d2; /* Green */
+    color: white;
+    cursor: pointer;
 }
