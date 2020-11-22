@@ -243,3 +243,47 @@
     color: white;
     cursor: pointer;
 }
+.textarea {
+    direction: rtl;
+    width: 40vw;
+    height: 15vw;
+    padding: 2vw;
+    box-sizing: border-box;
+    border: 2px solid #79c2d2;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+.submit{
+    font-family: ZAR;
+    background-color:#0c9ec3; /* Green */
+    border: none;
+    color: black;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    border-radius: 1vw;
+}
+.arrow2{
+    width: 120px;
+}
+.line2 {
+    margin-top: 2vw;
+    width: 1vw;
+    background: #b41878;
+    height: 0.3vw;
+    float: left;
+}
+.arroww {
+    border: solid #b41878;
+    border-width: 0 0.3vw 0.3vw 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.rightt {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
