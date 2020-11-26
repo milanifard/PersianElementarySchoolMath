@@ -22,6 +22,9 @@
 
     --pink: #f287b6;
 
+    --dynamic_rnd: 0;
+    --dynamic_rnd_last: 0;
+
 }
 
 
@@ -197,7 +200,6 @@
     position: relative;
     overflow: hidden;
     margin-left: 10vw;
-    transform: rotate(15deg);
 }
 
 .sector {
@@ -210,8 +212,8 @@
     left: 50%;
     top: 50%;
     border: 1px solid var(--purple);
-    margin-top: -5000px;
-    margin-left: -5000px;
+    margin-top: -5002px;
+    margin-left: -5002px;
     background-color: white;
 }
 
@@ -326,10 +328,14 @@
 }
 
 .continues-rotation{
-    animation: rotation 1s infinite;
+    animation: rotation 2s linear;
+}
+
+.continues-rotation2{
+    animation: rotation 2s linear;
 }
 
 @keyframes rotation {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(359deg);}
+    from {transform: rotate(var(--dynamic_rnd_last));}
+    to {transform: rotate(var(--dynamic_rnd));}
 }

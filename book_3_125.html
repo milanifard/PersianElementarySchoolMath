@@ -22,13 +22,13 @@
 
             <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 17vw; margin-top: 3vw; float: right">1ــ چرخنده ی روبه رو را ده بار بچرخانید. هر بار عقربه روی<br> چه رنگی می ایستد؟ جواب هایتان را در جدول زیر بنویسید.</div>
 
-            <div id="circle_Q1" class="wrapper" style="float: left; margin-top: 5vw; border: 2px solid black;">
-                <div id="Q1_sector1" class="sector" style="transform: rotate(75deg); background-color: var(--red_level2); border: 1px solid black;" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                <div id="Q1_sector2" class="sector" style="transform: rotate(165deg); background-color: var(--green_level3); border: 1px solid black;" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                <div id="Q1_sector3" class="sector" style="transform: rotate(255deg); background-color: var(--red_level2); border: 1px solid black;" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                <div id="Q1_sector4" class="sector" style="transform: rotate(345deg); background-color: var(--green_level3); border: 1px solid black;" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+            <div id="circle_Q1" class="wrapper" style="float: left; margin-top: 5vw; border: 2px solid black; animation-fill-mode: forwards;" onclick="rotation(id)">
+                <div id="Q1_sector1" class="sector" style="transform: rotate(90deg); background-color: var(--red_level2); border: 1px solid black;"></div>
+                <div id="Q1_sector2" class="sector" style="transform: rotate(180deg); background-color: var(--green_level3); border: 1px solid black;"></div>
+                <div id="Q1_sector3" class="sector" style="transform: rotate(270deg); background-color: var(--red_level2); border: 1px solid black;"></div>
+                <div id="Q1_sector4" class="sector" style="transform: rotate(360deg); background-color: var(--green_level3); border: 1px solid black;"></div>
             </div>
-            <div class="clock-hand" style="position:absolute; padding-left: 13vw; padding-top: 16vw; transform: rotate(-45deg)"></div>
+            <div class="clock-hand" style="position:absolute; padding-left: 12.8vw; padding-top: 16vw; transform: rotate(-45deg)"></div>
 
             <div id="Q1_table" style="clear: both; padding-top: 3vw; float: right">
                 <table class="simple-table">
@@ -67,16 +67,16 @@
 
             <div>
                 <div id="circle_Q1_ans" class="wrapper" style="float: left;">
-                    <div id="Q1_ans_sector1" class="sector" style="transform: rotate(75deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector2" class="sector" style="transform: rotate(111deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector3" class="sector" style="transform: rotate(147deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector4" class="sector" style="transform: rotate(183deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector5" class="sector" style="transform: rotate(219deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector6" class="sector" style="transform: rotate(255deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector7" class="sector" style="transform: rotate(291deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector8" class="sector" style="transform: rotate(327deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector9" class="sector" style="transform: rotate(363deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector10" class="sector" style="transform: rotate(399deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector1" class="sector" style="transform: rotate(90deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector2" class="sector" style="transform: rotate(126deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector3" class="sector" style="transform: rotate(162deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector4" class="sector" style="transform: rotate(198deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector5" class="sector" style="transform: rotate(234deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector6" class="sector" style="transform: rotate(270deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector7" class="sector" style="transform: rotate(304deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector8" class="sector" style="transform: rotate(342deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector9" class="sector" style="transform: rotate(378deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector10" class="sector" style="transform: rotate(414deg) skew(53deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
                 </div>
             </div>
 
@@ -112,11 +112,36 @@
 <script>
     function $(id){ return document.getElementById(id);}
 
-    // function rotatea(id) {
-    //     let degree = parseInt(Math.random() * 360 + 180);
-    //     let miliseconds = 2;
-    //     document.getElementsByClassName("continues-rotation").
-    // }
+    let last_degree = 0;
+
+    function rotation(id) {
+
+        if($(id).classList.contains("continues-rotation")){
+            $(id).classList.remove("continues-rotation");
+            $(id).style.transform = 'rotate(' + last_degree + 'deg)';
+            return rotation(id);
+        }
+        setTimeout(function () {
+            let root = document.documentElement;
+            let random_number = Math.floor(Math.random() * 360 + 720);
+
+            console.log(random_number);
+            console.log(last_degree);
+            root.style.setProperty('--dynamic_rnd', (random_number + last_degree) + "deg");
+            root.style.setProperty('--dynamic_rnd_last', last_degree + "deg");
+
+            $(id).classList.add("continues-rotation");
+
+
+            update_last_degree(random_number);
+
+            console.log(last_degree);
+        },10);
+    }
+
+    function update_last_degree(degree) {
+        last_degree = (last_degree + degree) % 360;
+    }
 
 
 
@@ -127,7 +152,6 @@
             $("guess_box_feedback").textContent = "دقت کن عزيزم. غلط حدس زدي.";
             $("guess_box_feedback").style.color = "#c8242b";
             $("guess_box_feedback").classList.add("shaking-animation");
-            // rotatea("guess_box_feedback");
         }
         else if (btn == "left"){
             $("guess_box_feedback").textContent = "آفرين عزيزم. درست حدس زدي.";
