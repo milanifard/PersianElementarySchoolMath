@@ -23,10 +23,10 @@
             <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 17vw; margin-top: 3vw; float: right">1ــ چرخنده ی روبه رو را ده بار بچرخانید. هر بار عقربه روی<br> چه رنگی می ایستد؟ جواب هایتان را در جدول زیر بنویسید.</div>
 
             <div id="circle_Q1" class="wrapper" style="float: left; margin-top: 5vw; border: 2px solid black; animation-fill-mode: forwards;" onclick="rotation(id)">
-                <div id="Q1_sector1" class="sector" style="transform: rotate(90deg); background-color: var(--red_level2); border: 1px solid black;"></div>
-                <div id="Q1_sector2" class="sector" style="transform: rotate(180deg); background-color: var(--green_level3); border: 1px solid black;"></div>
-                <div id="Q1_sector3" class="sector" style="transform: rotate(270deg); background-color: var(--red_level2); border: 1px solid black;"></div>
-                <div id="Q1_sector4" class="sector" style="transform: rotate(360deg); background-color: var(--green_level3); border: 1px solid black;"></div>
+                <div id="Q1_sector1" class="sector" style="transform: rotate(90deg); background-color: var(--red_level3); border: 1px solid black;"></div>
+                <div id="Q1_sector2" class="sector" style="transform: rotate(180deg); background-color: var(--green_level4); border: 1px solid black;"></div>
+                <div id="Q1_sector3" class="sector" style="transform: rotate(270deg); background-color: var(--red_level3); border: 1px solid black;"></div>
+                <div id="Q1_sector4" class="sector" style="transform: rotate(360deg); background-color: var(--green_level4); border: 1px solid black;"></div>
             </div>
             <div class="clock-hand" style="position:absolute; padding-left: 12.5vw; padding-top: 16.2vw; transform: rotate(-45deg)"></div>
 
@@ -46,64 +46,64 @@
                         <td class="simple-td" style="background-color: var(--orange_level1)">آزمایش</td>
                     </tr>
                     <tr>
-                        <td class="simple-td">
+                        <td id="Q1_td10" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td10" class="color-picker" style="background-color: var(--red_level2); float: left" onclick="color_picker(id)"></div>
-                                <div id="Q1_green_color_td10" class="color-picker" style="background-color: var(--green_level3); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id)"></div>
+                                <div id="Q1_red_color_td10" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td10', id)"></div>
+                                <div id="Q1_green_color_td10" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td10', id)"></div>
                             </div>
                         </td>
-                        <td class="simple-td">
+                        <td id="Q1_td9" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td9" class="color-picker" style="background-color: var(--red_level2); float: left" onclick="color_picker(id)"></div>
-                                <div id="Q1_green_color_td9" class="color-picker" style="background-color: var(--green_level3); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id)"></div>
+                                <div id="Q1_red_color_td9" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td9', id)"></div>
+                                <div id="Q1_green_color_td9" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td9', id)"></div>
                             </div>
                         </td>
-                        <td class="simple-td">
+                        <td id="Q1_td8" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td8" class="color-picker" style="background-color: var(--red_level2); float: left" onclick="color_picker(id)"></div>
-                                <div id="Q1_green_color_td8" class="color-picker" style="background-color: var(--green_level3); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id)"></div>
+                                <div id="Q1_red_color_td8" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td8', id)"></div>
+                                <div id="Q1_green_color_td8" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td8', id)"></div>
                             </div>
                         </td>
-                        <td class="simple-td">
+                        <td id="Q1_td7" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td7" class="color-picker" style="background-color: var(--red_level2); float: left" onclick="color_picker(id)"></div>
-                                <div id="Q1_green_color_td7" class="color-picker" style="background-color: var(--green_level3); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id)"></div>
+                                <div id="Q1_red_color_td7" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td7', id)"></div>
+                                <div id="Q1_green_color_td7" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td7', id)"></div>
                             </div>
                         </td>
-                        <td class="simple-td">
+                        <td id="Q1_td6" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td6" class="color-picker" style="background-color: var(--red_level2); float: left" onclick="color_picker(id)"></div>
-                                <div id="Q1_green_color_td6" class="color-picker" style="background-color: var(--green_level3); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id)"></div>
+                                <div id="Q1_red_color_td6" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td6', id)"></div>
+                                <div id="Q1_green_color_td6" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td6', id)"></div>
                             </div>
                         </td>
-                        <td class="simple-td">
+                        <td id="Q1_td5" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td5" class="color-picker" style="background-color: var(--red_level2); float: left" onclick="color_picker(id)"></div>
-                                <div id="Q1_green_color_td5" class="color-picker" style="background-color: var(--green_level3); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id)"></div>
+                                <div id="Q1_red_color_td5" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td5', id)"></div>
+                                <div id="Q1_green_color_td5" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td5', id)"></div>
                             </div>
                         </td>
-                        <td class="simple-td">
+                        <td id="Q1_td4" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td4" class="color-picker" style="background-color: var(--red_level2); float: left" onclick="color_picker(id)"></div>
-                                <div id="Q1_green_color_td4" class="color-picker" style="background-color: var(--green_level3); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id)"></div>
+                                <div id="Q1_red_color_td4" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td4', id)"></div>
+                                <div id="Q1_green_color_td4" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td4', id)"></div>
                             </div>
                         </td>
-                        <td class="simple-td">
+                        <td id="Q1_td3" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td3" class="color-picker" style="background-color: var(--red_level2); float: left" onclick="color_picker(id)"></div>
-                                <div id="Q1_green_color_td3" class="color-picker" style="background-color: var(--green_level3); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id)"></div>
+                                <div id="Q1_red_color_td3" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td3', id)"></div>
+                                <div id="Q1_green_color_td3" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td3', id)"></div>
                             </div>
                         </td>
-                        <td class="simple-td">
+                        <td id="Q1_td2" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td2" class="color-picker" style="background-color: var(--red_level2); float: left" onclick="color_picker(id)"></div>
-                                <div id="Q1_green_color_td2" class="color-picker" style="background-color: var(--green_level3); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id)"></div>
+                                <div id="Q1_red_color_td2" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td2', id)"></div>
+                                <div id="Q1_green_color_td2" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td2', id)"></div>
                             </div>
                         </td>
-                        <td class="simple-td">
+                        <td id="Q1_td1" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td1" class="color-picker" style="background-color: var(--red_level2); float: left" onclick="color_picker(id)"></div>
-                                <div id="Q1_green_color_td1" class="color-picker" style="background-color: var(--green_level3); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id)"></div>
+                                <div id="Q1_red_color_td1" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td1', id)"></div>
+                                <div id="Q1_green_color_td1" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td1', id)"></div>
                             </div>
                         </td>
                         <td class="simple-td" style="background-color: var(--orange_level1)">رنگ</td>
@@ -117,21 +117,21 @@
 
             <div style="float: left">
                 <div id="circle_Q1_ans" class="wrapper" style="float: left;">
-                    <div id="Q1_ans_sector1" class="sector" style="transform: rotate(90deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector2" class="sector" style="transform: rotate(126deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector3" class="sector" style="transform: rotate(162deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector4" class="sector" style="transform: rotate(198deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector5" class="sector" style="transform: rotate(234deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector6" class="sector" style="transform: rotate(270deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector7" class="sector" style="transform: rotate(304deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector8" class="sector" style="transform: rotate(342deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector9" class="sector" style="transform: rotate(378deg) skew(50deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector10" class="sector" style="transform: rotate(414deg) skew(53deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector1" class="sector" style="transform: rotate(90deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector2" class="sector" style="transform: rotate(126deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector3" class="sector" style="transform: rotate(162deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector4" class="sector" style="transform: rotate(198deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector5" class="sector" style="transform: rotate(234deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector6" class="sector" style="transform: rotate(270deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector7" class="sector" style="transform: rotate(304deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector8" class="sector" style="transform: rotate(342deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector9" class="sector" style="transform: rotate(378deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_ans_sector10" class="sector" style="transform: rotate(414deg) skew(53deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
                 </div>
 
                 <div style="float: left; margin-left: 3vw; margin-top: 5vw">
-                    <div id="Q1_red_color" class="color-picker" style="background-color: var(--red_level2);" onclick="color_picker(id)"></div>
-                    <div id="Q1_green_color" class="color-picker" style="background-color: var(--green_level3);" onclick="color_picker(id)"></div>
+                    <div id="Q1_red_color" class="color-picker" style="background-color: var(--red_level3);" onclick="color_picker(id)"></div>
+                    <div id="Q1_green_color" class="color-picker" style="background-color: var(--green_level4);" onclick="color_picker(id)"></div>
                 </div>
             </div>
 
@@ -172,6 +172,7 @@
 <script>
     function $(id){ return document.getElementById(id);}
 
+    let root = document.documentElement;
     let last_degree = 0;
 
     function rotation(id) {
@@ -182,7 +183,7 @@
             return rotation(id);
         }
         setTimeout(function () {
-            let root = document.documentElement;
+
             let random_number = Math.floor(Math.random() * 360 + 720);
 
             console.log(random_number);
@@ -228,10 +229,10 @@
 
         let [colors, Q_feedback] = (function () {
             switch (question_id) {
-                case "P124-Q1":
+                case "Q1":
                     return [Q1_color_picker_items, $("Q1_feedback")];
 
-                case "P124-Q2":
+                case "Q2":
                     return [Q2_color_picker_items, $("Q2_feedback")];
             }
         })();
@@ -264,27 +265,28 @@
         check_circle_sectors(question_id);
     }
 
-    let Q1_ans = {"red": 0, "green": 0}; //TODO: count by selecting the colors of table
+    let Q1_ans = {"red": 0, "green": 0}; // Sets in the coloring_table func
     let Q2_ans = {"blue": 5, "red": 5};
-    let Q1_sectors_id = ["Q1_sector1", "Q1_sector2", "Q1_sector3", "Q1_sector4", "Q1_sector5", "Q1_sector6", "Q1_sector7", "Q1_sector8", "Q1_sector9", "Q1_sector10"];
+    let Q1_sectors_id = ["Q1_ans_sector1", "Q1_ans_sector2", "Q1_ans_sector3", "Q1_ans_sector4", "Q1_ans_sector5", "Q1_ans_sector6", "Q1_ans_sector7", "Q1_ans_sector8", "Q1_ans_sector9", "Q1_ans_sector10"];
     let Q2_sectors_id = ["Q2_sector1", "Q2_sector2", "Q2_sector3", "Q2_sector4", "Q2_sector5", "Q2_sector6", "Q2_sector7", "Q2_sector8", "Q2_sector9", "Q2_sector10"];
 
     function check_circle_sectors(question_id) {
 
-        let Q1_P124_check_count = {"red": 0, "green": 0};
-        let Q2_P124_check_count = {"blue": 0, "red": 0};
+        let Q1_check_count = {"red": 0, "green": 0};
+        let Q2_check_count = {"blue": 0, "red": 0};
 
         let [ans, sectors_id, check_count, Q_feedback, Q_img] = (function () {
             switch (question_id) {
-                case "P124-Q1":
-                    return [Q1_ans, Q1_sectors_id, Q1_P124_check_count, $("Q1_feedback"), $("Q1_pencil")];
+                case "Q1":
+                    return [Q1_ans, Q1_sectors_id, Q1_check_count, $("Q1_feedback"), $("Q1_pencil")];
 
-                case "P124-Q2":
-                    return [Q2_ans, Q2_sectors_id, Q2_P124_check_count, $("Q2_feedback"), $("Q2_book_img")];//TODO: add id of color penciles
+                case "Q2":
+                    return [Q2_ans, Q2_sectors_id, Q2_check_count, $("Q2_feedback"), $("Q2_book_img")];//TODO: add id of color pencils
             }
         })();
 
         for(const sector of sectors_id) {
+            console.log(sector.id);
             let color = $(sector).style.backgroundColor;
 
             switch (color) {
@@ -293,20 +295,22 @@
                     check_count.blue += 1;
                     break;
 
-                case "var(--red_level2)":
+                case "var(--red_level3)":
                     check_count.red += 1;
                     break;
 
-                case "var(--green_level3)":
+                case "var(--green_level4)":
                     check_count.green += 1;
                     break;
             }
         }
+        console.log(ans);
+        console.log(check_count);
 
         if (JSON.stringify(ans) === JSON.stringify(check_count)){
 
             Q_feedback.textContent = "آفرین عزیزم. درست حل کردی.";
-            Q_feedback.style.color= "#44b869";
+            Q_feedback.style.color= "#44b869";//TODO: getComputedStyle(document.documentElement).getPropertyValue('--red_level3');
             Q_img.classList.add("shaking-animation");
 
         }
@@ -315,12 +319,28 @@
 
             Q_feedback.textContent = "بیشتر دقت کن عزیزم. غلط حل کردی.";
             Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= "#c8242b";
+            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level3');;
         }
     }
 
 
+    function coloring_table(parent, id) {
 
+        $(parent).style.backgroundColor = $(id).style.backgroundColor;
+
+        switch ($(id).style.backgroundColor) {
+
+            case "var(--red_level3)":
+                Q1_ans.red += 1;
+                break;
+
+            case "var(--green_level4)":
+                Q1_ans.green += 1;
+                break;
+        }
+
+        $(parent).innerText = '';
+    }
 
 
 
