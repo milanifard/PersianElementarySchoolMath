@@ -62,7 +62,7 @@
 .background-style{
 
     width: 100vw;
-    height: 54.3vw;
+    height: 53vw;
 
     background-image: repeating-linear-gradient(0deg, var(--yellow_level2_border), var(--yellow_level2_border) 1vw, var(--yellow_level3_border) 0vw, var(--yellow_level3_border) 2.5vw);
     background-position: bottom;
@@ -178,7 +178,7 @@
 
 .simple-table{
     width: 65vw;
-    margin: 0 5vw 0 5vw;
+    margin: 0 3vw 0 3vw;
     border-collapse: collapse;
     font-size: 1.5vw;
     font-family: Koodak;
@@ -190,6 +190,15 @@
     font-size: 1.5vw;
     font-family: Koodak;
     text-align: center;
+}
+
+.simple-table-border{
+    float: left;
+    border: 1vw solid var(--orange_level2);
+    border-radius: 2vw;
+    padding: 1vw;
+    width: 30vw;
+    margin-left: 5vw;
 }
 
 /* circle sectors detection for Q1 */
@@ -230,7 +239,7 @@
 }
 
 .shaking-animation {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 1.5s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -293,7 +302,7 @@
     padding: 0 2vw 0 3vw;
     position: absolute;
     left: -1.5vw;
-    top: 1vw;
+    top: 3vw;
     z-index: 1;
 }
 
