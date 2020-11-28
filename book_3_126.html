@@ -119,7 +119,7 @@
                 <div id="Q3_feedback" class="text-config" style="clear: both; float: bottom; margin-left: 10vw; padding-top: 2vw; padding-bottom: 2vw"> </div>
             </div>
 
-            <div id="Q3_chart" style="float: right; margin: 0 0 5vw 5vw">
+            <div id="Q3_chart" style="float: right; margin: 0 0 3vw 5vw">
                 <table class="bar-chart">
                     <tr>
                         <td class="bar-chart-td">200</td>
@@ -167,40 +167,148 @@
                         <td class="bar-chart-td" style="background-color: var(--red_level2);"></td>
                         <td class="bar-chart-td"></td>
                     </tr>
+
+                    <tr>
+                        <td class="bar-chart-td" ></td>
+                        <td class="bar-chart-td" colspan="2">پسر</td>
+                        <td class="bar-chart-td" colspan="2" style="padding: 0">دختر</td>
+                        <td class="bar-chart-td"></td>
+                    </tr>
                 </table>
             </div>
         </div>
 
-
-
-
-
-
-
-
-
         <div class="guess-box-level1" style="clear:both;">
-            <div class="guess-box-text-right">حدس بزن</div>
-            <div class="text-config" style="padding-top: 5vw; padding-right: 2vw">دو استوانه ی کاغذی درست کنید. مثل شکل زیر، استوانه ها را از محل های مشخص شده برش بزنید. قسمت های بریده شده را روی کاغذ بگذارید و دور آنها خط بکشید. در کدام برش، شکل به دست آمده دایره است؟</div>
-            <div class="guess-box-level2">
-                <img src="assets/3rd/images/nahbos/left_scissor_124.png" style="width: 19vw;" alt="left_scissor">
-                <img src="assets/3rd/images/nahbos/right_scissor_124.png" style="width: 19vw;" alt="right_scissor">
+            <div class="guess-box-text-right">کامل کن</div>
+            <div class="text-config" style="padding-top: 5vw; padding-right: 2vw">با توجه به نمودار به سؤال ها پاسخ دهید.</div>
+
+            <div class="text-config" style="padding-right: 2vw; float: right;">ــ تعداد پسرها چند نفر بیشتر از دخترهاست؟</div>
+            <input id="box_part1" type="number" style="width: 5vw; font-size: 1.8vw; float: right; margin: 0 3vw 0 3vw" min="0" max="10">
+
+            <div class="text-config" style="padding-right: 2vw; float: right">ــ درمجموع، علی چند کتاب دارد؟</div>
+            <input id="box_part2" type="number" style="width: 5vw; font-size: 1.8vw; float: right; margin: 0 3vw 3vw 3vw" min="0" max="10">
+
+
+            <div id="box_chart1" style="float: right; margin: 0 10vw 5vw 5vw">
+                <table class="bar-chart">
+                    <tr>
+                        <td class="bar-chart-td">200</td>
+                        <td class="bar-chart-td" style="border-left: 0.5vw solid var(--purple);"></td>
+                        <td class="bar-chart-td" style=" padding: 0">
+                            <div style="height: 2vw">
+
+                            </div>
+                            <div style="height: 2.5vw; background-color: var(--blue_level2);">
+
+                            </div>
+                        </td>
+                        <td class="bar-chart-td"></td>
+                        <td class="bar-chart-td"></td>
+                        <td class="bar-chart-td"></td>
+                    </tr>
+                    <tr>
+                        <td class="bar-chart-td">150</td>
+                        <td class="bar-chart-td" style="border-left: 0.5vw solid var(--purple);"></td>
+                        <td class="bar-chart-td" style="background-color: var(--blue_level2);"></td>
+                        <td class="bar-chart-td"></td>
+                        <td class="bar-chart-td"></td>
+                        <td class="bar-chart-td"></td>
+                    </tr>
+                    <tr>
+                        <td class="bar-chart-td">100</td>
+                        <td class="bar-chart-td" style="border-left: 0.5vw solid var(--purple);"></td>
+                        <td class="bar-chart-td" style="background-color: var(--blue_level2);"></td>
+                        <td class="bar-chart-td"></td>
+                        <td class="bar-chart-td" style=" padding: 0">
+                            <div style="height: 2vw">
+
+                            </div>
+                            <div style="height: 2.5vw; background-color: var(--red_level2);">
+
+                            </div>
+                        </td>
+                        <td class="bar-chart-td"></td>
+                    </tr>
+                    <tr style="border-bottom: 0.5vw solid var(--purple);">
+                        <td class="bar-chart-td" style="border-bottom:hidden; padding-bottom: 2vw">50</td>
+                        <td class="bar-chart-td" style="border-left: 0.5vw solid var(--purple);"></td>
+                        <td class="bar-chart-td" style="background-color: var(--blue_level2);"></td>
+                        <td class="bar-chart-td"></td>
+                        <td class="bar-chart-td" style="background-color: var(--red_level2);"></td>
+                        <td class="bar-chart-td"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="bar-chart-td" ></td>
+                        <td class="bar-chart-td" colspan="2">پسر</td>
+                        <td class="bar-chart-td" colspan="2" style="padding: 0">دختر</td>
+                        <td class="bar-chart-td"></td>
+                    </tr>
+                </table>
             </div>
 
-            <div style="float: right; margin-top: -18vw; margin-right: 10vw">
-                <div style="height: 4vw;">
-                    <label class="text-config"><input type="radio" name="guess" value="right" id="radio_right" style="width: 2vw; height: 2vw;" onclick="guess_checker(id)">شکل راست</label>
-                </div>
-                <div style="height: 4vw;">
-                    <label class="text-config"><input type="radio" name="guess" value="left" id="radio_left" style="width: 2vw; height: 2vw;" onclick="guess_checker(id)">شکل چپ</label>
-                </div>
-            </div>
+            <div id="box_chart2" style="float: right; margin: 0 5vw 5vw 5vw">
+                <table class="bar-chart">
+                    <tr>
+                        <td class="bar-chart-td">200</td>
+                        <td class="bar-chart-td" style="border-left: 0.5vw solid var(--purple);"></td>
+                        <td class="bar-chart-td" style=" padding: 0">
+                            <div style="height: 2vw">
 
-            <div id="guess_box_feedback" class="text-config" style="margin-right: 5vw; float: right; margin-top: -8vw"></div>
+                            </div>
+                            <div style="height: 2.5vw; background-color: var(--blue_level2);">
+
+                            </div>
+                        </td>
+                        <td class="bar-chart-td"></td>
+                        <td class="bar-chart-td"></td>
+                        <td class="bar-chart-td"></td>
+                    </tr>
+                    <tr>
+                        <td class="bar-chart-td">150</td>
+                        <td class="bar-chart-td" style="border-left: 0.5vw solid var(--purple);"></td>
+                        <td class="bar-chart-td" style="background-color: var(--blue_level2);"></td>
+                        <td class="bar-chart-td"></td>
+                        <td class="bar-chart-td"></td>
+                        <td class="bar-chart-td"></td>
+                    </tr>
+                    <tr>
+                        <td class="bar-chart-td">100</td>
+                        <td class="bar-chart-td" style="border-left: 0.5vw solid var(--purple);"></td>
+                        <td class="bar-chart-td" style="background-color: var(--blue_level2);"></td>
+                        <td class="bar-chart-td"></td>
+                        <td class="bar-chart-td" style=" padding: 0">
+                            <div style="height: 2vw">
+
+                            </div>
+                            <div style="height: 2.5vw; background-color: var(--red_level2);">
+
+                            </div>
+                        </td>
+                        <td class="bar-chart-td"></td>
+                    </tr>
+                    <tr style="border-bottom: 0.5vw solid var(--purple);">
+                        <td class="bar-chart-td" style="border-bottom:hidden; padding-bottom: 2vw">50</td>
+                        <td class="bar-chart-td" style="border-left: 0.5vw solid var(--purple);"></td>
+                        <td class="bar-chart-td" style="background-color: var(--blue_level2);"></td>
+                        <td class="bar-chart-td"></td>
+                        <td class="bar-chart-td" style="background-color: var(--red_level2);"></td>
+                        <td class="bar-chart-td"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="bar-chart-td" ></td>
+                        <td class="bar-chart-td" colspan="2">پسر</td>
+                        <td class="bar-chart-td" colspan="2" style="padding: 0">دختر</td>
+                        <td class="bar-chart-td"></td>
+                    </tr>
+                </table>
+            </div>
+            <div style="clear: both; margin-bottom: -5vw"></div>
         </div>
 
 
-        <div class="page-number">124</div>
+        <div class="page-number">126</div>
     </div>
 </div>
 
