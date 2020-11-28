@@ -1,0 +1,66 @@
+:root {
+
+    --red_level1: #f0595b;
+    --red_level2: #c8242b;
+
+    --purple: #b09ac9;
+    --pink: #f287b6;
+
+    --purple-dark:#957dac;
+    --purple-light:#a48cb6;
+    --purple--title :#c2abc7;
+    --red--title :#ab3d7b;
+
+}
+
+*{
+    margin : 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: repeating-linear-gradient(0deg,var(--purple-dark), var(--purple-dark) 1vw, var(--purple-light) 0vw , var(--purple-light) 2.5vw);
+    background-size: 100% 40%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.border{
+    width: 90%;
+    padding: 50% 0;
+    background: white;
+    border: 0.8vw double var(--purple-dark) ;
+    border-radius: 0 4vw 4vw 0 ;
+    position: relative;
+    margin-right:10vw; 
+    margin-top: 8vh;
+    margin-bottom: 14vw;
+    border-left: none;
+} 
+
+/* .Rectangle_title{
+    background-color: var(--red--title);
+    right: 35vw;
+    left: 35vw;
+    
+    position: absolute; 
+    top: -2.6vw;
+
+}  */
+
+.title{
+    background-color: var(--purple--title);
+    border-radius: 2vw;
+  
+
+    
+    padding: 0 2vw;
+    position: absolute; 
+    right: 35vw;
+    left: 35vw;
+    top: -2.8vw;
+    text-align: center;
+    color: black;
+}
