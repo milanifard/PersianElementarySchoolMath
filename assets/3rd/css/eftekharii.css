@@ -5,6 +5,9 @@
     --title_color : #b9ce4d;
     --title-blue : #3e549a;
     --topic-title-color : #84b954;
+    --question_number_color:#3b9e3a;
+    --grid_q1_color:#7fbecc;
+    --grid_orange_color: #f8b044;
 
 }
 
@@ -13,42 +16,53 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    font-family:myfont ;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 @font-face {
+    font-family: Zar;
     src: url("/assets/fonts/Zar.woff") format("woff");
-    font-family: "myfont";
 }
 
 body{
+    font-family:"B Zar";
+    font-size: 2vw;
+    text-align: justify-all;
     background-image: repeating-linear-gradient(0deg,var(--footer_color1), var(--footer_color1) 1vw, var(--footer_color2) 0vw , var(--footer_color2) 2.5vw);
     background-size: 100% 30%;
     background-position: bottom;
     background-repeat: no-repeat;
+    overflow-x:hidden ;
+}
+
+
+.center{
+    text-align: center;
 }
 
 .clearfix{
     clear: both;
 }
 
+
 .main {
     width: 100%;
-    height: 100%;
     margin: 0 auto;
-    float: right;
 }
 
 .content-box{
     width: 90%;
-
     background: white;
     margin: 3vw auto;
+    padding:0vw 3vw;
     border: 1vw double;
     border-color:var(--main_color);
     border-radius: 2vw;
     position: relative;
 }
+
+
 
 
 .page-title{
@@ -59,17 +73,14 @@ body{
     background-color: var(--title_color);
     border-style: double;
     text-align: center;
-    font-family: myfont;
     font-size: 2vw;
     color: black;
     text-align: center;
     top: -2.75vw;
     position: absolute;
-    margin-right: 38%;
+    margin-right: 34%;
     border-radius: 2vw;
-
 }
-
 
 .page-topic{
     margin-top: 1vw;
@@ -82,7 +93,6 @@ body{
     width: 10%;
     height: 13vw;
     float: right;
-
 }
 
 .topic-title{
@@ -91,13 +101,158 @@ body{
     height: 3vw;
     background-color: var(--topic-title-color);
     text-align: center;
-    font-family: myfont;
     font-size: 2vw;
     color: white;
     border-radius: 0.75vw 0 0 0.75vw;
     margin-top: 0.5vw;
+}
+ .question_box{
+     width: 80%;
+     padding: 0vw 0;
+     margin: 5vw auto;
+     position: relative;
+}
+
+
+ .question_box p{
+     top: 3vw;
+     float: right;
+     position: absolute;
+     right: 5vw;
+ }
+
+ .question_number{
+     font-family: "B Zar";
+     font-size: 2vw;
+     color: var(--question_number_color);
+}
+
+.grid-container {
+     width: 100%;
+     display: grid;
+     grid-template-columns: 4vw 4vw 4vw 4vw ;
+     grid-column-gap: 0.7vw;
+     padding: 1vw;
+     float: right;
+     margin: 0 37%;
+ }
+
+.container {
+    width: 100%;
+    float: right;
 
 }
+
+.half-page {
+    width: 50%;
+    float: right;
+    margin: 0 -4vw;
+    margin-left: 4vw;
+}
+
+
+.five_col{
+    grid-template-columns: 4vw 4vw 4vw 4vw 4vw ;
+
+}
+
+.six_col{
+    grid-template-columns: 4vw 4vw 4vw 4vw 4vw 4vw ;
+
+}
+
+.grid-item {
+    background-color: var(--grid_q1_color);
+    padding: 2vw;
+    margin:0.1vw;
+}
+
+
+
+.grid-item-red {
+    border: solid 0.3vw;
+    border-color: red;
+}
+.grid-item-yellow {
+    border: solid 0.3vw;
+    border-color: yellow;
+}
+.grid-item-blue {
+    border: solid 0.3vw;
+    border-color: blue;
+}
+
+.grid-item-green {
+    border: solid 0.3vw;
+    border-color: green;
+}
+.grid-item-purple {
+    border: solid 0.3vw;
+    border-color: purple;
+}
+.grid-item-black {
+    border: solid 0.3vw;
+    border-color: black;
+}
+
+.grid-item-white{
+    background-color: white;
+
+}
+
+.grid-item-orange {
+    background-color: var(--grid_orange_color);
+}
+
+.grid-item:hover{
+    transform: scale(1.1);
+}
+.small-grid-item:hover{
+    transform: scale(1.1);
+}
+
+.grid_number{
+    text-align: center;
+}
+
+.input-row{
+     width: 100%;
+     padding: 0 1vw;
+     margin: 2vw auto;
+     text-align: center;
+}
+.input-small-row{
+    margin-right: 5vw;
+    text-align: center;
+
+}
+
+.input-style{
+    width: 7vw;
+    border:var(--main_color) solid 0.2vw;
+    margin: 2vw 0;
+    border-radius: 1vw;
+    text-align: center;
+}
+.input-small-style{
+    width: 4vw;
+    height: 2vw;
+}
+
+.submit{
+     width:10vw;
+     border-radius: 1vw;
+     background: var(--main_color);
+     text-align: center;
+     color: white;
+     text-decoration: none;
+     margin:0 44% 2vw;
+ }
+
+.submit-half-page{
+    margin:0 50% 2vw;
+}
+
 .page-number{
     width: 8vw;
     height: 3vw;
@@ -106,35 +261,55 @@ body{
     background-color: var(--main_color);
     border-style: double;
     text-align: center;
-    font-family: myfont;
     font-size: 2vw;
     color: white;
     background-position: center;
-    bottom: -1.75vw;
-    right:43.5%;
+    bottom: -1.5vw;
+    right:44%;
     border-radius: 0.75vw;
+}
 
+.page-navigator{
+    width: 100%;
+    margin: 7vw auto;
+    padding: 5vw 0vw 0vw;
 }
 
 .previous-page{
     display: block;
     float: right;
+    position: absolute;
+
+}
+.previous-page a{
     text-decoration: none;
     color: var(--main_color);
-    font-size: 12vw;
+    font-size: 3vw;
+}
+.previous-page a:hover{
+    text-decoration: none;
+    color: olive;
+    font-size: 3vw;
 }
 
 .next-page{
     display: block;
     float: left;
+
+
+}
+.next-page a{
     text-decoration: none;
     color: var(--main_color);
-    font-size: 12vw;
+    font-size: 3vw;
 }
-.test{
-    width: 100%;
-    height: 1500px;
+.next-page a:hover{
+    text-decoration: none;
+    color: olive;
+    font-size: 3vw;
 }
+
+
 
 
 
