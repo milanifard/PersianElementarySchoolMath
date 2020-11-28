@@ -1,7 +1,7 @@
 $color-1 : #F13F52;
 $color-2 : #DC302F;
 $theme-colors: ("primary": $color-1,
-    "light": #f0cacf//   "secondary": $color-2
+    "light": #f0cacf //   "secondary": $color-2
 );
 
 @import "./parsasal/_fonts.scss";
@@ -77,7 +77,7 @@ body {
         @extend .bg-light;
         color: #214252;
         padding: 0.3em;
-        font-size: calc(0.9em + 0.5vw);
+        font-size: calc(0.9em + 0.4vw);
 
     }
 
@@ -85,11 +85,10 @@ body {
         color: white;
         font-weight: bold;
         font-size: calc(1.4em + 0.6vw);
+        margin: 0 auto;
+
     }
 
-    h3 {
-        margin: 0 auto;
-    }
 
 }
 
@@ -116,11 +115,6 @@ body {
     @extend .justify-content-center;
 }
 
-// #page-body{
-//     border-radius: 20px;
-//     border-color: #DC302F;
-//     border-style: solid;
-// }
 
 ol {
     /* Remove default list numbering style */
@@ -139,7 +133,7 @@ ol {
 }
 
 .masale {
-    padding-inline-start: 1.5em;
+    padding-inline-start: calc(0.8em + 2vw);
     padding-inline-end: 0.5em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -290,4 +284,133 @@ $paper-line: #94ACD4;
 
 .go-top .glyphicon {
     top: 5px;
+}
+
+@mixin breakpoint ($value) {
+    @if $value=='phone' {
+        @media only screen and (min-width: 120px) and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $value=='tablet' {
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if $value=='touch' {
+        @media only screen and (min-width: 120px) and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if $value=='desktop' {
+        @media only screen and (min-width: 1025px) {
+            @content;
+        }
+    }
+
+    @else {
+        @media only screen and (max-width: $value) {
+            @content;
+        }
+    }
+}
+
+// Colors
+$white: #fff;
+$black: #000;
+$grey: #595959;
+$grey-dark: #2b2b2b;
+$grey-light: #eee;
+$green: #86c023;
+$blue: #017ac7;
+
+// Transition
+$duration: 400ms;
+$easing: ease;
+
+
+//----------  pagination
+//------------------------------------------------------------------------------
+.pagination-wrapper {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.pagination {
+    display: inline-block;
+    height: 70px;
+    margin-top: 70px;
+    padding: 0 25px;
+    border-radius: 35px;
+    background-color: $grey-light;
+
+    @include breakpoint(1199px) {
+        height: 50px;
+        margin-top: 50px;
+        padding: 0 10px;
+        border-radius: 25px;
+    }
+}
+
+.page-numbers {
+    display: block;
+    padding: 0 16px;
+    float: left;
+    transition: $duration $easing;
+    color: $grey;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 70px;
+
+    &:hover,
+    &.current {
+        background-color: $color-1;
+        color: $white;
+    }
+
+    &.prev:hover,
+    &.next:hover {
+        background-color: transparent;
+        color: $green;
+    }
+
+    @include breakpoint(1199px) {
+        padding: 0 15px;
+        font-size: 16px;
+        line-height: 50px;
+    }
+
+    @include breakpoint(touch) {
+        padding: 0 14px;
+        display: none;
+
+        &:nth-of-type(2) {
+            position: relative;
+            padding-right: 50px;
+
+            &::after {
+                content: '...';
+                position: absolute;
+                font-size: 25px;
+                top: 0;
+                left: 45px;
+            }
+        }
+
+        &:nth-child(-n+3),
+        &:nth-last-child(-n+3) {
+            display: block;
+        }
+
+        &:nth-last-child(-n+4) {
+            padding-right: 14px;
+
+            &::after {
+                content: none;
+            }
+        }
+    }
 }
