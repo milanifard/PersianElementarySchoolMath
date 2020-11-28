@@ -8,10 +8,12 @@
     --red_level2: #c8242b;
     --red_level3: #db3f32;
 
+    --blue_level0: #d4effb;
     --blue_level1: #6bcff6;
     --blue_level2: #3853a3;
     --blue_level3: #5cb6cd;
 
+    --green_level0: #d2e287;
     --green_level1: #bbd75e;
     --green_level2: #87c765;
     --green_level3: #44b869;
@@ -23,6 +25,7 @@
 
     --purple: #b09ac9;
 
+    --pink_level0: #fbdfeb;
     --pink: #f287b6;
 
     --dynamic_rnd: 0;
@@ -222,7 +225,6 @@
     font-size: 2vw;
     font-family: Koodak;
     text-align: center;
-    top: 0;
 }
 
 /* circle sectors detection for Q1 */
@@ -373,4 +375,46 @@
 @keyframes rotation {
     from {transform: rotate(var(--dynamic_rnd_last));}
     to {transform: rotate(var(--dynamic_rnd));}
+}
+
+.cylinder {
+    background: red;
+    width: 4vw;
+    height: 15vw;
+    border-radius: 1.3vw;
+}
+
+.cylinder-above {
+    content:"";
+    position: absolute;
+    background: white;
+    border: 0 solid transparent;
+    border-radius: 100%;
+    z-index: 1;
+    width: 4vw;
+    height: 2vw;
+}
+
+.cone {
+
+    width: 0;
+    height: 0;
+    border-bottom: 15vw solid #F7B137;
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+
+    content: "";
+    position: relative;
+    display: block;
+}
+
+.cone-circle {
+    width:4vw;
+    height:3vw;
+    background:#F7B137;
+    z-index: 1;
+    border-radius:50%;
+    content: '';
+    position: absolute;
+    display: block;
 }
