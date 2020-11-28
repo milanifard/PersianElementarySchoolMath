@@ -1,6 +1,7 @@
 :root {
     --light-green : #bbd75e;
     --middle-green : #8bc669;
+    --dark-green : #4fac77;
     --purple : #b01f6f;
 }
 
@@ -23,6 +24,16 @@ p, h2, span{
     font-family: Koodak;
 }
 
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
 .main_title {
     background-color: var(--light-green);
     width: 15%;
@@ -33,17 +44,46 @@ p, h2, span{
     margin: auto;
     border-radius: 30px;
     font-size:1vw;
+    margin-top: -5vw;
+    position: relative;
+    z-index: 5;
 }
 
 .main {
-    display: flex;
-    flex-direction: row;
     justify-content: flex-end;
 }
 
+.line {
+    justify-content: flex-end;
+}
+
+.line_col {
+    width: 10px;
+    height: 100vw;
+    margin-right: 8vw;
+}
+.line1 {
+    border-right: 3px solid var(--dark-green);
+}
+.line2 {
+    border-right: 1px solid var(--dark-green);
+    margin-right: -7px;
+}
+
+.line_row {
+    width: 93%;
+    height: 10px;
+    margin-top: 5vw;
+}
+.line3 {
+    border-top: 3px solid var(--dark-green);
+}
+.line4 {
+    border-top: 1px solid var(--dark-green);
+    margin-top: -7px;
+}
+
 .activity {
-    display: flex;
-    flex-direction: row;
     margin-right: 5vw;
 }
 .activity > div > img{
@@ -71,8 +111,6 @@ p, h2, span{
 }
 
 .clock_col {
-    display: flex;
-    flex-direction: column;
     margin-top: 1vw;
     margin-right: 6vw;
 }
@@ -83,8 +121,6 @@ p, h2, span{
 }
 
 .clock_row{
-    display: flex;
-    flex-direction: row;
     justify-content: flex-end;
 }
 .clock_row > div > img {
@@ -105,7 +141,6 @@ table {
 .ok{
     font-size: 1.1vw;
 }
-
 
 /* btn */
 .btn_div{
