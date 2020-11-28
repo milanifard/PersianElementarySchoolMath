@@ -154,7 +154,8 @@
 
 </body>
 
-<script>
+<script language="JavaScript">
+
     function $(id){ return document.getElementById(id);}
 
     /* --------  The Q1-Q2 page 124  ----------------------------- */
@@ -212,17 +213,17 @@
                     pre_color = color_picker_item.style.backgroundColor;
                     break;
                 default:
-                    Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کنید.";
+                    Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کن.";
                     Q_feedback.classList.add("shaking-animation");
-                    Q_feedback.style.color= "#c8242b";
+                    Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
                     break;
             }
         }
 
         else {
-            Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کنید.";
+            Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کن.";
             Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= "#c8242b";
+            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
         }
         check_circle_sectors(question_id);
     }
@@ -272,7 +273,7 @@
         if (JSON.stringify(ans) === JSON.stringify(check_count)){
 
             Q_feedback.textContent = "آفرین عزیزم. درست حل کردی.";
-            Q_feedback.style.color= "#44b869";
+            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
             Q_img.classList.add("shaking-animation");
 
         }
@@ -281,7 +282,7 @@
 
             Q_feedback.textContent = "بیشتر دقت کن عزیزم. غلط حل کردی.";
             Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= "#c8242b";
+            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
         }
     }
 
@@ -289,12 +290,12 @@
         let btn = $(id).value;
         if (btn == "right"){
             $("guess_box_feedback").textContent = "دقت کن عزيزم. غلط حدس زدي.";
-            $("guess_box_feedback").style.color = "#c8242b";
+            $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
             $("guess_box_feedback").classList.add("shaking-animation");
         }
         else if (btn == "left"){
             $("guess_box_feedback").textContent = "آفرين عزيزم. درست حدس زدي.";
-            $("guess_box_feedback").style.color = "#44b869";
+            $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
             $("guess_box_feedback").classList.add("shaking-animation");
         }
     }

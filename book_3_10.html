@@ -1,158 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title><!DOCTYPE html>
-        <html lang="fa" xmlns:border-color="http://www.w3.org/1999/xhtml">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="./assets/3rd/css/page_border.css">
-            <link rel="stylesheet" href="./assets/3rd/css/eftekharii.css">
-            <title>ریاضی سوم دبستان</title>
-
-        </head>
-<body class="page-bg" background="linear-gradient(to bottom, white 67%, var(--base_color) 33%) no-repeat">
-
-<div class="page-border">
-
-    <div class="topic-style">
-        <img src="assets/3rd/images/classwork.png" width="100vw" , height="100vw ">
-        <div class="topic-title" style="border-color: var(--base_color) ; background-color: var(--base_color)">
-            کار در کلاس
-        </div>
-    </div>
-    <br>
-    <br>
-    <div>زهرا کارهای خود را در روز جمعه (یک شبانه روز) به صورت زیر نشان داده است.</div>
-    <div>عددهای مناسب برای ساعت های بعدازظهر را بنویسید و شکل را کامل کنید.</div>
-
-    <br>
-
-    <div id="center_pic_style">
-        <div align="center">
-            <img src="assets/3rd/images/pm.png" style="width: 25vw; height: 25vw; ">
-            <br>
-            بعد از ظهر
-        </div>
-        <div align="center">
-            <img src="assets/3rd/images/am.png" style="width: 25vw; height: 25vw">
-            <br>
-            قبل از ظهر
-        </div>
-    </div>
-    <br>
-    <div class="page-border" style="border-color: var(--base_color)">
-        <div>حالا به سؤال های زیر پاسخ دهید.</div>
-        <br>
-        <div style="display: flex">
-            <div style="margin-left: 1vw">زهرا در مجموع چند ساعت در خانه درس خوانده است؟</div>
-            <input class="input_text" id="q1" type="text" style="margin-left: 1vw">
-            <label id="question1_label"></label>
-        </div>
-        <br>
-        <div style="display: flex">
-            <div style="margin-left: 1vw">زهرا چه ساعتی به مهمانی رسیده است؟</div>
-            <input class="input_text" id="q2" type="text" style="margin-left: 1vw">
-            <div style="margin-left: 1vw">بعد از ظهر یا</div>
-            <input class="input_text" id="q3" type="text" style="margin-left: 1vw">
-            <label id="question2_label"></label>
-
-        </div>
-        <br>
-        <div style="display: flex">
-            <div style="margin-left: 1vw">زهرا چه ساعتی از مهمانی برگشته و به خانه رسیده است؟</div>
-            <input class="input_text" id="q4" type="text" style="margin-left: 1vw">
-            <div style="margin-left: 1vw">بعد از ظهر یا</div>
-            <input class="input_text" id="q5" type="text" style="margin-left: 1vw">
-            <label id="question3_label"></label>
-        </div>
-        <br>
-        <div style="display: flex">
-            <div style="margin-left: 1vw">شما هم چند سؤال مثل سؤال های بالا برای دوست خود طرح کنید و او به آن ها جواب دهد. سپس او سؤال کند و شما جواب دهید.</div>
-        </div>
-        <br>
-        <input type="submit" value="ثبت" id="submit" class="submit_button" onclick="checkAnswers()">
-
-    </div>
-    <br>
-
-    <div class="page-border" style="border-color: var(--base_color); background-color: #e9f1d2; border: 0.2vw solid var(--base_color) ">
-        <div class="topic-title" style="border-color: var(--base_color) ; background-color: var(--base_color) ;
-                border-bottom-rightt-radius: 10px; border-top-right-radius: 10px; direction: ltr"> کاردستی بساز
-        </div>
-
-        <div style="display: inline-block">سلام چطوری؟</div>
-        <div style="display: inline-block">در اینجا شکل باز شده ی یک مکعّب را می بینید.شبیه
-            این شکل را روی کاغذ بکشید و دورش را با قیچی
-            ببرید. کاغذ را از روی نقطه چین ها تا کنید تا یک مکعّب
-            ساخته شود. مکعّب خود را به کلاس ببرید و با آویزان
-            کردن آن در کنار مکعّب های دیگران، به آموزگارتان در
-            تزیین کلاس کمک کنید.
-        </div>
-
-
-    </div>
-</div>
-<br>
-<div class="outer-number" style=" position:absolute; border-color:var(--base_color)">
-    <div class="page-number" style="background:var(--base_color) ; border-color: white">
-        17
-    </div>
-</div>
-
-</div>
-
-<script>
-    function checkAnswers() {
-        var q1color = setAnswerColor("q1", "4");
-        var q2color = setAnswerColor("q2", "4");
-        var q3color = setAnswerColor("q3", "16");
-        var q4color = setAnswerColor("q4", "9");
-        var q5color = setAnswerColor("q5", "21");
-
-        if (q1color == "lightgreen") {
-            document.getElementById("question1_label").textContent = "آفرین! درسته";
-            document.getElementById("question1_label").style.color = "green";
-
-        } else {
-            document.getElementById("question1_label").textContent = "بیشتر فکر کن!";
-            document.getElementById("question1_label").style.color = "red";
-        }
-
-        if (q2color == "lightgreen" && q3color == "lightgreen") {
-            document.getElementById("question2_label").textContent = "آفرین! درسته";
-            document.getElementById("question2_label").style.color = "green";
-
-        } else {
-            document.getElementById("question2_label").textContent = "بیشتر فکر کن!";
-            document.getElementById("question2_label").style.color = "red";
-        }
-
-        if (q4color == "lightgreen" && q5color == "lightgreen") {
-            document.getElementById("question3_label").textContent = "آفرین! درسته";
-            document.getElementById("question3_label").style.color = "green";
-
-        } else {
-            document.getElementById("question3_label").textContent = "بیشتر فکر کن!";
-            document.getElementById("question3_label").style.color = "red";
-        }
-    }
-
-    function setAnswerColor(element, answer) {
-        var ele = document.getElementById(element);
-        if (ele.value === answer) {
-            ele.style.backgroundColor = "lightgreen";
-        } else {
-            ele.style.backgroundColor = "lightcoral";
-        }
-        return ele.style.backgroundColor;
-    }
-</script>
-</body>
-</html></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/eftekharii.css">
+    <title>ریاضی سوم دبستان - صفحه ده</title>
 </head>
 <body>
+
+<div class="main">
+    <div class="content-box">
+        <div class="page-number">10</div>
+    </div>
+</div>
+
 
 </body>
 </html>
