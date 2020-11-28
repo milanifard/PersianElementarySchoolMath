@@ -210,6 +210,21 @@
     margin-left: 5vw;
 }
 
+.bar-chart{
+    width: 25vw;
+    border-collapse: collapse;
+    font-size: 2vw;
+    font-family: Koodak;
+}
+
+.bar-chart-td{
+    padding: 0.5vw;
+    font-size: 2vw;
+    font-family: Koodak;
+    text-align: center;
+    top: 0;
+}
+
 /* circle sectors detection for Q1 */
 
 .wrapper {
