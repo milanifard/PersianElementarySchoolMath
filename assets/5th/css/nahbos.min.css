@@ -1,0 +1,184 @@
+:root {
+    --light_green_header_color: #e2edc1;
+    --darker_green: #b8d65f;
+
+    --red_titles_color: #ee372f;
+
+    --blue_activity_color: #0cb1ef;
+
+    --pink: #ed0086;
+
+    --orange: #fbc69f;
+    --light_orange: #fef4d8;
+
+    --black: #2E2014;
+    --white: #FFF;
+}
+
+.page-header{
+    width: 100vw;
+    background-color: var(--light_green_header_color);
+    height: 15vw;
+    position: relative;
+    font-family: Koodak;
+}
+.header-title{
+    left: 30vw;
+    right: 30vw;
+    position: absolute;
+    bottom: -4vw;
+    color: var(--red_titles_color);
+    font-size: 5vw;
+    font-family: Koodak;
+    text-align: center;
+}
+
+.header-dots {
+    height: 2vw;
+    width: 2vw;
+    background-color: var(--darker_green);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.header-border{
+    width: 100vw;
+    position: absolute;
+    color: var(--darker_green);
+    border-style: solid;
+    bottom: 0vw;
+}
+
+.activity-container{
+    width: 100vw;
+    position: relative;
+    color: var(--blue_activity_color);
+    border-style: solid;
+    margin-top: 5vw;
+}
+
+.activity-container-tag{
+    right: 0px;
+    margin-right: 20vw;
+    position: absolute;
+    color: var(--blue_activity_color);
+    background-color: white;
+    bottom: -2.5vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    text-align: center;
+    font-size: 3.5vw;
+    font-family: Koodak;
+}
+
+.text-config{
+    padding-right: 8vw;
+    padding-left: 3vw;
+    margin-top: 5vw; ;
+    font-family: Zar;
+    font-size: 2.5vw;
+    direction: rtl;
+    white-space: pre-wrap;
+}
+
+.text-config-koodak-font{
+    font-family: Koodak;
+    font-size: 1.7vw;
+    direction: rtl;
+    white-space: pre-wrap;
+    color: var(--red_titles_color);
+    padding-left: 4vw;
+    padding-right: 3vw;
+    padding-top: 5vw;
+    float: left;
+}
+
+.questions-arrows-fit{
+    width: 80vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-top: 5vw;
+}
+
+.questions-arrows{
+    width: 65vw;
+    padding-right: 17.5vw;
+    padding-left: 17.5vw;
+    padding-top: 5vw;
+}
+
+.questions-images{
+    float: left;
+    width: 25vw;
+    padding: 3vw;
+    padding-top: 0vw;
+    padding-left: 10vw;
+}
+
+.table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-style: hidden;
+    font-size: 2vw;
+    font-family: Koodak;
+
+}
+
+.td{
+    width: 3vw;
+    padding: 0.5vw;
+    border: 0.5vw solid black;
+    font-size: 2vw;
+    font-family: Koodak;
+    text-align: center;
+}
+
+.td-design-blue-line{
+    border-right: 0.5vw solid var(--blue_activity_color);
+
+}
+
+.td-design-white-line{
+    border-bottom: 0.5vw solid white;
+}
+
+.rounded-border{
+    border: 0.3vw solid var(--darker_green);
+    border-radius: 100%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.page-number{
+    background-color: var(--darker_green);
+    border-radius: 40%;
+    display: inline-block;
+    text-align: center;
+    padding: 1vw;
+    padding-right: 1.8vw;
+    padding-left: 1.8vw;
+    margin: 5vw;
+    font-size: 2.5vw;
+    font-family: Koodak;
+}
+
+@font-face {
+    font-family: 'Zar';
+    src: url("/assets/fonts/Zar.eot");
+    src: url("/assets/fonts/Zar.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Zar.woff2") format("woff2"), url("/assets/fonts/Zar.woff") format("woff"), url("/assets/fonts/Zar.ttf") format("truetype"), url("/assets/fonts/Zar.svg#svgFontName") format("svg")
+}
+
+@font-face {
+    font-family: 'ZarBold';
+    src: url("/assets/fonts/ZarBold.eot");
+    src: url("/assets/fonts/ZarBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/ZarBold.woff2") format("woff2"), url("/assets/fonts/ZarBold.woff") format("woff"), url("/assets/fonts/ZarBold.ttf") format("truetype"), url("/assets/fonts/ZarBold.svg#svgFontName") format("svg")
+}
+
+@font-face {
+    font-family: 'Faraz';
+    src: url("/assets/fonts/Faraz.eot");
+    src: url("/assets/fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Faraz.woff2") format("woff2"), url("/assets/fonts/Faraz.woff") format("woff"), url("/assets/fonts/Faraz.ttf") format("truetype"), url("/assets/fonts/Faraz.svg#svgFontName") format("svg")
+}
+
+

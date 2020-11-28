@@ -1,0 +1,75 @@
+:root {
+    --base_color:##ed474d;
+}
+.page-bg {
+    height: 100%;
+    background: linear-gradient(to bottom, white 67%, var(--base_color) 33%) no-repeat;
+}
+.page-border{
+    direction: rtl;
+    width: 95%;
+    background: white;
+    border: 0.5vw double var(--base_color);
+    /*outline: 5px solid red;*/
+    border-radius: 5px;
+    margin: auto;
+    padding :1.5vw;
+
+}
+.page-number{
+    text-align: center;
+    background: var(--base_color);
+    padding: 0.1vw;
+    border: 0.1vw solid var(--base_color);
+    border-radius: 2vw;
+    width: 5vw;
+    max-width: 5vw;
+    color: white;
+}
+.outer-number{
+
+    float : right;
+    width: 5vw;
+    border: 0.1vw solid var(--base_color);
+    border-radius: 20px;
+    width: 5vw;
+    max-width: 5vw;
+}
+.outer-number-left{
+    float : left;
+    width: 5vw;
+    border: 0.1vw solid var(--base_color);
+
+    width: 7vw;
+    border: 0.1vw solid #e5555a;
+
+    border-radius: 20px;
+    width: 5vw;
+    max-width: 5vw;
+}
+
+
+.topic-title {
+    text-align: center;
+    background: var(--base_color);
+    padding: 0.1vw;
+    border: 1vw solid var(--base_color);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 60px;
+    max-width: 60px;
+    max-height: 20px;
+    font-family: "B Zar";
+    font-size: small;
+    color: white;
+}
+.topic-style {
+    float:right;
+    display: inline-flex;
+}
+
+*{
+    font-family:'B Zar';
+    font-size: 1vw;
+    font-weight: normal
+}
