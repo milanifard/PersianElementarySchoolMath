@@ -8,7 +8,266 @@
     <title>ریاضی سوم دبستان</title>
 
 </head>
-<body>
+<body style="margin: 0;">
+<div>
+    <div class="right-border">
+        <div class="background-style"></div>
+
+        <div id="activity_item">
+            <img class="activity-image" src="assets/3rd/images/girl_and_teacher_activity.png" alt="activity_image" style="margin: 1vw 2vw 0 0;">
+            <div class="activity-text">تمرین</div>
+        </div>
+
+        <div id="Q1_container">
+            <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw">1ــ در جدول زیر تعداد و نوع درخت های یک پارک نشان داده شده است.<br>نمودار دایره ای مربوط به اطّلاعات جدول زیر را کامل کنید.</div>
+
+            <div style="float: right">
+                <div id="circle_Q1" class="wrapper" style="margin-right: 12vw; margin-left: 5vw; margin-top: 10vw;">
+                    <div id="Q1_sector1" class="sector" style="transform: rotate(0deg) skew(40deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector2" class="sector" style="transform: rotate(45deg) skew(40deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector3" class="sector" style="transform: rotate(90deg) skew(40deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector4" class="sector" style="transform: rotate(135deg) skew(40deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector5" class="sector" style="transform: rotate(180deg) skew(40deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector6" class="sector" style="transform: rotate(225deg) skew(40deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector7" class="sector" style="transform: rotate(270deg) skew(40deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector8" class="sector" style="transform: rotate(315deg) skew(40deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                </div>
+            </div>
+            <div id="Q1_table" style="float: right; margin-left: 5vw; margin-top: 5vw">
+                <table class="simple-table" style="width: 15vw">
+                    <tr>
+                        <td class="simple-td-green" style="background-color: var(--green_level1)">تعداد</td>
+                        <td class="simple-td-green" style="background-color: var(--green_level1)">نوع درخت</td>
+                    </tr>
+                    <tr>
+                        <td class="simple-td-green">200</td>
+                        <td class="simple-td-green">کاج</td>
+                    </tr>
+                    <tr>
+                        <td class="simple-td-green">100</td>
+                        <td class="simple-td-green">توت</td>
+                    </tr>
+                    <tr>
+                        <td class="simple-td-green">50</td>
+                        <td class="simple-td-green">بلوط</td>
+                    </tr>
+                    <tr>
+                        <td class="simple-td-green">50</td>
+                        <td class="simple-td-green">چنار</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="float: right">
+                <img id="Q1_tree_img" src="assets/3rd/images/nahbos/tree_126.png" alt="tree_Q1" style="width: 25vw; padding-left: 5vw; padding-top: 1vw">
+            </div>
+        </div>
+
+        <div id="Q2_container" style="clear: both">
+
+            <div style="float: right">
+                <div id="Q2" class="text-config questions-text-config" style="padding-right: 8vw; float: top;">2ــ 40 کودک در «مهد کودک شادی» آموزش می بینند.<br>نمودار دایره ای روبه رو تعداد دخترها و پسرها را در این مهد کودک نشان می دهد.</div>
+
+                <div style="float: bottom">
+                    <div id="Q2_continue" class="text-config questions-text-config" style="padding-right: 8vw; margin-top: 0; float: right">چند دختر و چند پسر در مهد کودک شادی مشغول آموزش هستند؟</div>
+                    <div style="float: right; margin-top: -1vw">
+                        <div style=" float: top;">
+                            <label class="text-config" style=""><input id="Q1_girl" type="number" style="width: 5vw; font-size: 1.8vw;" min="0" max="10">   دخترها</label>
+                        </div>
+                        <label class="text-config" style=""><input id="Q1_boy" type="number" style="width: 5vw; font-size: 1.8vw;" min="0" max="10">    پسرها</label>
+                    </div>
+                </div>
+            </div>
+
+            <div style="float: left">
+                <div id="circle_Q2" class="wrapper" style="float: top; margin-top: 2vw; border: 2px solid var(--blue_level3); animation-fill-mode: forwards;" onclick="rotation(id)">
+                    <div id="Q2_sector1" class="sector" style="transform: rotate(90deg); background-color: var(--blue_level1); border: 1px solid var(--blue_level3);"></div>
+                    <div id="Q2_sector2" class="sector" style="transform: rotate(180deg); background-color: var(--blue_level1); border: 1px dashed black;"></div>
+                    <div id="Q2_sector3" class="sector" style="transform: rotate(270deg); background-color: var(--blue_level1); border: 1px dashed black;"></div>
+                    <div id="Q2_sector4" class="sector" style="transform: rotate(360deg); background-color: var(--green_level4); border: 1px solid var(--blue_level3);"></div>
+                </div>
+
+                <div class="text-config" style="float: bottom; margin-top: -12vw; margin-left: 12.5vw; position:absolute;">دخترها      پسرها</div>
+            </div>
+        </div>
+
+
+        <div style="clear: both"></div>
+
+        <div class="guess-box-level1" style="clear:both;">
+            <div class="guess-box-text-right">حدس بزن</div>
+            <div class="text-config" style="padding-top: 5vw; padding-right: 2vw">دو استوانه ی کاغذی درست کنید. مثل شکل زیر، استوانه ها را از محل های مشخص شده برش بزنید. قسمت های بریده شده را روی کاغذ بگذارید و دور آنها خط بکشید. در کدام برش، شکل به دست آمده دایره است؟</div>
+            <div class="guess-box-level2">
+                <img src="assets/3rd/images/nahbos/left_scissor_124.png" style="width: 19vw;" alt="left_scissor">
+                <img src="assets/3rd/images/nahbos/right_scissor_124.png" style="width: 19vw;" alt="right_scissor">
+            </div>
+
+            <div style="float: right; margin-top: -18vw; margin-right: 10vw">
+                <div style="height: 4vw;">
+                    <label class="text-config"><input type="radio" name="guess" value="right" id="radio_right" style="width: 2vw; height: 2vw;" onclick="guess_checker(id)">شکل راست</label>
+                </div>
+                <div style="height: 4vw;">
+                    <label class="text-config"><input type="radio" name="guess" value="left" id="radio_left" style="width: 2vw; height: 2vw;" onclick="guess_checker(id)">شکل چپ</label>
+                </div>
+            </div>
+
+            <div id="guess_box_feedback" class="text-config" style="margin-right: 5vw; float: right; margin-top: -8vw"></div>
+        </div>
+
+
+        <div class="page-number">124</div>
+    </div>
+</div>
 
 </body>
+
+<script language="JavaScript">
+
+    function $(id){ return document.getElementById(id);}
+
+    /* --------  The Q1-Q2 page 124  ----------------------------- */
+
+    let color_picker_item = null;
+    function color_picker(id) { color_picker_item = $(id);}
+
+    let pre_color = null;
+    function hover(id){
+        if (color_picker_item != null) {
+            $(id).onmouseenter = function () {
+                pre_color = $(id).style.backgroundColor;
+                $(id).style.backgroundColor = color_picker_item.style.backgroundColor;
+            }
+            $(id).onmouseout = function () {
+                $(id).style.backgroundColor = pre_color;
+            }
+        }
+    }
+
+    let Q1_color_picker_items = ["Q1_yellow_color", "Q1_blue_color", "Q1_red_color", "Q1_green_color"];
+    let Q2_color_picker_items = ["Q2_yellow_color", "Q2_red_color", "Q2_blue_color", "Q2_green_color"];
+
+    function sector_coloring(id, question_id) {
+
+        let [colors, Q_feedback] = (function () {
+            switch (question_id) {
+                case "P124-Q1":
+                    return [Q1_color_picker_items, $("Q1_feedback")];
+
+                case "P124-Q2":
+                    return [Q2_color_picker_items, $("Q2_feedback")];
+            }
+        })();
+
+        if (color_picker_item != null){
+            switch (color_picker_item.id) {
+                case colors[0]:
+                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
+                    pre_color = color_picker_item.style.backgroundColor;
+                    break;
+
+                case colors[1]:
+                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
+                    pre_color = color_picker_item.style.backgroundColor;
+                    break;
+
+                case colors[2]:
+                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
+                    pre_color = color_picker_item.style.backgroundColor;
+                    break;
+
+                case colors[3]:
+                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
+                    pre_color = color_picker_item.style.backgroundColor;
+                    break;
+                default:
+                    Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کن.";
+                    Q_feedback.classList.add("shaking-animation");
+                    Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
+                    break;
+            }
+        }
+
+        else {
+            Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کن.";
+            Q_feedback.classList.add("shaking-animation");
+            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
+        }
+        check_circle_sectors(question_id);
+    }
+
+    let Q1_ans = {"yellow": 3, "blue": 5, "red": 2, "green": 2};
+    let Q2_ans = {"yellow": 3, "blue": 2, "red": 5, "green": 2};
+    let Q1_sectors_id = ["Q1_sector1", "Q1_sector2", "Q1_sector3", "Q1_sector4", "Q1_sector5", "Q1_sector6", "Q1_sector7", "Q1_sector8", "Q1_sector9", "Q1_sector10", "Q1_sector11", "Q1_sector12"];
+    let Q2_sectors_id = ["Q2_sector1", "Q2_sector2", "Q2_sector3", "Q2_sector4", "Q2_sector5", "Q2_sector6", "Q2_sector7", "Q2_sector8", "Q2_sector9", "Q2_sector10", "Q2_sector11", "Q2_sector12"];
+
+    function check_circle_sectors(question_id) {
+
+        let Q1_P124_check_count = {"yellow": 0, "blue": 0, "red": 0, "green": 0};
+        let Q2_P124_check_count = {"yellow": 0, "blue": 0, "red": 0, "green": 0};
+
+        let [ans, sectors_id, check_count, Q_feedback, Q_img] = (function () {
+            switch (question_id) {
+                case "P124-Q1":
+                    return [Q1_ans, Q1_sectors_id, Q1_P124_check_count, $("Q1_feedback"), $("Q1_clock_img")];
+
+                case "P124-Q2":
+                    return [Q2_ans, Q2_sectors_id, Q2_P124_check_count, $("Q2_feedback"), $("Q2_book_img")];
+            }
+        })();
+
+        for(const sector of sectors_id) {
+            let color = $(sector).style.backgroundColor;
+
+            switch (color) {
+                case "var(--yellow_level3_border)":
+                    check_count.yellow += 1;
+                    break;
+
+                case "var(--blue_level1)":
+                    check_count.blue += 1;
+                    break;
+
+                case "var(--red_level1)":
+                    check_count.red += 1;
+                    break;
+
+                case "var(--green_level2)":
+                    check_count.green += 1;
+                    break;
+            }
+        }
+
+        if (JSON.stringify(ans) === JSON.stringify(check_count)){
+
+            Q_feedback.textContent = "آفرین عزیزم. درست حل کردی.";
+            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
+            Q_img.classList.add("shaking-animation");
+
+        }
+
+        else if (Object.values(check_count).reduce((a, b) => a + b, 0) == Object.values(ans).reduce((a, b) => a + b, 0)){
+
+            Q_feedback.textContent = "بیشتر دقت کن عزیزم. غلط حل کردی.";
+            Q_feedback.classList.add("shaking-animation");
+            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
+        }
+    }
+
+    function guess_checker(id) {
+        let btn = $(id).value;
+        if (btn == "right"){
+            $("guess_box_feedback").textContent = "دقت کن عزيزم. غلط حدس زدي.";
+            $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
+            $("guess_box_feedback").classList.add("shaking-animation");
+        }
+        else if (btn == "left"){
+            $("guess_box_feedback").textContent = "آفرين عزيزم. درست حدس زدي.";
+            $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
+            $("guess_box_feedback").classList.add("shaking-animation");
+        }
+    }
+    /* --------  The End of Q1-Q2 page 124  ------------------------------------ */
+
+</script>
+
 </html>
