@@ -10,6 +10,7 @@
 
     --blue_level1: #6bcff6;
     --blue_level2: #3853a3;
+    --blue_level3: #5cb6cd;
 
     --green_level1: #bbd75e;
     --green_level2: #87c765;
@@ -62,7 +63,7 @@
 .background-style{
 
     width: 100vw;
-    height: 54.3vw;
+    height: 53vw;
 
     background-image: repeating-linear-gradient(0deg, var(--yellow_level2_border), var(--yellow_level2_border) 1vw, var(--yellow_level3_border) 0vw, var(--yellow_level3_border) 2.5vw);
     background-position: bottom;
@@ -130,9 +131,9 @@
     font-size: 2.5vw;
     color: white;
 
-    padding: 0 5vw 0 3vw;
+    padding: 0 11vw 0 3vw;
     position: absolute;
-    right: 8vw;
+    right: 2vw;
     top: 2.5vw;
     z-index: 1;
 }
@@ -178,7 +179,7 @@
 
 .simple-table{
     width: 65vw;
-    margin: 0 5vw 0 5vw;
+    margin: 0 3vw 0 3vw;
     border-collapse: collapse;
     font-size: 1.5vw;
     font-family: Koodak;
@@ -190,6 +191,38 @@
     font-size: 1.5vw;
     font-family: Koodak;
     text-align: center;
+}
+
+.simple-td-green{
+    padding: 0.7vw;
+    border: 0.3vw solid var(--green_level4);
+    font-size: 1.5vw;
+    font-family: Koodak;
+    text-align: center;
+}
+
+.simple-table-border{
+    float: left;
+    border: 1vw solid var(--orange_level2);
+    border-radius: 2vw;
+    padding: 1vw;
+    width: 30vw;
+    margin-left: 5vw;
+}
+
+.bar-chart{
+    width: 25vw;
+    border-collapse: collapse;
+    font-size: 2vw;
+    font-family: Koodak;
+}
+
+.bar-chart-td{
+    padding: 0.5vw;
+    font-size: 2vw;
+    font-family: Koodak;
+    text-align: center;
+    top: 0;
 }
 
 /* circle sectors detection for Q1 */
@@ -230,7 +263,7 @@
 }
 
 .shaking-animation {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 1.5s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -293,7 +326,7 @@
     padding: 0 2vw 0 3vw;
     position: absolute;
     left: -1.5vw;
-    top: 1vw;
+    top: 3vw;
     z-index: 1;
 }
 

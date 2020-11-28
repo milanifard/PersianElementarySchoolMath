@@ -15,8 +15,10 @@
 
         <div id="activity_item">
             <img class="activity-image" style="margin-right: 5vw" src="assets/3rd/images/classwork.png" alt="activity_image">
-            <div class="activity-text" style="margin-right: 3vw">کار در کلاس</div>
+            <div class="activity-text" style="margin-right: 3vw; float: right">کار در کلاس</div>
         </div>
+
+        <div class="text-config" style="float: right; margin: 3vw 0 0 25vw; position:absolute; color: var(--red_level2);">روی چرخنده کلیک کن تا بچرخه.</div>
 
         <div id="Q1_container">
 
@@ -28,9 +30,13 @@
                 <div id="Q1_sector3" class="sector" style="transform: rotate(270deg); background-color: var(--red_level3); border: 1px solid black;"></div>
                 <div id="Q1_sector4" class="sector" style="transform: rotate(360deg); background-color: var(--green_level4); border: 1px solid black;"></div>
             </div>
-            <div class="clock-hand" style="position:absolute; padding-left: 12.5vw; padding-top: 16.2vw; transform: rotate(-45deg)"></div>
+            <div class="clock-hand" style="position:absolute; margin-left: 16.4vw; margin-top: 9.5vw; transform: rotate(-45deg)"></div>
 
-            <div id="Q1_table" style="clear: both; padding-top: 3vw; float: right">
+            <div style="clear:both; float: left;">
+                <img id="Q1_pencil" src="assets/3rd/images/nahbos/pencil_125.png" alt="pencil" style="width: 12vw; margin-left: 3vw; margin-top: 2vw">
+            </div>
+
+            <div id="Q1_table" style="padding-top: 3vw; float: left;">
                 <table class="simple-table">
                     <tr>
                         <td class="simple-td">10</td>
@@ -111,38 +117,110 @@
                 </table>
             </div>
 
-            <img id="Q1_pencil" src="assets/3rd/images/nahbos/pencil_125.png" alt="pencil" style="float: left; width: 12vw; margin-left: 3vw; margin-top: 2vw">
+            <div style="float: right">
+                <div id="Q1_continue1" class="text-config questions-text-config" style="padding-right: 8vw; float: top;">با توجه به جدول، دایره ی روبه رو را با رنگ های قرمز و سبز رنگ آمیزی کنید.<br>اگر چرخنده را ١٠ بار دیگر بچرخانیم، پیش بینی می کنید که</div>
 
-            <div id="Q1_continue" class="text-config questions-text-config" style="padding-right: 8vw; float: right">با توجه به جدول، دایره ی روبه رو را با رنگ های قرمز و سبز رنگ آمیزی کنید.<br>اگر چرخنده را ١٠ بار دیگر بچرخانیم، پیش بینی می کنید که<br>ــ چه مقدار از این نمودار به رنگ سبز باشد؟<br>ــ چه کسری از نمودار قرمز باشد؟</div>
-
-            <div style="float: left">
-                <div id="circle_Q1_ans" class="wrapper" style="float: left;">
-                    <div id="Q1_ans_sector1" class="sector" style="transform: rotate(90deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector2" class="sector" style="transform: rotate(126deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector3" class="sector" style="transform: rotate(162deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector4" class="sector" style="transform: rotate(198deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector5" class="sector" style="transform: rotate(234deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector6" class="sector" style="transform: rotate(270deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector7" class="sector" style="transform: rotate(304deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector8" class="sector" style="transform: rotate(342deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector9" class="sector" style="transform: rotate(378deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                    <div id="Q1_ans_sector10" class="sector" style="transform: rotate(414deg) skew(53deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                <div style="float: bottom">
+                    <div id="Q1_continue2" class="text-config questions-text-config" style="padding-right: 8vw;; margin-top: 0; float: right"> ــ چه مقدار از این نمودار به رنگ سبز باشد؟</div>
+                    <input id="Q1_part1" type="number" style="width: 5vw; font-size: 1.8vw; float: right;" min="0" max="10">
                 </div>
 
-                <div style="float: left; margin-left: 3vw; margin-top: 5vw">
-                    <div id="Q1_red_color" class="color-picker" style="background-color: var(--red_level3);" onclick="color_picker(id)"></div>
-                    <div id="Q1_green_color" class="color-picker" style="background-color: var(--green_level4);" onclick="color_picker(id)"></div>
+                <div style="float: bottom">
+                    <div id="Q1_continue3" class="text-config questions-text-config" style="padding-right: 8vw; float: right; margin-top: 0">ــ چه کسری از نمودار قرمز باشد؟</div>
+                    <input id="Q1_part2_down" type="number" style="width: 5vw; font-size: 1.8vw; float: right;" min="0" max="10">
+                    <div class="text-config" style="float: right; font-size: 5vw; margin-top: -2.3vw"> / </div>
+                    <input id="Q1_part2_top" type="number" style="width: 5vw; font-size: 1.8vw; float: right;" min="0" max="10">
                 </div>
             </div>
 
-            <div id="Q1_feedback" class="text-config" style="clear: both; float: left; margin-left: 10vw; margin-top: 2vw"> </div>
-            <div style="clear: both"></div>
+            <div style="float: left; margin-left: -3vw">
+                <div style="float: top">
+                    <div id="circle_Q1_ans" class="wrapper" style="float: left;">
+                        <div id="Q1_ans_sector1" class="sector" style="transform: rotate(90deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector2" class="sector" style="transform: rotate(126deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector3" class="sector" style="transform: rotate(162deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector4" class="sector" style="transform: rotate(198deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector5" class="sector" style="transform: rotate(234deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector6" class="sector" style="transform: rotate(270deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector7" class="sector" style="transform: rotate(304deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector8" class="sector" style="transform: rotate(342deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector9" class="sector" style="transform: rotate(378deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector10" class="sector" style="transform: rotate(414deg) skew(53deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                    </div>
+
+                    <div style="float: left; margin-left: 3vw; margin-top: 5vw">
+                        <div id="Q1_red_color" class="color-picker" style="background-color: var(--red_level3);" onclick="color_picker(id)"></div>
+                        <div id="Q1_green_color" class="color-picker" style="background-color: var(--green_level4);" onclick="color_picker(id)"></div>
+                    </div>
+                </div>
+                <div id="Q1_feedback" class="text-config" style="clear: both; float: bottom; margin-left: 10vw; padding-top: 2vw; padding-bottom: 2vw"> </div>
+            </div>
         </div>
 
 
 
+        <div id="Q2_container" style="clear: both">
 
-        <div class="guess-box-level1" style="clear:both; left: -6vw; margin-top: 10vw">
+            <div id="Q2" class="text-config questions-text-config" style="padding-right: 8vw;">٢ــ معصومه چرخنده ای را که به دو رنگ قرمز و آبی بود، ١٠٠ بار چرخاند. او هر بار رنگی را که عقربه روی آن می ایستاد،<br>یادداشت می کرد. در آخر هم جدول زیر را کشید.<br>شما با توجه به اطّلاعاتی که در جدول آمده است، دایره را رنگ آمیزی کنید. ابتدا عددهای تقریبی را بنویسید.</div>
+
+            <div style="float: left; margin-left: -3vw;">
+                <div style="float: top">
+                    <div id="circle_Q2_ans" class="wrapper" style="float: left;">
+                        <div id="Q2_ans_sector1" class="sector" style="transform: rotate(90deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector2" class="sector" style="transform: rotate(126deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector3" class="sector" style="transform: rotate(162deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector4" class="sector" style="transform: rotate(198deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector5" class="sector" style="transform: rotate(234deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector6" class="sector" style="transform: rotate(270deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector7" class="sector" style="transform: rotate(304deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector8" class="sector" style="transform: rotate(342deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector9" class="sector" style="transform: rotate(378deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector10" class="sector" style="transform: rotate(414deg) skew(53deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                    </div>
+
+                    <div style="float: left; margin-left: 3vw; margin-top: 5vw">
+                        <div id="Q2_red_color" class="color-picker" style="background-color: var(--red_level3);" onclick="color_picker(id)"></div>
+                        <div id="Q2_blue_color" class="color-picker" style="background-color: var(--blue_level1);" onclick="color_picker(id)"></div>
+                    </div>
+                </div>
+                <div id="Q2_feedback" class="text-config" style="clear: both; float: bottom; margin-left: 10vw; padding-top: 2vw; padding-bottom: 2vw; width: 24vw"> </div>
+            </div>
+
+            <div class="simple-table-border" style="float: left;">
+                <table class="simple-table" style="width: 30vw; margin-left: 0">
+                    <tr>
+                        <td class="simple-td">عدد تقریبی</td>
+                        <td class="simple-td">تعداد</td>
+                        <td class="simple-td">رنگ</td>
+                    </tr>
+
+                    <tr>
+                        <td id="Q2_red_td" class="simple-td" style="width: 7vw">
+                            <input id="Q2_red_input" type="number" style="width: 8vw; font-size: 1.8vw" min="0" max="100">
+                        </td>
+                        <td class="simple-td">49</td>
+                        <td class="simple-td">قرمز</td>
+                    </tr>
+
+                    <tr>
+                        <td id="Q2_blue_td" class="simple-td">
+                            <input id="Q2_blue_input" type="number" style="width: 8vw; font-size: 1.8vw" min="0" max="100">
+                        </td>
+                        <td class="simple-td">51</td>
+                        <td class="simple-td">آبی</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="pencils" style="float: left">
+                <img style="width: 11vw; margin-top: 7vw; float: top" src="assets/3rd/images/nahbos/red_pencil_125.png" alt="red_pencil">
+                <div style=" float: bottom">
+                    <img style="width: 11vw; margin-top: 1.5vw;" src="assets/3rd/images/nahbos/blue_pencil_125.png" alt="blue_pencil">
+                </div>
+            </div>
+        </div>
+
+        <div class="guess-box-level1" style="clear:both; left: -6vw; margin-top: 2vw">
             <div class="guess-box-text-left" >حدس بزن</div>
             <div class="text-config" style="padding-top: 5vw;">با کاغذ دو مخروط درست کنید. با توّجه به شکل هاي زير، مخروط ها را از محل مشخّص شده، برش بزنید.<br>قسمت های بریده شده را روی کاغذ بگذارید و دور آن ها خط بکشید.<br>در کدام برش، شکل به دست آمده دایره است؟</div>
             <div class="guess-box-level2">
@@ -169,7 +247,8 @@
 </div>
 
 </body>
-<script>
+<script language="JavaScript">
+
     function $(id){ return document.getElementById(id);}
 
     let root = document.documentElement;
@@ -186,8 +265,6 @@
 
             let random_number = Math.floor(Math.random() * 360 + 720);
 
-            console.log(random_number);
-            console.log(last_degree);
             root.style.setProperty('--dynamic_rnd', (random_number + last_degree) + "deg");
             root.style.setProperty('--dynamic_rnd_last', last_degree + "deg");
 
@@ -196,7 +273,6 @@
 
             update_last_degree(random_number);
 
-            console.log(last_degree);
         },10);
     }
 
@@ -252,7 +328,7 @@
                 default:
                     Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کنید.";
                     Q_feedback.classList.add("shaking-animation");
-                    Q_feedback.style.color= "#c8242b";
+                    Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
                     break;
             }
         }
@@ -260,7 +336,7 @@
         else {
             Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کنید.";
             Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= "#c8242b";
+            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
         }
         check_circle_sectors(question_id);
     }
@@ -268,7 +344,7 @@
     let Q1_ans = {"red": 0, "green": 0}; // Sets in the coloring_table func
     let Q2_ans = {"blue": 5, "red": 5};
     let Q1_sectors_id = ["Q1_ans_sector1", "Q1_ans_sector2", "Q1_ans_sector3", "Q1_ans_sector4", "Q1_ans_sector5", "Q1_ans_sector6", "Q1_ans_sector7", "Q1_ans_sector8", "Q1_ans_sector9", "Q1_ans_sector10"];
-    let Q2_sectors_id = ["Q2_sector1", "Q2_sector2", "Q2_sector3", "Q2_sector4", "Q2_sector5", "Q2_sector6", "Q2_sector7", "Q2_sector8", "Q2_sector9", "Q2_sector10"];
+    let Q2_sectors_id = ["Q2_ans_sector1", "Q2_ans_sector2", "Q2_ans_sector3", "Q2_ans_sector4", "Q2_ans_sector5", "Q2_ans_sector6", "Q2_ans_sector7", "Q2_ans_sector8", "Q2_ans_sector9", "Q2_ans_sector10"];
 
     function check_circle_sectors(question_id) {
 
@@ -281,12 +357,12 @@
                     return [Q1_ans, Q1_sectors_id, Q1_check_count, $("Q1_feedback"), $("Q1_pencil")];
 
                 case "Q2":
-                    return [Q2_ans, Q2_sectors_id, Q2_check_count, $("Q2_feedback"), $("Q2_book_img")];//TODO: add id of color pencils
+                    return [Q2_ans, Q2_sectors_id, Q2_check_count, $("Q2_feedback"), $("pencils")];
             }
         })();
 
         for(const sector of sectors_id) {
-            console.log(sector.id);
+
             let color = $(sector).style.backgroundColor;
 
             switch (color) {
@@ -304,22 +380,20 @@
                     break;
             }
         }
-        console.log(ans);
-        console.log(check_count);
 
-        if (JSON.stringify(ans) === JSON.stringify(check_count)){
+        if (JSON.stringify(ans) === JSON.stringify(check_count) && Object.values(ans).reduce((a, b) => a + b, 0) == 10){
 
             Q_feedback.textContent = "آفرین عزیزم. درست حل کردی.";
-            Q_feedback.style.color= "#44b869";//TODO: getComputedStyle(document.documentElement).getPropertyValue('--red_level3');
+            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
             Q_img.classList.add("shaking-animation");
 
         }
 
-        else if (Object.values(check_count).reduce((a, b) => a + b, 0) == Object.values(ans).reduce((a, b) => a + b, 0)){
+        else if (Object.values(check_count).reduce((a, b) => a + b, 0) == Object.values(ans).reduce((a, b) => a + b, 0) && color_picker_item != null){
 
             Q_feedback.textContent = "بیشتر دقت کن عزیزم. غلط حل کردی.";
             Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level3');;
+            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level3');
         }
     }
 
@@ -342,18 +416,58 @@
         $(parent).innerText = '';
     }
 
+    const input = document.querySelector('input');
+    $('Q2_red_input').addEventListener('input', check_ans_Q2);
+    $('Q2_blue_input').addEventListener('input', check_ans_Q2);
+    function check_ans_Q2(e) {
+        if (e.target.value == 50){
+            $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');
+        }
+        else {
+            $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');
+
+        }
+    }
+
+    $('Q1_part1').addEventListener('input', check_ans_Q1);
+    $('Q1_part2_top').addEventListener('input', check_ans_Q1);
+    $('Q1_part2_down').addEventListener('input', check_ans_Q1);
+    let green_count = 0;
+    function check_ans_Q1(e) {
+
+        switch (e.target.id) {
+
+            case 'Q1_part1':
+                green_count = e.target.value;
+                if (green_count >= 0 && green_count <= 10){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
+                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
+                break;
+
+            case 'Q1_part2_top':
+                if (e.target.value == (10 - green_count)){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
+                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
+                break;
+
+            case 'Q1_part2_down':
+                if (e.target.value == 10){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
+                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
+                break;
+        }
+
+
+    }
 
 
     function guess_checker(id) {
         let btn = $(id).value;
         if (btn == "right"){
             $("guess_box_feedback").textContent = "دقت کن عزيزم. غلط حدس زدي.";
-            $("guess_box_feedback").style.color = "#c8242b";
+            $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
             $("guess_box_feedback").classList.add("shaking-animation");
         }
         else if (btn == "left"){
             $("guess_box_feedback").textContent = "آفرين عزيزم. درست حدس زدي.";
-            $("guess_box_feedback").style.color = "#44b869";
+            $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
             $("guess_box_feedback").classList.add("shaking-animation");
         }
     }
