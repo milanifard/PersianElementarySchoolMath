@@ -2,6 +2,10 @@
     --main_color: #47a758;
     --footer_color1 : #84b954;
     --footer_color2 : #b9ce4d;
+    --title_color : #b9ce4d;
+    --title-blue : #3e549a;
+    --topic-title-color : #84b954;
+
 }
 
 *{
@@ -9,10 +13,11 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    font-family:myfont ;
 }
 
 @font-face {
-    src: url("/assets/fonts/Faraz.woff2") format("woff2");
+    src: url("/assets/fonts/Zar.woff") format("woff");
     font-family: "myfont";
 }
 
@@ -23,16 +28,20 @@ body{
     background-repeat: no-repeat;
 }
 
+.clearfix{
+    clear: both;
+}
+
 .main {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    position: relative;
+    float: right;
 }
 
 .content-box{
     width: 90%;
-    padding: 50% 0;
+
     background: white;
     margin: 3vw auto;
     border: 1vw double;
@@ -41,6 +50,54 @@ body{
     position: relative;
 }
 
+
+.page-title{
+    width: 18vw;
+    height: 5vw;
+    margin: 0 auto;
+    padding-top: .5vw;
+    background-color: var(--title_color);
+    border-style: double;
+    text-align: center;
+    font-family: myfont;
+    font-size: 2vw;
+    color: black;
+    text-align: center;
+    top: -2.75vw;
+    position: absolute;
+    margin-right: 38%;
+    border-radius: 2vw;
+
+}
+
+
+.page-topic{
+    margin-top: 1vw;
+    width: 100%;
+    height: 13vw;
+    float: right;
+}
+
+.topic-image{
+    width: 10%;
+    height: 13vw;
+    float: right;
+
+}
+
+.topic-title{
+    float: right;
+    width: 10vw;
+    height: 3vw;
+    background-color: var(--topic-title-color);
+    text-align: center;
+    font-family: myfont;
+    font-size: 2vw;
+    color: white;
+    border-radius: 0.75vw 0 0 0.75vw;
+    margin-top: 0.5vw;
+
+}
 .page-number{
     width: 8vw;
     height: 3vw;
@@ -53,10 +110,10 @@ body{
     font-size: 2vw;
     color: white;
     background-position: center;
-    bottom: 0;
+    bottom: -1.75vw;
     right:43.5%;
-    border-top-left-radius: 0.75vw;
-    border-top-right-radius: 0.75vw;
+    border-radius: 0.75vw;
+
 }
 
 .previous-page{
@@ -73,8 +130,14 @@ body{
     text-decoration: none;
     color: var(--main_color);
     font-size: 12vw;
-
 }
+.test{
+    width: 100%;
+    height: 1500px;
+}
+
+
+
 
 
 
