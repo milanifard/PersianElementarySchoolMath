@@ -378,7 +378,6 @@
 }
 
 .cylinder {
-    background: red;
     width: 4vw;
     height: 15vw;
     border-radius: 1.3vw;
@@ -393,13 +392,14 @@
     z-index: 1;
     width: 4vw;
     height: 2vw;
+    margin-top: -0.3vw;
 }
 
 .cone {
 
     width: 0;
     height: 0;
-    border-bottom: 15vw solid #F7B137;
+    border-bottom: 15vw solid white;
     border-left: 2vw solid transparent;
     border-right: 2vw solid transparent;
 
@@ -411,10 +411,11 @@
 .cone-circle {
     width:4vw;
     height:3vw;
-    background:#F7B137;
+    background: white;
     z-index: 1;
     border-radius:50%;
-    content: '';
+
+    content: "";
     position: absolute;
     display: block;
 }
