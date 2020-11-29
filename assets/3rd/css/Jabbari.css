@@ -1,0 +1,113 @@
+:root {
+
+    --red_level1: #f0595b;
+    --red_level2: #c8242b;
+
+    --purple: #b09ac9;
+
+    --purple-dark:#957dac;
+    --purple-light:#a48cb6;
+    --purple--title :#c2abc7;
+    --red--title :#ab3d7b;
+
+}
+
+*{
+    margin : 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: repeating-linear-gradient(0deg,var(--purple-dark), var(--purple-dark) 1vw, var(--purple-light) 0vw , var(--purple-light) 2.5vw);
+    background-size: 100% 40%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.border{
+    width: 90%;
+    padding: 50% 0;
+    background: white;
+    border: 0.8vw double var(--purple-dark) ;
+    border-radius: 0 4vw 4vw 0 ;
+    position: relative;
+    margin-right:10vw; 
+    margin-top: 8vw;
+    margin-bottom: 14vw;
+    border-left: none;
+} 
+
+.Rectangle_title{
+    height: 1vw;
+
+    background-color: var(--red_level2);
+    color: var(--red_level2);
+    border-style: solid;
+
+    position: absolute;
+    right: 34vw;
+    left: 34vw;
+    top: -1.2vw;
+
+} 
+
+.title{
+    background-color: var(--purple--title);
+    border-radius: 2vw;
+
+    text-align: center;
+    /* font-family: Koodak; */
+    font-size: 3vw; 
+    color: black;
+
+    padding: 0 2vw;
+    position: absolute;
+    right: 35vw;
+    left: 35vw;
+    top: -2.7vw;
+    
+}
+
+.number_of_page{
+    background-color: var(--purple);
+    border-radius: 2.5vw;
+    border: 0.99vw double white;
+
+    text-align: center;
+    font-size: 2vw;
+    font-family: Koodak;
+    color: white;
+
+    padding: 0 3vw;
+    position: absolute;
+    bottom: -0.5vw;
+    right: -5vw;  
+}
+
+.activity-text{
+
+    background-color: var(--purple-light);
+    border-radius: 1vw;
+
+    padding: 1vw 10vw 1vw 3vw;
+    position: absolute;
+    right: 2vw;
+    top: 1vw;
+    z-index: 1;
+
+    text-align: center;
+    /* font-family: Koodak; */
+    font-size: 2.5vw;
+    color: white;  
+}
+
+.activity-image{
+    width: 12vw; 
+    position: absolute;
+    right: -2vw;
+    top: 0.2vw;
+    z-index: 2;
+
+}
