@@ -276,14 +276,122 @@
     height: 0.3vw;
     float: left;
 }
-.arroww{
+.line2::after{
+    position: absolute;
+    content: '';
+    left: 0.2vw;
+    right: 0;
+    top: -0.35vw;
+    width: 0;
+    height: 0;
     border: solid #b41878;
     border-width: 0 0.3vw 0.3vw 0;
     display: inline-block;
     padding: 3px;
-}
-
-.rightt {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #0c9ec3;
+    background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+}
+/* Custom Select */
+.select {
+    position: relative;
+    display: flex;
+    width: 15vw;
+    height: 5vw;
+    font-family: ZAR;
+    font-size: 1.5vw;
+    line-height: 3;
+    background: #79c2d2;
+    overflow: hidden;
+    border-radius: .25em;
+}
+select {
+    flex: 1;
+    font-size: 2vw;
+    padding: 0 .5em;
+    color: white;
+    cursor: pointer;
+}
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    background: #79c2d2;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+.select:hover::after {
+    color: white;
+}
+--------------
+.container {
+    max-width: 100vw;
+    margin: 10vw auto;
+}
+
+.vector {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-top: 0.2vw solid #b41878;
+}
+.vector:hover{
+    cursor: pointer;
+}
+.vector > div {
+    width: 3.85vw;
+    text-align: center;
+    padding-top: 2vw;
+    position: relative;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.vector > div::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 0;
+    width: 0.2vw;
+    height: 1vw;
+    background-color: #b41878;
+}
+
+.vector::after {
+    position: absolute;
+    content: '';
+    left: 41.5vw;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 0.7vw solid #b41878;
+    border-top: 0.7vw solid transparent;
+    border-bottom: 0.7vw solid transparent;
+    border-right: 0.7vw solid transparent;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
 }

@@ -8,6 +8,14 @@
     --question_number_color:#3b9e3a;
     --grid_q1_color:#7fbecc;
     --grid_orange_color: #f8b044;
+    --grid_pink_color: #f19684;
+    --grid_light_blue_color:#64b1c7;
+    --grid_gold_color:#fcc441;
+    --grid_light_purple_color:#d17fa6;
+    --grid_red_color:#df2626;
+    --grid_green_color:#4ba338;
+    --grid_purple_color:#a088ba;
+    --grid_light_brown_color:#f19345;
 
 }
 
@@ -43,6 +51,14 @@ body{
 
 .clearfix{
     clear: both;
+    margin: 2vw 0 ;
+}
+.pull-right{
+    float: right;
+}
+
+.pull-left{
+    float: left;
 }
 
 
@@ -106,6 +122,11 @@ body{
     border-radius: 0.75vw 0 0 0.75vw;
     margin-top: 0.5vw;
 }
+.topic-title-classwork{
+    height: 2.5vw;
+    margin-right: -2vw;
+    font-size: 1.75vw;
+}
  .question_box{
      width: 80%;
      padding: 0vw 0;
@@ -132,7 +153,6 @@ body{
      display: grid;
      grid-template-columns: 4vw 4vw 4vw 4vw ;
      grid-column-gap: 0.7vw;
-     padding: 1vw;
      float: right;
      margin: 0 37%;
  }
@@ -140,7 +160,6 @@ body{
 .container {
     width: 100%;
     float: right;
-
 }
 
 .half-page {
@@ -150,10 +169,24 @@ body{
     margin-left: 4vw;
 }
 
+.one-third-page{
+    width: 33.33%;
+    float: right;
+    margin: 0 -3vw;
+    margin-left: 3vw;
+    padding:0;
+}
+
 
 .five_col{
     grid-template-columns: 4vw 4vw 4vw 4vw 4vw ;
 
+}
+.small-four-col{
+    grid-template-columns: 1.5vw 1.5vw 1.5vw 1.5vw;
+}
+.small-five-col{
+    grid-template-columns: 1.5vw 1.5vw 1.5vw 1.5vw 1.5vw ;
 }
 
 .six_col{
@@ -161,54 +194,95 @@ body{
 
 }
 
+.small_six_col{
+    grid-template-columns: 1.5vw 1.5vw 1.5vw 1.5vw 1.5vw 1vw ;
+
+}
+
+.seven-col{
+    grid-template-columns: 1.5vw 1.5vw 1.5vw 1.5vw 1.5vw 1.5vw 1.5vw;
+}
+
+.eight-col{
+    grid-template-columns: 1.5vw 1.5vw 1.5vw 1.5vw 1.5vw 1.5vw 1.5vw 1.5vw;
+}
+
 .grid-item {
     background-color: var(--grid_q1_color);
     padding: 2vw;
     margin:0.1vw;
+    float: right;
+}
+
+.small-grid-item{
+    padding: 1vw;
+    margin:0.1vw;
+}
+.grid-item:hover{
+    transform: scale(1.2);
+}
+.small-grid-item:hover{
+    transform: scale(1.2);
 }
 
 
-
-.grid-item-red {
+.grid-item-border-red {
     border: solid 0.3vw;
     border-color: red;
 }
-.grid-item-yellow {
+.grid-item-border-yellow {
     border: solid 0.3vw;
     border-color: yellow;
 }
-.grid-item-blue {
+.grid-item-border-blue {
     border: solid 0.3vw;
     border-color: blue;
 }
 
-.grid-item-green {
+.grid-item-border-green {
     border: solid 0.3vw;
     border-color: green;
 }
-.grid-item-purple {
+.grid-item-border-purple {
     border: solid 0.3vw;
     border-color: purple;
 }
-.grid-item-black {
+.grid-item-border-black {
     border: solid 0.3vw;
     border-color: black;
 }
 
 .grid-item-white{
     background-color: white;
-
 }
 
 .grid-item-orange {
     background-color: var(--grid_orange_color);
 }
 
-.grid-item:hover{
-    transform: scale(1.1);
+.grid-item-pink{
+    background-color: var(--grid_pink_color);
 }
-.small-grid-item:hover{
-    transform: scale(1.1);
+.grid-item-gold{
+    background-color: var(--grid_gold_color);
+}
+.grid-item-light-blue{
+    background-color: var(--grid_light_blue_color);
+}
+.grid-item-light-brown{
+    background-color: var(--grid_light_brown_color);
+}
+.grid-item-light-purple{
+    background-color: var(--grid_light_purple_color);
+}
+.grid-item-red{
+    background-color: var(--grid_red_color);
+}
+.grid-item-green{
+    background-color: var(--grid_green_color);
+}
+.grid-item-purple{
+    background-color: var(--grid_purple_color);
 }
 
 .grid_number{
@@ -217,26 +291,28 @@ body{
 
 .input-row{
      width: 100%;
-     padding: 0 1vw;
-     margin: 2vw auto;
+     margin: 2vw 0;
      text-align: center;
+     float: right;
 }
 .input-small-row{
-    margin-right: 5vw;
+    margin-right: 1.5vw;
     text-align: center;
-
 }
 
 .input-style{
     width: 7vw;
-    border:var(--main_color) solid 0.2vw;
+    border-bottom:var(--main_color) solid 0.2vw;
     margin: 2vw 0;
-    border-radius: 1vw;
     text-align: center;
 }
 .input-small-style{
     width: 4vw;
     height: 2vw;
+}
+.input-xsmall-style{
+    width: 1.3vw;
+    height: 1vw;
 }
 
 .submit{
@@ -251,6 +327,14 @@ body{
 
 .submit-half-page{
     margin:0 50% 2vw;
+}
+.submit-third-page{
+    margin:0 33.33% 2vw;
+}
+
+.bullet{
+    color: var(--main_color);
+    font-size: 5vw;
 }
 
 .page-number{
