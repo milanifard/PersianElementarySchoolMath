@@ -1,0 +1,29 @@
+.table-container {
+    background-color: $orange_level4;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 100%;
+    height: 80px;
+    margin: auto auto;
+    padding: 3px;
+    .table {
+        width: 80%;
+        height: 80%;
+        background-color: $white;
+        border: solid 2px $table_border_color;
+        margin: 10px 50px;
+        top: 5px;
+        border-collapse: collapse;
+        .table-row {
+            
+            .table-data {
+                border: solid 2px $table_border_color;
+                font-family: Zar;
+                font-weight: bold;
+                margin: 0;
+                text-align: center;
+                
+            }            
+        }
+    }
+}
