@@ -1,18 +1,18 @@
-:root{
-    --color-very-light-blue : rgb(231, 245, 253);
-    --color-light-blue : rgb(128,190,204);
-    --color-light-gray: rgb(233,232,232);
-    --color-light-orange : rgb(252,196,67);
-    --color-orange : rgb(247,176,69);
-    --color-dark-orange : rgb(238,134,32);
-    --color-light-red : rgb(231,96,96);
-    --color-purple :rgb(175,55,117);
+:root {
+    --color-very-light-blue: rgb(231, 245, 253);
+    --color-light-blue: rgb(128, 190, 204);
+    --color-light-gray: rgb(233, 232, 232);
+    --color-light-orange: rgb(252, 196, 67);
+    --color-orange: rgb(247, 176, 69);
+    --color-dark-orange: rgb(238, 134, 32);
+    --color-light-red: rgb(231, 96, 96);
+    --color-purple: rgb(175, 55, 117);
 }
 
-.left-page{
+.left-page {
     width: 90vm;
     max-width: 100%;
-    border: 0.8vw double rgb(128,190,204);;
+    border: 0.8vw double rgb(128, 190, 204);;
     margin: 6vw 0 0 10vw;
     border-right: none;
     border-top-left-radius: 5vw;
@@ -21,7 +21,7 @@
     background-color: white;
 }
 
-.background-style{
+.background-style {
     width: 100vw;
     height: 54.3vw;
     background-image: repeating-linear-gradient(0deg, #79c2d2, #79c2d2 1vw, #e1f4fd 0vw, #e1f4fd 2.5vw);
@@ -32,7 +32,7 @@
     z-index: -1;
 }
 
-.title-content{
+.title-content {
 
     background-color: #79c2d2;
     border-radius: 2vw;
@@ -49,11 +49,11 @@
     top: -3.3vw;
 }
 
-.title-background-rectangle{
+.title-background-rectangle {
     height: 1vw;
 
-    background-color: rgb(175,55,117);
-    color: rgb(175,55,117);
+    background-color: rgb(175, 55, 117);
+    color: rgb(175, 55, 117);
     border-style: solid;
 
     position: absolute;
@@ -62,7 +62,7 @@
     top: -1.2vw;
 }
 
-.activity-text{
+.activity-text {
     background: #79c2d2;
     border: 2px solid #79c2d2;
     border-radius: 2.5vw;
@@ -77,10 +77,22 @@
     z-index: 1;
 }
 
-.activity-img{
+.activity-img {
     width: 13vw;
     position: absolute;
     right: -2.3vw;
     top: 0.5vw;
     z-index: 2;
+}
+
+.text-style{
+    font-family: Zar;
+    font-size: 2vw;
+    direction: rtl;
+    white-space: pre-wrap;
+}
+
+.new-line {
+display: block;
+margin: 5px 0;
 }
