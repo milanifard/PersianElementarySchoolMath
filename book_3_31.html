@@ -25,11 +25,74 @@
             <img class="activity-img" src="./assets/3rd/images/activity.png" alt="activity-img">
             <div class="activity-text">فعالیت</div>
         </div>
-        <!--this div is for first question-->
-        <div class="text-style" style="position:absolute;top: 10vm;right: 10vm;">
-            1-در درس پيش با دسته های 1000تايي،100تايي،10تايي و يكي آشنا شديد.
+        <div class="container" id="question-1">
+            <div class="text-config questions-text-config" style="margin-top: 0vw" id="question-1-text">
+                <span class="question_number">1-</span>در درس پيش با دسته های 1000تايي،100تايي،10تايي و يكي آشنا شديد.
             حالا با اين دسته ها ابتدا جدول ارزش مكاني را کامل كنيد. سپس، آن ها را با عدد و حروف بنويسيد.
+            </div>
+
+            <!--TODO adad haye in div bayad neveshte beshe, table resize she-->
+            <div style="margin-left: 0vw; display: inline-block;" id="question-1-shapes">
+
+                <div id="1k" style="display: inline-block; margin-left: 1.5vw;">
+                    <div class="circle"></div>
+                    <div class="circle overlay-circle"></div>
+                    <!--<div class="text-config"style="position: absolute;top:22.5vw;left: 4vw;">1000</div>-->
+                </div>
+                <div id="100taii" style="display: inline-block;margin-left: 1.5vw;">
+                    <div class="circle"></div>
+                    <!--<div class="text-config"style="position: absolute;top:22.5vw;left: 13vw;">100</div>-->
+                </div>
+                <div id="10taii" style="display: inline-block;margin-left: 1.5vw;">
+                    <div class="circle"></div>
+                    <div class="circle overlay-circle"></div>
+                    <div class="circle overlay-circle"></div>
+                    <!--<div class="text-config" style="position: absolute;top:22.5vw;left: 24.5vw;">10</div>-->
+                </div>
+                <div id="1i" style="display: inline-block;margin-left: 1.5vw;">
+                    <div class="circle"></div>
+                    <div class="circle overlay-circle"></div>
+                    <div class="circle overlay-circle"></div>
+                    <div class="circle overlay-circle"></div>
+                    <!--<div class="text-config" style="position: absolute;top:22.5vw;left: 37vw;" >1</div>-->
+                </div>
+            </div>
+            <div id="question-1-table" style="display: inline-block;width: 20vw; margin-left: 0.5vw;">
+                <table class="question-1-table tbl" style="border-collapse: collapse;">
+                    <tr>
+                        <th class="text-config question-1-table-cells tbl" style="border-top: none;border-left: none">هزارگان</th>
+                        <th class="text-config question-1-table-cells tbl" style="border-top: none;">صدگان</th>
+                        <th class="text-config question-1-table-cells tbl" style="border-top: none;">دهگان</th>
+                        <th class="text-config question-1-table-cells tbl" style="border-top: none;border-right: none">يكان</th>
+                    </tr>
+                    <tr>
+                        <th class="text-config question-1-table-cells tbl" style="border-bottom: none;border-left: none">
+                            <input class="table-input-config-question-1" type="number">
+                        </th>
+                        <th class="text-config question-1-table-cells tbl" style="border-bottom: none;">
+                            <input class="table-input-config-question-1" type="number">
+                        </th>
+                        <th class="text-config question-1-table-cells tbl" style="border-bottom: none;">
+                            <input class="table-input-config-question-1" type="number">
+                        </th>
+                        <th class="text-config question-1-table-cells tbl" style="border-bottom: none;border-right: none">
+                            <input class="table-input-config-question-1" type="number">
+                        </th>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div id="question-1-inputs" style="display: inline-block;width: 20vw; margin-left: 0.5vw;">
+                <div>
+                    <input class="input-config-question-1" type="number">
+                </div>
+                <div>
+                    <input class="input-config-question-1" type="text">
+                </div>
+            </div>
         </div>
+
 
 
     </div>
