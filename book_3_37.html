@@ -116,14 +116,14 @@
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 31.5vw;margin-top: -1.7vw"></div>
                 </div>
-                <input type="text" id="textBox3" class = "textBox-style" style="position: absolute; margin-left:34vw ; margin-top: -2em">
+                <input type="text" id="textBox3" onchange="javascript: testQ2(0,'textBox3');" class = "textBox-style" style="position: absolute; margin-left:34vw ; margin-top: -2em">
             </div>
             <div id="third">
                 <div class="text-config" style="position: absolute ;direction:ltr;padding-top: 1vw; margin-top: -4vw;margin-left: 54vw">3026</div>
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 58.5vw;margin-top: -1.7vw"></div>
                 </div>
-                <input type="text" id="textBox4" class = "textBox-style" style="position: absolute; margin-left:61vw ; margin-top: -2em">
+                <input type="text" id="textBox4"  onchange="javascript: testQ2(1,'textBox4');"class = "textBox-style" style="position: absolute; margin-left:61vw ; margin-top: -2em">
             </div>
             <div id="Q3" class="text-config questions-text-config" style="padding-top: 1.5vw; padding-right: 2vw; margin-top: 2vw">3ــ به جاي رقم های يکان، دهگان و صدگان عددهاي زير، صفر قرار دهيد و آن هارا بنويسيد. </div>
             <div id="first2">
@@ -131,21 +131,21 @@
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 4.5vw;margin-top: -1.7vw"></div>
                 </div>
-                <input type="text" id="textBox5" class = "textBox-style" style="position: absolute; margin-left:7vw ; margin-top: -2em">
+                <input type="text" id="textBox5" onchange="javascript: testQ2(2,'textBox5');" class = "textBox-style" style="position: absolute; margin-left:7vw ; margin-top: -2em">
             </div>
             <div id="second2">
                 <div class="text-config" style="position: absolute ;direction:ltr;padding-top: 1vw; margin-top: -4vw;margin-left: 27vw">8070</div>
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 31.5vw;margin-top: -1.7vw"></div>
                 </div>
-                <input type="text" id="textBox6" class = "textBox-style" style="position: absolute; margin-left:34vw ; margin-top: -2em">
+                <input type="text" id="textBox6" onchange="javascript: testQ2(3,'textBox6');" class = "textBox-style" style="position: absolute; margin-left:34vw ; margin-top: -2em">
             </div>
             <div id="third2">
                 <div class="text-config" style="position: absolute ;direction:ltr;padding-top: 1vw; margin-top: -4vw;margin-left: 54vw">6721</div>
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 58.5vw;margin-top: -1.7vw"></div>
                 </div>
-                <input type="text" id="textBox7" class = "textBox-style" style="position: absolute; margin-left:61vw ; margin-top: -2em">
+                <input type="text" id="textBox7" onchange="javascript: testQ2(4,'textBox7');" class = "textBox-style" style="position: absolute; margin-left:61vw ; margin-top: -2em">
             </div>
         </div>
         </div>
@@ -155,7 +155,7 @@
             <div class="guess-box-level2">
                 <img src="assets/3rd/images/pourreza/tarazoo.png" style="width: 19vw;" alt="ترازو">
                 <textarea type="text" id="textBox1" class = "textarea" style="position: absolute; margin-left:15vw ;"  rows="10" cols="30"></textarea>
-                <button class="submit" style="position: absolute; margin-left:32vw ; margin-top: 16vw">تاييد</button>
+                <button class="submit" onclick="javascript: testTextBox('textBox1');" style="position: absolute; margin-left:32vw ; margin-top: 16vw">تاييد</button>
             </div>
             <div class="text-config" style="padding-top: 5vw;">با ترازويي که ساخته ايد، جرم چيزهاي مختلف را اندازه گيري کنيد.</div>
         </div>
@@ -163,3 +163,27 @@
         </div>
     </div>
 </body>
+<script language="JavaScript">
+    function $(id){ return document.getElementById(id);}
+    var answersExcept2 = [2500,3000,7400,8000,6700];
+    function testQ2(index,id){
+        var obj = $(id);
+        if(obj.value == answersExcept2[index]){
+            obj.style.backgroundColor = "#67b56f";
+        }
+        else{
+            obj.style.backgroundColor = "#db3a2e";
+        }
+    }
+    function testTextBox(id) {
+        var obj = $(id);
+        var str = obj.value;
+        if (str.includes("کتاب") || str.includes("جرمکتاب") || str.includes("جرم کتاب")||str.includes("ketab"))
+        {
+            alert("جواب شما درست است!");
+        }
+        else {
+            alert("جرم کتاب بیشتر است بیشتر دقت کن!");
+        }
+    }
+</script>

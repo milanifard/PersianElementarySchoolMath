@@ -270,6 +270,9 @@
     font-size: 2vw;
     border-radius: 1vw;
 }
+.submit:hover{
+    cursor: pointer;
+}
 .arrow2{
     width: 120px;
 }
