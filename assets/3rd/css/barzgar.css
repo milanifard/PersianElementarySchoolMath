@@ -1,7 +1,8 @@
 :root {
     --color-very-light-blue: rgb(231, 245, 253);
     --color-light-blue: rgb(128, 190, 204);
-    --color-light-gray: rgb(233, 232, 232);
+    --color-light-gray: #e9e8e8;
+    --color-gray : #cfcfcf;
     --color-light-orange: rgb(252, 196, 67);
     --color-orange: rgb(247, 176, 69);
     --color-dark-orange: rgb(238, 134, 32);
@@ -85,14 +86,73 @@
     z-index: 2;
 }
 
-.text-style{
+.text-config{
     font-family: Zar;
     font-size: 2vw;
     direction: rtl;
     white-space: pre-wrap;
 }
 
+.questions-text-config{
+    padding-right: 5vw;
+    padding-left: 3vw;
+    padding-bottom: 2vw;
+    margin-top: 2vw;
+}
+.container {
+    max-width: 100vw;
+    margin: 5vw auto;
+}
+
 .new-line {
-display: block;
-margin: 5px 0;
+    display: block;
+    margin: 5px 0;
+}
+.circle {
+  height: 4vw;
+  width: 4vw;
+  background-color: rgb(233, 232, 232);
+  border: 0.1vw solid #cfcfcf;
+  border-radius: 50%;
+  display: inline-block;
+}
+.question_number{
+    color : #79c2d2;
+}
+
+.overlay-circle{
+    margin-left: -3vw;
+    text-align: center;
+    direction: rtl;
+    padding: 0vw;
+}
+
+.question-1-table-cells{
+    border : 0.15vw solid black;
+    width: 5vw;
+    margin: 0vw;
+    padding: 0vw;
+}
+.question-1-table{
+    border-collapse : collapse;
+    width: 20vw;
+    margin: 0vw;
+    padding: 0vw;
+}
+
+.input-config-question-1{
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-bottom: 0.15vw solid rgb(128, 190, 204);
+}
+.table-input-config-question-1{
+    width: 5vw;
+    margin: 0;
+    padding: 0;
+}
+.tbl{
+    width: 2vw;
+    height: 2vw;
 }
