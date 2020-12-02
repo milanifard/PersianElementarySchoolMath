@@ -28,14 +28,14 @@ body{
 
 .border{
     width: 90%;
-    padding: 50% 0;
+    padding: 70% 0;
     background: white;
     border: 0.8vw double var(--purple-dark) ;
     border-radius: 0 4vw 4vw 0 ;
     position: relative;
     margin-right:10vw; 
-    margin-top: 8vw;
-    margin-bottom: 14vw;
+    margin-top: 12vw;
+    margin-bottom: 22vw;
     border-left: none;
 } 
 
@@ -53,20 +53,20 @@ body{
 
 } 
 
-.title{
+.title_text{
     background-color: var(--purple--title);
     border-radius: 2vw;
 
     text-align: center;
-    /* font-family: Koodak; */
+    /* font-family: "Faraz"; */
     font-size: 3vw; 
     color: black;
 
-    padding: 0 2vw;
+    padding: 2vw 2vw;
     position: absolute;
     right: 35vw;
     left: 35vw;
-    top: -2.7vw;
+    top: -4.4vw;
     
 }
 
@@ -77,7 +77,7 @@ body{
 
     text-align: center;
     font-size: 2vw;
-    font-family: Koodak;
+    font-family: "Faraz";
     color: white;
 
     padding: 0 3vw;
@@ -110,4 +110,53 @@ body{
     top: 0.2vw;
     z-index: 2;
 
+}
+
+.question1{
+    /* border : 1px solid red; */
+    position: absolute;
+    top : 9vw;
+    left:3vw;
+    right: 10vw;
+
+ 
+    font-family: "Faraz", "Times New Roman";
+    font-size: 2vw;
+    direction: rtl;
+
+
+}
+
+.text{
+    line-height: 1.8;
+    font-family: "arial", "Times New Roman";
+    font-size: 2vw;
+    font-weight: 1px;
+
+}
+.img_q1{
+    width: 65vw;
+    padding: 5vw;
+    padding-right: 8vw;
+}
+
+.question2{
+    /* border : 1px solid red; */
+    position: absolute;
+    /* top : 100vw; */
+    left:3vw;
+    right: 5vw;
+    bottom: 7vw;
+
+ 
+    font-family: "Faraz", "Times New Roman";
+    font-size: 2vw;
+    direction: rtl;
+
+
+}
+.img_paperClipRuler{
+    width: 25vw;
+    padding: 5vw;
+    padding-right: 50vw;
 }
