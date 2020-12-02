@@ -189,7 +189,11 @@
     text-align: center;
     width: 10vw;
     border: none;
+    border-radius: 0.6vw;
+    font-size: 1.75vw;
     border-bottom: 2px solid #79c2d2;
+    border-bottom-left-radius: 0.3vw;
+    border-bottom-right-radius: 0.3vw;
 }
 .arrow {
     width: 120px;
@@ -266,6 +270,9 @@
     font-size: 2vw;
     border-radius: 1vw;
 }
+.submit:hover{
+    cursor: pointer;
+}
 .arrow2{
     width: 120px;
 }
@@ -279,9 +286,9 @@
 .line2::after{
     position: absolute;
     content: '';
-    left: 0.2vw;
+    left: 0.4vw;
     right: 0;
-    top: -0.35vw;
+    top: -0.2em;
     width: 0;
     height: 0;
     border: solid #b41878;

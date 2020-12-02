@@ -20,6 +20,10 @@ span.question {
     text-align: right;
 }
 
+span.qu_num {
+    color: var(--light-green);
+}
+
 p, h2, span{
     font-family: Koodak;
 }
@@ -44,7 +48,7 @@ p, h2, span{
     margin: auto;
     border-radius: 30px;
     font-size:1vw;
-    margin-top: -5vw;
+    margin-top: -4vw;
     position: relative;
     z-index: 5;
 }
@@ -92,8 +96,8 @@ p, h2, span{
 
 .title {
     background-color: var(--middle-green);
-    width: 5vw;
-    height: 30px;
+    width: 7.5vw;
+    height: 2.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,12 +105,16 @@ p, h2, span{
     font-size:1.3vw;
     color: white;
     margin-top: 10px;
-    margin-right: -5px;
+    margin-right: -2.2vw;
+}
+
+.title > p {
+    margin-right: 0.7vw;
 }
 
 .content {
     margin-top: 3vw;
-    margin-right: 10vw;
+    margin-right: 5vw;
     width: 75%;
 }
 

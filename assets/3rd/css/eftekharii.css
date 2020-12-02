@@ -16,7 +16,7 @@
     --grid_green_color:#4ba338;
     --grid_purple_color:#a088ba;
     --grid_light_brown_color:#f19345;
-
+    --creative_color:#e9f1d2;
 }
 
 *{
@@ -61,6 +61,13 @@ body{
     float: left;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.text-red{
+    color: red;
+}
 
 .main {
     width: 100%;
@@ -78,8 +85,14 @@ body{
     position: relative;
 }
 
-
-
+.creative{
+    width: 90%;
+    padding: 1vw 2vw 2vw 5vw;
+    background-color: var(--creative_color);
+    float: right;
+    border: 0.2vw solid var(--main_color);
+    border-radius: 1vw;
+}
 
 .page-title{
     width: 18vw;
@@ -103,12 +116,19 @@ body{
     width: 100%;
     height: 13vw;
     float: right;
+    position: relative;
 }
 
 .topic-image{
     width: 10%;
     height: 13vw;
     float: right;
+}
+
+.topic-image-practice{
+    width: 10%;
+    height: 11vw;
+    position: absolute;
 }
 
 .topic-title{
@@ -127,6 +147,26 @@ body{
     margin-right: -2vw;
     font-size: 1.75vw;
 }
+
+.topic-title-practice{
+    width: 12vw;
+    position: absolute;
+    padding: 0 2vw;
+    margin-right: 2.5vw;
+    text-align:left ;
+}
+.topic-title-creative{
+    width: 10vw;
+    text-align: center;
+    padding: 0vw 1vw;
+    position: absolute;
+    background-color: var(--footer_color1);
+    border-top-left-radius: 0.75vw;
+    border-bottom-left-radius: 0.75vw;
+    right: 0;
+    float: right;
+}
+
  .question_box{
      width: 80%;
      padding: 0vw 0;
@@ -161,7 +201,6 @@ body{
     width: 100%;
     float: right;
 }
-
 .half-page {
     width: 50%;
     float: right;
@@ -177,6 +216,25 @@ body{
     padding:0;
 }
 
+.third-forth-page{
+    width: 75%;
+    float: left;
+}
+.one-forth-page{
+    width: 25%;
+    float: left;
+}
+
+.calculator-size{
+    width: 15vw;
+    height: 20vw;
+}
+
+.calman-size{
+    width: 12vw;
+    height: 14vw;
+
+}
 
 .five_col{
     grid-template-columns: 4vw 4vw 4vw 4vw 4vw ;
@@ -305,14 +363,32 @@ body{
     border-bottom:var(--main_color) solid 0.2vw;
     margin: 2vw 0;
     text-align: center;
+    background-color: transparent;
+}
+
+
+.input-large-style{
+    width: 20vw;
+    border-bottom:var(--main_color) solid 0.1vw;
+    margin: -1vw 1vw;
+    text-align: center;
+    float: left;
 }
 .input-small-style{
     width: 4vw;
     height: 2vw;
+
+}
+.creative-input-style{
+    width: 4vw;
+    height: 2vw;
+    margin-left: 1vw;
+    margin-top: 0;
 }
 .input-xsmall-style{
     width: 1.3vw;
-    height: 1vw;
+    height: 2vw;
+    font-size: 1.5vw;
 }
 
 .submit{
@@ -335,6 +411,11 @@ body{
 .bullet{
     color: var(--main_color);
     font-size: 5vw;
+}
+
+.guider{
+    width: 6vw;
+    height: 4vw;
 }
 
 .page-number{
@@ -392,6 +473,8 @@ body{
     color: olive;
     font-size: 3vw;
 }
+
+
 
 
 
