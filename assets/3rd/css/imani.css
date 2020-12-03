@@ -168,10 +168,19 @@ table {
 }
 
 .green_box2{
-    width: 90%; 
     margin: auto;
     margin-bottom: 2vw;
- }
+}
+
+.im {
+    margin-right: 10%;
+    width: 75%;
+}
+
+.qu {
+    margin-right: 10%;
+    margin-top: 10%;
+}
  
 form > div > span {
     text-align: right;
@@ -183,6 +192,19 @@ form > div > span {
     border: 1px solid black;
 }
 
+.page_num {
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+    border-radius: 3px;
+    background-color: var(--dark-green);
+    margin-right: 7vw;
+    display: flex;
+    justify-content: center;
+}
+.page_num > p {
+    margin: auto;
+}
 
 /* btn */
 .btn_div {
