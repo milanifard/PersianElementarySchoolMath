@@ -131,13 +131,13 @@
     border : 0.15vw solid black;
     width: 5vw;
     margin: 0vw;
-    padding: 0vw;
+    padding: 1vw;
 }
 .question-1-table{
     border-collapse : collapse;
     width: 20vw;
-    margin: 0vw;
-    padding: 0vw;
+    margin: 0;
+    padding: 0;
 }
 
 .input-config-question-1{
@@ -152,7 +152,30 @@
     margin: 0;
     padding: 0;
 }
-.tbl{
-    width: 2vw;
-    height: 2vw;
+.table-text-config{
+    font-family: ZAR;
+    font-size: 1.5vw;
+    direction: rtl;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.no-padding-margin{
+    margin : 0;
+    padding: 0;
+}
+#question3-input-number::before{
+    content: 'يه عدد';
+}
+#question3-input-text::before{
+    content: 'يه حروف';
+}
+.andazegiri-kon{
+    width: 82vw;
+    position: relative;
+    left:1vw;
+    background-color: #e1f4fd;
+    border: 0.15vw solid #79c2d2;
+    border-radius: 2vw;
+    margin-bottom: 2vw;
 }
