@@ -159,13 +159,20 @@ table {
     background-color: var(--super-light-green);
     margin: auto;
 }
-.green_box > * {
+
+.green_box1{
    width: 30vw; 
    margin: auto;
    margin-top: 2vw;
    margin-bottom: 2vw;
-
 }
+
+.green_box2{
+    width: 90%; 
+    margin: auto;
+    margin-bottom: 2vw;
+ }
+ 
 
 
 
