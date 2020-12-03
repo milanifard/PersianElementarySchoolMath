@@ -173,7 +173,9 @@ table {
     margin-bottom: 2vw;
  }
  
-
+form > div > span {
+    text-align: right;
+}
 
 
 /* btn */
@@ -222,3 +224,66 @@ table {
   padding: 1vw 1.5vw;
 }
 
+/* select */
+#sleep{
+    background-color: #E91E63;
+}
+#party {
+    background-color: #9C27B0;
+}
+#study {
+    background-color: #3F51B5;
+}
+#pray_morning {
+    background-color: #009688;
+}
+#pray_day {
+    background-color: #4CAF50;
+}
+#pray_night {
+    background-color: #8BC34A;
+}
+#way_to_party {
+    background-color: #FFEB3B;
+}
+#way_to_home {
+    background-color: #FF9800;
+}
+#rest {
+    background-color: #FF5722;
+}
+#shower {
+    background-color: #f44336;
+}
+
+
+.sleep{
+    background-color: #E91E63;
+}
+.party {
+    background-color: #9C27B0;
+}
+.study {
+    background-color: #3F51B5;
+}
+.pray_morning {
+    background-color: #009688;
+}
+.pray_day {
+    background-color: #4CAF50;
+}
+.pray_night {
+    background-color: #8BC34A;
+}
+.way_to_party {
+    background-color: #FFEB3B;
+}
+.way_to_home {
+    background-color: #FF9800;
+}
+.rest {
+    background-color: #FF5722;
+}
+.shower {
+    background-color: #f44336;
+}
