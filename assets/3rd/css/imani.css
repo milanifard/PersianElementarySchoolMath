@@ -111,7 +111,7 @@ p, h2, span{
 
 .content {
     margin-top: 3vw;
-    margin-right: 5vw;
+    margin-right: 2vw;
     width: 70%;
 }
 
@@ -136,10 +136,10 @@ table {
     width: 100%;
 }
 .td1 {
-    width: 60%;
+    width: 75%;
 }
 .td2 {
-    width: 40%;
+    width: 25%;
 }
 
 .ans_mid {
@@ -191,7 +191,6 @@ table {
 .btn--primary {
   background: var(--light-green);
   color: #fff;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   padding: 0.6vw 1vw;
 }
@@ -206,7 +205,7 @@ table {
   margin-left: -3.5vw;
 }
 .form__field {
-  width: 10vw;
+  width: 5vw;
   background: #fff;
   color: #a3a3a3;
   font: inherit;
