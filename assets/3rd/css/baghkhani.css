@@ -1,0 +1,121 @@
+:root {
+    --main_color: #47a758;
+    --footer_color1: #84b954;
+    --footer_color2: #b9ce4d;
+    --title_color: #b9ce4d;
+    --title-blue: #3e549a;
+    --topic-title-color: #84b954;
+    --question_number_color: #3b9e3a;
+    --grid_q1_color: #7fbecc;
+    --grid_orange_color: #f8b044;
+    --grid_pink_color: #f19684;
+    --grid_light_blue_color: #64b1c7;
+    --grid_gold_color: #fcc441;
+    --grid_light_purple_color: #d17fa6;
+    --grid_red_color: #df2626;
+    --grid_green_color: #4ba338;
+    --grid_purple_color: #a088ba;
+    --grid_light_brown_color: #f19345;
+    --creative_color: #e9f1d2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+@font-face {
+    font-family: Zar;
+    src: url("/assets/fonts/Zar.woff") format("woff");
+}
+
+body {
+    font-family: "B Zar";
+    font-size: 2vw;
+    text-align: justify-all;
+    background-image: repeating-linear-gradient(0deg, var(--footer_color1), var(--footer_color1) 1vw, var(--footer_color2) 0vw, var(--footer_color2) 2.5vw);
+    background-size: 100% 30%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.content_page {
+    width: 90%;
+    background: white;
+    margin: 3vw auto;
+    padding: 0vw 3vw;
+    border: 1vw double;
+    border-color: var(--main_color);
+    border-radius: 2vw;
+    position: relative;
+}
+
+.titlePage {
+    width: 18vw;
+    height: 5vw;
+    margin: 0 auto;
+    padding-top: .5vw;
+    background-color: var(--title_color);
+    border-style: double;
+    text-align: center;
+    font-size: 2vw;
+    color: black;
+    text-align: center;
+    top: -2.75vw;
+    position: absolute;
+    margin-right: 34%;
+    border-radius: 2vw;
+    font-weight: bold;
+}
+
+.Main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content_page {
+    width: 90%;
+    background: white;
+    margin: 3vw auto;
+    padding: 0vw 3vw;
+    border: 1vw double;
+    border-color: var(--main_color);
+    border-radius: 3vw;
+    position: relative;
+}
+
+.clearfix {
+    clear: both;
+    margin: 2vw 0px;
+}
+
+.StartPage {
+    margin-top: 1vw;
+    width: 100%;
+    height: 13vw;
+    float: right;
+    position: relative;
+}
+
+.StartpageImage {
+    width: 10%;
+    height: 13vw;
+    float: right;
+}
+
+.TopicStartTitle {
+    float: right;
+    width: 10vw;
+    height: 3vw;
+    background-color: var(--topic-title-color);
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    border-radius: 0.75vw 0 0 0.75vw;
+    margin-top: 0.5vw;
+}
