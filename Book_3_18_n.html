@@ -6,41 +6,6 @@
     <!-- <script src="myscripts.js"></script> -->
 
     <script>
-        function submitSelect1(){
-            select = document.getElementById("s1")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-        function submitSelect2(){
-            select = document.getElementById("s2")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-        function submitSelect3(){
-            select = document.getElementById("s3")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-        function submitSelect4(){
-            select = document.getElementById("s4")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-        function submitSelect5(){
-            select = document.getElementById("s5")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
         function submitSelect6(){
             select = document.getElementById("s6")
             select.className = '';
@@ -199,84 +164,70 @@
         </div>
 
         <p class="question">نوارهای رنگی مربوط به ساعت‌های قبل از ظهر و بعد از ظهر (کار در کلاس) را بریده‌ایم و روی یک خط به‌دنبال هم چسبانده‌ایم. با رنگ کردن، کارهای زهرا را در روز جمعه مشخص کنید</p>
+        <p class="question">.با استفاده از راهنما رنگ مناسب را انتخاب کنید</p>
+        <div class="flex_row flex_end">
+            <div class="flex_col"  style="margin:1vw">
+                <div class="little_box shower"></div>
+                <p>حمام</p>
+            </div>
+            <div class="flex_col" style="margin:1vw">
+                <div class="little_box rest"></div>
+                <p>استراحت</p>
+            </div>
+            <div class="flex_col"  style="margin:1vw">
+                <div class="little_box way_to_home"></div>
+                <p>برگشت به خانه</p>
+            </div>
+            <div class="flex_col" style="margin:1vw">
+                <div class="little_box way_to_party"></div>
+                <p>رفتن به مهمانی</p>
+            </div>
+            <div class="flex_col"  style="margin:1vw">
+                <div class="little_box pray_night"></div>
+                <p>استراحت، نماز و شام</p>
+            </div>
+            <div class="flex_col" style="margin:1vw">
+                <div class="little_box pray_day"></div>
+                <p>نماز و نهار</p>
+            </div>
+            <div class="flex_col"  style="margin:1vw">
+                <div class="little_box pray_morning"></div>
+                <p>نماز و صبحانه</p>
+            </div>
+            <div class="flex_col" style="margin:1vw">
+                <div class="little_box study"></div>
+                <p>درس خواندن در خانه</p>
+            </div>
+            <div class="flex_col"  style="margin:1vw">
+                <div class="little_box party"></div>
+                <p>مهمانی</p>
+            </div>
+            <div class="flex_col" style="margin:1vw">
+                <div class="little_box sleep"></div>
+                <p>خواب</p>
+            </div>
+        </div>
         <div>
             <form class="flex_row">  
                 <div class="flex_col">
                     <span>1</span>
-                    <select id="s1"  onclick="submitSelect1()">
-                    <option id="sleep" value="sleep"></option>
-                    <option id="party" value="party"></option>
-                    <option id="study" value="study"></option>
-                    <option id="pray_morning" value="pray_morning"></option>
-                    <option id="pray_day" value="pray_day"></option>
-                    <option id="pray_night" value="pray_night"></option>
-                    <option id="way_to_party" value="way_to_party"></option>
-                    <option id="way_to_home" value="way_to_home"></option>
-                    <option id="rest" value="rest"></option>
-                    <option id="shower" value="shower"></option>
-                    </select>
+                    <div class="little_box" id="sleep" ></div>
                 </div>
                 <div class="flex_col">
                     <span>2</span>
-                    <select id="s2"  onclick="submitSelect2()">
-                        <option id="sleep" value="sleep"></option>
-                        <option id="party" value="party"></option>
-                        <option id="study" value="study"></option>
-                        <option id="pray_morning" value="pray_morning"></option>
-                        <option id="pray_day" value="pray_day"></option>
-                        <option id="pray_night" value="pray_night"></option>
-                        <option id="way_to_party" value="way_to_party"></option>
-                        <option id="way_to_home" value="way_to_home"></option>
-                        <option id="rest" value="rest"></option>
-                        <option id="shower" value="shower"></option>
-                    </select>
+                    <div class="little_box" id="sleep" ></div>
                 </div>
                 <div class="flex_col">
                     <span>3</span>
-                    <select id="s3"  onclick="submitSelect3()">
-                        <option id="sleep" value="sleep"></option>
-                        <option id="party" value="party"></option>
-                        <option id="study" value="study"></option>
-                        <option id="pray_morning" value="pray_morning"></option>
-                        <option id="pray_day" value="pray_day"></option>
-                        <option id="pray_night" value="pray_night"></option>
-                        <option id="way_to_party" value="way_to_party"></option>
-                        <option id="way_to_home" value="way_to_home"></option>
-                        <option id="rest" value="rest"></option>
-                        <option id="shower" value="shower"></option>
-                    </select>
+                    <div class="little_box" id="sleep" ></div>
                 </div>
                 <div class="flex_col">
                     <span>4</span>
-                    <select id="s4"  onclick="submitSelect4()">
-                    <option id="sleep" value="sleep"></option>
-                    <option id="party" value="party"></option>
-                    <option id="study" value="study"></option>
-                    <option id="pray_morning" value="pray_morning"></option>
-                    <option id="pray_day" value="pray_day"></option>
-                    <option id="pray_night" value="pray_night"></option>
-                    <option id="way_to_party" value="way_to_party"></option>
-                    <option id="way_to_home" value="way_to_home"></option>
-                    <option id="rest" value="rest"></option>
-                    <option id="shower" value="shower"></option>
-                
-                    </select>
+                    <div class="little_box" id="sleep" ></div>
                 </div>
                 <div class="flex_col">
                     <span>5</span>
-                    <select id="s5"  onclick="submitSelect5()">
-                    <option id="sleep" value="sleep"></option>
-                    <option id="party" value="party"></option>
-                    <option id="study" value="study"></option>
-                    <option id="pray_morning" value="pray_morning"></option>
-                    <option id="pray_day" value="pray_day"></option>
-                    <option id="pray_night" value="pray_night"></option>
-                    <option id="way_to_party" value="way_to_party"></option>
-                    <option id="way_to_home" value="way_to_home"></option>
-                    <option id="rest" value="rest"></option>
-                    <option id="shower" value="shower"></option>
-                
-                    </select>
+                    <div class="little_box" id="sleep" ></div>
                 </div>
                 <div class="flex_col">
                     <span>6</span>
@@ -567,7 +518,7 @@
             </form>
         </div>
         
-        
+        <br><br>
         <p class="question">برنامه‌ی کودک تلویزیون ساعت 16 پخش می‌شود. زمان شروع این برنامه ساعت چند بعد از ظهر است؟</p>
         <div class="flex_row flex_end">
             <form class="form">
