@@ -29,19 +29,20 @@
 }
 
 @font-face {
-    font-family: Zar;
-    src: url("/assets/fonts/Zar.woff") format("woff");
+    font-family: Samim;
+    font_size: 2px;
+    src: url("/assets/fonts/Samim.woff") format("woff");
 }
 
 body {
-    font-family: "B Zar";
+    font-family: "Samim";
     font-size: 2vw;
     text-align: justify-all;
+    overflow-x: hidden;
     background-image: repeating-linear-gradient(0deg, var(--footer_color1), var(--footer_color1) 1vw, var(--footer_color2) 0vw, var(--footer_color2) 2.5vw);
     background-size: 100% 30%;
     background-position: bottom;
     background-repeat: no-repeat;
-    overflow-x: hidden;
 }
 
 .content_page {
@@ -118,4 +119,32 @@ body {
     color: white;
     border-radius: 0.75vw 0 0 0.75vw;
     margin-top: 0.5vw;
+}
+
+.qnum {
+    font-family: "Samim";
+    font-size: 2vw;
+    color: var(--question_number_color);
+}
+
+.qBox {
+    top: 6vw;
+    float: right;
+    position: absolute;
+    right: 10vw;
+    font-size: 1.5vw;
+}
+
+.pictures {
+    float: right;
+    padding-right: 19vw;
+}
+
+.imagTagharon {
+    margin-left: 3vw
+}
+
+.qbox {
+    float: right;
+    font-size: 1.5vw;
 }
