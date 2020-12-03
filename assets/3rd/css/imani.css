@@ -128,10 +128,10 @@ table {
     width: 100%;
 }
 .td1 {
-    width: 75%;
+    width: 85%;
 }
 .td2 {
-    width: 25%;
+    width: 15%;
 }
 
 .ans_mid {
@@ -144,8 +144,7 @@ table {
 }
 
 .green_box {
-    margin-left: 5vw !important;
-    width: 95%;
+    width: 100%;
     border-radius: 30px;
     border: 3px solid var(--dark-green);
     background-color: var(--super-light-green);
@@ -188,7 +187,7 @@ form > div > span {
     position: relative;
     float: right;
     margin-top: -3vw;
-    margin-right: -3vw;
+    margin-right: -4.5vw;
     z-index: 7;
 }
 
@@ -208,7 +207,7 @@ form > div > span {
 }
 
 .back {
-    width: 100%;
+    width: 100vw;
     height: 20vw;
     background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2PcfT3uPwMRgHEoKOw+lkmcZ4aAQgAXZhxTFDFdogAAAABJRU5ErkJggg==) repeat;
     position: relative;
