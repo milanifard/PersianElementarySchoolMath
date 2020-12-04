@@ -1,14 +1,20 @@
 :root {
-    --light-green : #bbd75e;
-    --middle-green : #8bc669;
-    --dark-green : #4fac77;
-    --purple : #b01f6f;
+    --light-green: #bbd75e;
+    --middle-green: #8bc669;
+    --dark-green: #4fac77;
+    --purple: #b01f6f;
     --super-light-green: #e4f0d4;
 }
 
-::placeholder{
+::placeholder {
     font-family: Koodak;
     font-size: 1vw;
+}
+
+p,
+h2,
+span {
+    font-family: Koodak;
 }
 
 p.question {
@@ -19,14 +25,6 @@ p.question {
 span.question {
     font-size: 1.5vw;
     text-align: right;
-}
-
-span.qu_num {
-    color: var(--light-green);
-}
-
-p, h2, span{
-    font-family: Koodak;
 }
 
 .flex_row {
@@ -52,15 +50,15 @@ p, h2, span{
     align-items: center;
     margin: auto;
     border-radius: 30px;
-    font-size:1.5vw;
+    font-size: 1.5vw;
     margin-top: 4vw;
     position: relative;
     z-index: 7;
 }
 
 .marker {
-    position: absolute; 
-    top: 5vw; 
+    position: absolute;
+    top: 5vw;
     right: -1vw;
     z-index: 7;
 }
@@ -68,8 +66,9 @@ p, h2, span{
 .activity {
     margin-right: 5vw;
 }
-.activity > div > img{
-    width: 8vw;  
+
+.activity>div>img {
+    width: 8vw;
 }
 
 .title {
@@ -80,13 +79,13 @@ p, h2, span{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    font-size:2vw;
+    font-size: 2vw;
     color: white;
     margin-top: 10px;
     margin-right: -2.2vw;
 }
 
-.title > p {
+.title>p {
     margin-right: 0.7vw;
 }
 
@@ -111,25 +110,29 @@ p, h2, span{
     margin-top: 1vw;
     margin-right: 6vw;
 }
-.clock_col > p {
+
+.clock_col>p {
     text-align: center;
     font-size: 1.5vw;
     color: var(--purple);
 }
 
-.clock_row{
+.clock_row {
     justify-content: flex-end;
 }
-.clock_row > div > img {
+
+.clock_row>div>img {
     width: 19vw;
 }
 
 table {
     width: 100%;
 }
+
 .td1 {
     width: 85%;
 }
+
 .td2 {
     width: 15%;
 }
@@ -151,14 +154,14 @@ table {
     margin: auto;
 }
 
-.green_box1{
-   width: 30vw; 
-   margin: auto;
-   margin-top: 2vw;
-   margin-bottom: 2vw;
+.green_box1 {
+    width: 30vw;
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
-.green_box2{
+.green_box2 {
     margin: auto;
     margin-bottom: 2vw;
 }
@@ -172,8 +175,8 @@ table {
     margin-right: 10%;
     margin-top: 10%;
 }
- 
-form > div > span {
+
+form>div>span {
     text-align: right;
 }
 
@@ -202,125 +205,185 @@ form > div > span {
     display: flex;
     justify-content: center;
 }
-.page_num > p {
+
+.page_num>p {
     margin: auto;
 }
 
 .back {
     width: 100vw;
     height: 20vw;
-    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2PcfT3uPwMRgHEoKOw+lkmcZ4aAQgAXZhxTFDFdogAAAABJRU5ErkJggg==) repeat;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2PcfT3uPwMRgHEoKOw+lkmcZ4aAQgAXZhxTFDFdogAAAABJRU5ErkJggg==) repeat;
     position: relative;
     margin-top: -15vw;
     z-index: 0;
 }
 
+
 /* btn */
+
 .btn_div {
-  display: inline-block;
-  float: right;
-}
-.uppercase {
-  text-transform: uppercase;
-}
-.btn {
-  display: inline-block;
-  background: transparent;
-  color: inherit;
-  border: 0;
-  outline: 0;
-  padding: 0;
-  -webkit-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-  cursor: pointer;
-}
-.btn--primary {
-  background: var(--light-green);
-  color: #fff;
-  border-radius: 2px;
-  padding: 0.6vw 1vw;
-}
-.btn--primary:hover {
-  background: var(--middle-green);
-}
-.btn--primary:active {
-  background: var(--middle-green);
-  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
-}
-.btn--inside {
-  margin-left: -3.5vw;
-}
-.form__field {
-  width: 5vw;
-  background: #fff;
-  color: #a3a3a3;
-  font: inherit;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-  border: 0;
-  outline: 0;
-  padding: 1vw 1.5vw;
+    display: inline-block;
+    float: right;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    -webkit-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: var(--light-green);
+    color: #fff;
+    border-radius: 2px;
+    padding: 0.6vw 1vw;
+}
+
+.btn--primary:hover {
+    background: var(--middle-green);
+}
+
+.btn--primary:active {
+    background: var(--middle-green);
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn--inside {
+    margin-left: -3.5vw;
+}
+
+.form__field {
+    width: 5vw;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 1vw 1.5vw;
+}
+
+.normal_shadow {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.yellow_shadow {
+    box-shadow: 0 6px 10px 0 rgba(255, 235, 59, 0.8);
+}
+
+.red_shadow {
+    box-shadow: 0 6px 10px 0 rgba(244, 67, 54, 0.8);
+}
+
+.green_shadow {
+    box-shadow: 0 6px 10px 0 rgba(205, 220, 57, 0.8);
+}
+
+
 /* select */
-#sleep{
+
+#sleep {
     background-color: #E91E63;
 }
+
 #party {
     background-color: #9C27B0;
 }
+
 #study {
     background-color: #3F51B5;
 }
+
 #pray_morning {
     background-color: #009688;
 }
+
 #pray_day {
     background-color: #4CAF50;
 }
+
 #pray_night {
     background-color: #8BC34A;
 }
+
 #way_to_party {
     background-color: #FFEB3B;
 }
+
 #way_to_home {
     background-color: #FF9800;
 }
+
 #rest {
     background-color: #FF5722;
 }
+
 #shower {
     background-color: #f44336;
 }
 
-
-.sleep{
+.sleep {
     background-color: #E91E63;
 }
+
 .party {
     background-color: #9C27B0;
 }
+
 .study {
     background-color: #3F51B5;
 }
+
 .pray_morning {
     background-color: #009688;
 }
+
 .pray_day {
     background-color: #4CAF50;
 }
+
 .pray_night {
     background-color: #8BC34A;
 }
+
 .way_to_party {
     background-color: #FFEB3B;
 }
+
 .way_to_home {
     background-color: #FF9800;
 }
+
 .rest {
     background-color: #FF5722;
 }
+
 .shower {
     background-color: #f44336;
+}
+
+.normal {
+    color: black;
+}
+
+.wrong {
+    color: red;
+}
+
+.empty {
+    color: yellow;
+}
+
+.correct {
+    color: green;
 }
