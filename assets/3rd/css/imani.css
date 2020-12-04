@@ -371,3 +371,19 @@ form>div>span {
 .shower {
     background-color: #f44336;
 }
+
+.normal {
+    color: black;
+}
+
+.wrong {
+    color: red;
+}
+
+.empty {
+    color: yellow;
+}
+
+.correct {
+    color: green;
+}
