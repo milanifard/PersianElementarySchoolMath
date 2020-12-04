@@ -182,7 +182,7 @@ body{
      right: 5vw;
  }
 
- .question_number{
+ .question-number{
      font-family: "B Zar";
      font-size: 2vw;
      color: var(--question_number_color);
