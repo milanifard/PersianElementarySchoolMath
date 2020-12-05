@@ -136,15 +136,32 @@ body {
 }
 
 .pictures {
-    float: right;
-    padding-right: 19vw;
+    padding-right: 10vw;
 }
 
 .imagTagharon {
-    margin-left: 3vw
+    position: static;
+    margin-left: 3vw;
+    margin-right: 5vw;
+}
+
+.imagTagharon1 {
+    position: static;
+    margin-left: 15vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
 }
 
 .qbox {
     float: right;
     font-size: 1.5vw;
+    padding-right: 10vw;
+}
+
+.question {
+    font-size: 1.5vw
+}
+
+.subtitle {
+    font-size: 1vw;
 }
