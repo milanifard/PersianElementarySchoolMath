@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10vh;
+    padding-right: 10vh ;
+    width: 80%;
+    height: 80%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+    border : 1.5vh  double #5cb6cd;
+    border-left: none;
+    border-radius: 0px 30px 30px 0px;
+    z-index: -2;
+}
+
+body .content .relative{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+body .content .relative  .title{
+    width: 100%;
+    height: 100%;
+    font-size: 3.5vh;
+    background-color: #78c2d1;
+    padding: 10px 20px;
+    border-radius: 25px;
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+
+body .content .activity{  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+
+body .content .activity img{
+    width: 35%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2PX solid #78c2d1;
+}
+@media screen and (max-width: 480px) {
+    body .content .activity{
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    body .content .activity img{
+        margin-top: 5%;
+        width: 100%;
+        height: 100%;
+    }
+  }
+
+body .content .activity .activityText {
+    width: 65%;
+    height: 100%;
+    font-size: 3.5vh;
+}
+
+
+
+body .content .activity .activityText span{
+    color: #39c1f0;
+}
+
+body .content .activity input,body .content .activity2 input{
+    width: 10vh;
+    border: none;
+    border-bottom: 1px solid #39c1f0;
+    margin: 1vh;
+}
+
+body .content .activity2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+body .content .activity2 p{
+    width: 100%;
+    height: 100%;
+    font-size: 3.5vh;
+}
+
+body .content .activity2 span{
+    color: #39c1f0;
+}
+
+body .content .activity2 img{
+    margin-top: 5vh;
+    width: 100%;
+}
+
+body .content .countAndSay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    background-color: #e1f4fc;
+    width: 80%;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px solid #39c1f0;
+    border-radius: 15px;
+}
+
+body .content .countAndSay .title .first{
+    background-color: #78c2d1;
+    width: 20%;
+    height: 7vh;
+    color: #ffffff;
+    padding: 5px;
+    padding-left: -5px;
+}
+
+body .content .countAndSay .title .second{
+    text-align: center;
+    font-size: 3vh;
+}
+
+ body .content .countAndSay .cube {
+     display: flex;
+    
+     justify-content:center;
+}
+@media screen and (max-width: 480px) {
+    body .content .countAndSay .cube  {
+        flex-wrap: wrap;
+    }
+  }
+body .content .countAndSay .cube img{
+    width: 15vh;
+    height: 15vh;
+}
+
+body .content .countAndSay .cube .pencel{
+    height: 20vh;
+}
+
+body .content .countAndSay .cube input{
+    width: 30%;
+    height: 10%;
+    border: none;
+    border-bottom: 1px solid #39c1f0;
+}

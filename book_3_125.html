@@ -281,7 +281,6 @@
     }
 
 
-
     let color_picker_item = null;
     function color_picker(id) { color_picker_item = $(id);}
 
@@ -389,7 +388,9 @@
 
         }
 
-        else if (Object.values(check_count).reduce((a, b) => a + b, 0) == Object.values(ans).reduce((a, b) => a + b, 0) && color_picker_item != null){
+        else if (Object.values(check_count).reduce((a, b) => a + b, 0) == Object.values(ans).reduce((a, b) => a + b, 0) &&
+            Object.values(check_count).reduce((a, b) => a + b, 0) == 10 &&
+            color_picker_item != null){
 
             Q_feedback.textContent = "بیشتر دقت کن عزیزم. غلط حل کردی.";
             Q_feedback.classList.add("shaking-animation");
@@ -453,10 +454,7 @@
                 else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
                 break;
         }
-
-
     }
-
 
     function guess_checker(id) {
         let btn = $(id).value;

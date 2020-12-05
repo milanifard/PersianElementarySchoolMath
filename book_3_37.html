@@ -25,9 +25,83 @@
         <div id="Q1_container">
             <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw">1ــ باتوجه به محور ، عددهاي داده شده را به صورت تقريبي نمايش دهيد. </div>
         </div>
-        <div>
-            <div class="vector" style="margin-left: 10vw;"></div>
-            <div class="arroww rightt"style="position: absolute;margin-top: 1.75vw"></div>
+        <div id="test"></div>
+        <div id="anothertest"></div>
+        <div id="first-vector">
+            <div class="container" style="margin-left: 10vw;margin-top: 5vw;">
+                <div class="vector" id="firstVector" onclick="firstvector(event,'test')">
+                    <div id="firstDiv" style="font-size: 2vw ; font-family: ZAR">۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۱۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۲۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۳۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۴۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۵۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۶۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۷۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۸۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۹۰۰</div>
+                    <div id="lastDiv" style="font-size: 2vw ; font-family: ZAR">۱۰۰۰</div>
+                </div>
+            </div>
+            <div class="select"  style="margin-left: 60vw; margin-top: -7vw;">
+                <select id="firstSelect">
+                    <option value="1">27</option>
+                    <option value="2" >439</option>
+                    <option value="3" >105</option>
+                    <option value="4" >247</option>
+                    <option value="5" >807</option>
+                </select>
+            </div>
+        </div>
+        <div id="second-vector">
+            <div class="container" style="margin-left: 10vw;margin-top: 5vw;">
+                <div class="vector" id="secondVector" onclick="secondvector(event,'test')">
+                    <div id="firstDiv2" style="font-size: 2vw ; font-family: ZAR">۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۱۰۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۲۰۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۳۰۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۴۰۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۵۰۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۶۰۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۷۰۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۸۰۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۹۰۰۰</div>
+                    <div id="lastDiv2" style="font-size: 2vw ; font-family: ZAR">۱۰۰۰۰</div>
+                </div>
+            </div>
+            <div class="select" style="margin-left: 60vw; margin-top: -7vw;">
+                <select id="secondSelect">
+                    <option value="1">920</option>
+                    <option value="2" >2250</option>
+                    <option value="3" >4781</option>
+                    <option value="4" >6099</option>
+                </select>
+            </div>
+        </div>
+        <div id="third-vector">
+            <div class="container" style="margin-left: 10vw;margin-top: 5vw;">
+                <div class="vector" id="thirdVector" onclick="thirdvector(event,'test')">
+                    <div id="firstDiv3" style="font-size: 2vw ; font-family: ZAR">۱۰۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۱۱۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۱۲۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۱۳۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۱۴۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۱۵۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۱۶۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۱۷۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۱۸۰۰</div>
+                    <div style="font-size: 2vw ; font-family: ZAR">۱۹۰۰</div>
+                    <div id="lastDiv3" style="font-size: 2vw ; font-family: ZAR">۲۰۰۰</div>
+                </div>
+            </div>
+            <div class="select" style="margin-left: 60vw; margin-top: -7vw;">
+                <select id="thirdSelect">
+                    <option value="1">1050</option>
+                    <option value="2" >1170</option>
+                    <option value="3" >1430</option>
+                    <option value="4" >1685</option>
+                </select>
+            </div>
         </div>
         <div class="box-level1" style="clear:both; left: -6vw; margin-top: 5vw; border-bottom: 0.1vw">
         <div class="box-level2" style="clear:both; left: -6vw; margin-top: 1vw">
@@ -36,50 +110,44 @@
             <div class="text-config" style="direction:ltr;padding-top: 1vw; margin-top: 3vw">1437</div>
             <div class="arrow2">
                 <div class="line2 "style="position: absolute; margin-left: 4.5vw;margin-top: -1.7vw"></div>
-                <div class="arroww rightt"style="position: absolute; margin-left: 4.75vw;margin-top: -2vw"></div>
             </div>
-            <input type="text" id="textBox2" class = "textBox-style" style="position: absolute; margin-left:7vw ; margin-top: -5vh" value="1400">
+            <input type="text" id="textBox2" class = "textBox-style" style="font-size:2vw ; position: absolute; margin-left:7vw ; margin-top: -2em" value="1400">
             </div>
             <div id="second">
                 <div class="text-config" style="position: absolute ;direction:ltr;padding-top: 1vw; margin-top: -4vw;margin-left: 27vw">2560</div>
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 31.5vw;margin-top: -1.7vw"></div>
-                    <div class="arroww rightt"style="position: absolute; margin-left: 31.75vw;margin-top: -2vw"></div>
                 </div>
-                <input type="text" id="textBox3" class = "textBox-style" style="position: absolute; margin-left:34vw ; margin-top: -5vh">
+                <input type="text" id="textBox3" onchange="javascript: testQ2(0,'textBox3');" class = "textBox-style" style="position: absolute; margin-left:34vw ; margin-top: -2em">
             </div>
             <div id="third">
                 <div class="text-config" style="position: absolute ;direction:ltr;padding-top: 1vw; margin-top: -4vw;margin-left: 54vw">3026</div>
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 58.5vw;margin-top: -1.7vw"></div>
-                    <div class="arroww rightt"style="position: absolute; margin-left: 58.75vw;margin-top: -2vw"></div>
                 </div>
-                <input type="text" id="textBox4" class = "textBox-style" style="position: absolute; margin-left:61vw ; margin-top: -5vh">
+                <input type="text" id="textBox4"  onchange="javascript: testQ2(1,'textBox4');"class = "textBox-style" style="position: absolute; margin-left:61vw ; margin-top: -2em">
             </div>
             <div id="Q3" class="text-config questions-text-config" style="padding-top: 1.5vw; padding-right: 2vw; margin-top: 2vw">3ــ به جاي رقم های يکان، دهگان و صدگان عددهاي زير، صفر قرار دهيد و آن هارا بنويسيد. </div>
             <div id="first2">
                 <div class="text-config" style="direction:ltr;padding-top: 1vw; margin-top: 3vw">7401</div>
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 4.5vw;margin-top: -1.7vw"></div>
-                    <div class="arroww rightt"style="position: absolute; margin-left: 4.75vw;margin-top: -2vw"></div>
                 </div>
-                <input type="text" id="textBox5" class = "textBox-style" style="position: absolute; margin-left:7vw ; margin-top: -5vh">
+                <input type="text" id="textBox5" onchange="javascript: testQ2(2,'textBox5');" class = "textBox-style" style="position: absolute; margin-left:7vw ; margin-top: -2em">
             </div>
             <div id="second2">
                 <div class="text-config" style="position: absolute ;direction:ltr;padding-top: 1vw; margin-top: -4vw;margin-left: 27vw">8070</div>
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 31.5vw;margin-top: -1.7vw"></div>
-                    <div class="arroww rightt"style="position: absolute; margin-left: 31.75vw;margin-top: -2vw"></div>
                 </div>
-                <input type="text" id="textBox6" class = "textBox-style" style="position: absolute; margin-left:34vw ; margin-top: -5vh">
+                <input type="text" id="textBox6" onchange="javascript: testQ2(3,'textBox6');" class = "textBox-style" style="position: absolute; margin-left:34vw ; margin-top: -2em">
             </div>
             <div id="third2">
                 <div class="text-config" style="position: absolute ;direction:ltr;padding-top: 1vw; margin-top: -4vw;margin-left: 54vw">6721</div>
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 58.5vw;margin-top: -1.7vw"></div>
-                    <div class="arroww rightt"style="position: absolute; margin-left: 58.75vw;margin-top: -2vw"></div>
                 </div>
-                <input type="text" id="textBox7" class = "textBox-style" style="position: absolute; margin-left:61vw ; margin-top: -5vh">
+                <input type="text" id="textBox7" onchange="javascript: testQ2(4,'textBox7');" class = "textBox-style" style="position: absolute; margin-left:61vw ; margin-top: -2em">
             </div>
         </div>
         </div>
@@ -89,7 +157,7 @@
             <div class="guess-box-level2">
                 <img src="assets/3rd/images/pourreza/tarazoo.png" style="width: 19vw;" alt="ترازو">
                 <textarea type="text" id="textBox1" class = "textarea" style="position: absolute; margin-left:15vw ;"  rows="10" cols="30"></textarea>
-                <button class="submit" style="position: absolute; margin-left:32vw ; margin-top: 16vw">تاييد</button>
+                <button class="submit" onclick="javascript: testTextBox('textBox1');" style="position: absolute; margin-left:32vw ; margin-top: 16vw">تاييد</button>
             </div>
             <div class="text-config" style="padding-top: 5vw;">با ترازويي که ساخته ايد، جرم چيزهاي مختلف را اندازه گيري کنيد.</div>
         </div>
@@ -97,3 +165,84 @@
         </div>
     </div>
 </body>
+<script language="JavaScript">
+    function $(id){ return document.getElementById(id);}
+    var answersExcept2 = [2500,3000,7400,8000,6700];
+    function testQ2(index,id){
+        var obj = $(id);
+        if(obj.value == answersExcept2[index]){
+            obj.style.backgroundColor = "#67b56f";
+        }
+        else{
+            obj.style.backgroundColor = "#db3a2e";
+        }
+    }
+    function testTextBox(id) {
+        var obj = $(id);
+        var str = obj.value;
+        if (str.includes("کتاب") || str.includes("جرمکتاب") || str.includes("جرم کتاب")||str.includes("ketab"))
+        {
+            alert("جواب شما درست است!");
+        }
+        else {
+            alert("بیشتر دقت کن!");
+        }
+    }
+    function firstvector(event,id) {
+        var list = [27,439,105,247,807];
+        var x = event.clientX;
+        var y = event.clientY;
+           var coords = "X coords: " + x + ", Y coords: " + y;
+        var first = $('firstDiv').getBoundingClientRect();
+        var last = $('lastDiv').getBoundingClientRect();
+        var select = $('firstSelect');
+        var ebteda = first.left+15;
+        var enteha = last.left+15;
+        var postion = ((list[select.value -1]*(enteha-ebteda))/1000)+ebteda;
+        var variance = (20 * (enteha-ebteda))/1000
+        if(postion-variance<x&&x<postion+variance){
+            alert("جواب شما درست است!")
+        }
+        else{
+            alert("بیشتر دقت کن!");
+        }
+    }
+    function secondvector(event,id) {
+        var list = [920,2250,4781,6099];
+        var x = event.clientX;
+        var y = event.clientY;
+        var coords = "X coords: " + x + ", Y coords: " + y;
+        var first = $('firstDiv2').getBoundingClientRect();
+        var last = $('lastDiv2').getBoundingClientRect();
+        var select = $('secondSelect');
+        var ebteda = first.left+15;
+        var enteha = last.left+15;
+        var postion = ((list[select.value -1]*(enteha-ebteda))/10000)+ebteda;
+        var variance = (200 * (enteha-ebteda))/10000
+        if(postion-variance<x&&x<postion+variance){
+            alert("جواب شما درست است!")
+        }
+        else{
+            alert("بیشتر دقت کن!");
+        }
+    }
+    function thirdvector(event,id) {
+        var list = [1050,1170,1430,1685];
+        var x = event.clientX;
+        var y = event.clientY;
+        var coords = "X coords: " + x + ", Y coords: " + y;
+        var first = $('firstDiv3').getBoundingClientRect();
+        var last = $('lastDiv3').getBoundingClientRect();
+        var select = $('thirdSelect');
+        var ebteda = first.left+15;
+        var enteha = last.left+15;
+        var postion = (((list[select.value -1]-1000)*(enteha-ebteda))/1000)+ebteda;
+        var variance = (20 * (enteha-ebteda))/1000
+        if(postion-variance<x&&x<postion+variance){
+           alert("جواب شما درست است!")
+        }
+        else{
+            alert("بیشتر دقت کن!");
+        }
+    }
+</script>
