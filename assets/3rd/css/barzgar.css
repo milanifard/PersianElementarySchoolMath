@@ -2,12 +2,25 @@
     --color-very-light-blue: rgb(231, 245, 253);
     --color-light-blue: rgb(128, 190, 204);
     --color-light-gray: #e9e8e8;
-    --color-gray : #cfcfcf;
+    --color-gray: #cfcfcf;
     --color-light-orange: rgb(252, 196, 67);
     --color-orange: rgb(247, 176, 69);
     --color-dark-orange: rgb(238, 134, 32);
     --color-light-red: rgb(231, 96, 96);
     --color-purple: rgb(175, 55, 117);
+}
+
+.right-page {
+
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double #79c2d2;
+    margin: 6vw 10vw 0 0;
+    border-left: none;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: relative;
+    background-color: white;
 }
 
 .left-page {
@@ -50,6 +63,20 @@
     top: -3.3vw;
 }
 
+.page-number {
+    background-color: #0c9ec3;
+    border-radius: 2.5vw;
+    border: 0.9vw double white;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Koodak;
+    color: white;
+    padding: 0 3vw;
+    position: absolute;
+    bottom: -0.5vw;
+    right: -5vw;
+}
+
 .title-background-rectangle {
     height: 1vw;
 
@@ -86,19 +113,20 @@
     z-index: 2;
 }
 
-.text-config{
+.text-config {
     font-family: Zar;
     font-size: 2vw;
     direction: rtl;
     white-space: pre-wrap;
 }
 
-.questions-text-config{
+.questions-text-config {
     padding-right: 5vw;
     padding-left: 3vw;
     padding-bottom: 2vw;
     margin-top: 2vw;
 }
+
 .container {
     max-width: 100vw;
     margin: 5vw auto;
@@ -108,51 +136,56 @@
     display: block;
     margin: 5px 0;
 }
+
 .circle {
-  height: 4vw;
-  width: 4vw;
-  background-color: rgb(233, 232, 232);
-  border: 0.1vw solid #cfcfcf;
-  border-radius: 50%;
-  display: inline-block;
-}
-.question_number{
-    color : #79c2d2;
+    height: 4vw;
+    width: 4vw;
+    background-color: rgb(233, 232, 232);
+    border: 0.1vw solid #cfcfcf;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-.overlay-circle{
+.question-number {
+    color: #79c2d2;
+}
+
+.overlay-circle {
     margin-left: -3vw;
     text-align: center;
     direction: rtl;
     padding: 0vw;
 }
 
-.question-1-table-cells{
-    border : 0.15vw solid black;
+.question-1-table-cells {
+    border: 0.15vw solid black;
     width: 5vw;
     margin: 0vw;
     padding: 1vw;
 }
-.question-1-table{
-    border-collapse : collapse;
+
+.question-1-table {
+    border-collapse: collapse;
     width: 20vw;
     margin: 0;
     padding: 0;
 }
 
-.input-config-question-1{
+.input-config-question-1 {
     width: 10vw;
     margin: 0;
     padding: 0;
     border: none;
     border-bottom: 0.15vw solid rgb(128, 190, 204);
 }
-.table-input-config-question-1{
+
+.table-input-config-question-1 {
     width: 5vw;
     margin: 0;
     padding: 0;
 }
-.table-text-config{
+
+.table-text-config {
     font-family: ZAR;
     font-size: 1.5vw;
     direction: rtl;
@@ -160,22 +193,81 @@
     padding: 0;
     margin: 0;
 }
-.no-padding-margin{
-    margin : 0;
+
+.no-padding-margin {
+    margin: 0;
     padding: 0;
 }
-#question3-input-number::before{
+
+#question3-input-number::before {
     content: 'يه عدد';
 }
-#question3-input-text::before{
+
+#question3-input-text::before {
     content: 'يه حروف';
 }
-.andazegiri-kon{
+
+.andazegiri-kon {
     width: 82vw;
     position: relative;
-    left:1vw;
+    left: 1vw;
     background-color: #e1f4fd;
     border: 0.15vw solid #79c2d2;
     border-radius: 2vw;
     margin-bottom: 2vw;
+}
+
+.andazegiri-kon-text {
+    background: #79c2d2;
+    border: 2px solid #79c2d2;
+    border-radius: 2.5vw;
+    text-align: center;
+    color: white;
+    font-family: Koodak;
+    font-size: 2.25vw;
+    padding: 0 5vw 0 3vw;
+    position: absolute;
+    left: -1vw;
+    top: 0.5vw;
+    z-index: 1;
+}
+
+.andazegiri-background-rectangle {
+    height: 3.5vw;
+
+    background-color: #139ebd;
+    color: #139ebd;
+    border-style: solid;
+
+    position: absolute;
+    right: 80vw;
+    left: -1.5vw;
+    top: 0.5vw;
+}
+
+.page32-question1 {
+
+    padding-bottom: 0vw;
+    margin: 0vw;
+    padding-right: 15vw;
+
+}
+
+.page32-question3 {
+    max-width: 80vw;
+    position: relative;
+    left: 5vw;
+    border: 0.8vw double rgb(128, 190, 204);
+    border-radius: 5vw;
+    background-color: white;
+    margin-bottom: 2.5vw;
+}
+.sign{
+    color: rgb(231, 96, 96);;
+}
+.page32-question3-input{
+    width: 5vw;
+    margin: auto;
+    border: none;
+    border-bottom: 0.15vw solid rgb(128, 190, 204);
 }
