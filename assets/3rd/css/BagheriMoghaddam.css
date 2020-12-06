@@ -35,6 +35,7 @@ p1{
     padding: 10px;
     position: absolute;
 }
+
 .Text1{
     direction: rtl;
     border-color: #6788e7;
@@ -51,6 +52,7 @@ p1{
     margin-bottom: 10vw;
     margin-left: 10vw;
 }
+
 .page-topic{
     margin-top: 1vw;
     width: 100%;
@@ -112,4 +114,90 @@ p1{
     text-decoration: none;
     color: olive;
     font-size: 3vw;
+}
+/*
+    pourreza!
+ */
+.activity-text{
+    background-color: #0c9ec3;
+    border-radius: 1.5vw;
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.25vw;
+    color: white;
+    padding: 0 5vw 0 3vw;
+    position: absolute;
+    right: 8vw;
+    top: 2.5vw;
+    z-index: 1;
+}
+
+.activity-image{
+    width: 13vw;
+    position: absolute;
+    right: -2.3vw;
+    top: 0.5vw;
+    z-index: 2;
+}
+
+.that-ridiculous-red-parts-in-title{
+    height: 1vw;
+    background-color: #9d86bd;
+    color: #9d86bd;
+    border-style: solid;
+    position: absolute;
+    right: 34vw;
+    left: 34vw;
+    top: -1.2vw;
+}
+.title-style{
+    background-color: #0c9ec3;
+    border-radius: 2vw;
+    text-align: center;
+    font-size: 2.25vw;
+    color: black;
+    padding: 0 2vw;
+    position: absolute;
+    right: 35vw;
+    left: 35vw;
+    top: -3.3vw;
+}
+
+.background-style{
+    width: 100vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, #79c2d2, #79c2d2 1vw, #e1f4fd 0vw, #e1f4fd 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+}
+.left-border{
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double #79c2d2;
+    margin: 6vw 0 0 10vw;
+    border-right: none;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+.questions-text-config{
+    direction: rtl;
+    padding-right: 5vw;
+    padding-left: 3vw;
+    padding-bottom: 2vw;
+    margin-top: 2vw;
+}
+.textBox-style{
+    text-align: center;
+    width: 3vw;
+    border: none;
+    border-radius: 5vw;
+    font-size: 1.75vw;
+    border-bottom: 2px solid #79c2d2;
+    border-bottom-left-radius: 0.3vw;
+    border-bottom-right-radius: 0.3vw;
 }
