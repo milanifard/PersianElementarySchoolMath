@@ -1,8 +1,115 @@
 h1{
-    position: static;
+    position: absolute;
     color: #d07fa5;
-    width: 300px;
-    border: 5px blue;
+    width: 50vw;
+
+    max-width: 50vw;
+    font-size: 4vw;
+    max-font-size: 5vw;
+    border: 2px #365eec;
+    border-radius: 3vw;
+    border-right-color:#7fbdcb;
     border-style: solid;
-    top: 200px;
+    right: 2vw;
+    padding: 1vw;
+    background-color: white;
+
+
+}
+p1{
+
+
+    top: 50vw;
+    right: 40vw;
+    width: 50vw;
+    max-height: 10vw;
+    min-width: 45vw;
+    max-width: 50vw;
+    font-size: 2vw;
+    min-font-size: 2vw;
+    max-font-size: 5vw;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 12px;
+    float: bottom;
+    padding: 10px;
+    position: absolute;
+}
+.Text1{
+    direction: rtl;
+    border-color: #6788e7;
+    background-color: #ecf4ff;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 50vw;
+    height: 8vw;
+    position: relative;
+    top: 80vw ;
+    font-size: 2vw;
+    padding: 1vw;
+    margin-bottom: 10vw;
+    margin-left: 10vw;
+}
+.page-topic{
+    margin-top: 1vw;
+    width: 100%;
+    height: 13vw;
+    float: right;
+    position: relative;
+}
+.page-number{
+    width: 8vw;
+    height: 3vw;
+    margin: 0 auto;
+    position: absolute;
+    background-color: var(--main_color);
+    border-style: double;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    background-position: center;
+    bottom: -1.5vw;
+    right:44%;
+    border-radius: 0.75vw;
+}
+
+.page-navigator{
+    width: 100%;
+    margin: 7vw auto;
+    padding: 5vw 0vw 0vw;
+}
+
+.previous-page{
+    display: ruby;
+    float: Left;
+    position: fixed;
+
+}
+.previous-page a{
+    text-decoration: none;
+    color: var(--main_color);
+    font-size: 3vw;
+}
+.previous-page a:hover{
+    text-decoration: none;
+    color: olive;
+    font-size: 3vw;
+}
+
+.next-page{
+    display: block;
+    float: left;
+
+
+}
+.next-page a{
+    text-decoration: none;
+    color: var(--main_color);
+    font-size: 3vw;
+}
+.next-page a:hover{
+    text-decoration: none;
+    color: olive;
+    font-size: 3vw;
 }
