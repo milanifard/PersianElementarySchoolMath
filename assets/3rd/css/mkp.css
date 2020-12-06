@@ -7,7 +7,7 @@ a, a:active, a:focus, a:focus-within, a:hover, a:link, a:visited {
 }
 
 
-body{
+body {
     margin: 0;
 }
 
@@ -48,7 +48,7 @@ body{
 
 }
 
-.left-border{
+.left-border {
     width: 90vw;
     max-width: 100%;
     border: 0.8vw double var(--orange_level2);
@@ -61,7 +61,7 @@ body{
     background-color: white;
 }
 
-.background-style{
+.background-style {
 
     width: 100vw;
     height: 53vw;
@@ -75,7 +75,31 @@ body{
     z-index: -1;
 }
 
-.page-number{
+.activity_item .image {
+    width: 13vw;
+    position: absolute;
+    right: -2.3vw;
+    top: 0.5vw;
+    z-index: 2;
+}
+
+.activity_item .text {
+    background-color: var(--orange_level1);
+    border-radius: 1.5vw;
+
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.5vw;
+    color: white;
+
+    padding: 0 11vw 0 3vw;
+    position: absolute;
+    right: 3vw;
+    top: 2.5vw;
+    z-index: 1;
+}
+
+.page-number {
 
     background-color: var(--yellow_level4_guessbox);
     border-radius: 2.5vw;
@@ -92,7 +116,7 @@ body{
     right: -5vw;
 }
 
-.title-style{
+.title-style {
 
     background-color: var(--yellow_level3_border);
     border-radius: 2vw;
@@ -109,7 +133,7 @@ body{
     top: -3.3vw;
 }
 
-.that-ridiculous-red-parts-in-title{
+.that-ridiculous-red-parts-in-title {
     height: 1vw;
 
     background-color: var(--red_level2);
@@ -122,47 +146,21 @@ body{
     top: -1.2vw;
 }
 
-.activity-text{
-
-    background-color: var(--yellow_level3_border);
-    border-radius: 1.5vw;
-
-    text-align: center;
-    font-family: Koodak;
-    font-size: 2.5vw;
-    color: white;
-
-    padding: 0 11vw 0 3vw;
-    position: absolute;
-    right: 2vw;
-    top: 2.5vw;
-    z-index: 1;
-}
-
-.activity-image{
-
-    width: 13vw;
-    position: absolute;
-    right: -2.3vw;
-    top: 0.5vw;
-    z-index: 2;
-}
-
-.text-config{
+.text-config {
     font-family: Zar;
     font-size: 2vw;
     direction: rtl;
     white-space: pre-wrap;
 }
 
-.questions-text-config{
+.questions-text-config {
     padding-right: 5vw;
     padding-left: 3vw;
     padding-bottom: 2vw;
     margin-top: 2vw;
 }
 
-.colored-table{
+.colored-table {
     width: 65vw;
     margin: 0 10vw;
     border-collapse: collapse;
@@ -170,7 +168,7 @@ body{
     font-family: Koodak;
 }
 
-.colored-td{
+.colored-td {
     padding: 0.7vw;
     border: 0.25vw solid var(--blue_level2);
     font-size: 1.5vw;
@@ -178,7 +176,7 @@ body{
     text-align: center;
 }
 
-.simple-table{
+.simple-table {
     width: 65vw;
     margin: 0 3vw 0 3vw;
     border-collapse: collapse;
@@ -186,7 +184,7 @@ body{
     font-family: Koodak;
 }
 
-.simple-td{
+.simple-td {
     padding: 0.7vw;
     border: 0.3vw solid var(--orange_level3);
     font-size: 1.5vw;
@@ -194,7 +192,7 @@ body{
     text-align: center;
 }
 
-.simple-td-green{
+.simple-td-green {
     padding: 0.7vw;
     border: 0.3vw solid var(--green_level4);
     font-size: 1.5vw;
@@ -202,7 +200,7 @@ body{
     text-align: center;
 }
 
-.simple-table-border{
+.simple-table-border {
     float: left;
     border: 1vw solid var(--orange_level2);
     border-radius: 2vw;
@@ -211,14 +209,14 @@ body{
     margin-left: 5vw;
 }
 
-.bar-chart{
+.bar-chart {
     width: 25vw;
     border-collapse: collapse;
     font-size: 2vw;
     font-family: Koodak;
 }
 
-.bar-chart-td{
+.bar-chart-td {
     padding: 0.5vw;
     font-size: 2vw;
     font-family: Koodak;
@@ -252,7 +250,7 @@ body{
     background-color: white;
 }
 
-.color-picker{
+.color-picker {
     width: 1.5vw;
     height: 1.5vw;
     border: 0.2vw solid var(--purple);
@@ -263,7 +261,7 @@ body{
 }
 
 .shaking-animation {
-    animation: shake 1.5s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -287,7 +285,7 @@ body{
     }
 }
 
-.guess-box-level1{
+.guess-box-level1 {
     background-color: var(--yellow_level1_guessbox);
     border: 0.4vw solid var(--yellow_level4_guessbox);
     border-radius: 4vw;
@@ -296,7 +294,8 @@ body{
     padding: 1.5vw;
     margin: 18vw 1.5vw 5vw 7vw;
 }
-.guess-box-text-right{
+
+.guess-box-text-right {
     background-color: var(--yellow_level3_border);
     border-radius: 1.5vw 0 0 1.5vw;
     border-right: 2vw solid var(--yellow_level4_guessbox);
@@ -313,7 +312,7 @@ body{
     z-index: 1;
 }
 
-.guess-box-text-left{
+.guess-box-text-left {
     background-color: var(--yellow_level3_border);
     border-radius: 0 01.5vw 1.5vw 0;
     border-left: 2vw solid var(--yellow_level4_guessbox);
@@ -330,7 +329,7 @@ body{
     z-index: 1;
 }
 
-.guess-box-level2{
+.guess-box-level2 {
     background-color: white;
     border: 0.3vw solid var(--green_level1);
     border-radius: 4vw;
@@ -341,7 +340,7 @@ body{
     margin-right: 30vw;
 }
 
-.clock-hand:after{
+.clock-hand:after {
     width: 0;
     height: 0;
     border-bottom: 0.5vw solid transparent;
@@ -353,7 +352,7 @@ body{
 
 }
 
-.clock-hand:before{
+.clock-hand:before {
     width: 4vw;
     height: 0.3vw;
     background-color: black;
@@ -362,17 +361,21 @@ body{
     content: "";
 }
 
-.continues-rotation{
+.continues-rotation {
     animation: rotation 2s linear;
 }
 
-.continues-rotation2{
+.continues-rotation2 {
     animation: rotation 2s linear;
 }
 
 @keyframes rotation {
-    from {transform: rotate(var(--dynamic_rnd_last));}
-    to {transform: rotate(var(--dynamic_rnd));}
+    from {
+        transform: rotate(var(--dynamic_rnd_last));
+    }
+    to {
+        transform: rotate(var(--dynamic_rnd));
+    }
 }
 
 .cylinder {
@@ -382,7 +385,7 @@ body{
 }
 
 .cylinder-above {
-    content:"";
+    content: "";
     position: absolute;
     background: white;
     border: 0 solid transparent;
@@ -407,11 +410,11 @@ body{
 }
 
 .cone-circle {
-    width:4vw;
-    height:3vw;
+    width: 4vw;
+    height: 3vw;
     background: white;
     z-index: 1;
-    border-radius:50%;
+    border-radius: 50%;
 
     content: "";
     position: absolute;
