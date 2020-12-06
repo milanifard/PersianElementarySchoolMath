@@ -1,0 +1,8 @@
+h1{
+    position: static;
+    color: #d07fa5;
+    width: 300px;
+    border: 5px blue;
+    border-style: solid;
+    top: 200px;
+}
