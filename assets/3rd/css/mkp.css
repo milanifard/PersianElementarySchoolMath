@@ -12,6 +12,11 @@ body{
 }
 
 :root {
+
+    --orange_level1: #f8b044;
+    --orange_level2: #f19345;
+    --orange_level3: #f89f6d;
+
     --yellow_level1_guessbox: #fffce0;
     --yellow_level2_border: #ffdd2b;
     --yellow_level3_border: #fecc4e;
@@ -32,9 +37,6 @@ body{
     --green_level3: #44b869;
     --green_level4: #3ab54a;
 
-    --orange_level1: #fee6d3;
-    --orange_level2: #fcb94b;
-    --orange_level3: #f89f6d;
 
     --purple: #b09ac9;
 
@@ -49,8 +51,7 @@ body{
 .left-border{
     width: 90vw;
     max-width: 100%;
-
-    border: 0.8vw double var(--yellow_level2_border);
+    border: 0.8vw double var(--orange_level2);
 
     margin: 6vw 0 0 10vw;
     border-right: none;
@@ -65,7 +66,7 @@ body{
     width: 100vw;
     height: 53vw;
 
-    background-image: repeating-linear-gradient(0deg, var(--yellow_level2_border), var(--yellow_level2_border) 1vw, var(--yellow_level3_border) 0vw, var(--yellow_level3_border) 2.5vw);
+    background-image: repeating-linear-gradient(var(--orange_level2), var(--orange_level2) 1.5vw, var(--orange_level1) 0vw, var(--orange_level1) 2vw);
     background-position: bottom;
     background-repeat: no-repeat;
 
