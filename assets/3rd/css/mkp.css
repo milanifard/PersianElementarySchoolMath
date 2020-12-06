@@ -15,7 +15,7 @@ body {
 
     --orange_level1: #f8b044;
     --orange_level2: #f19345;
-    --orange_level3: #f89f6d;
+    --orange_level3: #e55726;
 
     --yellow_level1_guessbox: #fffce0;
     --yellow_level2_border: #ffdd2b;
@@ -75,7 +75,7 @@ body {
     z-index: -1;
 }
 
-.activity_item .image {
+.activity_item .activity-cover {
     width: 13vw;
     position: absolute;
     right: -2.3vw;
@@ -83,7 +83,7 @@ body {
     z-index: 2;
 }
 
-.activity_item .text {
+.activity_item .activity-title {
     background-color: var(--orange_level1);
     border-radius: 1.5vw;
 
@@ -97,6 +97,24 @@ body {
     right: 3vw;
     top: 2.5vw;
     z-index: 1;
+}
+
+.text {
+    font-family: Zar;
+    font-size: 2vw;
+    direction: rtl;
+    white-space: pre-wrap;
+}
+
+.questions-text {
+    padding-right: 5vw;
+    padding-left: 3vw;
+    padding-bottom: 2vw;
+    margin-top: 2vw;
+}
+
+.questions-number{
+    color: var(--orange_level3);
 }
 
 .page-number {
@@ -144,20 +162,6 @@ body {
     right: 34vw;
     left: 34vw;
     top: -1.2vw;
-}
-
-.text-config {
-    font-family: Zar;
-    font-size: 2vw;
-    direction: rtl;
-    white-space: pre-wrap;
-}
-
-.questions-text-config {
-    padding-right: 5vw;
-    padding-left: 3vw;
-    padding-bottom: 2vw;
-    margin-top: 2vw;
 }
 
 .colored-table {
