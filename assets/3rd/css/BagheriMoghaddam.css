@@ -58,6 +58,26 @@ p1{
     height: 50vw;
 
 }
+.FooterAkseZan{
+    width: 100%;
+
+}
+.my-questions-text-config{
+    font-size: 4vw;
+    padding-right: 5vw;
+    padding-left: 10vw;
+    padding-bottom: 2vw;
+    margin-top: 2vw;
+}
+.my-textBox-style{
+    text-align: center;
+    background-color: #ffffff;
+    width: 3vw;
+    border: solid;
+
+    font-size: 3vw;
+    border-color: #d07fa5;
+}
 /* mein */
 .page-topic{
     margin-top: 1vw;
