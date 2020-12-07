@@ -2,6 +2,7 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="math">
     <meta name="author" content="MohammadrezaPourreza">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/pourreza.css">
@@ -154,12 +155,22 @@
         <div class="guess-box-level1" style="clear:both; left: -6vw; margin-top: 5vw">
             <div class="guess-box-text-left" >کار دستی بساز</div>
             <div class="text-config" style="padding-top: 5vw;">به کمک وسايل لازم و با راهنمايي معلم خود يک ترازوي 2 کفه اي بسازيد.<br>شکل روبه رو يک ترازوي دو کفه اي را نشان مي دهد.<br>جرم توپ پلاستيکي بيشتراست يا جرم کتاب؟چرا؟</div>
+            <div class="select"  style="margin-left: 33vw; margin-top: -4vw; height: 4vw;width: 12vw">
+                <select id="forthSelect">
+                    <option value="1">جرم کتاب</option>
+                    <option value="2" >جرم توپ</option>
+                </select>
+            </div>
             <div class="guess-box-level2">
                 <img src="assets/3rd/images/pourreza/tarazoo.png" style="width: 19vw;" alt="ترازو">
                 <textarea type="text" id="textBox1" class = "textarea" style="position: absolute; margin-left:15vw ;"  rows="10" cols="30"></textarea>
                 <button class="submit" onclick="javascript: testTextBox('textBox1');" style="position: absolute; margin-left:32vw ; margin-top: 16vw">تاييد</button>
             </div>
             <div class="text-config" style="padding-top: 5vw;">با ترازويي که ساخته ايد، جرم چيزهاي مختلف را اندازه گيري کنيد.</div>
+        </div>
+        <div class="page-navigator" style="width: 35%">
+        <a href="book_3_36.html" class="previous">&laquo; Previous</a>
+        <a href="book3_38.html" class="next">Next &raquo;</a>
         </div>
         <div class="page-number" style="left: -5vw; right: auto">37</div>
         </div>
@@ -179,8 +190,9 @@
     }
     function testTextBox(id) {
         var obj = $(id);
+        var select = $('forthSelect')
         var str = obj.value;
-        if (str.includes("کتاب") || str.includes("جرمکتاب") || str.includes("جرم کتاب")||str.includes("ketab"))
+        if ((str.includes("پایین") || str.includes("payin"))&& select.value == 1)
         {
             alert("جواب شما درست است!");
         }

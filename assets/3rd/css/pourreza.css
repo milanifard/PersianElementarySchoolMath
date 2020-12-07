@@ -248,6 +248,8 @@
     cursor: pointer;
 }
 .textarea {
+    font-size: 2vw;
+    font-family: ZAR;
     direction: rtl;
     width: 40vw;
     height: 15vw;
@@ -272,6 +274,8 @@
 }
 .submit:hover{
     cursor: pointer;
+    background-color: #ddd;
+    color: black;
 }
 .arrow2{
     width: 120px;
@@ -401,4 +405,36 @@ select {
     border-right: 0.7vw solid transparent;
     -webkit-transform: translate(50%, -50%);
     transform: translate(50%, -50%);
+}
+.page-navigator{
+    margin: auto;
+    width: 50%;
+    margin-bottom: 2vw;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1vw 2vw;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    font-size: 2vw;
+    background-color: #79c2d2;
+    color: black;
+}
+
+.next {
+
+    font-size: 2vw;
+    background-color: #79c2d2;
+    color: black;
+}
+
+.round {
+    border-radius: 50%;
 }
