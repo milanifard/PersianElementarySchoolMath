@@ -1,6 +1,9 @@
 :root {
     --light-green: #bbd75e;
+    --light-orange: #FFA500;
+    --middle-orange: #FF8C00;
     --middle-green: #8bc669;
+    --dark-orange:#FF4500;
     --dark-green: #4fac77;
     --purple: #b01f6f;
     --super-light-green: #e4f0d4;
@@ -42,7 +45,7 @@ span.question {
 }
 
 .main_title {
-    background-color: var(--light-green);
+    background-color: var(--light-orange);
     width: 20vw;
     height: 4.5vw;
     display: flex;
@@ -72,7 +75,7 @@ span.question {
 }
 
 .title {
-    background-color: var(--middle-green);
+    background-color: var(--light-orange);
     width: 12vw;
     height: 3.5vw;
     display: flex;
@@ -91,9 +94,9 @@ span.question {
 
 .main {
     margin-right: 5vw;
-    border-right: 0.7vw double var(--dark-green);
-    border-top: 0.7vw double var(--dark-green);
-    border-bottom: 0.7vw double var(--dark-green);
+    border-right: 0.7vw double var(--dark-orange);
+    border-top: 0.7vw double var(--dark-orange);
+    border-bottom: 0.7vw double var(--dark-orange);
     border-radius: 30px;
     position: relative;
     background-color: white;
@@ -146,22 +149,22 @@ table {
     font-size: 1.1vw;
 }
 
-.green_box {
+.orange_box {
     width: 100%;
     border-radius: 30px;
-    border: 3px solid var(--dark-green);
+    border: 3px solid var(--dark-orange);
     background-color: var(--super-light-green);
     margin: auto;
 }
 
-.green_box1 {
+.orange_box1 {
     width: 30vw;
     margin: auto;
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
 
-.green_box2 {
+.orange_box2 {
     margin: auto;
     margin-bottom: 2vw;
 }
@@ -199,7 +202,7 @@ form>div>span {
     height: 3vw;
     text-align: center;
     border-radius: 20px;
-    background-color: var(--dark-green);
+    background-color: var(--dark-orange);
     border: 0.3vw double white;
     margin-right: 7vw;
     display: flex;
@@ -244,18 +247,18 @@ form>div>span {
 }
 
 .btn--primary {
-    background: var(--light-green);
+    background: var(--light-orange);
     color: #fff;
     border-radius: 2px;
     padding: 0.6vw 1vw;
 }
 
 .btn--primary:hover {
-    background: var(--middle-green);
+    background: var(--middle-orange);
 }
 
 .btn--primary:active {
-    background: var(--middle-green);
+    background: var(--middle-orange);
     box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
 
