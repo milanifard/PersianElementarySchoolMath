@@ -78,6 +78,32 @@ p1{
     font-size: 3vw;
     border-color: #d07fa5;
 }
+.my-Children-image{
+    width: 40vw;
+    height: 30vw;
+    position: absolute;
+    margin-left: 3vw;
+   /* position: absolute;
+    right: 40.3vw;
+    top: 10vw;
+    z-index: 2;*/
+}
+.my-Children-TextBox{
+    text-align: center;
+    background-color: #ffffff;
+    width: 3vw;
+    border: solid;
+
+    font-size: 2vw;
+    border-color: #ff0000;
+}
+.my-Answer1{
+    font-size: 2vw;
+    position:absolute;
+    margin-top: 15vw;
+    margin-right: 4vw;
+
+}
 /* mein */
 .page-topic{
     margin-top: 1vw;
@@ -142,7 +168,7 @@ p1{
     font-size: 3vw;
 }
 /*
-    pourreza!
+    aqaye pourreza!
  */
 .activity-text{
     background-color: #0c9ec3;
@@ -180,9 +206,9 @@ p1{
     background-color: #0c9ec3;
     border-radius: 2vw;
     text-align: center;
-    font-size: 2.25vw;
+    font-size: 3vw;
     color: black;
-    padding: 0 2vw;
+    padding: 1vw;
     position: absolute;
     right: 35vw;
     left: 35vw;
