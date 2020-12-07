@@ -172,11 +172,11 @@ body {
     border: 0.4vw solid var(--footer_color1);
     border-radius: 4vw;
     position: relative;
-    padding: 1.5vw;
-    margin: 18vw 1.5vw 4vw 3vw;
+    padding: 1vw;
+    margin: 18vw 1.5vw 1vw 3vw;
     clear: both;
     left: -6vw;
-    margin-top: 2vw
+    margin-top: 30vw
 }
 
 .guess-box-text-left {
@@ -198,12 +198,51 @@ body {
     font-size: 1.5vw;
     direction: rtl;
     float: right;
-    padding-top: 5vw;
+    padding-top: 1vw;
 }
 
 .guess-box-level2 {
     position: relative;
-    padding: 1vw;
+    padding: 5vw;
     margin-top: 2vw;
-    margin-right: 40vw;
+    margin-right: 10vw;
+    direction: ltr;
+}
+
+.imgGuessBox {
+    width: 17vw;
+    height: 12vw;
+}
+
+.page-navigator {
+    width: 100%;
+    margin: 7vw auto;
+    padding: 5vw 0vw 0vw;
+}
+
+.previous-page {
+    display: block;
+    float: right;
+    position: absolute;
+}
+
+.next-page {
+    display: block;
+    float: left;
+}
+
+.page-number {
+    width: 8vw;
+    height: 3vw;
+    margin: 0 auto;
+    position: absolute;
+    background-color: var(--main_color);
+    border-style: double;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    background-position: center;
+    bottom: -1.5vw;
+    right: 44%;
+    border-radius: 0.75vw;
 }
