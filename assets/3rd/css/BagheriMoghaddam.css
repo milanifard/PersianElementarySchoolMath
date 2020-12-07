@@ -58,6 +58,73 @@ p1{
     height: 50vw;
 
 }
+.FooterAkseZan{
+    width: 100%;
+
+}
+.my-questions-text-config{
+    font-size: 4vw;
+    padding-right: 5vw;
+    padding-left: 10vw;
+    padding-bottom: 2vw;
+    margin-top: 2vw;
+}
+.my-textBox-style{
+    text-align: center;
+    background-color: #ffffff;
+    width: 3vw;
+    border: solid;
+
+    font-size: 3vw;
+    border-color: #d07fa5;
+}
+.my-Children-Image{
+    width: 40vw;
+    height: 30vw;
+    position: absolute;
+    margin-left: 3vw;
+   /* position: absolute;
+    right: 40.3vw;
+    top: 10vw;
+    z-index: 2;*/
+}
+.my-Medad-Image{
+    width: 40vw;
+    height: 20vw;
+    position: absolute;
+    margin-left: 8vw;
+}
+.my-Seke-Image{
+    width: 20vw;
+    height: 10vw;
+    position: absolute;
+    right: 5vw;
+}
+.my-Children-TextBox{
+    text-align: center;
+    background-color: #ffffff;
+    width: 3vw;
+    border: solid;
+
+    font-size: 2vw;
+    border-color: #ff0000;
+}
+.my-Big-Black-Box{
+    text-align: center;
+    background-color: #ffffff;
+    width: 5vw;
+    border: solid;
+
+    font-size: 3vw;
+    border-color: #000000;
+}
+.my-Answer1{
+    font-size: 2vw;
+    position:absolute;
+    margin-top: 15vw;
+    margin-right: 4vw;
+
+}
 /* mein */
 .page-topic{
     margin-top: 1vw;
@@ -122,7 +189,7 @@ p1{
     font-size: 3vw;
 }
 /*
-    pourreza!
+    aqaye pourreza!
  */
 .activity-text{
     background-color: #0c9ec3;
@@ -160,9 +227,9 @@ p1{
     background-color: #0c9ec3;
     border-radius: 2vw;
     text-align: center;
-    font-size: 2.25vw;
+    font-size: 3vw;
     color: black;
-    padding: 0 2vw;
+    padding: 1vw;
     position: absolute;
     right: 35vw;
     left: 35vw;
