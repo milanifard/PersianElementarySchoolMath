@@ -17,6 +17,12 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url("/assets/fonts/Faraz.woff");
+
+}
+
 
 body{
     background-image: repeating-linear-gradient(0deg,var(--purple-dark), var(--purple-dark) 1vw, var(--purple-light) 0vw , var(--purple-light) 2.5vw);
@@ -24,6 +30,8 @@ body{
     background-position: bottom;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
+    /* font-family: "myFirstFont"; */
+    font-family: "myFirstFont";
 }
 
 .border{
@@ -159,4 +167,13 @@ body{
     width: 25vw;
     padding: 5vw;
     padding-right: 50vw;
+}
+
+.input_style{
+    text-align: center;
+    font-size: 1.5vw;
+    border : none;
+    border-bottom: 1px solid var(--purple);
+    border-radius: 0.5vw;
+    width: 10vw;
 }
