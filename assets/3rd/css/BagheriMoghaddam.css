@@ -94,6 +94,12 @@ p1{
     position: absolute;
     margin-left: 8vw;
 }
+.my-Seke-Image{
+    width: 20vw;
+    height: 10vw;
+    position: absolute;
+    right: 5vw;
+}
 .my-Children-TextBox{
     text-align: center;
     background-color: #ffffff;
