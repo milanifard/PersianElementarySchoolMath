@@ -109,6 +109,15 @@ p1{
     font-size: 2vw;
     border-color: #ff0000;
 }
+.my-Big-Black-Box{
+    text-align: center;
+    background-color: #ffffff;
+    width: 5vw;
+    border: solid;
+
+    font-size: 3vw;
+    border-color: #000000;
+}
 .my-Answer1{
     font-size: 2vw;
     position:absolute;
