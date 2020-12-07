@@ -78,7 +78,7 @@ p1{
     font-size: 3vw;
     border-color: #d07fa5;
 }
-.my-Children-image{
+.my-Children-Image{
     width: 40vw;
     height: 30vw;
     position: absolute;
@@ -87,6 +87,12 @@ p1{
     right: 40.3vw;
     top: 10vw;
     z-index: 2;*/
+}
+.my-Medad-Image{
+    width: 40vw;
+    height: 20vw;
+    position: absolute;
+    margin-left: 8vw;
 }
 .my-Children-TextBox{
     text-align: center;
