@@ -27,6 +27,9 @@ a {
     margin: auto;
 }
 
+.dark-mode{
+    filter: invert(1) hue-rotate(180deg);
+}
 .color1 {
     background-color: $color-1;
 }
@@ -40,9 +43,6 @@ body {
 
 }
 
-#page-body {
-    background-color: white;
-}
 
 @media (min-width:992px) {
     .container-full {
@@ -138,9 +138,9 @@ ol {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     clear: both;
-    float: right;
     width: 100%;
     text-align: start;
+    display: inline-block;
     counter-increment: big-num;
     position: relative;
 
@@ -166,7 +166,7 @@ ol {
 
 section {
     margin: 0.8em 0;
-
+    display: block;
     .section-header {
         @extend .navbar;
         @extend .navbar-expand-lg;
@@ -248,7 +248,12 @@ $paper-line: #94ACD4;
     box-shadow: 0 0 8px blue;
 }
 
+#page-body{
+    border: 5px double $color-1;
+    border-radius: 1em;
+    padding: 0.5em;
 
+}
 .go-top {
     display: block;
     width: 40px;

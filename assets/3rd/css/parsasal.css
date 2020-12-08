@@ -9142,6 +9142,11 @@ a {
   margin: auto;
 }
 
+.dark-mode {
+  -webkit-filter: invert(1) hue-rotate(180deg);
+          filter: invert(1) hue-rotate(180deg);
+}
+
 .color1 {
   background-color: #F13F52;
 }
@@ -9152,10 +9157,6 @@ a {
 
 body {
   line-height: 1.8em;
-}
-
-#page-body {
-  background-color: white;
 }
 
 @media (min-width: 992px) {
@@ -9231,9 +9232,9 @@ ol {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   clear: both;
-  float: right;
   width: 100%;
   text-align: start;
+  display: inline-block;
   counter-increment: big-num;
   position: relative;
 }
@@ -9259,6 +9260,7 @@ ol {
 
 section {
   margin: 0.8em 0;
+  display: block;
 }
 
 section .section-header {
@@ -9317,6 +9319,12 @@ hr {
   border-color: #66afe9;
   -webkit-box-shadow: 0 0 8px blue;
           box-shadow: 0 0 8px blue;
+}
+
+#page-body {
+  border: 5px double #F13F52;
+  border-radius: 1em;
+  padding: 0.5em;
 }
 
 .go-top {
