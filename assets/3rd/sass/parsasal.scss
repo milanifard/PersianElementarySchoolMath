@@ -4,7 +4,7 @@ $theme-colors: ("primary": $color-1,
     "light": #f0cacf //   "secondary": $color-2
 );
 
-@import "./parsasal/_fonts.scss";
+
 @import "./parsasal/scss/bootstrap";
 @import "./parsasal/_pagination.scss";
 @import "./parsasal/_go_top.scss";
@@ -173,13 +173,21 @@ section {
     .section-header {
         @extend .navbar;
         @extend .navbar-expand-lg;
-        @extend .bg-secondary;
-        border-radius: 0.2em;
-        padding: 0.3em;
         width: 100%;
+        padding: 0;
         overflow: hidden;
 
+        .title-container {
+
+            background-color: $color-1;
+            padding: 0.5em;
+            border-top-left-radius: 0.4em;
+            border-bottom-lefts-radius: 0.4em;
+        }
+        
+
         button {
+
             float: left;
             margin-left: 1em;
             margin-right: auto;
@@ -256,7 +264,6 @@ $paper-line: #94ACD4;
         margin-top: 0.5em;
         border: 8px double $color-1;
         border-radius: 1em;
-        padding: 0.5em;
         position: relative;
         display: block;
         background-color: white;
@@ -281,3 +288,6 @@ $paper-line: #94ACD4;
 
 }
 
+
+
+@import "./parsasal/_fonts.scss";

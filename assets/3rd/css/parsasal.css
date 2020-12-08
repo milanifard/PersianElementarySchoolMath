@@ -1,46 +1,3 @@
-@font-face {
-  font-family: 'Zar';
-  src: url("/assets/fonts/Zar.eot");
-  /* IE9 Compat Modes */
-  src: url("/assets/fonts/Zar.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Zar.woff2") format("woff2"), url("/assets/fonts/Zar.woff") format("woff"), url("/assets/fonts/Zar.ttf") format("truetype"), url("/assets/fonts/Zar.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'ZarBold';
-  src: url("/assets/fonts/ZarBold.eot");
-  /* IE9 Compat Modes */
-  src: url("/assets/fonts/ZarBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/ZarBold.woff2") format("woff2"), url("/assets/fonts/ZarBold.woff") format("woff"), url("/assets/fonts/ZarBold.ttf") format("truetype"), url("/assets/fonts/ZarBold.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Faraz';
-  src: url("/assets/fonts/Faraz.eot");
-  /* IE9 Compat Modes */
-  src: url("/assets/fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Faraz.woff2") format("woff2"), url("/assets/fonts/Faraz.woff") format("woff"), url("/assets/fonts/Faraz.ttf") format("truetype"), url("/assets/fonts/Faraz.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-}
-
-* {
-  font-family: 'Zar';
-  font-size: 1rem;
-  font-weight: normal;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'ZarBold';
-  font-weight: bold;
-}
-
-.hand-written, .explain-textarea {
-  font-family: 'Faraz';
-}
-
-html {
-  font-size: 20px;
-}
-
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6216,15 +6173,13 @@ button.bg-primary:focus {
   background-color: #ec1129 !important;
 }
 
-.bg-secondary, section .section-header {
+.bg-secondary {
   background-color: #6c757d !important;
 }
 
-a.bg-secondary:hover, section a.section-header:hover, a.bg-secondary:focus, section a.section-header:focus,
+a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
-section button.section-header:hover,
-button.bg-secondary:focus,
-section button.section-header:focus {
+button.bg-secondary:focus {
   background-color: #545b62 !important;
 }
 
@@ -9376,10 +9331,16 @@ section {
 }
 
 section .section-header {
-  border-radius: 0.2em;
-  padding: 0.3em;
   width: 100%;
+  padding: 0;
   overflow: hidden;
+}
+
+section .section-header .title-container {
+  background-color: #F13F52;
+  padding: 0.5em;
+  border-top-left-radius: 0.4em;
+  border-bottom-lefts-radius: 0.4em;
 }
 
 section .section-header button {
@@ -9438,7 +9399,6 @@ hr {
     margin-top: 0.5em;
     border: 8px double #F13F52;
     border-radius: 1em;
-    padding: 0.5em;
     position: relative;
     display: block;
     background-color: white;
@@ -9457,4 +9417,52 @@ hr {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
   }
+}
+
+@font-face {
+  font-family: 'Zar';
+  src: url("/assets/fonts/Zar.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/Zar.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Zar.woff2") format("woff2"), url("/assets/fonts/Zar.woff") format("woff"), url("/assets/fonts/Zar.ttf") format("truetype"), url("/assets/fonts/Zar.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'ZarBold';
+  src: url("/assets/fonts/ZarBold.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/ZarBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/ZarBold.woff2") format("woff2"), url("/assets/fonts/ZarBold.woff") format("woff"), url("/assets/fonts/ZarBold.ttf") format("truetype"), url("/assets/fonts/ZarBold.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Faraz';
+  src: url("/assets/fonts/Faraz.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Faraz.woff2") format("woff2"), url("/assets/fonts/Faraz.woff") format("woff"), url("/assets/fonts/Faraz.ttf") format("truetype"), url("/assets/fonts/Faraz.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Koodak';
+  src: url("/assets/fonts/KoodakBold.ttf");
+}
+
+* {
+  font-family: 'Zar';
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Koodak';
+  font-weight: bold;
+}
+
+.hand-written, .explain-textarea {
+  font-family: 'Faraz';
+}
+
+html {
+  font-size: 20px;
 }
