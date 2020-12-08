@@ -105,3 +105,25 @@ body{
     position: absolute;
     margin-right: -3vw;
 }
+
+.tamrin-content{
+    top: 50vw;
+    position: absolute;
+    width: 70vw;
+    margin-right: 8vw;
+    float: right;
+}
+
+.number{
+    color: var(--title_color);
+}
+
+.image-three{
+    width: 85vw;
+    height: 50vw;
+    top: 30vw;
+    left: 5vw;
+    position: absolute;
+    margin-right: -3vw;
+    float: left;
+}
