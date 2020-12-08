@@ -144,23 +144,29 @@ body {
     position: static;
     margin-left: 3vw;
     margin-right: 5vw;
+    margin-top: 12vw;
+    width: 12vw;
+    height: 18vw;
 }
 
 .imagTagharon1 {
     position: static;
     margin-left: 15vw;
     margin-right: 5vw;
-    margin-top: 2vw;
+    margin-top: 5vw;
+    width: 12vw;
+    height: 18vw;
 }
 
 .qbox {
     float: right;
     font-size: 1.5vw;
     padding-right: 10vw;
+    margin-top: 30vw;
 }
 
 .question {
-    font-size: 1.5vw
+    font-size: 1.75vw
 }
 
 .subtitle {
@@ -176,7 +182,9 @@ body {
     margin: 18vw 1.5vw 1vw 3vw;
     clear: both;
     left: -6vw;
-    margin-top: 30vw
+    margin-top: 30vw;
+    bottom: -7vw;
+    height: 40vw;
 }
 
 .guess-box-text-left {
@@ -195,23 +203,23 @@ body {
 }
 
 .text-config {
-    font-size: 1.5vw;
+    font-size: 1.70vw;
     direction: rtl;
     float: right;
-    padding-top: 1vw;
+    padding-top: 5vw;
 }
 
 .guess-box-level2 {
     position: relative;
     padding: 5vw;
-    margin-top: 2vw;
-    margin-right: 10vw;
+    margin-top: 7vw;
+    margin-right: 20vw;
     direction: ltr;
 }
 
 .imgGuessBox {
     width: 17vw;
-    height: 12vw;
+    height: 20vw;
 }
 
 .page-navigator {
