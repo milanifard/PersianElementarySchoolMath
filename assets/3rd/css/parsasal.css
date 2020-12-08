@@ -9234,14 +9234,14 @@ ol {
   clear: both;
   width: 100%;
   text-align: start;
-  display: inline-block;
+  display: block;
   counter-increment: big-num;
   position: relative;
 }
 
 .masale p {
-  display: inline-block;
   position: relative;
+  display: block;
   -webkit-padding-start: 0.5em;
           padding-inline-start: 0.5em;
 }
@@ -9321,10 +9321,30 @@ hr {
           box-shadow: 0 0 8px blue;
 }
 
-#page-body {
-  border: 5px double #F13F52;
-  border-radius: 1em;
-  padding: 0.5em;
+@media (min-width: 768px) {
+  #page-body {
+    margin-top: 0.5em;
+    border: 8px double #F13F52;
+    border-radius: 1em;
+    padding: 0.5em;
+    position: relative;
+    display: block;
+    background-color: white;
+  }
+  .page-footer {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #f03f52), color-stop(25%, #f46d57), color-stop(50%, #f46d57), color-stop(50%, #f03f52), color-stop(75%, #f03f52), color-stop(75%, #f46d57), to(#f46d57));
+    background-image: linear-gradient(0deg, #f03f52 25%, #f46d57 25%, #f46d57 50%, #f03f52 50%, #f03f52 75%, #f46d57 75%, #f46d57 100%);
+    background-size: 36.00px 36.00px;
+    width: 100vw;
+    height: 22em;
+    position: absolute;
+    bottom: -8em;
+    display: inline-block;
+    z-index: -1;
+    margin-right: -50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
 }
 
 .go-top {
@@ -9362,14 +9382,13 @@ hr {
 
 .pagination-wrapper {
   text-align: center;
-  margin: 40px 0;
 }
 
 .pagination {
   display: inline-block;
   height: 70px;
-  margin-top: 70px;
-  padding: 0 25px;
+  margin-top: 10px;
+  padding: 0 15px;
   border-radius: 35px;
   background-color: #eee;
 }

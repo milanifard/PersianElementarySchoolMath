@@ -27,9 +27,10 @@ a {
     margin: auto;
 }
 
-.dark-mode{
+.dark-mode {
     filter: invert(1) hue-rotate(180deg);
 }
+
 .color1 {
     background-color: $color-1;
 }
@@ -40,7 +41,7 @@ a {
 
 body {
     line-height: 1.8em;
-
+    // height: 100%;
 }
 
 
@@ -140,13 +141,14 @@ ol {
     clear: both;
     width: 100%;
     text-align: start;
-    display: inline-block;
+    display: block;
     counter-increment: big-num;
     position: relative;
 
     p {
-        display: inline-block;
+        // display: inline-block;
         position: relative;
+        display: block;
         padding-inline-start: 0.5em;
     }
 }
@@ -167,6 +169,7 @@ ol {
 section {
     margin: 0.8em 0;
     display: block;
+
     .section-header {
         @extend .navbar;
         @extend .navbar-expand-lg;
@@ -248,12 +251,38 @@ $paper-line: #94ACD4;
     box-shadow: 0 0 8px blue;
 }
 
-#page-body{
-    border: 5px double $color-1;
-    border-radius: 1em;
-    padding: 0.5em;
+@media (min-width:768px) {
+    #page-body {
+        margin-top: 0.5em;
+        border: 8px double $color-1;
+        border-radius: 1em;
+        padding: 0.5em;
+        position: relative;
+        display: block;
+        background-color: white;
+    }
+
+    .page-footer {
+        background-image: linear-gradient(0deg, #f03f52 25%, #f46d57 25%, #f46d57 50%, #f03f52 50%, #f03f52 75%, #f46d57 75%, #f46d57 100%);
+        background-size: 36.00px 36.00px;
+        width: 100vw;
+        height: 22em;
+        position: absolute;
+        bottom: -8em;
+        display: inline-block;
+        z-index: -1;
+        margin-right: -50%;
+
+        transform: translateX(50%);
+
+
+    }
+
 
 }
+
+
+
 .go-top {
     display: block;
     width: 40px;
@@ -341,14 +370,14 @@ $easing: ease;
 //------------------------------------------------------------------------------
 .pagination-wrapper {
     text-align: center;
-    margin: 40px 0;
+    // margin: 10px 0;
 }
 
 .pagination {
     display: inline-block;
     height: 70px;
-    margin-top: 70px;
-    padding: 0 25px;
+    margin-top: 10px;
+    padding: 0 15px;
     border-radius: 35px;
     background-color: $grey-light;
 
