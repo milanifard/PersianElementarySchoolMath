@@ -17,6 +17,11 @@ body {
     --orange_level2: #f19345;
     --orange_level3: #e55726;
 
+    --pink_level1: #fdebf3;
+    --pink_level2: #dc93b0;
+    --pink_level3: #b03776;
+
+
     --yellow_level1_guessbox: #fffce0;
     --yellow_level2_border: #ffdd2b;
     --yellow_level3_border: #fecc4e;
@@ -40,7 +45,6 @@ body {
 
     --purple: #b09ac9;
 
-    --pink_level0: #fbdfeb;
     --pink: #f287b6;
 
     --dynamic_rnd: 0;
@@ -113,9 +117,48 @@ body {
     margin-top: 2vw;
 }
 
-.questions-number{
+.questions-number {
     color: var(--orange_level3);
 }
+
+.simple-table {
+    background-color: var(--pink_level1);
+    padding: 0.5vw;
+    border: 0.2vw solid var(--pink_level2);
+    border-radius: 3vw;
+}
+
+.simple-table table {
+    border-collapse: collapse;
+}
+
+.simple-table td {
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: Koodak;
+    padding: 0.5vw 1.5vw;
+}
+
+.simple-table .bottom-border {
+    border-bottom: 0.3vw solid var(--pink_level3);
+}
+
+.simple-table .right-border {
+    border-right: 0.3vw solid var(--pink_level3);
+}
+
+.simple-table .top-border {
+    border-top: 0.3vw solid var(--pink_level3);
+}
+
+/*.simple-table td{*/
+/*    padding: 0.7vw;*/
+/*    border: 0.3vw solid var(--orange_level3);*/
+/*    font-size: 1.5vw;*/
+/*    font-family: Koodak;*/
+/*    text-align: center;*/
+/*}*/
+
 
 .page-number {
 
@@ -178,14 +221,6 @@ body {
     font-size: 1.5vw;
     font-family: Koodak;
     text-align: center;
-}
-
-.simple-table {
-    width: 65vw;
-    margin: 0 3vw 0 3vw;
-    border-collapse: collapse;
-    font-size: 1.5vw;
-    font-family: Koodak;
 }
 
 .simple-td {
