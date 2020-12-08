@@ -28,23 +28,23 @@
             </div>
             <div style="margin: 2vw;">
                 در چند قسمت از زمین گندم کاشته شده است؟
-                <input type="text" id="check_question1" value="" class="input_style" onmouseover="normalImg(this)" onmouseout="checkvalue(1,this.value)">
+                <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
                 قسمت از 
-                <input type="text" id="check_question2" value="" class="input_style" onmouseover="normalImg(this)" onmouseout="checkvalue(2,this.value)">
+                <input type="text" id="check_part2" value="" class="input_style" onchange="checkvalue(1,'check_part2')">
                 قسمت مساوی
             </div>
             <div style="margin: 2vw;">
                 در چند قسمت از زمین جو کاشته شده است؟
-                <input type="text" id="check_question3" value="" class="input_style" onmouseover="normalImg(this)" onmouseout="checkvalue(3,this.value)">
+                <input type="text" id="check_part3" value="" class="input_style" onchange="checkvalue(4,'check_part3')">
                 قسمت از 
-                <input type="text" id="check_question4" value="" class="input_style" onmouseover="normalImg(this)" onmouseout="checkvalue(4,this.value)">
+                <input type="text" id="check_part4" value="" class="input_style" onchange="checkvalue(5,'check_part4')">
                 قسمت مساوی
             </div>
             <div style="margin: 2vw; margin-bottom: 0;">
                 در چند قسمت از زمین یونجه کاشته شده است؟
-                <input type="text" id="check_question5" value="" class="input_style" onmouseover="normalImg(this)" onmouseout="checkvalue(5,this.value)">
+                <input type="text" id="check_part5" value="" class="input_style" onchange="checkvalue(4,'check_part5')">
                 قسمت از 
-                <input type="text" id="check_question6" value="" class="input_style" onmouseover="normalImg(this)" onmouseout="checkvalue(6,this.value)">
+                <input type="text" id="check_part6" value="" class="input_style" onchange="checkvalue(5,'check_part6')">
                 قسمت مساوی
             </div>
             <img class="img_q1" src="assets/3rd/images/Jabbari/farm.png" alt="farm_img">
@@ -52,15 +52,28 @@
         <div class="question2">
             <div class="text">
                 ۲- فاطمه با نوار کاغذی که خودش آن را درجه‌بندی کرده بود طول یک گیره‌ی کاغذ و یک پاک کن را اندازه گرفته است
-                <br>
-                <br> به پرسش های زیر پاسخ دهید :) 
+                <br> جاهای خالی را پرکنید. 
             </div>
             <div>
-                <div class="text">طول گیره کاغذ ؟</div>
+                <!-- <div class="text">طول گیره کاغذ ؟</div> -->
+                <div style="margin: 2vw; margin-bottom: 0;">
+                    طول گیره کاغذ
+                    <input type="text" id="check_part7" value="" class="input_style" onchange="checkvalue(6,'check_part7')">
+                    قسمت از 
+                    <input type="text" id="check_part8" value="" class="input_style" onchange="checkvalue(7,'check_part8')">
+                    قسمت مساوی است.
+                </div>
                 <img class="img_q1 img_paperClipRuler"src="assets/3rd/images/Jabbari/paperClip_ruler.png">
             </div> 
             <div>
-                <div class="text">طول گیره پاک کن ؟</div>
+                <!-- <div class="text">طول گیره پاک کن ؟</div> -->
+                <div style="margin: 2vw; margin-bottom: 0;">
+                    طول گیره کاغذ
+                    <input type="text" id="check_part9" value="" class="input_style" onchange="checkvalue(8,'check_part9')">
+                    قسمت از 
+                    <input type="text" id="check_part10" value="" class="input_style" onchange="checkvalue(7,'check_part10')">
+                    قسمت مساوی است.
+                </div>
                 <img class="img_q1 img_paperClipRuler" src="assets/3rd/images/Jabbari/eraser_ruler.png">
             </div>
             <div class="text">
@@ -76,22 +89,26 @@
 
 
 <script>
-    function checkvalue(y,x) {
-        var inputVal = document.getElementById(check_question1);
-        if(y == 1 && x == 1){
-            alert("جواب شما درست است!");
-            inputVal.style.backgroundColor = "yellow";
-            
+    answerQustion1 = [1,2,2,4,1,4,6,10,8]
+    function checkvalue(i,x) {
+        var inputValue = document.getElementById(x);
+        if(inputValue.value == answerQustion1[i]){
+            // alert("افرین");
+            inputValue.style.backgroundColor = "#5aa469";
+  
         }
-        if(y == 2 && x == 2 ){
-            // inputVal.style.backgroundColor = "#67b56f";
-            // alert("جواب شما درست است!");
+        else if(inputValue.value != ""){
+            inputValue.style.backgroundColor = "#d35d6e";
         }
     }
 
     function normalImg(x) {
-    // x.style.height = "32px";
-    // x.style.width = "32px";
+        var inputValue = document.getElementById("checkQuestion1");
+        if(inputValue.value != 1){
+            // alert("افرین")
+            inputValue.style.backgroundColor = "#d35d6e";
+  
+        }
     }
 </script>
 

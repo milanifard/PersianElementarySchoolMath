@@ -145,7 +145,8 @@ body{
 .img_q1{
     width: 65vw;
     padding: 5vw;
-    padding-right: 8vw;
+    padding-right: 4vw;
+    /* border-radius: 2px; */
 }
 
 .question2{
@@ -154,7 +155,7 @@ body{
     /* top : 100vw; */
     left:3vw;
     right: 5vw;
-    bottom: 7vw;
+    bottom: 5vw;
 
  
     font-family: "Faraz", "Times New Roman";
@@ -175,5 +176,6 @@ body{
     border : none;
     border-bottom: 1px solid var(--purple);
     border-radius: 0.5vw;
-    width: 10vw;
+    width: 8vw;
+    height: 2vw;
 }
