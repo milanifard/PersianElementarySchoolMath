@@ -1,0 +1,88 @@
+:root{
+    --main_color: #78c2da;
+    --title_color : #5cb6d6;
+    --footer_color2 : #78c2da;
+}
+
+@font-face {
+    font-family: Zar;
+    src: url("/assets/fonts/Zar.woff") format("woff");
+}
+
+body{
+    /*background-image: repeating-linear-gradient(0deg,var(--footer_color1), var(--footer_color1) 1vw, var(--footer_color2) 0vw , var(--footer_color2) 2.5vw);*/
+    /*background-size: 100% 30%;*/
+    /*background-position: bottom;*/
+    /*background-repeat: no-repeat;*/
+    font-family:"B Zar";
+    font-size: 2vw;
+}
+
+.page{
+    border-top: 1vw double var(--main_color);
+    border-right: 1vw double var(--main_color);
+    border-top-right-radius: 5vw;
+    width: 90%;
+    background: white;
+    margin: 3vw 5vw 0 0;
+    padding:0vw 3vw;
+    /*position: relative;*/
+}
+
+.page-title{
+    width: 18vw;
+    height: 5vw;
+    margin: 0 auto;
+    padding-top: .5vw;
+    background-color: var(--title_color);
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    top: 1vw;
+    left: 40vw;
+    position: absolute;
+    margin-right: 34%;
+    border-radius: 2vw;
+}
+
+.farhange_neveshtan-title{
+    background-color: var(--title_color);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    top:10vw;
+    position: absolute;
+    width: 20vw;
+    height: 4vw;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    margin-right: -3vw;
+}
+
+.farhange_neveshtan{
+    background-color: #e1f4fc;
+    width: 70vw;
+    height: 30vw;
+    top: 14vw;
+    position: absolute;
+    margin-right: 0;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+}
+
+.farhange_neveshtan_content{
+    background-color: white;
+    border: double 0.5vw #5cb6d6;
+    border-radius: 5vw;
+    width: 50vw;
+    height: 20vw;
+    margin: 3vw 1vw;
+    padding: 1vw 2vw;
+}
+
+.image_one{
+    top : 7.5vw;
+    left: -4.6vw;
+    position: absolute;
+}
