@@ -56,14 +56,38 @@ body > #firstPage{
  
 #pages {
     margin-top:10%;
+    overflow : scroll;
   }
-#pages > a{
+.page{
   color: #1793AF;
   background: white;
   font-size: larger;
   border-style: solid;
   border-color: #A22268;
   padding: 1% 3%;
-  border-radius: 30px;
+  border-radius: 25px;
 
+}
+#pagenum{
+  background: #C47898;
+  border: 1px solid;
+  border-color:white ;
+  color: white;  
+  width: 100px;
+  text-align: center;
+}
+
+#back2{
+  background-image: repeating-linear-gradient(#C47898 0% ,#C47898 1% ,#D18CA3 1%,#D18CA3 2%);
+  padding: 39% 15% 0% 0%;
+  width: 15%;
+}
+#downbar {
+  overflow : scroll;
+  background-image: repeating-linear-gradient(#C47898 0% ,#C47898 3% ,#D18CA3 3%,#D18CA3 6%);
+  padding: 10% 0% 3% 0%;
+}
+
+.container{
+background: white;
 }
