@@ -22,7 +22,9 @@ body{
     border-top: 1vw double var(--main_color);
     border-right: 1vw double var(--main_color);
     border-top-right-radius: 5vw;
-    width: 90%;
+    box-sizing: border-box;
+    width: 93vw;
+    height: 90vw;
     background: white;
     margin: 3vw 5vw 0 0;
     padding:0vw 3vw;
@@ -45,18 +47,27 @@ body{
     border-radius: 2vw;
 }
 
-.farhange_neveshtan-title{
+.little-title{
     background-color: var(--title_color);
-    color: black;
     font-weight: bold;
     text-align: center;
-    top:10vw;
-    position: absolute;
     width: 20vw;
     height: 4vw;
     border-top-left-radius: 2vw;
     border-bottom-left-radius: 2vw;
     margin-right: -3vw;
+}
+
+#fn_title{
+    top:10vw;
+    position: absolute;
+    color: black;
+}
+
+#tamrin_title{
+    top:45vw;
+    position: absolute;
+    color: white;
 }
 
 .farhange_neveshtan{
@@ -85,4 +96,12 @@ body{
     top : 7.5vw;
     left: -4.6vw;
     position: absolute;
+}
+
+.image-two{
+    width: 10vw;
+    height: 14vw;
+    top: 45vw;
+    position: absolute;
+    margin-right: -3vw;
 }
