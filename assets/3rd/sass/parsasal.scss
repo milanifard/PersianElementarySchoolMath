@@ -134,7 +134,7 @@ ol {
 }
 
 .masale {
-    padding-inline-start: calc(0.8em + 2vw);
+    padding-inline-start: calc(0.6em + 1.4vw);
     padding-inline-end: 0.5em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -146,45 +146,71 @@ ol {
     position: relative;
 
     p {
-        // display: inline-block;
         position: relative;
         display: block;
         padding-inline-start: 0.5em;
     }
+    p:before {
+        float: right;
+        content: counter(big-num);
+        background: $color-2;
+        color: #fff;
+        border-radius: 0.2em;
+        padding: 0 0.4em;
+        position: relative;
+        min-width: 1.0em;
+        text-align: center;
+        margin-left: 0.5em;
+    }
+    @media (min-width:992px) {
+        &.padded-for-image{
+            padding-right: 10vh;
+        }
+        .padded-for-image{
+            padding-right: 6vh;
+        }
+    }
+
 }
 
-.masale:before {
-    float: right;
-    content: counter(big-num);
-    background: #f03f52;
-    color: #fff;
-    border-radius: 0.2em;
-    padding: 0 0.5em;
-    position: relative;
-    min-width: 1.0em;
-    text-align: center;
-}
 
 
 section {
     margin: 0.8em 0;
     display: block;
 
+
     .section-header {
         @extend .navbar;
         @extend .navbar-expand-lg;
         width: 100%;
         padding: 0;
-        overflow: hidden;
+        overflow: visible;
+
+
+
 
         .title-container {
-
+            .section-header-image {
+                display: none;
+            }
+            @media (min-width:992px) {
+                .section-header-image {
+                    display: inline;
+                    position: absolute;
+                    right: 0.8vw;
+                    top: 3.3vh;
+                    z-index: 2;
+                    max-height: 18vh;
+                    max-width: 22vw;
+                }
+            }
             background-color: $color-1;
             padding: 0.5em;
             border-top-left-radius: 0.4em;
-            border-bottom-lefts-radius: 0.4em;
+            border-bottom-left-radius: 0.4em;
         }
-        
+
 
         button {
 
@@ -288,6 +314,12 @@ $paper-line: #94ACD4;
 
 }
 
-
+.dotted-border {
+    padding: 0.8em 0;
+    border-style: dotted;
+    border-width: 0.24em;
+    border-radius: 0.6em;
+    border-color: $color-1;
+}
 
 @import "./parsasal/_fonts.scss";
