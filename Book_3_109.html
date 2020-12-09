@@ -1,24 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>صفحه 109</title>
+    <meta name="author" content="Masoud Kermanipoor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/mkp.css">
+    <title>ریاضی سوم دبستان</title>
 </head>
-<body style="border: 2px solid darkorange">
-<h3 dir="rtl">فعالیت</h3>
-<p dir="rtl">1_حمید 6647 ریال در قلک خود پول داشت. او 2225 ریال از پول هایش برداشت.<br>حالا چقدر پول دارد؟</p>
-<p dir="rtl">چند سکه ی 1 ریالی دارد؟</p>
-<p dir="rtl">چند سکه ی 10 ریالی دارد؟</p>
-<p dir="rtl">چند سکه ی 100 ریالی دارد؟</p>
-<p dir="rtl">چند سکه ی 1000 ریالی دارد؟</p>
-<p dir="rtl">2_حمید 4322 ریال در قلّکش داشت. این هفته 1150 ریال از آن برداشت و خرج کرد<br>
-حالا چقدر پول دارد؟</p>
-<p dir="rtl">حمید چند سکه 1 ریالی دارد؟</p>
-<p dir="rtl">آیا می تواند از سکه های 10 ریالی خود 5 تا بردارد؟</p>
-<p dir="rtl">اگر 1 سکه ی 100 ریالی را با 10 سکه ی 10 ریالی عوض کند، چند سکه ی 10 ریالی خواهد داشت؟</p>
-<p dir="rtl">حالا 5 تا از سکه های 10 ریالی را برمی دارد، چند سکه ی 10 ریالی می ماند؟</p>
-<p dir="rtl">با توجه به اینکه یک سکه ی 100 ریالی را برای تعویض با سکه های 10 ریالی داده است، چد سکه ی 100 ریالی<br> برایش می ماند؟</p>
-<p dir="rtl">چند سکه 1000 ریالی دارد؟</p>
-<p dir="rtl">3_ با توجه به شکل، تفریق را در جدول ارز مکانی انجام دهید.</p>
+
+<body>
+<div>
+    <div class="left-border">
+        <div class="background-style" style="left: -10vw;"></div>
+
+        <div class="activity_item">
+            <img class="activity-cover" style="margin-right: 5vw" src="assets/3rd/images/activity.png" alt="activity_image">
+            <div class="activity-title" style="margin-right: 3vw; float: right;">فعّالیت</div>
+        </div>
+
+        <div id="Q1_container">
+
+            <div id="Q1" class="text questions-text" style="padding-top: 6vw; padding-right: 17vw; margin-top: 3vw; float: right"><span class="questions-number">1ــ </span>حمید 6647 ریال در قلّک خود پول داشت. او 2325 ریال از پو لهایش برداشت.<br>حالا چقدر پول دارد؟</div>
+
+            <div id="Q1_table" class="simple-table" style="margin-top: 3vw; clear:both; float: left;">
+                <table>
+                    <tr>
+                        <td class="bottom-border">ی</td>
+                        <td class="bottom-border right-border">د</td>
+                        <td class="bottom-border right-border">ص</td>
+                        <td class="bottom-border right-border">هـ</td>
+                    </tr>
+                    <tr>
+                        <td class="">7</td>
+                        <td class="right-border">4</td>
+                        <td class="right-border">6</td>
+                        <td class="right-border">6</td>
+                    </tr>
+                    <tr>
+                        <td class="bottom-border">5</td>
+                        <td class="bottom-border right-border">2</td>
+                        <td class="bottom-border right-border">3</td>
+                        <td class="bottom-border right-border">-2</td>
+                    </tr>
+                    <tr>
+                        <td class=""> </td>
+                        <td class="right-border"> </td>
+                        <td class="right-border"> </td>
+                        <td class="right-border"> </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="float: left;">
+                <img id="Q1_pencil" src="assets/3rd/images/nahbos/pencil_125.png" alt="pencil" style="width: 12vw; margin-left: 3vw; margin-top: 2vw">
+            </div>
+
+            <div style="float: right">
+                <div id="Q1_continue1" class="text-config questions-text-config" style="padding-right: 8vw; float: top;">با توجه به جدول، دایره ی روبه رو را با رنگ های قرمز و سبز رنگ آمیزی کنید.<br>اگر چرخنده را ١٠ بار دیگر بچرخانیم، پیش بینی می کنید که</div>
+
+                <div style="float: bottom">
+                    <div id="Q1_continue2" class="text-config questions-text-config" style="padding-right: 8vw;; margin-top: 0; float: right"> ــ چه مقدار از این نمودار به رنگ سبز باشد؟</div>
+                    <input id="Q1_part1" type="number" style="width: 5vw; font-size: 1.8vw; float: right;" min="0" max="10">
+                </div>
+
+                <div style="float: bottom">
+                    <div id="Q1_continue3" class="text-config questions-text-config" style="padding-right: 8vw; float: right; margin-top: 0">ــ چه کسری از نمودار قرمز باشد؟</div>
+                    <input id="Q1_part2_down" type="number" style="width: 5vw; font-size: 1.8vw; float: right;" min="0" max="10">
+                    <div class="text-config" style="float: right; font-size: 5vw; margin-top: -2.3vw"> / </div>
+                    <input id="Q1_part2_top" type="number" style="width: 5vw; font-size: 1.8vw; float: right;" min="0" max="10">
+                </div>
+            </div>
+
+            <div style="float: left; margin-left: -3vw">
+                <div style="float: top">
+                    <div id="circle_Q1_ans" class="wrapper" style="float: left;">
+                        <div id="Q1_ans_sector1" class="sector" style="transform: rotate(90deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector2" class="sector" style="transform: rotate(126deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector3" class="sector" style="transform: rotate(162deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector4" class="sector" style="transform: rotate(198deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector5" class="sector" style="transform: rotate(234deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector6" class="sector" style="transform: rotate(270deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector7" class="sector" style="transform: rotate(304deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector8" class="sector" style="transform: rotate(342deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector9" class="sector" style="transform: rotate(378deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector10" class="sector" style="transform: rotate(414deg) skew(53deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                    </div>
+
+                    <div style="float: left; margin-left: 3vw; margin-top: 5vw">
+                        <div id="Q1_red_color" class="color-picker" style="background-color: var(--red_level3);" onclick="color_picker(id)"></div>
+                        <div id="Q1_green_color" class="color-picker" style="background-color: var(--green_level4);" onclick="color_picker(id)"></div>
+                    </div>
+                </div>
+                <div id="Q1_feedback" class="text-config" style="clear: both; float: bottom; margin-left: 10vw; padding-top: 2vw; padding-bottom: 2vw"> </div>
+            </div>
+        </div>
+
+
+
+        <div id="Q2_container" style="clear: both">
+
+            <div id="Q2" class="text-config questions-text-config" style="padding-right: 8vw;">٢ــ معصومه چرخنده ای را که به دو رنگ قرمز و آبی بود، ١٠٠ بار چرخاند. او هر بار رنگی را که عقربه روی آن می ایستاد،<br>یادداشت می کرد. در آخر هم جدول زیر را کشید.<br>شما با توجه به اطّلاعاتی که در جدول آمده است، دایره را رنگ آمیزی کنید. ابتدا عددهای تقریبی را بنویسید.</div>
+
+            <div style="float: left; margin-left: -3vw;">
+                <div style="float: top">
+                    <div id="circle_Q2_ans" class="wrapper" style="float: left;">
+                        <div id="Q2_ans_sector1" class="sector" style="transform: rotate(90deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector2" class="sector" style="transform: rotate(126deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector3" class="sector" style="transform: rotate(162deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector4" class="sector" style="transform: rotate(198deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector5" class="sector" style="transform: rotate(234deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector6" class="sector" style="transform: rotate(270deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector7" class="sector" style="transform: rotate(304deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector8" class="sector" style="transform: rotate(342deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector9" class="sector" style="transform: rotate(378deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector10" class="sector" style="transform: rotate(414deg) skew(53deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                    </div>
+
+                    <div style="float: left; margin-left: 3vw; margin-top: 5vw">
+                        <div id="Q2_red_color" class="color-picker" style="background-color: var(--red_level3);" onclick="color_picker(id)"></div>
+                        <div id="Q2_blue_color" class="color-picker" style="background-color: var(--blue_level1);" onclick="color_picker(id)"></div>
+                    </div>
+                </div>
+                <div id="Q2_feedback" class="text-config" style="clear: both; float: bottom; margin-left: 10vw; padding-top: 2vw; padding-bottom: 2vw; width: 24vw"> </div>
+            </div>
+
+            <div class="simple-table-border" style="float: left;">
+                <table class="simple-table" style="width: 30vw; margin-left: 0">
+                    <tr>
+                        <td class="simple-td">عدد تقریبی</td>
+                        <td class="simple-td">تعداد</td>
+                        <td class="simple-td">رنگ</td>
+                    </tr>
+
+                    <tr>
+                        <td id="Q2_red_td" class="simple-td" style="width: 7vw">
+                            <input id="Q2_red_input" type="number" style="width: 8vw; font-size: 1.8vw" min="0" max="100">
+                        </td>
+                        <td class="simple-td">49</td>
+                        <td class="simple-td">قرمز</td>
+                    </tr>
+
+                    <tr>
+                        <td id="Q2_blue_td" class="simple-td">
+                            <input id="Q2_blue_input" type="number" style="width: 8vw; font-size: 1.8vw" min="0" max="100">
+                        </td>
+                        <td class="simple-td">51</td>
+                        <td class="simple-td">آبی</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="pencils" style="float: left">
+                <img style="width: 11vw; margin-top: 7vw; float: top" src="assets/3rd/images/nahbos/red_pencil_125.png" alt="red_pencil">
+                <div style=" float: bottom">
+                    <img style="width: 11vw; margin-top: 1.5vw;" src="assets/3rd/images/nahbos/blue_pencil_125.png" alt="blue_pencil">
+                </div>
+            </div>
+        </div>
+
+        <div class="guess-box-level1" style="clear:both; left: -6vw; margin-top: 2vw">
+            <div class="guess-box-text-left" >حدس بزن</div>
+            <div class="text-config" style="padding-top: 5vw;">با کاغذ دو مخروط درست کنید. با توّجه به شکل هاي زير، مخروط ها را از محل مشخّص شده، برش بزنید.<br>قسمت های بریده شده را روی کاغذ بگذارید و دور آن ها خط بکشید.<br>در کدام برش، شکل به دست آمده دایره است؟</div>
+            <div class="guess-box-level2">
+                <img src="assets/3rd/images/nahbos/left_scissor_125.png" style="width: 19vw;" alt="left_scissor">
+                <img src="assets/3rd/images/nahbos/right_scissor_125.png" style="width: 19vw;" alt="right_scissor">
+            </div>
+
+            <div style="float: right; margin-top: -18vw; margin-right: 5vw;">
+                <div style="height: 4vw;">
+                    <label class="text-config"><input type="radio" name="guess" value="right" id="radio_right" style="width: 2vw; height: 2vw;" onclick="guess_checker(id)">شکل راست</label>
+                </div>
+                <div style="height: 4vw;">
+                    <label class="text-config"><input type="radio" name="guess" value="left" id="radio_left" style="width: 2vw; height: 2vw;" onclick="guess_checker(id)">شکل چپ</label>
+                </div>
+            </div>
+
+            <div id="guess_box_feedback" class="text-config" style="margin-right: 5vw; float: right; margin-top: -8vw"></div>
+
+        </div>
+
+        <div class="page-number" style="left: -5vw; right: auto">125</div>
+
+    </div>
+</div>
 </body>
 </html>

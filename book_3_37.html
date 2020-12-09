@@ -2,6 +2,7 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="math">
     <meta name="author" content="MohammadrezaPourreza">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/pourreza.css">
@@ -25,10 +26,12 @@
         <div id="Q1_container">
             <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw">1ــ باتوجه به محور ، عددهاي داده شده را به صورت تقريبي نمايش دهيد. </div>
         </div>
+        <div id="test"></div>
+        <div id="anothertest"></div>
         <div id="first-vector">
             <div class="container" style="margin-left: 10vw;margin-top: 5vw;">
-                <div class="vector">
-                    <div style="font-size: 2vw ; font-family: ZAR">۰</div>
+                <div class="vector" id="firstVector" onclick="firstvector(event,'test')">
+                    <div id="firstDiv" style="font-size: 2vw ; font-family: ZAR">۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۱۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۲۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۳۰۰</div>
@@ -38,11 +41,11 @@
                     <div style="font-size: 2vw ; font-family: ZAR">۷۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۸۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۹۰۰</div>
-                    <div style="font-size: 2vw ; font-family: ZAR">۱۰۰۰</div>
+                    <div id="lastDiv" style="font-size: 2vw ; font-family: ZAR">۱۰۰۰</div>
                 </div>
             </div>
-            <div class="select" style="margin-left: 60vw; margin-top: -7vw;">
-                <select>
+            <div class="select"  style="margin-left: 60vw; margin-top: -7vw;">
+                <select id="firstSelect">
                     <option value="1">27</option>
                     <option value="2" >439</option>
                     <option value="3" >105</option>
@@ -53,8 +56,8 @@
         </div>
         <div id="second-vector">
             <div class="container" style="margin-left: 10vw;margin-top: 5vw;">
-                <div class="vector">
-                    <div style="font-size: 2vw ; font-family: ZAR">۰</div>
+                <div class="vector" id="secondVector" onclick="secondvector(event,'test')">
+                    <div id="firstDiv2" style="font-size: 2vw ; font-family: ZAR">۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۱۰۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۲۰۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۳۰۰۰</div>
@@ -64,22 +67,22 @@
                     <div style="font-size: 2vw ; font-family: ZAR">۷۰۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۸۰۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۹۰۰۰</div>
-                    <div style="font-size: 2vw ; font-family: ZAR">۱۰۰۰۰</div>
+                    <div id="lastDiv2" style="font-size: 2vw ; font-family: ZAR">۱۰۰۰۰</div>
                 </div>
             </div>
             <div class="select" style="margin-left: 60vw; margin-top: -7vw;">
-                <select>
-                    <option value="1">1050</option>
-                    <option value="2" >1170</option>
-                    <option value="3" >1430</option>
-                    <option value="4" >1685</option>
+                <select id="secondSelect">
+                    <option value="1">920</option>
+                    <option value="2" >2250</option>
+                    <option value="3" >4781</option>
+                    <option value="4" >6099</option>
                 </select>
             </div>
         </div>
         <div id="third-vector">
             <div class="container" style="margin-left: 10vw;margin-top: 5vw;">
-                <div class="vector">
-                    <div style="font-size: 2vw ; font-family: ZAR">۱۰۰۰</div>
+                <div class="vector" id="thirdVector" onclick="thirdvector(event,'test')">
+                    <div id="firstDiv3" style="font-size: 2vw ; font-family: ZAR">۱۰۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۱۱۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۱۲۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۱۳۰۰</div>
@@ -89,15 +92,15 @@
                     <div style="font-size: 2vw ; font-family: ZAR">۱۷۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۱۸۰۰</div>
                     <div style="font-size: 2vw ; font-family: ZAR">۱۹۰۰</div>
-                    <div style="font-size: 2vw ; font-family: ZAR">۲۰۰۰</div>
+                    <div id="lastDiv3" style="font-size: 2vw ; font-family: ZAR">۲۰۰۰</div>
                 </div>
             </div>
             <div class="select" style="margin-left: 60vw; margin-top: -7vw;">
-                <select>
-                    <option value="1">920</option>
-                    <option value="2" >2250</option>
-                    <option value="3" >4781</option>
-                    <option value="4" >6099</option>
+                <select id="thirdSelect">
+                    <option value="1">1050</option>
+                    <option value="2" >1170</option>
+                    <option value="3" >1430</option>
+                    <option value="4" >1685</option>
                 </select>
             </div>
         </div>
@@ -152,12 +155,22 @@
         <div class="guess-box-level1" style="clear:both; left: -6vw; margin-top: 5vw">
             <div class="guess-box-text-left" >کار دستی بساز</div>
             <div class="text-config" style="padding-top: 5vw;">به کمک وسايل لازم و با راهنمايي معلم خود يک ترازوي 2 کفه اي بسازيد.<br>شکل روبه رو يک ترازوي دو کفه اي را نشان مي دهد.<br>جرم توپ پلاستيکي بيشتراست يا جرم کتاب؟چرا؟</div>
+            <div class="select"  style="margin-left: 33vw; margin-top: -4vw; height: 4vw;width: 12vw">
+                <select id="forthSelect">
+                    <option value="1">جرم کتاب</option>
+                    <option value="2" >جرم توپ</option>
+                </select>
+            </div>
             <div class="guess-box-level2">
                 <img src="assets/3rd/images/pourreza/tarazoo.png" style="width: 19vw;" alt="ترازو">
                 <textarea type="text" id="textBox1" class = "textarea" style="position: absolute; margin-left:15vw ;"  rows="10" cols="30"></textarea>
                 <button class="submit" onclick="javascript: testTextBox('textBox1');" style="position: absolute; margin-left:32vw ; margin-top: 16vw">تاييد</button>
             </div>
             <div class="text-config" style="padding-top: 5vw;">با ترازويي که ساخته ايد، جرم چيزهاي مختلف را اندازه گيري کنيد.</div>
+        </div>
+        <div class="page-navigator" style="width: 35%">
+        <a href="book_3_36.html" class="previous">&laquo; Previous</a>
+        <a href="book3_38.html" class="next">Next &raquo;</a>
         </div>
         <div class="page-number" style="left: -5vw; right: auto">37</div>
         </div>
@@ -177,13 +190,71 @@
     }
     function testTextBox(id) {
         var obj = $(id);
+        var select = $('forthSelect')
         var str = obj.value;
-        if (str.includes("کتاب") || str.includes("جرمکتاب") || str.includes("جرم کتاب")||str.includes("ketab"))
+        if ((str.includes("پایین") || str.includes("payin"))&& select.value == 1)
         {
             alert("جواب شما درست است!");
         }
         else {
-            alert("جرم کتاب بیشتر است بیشتر دقت کن!");
+            alert("بیشتر دقت کن!");
+        }
+    }
+    function firstvector(event,id) {
+        var list = [27,439,105,247,807];
+        var x = event.clientX;
+        var y = event.clientY;
+           var coords = "X coords: " + x + ", Y coords: " + y;
+        var first = $('firstDiv').getBoundingClientRect();
+        var last = $('lastDiv').getBoundingClientRect();
+        var select = $('firstSelect');
+        var ebteda = first.left+15;
+        var enteha = last.left+15;
+        var postion = ((list[select.value -1]*(enteha-ebteda))/1000)+ebteda;
+        var variance = (20 * (enteha-ebteda))/1000
+        if(postion-variance<x&&x<postion+variance){
+            alert("جواب شما درست است!")
+        }
+        else{
+            alert("بیشتر دقت کن!");
+        }
+    }
+    function secondvector(event,id) {
+        var list = [920,2250,4781,6099];
+        var x = event.clientX;
+        var y = event.clientY;
+        var coords = "X coords: " + x + ", Y coords: " + y;
+        var first = $('firstDiv2').getBoundingClientRect();
+        var last = $('lastDiv2').getBoundingClientRect();
+        var select = $('secondSelect');
+        var ebteda = first.left+15;
+        var enteha = last.left+15;
+        var postion = ((list[select.value -1]*(enteha-ebteda))/10000)+ebteda;
+        var variance = (200 * (enteha-ebteda))/10000
+        if(postion-variance<x&&x<postion+variance){
+            alert("جواب شما درست است!")
+        }
+        else{
+            alert("بیشتر دقت کن!");
+        }
+    }
+    function thirdvector(event,id) {
+        var list = [1050,1170,1430,1685];
+        var x = event.clientX;
+        var y = event.clientY;
+        var coords = "X coords: " + x + ", Y coords: " + y;
+        var first = $('firstDiv3').getBoundingClientRect();
+        var last = $('lastDiv3').getBoundingClientRect();
+        var select = $('thirdSelect');
+        var ebteda = first.left+15;
+        var enteha = last.left+15;
+        var postion = (((list[select.value -1]-1000)*(enteha-ebteda))/1000)+ebteda;
+        var variance = (20 * (enteha-ebteda))/1000
+        if(postion-variance<x&&x<postion+variance){
+           alert("جواب شما درست است!")
+        }
+        else{
+            alert("بیشتر دقت کن!");
         }
     }
 </script>

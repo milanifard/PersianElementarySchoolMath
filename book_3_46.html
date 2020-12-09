@@ -24,25 +24,56 @@
             <div class="text">
                 ۱- علی آقا کشاورز است و یک قطعه زمین مستطیل شکل دارد.او نیمی از زمینش را گندم کاشته است.
                 نیمی دیگر را دو قسمت کرده و در یک قسمت یونجه و در قسمت دیگر جو کاشته است. 
-                <br>به سؤالهای زیر پاسخ دهید.
-                <br>در چند قسمت از زمین گندم کاشته شده است؟ قسمت از قسمت مساوی.
-                <br>در چند قسمت جو کاشته شده است؟
-                <br>در چند قسمت یونجه کاشته است؟
+                <br>به سؤالهای زیر پاسخ دهید         
+            </div>
+            <div style="margin: 2vw;">
+                در چند قسمت از زمین گندم کاشته شده است؟
+                <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                قسمت از 
+                <input type="text" id="check_part2" value="" class="input_style" onchange="checkvalue(1,'check_part2')">
+                قسمت مساوی
+            </div>
+            <div style="margin: 2vw;">
+                در چند قسمت از زمین جو کاشته شده است؟
+                <input type="text" id="check_part3" value="" class="input_style" onchange="checkvalue(4,'check_part3')">
+                قسمت از 
+                <input type="text" id="check_part4" value="" class="input_style" onchange="checkvalue(5,'check_part4')">
+                قسمت مساوی
+            </div>
+            <div style="margin: 2vw; margin-bottom: 0;">
+                در چند قسمت از زمین یونجه کاشته شده است؟
+                <input type="text" id="check_part5" value="" class="input_style" onchange="checkvalue(4,'check_part5')">
+                قسمت از 
+                <input type="text" id="check_part6" value="" class="input_style" onchange="checkvalue(5,'check_part6')">
+                قسمت مساوی
             </div>
             <img class="img_q1" src="assets/3rd/images/Jabbari/farm.png" alt="farm_img">
         </div>
         <div class="question2">
             <div class="text">
                 ۲- فاطمه با نوار کاغذی که خودش آن را درجه‌بندی کرده بود طول یک گیره‌ی کاغذ و یک پاک کن را اندازه گرفته است
-                <br>
-                <br> به پرسش های زیر پاسخ دهید :) 
+                <br> جاهای خالی را پرکنید. 
             </div>
             <div>
-                <div class="text">طول گیره کاغذ ؟</div>
+                <!-- <div class="text">طول گیره کاغذ ؟</div> -->
+                <div style="margin: 2vw; margin-bottom: 0;">
+                    طول گیره کاغذ
+                    <input type="text" id="check_part7" value="" class="input_style" onchange="checkvalue(6,'check_part7')">
+                    قسمت از 
+                    <input type="text" id="check_part8" value="" class="input_style" onchange="checkvalue(7,'check_part8')">
+                    قسمت مساوی است.
+                </div>
                 <img class="img_q1 img_paperClipRuler"src="assets/3rd/images/Jabbari/paperClip_ruler.png">
             </div> 
             <div>
-                <div class="text">طول گیره پاک کن ؟</div>
+                <!-- <div class="text">طول گیره پاک کن ؟</div> -->
+                <div style="margin: 2vw; margin-bottom: 0;">
+                    طول گیره کاغذ
+                    <input type="text" id="check_part9" value="" class="input_style" onchange="checkvalue(8,'check_part9')">
+                    قسمت از 
+                    <input type="text" id="check_part10" value="" class="input_style" onchange="checkvalue(7,'check_part10')">
+                    قسمت مساوی است.
+                </div>
                 <img class="img_q1 img_paperClipRuler" src="assets/3rd/images/Jabbari/eraser_ruler.png">
             </div>
             <div class="text">
@@ -55,6 +86,32 @@
         </div>
         
     </div>
+
+
+<script>
+    answerQustion1 = [1,2,2,4,1,4,6,10,8]
+    function checkvalue(i,x) {
+        var inputValue = document.getElementById(x);
+        if(inputValue.value == answerQustion1[i]){
+            // alert("افرین");
+            inputValue.style.backgroundColor = "#5aa469";
+  
+        }
+        else if(inputValue.value != ""){
+            inputValue.style.backgroundColor = "#d35d6e";
+        }
+    }
+
+    function normalImg(x) {
+        var inputValue = document.getElementById("checkQuestion1");
+        if(inputValue.value != 1){
+            // alert("افرین")
+            inputValue.style.backgroundColor = "#d35d6e";
+  
+        }
+    }
+</script>
+
 
 </body>
 
