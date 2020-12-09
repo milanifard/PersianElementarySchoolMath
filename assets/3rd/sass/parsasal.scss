@@ -134,8 +134,8 @@ ol {
 }
 
 .masale {
-    padding-inline-start: calc(0.6em + 1.4vw);
-    padding-inline-end: 0.5em;
+    padding-inline-start: calc(0.6em + 2.4vw);
+    padding-inline-end: calc(0.4em + 2vw);
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     clear: both;
@@ -149,7 +149,9 @@ ol {
         position: relative;
         display: block;
         padding-inline-start: 0.5em;
+
     }
+
     p:before {
         float: right;
         content: counter(big-num);
@@ -161,12 +163,20 @@ ol {
         min-width: 1.0em;
         text-align: center;
         margin-left: 0.5em;
+        &.no-numbering{
+            content: none;
+            
+        }
     }
+
+
+
     @media (min-width:992px) {
-        &.padded-for-image{
+        &.padded-for-image {
             padding-right: 10vh;
         }
-        .padded-for-image{
+
+        .padded-for-image {
             padding-right: 6vh;
         }
     }
@@ -187,24 +197,23 @@ section {
         padding: 0;
         overflow: visible;
 
-
-
-
         .title-container {
             .section-header-image {
                 display: none;
             }
+
             @media (min-width:992px) {
                 .section-header-image {
                     display: inline;
                     position: absolute;
-                    right: 0.8vw;
-                    top: 3.3vh;
+                    right: -2.8vw;
+                    top: 1.3vh;
                     z-index: 2;
                     max-height: 18vh;
-                    max-width: 22vw;
+                    max-width: 20vw;
                 }
             }
+
             background-color: $color-1;
             padding: 0.5em;
             border-top-left-radius: 0.4em;
@@ -313,6 +322,10 @@ $paper-line: #94ACD4;
 
 
 }
+.farhange-khandan{
+    background-color: #fcd8cb;
+}
+
 
 .dotted-border {
     padding: 0.8em 0;
