@@ -9311,6 +9311,11 @@ ol {
   display: block;
   -webkit-padding-start: 0.5em;
           padding-inline-start: 0.5em;
+  font-size: 1.06rem;
+}
+
+.masale p.no-numbering:before {
+  display: none;
 }
 
 .masale p:before {
@@ -9324,10 +9329,6 @@ ol {
   min-width: 1.0em;
   text-align: center;
   margin-left: 0.5em;
-}
-
-.masale p:before.no-numbering {
-  content: none;
 }
 
 @media (min-width: 992px) {
@@ -9449,8 +9450,19 @@ hr {
   }
 }
 
-.farhange-khandan {
+.farhange-khandan-container {
+  padding: 5em;
+}
+
+.farhange-khandan-container .title-container {
+  margin: 2.4em 0 1em 0;
+}
+
+.farhange-khandan-container .farhange-khandan {
   background-color: #fcd8cb;
+  border: 4px solid #c82128;
+  border-radius: 2.4em;
+  padding: 0 1e;
 }
 
 .dotted-border {

@@ -149,7 +149,11 @@ ol {
         position: relative;
         display: block;
         padding-inline-start: 0.5em;
-
+        font-size: 1.06rem;        
+        &.no-numbering:before{
+            display: none;
+            
+        }
     }
 
     p:before {
@@ -163,10 +167,7 @@ ol {
         min-width: 1.0em;
         text-align: center;
         margin-left: 0.5em;
-        &.no-numbering{
-            content: none;
-            
-        }
+
     }
 
 
@@ -322,8 +323,17 @@ $paper-line: #94ACD4;
 
 
 }
-.farhange-khandan{
-    background-color: #fcd8cb;
+.farhange-khandan-container{
+    padding: 5em;
+    .title-container{
+        margin : 2.4em 0 1em 0;
+    }
+    .farhange-khandan{
+        background-color: #fcd8cb;
+        border: 4px solid #c82128;
+        border-radius: 2.4em;
+        padding: 0 1e,;
+    }
 }
 
 
