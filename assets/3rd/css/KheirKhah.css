@@ -162,7 +162,38 @@ input{
 }
 
 #left{
-  border-radius: 0 0 0 25px;
+  border-radius:25px 0 0 0;
   border-left:double #C47898 10px;
   }
   
+.header{
+  background: #C47898;
+  border-radius:25px ;
+  width: 200px;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: double white 5px;
+}
+.borderquest{
+  /* display: flex; */
+  /* justify-content: space-between;
+  flex-flow:row wrap; */
+  margin-left: 50px;
+  border: dotted 5px #C47898;
+  border-radius:25px ;
+  background: white;
+  padding: 10px;
+
+  padding-bottom: 50px;
+}
+
+#mid{
+  position: relative;
+  bottom: 3%;
+  right: 3%;
+}
+#last{
+  position: relative;
+  bottom: 6%;
+}
