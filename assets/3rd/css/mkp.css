@@ -21,6 +21,8 @@ body {
     --pink_level2: #dc93b0;
     --pink_level3: #b03776;
 
+    --text-box-border-color: #a5cde0;
+
 
     --yellow_level1_guessbox: #fffce0;
     --yellow_level2_border: #ffdd2b;
@@ -110,12 +112,6 @@ body {
     white-space: pre-wrap;
 }
 
-.questions-text {
-    padding-right: 5vw;
-    padding-left: 3vw;
-    padding-bottom: 2vw;
-    margin-top: 2vw;
-}
 
 .questions-number {
     color: var(--orange_level3);
@@ -151,6 +147,23 @@ body {
     border-top: 0.3vw solid var(--pink_level3);
 }
 
+#Q1_questions_content{
+    clear: both
+}
+
+#Q1_questions {
+    float: right;
+}
+
+.underline-text-box{
+    border: none;
+    border-bottom: 2px solid var(--text-box-border-color);
+}
+
+.noborder-text-box{
+    border: none;
+    background-color: #00000000;
+}
 /*.simple-table td{*/
 /*    padding: 0.7vw;*/
 /*    border: 0.3vw solid var(--orange_level3);*/
@@ -159,6 +172,36 @@ body {
 /*    text-align: center;*/
 /*}*/
 
+
+
+/*
+aewf
+efa
+efa
+ef
+af
+awef
+aewf
+a
+efawe
+f
+aef
+aef
+af
+aefa
+wef
+
+awef
+
+a
+fe
+af
+
+aef
+ */
+
+.questions-text {
+}
 
 .page-number {
 
