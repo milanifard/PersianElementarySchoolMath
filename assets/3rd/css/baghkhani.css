@@ -113,7 +113,7 @@ body {
 .TopicStartTitle {
     float: right;
     width: 10vw;
-    height: 3vw;
+    height: 4vw;
     background-color: var(--topic-title-color);
     text-align: center;
     font-size: 2vw;
@@ -162,7 +162,7 @@ body {
     float: right;
     font-size: 1.5vw;
     padding-right: 10vw;
-    margin-top: 30vw;
+    margin-top: 10vw;
 }
 
 .question {
@@ -182,7 +182,7 @@ body {
     margin: 18vw 1.5vw 1vw 3vw;
     clear: both;
     left: -6vw;
-    margin-top: 30vw;
+    margin-top: 10vw;
     bottom: -7vw;
     height: 40vw;
 }
@@ -253,4 +253,37 @@ body {
     bottom: -1.5vw;
     right: 44%;
     border-radius: 0.75vw;
+}
+
+.qboxActivity {
+    padding-right: 10vw;
+}
+
+.question1page20 {
+    font-size: 1.75vw;
+    margin-right: 8vw;
+}
+
+.topic-title-classwork {
+    height: 2.5vw;
+    margin-right: -2vw;
+    font-size: 1.75vw;
+}
+
+.topic-title {
+    float: right;
+    width: 10vw;
+    height: 3vw;
+    background-color: var(--topic-title-color);
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    border-radius: 0.75vw 0 0 0.75vw;
+    margin-top: 0.5vw;
+}
+
+.topic-image {
+    width: 10%;
+    height: 13vw;
+    float: right;
 }
