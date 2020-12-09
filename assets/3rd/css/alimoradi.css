@@ -7,6 +7,7 @@
     --dark-green: #4fac77;
     --purple: #b01f6f;
     --super-light-green: #e4f0d4;
+    --super-light-orange:  #FFF2E5;
     --main_color: #47a758;
     --footer_color1 : #84b954;
     --footer_color2 : #b9ce4d;
@@ -214,13 +215,7 @@ table {
     font-size: 1.1vw;
 }
 
-.orange_box {
-    width: 100%;
-    border-radius: 30px;
-    border: 3px solid var(--dark-orange);
-    background-color: var(--super-light-green);
-    margin: auto;
-}
+
 .input-row{
     width: 100%;
     margin: 0vw 0;
@@ -302,13 +297,27 @@ table {
     padding:0vw 3vw;
     position: relative;
 }
+.orange_box {
+    width: 100%;
+    border-radius: 30px;
+    border: 3px solid var(--dark-orange);
+    background-color: var(--super-light-orange);
+    margin: auto;
+}
+
 .orange_box1 {
     width: 30vw;
     margin: auto;
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
-
+.orange_box4 {
+    height: 15vw;
+    width:5vw;
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
 .orange_box2 {
     margin: auto;
     margin-bottom: 2vw;
@@ -333,7 +342,50 @@ form>div>span {
     height: 1.1vw;
     border: 1px solid black;
 }
+.green_box {
+    width: 100%;
+    border-radius: 30px;
+    border: 3px solid var(--dark-orange);
+    background-color: var(--super-light-orange);
+    margin: auto;
+}
 
+.green_box1 {
+    width: 30vw;
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.green_box4 {
+    width: 15vw;
+    height: 15vw;
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.green_box2 {
+    margin: auto;
+    margin-bottom: 2vw;
+}
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4vw 4vw 4vw 4vw ;
+    grid-column-gap: 0.7vw;
+    float: right;
+    margin: 0 37%;
+}
+
+.container {
+    width: 100%;
+    float: right;
+}
+.half-page {
+    width: 50%;
+    float: right;
+    margin: 0 -4vw;
+    margin-left: 4vw;
+}
 .page_num_container {
     position: relative;
     float: right;
@@ -345,6 +397,7 @@ form>div>span {
 .page_num {
     width: 7vw;
     height: 3vw;
+    color: white;
     text-align: center;
     border-radius: 20px;
     background-color: var(--dark-orange);
