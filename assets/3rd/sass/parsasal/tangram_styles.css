@@ -1,0 +1,71 @@
+/* body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden scroll;
+  font-family: 'Permanent Marker', cursive;
+}
+body h1 {
+  margin-bottom: 5px;
+}
+body p {
+  margin: 3px 0;
+} */
+
+.tangram-container {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.canvas {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  cursor: move;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.canvas.active {
+  opacity: 0.7;
+  transform: scale(1.1);
+  box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.4);
+}
+.canvas.t-l-1 {
+  clip-path: polygon(50% 50%, 0px 100%, 100% 100%);
+  background-color: #845ec2;
+}
+.canvas.t-l-2 {
+  clip-path: polygon(50% 50%, 0% 0%, 0px 100%);
+  background-color: #d65db1;
+}
+.canvas.t-s-1 {
+  clip-path: polygon(50% 0%, 25% 25%, 0px 0%);
+  background-color: #ff6f91;
+}
+.canvas.s {
+  clip-path: polygon(75% 25%, 50% 0%, 25% 25%, 50% 50%);
+  background-color: #ff9671;
+}
+.canvas.t-s-2 {
+  clip-path: polygon(75% 75%, 75% 25%, 50% 50%);
+  background-color: #e3e267;
+}
+.canvas.p {
+  clip-path: polygon(75% 75%, 75% 25%, 100% 50%, 100% 100%);
+  background-color: #00c9a7;
+}
+.canvas.t-m {
+  clip-path: polygon(100% 50%, 100% 0%, 50% 0%);
+  background-color: #008f7a;
+}

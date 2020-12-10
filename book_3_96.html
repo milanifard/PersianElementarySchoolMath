@@ -6,8 +6,9 @@
     <title>صفحه ۹۶ - سوم ابتدایی</title>
     <link rel="stylesheet" href="./assets/3rd/css/bootstrap-rtl.min.css">
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
+    <link rel="stylesheet" href="./assets/3rd/sass/parsasal/tangram_styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/3rd/sass/parsasal/parsasal.js"></script>
+
     <meta name="author" content="Parsa Salehipour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -35,33 +36,60 @@
 
                 <div class="masale">
                     <div class="row">
-                        <p>شکل های زیر با ۷ قطعه تانگرام درست شده اند. سعی کنید این شکل ها را بسازید. در دو شکل قطعات مشخص اند و شما فقط باید آن‌ها را کنار هم قرار دهید اما در سه شکل دیگر محل ۷ قطعه را هم باید تشخیص دهید.</p>
+                        <p>شکل های زیر با ۷ قطعه تانگرام درست شده اند. سعی کنید این شکل ها را بسازید. در دو شکل قطعات
+                            مشخص اند و شما فقط باید آن‌ها را کنار هم قرار دهید اما در سه شکل دیگر محل ۷ قطعه را هم باید
+                            تشخیص دهید.</p>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-11">
                             <img src="./assets/3rd/images/parsasal/origami_shapes.png" alt="origami shapes"
-                            class="responsive-img">
+                                class="responsive-img">
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="tangram-container">
+                            <div class="canvas t-l-1">
+                            </div>
+                            <div class="canvas t-l-2">
+                            </div>
+                            <div class="canvas t-s-1">
+                            </div>
+                            <div class="canvas s">
+                            </div>
+                            <div class="canvas t-s-2">
+                            </div>
+                            <div class="canvas p">
+                            </div>
+                            <div class="canvas t-m">
+                            </div>
+                        </div>
 
+                        <!-- partial -->
+                        <script src="./assets/3rd/sass/parsasal/displace.js"></script>
+                        <script src="./assets/3rd/sass/parsasal/tangram_script.js"></script>
+
+                    </div>
 
                 </div>
             </section>
 
-            <section class="farhange-khandan-container" >
+            <section class="farhange-khandan-container">
                 <div class="farhange-khandan">
                     <header class="section-header">
                         <div class="title-container ">
                             <h5>فرهنگ خواندن</h5>
                         </div>
-    
+
                     </header>
                     <div class="masale">
-                        <p class="no-numbering">‫علی‪ ،‬پدر امین و اکبر است‪.‬او می خواهد یک قطعه زمین کشاورزی خود را به طور مساوی‬
-                            ‫بین دو پسرش تقسیم کند‪ .‬برای این کار‪ ،‬او ابتدا باید مساحت این زمین را محاسبه کند اما زمین‬
+                        <p class="no-numbering">‫علی‪ ،‬پدر امین و اکبر است‪.‬او می خواهد یک قطعه زمین کشاورزی خود را به
+                            طور مساوی‬
+                            ‫بین دو پسرش تقسیم کند‪ .‬برای این کار‪ ،‬او ابتدا باید مساحت این زمین را محاسبه کند اما
+                            زمین‬
                             ‫صاف نیست و پستی و بلندی هایی دارد‪ .‬امین که در دبیرستان درس می خواند‪ ،‬برای ّ‬
                             ‫حل این مشکل‬
-                            ‫به پدرش پیشنهادی می دهد‪ .‬او می گوید‪« :‬ابتدا زمین را به مثلث های مختلف تقسیم کنید‪ .‬اگر‬
+                            ‫به پدرش پیشنهادی می دهد‪ .‬او می گوید‪« :‬ابتدا زمین را به مثلث های مختلف تقسیم کنید‪
+                            .‬اگر‬
                             ‫مساحت مثلث ها را با هم جمع کنید‪ ،‬مساحت ّ‬
                             ‫کل زمین به دست می آید‪ ».‬پدر می پرسد‪« :‬مساحت‬
                             ‫مثلث را چگونه باید پیدا کنیم؟»‬

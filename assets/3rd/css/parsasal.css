@@ -9374,6 +9374,16 @@ section .section-header .title-container .section-header-image {
   }
 }
 
+section .section-header .indent-square {
+  background-color: #DC302F;
+  color: #DC302F;
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 0.8em;
+  clear: both;
+}
+
 section .section-header button {
   float: left;
   margin-left: 1em;
@@ -9471,6 +9481,12 @@ hr {
   border-width: 0.24em;
   border-radius: 0.6em;
   border-color: #F13F52;
+}
+
+#tangram {
+  height: 30em;
+  width: 100%;
+  display: block;
 }
 
 @font-face {

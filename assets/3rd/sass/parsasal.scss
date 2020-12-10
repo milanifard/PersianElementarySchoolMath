@@ -199,6 +199,8 @@ section {
         overflow: visible;
 
         .title-container {
+
+
             .section-header-image {
                 display: none;
             }
@@ -221,7 +223,15 @@ section {
             border-bottom-left-radius: 0.4em;
         }
 
-
+        .indent-square {
+            background-color: $color-2;
+            color: $color-2;
+            display: block;
+            position: relative;
+            height: 100%;
+            width: 0.8em;
+            clear: both;
+        }
         button {
 
             float: left;
@@ -327,6 +337,7 @@ $paper-line: #94ACD4;
     padding: 5em;
     .title-container{
         margin : 2.4em 0 1em 0;
+
     }
     .farhange-khandan{
         background-color: #fcd8cb;
@@ -344,5 +355,9 @@ $paper-line: #94ACD4;
     border-radius: 0.6em;
     border-color: $color-1;
 }
-
+#tangram{
+    height: 30em;
+    width: 100%;
+    display: block;
+}
 @import "./parsasal/_fonts.scss";
