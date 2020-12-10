@@ -9315,8 +9315,12 @@ ol {
   font-size: 1.06rem;
 }
 
-.masale p.no-numbering:before {
+.masale p:before {
   display: none;
+}
+
+.masale p.before-numbering:before {
+  display: block;
 }
 
 .masale p:before {
@@ -9535,4 +9539,55 @@ h1, h2, h3, h4, h5, h6 {
 
 html {
   font-size: 20px;
+}
+
+/*above code for demo purpose only*/
+.alert {
+  padding: 10px 35px 10px 14px;
+  background-color: #eee;
+  border-radius: 4px;
+  position: relative;
+  margin: 10px 0;
+}
+
+.alert .close {
+  border: 0;
+  background: none;
+  color: inherit;
+  color: #000;
+  font-size: 44px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.alert .close:active, .alert .close:focus {
+  outline: 0;
+}
+
+.alert p {
+  margin: 0;
+}
+
+.alert--success {
+  background: #ddf0d7;
+  border-color: #a4cd98;
+  color: #1c652c;
+}
+
+.alert--warning {
+  background: #ffefc6;
+  border-color: #e5c073;
+  color: #795d27;
+}
+
+.alert--info {
+  background: #d4edf7;
+}
+
+.alert--error {
+  background: #f6ddde;
+  border-color: #d4aaac;
+  color: #972a3d;
 }

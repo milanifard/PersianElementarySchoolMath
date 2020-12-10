@@ -1,0 +1,48 @@
+
+/*above code for demo purpose only*/
+.alert {
+    padding: 10px 35px 10px 14px;
+    background-color: #eee;
+    border-radius: 4px;
+    position: relative;
+    margin: 10px 0;
+  }
+  .alert .close {
+    border: 0;
+    background: none;
+    color: inherit;
+    color: #000;
+    font-size: 44px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+  .alert .close:active, .alert .close:focus {
+    outline: 0;
+  }
+  .alert p {
+    margin: 0;
+  }
+  
+  .alert--success {
+    background: #ddf0d7;
+    border-color: #a4cd98;
+    color: #1c652c;
+  }
+  
+  .alert--warning {
+    background: #ffefc6;
+    border-color: #e5c073;
+    color: #795d27;
+  }
+  
+  .alert--info {
+    background: #d4edf7;
+  }
+  
+  .alert--error {
+    background: #f6ddde;
+    border-color: #d4aaac;
+    color: #972a3d;
+  }

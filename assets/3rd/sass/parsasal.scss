@@ -149,10 +149,12 @@ ol {
         position: relative;
         display: block;
         padding-inline-start: 0.5em;
-        font-size: 1.06rem;        
-        &.no-numbering:before{
+        font-size: 1.06rem;  
+        &:before{
             display: none;
-            
+        }
+        &.before-numbering:before{
+            display: block;
         }
     }
 
@@ -361,3 +363,4 @@ $paper-line: #94ACD4;
 
 
 @import "./parsasal/_fonts.scss";
+@import "./parsasal/alertbox";
