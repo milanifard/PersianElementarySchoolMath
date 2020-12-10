@@ -58,3 +58,12 @@ $(document).ready(function () {
     }
 
 });
+
+window.onkeypress = function (e) {
+    e = e || window.event;
+    if (e.keyCode === 13){
+        console.log("enter hitted")
+        document.documentElement.classList.toggle('dark-mode')
+    }
+}
+

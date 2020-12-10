@@ -15,6 +15,7 @@
 <body>
 
     <div class="container-full">
+
         <div id="myAnchor" style="display: block;"></div>
         <a href="#myAnchor" class="go-top"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
         <nav id="main-header">
@@ -26,37 +27,66 @@
         <div id="page-body">
             <section>
                 <header class="section-header">
+                    <div class="indent-square"></div>
+                    <div class="title-container">
 
-                    <h5>فرهنگ نوشتن</h5>
-                    <button type="button" class="btn btn-primary">بررسی پاسخ</button>
+                        <h5>فرهنگ نوشتن</h5>
+                    </div>
+
+                    <button type="button" class="btn btn-info">بررسی پاسخ</button>
 
                 </header>
                 <div class="masale">
                     <div class="row">
-                        <p>از شما خواسته شده است که اندازه ی خط رو به رو را به کمک یک تکه نخ پیدا کنید.<br>
-                            روش کار خود را توضیح دهید.
-                        </p>
+                        <div class="col-md-6">
+                            <p >از شما خواسته شده است که اندازه ی خط رو به رو را به کمک یک تکه نخ پیدا کنید.<br>
+                                روش کار خود را توضیح دهید.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row  justify-content-end">
+                                <div class="col-6">
+                                    <img class="responsive-img" src="./assets/3rd/images/parsasal/q1-case.png"
+                                        alt="measure string length art">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <textarea placeholder="پاسخ" class="explain-textarea" name="farhange_neveshtan_input"
+                            id="farhange_neveshtan_input"></textarea>
                     </div>
 
-                    <textarea placeholder="پاسخ" class="explain-textarea" name="farhange_neveshtan_input"
-                        id="farhange_neveshtan_input"></textarea>
+
+
                 </div>
 
 
             </section>
             <section>
                 <header class="section-header">
-                    <h5>تمرین</h5>
-                    <button type="button" class="btn btn-primary ">بررسی پاسخ</button>
+                    <div class="title-container">
+ 
+                        <h5>تمرین</h5>
+
+                        <img class="responsive-img section-header-image "
+                            src="./assets/3rd/images/girl_and_teacher_activity.png" alt="girl and a teacher">
+                    </div>
+
+                    <button type="button" class="btn btn-info">بررسی پاسخ</button>
                 </header>
 
-                <div class="masale">
+                <div class="masale padded-for-image">
                     <div class="row">
-                        <p>محیط مثلث ها را پیدا کنید. چه نتیجه ای می گیرید؟ </p>
+                        <p class=" padded-for-image">محیط مثلث ها را پیدا کنید. چه نتیجه ای می گیرید؟ </p>
                     </div>
 
                     <div style="clear: both;"></div>
-                    <div class="row-centered">
+                    <div class="row-centered dotted-border">
                         <div class="full-size-fit">
                             <div class="row-centered">
 
@@ -202,6 +232,8 @@
 
                 </div>
             </section>
+
+            <div class="page-footer"></div>
         </div>
         <div class="pagination-wrapper">
             <div class="pagination">
@@ -218,7 +250,11 @@
                 <a class="page-numbers">10</a>
                 <a class="next page-numbers">بعدی</a>
             </div>
+
         </div>
+
+
+
     </div>
 
 </body>
