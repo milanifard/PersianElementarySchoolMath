@@ -100,6 +100,38 @@ $easing: ease;
         line-height: 50px;
     }
 
+    // @include breakpoint(touch) {
+    //     padding: 0 10px;
+    //     display: none;
+
+    //     &:nth-of-type(2) {
+    //         position: relative;
+    //         padding-right: 50px;
+    //         &::after {
+    //             content: '...';
+    //             position: absolute;
+    //             font-size: 25px;
+    //             top: 0;
+    //             // padding: 0 10px;
+    //             left: 45px;
+    //             background-color: $grey-light;
+    //         }
+
+    //     }
+
+    //     &:nth-child(-n+3),
+    //     &:nth-last-child(-n+3) {
+    //         display: block;
+    //     }
+
+    //     &:nth-last-child(-n+4) {
+    //         padding-right: 14px;
+
+    //         &::after {
+    //             content: none;
+    //         }
+    //     }
+    // }
     @include breakpoint(touch) {
         padding: 0 14px;
         display: none;

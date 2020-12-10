@@ -9352,10 +9352,25 @@ section .section-header {
 }
 
 section .section-header .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #F13F52;
-  padding: 0.5em;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
+}
+
+section .section-header .title-container .indent-square {
+  background-color: #DC302F;
+  color: #DC302F;
+  display: table-cell;
+  width: 1.2em;
+}
+
+section .section-header .title-container h5 {
+  float: right;
+  margin: 0.3em 1em;
+  color: white;
 }
 
 section .section-header .title-container .section-header-image {
@@ -9374,26 +9389,10 @@ section .section-header .title-container .section-header-image {
   }
 }
 
-section .section-header .indent-square {
-  background-color: #DC302F;
-  color: #DC302F;
-  display: block;
-  position: relative;
-  height: 100%;
-  width: 0.8em;
-  clear: both;
-}
-
 section .section-header button {
   float: left;
   margin-left: 1em;
   margin-right: auto;
-}
-
-section .section-header h5 {
-  float: right;
-  margin: 0 1em;
-  color: white;
 }
 
 hr {
@@ -9461,7 +9460,7 @@ hr {
 }
 
 .farhange-khandan-container {
-  padding: 5vh 5vw;
+  padding: 2vh 5vw 5vh 5vw;
 }
 
 .farhange-khandan-container .title-container {

@@ -199,8 +199,20 @@ section {
         overflow: visible;
 
         .title-container {
+            display: flex;
+            .indent-square {
+                background-color: $color-2;
+                color: $color-2;
+                display: table-cell;
+                width: 1.2em;
+            }
 
+            h5 {
 
+                float: right;
+                margin: 0.3em 1em;
+                color: white;
+            }
             .section-header-image {
                 display: none;
             }
@@ -212,26 +224,17 @@ section {
                     right: -2.8vw;
                     top: 1.3vh;
                     z-index: 2;
-                    max-height: 18vh;
+                    max-height: 18vh;   
                     max-width: 20vw;
                 }
             }
 
             background-color: $color-1;
-            padding: 0.5em;
             border-top-left-radius: 0.4em;
             border-bottom-left-radius: 0.4em;
         }
 
-        .indent-square {
-            background-color: $color-2;
-            color: $color-2;
-            display: block;
-            position: relative;
-            height: 100%;
-            width: 0.8em;
-            clear: both;
-        }
+
         button {
 
             float: left;
@@ -239,11 +242,6 @@ section {
             margin-right: auto;
         }
 
-        h5 {
-            float: right;
-            margin: 0 1em;
-            color: white;
-        }
 
 
     }
@@ -334,7 +332,7 @@ $paper-line: #94ACD4;
 
 }
 .farhange-khandan-container{
-    padding: 5vh 5vw;
+    padding: 2vh 5vw 5vh 5vw;
     .title-container{
         margin : 2.4em 0 1em 0;
 
