@@ -178,7 +178,7 @@ input{
 .header{
   background: #C47898;
   border-radius:25px ;
-  width: 200px;
+  /* width: 200px; */
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -381,4 +381,13 @@ input{
   border: solid lightblue ;
   background-color: white;  
   color: #ffffff ;
+}
+
+.button{
+  background : #D18CA3;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-align: center;
+  width: 100px;
 }
