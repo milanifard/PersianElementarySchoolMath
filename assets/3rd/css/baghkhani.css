@@ -16,7 +16,7 @@
     --grid_green_color: #4ba338;
     --grid_purple_color: #a088ba;
     --grid_light_brown_color: #f19345;
-    --creative_color: #e9f1d2;
+    --draw_color: #e9f1d2;
     --guessBox: #eeffcc;
 }
 
@@ -31,12 +31,12 @@
 
 @font-face {
     font-family: Samim;
-    font_size: 2px;
-    src: url("/assets/fonts/Samim.woff") format("woff");
+    font_size: 1.5px;
+    src: url("/assets/fonts/Zar.woff") format("woff");
 }
 
 body {
-    font-family: "Samim";
+    font-family: "B Zar";
     font-size: 2vw;
     text-align: justify-all;
     overflow-x: hidden;
@@ -166,7 +166,8 @@ body {
 }
 
 .question {
-    font-size: 1.75vw
+    font-size: 1.75vw;
+    line-height: 3vw;
 }
 
 .subtitle {
@@ -203,10 +204,11 @@ body {
 }
 
 .text-config {
-    font-size: 1.70vw;
+    font-size: 1.66vw;
     direction: rtl;
     float: right;
     padding-top: 5vw;
+    line-height: 3vw;
 }
 
 .guess-box-level2 {
@@ -237,6 +239,30 @@ body {
 .next-page {
     display: block;
     float: left;
+}
+
+.previous-page a {
+    text-decoration: none;
+    color: var(--main_color);
+    font-size: 3vw;
+}
+
+.previous-page a:hover {
+    text-decoration: none;
+    color: olive;
+    font-size: 3vw;
+}
+
+.next-page a {
+    text-decoration: none;
+    color: var(--main_color);
+    font-size: 3vw;
+}
+
+.next-page a:hover {
+    text-decoration: none;
+    color: olive;
+    font-size: 3vw;
 }
 
 .page-number {
@@ -286,4 +312,58 @@ body {
     width: 10%;
     height: 13vw;
     float: right;
+}
+
+.butterfly {
+    width: 20vw;
+    height: 20vw;
+    margin-right: 20vw;
+    margin-top: -3vw;
+}
+
+#rectangles {
+    width: 100%;
+    height: 20vw;
+    margin-top: 5vw;
+    margin-right: -5vw;
+}
+
+.draw-box-level1 {
+    background-color: var(--guessBox);
+    border: 0.4vw solid var(--footer_color1);
+    border-radius: 4vw;
+    position: relative;
+    padding: 1vw;
+    margin: 18vw 1.5vw 1vw 3vw;
+    clear: both;
+    margin-top: 10vw;
+    bottom: -7vw;
+    height: 40vw;
+    margin-right: -2vw;
+}
+
+.draw-box-text-right {
+    background-color: var(--footer_color1);
+    border-radius: 1.5vw 0 0 1.5vw;
+    border-right: 2vw solid var(--main_color);
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.5vw;
+    color: white;
+    padding: 0 3vw 0 2vw;
+    position: absolute;
+    right: -2vw;
+    top: 1vw;
+    z-index: 1;
+}
+
+.drawboxImage {
+    width: 30vw;
+    height: 26vw;
+    margin-top: -7vw;
+    margin-left: -6vw;
+}
+
+.drawText {
+    margin-top: 2vw;
 }
