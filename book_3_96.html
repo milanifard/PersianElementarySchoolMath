@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>صفحه ۹۶ - سوم ابتدایی</title>
-    <link rel="stylesheet" href="./assets/3rd/css/bootstrap-rtl.min.css">
+    <!-- <link rel="stylesheet" href="./assets/3rd/css/bootstrap-rtl.min.css"> -->
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
     <link rel="stylesheet" href="./assets/3rd/sass/parsasal/tangram_styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/3rd/sass/parsasal/jquery.min.js"></script>
+    <script src="./assets/3rd/sass/parsasal/jquery-ui.min.js"></script>
 
     <meta name="author" content="Parsa Salehipour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,26 +48,27 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="tangram-container">
-                            <div class="canvas t-l-1">
-                            </div>
-                            <div class="canvas t-l-2">
-                            </div>
-                            <div class="canvas t-s-1">
-                            </div>
-                            <div class="canvas s">
-                            </div>
-                            <div class="canvas t-s-2">
-                            </div>
-                            <div class="canvas p">
-                            </div>
-                            <div class="canvas t-m">
-                            </div>
+                        <div id="blockTray">
+
+                            <div id="square" class="block"></div>
+                            <div id="triangle1" class="block"></div>
+                            <div id="triangle2" class="block"></div>
+                            <div id="triangle3" class="block"></div>
+                            <div id="triangle4" class="block"></div>
+                            <div id="triangle5" class="block"></div>
+                            <div id="parallelogram" class="block"></div>
+
                         </div>
 
-                        <!-- partial -->
-                        <script src="./assets/3rd/sass/parsasal/displace.js"></script>
+                        <div id="canvas">
+                            <div id="instruction">
+                                <h1>تانگرام</h1>
+                                <p class="no-numbering">برای شروع یکی از شکل های سمت راست رو اینجا بکش</p>
+                                <p class="no-numbering">برای چرخوندن شکل ها می‌تونی کلیک کنی</p>
+                            </div>
+                        </div>
                         <script src="./assets/3rd/sass/parsasal/tangram_script.js"></script>
+
 
                     </div>
 

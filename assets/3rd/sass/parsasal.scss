@@ -334,7 +334,7 @@ $paper-line: #94ACD4;
 
 }
 .farhange-khandan-container{
-    padding: 5em;
+    padding: 5vh 5vw;
     .title-container{
         margin : 2.4em 0 1em 0;
 
@@ -360,4 +360,6 @@ $paper-line: #94ACD4;
     width: 100%;
     display: block;
 }
+
+
 @import "./parsasal/_fonts.scss";
