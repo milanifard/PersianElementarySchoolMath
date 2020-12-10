@@ -11,6 +11,18 @@ body {
     margin: 0;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 :root {
 
     --orange_level1: #f8b044;
@@ -86,6 +98,7 @@ body {
     position: absolute;
     right: -2.3vw;
     top: 0.5vw;
+    margin-right: 5vw;
     z-index: 2;
 }
 
@@ -103,6 +116,9 @@ body {
     right: 3vw;
     top: 2.5vw;
     z-index: 1;
+
+    margin-right: 3vw;
+    float: right;
 }
 
 .text {
@@ -132,7 +148,8 @@ body {
     font-size: 1.5vw;
     text-align: center;
     font-family: Koodak;
-    padding: 0.5vw 1.5vw;
+
+    padding: 0.5vw;
 }
 
 .simple-table .bottom-border {
@@ -147,22 +164,114 @@ body {
     border-top: 0.3vw solid var(--pink_level3);
 }
 
-#Q1_questions_content{
-    clear: both
-}
-
-#Q1_questions {
-    float: right;
-}
-
 .underline-text-box{
     border: none;
     border-bottom: 2px solid var(--text-box-border-color);
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Koodak;
 }
 
 .noborder-text-box{
     border: none;
     background-color: #00000000;
+    width: 4vw;
+    height: 2.5vw;
+    text-align: center;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: Koodak;
+}
+
+/*** PAGE 109 ***/
+
+#content_109 {
+    padding-right: 15vw;
+    padding-left: 7vw;
+    margin-top: 9vw;
+}
+
+#content_109 #Q1_container{
+    padding-right: 2vw;
+}
+
+#content_109 #Q1_description{
+    float: right;
+}
+
+#content_109 #Q1_table{
+    clear:both;
+    float: left;
+    margin-top: 1vw;
+}
+
+#content_109 #Q1_money_box_image{
+    float: left;
+    width: 9vw;
+    margin-left: 5vw;
+}
+
+#content_109 #Q1_table_message{
+    float: left;
+    margin-top: 7vw;
+    margin-left: 10vw;
+}
+
+#content_109 #Q1_questions_content{
+    clear: both
+}
+
+#content_109 #Q1_desc{
+    float: right;
+}
+
+#content_109 #Q1_blank1_message{
+    margin-right: 1.5vw;
+}
+
+#content_109 #Q1_blank2_message{
+    margin-right: 1.5vw;
+}
+
+#content_109 #Q1_blank3_message{
+    margin-right: 1.5vw;
+}
+
+#content_109 #Q1_blank4_message{
+    margin-right: 1.5vw;
+}
+
+#content_109 #Q1_thinking_image{
+    float: left;
+    width: 9vw;
+}
+
+#content_109 #Q2_container{
+    clear: both;
+}
+
+#content_109 #Q2_table{
+    clear:both;
+    float: left;
+}
+
+#content_109 #Q2_table_message {
+    float: left;
+    margin-top: 7vw;
+    margin-left: 20vw;
+}
+
+#content_109 #Q2_questions_content{
+    clear:both;
+}
+
+#content_109 #Q3_container{
+    clear: both;
+}
+
+#content_109 #Q3_table{
+    width: fit-content;
 }
 /*.simple-table td{*/
 /*    padding: 0.7vw;*/
