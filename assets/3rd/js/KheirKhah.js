@@ -17,6 +17,48 @@ function p62ques1() {
   }
 
 
+  function p63ques1() {
+    check("p63ques1_1_a",4)
+    check("p63ques1_1_b",4)
+    check("p63ques1_1_c",16)
+    check("p63ques1_2_a",6)
+    check("p63ques1_2_b",5)
+    check("p63ques1_2_c",30)
+    }
+
+  function p63ques2() {
+    check("p63ques2_1_a",10)
+    check("p63ques2_1_b",5)
+    check("p63ques2_1_c",50)
+    check("p63ques2_2_a",5)
+    check("p63ques2_2_b",6)
+    check("p63ques2_2_c",30)
+    }
+
+    function p63ques3() {
+      check("p63ques3_1_a",8)
+      check("p63ques3_1_b",4)
+      check("p63ques3_1_c",32)
+      check("p63ques3_2_a",6)
+      check("p63ques3_2_b",5)
+      check("p63ques3_2_c",30)
+      }
+  
+
+  //   function p63ques2() {
+  //     check("p63ques1_1_a",4)
+  //     check("p63ques1_1_b",4)
+  //     check("p63ques1_1_c",16)
+  //     check("p63ques1_2_a",6)
+  //     check("p63ques1_2_b",5)
+  //     check("p63ques1_2_c",30)
+  //     }
+
+
+
+
+
+
  function check(id,c){
   x = document.getElementById(id).value;
   if (x == c) {
@@ -38,3 +80,5 @@ function p62ques1() {
 
 
  
+
+  
