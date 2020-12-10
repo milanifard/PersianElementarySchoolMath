@@ -9080,6 +9080,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .pagination-wrapper {
   text-align: center;
+  padding-bottom: 3em;
 }
 
 .pagination {
@@ -9132,7 +9133,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
   .page-numbers {
-    padding: 0 14px;
+    padding: 0 10px;
     display: none;
   }
   .page-numbers:nth-of-type(2) {
