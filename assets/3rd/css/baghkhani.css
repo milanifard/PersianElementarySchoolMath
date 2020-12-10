@@ -296,6 +296,15 @@ body {
     font-size: 1.75vw;
 }
 
+.topic-title-practice {
+    width: 12vw;
+    position: absolute;
+    padding: 0 2vw;
+    margin-right: 2.5vw;
+    text-align: left;
+    padding-right: 4vw;
+}
+
 .topic-title {
     float: right;
     width: 10vw;
@@ -366,4 +375,17 @@ body {
 
 .drawText {
     margin-top: 2vw;
+}
+
+.topic-image-pract {
+    width: 10%;
+    height: 11vw;
+    position: absolute;
+}
+
+.Tagharon6 {
+    width: 40vw;
+    height: 20vw;
+    margin-right: 20vw;
+    margin-top: -3vw;
 }
