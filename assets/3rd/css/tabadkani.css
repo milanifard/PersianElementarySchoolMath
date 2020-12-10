@@ -24,7 +24,7 @@ body{
     border-top-right-radius: 5vw;
     box-sizing: border-box;
     width: 93vw;
-    height: 90vw;
+    height: 120vw;
     background: white;
     margin: 3vw 5vw 0 0;
     padding:0vw 3vw;
@@ -39,12 +39,13 @@ body{
     background-color: var(--title_color);
     color: white;
     text-align: center;
-    font-size: 2vw;
+    font-size: 2.5vw;
     top: 1vw;
     left: 40vw;
     position: absolute;
     margin-right: 34%;
     border-radius: 2vw;
+    -webkit-text-stroke: 0.05vw black;
 }
 
 .little-title{
@@ -108,10 +109,51 @@ body{
 
 .tamrin-content{
     top: 50vw;
-    position: absolute;
-    width: 70vw;
+    position: relative;
+    /*width: 70vw;*/
     margin-right: 8vw;
+    margin-left: 10vw;
     float: right;
+}
+
+/*p{*/
+/*    position: relative;*/
+/*    float: right;*/
+/*    overflow-x: auto;*/
+/*}*/
+
+.q1{
+    width: 45vw;
+    display: block;
+}
+
+.q3{
+    display: block;
+}
+
+.q4{
+    top: 85vw;
+    right: 20vw;
+    position: absolute;
+}
+
+.q5{
+    top: 92vw;
+    right: 20vw;
+    position: absolute;
+}
+
+.q6{
+    top: 100vw;
+    right: 8vw;
+    position: absolute;
+}
+
+.q6-content{
+    font-family:"B Zar";
+    top: 104vw;
+    /*right: vw;*/
+    position: absolute;
 }
 
 .number{
@@ -121,9 +163,26 @@ body{
 .image-three{
     width: 85vw;
     height: 50vw;
-    top: 30vw;
+    top: 28vw;
     left: 5vw;
     position: absolute;
     margin-right: -3vw;
     float: left;
+}
+
+.image-four{
+    width: 85vw;
+    height: 50vw;
+    top: 10vw;
+    right: -20vw;
+    position: absolute;
+}
+
+.line{
+    border-top: 0.1vw solid var(--title_color);
+    margin-top: 2.5vw;
+}
+
+.tamrin{
+    position: relative;
 }
