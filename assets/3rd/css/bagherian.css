@@ -40,7 +40,7 @@ body .pageBg{
     z-index: -1;
 }
 
-body .content29{
+body .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,22 +227,63 @@ body .content .countAndSay .cube input{
 
 /* -----------------------   =>   page29   <=   --------------------------- */
 
-body .content .question1{
+body .content29 .question1{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items:flex-start ;
+    width: 100%;
 }
 
-body .content .question1 .questiontitle{
+body .content29 .question1 .questiontitle{
     display: flex;
+    flex-wrap: wrap-reverse;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
-body .content .question1 .answer p{
-    
+body .content29 .question1 .questiontitle img{
+    width: 40%;
 }
-body .content .question1 .answer p{
+
+body .content29 .question1 .answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10vh;
+}
+body .content29 .question1 .answer p{
     text-align: right;
+    padding: 2vh;
+}
+.answerTitle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+body .content29 .question1 .answer .answerTitle p span{
+    color: #f165bd;
+}
+body .content29 .question1 .answer input{
+    border: none;
+    border-bottom:1px solid #39c1f0;
+    width: 30px;
+}
+
+body .content29 .question2{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+body .content29 .question2 img{
+    width: 40%;
+}
+
+body .content29 .last{
+    display: flex;
+    margin-top: 10vh;
 }
