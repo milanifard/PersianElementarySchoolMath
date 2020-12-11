@@ -76,21 +76,20 @@
 
 /*Page layout*/
 #blockTray {
-  float: left;
-  height: 20em;
+  min-height: 16em;
   width: 100%;
-  padding: 0.4em;
-  padding-top: 1em;
+  padding: 0.3em;
+  padding-top: 4em;
   position: relative;
-  display: block;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: visible;
 }
 
 #canvas {
-  float: left;
-  height: 20em;
+  min-height: 18em;
   width: 100%;
   text-align: center;
-  vertical-align: top;
   background-color: #ecf0f1;
   margin: 3%;
   border-radius: 30px;

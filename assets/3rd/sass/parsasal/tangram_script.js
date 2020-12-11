@@ -17,10 +17,8 @@ $(document).ready(function () {
 
   $('.block').click(function () {
     if ($(this).attr('id') === "parallelogram") {
-      console.log("angle is :"+angle)
       let skew_percent =  ((angle/180)%2) ? -1 : +1 ;
-      // let skew_percent =  -1
-      console.log("skew is :"+skew_percent *45)
+      
       $(this).css({
 
         '-webkit-transform': 'rotate(' + angle + 'deg) skew('+skew_percent*45+'deg)',

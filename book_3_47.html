@@ -6,19 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/Jabbari.css">
     <title>ریاضی سوم دبستان صفحه‌‌ی ۴۷</title>
+
+<style>
+    .box{
+    margin: 10px;
+    float: left;
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    border: solid 1px red;
+}
+.myClickState {
+    border-color: lime;
+}
+</style>
 </head>
 
 <body>
-    <div class="border">
-            <img class="activity-image" src="assets/3rd/images/classwork.png" alt="activity_image">
-            <div class="activity-text">کار در کلاس</div>
-
+    <div class="border_rev">
+        <img class="activity-image rev" src="assets/3rd/images/classwork.png" alt="activity_image">
+        <div class="activity-text">کار در کلاس</div>
+        <span class="text question">مانند نمونه ها برای هر شکل یک کسر مناسب بنویسید.</span>
+        <div id="border" >
             
-        <div class ="number_of_page">
+            <div class= "container-box">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/Square1.png" alt="container_image">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/Square2.png" alt="container_image">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/Square3.png" alt="container_image">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/Square4.png" alt="container_image">
+            </div>
+            <div class="container-box">
+                <input type="text" id="q1_input1" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input1')">
+                <input type="text" id="q1_input2" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input2')">
+                <input type="text" id="q1_input3" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input3')">
+                <input type="text" id="q1_input4" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input4')">
+            </div>
+            <div class= "container-box">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/pinkTraingle1.png" alt="container_image">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/pinkTraingle2.png" alt="container_image">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/pinkTraingle3.png" alt="container_image">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/pinkTraingle4.png" alt="container_image">
+            </div>
+            <div class="container-box">
+                <input type="text" id="q1_input1" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input1')">
+                <input type="text" id="q1_input2" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input2')">
+                <input type="text" id="q1_input3" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input3')">
+                <input type="text" id="q1_input4" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input4')">
+            </div>
+            <div class= "container-box">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/blueTriangle1.png" alt="container_image">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/blueTriangle2.png" alt="container_image">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/blueTriangle3.png" alt="container_image">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/blueTriangle4.png" alt="container_image">
+            </div>
+            <div class="container-box">
+                <input type="text" id="q1_input1" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input1')">
+                <input type="text" id="q1_input2" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input2')">
+                <input type="text" id="q1_input3" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input3')">
+                <input type="text" id="q1_input4" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input4')">
+            </div>
+            <div class= "container-box">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/cube1.png" alt="container_image">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/cube2.png" alt="container_image">
+                <img class="img_width10" src="assets/3rd/images/Jabbari/cube3.png" alt="container_image">
+            </div>
+            <div class="container-box">
+                <input type="text" id="q1_input1" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input1')">
+                <input type="text" id="q1_input2" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input2')">
+                <input type="text" id="q1_input3" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input3')">
+            </div>
+
+            <!-- <div class= "container-box">
+                <img class="img_linearGraph" src="assets/3rd/images/Jabbari/LinearGraph1.png" alt="container_image">
+                <img class="img_linearGraph" src="assets/3rd/images/Jabbari/LinearGraph2.png" alt="container_image">
+            </div>
+            <div class="container-box">
+                <!-- <input type="text" id="q1_input1" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input1')"> -->
+                <!-- <input type="text" id="q1_input2" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input2')">
+            </div> -->
+            <table>
+                <tr >
+                    <td class="td_padding_top">
+                        <img class="img_linearGraph" src="assets/3rd/images/Jabbari/LinearGraph1.png" alt="container_image">
+                    </td>
+                    <td class ="td_answer td_padding_right">
+                        <img class="img_linearGraph" src="assets/3rd/images/Jabbari/LinearGraph2.png" alt="container_image">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_input">
+                        <input type="text" id="q2_input2" value="" class="input_style container-input" onchange="checkvalue(0,'check_part1')">
+                    </td>
+                </tr>
+                <tr >
+                    <td class="td_padding_top">
+                        <img class="img_linearGraph" src="assets/3rd/images/Jabbari/LinearGraph3.png" alt="container_image">
+                    </td>
+                    <td class ="td_padding_top td_padding_right">
+                        <img class="img_linearGraph" src="assets/3rd/images/Jabbari/LinearGraph4.png" alt="container_image">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_input">
+                        <input type="text" id="q1_input1" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input1')">
+                    </td>
+                    <td class="td_input2">
+                        <input type="text" id="q1_input1" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input1')">
+                    </td>
+                </tr>
+                
+            </table>
+        </div>   
+        <!-- <div class ="number_of_page">
             ۴۷
-        </div>
+        </div> -->
+
         
     </div>
+
+
+<!-- <script>
+  $('.box').on('click', function(e){
+  e.preventDefault();
+  $(this).css('border-color', 'lime');
+});
+</script> -->
 
 </body>
 

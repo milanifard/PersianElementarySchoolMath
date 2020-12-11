@@ -9080,6 +9080,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .pagination-wrapper {
   text-align: center;
+  padding-bottom: 3em;
 }
 
 .pagination {
@@ -9132,7 +9133,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
   .page-numbers {
-    padding: 0 14px;
+    padding: 0 10px;
     display: none;
   }
   .page-numbers:nth-of-type(2) {
@@ -9314,8 +9315,12 @@ ol {
   font-size: 1.06rem;
 }
 
-.masale p.no-numbering:before {
+.masale p:before {
   display: none;
+}
+
+.masale p.before-numbering:before {
+  display: block;
 }
 
 .masale p:before {
@@ -9352,10 +9357,25 @@ section .section-header {
 }
 
 section .section-header .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #F13F52;
-  padding: 0.5em;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
+}
+
+section .section-header .title-container .indent-square {
+  background-color: #DC302F;
+  color: #DC302F;
+  display: table-cell;
+  width: 1.2em;
+}
+
+section .section-header .title-container h5 {
+  float: right;
+  margin: 0.3em 1em;
+  color: white;
 }
 
 section .section-header .title-container .section-header-image {
@@ -9374,26 +9394,10 @@ section .section-header .title-container .section-header-image {
   }
 }
 
-section .section-header .indent-square {
-  background-color: #DC302F;
-  color: #DC302F;
-  display: block;
-  position: relative;
-  height: 100%;
-  width: 0.8em;
-  clear: both;
-}
-
 section .section-header button {
   float: left;
   margin-left: 1em;
   margin-right: auto;
-}
-
-section .section-header h5 {
-  float: right;
-  margin: 0 1em;
-  color: white;
 }
 
 hr {
@@ -9461,7 +9465,7 @@ hr {
 }
 
 .farhange-khandan-container {
-  padding: 5vh 5vw;
+  padding: 2vh 5vw 5vh 5vw;
 }
 
 .farhange-khandan-container .title-container {
@@ -9535,4 +9539,55 @@ h1, h2, h3, h4, h5, h6 {
 
 html {
   font-size: 20px;
+}
+
+/*above code for demo purpose only*/
+.alert {
+  padding: 10px 35px 10px 14px;
+  background-color: #eee;
+  border-radius: 4px;
+  position: relative;
+  margin: 10px 0;
+}
+
+.alert .close {
+  border: 0;
+  background: none;
+  color: inherit;
+  color: #000;
+  font-size: 44px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.alert .close:active, .alert .close:focus {
+  outline: 0;
+}
+
+.alert p {
+  margin: 0;
+}
+
+.alert--success {
+  background: #ddf0d7;
+  border-color: #a4cd98;
+  color: #1c652c;
+}
+
+.alert--warning {
+  background: #ffefc6;
+  border-color: #e5c073;
+  color: #795d27;
+}
+
+.alert--info {
+  background: #d4edf7;
+}
+
+.alert--error {
+  background: #f6ddde;
+  border-color: #d4aaac;
+  color: #972a3d;
 }
