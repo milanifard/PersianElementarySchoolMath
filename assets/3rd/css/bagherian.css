@@ -442,3 +442,68 @@ body .content29 .pageNumber {
 /* ------------------------------------------------------------------------ */
 /* -----------------------        page 30       --------------------------- */
 /*------------------------------------------------------------------------- */
+
+body .content30{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    padding-right: 5vh ;
+    width: 80%;
+    height: 80%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+    border : 1.5vh  double #5cb6cd;
+    border-left: none;
+    border-radius: 0px 30px 30px 0px;
+    background-color: #ffffff;
+}
+
+body .content30 .practice1-3-part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body .content30 .practice1-3-part1 .shape img{
+    width: 12vw;
+    height: 12vw;
+}
+
+body .content30 .practice1-3-part1 .logo  img{
+    width: 15vw;
+    height: 15vw;
+}
+
+body .content30 .practice1-3-part1 .text .question{
+    display: flex;
+    justify-content: space-between;
+}
+body .content30 .practice1-3-part1 .text input{
+    width: 10vw;
+    height: 3vh;
+    border: none;
+    border-bottom: 1px solid #39c1f0;
+    margin: 0vh 2vh 2vh 2vh;
+    padding: 2vh ;
+    text-align: center;
+    z-index: 1;
+}
+
+body .content30 .practice1-3-part1 .text p{
+    margin: 1vh;
+}
+
+@media screen and (max-width: 820px) {
+    body .content30 .practice1-3-part1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body .content30 .practice1-3-part1 .text .question{
+        flex-direction: column;
+    }
+
+}
