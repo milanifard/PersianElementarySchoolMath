@@ -74,6 +74,12 @@ p {
     justify-content: center;
     align-items: center;
 }
+.flex-center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .nb-bt {
     width: 70px;
@@ -266,12 +272,34 @@ p {
     float: left;
     width: 50%;
 }
+.float33 {
+    float: left;
+    width: 32%;
+}
+.float25 {
+    float: left;
+    width: 24%;
+}
 .float100 {
     float: left;
     width: 100%;
 }
+@media only screen and (max-width: 1000px) {
+    .float25 {
+        width: 50%;
+    }
+    .float33 {
+        width: 50%;
+    }
+}
 @media only screen and (max-width: 600px) {
     .float50 {
+        width: 100%;
+    }
+    .float33 {
+        width: 100%;
+    }
+    .float25 {
         width: 100%;
     }
 }
@@ -358,4 +386,7 @@ p {
     .bottom-box.pg83 {
         margin-top: 140px;
     }
+}
+.owl-wrapper img {
+    width: 250px;
 }
