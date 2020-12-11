@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: Zar;
-    src: url("/assets/fonts/Zar.woff") format("woff");
+    src: url("../../fonts/Zar.woff") format("woff");
 
 }
 
@@ -35,7 +35,7 @@ body{
 
 .border{
     width: 90%;
-    padding: 70% 0;
+    /* padding: 70% 0; */
     background: white;
     border: 0.8vw double var(--purple-dark) ;
     border-radius: 0 4vw 4vw 0 ;
@@ -45,6 +45,19 @@ body{
     margin-bottom: 22vw;
     border-left: none;
 } 
+.border_rev{
+    width: 90%;
+    padding: 70% 0;
+    background: white;
+    border: 0.8vw double var(--purple-dark) ;
+    border-radius: 4vw 0 0 4vw;
+    position: relative;
+    margin-left:9.2vw; 
+    margin-top: 12vw;
+    margin-bottom: 22vw;
+    border-right: none;
+    
+}
 
 .Rectangle_title{
     height: 1vw;
@@ -98,10 +111,10 @@ body{
     background-color: var(--purple-light);
     border-radius: 1vw;
 
-    padding: 1vw 10vw 1vw 3vw;
+    padding: 1vw 10vw 1vw 2vw;
     position: absolute;
     right: 2vw;
-    top: 1vw;
+    top: 2vw;
     z-index: 1;
 
     text-align: center;
@@ -113,84 +126,40 @@ body{
 .activity-image{
     width: 12vw; 
     position: absolute;
-    right: -2vw;
-    top: 0.2vw;
+    right: -0.9vw;
+    top: 0.4vw;
     z-index: 2;
 
 }
-
-.question1{
-    /* border : 1px solid red; */
-    position: absolute;
-    top : 9vw;
-    left:3vw;
-    right: 12vw;
-
- 
-    font-family: ZAR, "Times New Roman";
-    font-size: 2vw;
-    direction: rtl;
-
+.rev{
+    right: 0vw; 
 }
 
-.question2{
-    /* border : 1px solid red; */
-    position: absolute;
-    /* top : 100vw; */
-    left:3vw;
-    right: 5vw;
-    bottom: 5vw;
-
- 
+.question{
+    line-height: 1.8;
     font-family: ZAR,koodak,Faraz;
     font-size: 2vw;
     direction: rtl;
-
-}
-.question3{
-    /* border : 1px solid red; */
-    position: absolute;
-    left:3vw;
-    right: 5vw;
-    bottom: 43vw;
-
-    font-family: ZAR,koodak,Faraz;
-    font-size: 2vw;
-    direction: rtl;
-    
+    font-weight: 1px;
 }
 
-.question4{
-    /* border : 1px solid red; */
-    position: absolute;
-    left:3vw;
-    right: 5vw;
-    bottom: 25vw;
-
-    font-family: ZAR,koodak,Faraz;
-    font-size: 2vw;
-    direction: rtl;
+#q1{
+    margin: 10vw 12vw 1vw 5vw ;
 }
 
-.question5{
-    /* border : 1px solid red; */
-    position: absolute;
-    left:3vw;
-    right: 5vw;
-    bottom: 5vw;
-
-    font-family: ZAR,koodak,Faraz;
-    font-size: 2vw;
-    direction: rtl;
+#q2{
+    margin: 1vw 5vw 3vw 5vw;
 }
+
 
 .text{
-    line-height: 1.8;
-    font-family: ZAR, koodak, Faraz;
-    font-size: 2vw;
-    font-weight: 1px;
-
+    /* border : 1px solid red; */
+    position: absolute;
+    left:3vw;
+    right: 15vw;
+    top: 10vw;
 }
+
 .img_q1{
     width: 65vw;
     padding: 5vw;
@@ -202,6 +171,13 @@ body{
     width: 25vw;
     padding: 5vw;
     padding-right: 50vw;
+}
+.img_linearGraph{
+    width:20vw;
+}
+
+.test{
+    margin-top: 15vw;
 }
 
 .input_style{
@@ -216,6 +192,21 @@ body{
     height: 3vw;
 
 }
+
+#border{
+    border: 1px solid var(--purple);
+    border-radius: 5vw;
+    position: absolute;
+    left:5vw;
+    right: 5vw;
+    bottom: 5vw;
+    top : 20vw;
+    padding: 5vw;
+
+    font-family: ZAR,koodak,Faraz;
+    font-size: 2vw;
+    direction: rtl;
+}
 .container-box{
     display: flex;
 	flex-direction:row;
@@ -224,12 +215,10 @@ body{
 	align-items: baseline;
     align-content: space-between;
     margin:2vw 9vw 0vw 9vw;
-    /* margin-top: 3vw; */
 }
 .container-image{
     width: 7vw; 
     height: 10vw;
-    
 }
 
 .container-input{
@@ -241,14 +230,32 @@ body{
 .table_circle{
     margin: 1vw 5vw 0vw 0vw;
 }
+
 td{
 padding-left: 1vw;
 padding-right: 1vw;
 }
+.td_padding_top{
+    padding-top: 3vw;
+    padding-right: 3vw;
+}
+.td_answer{
+    padding-top: 5.2vw;
+}
+.td_padding_right{
+    padding-right: 17vw;
+}
+.td_input{
+    padding-right: 10vw;
+}
+.td_input2{
+    padding-right: 25vw;
+}
+
 #Separator_col{
     padding-right: 10vw;
 }
-.img_circle{
+.img_width10{
     width:10vw;
 }
 .shape{
@@ -257,13 +264,6 @@ padding-right: 1vw;
 
 .img_ant{
     width: 20vw;
-    position: relative;
-    right: 60vw;
-}
-.text_ant{
-    position: absolute;
-    right: 2vw; 
-    top: 1vw;
 }
 
 .textarea {
