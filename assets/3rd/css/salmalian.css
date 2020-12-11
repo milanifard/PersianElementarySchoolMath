@@ -127,7 +127,7 @@ p {
     border: 2px solid #f13f52
 }
 .bottom-box.right {
-    margin: 30px auto 30px 20px;
+    margin: 30px auto 50px 20px;
 }
 
 .tip-abs {
@@ -227,12 +227,11 @@ p {
 }
 
 .questions {
-    margin: 5vw 3vw 40px 3vw;
+    margin: 50px 3vw 40px 3vw;
     min-height: 300px;
 }
 
 .question {
-    min-height: 100px;
     width: 100%;
     margin: 10px 0 40px 0;
 }
@@ -278,8 +277,14 @@ p {
 }
 
 .qs-part img {
-    width: 100%;
+    width: 70%;
     height: auto;
+}
+@media only screen and (max-width: 850px) {
+    .qs-part img {
+        width: 100%;
+        height: auto;
+    }    
 }
 .full-inp {
     width: 98%;
@@ -291,6 +296,9 @@ p {
 }
 .small-inp {
     width: 100px;
+}
+.meduim1-inp {
+    width: 200px;
 }
 .full-inp:focus {
     outline: none;
@@ -319,4 +327,20 @@ p {
 .qbox82img img {
     width: 200px;
     height: auto;
+}
+.qs-part .pg83q2 {
+    margin-top: 100px;
+}
+@media only screen and (max-width: 600px) {
+    .qs-part .pg83q2 {
+        margin-top: 20px;
+    }
+}
+.p83boxp1-image {
+    width: 60% !important;
+}
+@media only screen and (max-width: 850px) {
+    .p83boxp1-image {
+        width: 80% !important;
+    }
 }
