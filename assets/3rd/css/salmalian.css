@@ -344,3 +344,18 @@ p {
         width: 80% !important;
     }
 }
+
+.worm-wrapper {
+    position: absolute;
+    left: 50%;
+    margin-top: -125px;
+}
+.worm-wrapper img {
+    width: 150px;
+    height: auto;
+}
+@media only screen and (max-width: 1000px) {
+    .bottom-box.pg83 {
+        margin-top: 140px;
+    }
+}
