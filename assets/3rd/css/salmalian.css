@@ -54,6 +54,11 @@ html, body {
     border-radius: 0 40px 40px 0;
     position: relative;
 }
+@media only screen and (max-width: 600px) {
+    .content-wrapper {
+        width: 98%;
+    }
+}
 
 .content-wrapper.right {
     margin: 70px 0 100px auto;
@@ -99,7 +104,16 @@ html, body {
     left: 0;
     margin: 0 0 0 -40px;
 }
-
+@media only screen and (max-width: 600px) {
+    .page-num {
+        position: relative;
+        margin: 0 auto -20px auto;
+    }
+    .page-num.right {
+        position: relative;
+        margin: 0 auto -20px auto;
+    }
+}
 .bottom-box {
     position: relative;
     width: 93%;
@@ -153,6 +167,17 @@ html, body {
 }
 .page-hw.pg83 {
     right: 60px;
+}
+@media only screen and (max-width: 600px) {
+    .page-hw {
+        /* left: 50%;         */
+        position: relative;
+        width: 65px;
+        margin: 0 20px 0 auto;
+    }
+    .page-hw.pg84 {
+        width: 80px;
+    }
 }
 .hw-title {
     width: 130px;
