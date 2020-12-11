@@ -5022,7 +5022,7 @@ section .section-header > .container-fluid {
   border-radius: 0;
 }
 
-.alert {
+.alert, .answer-message, .info-message {
   position: relative;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
@@ -6646,7 +6646,7 @@ button.bg-dark:focus {
           flex-direction: column-reverse !important;
 }
 
-.flex-wrap {
+.flex-wrap, .answer-message, .info-message {
   -ms-flex-wrap: wrap !important;
       flex-wrap: wrap !important;
 }
@@ -6730,7 +6730,7 @@ button.bg-dark:focus {
       align-content: flex-end !important;
 }
 
-.align-content-center {
+.align-content-center, .answer-message, .info-message {
   -ms-flex-line-pack: center !important;
       align-content: center !important;
 }
@@ -9158,39 +9158,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.go-top {
-  display: block;
-  width: 40px;
-  height: 40px;
-  line-height: 35px;
-  text-align: center;
-  font-size: 30px;
-  position: fixed;
-  z-index: 1;
-  bottom: -40px;
-  right: 20px;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  background-color: #214252;
-  color: #FFFFFF;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.go-top.show {
-  bottom: 20px;
-}
-
-.go-top:hover {
-  background-color: #ce6262;
-  color: #FFFFFF;
-  opacity: 0.7;
-}
-
-.go-top .glyphicon {
-  top: 5px;
-}
-
 a {
   text-decoration: none;
 }
@@ -9548,8 +9515,7 @@ html {
   }
 }
 
-/*above code for demo purpose only*/
-.alert {
+.alert, .answer-message, .info-message {
   padding: 10px 35px 10px 14px;
   background-color: #eee;
   border-radius: 4px;
@@ -9557,7 +9523,7 @@ html {
   margin: 10px 0;
 }
 
-.alert .close {
+.alert .close, .answer-message .close, .info-message .close {
   border: 0;
   background: none;
   color: inherit;
@@ -9569,11 +9535,14 @@ html {
   height: 20px;
 }
 
-.alert .close:active, .alert .close:focus {
+.alert .close:active, .answer-message .close:active, .info-message .close:active,
+.alert .close:focus,
+.answer-message .close:focus,
+.info-message .close:focus {
   outline: 0;
 }
 
-.alert p {
+.alert p, .answer-message p, .info-message p {
   margin: 0;
 }
 
@@ -9589,7 +9558,7 @@ html {
   color: #795d27;
 }
 
-.alert--info {
+.alert--info, .info-message {
   background: #d4edf7;
 }
 
@@ -9597,4 +9566,8 @@ html {
   background: #f6ddde;
   border-color: #d4aaac;
   color: #972a3d;
+}
+
+.answer-message, .info-message {
+  display: none;
 }
