@@ -13,14 +13,24 @@ html, body {
     padding: 0;
     overflow-x: hidden;
     font-family: font;
-    font-size: 20px;
+    font-size: 24px;
+}
+.bold {
+    font-size: 25px;
+    font-family: font-bold;
+}
+@media only screen and (max-width: 1000px) {
+    html, body {
+        font-size: 20px;
+    }
+    .bold {
+        font-family: font-bold;
+        font-size: 21px;
+    }
+
 }
 p {
     margin: 8px 0 8px 0;
-}
-.bold {
-    font-family: font-bold;
-    font-size: 21px;
 }
 
 .full-bg {
@@ -73,6 +83,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.flex-center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .nb-bt {
@@ -127,13 +143,13 @@ p {
     border: 2px solid #f13f52
 }
 .bottom-box.right {
-    margin: 30px auto 30px 20px;
+    margin: 30px auto 50px 20px;
 }
 
 .tip-abs {
     position: absolute;
     min-width: 100px;
-    width: 125px;
+    width: 150px;
     height: 40px;
     right: 0;
     border-radius: 15px 0 0 15px;
@@ -181,13 +197,13 @@ p {
     }
 }
 .hw-title {
-    width: 130px;
+    width: 160px;
     justify-content: right;
     padding-left: 5px;
     z-index: 1;
 }
 .hw-title.pg83 {
-    width: 180px;
+    width: 200px;
 }
 .title-img {
     position: relative;
@@ -205,34 +221,33 @@ p {
 
 .header-title {
     position: absolute;
-    width: 200px;
+    width: 240px;
     height: 40px;
     background: #f13f52;
     color: black;
     border-radius: 20px;
     top: 0;
-    left: calc(50% - 100px);
+    left: calc(50% - 120px);
     margin-top: -25px;
     z-index: 10;
 }
 .header-bg {
     position: absolute;
-    width: 220px;
+    width: 260px;
     height: 15px;
     background: #b3de45;
     top: 0;
-    left: calc(50% - 110px);
+    left: calc(50% - 130px);
     z-index: 1;
     margin-top: -10px;
 }
 
 .questions {
-    margin: 5vw 3vw 40px 3vw;
+    margin: 50px 3vw 40px 3vw;
     min-height: 300px;
 }
 
 .question {
-    min-height: 100px;
     width: 100%;
     margin: 10px 0 40px 0;
 }
@@ -267,19 +282,47 @@ p {
     float: left;
     width: 50%;
 }
+.float33 {
+    float: left;
+    width: 32%;
+}
+.float25 {
+    float: left;
+    width: 24%;
+}
 .float100 {
     float: left;
     width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+    .float25 {
+        width: 50%;
+    }
+    .float33 {
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 600px) {
     .float50 {
         width: 100%;
     }
+    .float33 {
+        width: 100%;
+    }
+    .float25 {
+        width: 100%;
+    }
 }
 
 .qs-part img {
-    width: 100%;
+    width: 70%;
     height: auto;
+}
+@media only screen and (max-width: 850px) {
+    .qs-part img {
+        width: 100%;
+        height: auto;
+    }    
 }
 .full-inp {
     width: 98%;
@@ -291,6 +334,9 @@ p {
 }
 .small-inp {
     width: 100px;
+}
+.meduim1-inp {
+    width: 200px;
 }
 .full-inp:focus {
     outline: none;
@@ -319,4 +365,38 @@ p {
 .qbox82img img {
     width: 200px;
     height: auto;
+}
+.qs-part .pg83q2 {
+    margin-top: 100px;
+}
+@media only screen and (max-width: 600px) {
+    .qs-part .pg83q2 {
+        margin-top: 20px;
+    }
+}
+.p83boxp1-image {
+    width: 60% !important;
+}
+@media only screen and (max-width: 850px) {
+    .p83boxp1-image {
+        width: 80% !important;
+    }
+}
+
+.worm-wrapper {
+    position: absolute;
+    left: 50%;
+    margin-top: -125px;
+}
+.worm-wrapper img {
+    width: 150px;
+    height: auto;
+}
+@media only screen and (max-width: 1000px) {
+    .bottom-box.pg83 {
+        margin-top: 140px;
+    }
+}
+.owl-wrapper img {
+    width: 250px;
 }
