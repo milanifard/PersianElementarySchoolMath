@@ -6,6 +6,7 @@
     <title>صفحه ۹۴ - سوم ابتدایی</title>
 
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/3rd/sass/parsasal/parsasal.js"></script>
     <meta name="author" content="Parsa Salehipour">
@@ -15,6 +16,7 @@
 <body>
 
     <div class="container-full">
+
         <div id="myAnchor" style="display: block;"></div>
         <a href="#myAnchor" class="go-top"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
         <nav id="main-header">
@@ -27,36 +29,65 @@
             <section>
                 <header class="section-header">
 
-                    <h5>فرهنگ نوشتن</h5>
-                    <button type="button" class="btn btn-primary">بررسی پاسخ</button>
+                    <div class="title-container">
+                        <div class="indent-square"></div>
+                        <h5>فرهنگ نوشتن</h5>
+                    </div>
+
+                    <button type="button" class="btn btn-info">بررسی پاسخ</button>
 
                 </header>
                 <div class="masale">
                     <div class="row">
-                        <p>از شما خواسته شده است که اندازه ی خط رو به رو را به کمک یک تکه نخ پیدا کنید.<br>
-                            روش کار خود را توضیح دهید.
-                        </p>
+                        <div class="col-md-6">
+                            <p class="before-numbering">از شما خواسته شده است که اندازه ی خط رو به رو را به کمک یک تکه نخ پیدا کنید.<br>
+                                روش کار خود را توضیح دهید.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row  justify-content-end">
+                                <div class="col-6">
+                                    <img class="responsive-img" src="./assets/3rd/images/parsasal/q1-case.png"
+                                        alt="measure string length art">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <textarea placeholder="پاسخ" class="explain-textarea" name="farhange_neveshtan_input"
+                            id="farhange_neveshtan_input"></textarea>
                     </div>
 
-                    <textarea placeholder="پاسخ" class="explain-textarea" name="farhange_neveshtan_input"
-                        id="farhange_neveshtan_input"></textarea>
+
+
                 </div>
 
 
             </section>
             <section>
                 <header class="section-header">
-                    <h5>تمرین</h5>
-                    <button type="button" class="btn btn-primary ">بررسی پاسخ</button>
+                    <div class="title-container">
+
+                        <h5>تمرین</h5>
+
+                        <img class="responsive-img section-header-image "
+                            src="./assets/3rd/images/girl_and_teacher_activity.png" alt="girl and a teacher">
+                    </div>
+
+                    <button type="button" class="btn btn-info">بررسی پاسخ</button>
                 </header>
 
-                <div class="masale">
+                <div class="masale padded-for-image">
                     <div class="row">
-                        <p>محیط مثلث ها را پیدا کنید. چه نتیجه ای می گیرید؟ </p>
+                        <p class="before-numbering padded-for-image">محیط مثلث ها را پیدا کنید. چه نتیجه ای می گیرید؟ </p>
                     </div>
 
                     <div style="clear: both;"></div>
-                    <div class="row-centered">
+                    <div class="row-centered dotted-border">
                         <div class="full-size-fit">
                             <div class="row-centered">
 
@@ -115,12 +146,22 @@
                     </div>
 
 
-
+                    <div class="alert alert--info align-content-center flex-wrap d-flex">
+                        
+                        <i class="fa fa-info-circle d-flex align-self-center pr-1" style="font-size: 26px;"></i>
+                        <p class="d-flex align-self-center"> نتیجه میگیریم که مساحت هر مثلث با اندازه های مشخص در اثر جا به جایی تغییر نمی‌کنه</p>
+                        <button type="button" class=" d-flex mr-auto close">&times;</button>
+                    </div>
                 </div>
                 <hr>
                 <div class="masale">
                     <div class="row">
-                        <p>مساحت و محیط مستطیل ها را به دست آورید. </p>
+                        <p class="before-numbering">مساحت و محیط مستطیل ها را به دست آورید. </p>
+                    </div>
+                    <div class="row">
+                        <p >همان طور که میبینید، مساحت ها برابرند. محیط کدام شکل از همه کمتر است؟
+                            برروی آن کلیک کنید.
+                        </p>
                     </div>
 
                     <div class="row-centered">
@@ -195,21 +236,20 @@
 
                         </div>
                     </div>
-                    <div class="row">
-                        <p>همان طور که میبینید، مساحت ها برابرند. محیط کدام شکل از همه کمتر است؟ برروی آن کلیک کنید.
-                        </p>
-                    </div>
+
 
                 </div>
             </section>
+
+            <div class="page-footer"></div>
         </div>
         <div class="pagination-wrapper">
             <div class="pagination">
                 <a class="prev page-numbers">قبلی</a>
-                <span aria-current="page" class="page-numbers current">1</span>
-                <a class="page-numbers">2</a>
+                <span aria-current="page" class="page-numbers">1</span>
                 <a class="page-numbers">3</a>
                 <a class="page-numbers">4</a>
+                <span aria-current="page" class="page-numbers current">1</span>
                 <a class="page-numbers">5</a>
                 <a class="page-numbers">6</a>
                 <a class="page-numbers">7</a>
@@ -218,7 +258,11 @@
                 <a class="page-numbers">10</a>
                 <a class="next page-numbers">بعدی</a>
             </div>
+
         </div>
+
+
+
     </div>
 
 </body>

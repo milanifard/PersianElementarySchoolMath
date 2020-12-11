@@ -50,11 +50,27 @@ $(document).ready(function () {
     let childs = $('.pagination').children(); //returns a HTMLCollection
 
     for (let i = 1; i < childs.length - 1; i++) { // iterate over it
+        if ("ontouchstart" in document.documentElement) {
+            childs[i].innerHTML = current_page + i - 1;
+            console.log("your device is a touch screen device.");
+            childs[1].classList.add("current");
+            childs[4].classList.remove("current");
+        } else {
+            childs[i].innerHTML = current_page + i - 4;
+            console.log("your device is NOT a touch device");
+        }
 
-        childs[i].innerHTML = current_page + i - 1;
         childs[i].onclick = function () { // attach event listener individually
             window.location.href = `./book_3_${childs[i].innerHTML}.html`;
         }
     }
 
 });
+
+window.onkeypress = function (e) {
+    e = e || window.event;
+    if (e.keyCode === 13) {
+        console.log("enter hitted")
+        document.documentElement.classList.toggle('dark-mode')
+    }
+}

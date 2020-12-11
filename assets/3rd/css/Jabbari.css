@@ -124,14 +124,64 @@ body{
     position: absolute;
     top : 9vw;
     left:3vw;
-    right: 10vw;
+    right: 12vw;
 
  
-    /* font-family: ZAR, "Times New Roman"; */
+    font-family: ZAR, "Times New Roman";
     font-size: 2vw;
     direction: rtl;
 
+}
 
+.question2{
+    /* border : 1px solid red; */
+    position: absolute;
+    /* top : 100vw; */
+    left:3vw;
+    right: 5vw;
+    bottom: 5vw;
+
+ 
+    font-family: ZAR,koodak,Faraz;
+    font-size: 2vw;
+    direction: rtl;
+
+}
+.question3{
+    /* border : 1px solid red; */
+    position: absolute;
+    left:3vw;
+    right: 5vw;
+    bottom: 43vw;
+
+    font-family: ZAR,koodak,Faraz;
+    font-size: 2vw;
+    direction: rtl;
+    
+}
+
+.question4{
+    /* border : 1px solid red; */
+    position: absolute;
+    left:3vw;
+    right: 5vw;
+    bottom: 25vw;
+
+    font-family: ZAR,koodak,Faraz;
+    font-size: 2vw;
+    direction: rtl;
+}
+
+.question5{
+    /* border : 1px solid red; */
+    position: absolute;
+    left:3vw;
+    right: 5vw;
+    bottom: 5vw;
+
+    font-family: ZAR,koodak,Faraz;
+    font-size: 2vw;
+    direction: rtl;
 }
 
 .text{
@@ -148,21 +198,6 @@ body{
     /* border-radius: 2px; */
 }
 
-.question2{
-    /* border : 1px solid red; */
-    position: absolute;
-    /* top : 100vw; */
-    left:3vw;
-    right: 5vw;
-    bottom: 5vw;
-
- 
-    font-family: ZAR,koodak,Faraz;
-    font-size: 2vw;
-    direction: rtl;
-
-
-}
 .img_paperClipRuler{
     width: 25vw;
     padding: 5vw;
@@ -171,12 +206,74 @@ body{
 
 .input_style{
     text-align: center;
-    font-size: 1.5vw;
+    font-size:2vw;
     font-family: ZAR,Faraz;
 
     border : none;
     border-bottom: 1px solid var(--purple);
     border-radius: 0.5vw;
     width: 8vw;
-    height: 2vw;
+    height: 3vw;
+
+}
+.container-box{
+    display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+    align-content: space-between;
+    margin:2vw 9vw 0vw 9vw;
+    /* margin-top: 3vw; */
+}
+.container-image{
+    width: 7vw; 
+    height: 10vw;
+    
+}
+
+.container-input{
+    width:7vw;
+}
+.CircleBlue_red{
+    bottom : 70vw;
+}
+.table_circle{
+    margin: 1vw 5vw 0vw 0vw;
+}
+td{
+padding-left: 1vw;
+padding-right: 1vw;
+}
+#Separator_col{
+    padding-right: 10vw;
+}
+.img_circle{
+    width:10vw;
+}
+.shape{
+    width:25vw; 
+}
+
+.img_ant{
+    width: 20vw;
+    position: relative;
+    right: 60vw;
+}
+.text_ant{
+    position: absolute;
+    right: 2vw; 
+    top: 1vw;
+}
+
+.textarea {
+    font-size:2vw;
+    font-family: ZAR,Faraz;
+
+    border : none;
+    border: 1px solid var(--purple);
+    border-radius: 0.5vw;
+    margin: 2vw 8vw 0 2vw;
+    margin-left: 10vw;
+
 }
