@@ -9538,7 +9538,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-  font-size: 20px;
+  font-size: 23px;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    /* For mobile phones: */
+    font-size: 20px;
+  }
 }
 
 /*above code for demo purpose only*/
