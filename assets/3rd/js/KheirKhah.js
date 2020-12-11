@@ -16,7 +16,6 @@ function p62ques1() {
     check("p62ques3_3_a",x3)
   }
 
-
   function p63ques1() {
     check("p63ques1_1_a",4)
     check("p63ques1_1_b",4)
@@ -63,8 +62,6 @@ function p62ques1() {
   function notCorrect(id){
     document.getElementById(id).style.background = "#e45f5f";
   }
-
-
  
 
   
