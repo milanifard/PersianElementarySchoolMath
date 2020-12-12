@@ -46,7 +46,8 @@ body{
     text-decoration: none;
     font-size: 4vh;
     color: #201a74;
-    padding:2vh ;
+    padding: 1vh ;
+    margin-bottom: 1vh;
     transition: all 0.3s;
 }
 .link a:hover{
@@ -293,6 +294,8 @@ body .content .countAndSay .title .second{
      display: flex;
      justify-content:center;
 }
+
+
 
 @media screen and (max-width: 800px) {
     body .content .countAndSay .cube  {
@@ -611,6 +614,7 @@ body .content30 .question4{
     width: 100%;
 }
 
+
 body .content30 .question4 .cubes{
     display: flex;
 }
@@ -621,6 +625,21 @@ body .content30 .question4 .cubes .cube{
     justify-content: space-between;
     align-items: center;
 }
+
+body .content30 .question4 .cubes .cube .correctAnswer{
+    background-color: #37ee56;
+    border-radius: 5px;
+    padding: 1px 3px;
+    display: none;
+  }
+  
+  body .content30 .question4 .cubes .cube .wrongAnswer{
+     background-color: #ce2f24;
+     color: #ffffff;
+     border-radius: 5px;
+     padding: 1px 3px;
+     display: none;
+  }
 
 body .content30 .question4 .cubes .cube img{
     width: 60%;
