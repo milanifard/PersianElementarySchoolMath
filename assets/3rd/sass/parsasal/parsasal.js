@@ -117,10 +117,16 @@ function checkTamrinP94() {
     $("#tamrin").find(".info-message").css("display", "flex")
         .hide()
         .fadeIn();
+    $("#tamrin").find(".warn-message").css("display", "flex")
+        .hide()
+        .fadeIn();
 }
 
 function checkFargangeNeveshtanP94() {
     $("#farhange-neveshtan").find(".info-message").css("display", "flex")
+        .hide()
+        .fadeIn();
+    $("#farhange-neveshtan").find(".warn-message").css("display", "flex")
         .hide()
         .fadeIn();
 
@@ -131,3 +137,24 @@ function checkFargangeNeveshtanP94() {
     });
 
 })(jQuery);
+
+
+function getWrongAnswerMessageBox() {
+    let container = document.createElement("div");
+    let icon = document.createElement("i");
+    let text = document.createElement("p");
+    let closeButton = document.createElement("button");
+
+
+    let ptext = document.createTextNode("بعضی پاسخ هات درست نبود، دوباره تلاش کن");
+    let btext = document.createTextNode("&times;");
+
+    
+    text.appendChild(ptext)
+    closeButton.appendChild(btext)
+
+    container.appendChild(icon)
+    container.appendChild(text)
+    container.appendChild(closeButton)
+    
+}
