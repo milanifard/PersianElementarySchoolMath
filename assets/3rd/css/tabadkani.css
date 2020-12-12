@@ -173,10 +173,10 @@ body{
 }
 
 .image-four{
-    width: 70vw;
-    height: 60vw;
-    top: 5vw;
-    right: -15vw;
+    width: 14vw;
+    height: 12vw;
+    top: 35vw;
+    right:-2vw ;
     position: absolute;
 }
 
@@ -241,6 +241,123 @@ body{
     height: 28vw;
 }
 
+.q8{
+    border-style: solid;
+    border-color: var(--title_color);
+    border-radius: 5vw;
+    border-width: 0.3vw;
+    box-shadow: 1vw 1vw var(--title_color);
+    height: 57vw;
+    width: 70vw;
+    margin-right: 5vw;
+    padding: 2vw;
+}
+
+.circle, .triangle, .parallelogram, .diamond, .square, .rectangle{
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    height: 4vw;
+    margin-bottom: -2vw;
+}
+
+pre{
+    font-family:"B Zar";
+}
+
+.caption{
+    font-family:"B Zar";
+    margin-right: 2vw;
+    margin-bottom: 5vw;
+}
+
+.rec-felesh{
+    height: 6vw;
+}
+
+.dia-felesh{
+    height: 8vw;
+}
+
+.tri-felesh{
+    height: 7.5vw;
+    margin-left: 1vw;
+}
+
+.cir-felesh{
+    margin-top: 1vw;
+    margin-bottom: -5vw;
+    height: 5vw;
+}
+
+.dia-felesh-rev{
+
+}
+
+.squ-felesh{
+    height: 7vw;
+}
+
+.paras-felesh{
+    height: 7vw;
+    margin-right: -2vw;
+}
+
+.start{
+    width: 8vw;
+    top: 59.5vw;
+    position: absolute;
+    background-color: #fecc4e;
+    border-style: solid;
+    border-color: #fecc4e;
+    border-radius: 1vw;
+    text-align: center;
+    /*font-size: 2.6vw;*/
+}
+
+.finish{
+    width: 8vw;
+    background-color: #fecc4e;
+    border-style: solid;
+    border-color: #fecc4e;
+    border-radius: 1vw;
+    text-align: center;
+    top: 87vw;
+    position: absolute;
+    margin-right: 22vw;
+}
+
+#felesh{
+    margin-right: 30.5vw;
+    /*margin-top: 5.5vw;*/
+    height: 3vw;
+    top: 1vw;
+    position: relative;
+}
+
+#rec-felesh-down{
+    margin-right: 52vw;
+    /*margin-top: 1vw;*/
+    height: 5vw;
+    margin-bottom: -5vw;
+}
+
+.q9{
+    margin: 3vw;
+}
+
+.q10{
+    margin: 1vw 3vw;
+}
+
+.q9-con, .q10-con{
+    margin-right: -5vw;
+}
+
+input{
+    width: 7.5vw;
+    margin: 0 1vw;
+}
+
 .page-number{
     width: 8vw;
     height: 3vw;
@@ -277,9 +394,16 @@ body{
 .next-page{
     display: block;
     float: left;
-    top: 76.5vw;
-    position: relative;
+    top: 121vw;
+    left: 7vw;
+    position: absolute;
 }
+/*.next-page-page2{*/
+/*    display: block;*/
+/*    float: left;*/
+/*    top: -6vw;*/
+/*    position: relative;*/
+/*}*/
 
 .next-page a{
     text-decoration: none;
