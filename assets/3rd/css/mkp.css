@@ -110,6 +110,10 @@ input[type=number] {
     z-index: -1;
 }
 
+.page-right-border .background-style{
+    right: -9vw;
+}
+
 .activity_item .activity-cover {
     width: 13vw;
     position: absolute;
@@ -169,7 +173,6 @@ input[type=number] {
     font-family: Zar;
     font-size: 2vw;
     direction: rtl;
-    white-space: pre-wrap;
 }
 
 .underline-text {
@@ -227,6 +230,7 @@ input[type=number] {
     text-align: center;
     font-size: 1.5vw;
     font-family: Koodak;
+    background: transparent;
 }
 
 .noborder-text-box {
@@ -239,6 +243,10 @@ input[type=number] {
     font-size: 1.5vw;
     text-align: center;
     font-family: Koodak;
+}
+
+.small-text-box {
+    width: 4vw;
 }
 
 .complete_container {
@@ -278,19 +286,24 @@ input[type=number] {
     margin-right: 11.5vw;
 }
 
+.square_table {
+    float: left;
+}
+
 .square_table td{
     margin: 1vw;
 }
 
-.square_table div{
-    width: 2vw;
-    height: 2vw;
+.margin-square_table{
+    margin-left: 3vw;
 }
-
 
 .square{
+    width: 2vw;
+    height: 2vw;
     background-color: var(--green-square);
 }
+
 
 /*** PAGE 109 ***/
 
@@ -384,6 +397,17 @@ input[type=number] {
 
 /*** PAGE 110 ***/
 
+#content_110 #complete_Q2_questions{
+    width: 100%;
+}
+
+#content_110 #complete_Q2_questions table{
+    width: 100%;
+}
+
+#content_110 #complete_Q2_questions td{
+    width: 50%;
+}
 /*
 aewf
 efa
