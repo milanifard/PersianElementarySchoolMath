@@ -5038,7 +5038,7 @@ section .section-header > .container-fluid {
   border-radius: 0;
 }
 
-.alert, .answer-message, .info-message {
+.alert, .answer-message, .warn-message, .info-message {
   position: relative;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
@@ -6409,7 +6409,7 @@ button.bg-dark:focus {
   display: table-cell !important;
 }
 
-.d-flex {
+.d-flex, .answer-message, .warn-message, .info-message {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -6662,7 +6662,7 @@ button.bg-dark:focus {
           flex-direction: column-reverse !important;
 }
 
-.flex-wrap, .answer-message, .info-message {
+.flex-wrap {
   -ms-flex-wrap: wrap !important;
       flex-wrap: wrap !important;
 }
@@ -6736,7 +6736,7 @@ button.bg-dark:focus {
           align-items: stretch !important;
 }
 
-.align-content-start {
+.align-content-start, .answer-message, .warn-message, .info-message {
   -ms-flex-line-pack: start !important;
       align-content: flex-start !important;
 }
@@ -6746,7 +6746,7 @@ button.bg-dark:focus {
       align-content: flex-end !important;
 }
 
-.align-content-center, .answer-message, .info-message {
+.align-content-center {
   -ms-flex-line-pack: center !important;
       align-content: center !important;
 }
@@ -9548,7 +9548,7 @@ html {
   }
 }
 
-.alert, .answer-message, .info-message {
+.alert, .answer-message, .warn-message, .info-message {
   padding: 10px 35px 10px 14px;
   background-color: #eee;
   border-radius: 4px;
@@ -9556,7 +9556,7 @@ html {
   margin: 10px 0;
 }
 
-.alert .close, .answer-message .close, .info-message .close {
+.alert .close, .answer-message .close, .warn-message .close, .info-message .close {
   border: 0;
   background: none;
   color: inherit;
@@ -9568,14 +9568,15 @@ html {
   height: 20px;
 }
 
-.alert .close:active, .answer-message .close:active, .info-message .close:active,
+.alert .close:active, .answer-message .close:active, .warn-message .close:active, .info-message .close:active,
 .alert .close:focus,
 .answer-message .close:focus,
+.warn-message .close:focus,
 .info-message .close:focus {
   outline: 0;
 }
 
-.alert p, .answer-message p, .info-message p {
+.alert p, .answer-message p, .warn-message p, .info-message p {
   margin: 0;
 }
 
@@ -9595,12 +9596,8 @@ html {
   background: #d4edf7;
 }
 
-.alert--error {
+.alert--error, .warn-message {
   background: #f6ddde;
   border-color: #d4aaac;
   color: #972a3d;
-}
-
-.answer-message, .info-message {
-  display: none;
 }
