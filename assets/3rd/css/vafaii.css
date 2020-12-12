@@ -108,7 +108,7 @@
     padding: 0 11vw 0 3vw;
     position: absolute;
     right: 2vw;
-    top: 2.5vw;
+    top: -2.5vw;
     z-index: 1;
 }
 .activity-image{
@@ -116,7 +116,7 @@
     width: 13vw;
     position: absolute;
     right: -2.3vw;
-    top: 0.5vw;
+    top: -4.5vw;
     z-index: 2;
 }
 .text-config{
@@ -141,6 +141,17 @@
     padding: 1.5vw;
     margin: 18vw 1.5vw 5vw 7vw;
 }
+
+.hint-box{
+    background-color: #ebf3d4;
+    border: 0.4vw solid #459235;
+    border-radius: 4vw;
+
+    position: relative;
+    padding: 3vw;
+
+}
+
 .guess-box-text-right{
     background-color: #f9c6a9;
     border-radius: 1.5vw 0 0 1.5vw;
@@ -174,37 +185,113 @@
     z-index: 1;
 }
 
-/*-----------------------------------*/
-
 .title-style{
 
-    background-color: var(--yellow_level3_border);
+    background-color: #f9c6a9;
     border-radius: 2vw;
 
     text-align: center;
     font-family: Koodak;
-    font-size: 3vw;
+    font-size: 2vw;
     color: black;
 
     padding: 0 2vw;
     position: absolute;
     right: 35vw;
     left: 35vw;
-    top: -3.3vw;
+    top: -2.1vw;
 }
-
 .that-ridiculous-red-parts-in-title{
     height: 1vw;
 
-    background-color: var(--red_level2);
-    color: var(--red_level2);
+    background-color: #34b7eb;
+    color: #34b7eb;
     border-style: solid;
 
     position: absolute;
-    right: 34vw;
-    left: 34vw;
-    top: -1.2vw;
+    right: 34.5vw;
+    left: 34.5vw;
+    top: -1vw;
 }
+
+
+.previous-page{
+    display: block;
+    float: right;
+    position: absolute;
+
+}
+.previous-page a{
+    text-decoration: none;
+    color: #47a758;
+    font-size: 2vw;
+}
+.previous-page a:hover{
+    text-decoration: none;
+    color: olive;
+    font-size: 2vw;
+}
+
+
+
+.next-page{
+    display: block;
+    float: left;
+
+
+}
+.next-page a{
+    text-decoration: none;
+    color: #47a758;
+    font-size: 2vw;
+}
+.next-page a:hover{
+    text-decoration: none;
+    color: olive;
+    font-size: 2vw;
+}
+
+.divide{
+    margin-top: 1vw ;
+    float: left  ;
+    width: 20vw;
+    height: 18vw ;
+
+
+
+}
+
+.divide-left-top{
+    white-space: pre;
+    float: top  ;
+    width: 5vw ;
+    height: 6vw ;
+    border-right: solid #f9c6a9 0.3vw;
+
+
+}
+.divide-right-top{
+    margin-left: 0;
+    white-space: pre;
+    float: top  ;
+    width: 5vw ;
+    height: 3vw ;
+    border-bottom: solid #f9c6a9 0.3vw;
+
+
+}
+.input-1{
+    width: 4vw;
+    height: 2vw;
+    margin-top: 0.5vw;
+    margin-right: 3vw;
+    font-size: 1.5vw;
+}
+
+/*-----------------------------------*/
+
+
+
 
 .guess-box-level2{
     background-color: white;

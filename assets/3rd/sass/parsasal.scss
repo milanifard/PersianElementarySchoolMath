@@ -266,22 +266,29 @@ hr {
 }
 
 .mohit_label {
-    @extend .col-5;
-    @extend .col-sm-5;
+    @extend .col-6;
+    @extend .col-xl-5;
     text-align: end;
     margin: auto 0;
-
+    font-size: 0.9rem;
 }
-
-.small-input {
-    @extend .col-5;
-    @extend .col-sm-5;
-}
-
 .input-style {
     @extend .form-control;
 
 }
+.small-input-wrapper {
+    @extend .col-6;
+    @extend .col-xl-5;
+    .input-style {
+        @extend .form-control;
+        &::placeholder{
+            font-size: 0.8rem;
+        }
+    
+    }
+}
+
+
 
 $paper-color: #F1EDE9;
 $paper-line: #94ACD4;
