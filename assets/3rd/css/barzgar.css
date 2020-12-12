@@ -371,3 +371,58 @@
     border: none;
     border-bottom: 0.15vw solid rgb(128, 190, 204);
 }
+#pitcher{
+    width: 10vw;
+    margin-left: 20vw;
+    position: absolute;
+    top: 2vw;
+}
+#cup-of-tea{
+    width: 10vw;
+    position: absolute;
+    left: 5vw;
+    top:10vw;
+}
+#match{
+    width: 10vw;
+    position: absolute;
+    left: 5vw;
+    top:17vw;
+}
+#house{
+    width: 25vw;
+    position: absolute;
+    top:22vw;
+    left: 2vw;
+}
+#box{
+    width: 10vw;
+    position: absolute;
+    top:37vw;
+    left: 25vw;
+}
+#truck{
+    width: 30vw;
+    position: absolute;
+    top:35vw;
+    right: 18vw;
+}
+#dah-riali{
+    width: 8vw;
+    position: absolute;
+    bottom: 30vw;
+    left: 8vw;
+}
+#sad-riali{
+    width: 9vw;
+    position: absolute;
+    bottom: 30vw;
+    left: 16vw;
+}
+#hezar-riali{
+    width: 10vw;
+    position: absolute;
+    bottom: 30vw;
+    left: 25vw;
+}
+
