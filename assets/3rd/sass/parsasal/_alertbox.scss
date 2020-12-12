@@ -53,13 +53,18 @@
 .answer-message {
 
   @extend .alert;
-  @extend .align-content-center;
-  @extend .flex-wrap;
-  display: none;
+  @extend .align-content-start;
+  @extend .d-flex;
+  // display: none;
+
 
 
 }
 
+.warn-message{
+  @extend .answer-message;
+  @extend .alert--error;
+}
 .info-message {
   @extend .answer-message;
   @extend .alert--info;
