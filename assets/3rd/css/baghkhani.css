@@ -1,460 +1,472 @@
-                                                                                    :root {
-                                                                                       --main_color: #47a758;
-                                                                                       --footer_color1: #84b954;
-                                                                                       --footer_color2: #b9ce4d;
-                                                                                       --title_color: #b9ce4d;
-                                                                                       --title-blue: #3e549a;
-                                                                                       --topic-title-color: #84b954;
-                                                                                       --question_number_color: #3b9e3a;
-                                                                                       --grid_q1_color: #7fbecc;
-                                                                                       --grid_orange_color: #f8b044;
-                                                                                       --grid_pink_color: #f19684;
-                                                                                       --grid_light_blue_color: #64b1c7;
-                                                                                       --grid_gold_color: #fcc441;
-                                                                                       --grid_light_purple_color: #d17fa6;
-                                                                                       --grid_red_color: #df2626;
-                                                                                       --grid_green_color: #4ba338;
-                                                                                       --grid_purple_color: #a088ba;
-                                                                                       --grid_light_brown_color: #f19345;
-                                                                                       --draw_color: #e9f1d2;
-                                                                                       --guessBox: #eeffcc;
-                                                                                   }
-                                                                                   
-                                                                                   * {
-                                                                                       padding: 0;
-                                                                                       margin: 0;
-                                                                                       border: 0;
-                                                                                       box-sizing: border-box;
-                                                                                       font: inherit;
-                                                                                       vertical-align: baseline;
-                                                                                   }
-                                                                                   
-                                                                                   @font-face {
-                                                                                       font-family: Samim;
-                                                                                       font_size: 1.5px;
-                                                                                       src: url("/assets/fonts/Zar.woff") format("woff");
-                                                                                   }
-                                                                                   
-                                                                                   body {
-                                                                                       font-family: "B Zar";
-                                                                                       font-size: 2vw;
-                                                                                       text-align: justify-all;
-                                                                                       overflow-x: hidden;
-                                                                                       background-image: repeating-linear-gradient(0deg, var(--footer_color1), var(--footer_color1) 1vw, var(--footer_color2) 0vw, var(--footer_color2) 2.5vw);
-                                                                                       background-size: 100% 30%;
-                                                                                       background-position: bottom;
-                                                                                       background-repeat: no-repeat;
-                                                                                   }
-                                                                                   
-                                                                                   .content_page {
-                                                                                       width: 90%;
-                                                                                       background: white;
-                                                                                       margin: 3vw auto;
-                                                                                       padding: 0vw 3vw;
-                                                                                       border: 1vw double;
-                                                                                       border-color: var(--main_color);
-                                                                                       border-radius: 2vw;
-                                                                                       position: relative;
-                                                                                   }
-                                                                                   
-                                                                                   .titlePage {
-                                                                                       width: 18vw;
-                                                                                       height: 5vw;
-                                                                                       margin: 0 auto;
-                                                                                       padding-top: .5vw;
-                                                                                       background-color: var(--title_color);
-                                                                                       border-style: double;
-                                                                                       text-align: center;
-                                                                                       font-size: 2vw;
-                                                                                       color: black;
-                                                                                       text-align: center;
-                                                                                       top: -2.75vw;
-                                                                                       position: absolute;
-                                                                                       margin-right: 34%;
-                                                                                       border-radius: 2vw;
-                                                                                       font-weight: bold;
-                                                                                   }
-                                                                                   
-                                                                                   .Main {
-                                                                                       width: 100%;
-                                                                                       margin: 0 auto;
-                                                                                   }
-                                                                                   
-                                                                                   .content_page {
-                                                                                       width: 90%;
-                                                                                       background: white;
-                                                                                       margin: 3vw auto;
-                                                                                       padding: 0vw 3vw;
-                                                                                       border: 1vw double;
-                                                                                       border-color: var(--main_color);
-                                                                                       border-radius: 3vw;
-                                                                                       position: relative;
-                                                                                   }
-                                                                                   
-                                                                                   .clearfix {
-                                                                                       clear: both;
-                                                                                       margin: 2vw 0px;
-                                                                                   }
-                                                                                   
-                                                                                   .StartPage {
-                                                                                       margin-top: 1vw;
-                                                                                       width: 100%;
-                                                                                       height: 13vw;
-                                                                                       float: right;
-                                                                                       position: relative;
-                                                                                   }
-                                                                                   
-                                                                                   .StartpageImage {
-                                                                                       width: 10%;
-                                                                                       height: 13vw;
-                                                                                       float: right;
-                                                                                   }
-                                                                                   
-                                                                                   .TopicStartTitle {
-                                                                                       float: right;
-                                                                                       width: 10vw;
-                                                                                       height: 4vw;
-                                                                                       background-color: var(--topic-title-color);
-                                                                                       text-align: center;
-                                                                                       font-size: 2vw;
-                                                                                       color: white;
-                                                                                       border-radius: 0.75vw 0 0 0.75vw;
-                                                                                       margin-top: 0.5vw;
-                                                                                   }
-                                                                                   
-                                                                                   .qnum {
-                                                                                       font-family: "Samim";
-                                                                                       font-size: 2vw;
-                                                                                       color: var(--question_number_color);
-                                                                                   }
-                                                                                   
-                                                                                   .qBox {
-                                                                                       top: 6vw;
-                                                                                       float: right;
-                                                                                       position: absolute;
-                                                                                       right: 10vw;
-                                                                                       font-size: 1.5vw;
-                                                                                   }
-                                                                                   
-                                                                                   .pictures {
-                                                                                       padding-right: 10vw;
-                                                                                   }
-                                                                                   
-                                                                                   .imagTagharon {
-                                                                                       position: static;
-                                                                                       margin-left: 3vw;
-                                                                                       margin-right: 5vw;
-                                                                                       margin-top: 12vw;
-                                                                                       width: 12vw;
-                                                                                       height: 18vw;
-                                                                                   }
-                                                                                   
-                                                                                   .imagTagharon1 {
-                                                                                       position: static;
-                                                                                       margin-left: 15vw;
-                                                                                       margin-right: 5vw;
-                                                                                       margin-top: 5vw;
-                                                                                       width: 12vw;
-                                                                                       height: 18vw;
-                                                                                   }
-                                                                                   
-                                                                                   .qbox {
-                                                                                       float: right;
-                                                                                       font-size: 1.5vw;
-                                                                                       padding-right: 10vw;
-                                                                                       margin-top: 10vw;
-                                                                                   }
-                                                                                   
-                                                                                   .question {
-                                                                                       font-size: 1.75vw;
-                                                                                       line-height: 3vw;
-                                                                                   }
-                                                                                   
-                                                                                   .subtitle {
-                                                                                       font-size: 1vw;
-                                                                                   }
-                                                                                   
-                                                                                   .guess-box-level1 {
-                                                                                       background-color: var(--guessBox);
-                                                                                       border: 0.4vw solid var(--footer_color1);
-                                                                                       border-radius: 4vw;
-                                                                                       position: relative;
-                                                                                       padding: 1vw;
-                                                                                       margin: 18vw 1.5vw 1vw 3vw;
-                                                                                       clear: both;
-                                                                                       left: -6vw;
-                                                                                       margin-top: 10vw;
-                                                                                       bottom: -7vw;
-                                                                                       height: 40vw;
-                                                                                   }
-                                                                                   
-                                                                                   .guess-box-text-left {
-                                                                                       background-color: var(--footer_color1);
-                                                                                       border-radius: 0 01.5vw 1.5vw 0;
-                                                                                       border-left: 2vw solid var(--main_color);
-                                                                                       text-align: center;
-                                                                                       font-family: Koodak;
-                                                                                       font-size: 2.5vw;
-                                                                                       color: white;
-                                                                                       padding: 0 2vw 0 3vw;
-                                                                                       position: absolute;
-                                                                                       left: -1.5vw;
-                                                                                       top: 3vw;
-                                                                                       z-index: 1;
-                                                                                   }
-                                                                                   
-                                                                                   .text-config {
-                                                                                       font-size: 1.66vw;
-                                                                                       direction: rtl;
-                                                                                       float: right;
-                                                                                       padding-top: 5vw;
-                                                                                       line-height: 3vw;
-                                                                                   }
-                                                                                   
-                                                                                   .guess-box-level2 {
-                                                                                       position: relative;
-                                                                                       padding: 5vw;
-                                                                                       margin-top: 7vw;
-                                                                                       margin-right: 20vw;
-                                                                                       direction: ltr;
-                                                                                   }
-                                                                                   
-                                                                                   .imgGuessBox {
-                                                                                       width: 17vw;
-                                                                                       height: 20vw;
-                                                                                   }
-                                                                                   
-                                                                                   .page-navigator {
-                                                                                       width: 100%;
-                                                                                       margin: 7vw auto;
-                                                                                       padding: 5vw 0vw 0vw;
-                                                                                   }
-                                                                                   
-                                                                                   .previous-page {
-                                                                                       display: block;
-                                                                                       float: right;
-                                                                                       position: absolute;
-                                                                                   }
-                                                                                   
-                                                                                   .next-page {
-                                                                                       display: block;
-                                                                                       float: left;
-                                                                                   }
-                                                                                   
-                                                                                   .previous-page a {
-                                                                                       text-decoration: none;
-                                                                                       color: var(--main_color);
-                                                                                       font-size: 3vw;
-                                                                                   }
-                                                                                   
-                                                                                   .previous-page a:hover {
-                                                                                       text-decoration: none;
-                                                                                       color: olive;
-                                                                                       font-size: 3vw;
-                                                                                   }
-                                                                                   
-                                                                                   .next-page a {
-                                                                                       text-decoration: none;
-                                                                                       color: var(--main_color);
-                                                                                       font-size: 3vw;
-                                                                                   }
-                                                                                   
-                                                                                   .next-page a:hover {
-                                                                                       text-decoration: none;
-                                                                                       color: olive;
-                                                                                       font-size: 3vw;
-                                                                                   }
-                                                                                   
-                                                                                   .page-number {
-                                                                                       width: 8vw;
-                                                                                       height: 3vw;
-                                                                                       margin: 0 auto;
-                                                                                       position: absolute;
-                                                                                       background-color: var(--main_color);
-                                                                                       border-style: double;
-                                                                                       text-align: center;
-                                                                                       font-size: 2vw;
-                                                                                       color: white;
-                                                                                       background-position: center;
-                                                                                       bottom: -1.5vw;
-                                                                                       right: 44%;
-                                                                                       border-radius: 0.75vw;
-                                                                                   }
-                                                                                   
-                                                                                   .qboxActivity {
-                                                                                       padding-right: 10vw;
-                                                                                   }
-                                                                                   
-                                                                                   .question1page20 {
-                                                                                       font-size: 1.75vw;
-                                                                                       margin-right: 8vw;
-                                                                                   }
-                                                                                   
-                                                                                   .topic-title-classwork {
-                                                                                       height: 2.5vw;
-                                                                                       margin-right: -2vw;
-                                                                                       font-size: 1.75vw;
-                                                                                   }
-                                                                                   
-                                                                                   .topic-title-practice {
-                                                                                       width: 12vw;
-                                                                                       position: absolute;
-                                                                                       padding: 0 2vw;
-                                                                                       margin-right: 2.5vw;
-                                                                                       text-align: left;
-                                                                                       padding-right: 4vw;
-                                                                                   }
-                                                                                   
-                                                                                   .topic-title {
-                                                                                       float: right;
-                                                                                       width: 10vw;
-                                                                                       height: 3vw;
-                                                                                       background-color: var(--topic-title-color);
-                                                                                       text-align: center;
-                                                                                       font-size: 2vw;
-                                                                                       color: white;
-                                                                                       border-radius: 0.75vw 0 0 0.75vw;
-                                                                                       margin-top: 0.5vw;
-                                                                                   }
-                                                                                   
-                                                                                   .topic-image {
-                                                                                       width: 10%;
-                                                                                       height: 13vw;
-                                                                                       float: right;
-                                                                                   }
-                                                                                   
-                                                                                   .butterfly {
-                                                                                       width: 20vw;
-                                                                                       height: 20vw;
-                                                                                       margin-right: 20vw;
-                                                                                       margin-top: -3vw;
-                                                                                   }
-                                                                                   
-                                                                                   #rectangles {
-                                                                                       width: 100%;
-                                                                                       height: 20vw;
-                                                                                       margin-top: 5vw;
-                                                                                       margin-right: -5vw;
-                                                                                   }
-                                                                                   
-                                                                                   .draw-box-level1 {
-                                                                                       background-color: var(--guessBox);
-                                                                                       border: 0.4vw solid var(--footer_color1);
-                                                                                       border-radius: 4vw;
-                                                                                       position: relative;
-                                                                                       padding: 1vw;
-                                                                                       margin: 18vw 1.5vw 1vw 3vw;
-                                                                                       clear: both;
-                                                                                       margin-top: 10vw;
-                                                                                       bottom: -7vw;
-                                                                                       height: 40vw;
-                                                                                       margin-right: -2vw;
-                                                                                   }
-                                                                                   
-                                                                                   .draw-box-text-right {
-                                                                                       background-color: var(--footer_color1);
-                                                                                       border-radius: 1.5vw 0 0 1.5vw;
-                                                                                       border-right: 2vw solid var(--main_color);
-                                                                                       text-align: center;
-                                                                                       font-family: Koodak;
-                                                                                       font-size: 2.5vw;
-                                                                                       color: white;
-                                                                                       padding: 0 3vw 0 2vw;
-                                                                                       position: absolute;
-                                                                                       right: -2vw;
-                                                                                       top: 1vw;
-                                                                                       z-index: 1;
-                                                                                   }
-                                                                                   
-                                                                                   .drawboxImage {
-                                                                                       width: 30vw;
-                                                                                       height: 26vw;
-                                                                                       margin-top: -7vw;
-                                                                                       margin-left: -6vw;
-                                                                                   }
-                                                                                   
-                                                                                   .drawText {
-                                                                                       margin-top: 2vw;
-                                                                                   }
-                                                                                   
-                                                                                   .topic-image-pract {
-                                                                                       width: 10%;
-                                                                                       height: 11vw;
-                                                                                       position: absolute;
-                                                                                   }
-                                                                                   
-                                                                                   .imagTagharon6 {
-                                                                                       width: 40vw;
-                                                                                       height: 25vw;
-                                                                                       padding-right: 7vw;
-                                                                                       padding-left: 15vw;
-                                                                                       margin-left: -9vw;
-                                                                                       margin-top: -7vw;
-                                                                                   }
-                                                                                   
-                                                                                   .draw1 {
-                                                                                       width: 40vw;
-                                                                                       height: 25vw;
-                                                                                       margin-top: 8vw;
-                                                                                   }
-                                                                                   
-                                                                                   .draw2 {
-                                                                                       margin-right: 5vw;
-                                                                                       width: 20vw;
-                                                                                       height: 20vw;
-                                                                                   }
-                                                                                   
-                                                                                   .Box {
-                                                                                       background-color: var(--guessBox);
-                                                                                       border: 0.4vw solid var(--footer_color1);
-                                                                                       border-radius: 4vw;
-                                                                                       position: relative;
-                                                                                       padding: 1vw;
-                                                                                       margin: 18vw 1.5vw 1vw 3vw;
-                                                                                       clear: both;
-                                                                                       left: -6vw;
-                                                                                       margin-top: 10vw;
-                                                                                       bottom: -7vw;
-                                                                                       height: 30vw;
-                                                                                       width: 65%;
-                                                                                   }
-                                                                                   
-                                                                                   .box-level1 {
-                                                                                       background-color: var(--guessBox);
-                                                                                       border: 0.4vw solid var(--footer_color1);
-                                                                                       border-radius: 4vw;
-                                                                                       position: relative;
-                                                                                       padding: 1vw;
-                                                                                       margin: 18vw 1.5vw 1vw 3vw;
-                                                                                       clear: both;
-                                                                                       right: 7vw;
-                                                                                       margin-top: 2vw;
-                                                                                       bottom: -7vw;
-                                                                                       height: 20vw;
-                                                                                       width: 80%;
-                                                                                   }
-                                                                                   
-                                                                                   .box-level2 {
-                                                                                       position: relative;
-                                                                                       padding: 3vw;
-                                                                                       margin-top: 2vw;
-                                                                                       margin-right: 20vw;
-                                                                                       direction: ltr;
-                                                                                   }
-                                                                                   
-                                                                                   .text-config1 {
-                                                                                       padding-top: 2vw;
-                                                                                   }
-                                                                                   
-                                                                                   .img {
-                                                                                       width: 17vw;
-                                                                                       height: 14vw;
-                                                                                       margin-top: -2vw;
-                                                                                   }
-                                                                                   
-                                                                                   .imgHuman2 {
-                                                                                       width: 14vw;
-                                                                                       height: 13vw;
-                                                                                       margin-top: -4vw;
-                                                                                       margin-right: 3vw;
-                                                                                   }
+                                                                                                                     :root {
+                                                                                                                        --main_color: #47a758;
+                                                                                                                        --footer_color1: #84b954;
+                                                                                                                        --footer_color2: #b9ce4d;
+                                                                                                                        --title_color: #b9ce4d;
+                                                                                                                        --title-blue: #3e549a;
+                                                                                                                        --topic-title-color: #84b954;
+                                                                                                                        --question_number_color: #3b9e3a;
+                                                                                                                        --grid_q1_color: #7fbecc;
+                                                                                                                        --grid_orange_color: #f8b044;
+                                                                                                                        --grid_pink_color: #f19684;
+                                                                                                                        --grid_light_blue_color: #64b1c7;
+                                                                                                                        --grid_gold_color: #fcc441;
+                                                                                                                        --grid_light_purple_color: #d17fa6;
+                                                                                                                        --grid_red_color: #df2626;
+                                                                                                                        --grid_green_color: #4ba338;
+                                                                                                                        --grid_purple_color: #a088ba;
+                                                                                                                        --grid_light_brown_color: #f19345;
+                                                                                                                        --draw_color: #e9f1d2;
+                                                                                                                        --guessBox: #eeffcc;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    * {
+                                                                                                                        padding: 0;
+                                                                                                                        margin: 0;
+                                                                                                                        border: 0;
+                                                                                                                        box-sizing: border-box;
+                                                                                                                        font: inherit;
+                                                                                                                        vertical-align: baseline;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    @font-face {
+                                                                                                                        font_size: 2px;
+                                                                                                                        font-family: Zar;
+                                                                                                                        src: url("../../fonts/Zar.woff") format("woff");
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    body {
+                                                                                                                        background-image: repeating-linear-gradient(0deg, var(--footer_color1), var(--footer_color1) 1vw, var(--footer_color2) 0vw, var(--footer_color2) 2.5vw);
+                                                                                                                        background-size: 100% 40%;
+                                                                                                                        background-position: bottom;
+                                                                                                                        background-repeat: no-repeat;
+                                                                                                                        /* background-attachment: fixed; */
+                                                                                                                        font-family: ZAR;
+                                                                                                                        font-weight: bold;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .content_page {
+                                                                                                                        width: 90%;
+                                                                                                                        /* padding: 70% 0; */
+                                                                                                                        background: white;
+                                                                                                                        border: 0.8vw double var(--main_color);
+                                                                                                                        border-radius: 0 4vw 4vw 0;
+                                                                                                                        position: relative;
+                                                                                                                        margin-right: 10vw;
+                                                                                                                        margin-top: 12vw;
+                                                                                                                        margin-bottom: 22vw;
+                                                                                                                        border-left: none;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .rev_content_page {
+                                                                                                                        width: 90%;
+                                                                                                                        background: white;
+                                                                                                                        border: 0.8vw double var(--main_color);
+                                                                                                                        border-radius: 4vw 0 0 4vw;
+                                                                                                                        position: relative;
+                                                                                                                        margin-left: 9.2vw;
+                                                                                                                        margin-top: 12vw;
+                                                                                                                        margin-bottom: 22vw;
+                                                                                                                        border-right: none;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .titlePage {
+                                                                                                                        width: 18vw;
+                                                                                                                        height: 5vw;
+                                                                                                                        margin: 0 auto;
+                                                                                                                        padding-top: .5vw;
+                                                                                                                        background-color: var(--title_color);
+                                                                                                                        border-style: double;
+                                                                                                                        text-align: center;
+                                                                                                                        font-size: 2vw;
+                                                                                                                        color: black;
+                                                                                                                        text-align: center;
+                                                                                                                        top: -2.75vw;
+                                                                                                                        position: absolute;
+                                                                                                                        margin-right: 34%;
+                                                                                                                        border-radius: 2vw;
+                                                                                                                        font-weight: bold;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .Main {
+                                                                                                                        width: 100%;
+                                                                                                                        margin: 0 auto;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .clearfix {
+                                                                                                                        clear: both;
+                                                                                                                        margin: 2vw 0px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .StartPage {
+                                                                                                                        margin-top: 1vw;
+                                                                                                                        width: 100%;
+                                                                                                                        height: 13vw;
+                                                                                                                        float: right;
+                                                                                                                        position: relative;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .StartpageImage {
+                                                                                                                        width: 10%;
+                                                                                                                        height: 13vw;
+                                                                                                                        float: right;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .TopicStartTitle {
+                                                                                                                        float: right;
+                                                                                                                        width: 10vw;
+                                                                                                                        height: 4vw;
+                                                                                                                        background-color: var(--topic-title-color);
+                                                                                                                        text-align: center;
+                                                                                                                        font-size: 2vw;
+                                                                                                                        color: white;
+                                                                                                                        border-radius: 0.75vw 0 0 0.75vw;
+                                                                                                                        margin-top: 0.5vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .qnum {
+                                                                                                                        font-family: "Samim";
+                                                                                                                        font-size: 2vw;
+                                                                                                                        color: var(--question_number_color);
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .qBox {
+                                                                                                                        top: 6vw;
+                                                                                                                        float: right;
+                                                                                                                        position: absolute;
+                                                                                                                        right: 10vw;
+                                                                                                                        font-size: 1.5vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .pictures {
+                                                                                                                        padding-right: 10vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .imagTagharon {
+                                                                                                                        position: static;
+                                                                                                                        margin-left: 3vw;
+                                                                                                                        margin-right: 5vw;
+                                                                                                                        margin-top: 12vw;
+                                                                                                                        width: 12vw;
+                                                                                                                        height: 18vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .imagTagharon1 {
+                                                                                                                        position: static;
+                                                                                                                        margin-left: 15vw;
+                                                                                                                        margin-right: 5vw;
+                                                                                                                        margin-top: 5vw;
+                                                                                                                        width: 12vw;
+                                                                                                                        height: 18vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .qbox {
+                                                                                                                        float: right;
+                                                                                                                        font-size: 1.5vw;
+                                                                                                                        padding-right: 10vw;
+                                                                                                                        margin-top: 10vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .question {
+                                                                                                                        font-size: 1.75vw;
+                                                                                                                        line-height: 3vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .subtitle {
+                                                                                                                        font-size: 1vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .guess-box-level1 {
+                                                                                                                        background-color: var(--guessBox);
+                                                                                                                        border: 0.4vw solid var(--footer_color1);
+                                                                                                                        border-radius: 4vw;
+                                                                                                                        position: relative;
+                                                                                                                        padding: 1vw;
+                                                                                                                        margin: 18vw 1.5vw 1vw 3vw;
+                                                                                                                        clear: both;
+                                                                                                                        left: -6vw;
+                                                                                                                        margin-top: 10vw;
+                                                                                                                        bottom: -7vw;
+                                                                                                                        height: 40vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .guess-box-text-left {
+                                                                                                                        background-color: var(--footer_color1);
+                                                                                                                        border-radius: 0 01.5vw 1.5vw 0;
+                                                                                                                        border-left: 2vw solid var(--main_color);
+                                                                                                                        text-align: center;
+                                                                                                                        font-size: 2.5vw;
+                                                                                                                        color: white;
+                                                                                                                        padding: 0 2vw 0 3vw;
+                                                                                                                        position: absolute;
+                                                                                                                        left: -1.5vw;
+                                                                                                                        top: 3vw;
+                                                                                                                        z-index: 1;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .text-config {
+                                                                                                                        font-size: 1.66vw;
+                                                                                                                        direction: rtl;
+                                                                                                                        float: right;
+                                                                                                                        padding-top: 5vw;
+                                                                                                                        line-height: 3vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .guess-box-level2 {
+                                                                                                                        position: relative;
+                                                                                                                        padding: 5vw;
+                                                                                                                        margin-top: 7vw;
+                                                                                                                        margin-right: 20vw;
+                                                                                                                        direction: ltr;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .imgGuessBox {
+                                                                                                                        width: 17vw;
+                                                                                                                        height: 20vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .page-navigator {
+                                                                                                                        width: 100%;
+                                                                                                                        margin: 7vw auto;
+                                                                                                                        padding: 5vw 0vw 0vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .previous-page {
+                                                                                                                        display: block;
+                                                                                                                        float: right;
+                                                                                                                        position: absolute;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .next-page {
+                                                                                                                        display: block;
+                                                                                                                        float: left;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .previous-page a {
+                                                                                                                        text-decoration: none;
+                                                                                                                        color: var(--main_color);
+                                                                                                                        font-size: 3vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .previous-page a:hover {
+                                                                                                                        text-decoration: none;
+                                                                                                                        color: olive;
+                                                                                                                        font-size: 3vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .next-page a {
+                                                                                                                        text-decoration: none;
+                                                                                                                        color: var(--main_color);
+                                                                                                                        font-size: 3vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .next-page a:hover {
+                                                                                                                        text-decoration: none;
+                                                                                                                        color: olive;
+                                                                                                                        font-size: 3vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .page-number {
+                                                                                                                        width: 8vw;
+                                                                                                                        height: 3vw;
+                                                                                                                        margin: 0 auto;
+                                                                                                                        position: absolute;
+                                                                                                                        background-color: var(--main_color);
+                                                                                                                        border-style: double;
+                                                                                                                        text-align: center;
+                                                                                                                        font-size: 2vw;
+                                                                                                                        color: white;
+                                                                                                                        background-position: center;
+                                                                                                                        bottom: -1.5vw;
+                                                                                                                        right: 44%;
+                                                                                                                        border-radius: 0.75vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .qboxActivity {
+                                                                                                                        padding-right: 10vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .question1page20 {
+                                                                                                                        font-size: 1.75vw;
+                                                                                                                        margin-right: 8vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .topic-title-classwork {
+                                                                                                                        height: 2.5vw;
+                                                                                                                        margin-right: -2vw;
+                                                                                                                        font-size: 1.75vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .topic-title-practice {
+                                                                                                                        width: 12vw;
+                                                                                                                        position: absolute;
+                                                                                                                        padding: 0 2vw;
+                                                                                                                        margin-right: 2.5vw;
+                                                                                                                        text-align: left;
+                                                                                                                        padding-right: 4vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .topic-title {
+                                                                                                                        float: right;
+                                                                                                                        width: 10vw;
+                                                                                                                        height: 3vw;
+                                                                                                                        background-color: var(--topic-title-color);
+                                                                                                                        text-align: center;
+                                                                                                                        font-size: 2vw;
+                                                                                                                        color: white;
+                                                                                                                        border-radius: 0.75vw 0 0 0.75vw;
+                                                                                                                        margin-top: 0.5vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .topic-image {
+                                                                                                                        width: 10%;
+                                                                                                                        height: 13vw;
+                                                                                                                        float: right;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .butterfly {
+                                                                                                                        width: 20vw;
+                                                                                                                        height: 20vw;
+                                                                                                                        margin-right: 20vw;
+                                                                                                                        margin-top: -3vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    #rectangles {
+                                                                                                                        width: 100%;
+                                                                                                                        height: 20vw;
+                                                                                                                        margin-top: 5vw;
+                                                                                                                        margin-right: -5vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .draw-box-level1 {
+                                                                                                                        background-color: var(--guessBox);
+                                                                                                                        border: 0.4vw solid var(--footer_color1);
+                                                                                                                        border-radius: 4vw;
+                                                                                                                        position: relative;
+                                                                                                                        padding: 1vw;
+                                                                                                                        margin: 18vw 1.5vw 1vw 3vw;
+                                                                                                                        clear: both;
+                                                                                                                        margin-top: 10vw;
+                                                                                                                        bottom: -7vw;
+                                                                                                                        height: 40vw;
+                                                                                                                        margin-right: -2vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .draw-box-text-right {
+                                                                                                                        background-color: var(--footer_color1);
+                                                                                                                        border-radius: 1.5vw 0 0 1.5vw;
+                                                                                                                        border-right: 2vw solid var(--main_color);
+                                                                                                                        text-align: center;
+                                                                                                                        font-size: 2.5vw;
+                                                                                                                        color: white;
+                                                                                                                        padding: 0 3vw 0 2vw;
+                                                                                                                        position: absolute;
+                                                                                                                        right: -2vw;
+                                                                                                                        top: 1vw;
+                                                                                                                        z-index: 1;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .drawboxImage {
+                                                                                                                        width: 30vw;
+                                                                                                                        height: 26vw;
+                                                                                                                        margin-top: -7vw;
+                                                                                                                        margin-left: -6vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .drawText {
+                                                                                                                        margin-top: 2vw;
+                                                                                                                        margin-right: 4vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .topic-image-pract {
+                                                                                                                        width: 10%;
+                                                                                                                        height: 11vw;
+                                                                                                                        position: absolute;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .imagTagharon6 {
+                                                                                                                        width: 40vw;
+                                                                                                                        height: 25vw;
+                                                                                                                        padding-right: 7vw;
+                                                                                                                        padding-left: 15vw;
+                                                                                                                        margin-left: -9vw;
+                                                                                                                        margin-top: -7vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .draw1 {
+                                                                                                                        width: 40vw;
+                                                                                                                        height: 25vw;
+                                                                                                                        margin-top: 8vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .draw2 {
+                                                                                                                        margin-right: 5vw;
+                                                                                                                        width: 20vw;
+                                                                                                                        height: 20vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .Box {
+                                                                                                                        background-color: var(--guessBox);
+                                                                                                                        border: 0.4vw solid var(--footer_color1);
+                                                                                                                        border-radius: 4vw;
+                                                                                                                        position: relative;
+                                                                                                                        padding: 1vw;
+                                                                                                                        margin: 18vw 1.5vw 1vw 3vw;
+                                                                                                                        clear: both;
+                                                                                                                        left: -6vw;
+                                                                                                                        margin-top: 10vw;
+                                                                                                                        bottom: -7vw;
+                                                                                                                        height: 30vw;
+                                                                                                                        width: 65%;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .box-level1 {
+                                                                                                                        background-color: var(--guessBox);
+                                                                                                                        border: 0.4vw solid var(--footer_color1);
+                                                                                                                        border-radius: 4vw;
+                                                                                                                        position: relative;
+                                                                                                                        padding: 1vw;
+                                                                                                                        margin: 18vw 1.5vw 1vw 3vw;
+                                                                                                                        clear: both;
+                                                                                                                        right: 7vw;
+                                                                                                                        margin-top: 2vw;
+                                                                                                                        bottom: -7vw;
+                                                                                                                        height: 20vw;
+                                                                                                                        width: 80%;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .box-level2 {
+                                                                                                                        position: relative;
+                                                                                                                        padding: 3vw;
+                                                                                                                        margin-top: 2vw;
+                                                                                                                        margin-right: 20vw;
+                                                                                                                        direction: ltr;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .text-config1 {
+                                                                                                                        padding-top: 2vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .img {
+                                                                                                                        width: 17vw;
+                                                                                                                        height: 14vw;
+                                                                                                                        margin-top: -2vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .imgHuman2 {
+                                                                                                                        width: 14vw;
+                                                                                                                        height: 13vw;
+                                                                                                                        margin-top: -4vw;
+                                                                                                                        margin-right: 3vw;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .input-style {
+                                                                                                                        text-align: center;
+                                                                                                                        font-size: 2vw;
+                                                                                                                        font-family: ZAR, Faraz;
+                                                                                                                        border: none;
+                                                                                                                        border-bottom: 1px solid var(--main_color);
+                                                                                                                        border-radius: 0.5vw;
+                                                                                                                        width: 8vw;
+                                                                                                                        height: 3vw;
+                                                                                                                    }

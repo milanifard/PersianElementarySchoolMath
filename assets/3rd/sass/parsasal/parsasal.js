@@ -67,6 +67,8 @@ $(document).ready(function () {
 
 });
 
+
+
 window.onkeypress = function (e) {
     e = e || window.event;
     if (e.keyCode === 13) {
@@ -74,3 +76,38 @@ window.onkeypress = function (e) {
         document.documentElement.classList.toggle('dark-mode')
     }
 }
+
+function checkTamrinP94() {
+    console.log("mohit labels: " + $(".triangles"))
+    $(".triangle-answer").each(function (i, obj) {
+        if(obj.value !== ""){
+            if (obj.value !== "6") {
+                obj.classList.add("is-invalid")
+                obj.classList.remove("is-valid")
+            } else {
+                obj.classList.add("is-valid")
+                obj.classList.remove("is-invalid")
+            }
+    
+        }
+
+    });
+
+    $("#tamrin").find(".info-message").css("display", "flex")
+    .hide()
+    .fadeIn();
+}
+
+function checkFargangeNeveshtanP94(){
+    $("#farhange-neveshtan").find(".info-message").css("display", "flex")
+    .hide()
+    .fadeIn();
+
+}
+(function ($) {
+    $(document).on('click','.close', function() { 
+        console.log("salam" + $(this).text())
+        $(this).parent().fadeOut();
+     });
+
+})(jQuery);
