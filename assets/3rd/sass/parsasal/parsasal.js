@@ -1,3 +1,4 @@
+// go top button
 /*Add class when scroll down*/
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
@@ -84,6 +85,7 @@ function debounce(func) {
 window.addEventListener("resize", debounce(reloadPagination));
 
 
+// dark mode
 window.onkeypress = function (e) {
     e = e || window.event;
     if (e.keyCode === 13) {
@@ -91,6 +93,10 @@ window.onkeypress = function (e) {
         document.documentElement.classList.toggle('dark-mode')
     }
 }
+
+// ****************************
+// check answers
+// ***********************
 
 function checkTamrinP94() {
     console.log("mohit labels: " + $(".triangles"))
@@ -121,7 +127,6 @@ function checkFargangeNeveshtanP94() {
 }
 (function ($) {
     $(document).on('click', '.close', function () {
-        console.log("salam" + $(this).text())
         $(this).parent().fadeOut();
     });
 
