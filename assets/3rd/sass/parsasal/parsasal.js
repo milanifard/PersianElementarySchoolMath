@@ -1,3 +1,4 @@
+// go top button
 /*Add class when scroll down*/
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
@@ -37,6 +38,29 @@ function changePage(page) {
     window.location.href = `./book_3_${page}.html`;
 
 }
+
+function reloadPagination() {
+    console.log("reloading pagination")
+    let childs = $('.pagination').children(); //returns a HTMLCollection
+
+    for (let i = 1; i < childs.length - 1; i++) { // iterate over it
+        if ($(document).width() <= 1024) {
+            childs[i].innerHTML = current_page + i - 1;
+            console.log("your device is NOT a big screen device.");
+            childs[1].classList.add("current");
+            childs[4].classList.remove("current");
+        } else {
+            childs[i].innerHTML = current_page + i - 4;
+            childs[4].classList.add("current");
+            childs[1].classList.remove("current");
+            console.log("your device is a big device");
+        }
+
+        childs[i].onclick = function () { // attach event listener individually
+            window.location.href = `./book_3_${childs[i].innerHTML}.html`;
+        }
+    }
+}
 $(document).ready(function () {
 
 
@@ -47,28 +71,21 @@ $(document).ready(function () {
         nextPage();
     })
 
-    let childs = $('.pagination').children(); //returns a HTMLCollection
-
-    for (let i = 1; i < childs.length - 1; i++) { // iterate over it
-        if ("ontouchstart" in document.documentElement) {
-            childs[i].innerHTML = current_page + i - 1;
-            console.log("your device is a touch screen device.");
-            childs[1].classList.add("current");
-            childs[4].classList.remove("current");
-        } else {
-            childs[i].innerHTML = current_page + i - 4;
-            console.log("your device is NOT a touch device");
-        }
-
-        childs[i].onclick = function () { // attach event listener individually
-            window.location.href = `./book_3_${childs[i].innerHTML}.html`;
-        }
-    }
+    reloadPagination();
 
 });
 
+function debounce(func) {
+    var timer;
+    return function (event) {
+        if (timer) clearTimeout(timer);
+        timer = setTimeout(func, 100, event);
+    };
+}
+window.addEventListener("resize", debounce(reloadPagination));
 
 
+// dark mode
 window.onkeypress = function (e) {
     e = e || window.event;
     if (e.keyCode === 13) {
@@ -77,10 +94,14 @@ window.onkeypress = function (e) {
     }
 }
 
+// ****************************
+// check answers
+// ***********************
+
 function checkTamrinP94() {
     console.log("mohit labels: " + $(".triangles"))
     $(".triangle-answer").each(function (i, obj) {
-        if(obj.value !== ""){
+        if (obj.value !== "") {
             if (obj.value !== "6") {
                 obj.classList.add("is-invalid")
                 obj.classList.remove("is-valid")
@@ -88,26 +109,25 @@ function checkTamrinP94() {
                 obj.classList.add("is-valid")
                 obj.classList.remove("is-invalid")
             }
-    
+
         }
 
     });
 
     $("#tamrin").find(".info-message").css("display", "flex")
-    .hide()
-    .fadeIn();
+        .hide()
+        .fadeIn();
 }
 
-function checkFargangeNeveshtanP94(){
+function checkFargangeNeveshtanP94() {
     $("#farhange-neveshtan").find(".info-message").css("display", "flex")
-    .hide()
-    .fadeIn();
+        .hide()
+        .fadeIn();
 
 }
 (function ($) {
-    $(document).on('click','.close', function() { 
-        console.log("salam" + $(this).text())
+    $(document).on('click', '.close', function () {
         $(this).parent().fadeOut();
-     });
+    });
 
 })(jQuery);
