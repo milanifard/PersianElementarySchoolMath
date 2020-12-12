@@ -10,6 +10,34 @@
     --color-purple: rgb(175, 55, 117);
 }
 
+#question-2 {
+    direction: rtl;
+}
+
+#question-2-text {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+#question-3 {
+    direction: rtl;
+}
+
+#question3-input-number {
+    display: inline-block;
+    width: 15vw;
+}
+#question-3-input-text{
+    display: inline-block;width: 15vw;
+}
+
+.question-1-inputs {
+    display: inline-block;
+    width: 20vw;
+    margin-left: 3vw;
+    vertical-align: top;
+}
+
 .right-page {
 
     width: 90vw;
@@ -77,6 +105,12 @@
     right: -5vw;
 }
 
+.left-page-number {
+    left: -5vw;
+    right: auto;
+    bottom: -1vw;
+}
+
 .title-background-rectangle {
     height: 1vw;
 
@@ -137,6 +171,22 @@
     margin: 5px 0;
 }
 
+.hezar-taii {
+    vertical-align: top;
+}
+
+.sad-taii {
+    vertical-align: top;
+}
+
+.dah-taii {
+    vertical-align: top;
+}
+
+.yeki {
+    vertical-align: top;
+}
+
 .circle {
     height: 4vw;
     width: 4vw;
@@ -144,6 +194,18 @@
     border: 0.1vw solid #cfcfcf;
     border-radius: 50%;
     display: inline-block;
+    color: transparent;
+
+}
+
+.first-circle {
+    margin-left: 1.5vw;
+}
+
+.last-circle {
+    color: black;
+    font-size: 1.5vw;
+    text-align: center;
 }
 
 .question-number {
@@ -152,9 +214,7 @@
 
 .overlay-circle {
     margin-left: -3vw;
-    text-align: center;
-    direction: rtl;
-    padding: 0vw;
+
 }
 
 .question-1-table-cells {
@@ -167,8 +227,8 @@
 .question-1-table {
     border-collapse: collapse;
     width: 20vw;
-    margin: 0;
-    padding: 0;
+    /*margin: 0;*/
+    /*padding: 0;*/
 }
 
 .input-config-question-1 {
@@ -262,10 +322,12 @@
     background-color: white;
     margin-bottom: 2.5vw;
 }
-.sign{
+
+.sign {
     color: rgb(231, 96, 96);;
 }
-.page32-question3-input{
+
+.page32-question3-input {
     width: 5vw;
     margin: auto;
     border: none;
