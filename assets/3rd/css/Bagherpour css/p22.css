@@ -1,9 +1,10 @@
 *{padding: 0px; margin: 0px; }
+body{overflow-x: hidden;}
 .right-border{
     width: 90vw;
     max-width: 100%;
     border: 0.8vw double #44b869;
-    margin: 6vw 10vw 0 0;
+    margin: 6vw -10vw 0 0;
     border-left: none;
     border-top-right-radius: 5vw;
     border-bottom-right-radius: 5vw;
@@ -201,7 +202,7 @@ input{
     font-size: 25px;
     margin-top: -5px;
     height: 30px;
-    color: black;
+    color: red;
     
 }
 .counting{
@@ -238,6 +239,7 @@ input{
 .left-cal{
     justify-content: space-between;
 }
+.right-float{float: right;}
 .radio-part{display: flex; float: right; padding-top: 3vw; font-size:20px;}
  @media only screen and (max-width:1160px)
 {  
