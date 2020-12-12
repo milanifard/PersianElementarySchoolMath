@@ -100,7 +100,7 @@ $easing: ease;
         line-height: 50px;
     }
 
-    @include breakpoint(touch) {
+    @include breakpoint('touch') {
         padding: 0 10px;
         display: none;
 
