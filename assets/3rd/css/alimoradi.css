@@ -84,6 +84,9 @@ span.question {
 .pull-left{
     float: left;
 }
+.pull-center{
+    float: unset;
+}
 .calculator-size{
     width: 15vw;
     height: 20vw;
@@ -141,10 +144,70 @@ span.question {
     clear: both;
     margin: 2vw 0 ;
 }
+.half-page {
+    width: 50%;
+    float: right;
+    margin: 0 -4vw;
+    margin-left: 4vw;
+}
+.pull-right{
+    float: right;
+}
+
+.pull-left{
+    float: left;
+}
+.one-third-page{
+    width: 33.33%;
+    float: right;
+    margin: 0 -3vw;
+    margin-left: 3vw;
+    padding:0;
+}
+
+.third-forth-page{
+    width: 75%;
+    float: left;
+}
+.one-forth-page{
+    width: 25%;
+    float: left;
+}
+
 .content {
     margin-top: 7vw;
     margin-right: 15vw;
     width: 70%;
+}
+.topic-title{
+    float: right;
+    width: 10vw;
+    height: 3vw;
+    background-color: var(--light-orange);
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    border-radius: 0.75vw 0 0 0.75vw;
+    margin-top: 0.5vw;
+}
+.text-red{
+    color: red;
+}
+.calman-size{
+    width: 12vw;
+    height: 14vw;
+
+}
+.topic-title-creative{
+    width: 10vw;
+    text-align: center;
+    padding: 0vw 1vw;
+    position: absolute;
+    background-color: var(--light-orange);
+    border-top-left-radius: 0.75vw;
+    border-bottom-left-radius: 0.75vw;
+    right: 0;
+    float: right;
 }
 .page-number{
     width: 8vw;
@@ -249,6 +312,14 @@ table {
     height: 2vw;
 
 }
+.creative{
+    width: 90%;
+    padding: 1vw 2vw 2vw 5vw;
+    background-color: var(--super-light-orange);
+    float: right;
+    border: 0.2vw solid var(--dark-orange);
+    border-radius: 1vw;
+}
 .creative-input-style{
     width: 4vw;
     height: 2vw;
@@ -269,7 +340,7 @@ table {
 
 .input-style{
     width: 7vw;
-    height: 2vw;
+    height: 1vw;
     border-bottom:var(--dark-orange) solid 0.2vw;
     margin: 0vw 0;
     margin-bottom: 2vw;
@@ -287,7 +358,7 @@ table {
 }
 .input-style_lessthan{
     width: 2vw;
-    height: 2vw;
+    height: 1vw;
     border-bottom:var(--dark-orange) solid 0.2vw;
     margin: 0vw 0;
     margin-bottom: 2vw;
@@ -300,7 +371,7 @@ table {
 }
 .content-box{
     width: 90%;
-    background: white;
+    background: var(--super-light-orange);
     margin: 3vw auto;
     padding:0vw 3vw;
     position: relative;
