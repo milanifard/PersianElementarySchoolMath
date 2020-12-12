@@ -26,7 +26,7 @@
     --grid_purple_color:#a088ba;
     --grid_light_brown_color:#f19345;
     --creative_color:#e9f1d2;
-    --chocolate:#ff10f3;
+    --chocolate:#ff1053;
 }
 
 ::placeholder {
@@ -299,11 +299,18 @@ table {
     margin-right: 1.5vw;
     text-align: center;
 }
-
+.pen{
+    width: 11vw;
+    height: 11vw;
+}
 
 .guider{
-    width: 6vw;
-    height: 4vw;
+    width: 5vw;
+    height: 2vw;
+}
+.guider2{
+    width: 1vw;
+    height: 2vw;
 }
 .input-medium-style{
     width: 2vw;
@@ -355,8 +362,21 @@ table {
 }
 
 .input-style{
-    width: 7vw;
-    height: 1vw;
+    width: 10vw;
+    height: 4vw;
+    border-bottom:var(--dark-orange) solid 0.2vw;
+    margin: 0vw 0;
+    margin-bottom: 2vw;
+    text-align: center;
+    background-color: transparent;
+    border-color:var(--dark-orange);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+.input-stylemedium{
+    width: 8vw;
+    height: 4vw;
     border-bottom:var(--dark-orange) solid 0.2vw;
     margin: 0vw 0;
     margin-bottom: 2vw;
@@ -374,7 +394,7 @@ table {
 }
 .input-style_lessthan{
     width: 2vw;
-    height: 1vw;
+    height: 4vw;
     border-bottom:var(--dark-orange) solid 0.2vw;
     margin: 0vw 0;
     margin-bottom: 2vw;
@@ -660,6 +680,34 @@ form>div>span {
 
 .form__field {
     width: 5vw;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 1vw 1.5vw;
+}
+
+.form__field-large {
+    width: 10vw;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 1vw 1.5vw;
+}
+.form__field-medium {
+    width: 6vw;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 1vw 1.5vw;
+}
+.form__field-mediumlarge {
+    width: 8vw;
     background: #fff;
     color: #a3a3a3;
     font: inherit;
