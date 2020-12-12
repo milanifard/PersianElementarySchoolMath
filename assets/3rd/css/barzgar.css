@@ -27,8 +27,10 @@
     display: inline-block;
     width: 15vw;
 }
-#question-3-input-text{
-    display: inline-block;width: 15vw;
+
+#question-3-input-text {
+    display: inline-block;
+    width: 15vw;
 }
 
 .question-1-inputs {
@@ -145,6 +147,9 @@
     right: -2.3vw;
     top: 0.5vw;
     z-index: 2;
+}
+.ruler-img{
+    width: 20vw;
 }
 
 .text-config {
@@ -290,6 +295,39 @@
     left: -1vw;
     top: 0.5vw;
     z-index: 1;
+}
+
+.line{
+    background : rgb(175, 55, 117);
+    height: 0.2vw;
+    margin-left: 5vw;
+}
+
+#andazegiri-line1{
+    width: 15vw;
+    margin-right: 5vw;
+    transform: rotate(15deg);
+}
+
+#andazegiri-line2{
+    width: 10vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+
+}
+#line1-width{
+    margin: 5vw;
+}
+#line1-width{
+    margin: 5vw;
+}
+.input-config-andazegiri{
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    border-bottom: 0.15vw solid #79c2d2;
 }
 
 .andazegiri-background-rectangle {
