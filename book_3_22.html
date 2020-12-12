@@ -8,8 +8,9 @@
     <link href="http://fonts.cdnfonts.com/css/zar" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
     <title>ریاضی سوم دبستان</title>
+    <script type="text/javascript" src="./assets/3rd/js/bagherpour.js"></script>
 </head>
-<body>
+<body >
     <div class="right-border">
         <div class="background-style"></div>
         <div class="review-box">
@@ -22,7 +23,7 @@
             </div>
         </div>
         <div class="green-box">
-            <div class="light-green-part">
+            <div class="light-green-part" id="pp">
                 <h1 class="text-in-green-box">فرهنگ نوشتن</h1>
             </div>
             <div class="darker-green-part"></div>
@@ -31,26 +32,40 @@
             <div class="ans-q">
                 <div class="q-text">
                     <p class="num-color"> &nbsp-۱</p>
-                    <p dir="rtl">چرا هر دو ساعت یک زمان را نشان می دهند؟ توضیح دهید.</p> 
+                    <p dir="rtl">آیا هر دو ساعت یک زمان را نشان می دهند؟</p>
                 </div>
-                <div class="container">
-                    <textarea  placeholder="  پاسخ :" dir="rtl" ></textarea>
-                  </div>
+                <div class="radio-part"> 
+                    <label dir="rtl" for="r11" id="labelRadio11">&nbsp بله این امکان وجود دارد ،چون ساعت چهارو نیم بعدظهر همان ساعت شانزده و سی دقیقه است پس دو ساعت  یک زمان را نشان می دهند چهار همان شانزده هست عدد شش همان سی دقیقه را نشان می دهد پس فقط نحوه ی بیان متفاوت است.  </label>
+                    <input type="radio" name="answer1" id="r11" onchange="p22answerQ1()"/>
+                </div>
+                <div class="radio-part"> 
+                    <label dir="rtl" for="r12" id="labelRadio12">&nbspخیر، یکی چهارو نیم است و دیگری شانزده و سی و این دو هیچگونه ارتباطی در هیچ زمانی نمی توانند داشته باشند و امکان یکی بودن زمان وجود ندارد.</label>
+                    <input type="radio" name="answer1" id="r12" onchange="p22answerQ1()"/>
+                </div>
             </div>
             <div class="clocks">
                 <img class="digitalclock" src="./assets/3rd/images/bagherpour/digitalclock.png"/>
                 <img class="clock" src="./assets/3rd/images/bagherpour/clock.png" />
             </div>                      
         </div>
-        <div class="question-part no-padding-top">
+        <div class="question-part ">
             <div class="ans-q">
                 <div class="q-text">
                     <p class="num-color"> &nbsp-۲</p>
-                    <p dir="rtl">کاری را که ماشین رو به رو انجام می دهد، توضیح دهید.</p> 
+                    <p dir="rtl">ماشین رو به رو چه کاری را انجام می دهد؟</p> 
                 </div>
-                <div class="container">
-                    <textarea  placeholder="  پاسخ :" dir="rtl" ></textarea>
-                  </div>
+                <div class="radio-part"> 
+                    <label dir="rtl" for="r21" id="labelRadio21">&nbsp این ماشین عددی را از سمت راست به عنوان ورودی می گیرد ، ابتدا منهای چهار می کند سپس حاصل را با عدد پنج جمع میکند و از سمت چپ حاصل را به عنوان خروجی می دهد. </label>
+                    <input type="radio" name="answer1" id="r21" onchange="p22answerQ2()"/>
+                </div>
+                <div class="radio-part"> 
+                    <label dir="rtl" for="r22" id="labelRadio22">&nbsp این ماشین از سمت چپ عددی را به عنوان ورودی می گیرد سپس با عدد پنج جمع می کند سپس عدد چهار را از حاصل کم می کند و پس از آن جواب نهایی را از سمت راست به عنوان خروجی می دهد. </label>
+                    <input type="radio" name="answer1" id="r22" onchange="p22answerQ2()"/>
+                </div>
+                <div class="radio-part"> 
+                    <label dir="rtl" for="r23" id="labelRadio23">&nbsp این ماشین از سمت راست عددی را به عنوان ورودی می گیرد سپس با عدد چهار جمع می کند سپس عدد پنج را از حاصل کم می کند و پس از آن جواب نهایی را از سمت راست به عنوان خروجی می دهد. </label>
+                    <input type="radio" name="answer1" id="r23" onchange="p22answerQ2()"/>
+                </div>
             </div>          
             <img class="dastgah" src="./assets/3rd/images/bagherpour/dastah.png"/>
         </div>
@@ -62,20 +77,20 @@
             <div class="practice-q1-box">
                 <div class="q-text">
                     <p class="num-color"> &nbsp-۱</p>
-                    <pc dir="rtl">الگوهای شمارش چند تا چند تا را ادامه دهید.</p> 
+                    <pc dir="rtl">الگوهای شمارش چند تا چند تا را ادامه دهید.(برای دیدن درستی پاسخ خود، روی صفحه کلیک کنید)</p> 
                 </div>
                 <div class="counting">
                     <span class="top-margin">۴</span><span class="and"> و </span>
                     <span class="top-margin">۸</span><span class="and"> و </span>
                     <span class="top-margin">۱۲</span><span class="and"> و </span>
                     <span class="top-margin">۱۶</span><span class="and"> و </span>
-                    <input /><span class="and"> و </span>
-                    <input /><span class="and"> و </span>
-                    <input /><span class="and"> و </span>
-                    <input /><span class="and"> و </span>
-                    <input /><span class="and"> و </span>
-                    <input /><span class="and"> و </span>
-                    <input />
+                    <input id="tamrin1avali1" onchange="algooShomaresh()"/><span class="and"> و </span>
+                    <input id="tamrin1avali2" onchange="algooShomaresh()"/><span class="and"> و </span>
+                    <input id="tamrin1avali3" onchange="algooShomaresh()"/><span class="and"> و </span>
+                    <input id="tamrin1avali4" onchange="algooShomaresh()"/><span class="and"> و </span>
+                    <input id="tamrin1avali5" onchange="algooShomaresh()"/><span class="and"> و </span>
+                    <input id="tamrin1avali6" onchange="algooShomaresh()"/><span class="and"> و </span>
+                    <input id="tamrin1avali7" onchange="algooShomaresh()"/>
                   </div>
                   <div class="counting"> 
                     <span class="top-margin">۶</span><span class="and">و</span>
@@ -194,7 +209,6 @@
                 <input />            
             </div>
         </div>
-        <div class="page-number">۲۲</div>
-    </div>       
+        <div class="page-number">۲۲</div> 
 </body>
 </html>
