@@ -39,27 +39,10 @@ function changePage(page) {
 
 }
 
-function reloadPagination() {
-    console.log("reloading pagination")
-    let childs = $('.pagination').children(); //returns a HTMLCollection
 
-    for (let i = 1; i < childs.length - 1; i++) { // iterate over it
-        if ($(document).width() <= 1024) {
-            childs[i].innerHTML = current_page + i - 1;
-            console.log("your device is NOT a big screen device.");
-            childs[1].classList.add("current");
-            childs[4].classList.remove("current");
-        } else {
-            childs[i].innerHTML = current_page + i - 4;
-            childs[4].classList.add("current");
-            childs[1].classList.remove("current");
-            console.log("your device is a big device");
-        }
 
-        childs[i].onclick = function () { // attach event listener individually
-            window.location.href = `./book_3_${childs[i].innerHTML}.html`;
-        }
-    }
+function loadPagination() {
+    $(".page-number input").val(current_page)
 }
 $(document).ready(function () {
 
@@ -71,7 +54,7 @@ $(document).ready(function () {
         nextPage();
     })
 
-    reloadPagination();
+    loadPagination();
 
 });
 
@@ -82,7 +65,6 @@ function debounce(func) {
         timer = setTimeout(func, 100, event);
     };
 }
-window.addEventListener("resize", debounce(reloadPagination));
 
 
 // dark mode

@@ -6,7 +6,7 @@ $theme-colors: ("primary": $color-1,
 
 
 @import "./parsasal/bootstrap-scss/bootstrap";
-@import "./parsasal/pagination";
+// @import "./parsasal/pagination";
 
 a {
     text-decoration: none;
@@ -272,22 +272,62 @@ hr {
     margin: auto 0;
     font-size: 0.9rem;
 }
+
 .input-style {
     @extend .form-control;
 
 }
+
 .small-input-wrapper {
     @extend .col-6;
     @extend .col-xl-5;
+
     .input-style {
         @extend .form-control;
-        &::placeholder{
+
+        &::placeholder {
             font-size: 0.8rem;
         }
-    
+
     }
 }
 
+.pagination-container {
+    @extend .justify-content-center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.page-number {
+    background-color: $color-1;
+    border-radius: 2.5vw;
+    width: 5em;
+    color: white !important;
+    border: 0.35em double white;
+    font-family: Koodak;
+    padding: 0 2vw;
+    position: relative;
+
+}
+
+.page-number input {
+    background-color: $color-2;
+    border: none;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.page-number-button {
+    // background-color: $color-1;
+    // border-radius: 1.5vw;
+    width: 3em;
+    color: white;
+    // border: 0.15em solid whitesmoke;
+    // font-family: Koodak;
+    // padding: 0 1vw;
+    // position: relative;
+}
 
 
 $paper-color: #F1EDE9;

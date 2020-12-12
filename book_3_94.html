@@ -25,7 +25,7 @@
         </nav>
 
         <div id="page-body">
-            <section id="farhange-neveshtan" >
+            <section id="farhange-neveshtan">
                 <header class="section-header">
 
                     <div class="title-container">
@@ -69,7 +69,10 @@
                     <div class="info-message">
 
                         <i class="fa fa-info-circle align-self-center"></i>
-                        <p class="align-self-center d-flex"> اول یک سر نخ را روی ابتدای خط خمیده قرار می‌دهیم. سپس خط خمیده را با نخ می‌پوشانیم و وقتی به انتهای خط رسیدیم نقطه انتهایی را روی نخ مشخص می‌کنیم و دو سر نخ  را می‌گیریم و صاف می‌کنیم در آنها طول نخ صاف را اندازه می‌گیریم.طول این خط خمیده ۷ سانتی متر است.</p>
+                        <p class="align-self-center d-flex"> اول یک سر نخ را روی ابتدای خط خمیده قرار می‌دهیم. سپس خط
+                            خمیده را با نخ می‌پوشانیم و وقتی به انتهای خط رسیدیم نقطه انتهایی را روی نخ مشخص می‌کنیم و
+                            دو سر نخ را می‌گیریم و صاف می‌کنیم در آنها طول نخ صاف را اندازه می‌گیریم.طول این خط خمیده ۷
+                            سانتی متر است.</p>
                         <button type="button" class="d-flex mr-auto close">&times;</button>
                     </div>
 
@@ -77,7 +80,7 @@
 
 
             </section>
-            <section id="tamrin" >
+            <section id="tamrin">
                 <header class="section-header">
                     <div class="title-container">
 
@@ -159,7 +162,7 @@
 
                         <i class="fa fa-info-circle align-self-center"></i>
                         <p class="align-self-center">مساحت همه مثلث ها برابر ۶ است.</p>
-                        <button  type="button" class="d-flex mr-auto close">&times;</button>
+                        <button type="button" class="d-flex mr-auto close">&times;</button>
                     </div>
                     <div class="info-message">
 
@@ -261,27 +264,25 @@
                     </div>
                 </div>
             </section>
-
+            
             <div class="page-footer"></div>
+
+
         </div>
-        <div class="pagination-wrapper">
-            <div class="pagination">
-                <a class="prev page-numbers">قبلی</a>
-                <span aria-current="page" class="page-numbers">1</span>
-                <a class="page-numbers">3</a>
-                <a class="page-numbers">4</a>
-                <span aria-current="page" class="page-numbers current">1</span>
-                <a class="page-numbers">5</a>
-                <a class="page-numbers">6</a>
-                <a class="page-numbers">7</a>
-                <a class="page-numbers">8</a>
-                <a class="page-numbers">9</a>
-                <a class="page-numbers">10</a>
-                <a class="next page-numbers">بعدی</a>
+        <div class="pagination-container">
+            <div class="page-number-button">
+                <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
             </div>
-
+           
+            <div class="page-number">
+                <input type="number" onfocusout="loadPagination()">
+            </div>
+           
+            <div class="page-number-button">
+                <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+            </div>
+            
         </div>
-
 
 
     </div>
