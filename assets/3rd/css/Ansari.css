@@ -3,6 +3,13 @@
     border-left:double #46A764 10px;
     border-radius:25px 0 0 0;
 }
+
+#rightgreen{
+  border-top:double #46A764 10px;
+  border-right:double #46A764 10px;
+  border-radius:0 25px 0 0;
+}
+
 #colorLightGreen{
     background: #B6D067;
 }
@@ -52,3 +59,15 @@
 #textGreen{
     border-color: #46A764;
 }
+
+table {
+  height: 100%;
+  border: 1px solid #46A764;
+  margin: 10px;
+}
+th ,td{
+  border: 1px solid #46A764;
+  width: 75px;
+  text-align: center;
+}
+
