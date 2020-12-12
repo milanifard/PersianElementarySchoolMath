@@ -380,7 +380,12 @@ table {
     border-bottom:var(--dark-orange) solid 0.2vw;
     margin: 0vw 0;
     margin-bottom: 2vw;
-
+    text-align: center;
+    background-color: transparent;
+    border-color:var(--dark-orange);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
 }
 .question-number{
     font-family: "B Zar";
