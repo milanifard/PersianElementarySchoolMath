@@ -26,6 +26,7 @@
     --grid_purple_color:#a088ba;
     --grid_light_brown_color:#f19345;
     --creative_color:#e9f1d2;
+    --chocolate:#ff10f3;
 }
 
 ::placeholder {
@@ -84,6 +85,9 @@ span.question {
 .pull-left{
     float: left;
 }
+.pull-center{
+    float: unset;
+}
 .calculator-size{
     width: 15vw;
     height: 20vw;
@@ -116,7 +120,13 @@ span.question {
     margin-top: 10px;
     margin-right: -2.2vw;
 }
+.checktr {
+    width: 5vw;
+    height: 3.5vw;
 
+    font-size: 1vw;
+    color: deeppink;
+}
 .title>p {
     margin-right: 0.7vw;
 }
@@ -135,10 +145,70 @@ span.question {
     clear: both;
     margin: 2vw 0 ;
 }
+.half-page {
+    width: 50%;
+    float: right;
+    margin: 0 -4vw;
+    margin-left: 4vw;
+}
+.pull-right{
+    float: right;
+}
+
+.pull-left{
+    float: left;
+}
+.one-third-page{
+    width: 33.33%;
+    float: right;
+    margin: 0 -3vw;
+    margin-left: 3vw;
+    padding:0;
+}
+
+.third-forth-page{
+    width: 75%;
+    float: left;
+}
+.one-forth-page{
+    width: 25%;
+    float: left;
+}
+
 .content {
     margin-top: 7vw;
     margin-right: 15vw;
     width: 70%;
+}
+.topic-title{
+    float: right;
+    width: 10vw;
+    height: 3vw;
+    background-color: var(--light-orange);
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    border-radius: 0.75vw 0 0 0.75vw;
+    margin-top: 0.5vw;
+}
+.text-red{
+    color: red;
+}
+.calman-size{
+    width: 12vw;
+    height: 14vw;
+
+}
+.topic-title-creative{
+    width: 10vw;
+    text-align: center;
+    padding: 0vw 1vw;
+    position: absolute;
+    background-color: var(--light-orange);
+    border-top-left-radius: 0.75vw;
+    border-bottom-left-radius: 0.75vw;
+    right: 0;
+    float: right;
 }
 .page-number{
     width: 8vw;
@@ -159,7 +229,7 @@ span.question {
 a.pages{
     text-decoration: none;
     display: inline-block;
-    padding: 1vw 2vw;
+    padding: 1vw 1vw;
 }
 
 a.pages:hover {
@@ -171,7 +241,9 @@ a.pages:hover {
     margin-top: 1vw;
     margin-right: 6vw;
 }
-
+body{
+    overflow-x: hidden;
+}
 .clock_coll {
     margin-top: 1vw;
     margin-left: 6vw;
@@ -229,8 +301,21 @@ table {
 }
 
 
-
-
+.guider{
+    width: 6vw;
+    height: 4vw;
+}
+.input-medium-style{
+    width: 2vw;
+    border-bottom:var(--main_color) solid 0.1vw;
+    margin: -1vw 1vw;
+    text-align: center;
+    float: left;
+    height: 3vw;
+}
+.new-input{
+    width: 3vw;
+}
 .input-large-style{
     width: 20vw;
     border-bottom:var(--main_color) solid 0.1vw;
@@ -242,6 +327,14 @@ table {
     width: 4vw;
     height: 2vw;
 
+}
+.creative{
+    width: 90%;
+    padding: 1vw 2vw 2vw 5vw;
+    background-color: var(--super-light-orange);
+    float: right;
+    border: 0.2vw solid var(--dark-orange);
+    border-radius: 1vw;
 }
 .creative-input-style{
     width: 4vw;
@@ -263,6 +356,7 @@ table {
 
 .input-style{
     width: 7vw;
+    height: 1vw;
     border-bottom:var(--dark-orange) solid 0.2vw;
     margin: 0vw 0;
     margin-bottom: 2vw;
@@ -280,6 +374,7 @@ table {
 }
 .input-style_lessthan{
     width: 2vw;
+    height: 1vw;
     border-bottom:var(--dark-orange) solid 0.2vw;
     margin: 0vw 0;
     margin-bottom: 2vw;
@@ -292,7 +387,7 @@ table {
 }
 .content-box{
     width: 90%;
-    background: white;
+    background: var(--super-light-orange);
     margin: 3vw auto;
     padding:0vw 3vw;
     position: relative;
@@ -302,9 +397,11 @@ table {
     border-radius: 30px;
     border: 3px solid var(--dark-orange);
     background-color: var(--super-light-orange);
-    margin: auto;
+    margin-right: auto;
 }
-
+.tri{
+    color: deeppink;
+}
 .orange_box1 {
     width: 30vw;
     margin: auto;
@@ -312,11 +409,33 @@ table {
     margin-bottom: 2vw;
 }
 .orange_box4 {
-    height: 15vw;
+    height: 5vw;
     width:5vw;
     margin: auto;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.orange_box5 {
+    height: 6vw;
+    width:6vw;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    color: #0f6674;
+}
+.orange_box6 {
+    height: 5vw;
+    width:10vw;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.orange_box7 {
+    height: 10vw;
+    width:5vw;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
 }
 .orange_box2 {
     margin: auto;
@@ -389,7 +508,7 @@ form>div>span {
 .page_num_container {
     position: relative;
     float: right;
-    margin-top: -3vw;
+    margin-top: -9vw;
     margin-right: -4.5vw;
     z-index: 7;
 }
@@ -469,6 +588,7 @@ form>div>span {
     color: olive;
     font-size: 3vw;
 }
+
 .previous-page{
     display: block;
     float: right;
@@ -478,12 +598,12 @@ form>div>span {
 .previous-page a{
     text-decoration: none;
     color: var(--main_color);
-    font-size: 3vw;
+    font-size: 2vw;
 }
 .previous-page a:hover{
     text-decoration: none;
     color: olive;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 .btn--primary {
     background: var(--middle-orange);
@@ -495,6 +615,7 @@ form>div>span {
     font-size: 2vw;
     background-color: var(--middle-orange);
     color: black;
+    width: 3vw;
 }
 .thinkgboycol{
     margin-top: 1vw;
@@ -515,13 +636,14 @@ form>div>span {
 
 .next {
     font-size: 2vw;
+    width: 3vw;
     background-color: var(--middle-orange);
     color: black;
 }
 .movepages{
     margin: auto;
-    width: 50%;
-    margin-bottom: 2vw;
+    width: 20%;
+    margin-bottom: 0.5vw;
 }
 .btn--primary:hover {
     background: var(--dark-orange);

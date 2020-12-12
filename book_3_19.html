@@ -54,14 +54,23 @@
                         <td>
                             <image class="imagTagharon1" src="assets/3rd/images/baghkhani/Tagharon5.png"></image>
                             <p class="subtitle">طرح فرش را باتوجه به خط های تقارن رنگ کنید</p>
+                            <div style="margin: 2vw;">
+                                <span style="font-size:1.75vw">تعداد مربع ها</span>
+                                <input type="text" id="check_part1" value="" class="input-style" onchange="getValue(0,'check_part1')">
+                            </div>
                         </td>
                         <td>
                             <image class="imagTagharon1" src="assets/3rd/images/baghkhani/Tagharon4.png"></image>
                             <p class="subtitle">شکل پروانه را به صورت متقارن رنگ آمیزی کنید</p>
+                            <div style="margin: 2vw;">
+                                <span style="font-size:1.75vw">تعداد مربع ها</span>
+                                <input type="text" id="check_part2" value="" class="input-style" onchange="getValue(1,'check_part2')">
+                            </div>
                         </td>
                     </tr>
                 </table>
             </div>
+
             <div class="clearfix"></div>
 
             <div class="guess-box-level1">
@@ -87,6 +96,22 @@
             <div class="page-number">19</div>
 
 
+
+            <script>
+                answers = [28, 38];
+
+                function getValue(i, x) {
+                    var obj = document.getElementById(x)
+                    if (obj.value == answers[i]) {
+                        obj.style.backgroundColor = "#3b9e3a";
+                    } else if (obj.value != "") {
+                        obj.style.backgroundColor = "#d35d6e";
+                        // alert("دوباره تلاش کن:(");
+                    }
+
+
+                }
+            </script>
 
 
 </body>

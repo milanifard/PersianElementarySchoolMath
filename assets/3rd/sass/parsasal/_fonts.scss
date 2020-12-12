@@ -1,32 +1,51 @@
 @font-face {
     font-family: 'Zar';
-    src: url('/assets/fonts/Zar.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/Zar.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/Zar.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/assets/fonts/Zar.woff') format('woff'), /* Pretty Modern Browsers */
-         url('/assets/fonts/Zar.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('/assets/fonts/Zar.svg#svgFontName') format('svg'); /* Legacy iOS */
+    src: url('/assets/fonts/Zar.eot');
+    /* IE9 Compat Modes */
+    src: url('/assets/fonts/Zar.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('/assets/fonts/Zar.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('/assets/fonts/Zar.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('/assets/fonts/Zar.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('/assets/fonts/Zar.svg#svgFontName') format('svg');
+    /* Legacy iOS */
 }
 
 @font-face {
     font-family: 'ZarBold';
-    src: url('/assets/fonts/ZarBold.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/ZarBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/ZarBold.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/assets/fonts/ZarBold.woff') format('woff'), /* Pretty Modern Browsers */
-         url('/assets/fonts/ZarBold.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('/assets/fonts/ZarBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    src: url('/assets/fonts/ZarBold.eot');
+    /* IE9 Compat Modes */
+    src: url('/assets/fonts/ZarBold.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('/assets/fonts/ZarBold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('/assets/fonts/ZarBold.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('/assets/fonts/ZarBold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('/assets/fonts/ZarBold.svg#svgFontName') format('svg');
+    /* Legacy iOS */
 }
 
 @font-face {
     font-family: 'Faraz';
-    src: url('/assets/fonts/Faraz.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/Faraz.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/Faraz.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/assets/fonts/Faraz.woff') format('woff'), /* Pretty Modern Browsers */
-         url('/assets/fonts/Faraz.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('/assets/fonts/Faraz.svg#svgFontName') format('svg'); /* Legacy iOS */
+    src: url('/assets/fonts/Faraz.eot');
+    /* IE9 Compat Modes */
+    src: url('/assets/fonts/Faraz.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('/assets/fonts/Faraz.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('/assets/fonts/Faraz.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('/assets/fonts/Faraz.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('/assets/fonts/Faraz.svg#svgFontName') format('svg');
+    /* Legacy iOS */
 }
+
 @font-face {
     font-family: 'Koodak';
     src: url('/assets/fonts/KoodakBold.ttf');
@@ -35,10 +54,16 @@
 * {
     font-family: 'Zar';
     font-size: 1rem;
+
     font-weight: normal;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Koodak';
     font-weight: bold;
 }
@@ -46,7 +71,14 @@ h1,h2,h3,h4,h5,h6 {
 .hand-written {
     font-family: 'Faraz';
 }
-  
+
+
+
 html {
-    font-size: 20px;;
+    font-size: 23px;
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        font-size: 20px;
+    }
 }

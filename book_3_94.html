@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>صفحه ۹۴ - سوم ابتدایی</title>
-
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -26,7 +25,7 @@
         </nav>
 
         <div id="page-body">
-            <section>
+            <section id="farhange-neveshtan" >
                 <header class="section-header">
 
                     <div class="title-container">
@@ -34,19 +33,20 @@
                         <h5>فرهنگ نوشتن</h5>
                     </div>
 
-                    <button type="button" class="btn btn-info">بررسی پاسخ</button>
+                    <button onclick="checkFargangeNeveshtanP94()" type="button" class="btn btn-info">بررسی پاسخ</button>
 
                 </header>
                 <div class="masale">
                     <div class="row">
-                        <div class="col-md-6">
-                            <p class="before-numbering">از شما خواسته شده است که اندازه ی خط رو به رو را به کمک یک تکه نخ پیدا کنید.<br>
+                        <div class="col-lg-9 col-md-8">
+                            <p class="before-numbering">از شما خواسته شده است که اندازه ی خط رو به رو را به کمک یک تکه
+                                نخ پیدا کنید.<br>
                                 روش کار خود را توضیح دهید.
                             </p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-3 col-md-4">
                             <div class="row  justify-content-end">
-                                <div class="col-6">
+                                <div class="col-12">
                                     <img class="responsive-img" src="./assets/3rd/images/parsasal/q1-case.png"
                                         alt="measure string length art">
                                 </div>
@@ -61,14 +61,23 @@
                         <textarea placeholder="پاسخ" class="explain-textarea" name="farhange_neveshtan_input"
                             id="farhange_neveshtan_input"></textarea>
                     </div>
+                    <div class="warn-message">
+                        <i class="fa fa-exclamation-circle align-self-center"></i>
+                        <p class="align-self-center">بعضی پاسخ هات درست نبود، دوباره تلاش کن</p>
+                        <button type="button" class="d-flex mr-auto close">&times;</button>
+                    </div>
+                    <div class="info-message">
 
-
+                        <i class="fa fa-info-circle align-self-center"></i>
+                        <p class="align-self-center d-flex"> اول یک سر نخ را روی ابتدای خط خمیده قرار می‌دهیم. سپس خط خمیده را با نخ می‌پوشانیم و وقتی به انتهای خط رسیدیم نقطه انتهایی را روی نخ مشخص می‌کنیم و دو سر نخ  را می‌گیریم و صاف می‌کنیم در آنها طول نخ صاف را اندازه می‌گیریم.طول این خط خمیده ۷ سانتی متر است.</p>
+                        <button type="button" class="d-flex mr-auto close">&times;</button>
+                    </div>
 
                 </div>
 
 
             </section>
-            <section>
+            <section id="tamrin" >
                 <header class="section-header">
                     <div class="title-container">
 
@@ -78,12 +87,13 @@
                             src="./assets/3rd/images/girl_and_teacher_activity.png" alt="girl and a teacher">
                     </div>
 
-                    <button type="button" class="btn btn-info">بررسی پاسخ</button>
+                    <button type="button" onclick="checkTamrinP94()" class="btn btn-info">بررسی پاسخ</button>
                 </header>
 
                 <div class="masale padded-for-image">
                     <div class="row">
-                        <p class="before-numbering padded-for-image">محیط مثلث ها را پیدا کنید. چه نتیجه ای می گیرید؟ </p>
+                        <p class="before-numbering padded-for-image">محیط مثلث ها را پیدا کنید. چه نتیجه ای می گیرید؟
+                        </p>
                     </div>
 
                     <div style="clear: both;"></div>
@@ -99,8 +109,8 @@
                             <div class="row-centered">
 
                                 <div class="mohit_label">محیط = </div>
-                                <div class="small-input">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                <div class="small-input-wrapper">
+                                    <input type="text" placeholder="پاسخ" class="input-style triangle-answer">
                                 </div>
 
                             </div>
@@ -117,8 +127,8 @@
                             <div class="row-centered">
 
                                 <div class="mohit_label">محیط = </div>
-                                <div class="small-input">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                <div class="small-input-wrapper">
+                                    <input type="text" placeholder="پاسخ" class="input-style  triangle-answer">
                                 </div>
                             </div>
 
@@ -134,8 +144,8 @@
                             <div class="row-centered">
 
                                 <div class="mohit_label">محیط = </div>
-                                <div class="small-input">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                <div class="small-input-wrapper ">
+                                    <input type="text" placeholder="پاسخ" class="input-style triangle-answer">
                                 </div>
 
                             </div>
@@ -145,12 +155,18 @@
                         </div>
                     </div>
 
+                    <div class="info-message">
 
-                    <div class="alert alert--info align-content-center flex-wrap d-flex">
-                        
-                        <i class="fa fa-info-circle d-flex align-self-center pr-1" style="font-size: 26px;"></i>
-                        <p class="d-flex align-self-center"> نتیجه میگیریم که مساحت هر مثلث با اندازه های مشخص در اثر جا به جایی تغییر نمی‌کنه</p>
-                        <button type="button" class=" d-flex mr-auto close">&times;</button>
+                        <i class="fa fa-info-circle align-self-center"></i>
+                        <p class="align-self-center">مساحت همه مثلث ها برابر ۶ است.</p>
+                        <button  type="button" class="d-flex mr-auto close">&times;</button>
+                    </div>
+                    <div class="info-message">
+
+                        <i class="fa fa-info-circle align-self-center"></i>
+                        <p class="align-self-center"> نتیجه میگیریم که مساحت هر مثلث با اندازه های مشخص در اثر جا به
+                            جایی تغییر نمی‌کنه</p>
+                        <button type="button" class="d-flex mr-auto close">&times;</button>
                     </div>
                 </div>
                 <hr>
@@ -159,7 +175,7 @@
                         <p class="before-numbering">مساحت و محیط مستطیل ها را به دست آورید. </p>
                     </div>
                     <div class="row">
-                        <p >همان طور که میبینید، مساحت ها برابرند. محیط کدام شکل از همه کمتر است؟
+                        <p>همان طور که میبینید، مساحت ها برابرند. محیط کدام شکل از همه کمتر است؟
                             برروی آن کلیک کنید.
                         </p>
                     </div>
@@ -175,14 +191,14 @@
                             </div>
                             <div class="row small-vertical-margin">
                                 <div class="mohit_label">محیط = </div>
-                                <div class="small-input">
+                                <div class="small-input-wrapper">
                                     <input type="text" placeholder="پاسخ" class="input-style">
                                 </div>
 
                             </div>
                             <div class="row small-vertical-margin">
                                 <div class="mohit_label">مساحت = </div>
-                                <div class="small-input">
+                                <div class="small-input-wrapper">
                                     <input type="text" placeholder="پاسخ" class="input-style">
                                 </div>
                             </div>
@@ -197,14 +213,14 @@
                             </div>
                             <div class="row small-vertical-margin">
                                 <div class="mohit_label">محیط = </div>
-                                <div class="small-input">
+                                <div class="small-input-wrapper">
                                     <input type="text" placeholder="پاسخ" class="input-style">
                                 </div>
 
                             </div>
                             <div class="row small-vertical-margin">
                                 <div class="mohit_label">مساحت = </div>
-                                <div class="small-input">
+                                <div class="small-input-wrapper">
                                     <input type="text" placeholder="پاسخ" class="input-style">
                                 </div>
                             </div>
@@ -221,14 +237,14 @@
                             </div>
                             <div class="row small-vertical-margin">
                                 <div class="mohit_label">محیط = </div>
-                                <div class="small-input">
+                                <div class="small-input-wrapper">
                                     <input type="text" placeholder="پاسخ" class="input-style">
                                 </div>
 
                             </div>
                             <div class="row small-vertical-margin">
                                 <div class="mohit_label">مساحت = </div>
-                                <div class="small-input">
+                                <div class="small-input-wrapper">
                                     <input type="text" placeholder="پاسخ" class="input-style">
                                 </div>
                             </div>
@@ -237,7 +253,12 @@
                         </div>
                     </div>
 
+                    <div class="info-message">
 
+                        <i class="fa fa-info-circle align-self-center"></i>
+                        <p class="align-self-center">محیط مستطیل میانی از همه کم تر است</p>
+                        <button type="button" class="d-flex mr-auto close">&times;</button>
+                    </div>
                 </div>
             </section>
 

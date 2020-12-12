@@ -5,9 +5,8 @@ $theme-colors: ("primary": $color-1,
 );
 
 
-@import "./parsasal/scss/bootstrap";
-@import "./parsasal/_pagination.scss";
-@import "./parsasal/_go_top.scss";
+@import "./parsasal/bootstrap-scss/bootstrap";
+@import "./parsasal/pagination";
 
 a {
     text-decoration: none;
@@ -149,11 +148,13 @@ ol {
         position: relative;
         display: block;
         padding-inline-start: 0.5em;
-        font-size: 1.06rem;  
-        &:before{
+        font-size: 1.06rem;
+
+        &:before {
             display: none;
         }
-        &.before-numbering:before{
+
+        &.before-numbering:before {
             display: block;
         }
     }
@@ -202,6 +203,7 @@ section {
 
         .title-container {
             display: flex;
+
             .indent-square {
                 background-color: $color-2;
                 color: $color-2;
@@ -215,6 +217,7 @@ section {
                 margin: 0.3em 1em;
                 color: white;
             }
+
             .section-header-image {
                 display: none;
             }
@@ -226,7 +229,7 @@ section {
                     right: -2.8vw;
                     top: 1.3vh;
                     z-index: 2;
-                    max-height: 18vh;   
+                    max-height: 18vh;
                     max-width: 20vw;
                 }
             }
@@ -263,22 +266,29 @@ hr {
 }
 
 .mohit_label {
-    @extend .col-5;
-    @extend .col-sm-5;
+    @extend .col-6;
+    @extend .col-xl-5;
     text-align: end;
     margin: auto 0;
-
+    font-size: 0.9rem;
 }
-
-.small-input {
-    @extend .col-5;
-    @extend .col-sm-5;
-}
-
 .input-style {
     @extend .form-control;
 
 }
+.small-input-wrapper {
+    @extend .col-6;
+    @extend .col-xl-5;
+    .input-style {
+        @extend .form-control;
+        &::placeholder{
+            font-size: 0.8rem;
+        }
+    
+    }
+}
+
+
 
 $paper-color: #F1EDE9;
 $paper-line: #94ACD4;
@@ -333,17 +343,20 @@ $paper-line: #94ACD4;
 
 
 }
-.farhange-khandan-container{
+
+.farhange-khandan-container {
     padding: 2vh 5vw 5vh 5vw;
-    .title-container{
-        margin : 2.4em 0 1em 0;
+
+    .title-container {
+        margin: 2.4em 0 1em 0;
 
     }
-    .farhange-khandan{
+
+    .farhange-khandan {
         background-color: #fcd8cb;
         border: 4px solid #c82128;
         border-radius: 2.4em;
-        padding: 0 1e,;
+        padding: 0 1e, ;
     }
 }
 
@@ -355,7 +368,8 @@ $paper-line: #94ACD4;
     border-radius: 0.6em;
     border-color: $color-1;
 }
-#tangram{
+
+#tangram {
     height: 30em;
     width: 100%;
     display: block;
