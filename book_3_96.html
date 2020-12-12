@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>صفحه ۹۶ - سوم ابتدایی</title>
-    <link rel="stylesheet" href="./assets/3rd/css/bootstrap-rtl.min.css">
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/3rd/sass/parsasal/tangram_styles.css">
+    <script src="./assets/3rd/sass/parsasal/jquery.min.js"></script>
+    <script src="./assets/3rd/sass/parsasal/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw==" crossorigin="anonymous"></script>
     <script src="assets/3rd/sass/parsasal/parsasal.js"></script>
+
     <meta name="author" content="Parsa Salehipour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -15,13 +18,116 @@
 <body>
 
     <div class="container-full">
-
-        <nav class="navbar navbar-dark bg-primary" id="main-header">
+        <div id="myAnchor" style="display: block;"></div>
+        <a href="#myAnchor" class="go-top"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+        <nav id="main-header">
             <a type="submit" class="next-page btn btn-default">صفحه بعدی</a>
             <a type="submit" class="prev-page btn btn-default">صفحه قبلی</a>
         </nav>
+        <div id="page-body">
 
+            <section>
+                <header class="section-header">
+                    <div class="title-container">
+                        <div class="indent-square"></div>
+                        <h5>سرگرمی و معما</h5>
+
+                    </div>
+
+                    <button type="button" class="btn btn-info">بررسی پاسخ</button>
+                </header>
+
+                <div class="masale">
+                    <div class="row">
+                        <p>شکل های زیر با ۷ قطعه تانگرام درست شده اند. سعی کنید این شکل ها را بسازید. در دو شکل قطعات
+                            مشخص اند و شما فقط باید آن‌ها را کنار هم قرار دهید اما در سه شکل دیگر محل ۷ قطعه را هم باید
+                            تشخیص دهید.</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-11">
+                            <img src="./assets/3rd/images/parsasal/origami_shapes.png" alt="origami shapes"
+                                class="responsive-img">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="blockTray">
+
+                            <div id="square" class="block"></div>
+                            <div id="triangle1" class="block"></div>
+                            <div id="triangle2" class="block"></div>
+                            <div id="triangle3" class="block"></div>
+                            <div id="triangle4" class="block"></div>
+                            <div id="triangle5" class="block"></div>
+                            <div id="parallelogram" class="block"></div>
+
+                        </div>
+
+                        <div id="canvas">
+                            <div id="instruction">
+                                <h1>تانگرام</h1>
+                                <p >برای شروع یکی از شکل های بالا رو بکش اینجا</p>
+                                <p >برای چرخوندن شکل ها می‌تونی کلیک کنی</p>
+                            </div>
+                        </div>
+                        <script src="./assets/3rd/sass/parsasal/tangram_script.js"></script>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="farhange-khandan-container">
+                <div class="farhange-khandan">
+                    <header class="section-header">
+                        <div class="title-container ">
+                            <div class="indent-square"></div>
+                            <h5>فرهنگ خواندن</h5>
+                        </div>
+
+                    </header>
+                    <div class="masale">
+                        <p >‫علی‪ ،‬پدر امین و اکبر است‪.‬او می خواهد یک قطعه زمین کشاورزی خود را به
+                            طور مساوی‬
+                            ‫بین دو پسرش تقسیم کند‪ .‬برای این کار‪ ،‬او ابتدا باید مساحت این زمین را محاسبه کند اما
+                            زمین‬
+                            ‫صاف نیست و پستی و بلندی هایی دارد‪ .‬امین که در دبیرستان درس می خواند‪ ،‬برای ّ‬
+                            ‫حل این مشکل‬
+                            ‫به پدرش پیشنهادی می دهد‪ .‬او می گوید‪« :‬ابتدا زمین را به مثلث های مختلف تقسیم کنید‪
+                            .‬اگر‬
+                            ‫مساحت مثلث ها را با هم جمع کنید‪ ،‬مساحت ّ‬
+                            ‫کل زمین به دست می آید‪ ».‬پدر می پرسد‪« :‬مساحت‬
+                            ‫مثلث را چگونه باید پیدا کنیم؟»‬
+                            ‫امین می گوید‪« :‬محاسبه ی مساحت مثلث را سال آینده یاد می گیرم ا ّما می دانم که به روش‬
+                            ‫مساحی می گویند‪ .‬در گذشته نیز از همین روش برای پیدا کردن مساحت‬
+                            ‫تبدیل یک زمین به مثلث ّ‬
+                            ‫زمین ها استفاده میکرده اند»‪.‬‬</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="page-footer"></div>
+        </div>
+        <div class="pagination-wrapper">
+            <div class="pagination">
+                <a class="prev page-numbers">قبلی</a>
+                <span aria-current="page" class="page-numbers">1</span>
+                <a class="page-numbers">3</a>
+                <a class="page-numbers">4</a>
+                <span aria-current="page" class="page-numbers current">1</span>
+                <a class="page-numbers">5</a>
+                <a class="page-numbers">6</a>
+                <a class="page-numbers">7</a>
+                <a class="page-numbers">8</a>
+                <a class="page-numbers">9</a>
+                <a class="page-numbers">10</a>
+                <a class="next page-numbers">بعدی</a>
+            </div>
+
+        </div>
     </div>
+
 
 </body>
 

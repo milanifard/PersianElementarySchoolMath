@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/baghkhani.css">
-    <title>صفحه 10-ریاضی سوم ابتدایی</title>
+    <title>صفحه 19-ریاضی سوم ابتدایی</title>
 </head>
 
 <body>
@@ -54,14 +54,23 @@
                         <td>
                             <image class="imagTagharon1" src="assets/3rd/images/baghkhani/Tagharon5.png"></image>
                             <p class="subtitle">طرح فرش را باتوجه به خط های تقارن رنگ کنید</p>
+                            <div style="margin: 2vw;">
+                                <span style="font-size:1.75vw">تعداد مربع ها</span>
+                                <input type="text" id="check_part1" value="" class="input-style" onchange="getValue(0,'check_part1')">
+                            </div>
                         </td>
                         <td>
                             <image class="imagTagharon1" src="assets/3rd/images/baghkhani/Tagharon4.png"></image>
                             <p class="subtitle">شکل پروانه را به صورت متقارن رنگ آمیزی کنید</p>
+                            <div style="margin: 2vw;">
+                                <span style="font-size:1.75vw">تعداد مربع ها</span>
+                                <input type="text" id="check_part2" value="" class="input-style" onchange="getValue(1,'check_part2')">
+                            </div>
                         </td>
                     </tr>
                 </table>
             </div>
+
             <div class="clearfix"></div>
 
             <div class="guess-box-level1">
@@ -77,16 +86,32 @@
             <div class="clearfix"></div>
             <div class="page-navigator">
                 <div class="previous-page">
-
-                    <a href="book_3_20.html">صفحه بعد </a>
+                    <a href="book_3_18_n.html">
+                        < صفحه قبل</a>
                 </div>
                 <div class="next-page">
-                    <a href="book_3_18.html"> صفحه قبل</a>
+                    <a href="book_3_20.html">صفحه بعد ></a>
                 </div>
             </div>
-            <div class="page-number">10</div>
+            <div class="page-number">19</div>
 
 
+
+            <script>
+                answers = [28, 38];
+
+                function getValue(i, x) {
+                    var obj = document.getElementById(x)
+                    if (obj.value == answers[i]) {
+                        obj.style.backgroundColor = "#3b9e3a";
+                    } else if (obj.value != "") {
+                        obj.style.backgroundColor = "#d35d6e";
+                        // alert("دوباره تلاش کن:(");
+                    }
+
+
+                }
+            </script>
 
 
 </body>
