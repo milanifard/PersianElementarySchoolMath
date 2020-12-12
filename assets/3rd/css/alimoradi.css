@@ -116,7 +116,13 @@ span.question {
     margin-top: 10px;
     margin-right: -2.2vw;
 }
+.checktr {
+    width: 5vw;
+    height: 3.5vw;
 
+    font-size: 1vw;
+    color: deeppink;
+}
 .title>p {
     margin-right: 0.7vw;
 }
@@ -159,7 +165,7 @@ span.question {
 a.pages{
     text-decoration: none;
     display: inline-block;
-    padding: 1vw 2vw;
+    padding: 1vw 1vw;
 }
 
 a.pages:hover {
@@ -263,6 +269,7 @@ table {
 
 .input-style{
     width: 7vw;
+    height: 2vw;
     border-bottom:var(--dark-orange) solid 0.2vw;
     margin: 0vw 0;
     margin-bottom: 2vw;
@@ -280,6 +287,7 @@ table {
 }
 .input-style_lessthan{
     width: 2vw;
+    height: 2vw;
     border-bottom:var(--dark-orange) solid 0.2vw;
     margin: 0vw 0;
     margin-bottom: 2vw;
@@ -302,9 +310,11 @@ table {
     border-radius: 30px;
     border: 3px solid var(--dark-orange);
     background-color: var(--super-light-orange);
-    margin: auto;
+    margin-right: auto;
 }
-
+.tri{
+    color: deeppink;
+}
 .orange_box1 {
     width: 30vw;
     margin: auto;
@@ -312,11 +322,33 @@ table {
     margin-bottom: 2vw;
 }
 .orange_box4 {
-    height: 15vw;
+    height: 5vw;
     width:5vw;
     margin: auto;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.orange_box5 {
+    height: 6vw;
+    width:6vw;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    color: #0f6674;
+}
+.orange_box6 {
+    height: 5vw;
+    width:10vw;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.orange_box7 {
+    height: 10vw;
+    width:5vw;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
 }
 .orange_box2 {
     margin: auto;
@@ -389,7 +421,7 @@ form>div>span {
 .page_num_container {
     position: relative;
     float: right;
-    margin-top: -3vw;
+    margin-top: -9vw;
     margin-right: -4.5vw;
     z-index: 7;
 }
@@ -469,6 +501,7 @@ form>div>span {
     color: olive;
     font-size: 3vw;
 }
+
 .previous-page{
     display: block;
     float: right;
@@ -478,12 +511,12 @@ form>div>span {
 .previous-page a{
     text-decoration: none;
     color: var(--main_color);
-    font-size: 3vw;
+    font-size: 2vw;
 }
 .previous-page a:hover{
     text-decoration: none;
     color: olive;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 .btn--primary {
     background: var(--middle-orange);
@@ -495,6 +528,7 @@ form>div>span {
     font-size: 2vw;
     background-color: var(--middle-orange);
     color: black;
+    width: 3vw;
 }
 .thinkgboycol{
     margin-top: 1vw;
@@ -515,13 +549,14 @@ form>div>span {
 
 .next {
     font-size: 2vw;
+    width: 3vw;
     background-color: var(--middle-orange);
     color: black;
 }
 .movepages{
     margin: auto;
-    width: 50%;
-    margin-bottom: 2vw;
+    width: 20%;
+    margin-bottom: 0.5vw;
 }
 .btn--primary:hover {
     background: var(--dark-orange);
