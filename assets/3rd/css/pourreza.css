@@ -682,3 +682,13 @@ a:hover {
     font-size: 2vw ;
     font-family: ZAR;
 }
+#textBox1{
+    background-color: #e1f4fd;
+    position: absolute;
+    margin-top: 5vw;
+    margin-left: 28vw;
+    border-color: #555
+}
+#teextBox1{
+    position: absolute; margin-left:15vw ;  rows:"10" ; cols:"30";
+}
