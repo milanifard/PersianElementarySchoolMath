@@ -240,7 +240,9 @@ a.pages:hover {
     margin-top: 1vw;
     margin-right: 6vw;
 }
-
+body{
+    overflow-x: hidden;
+}
 .clock_coll {
     margin-top: 1vw;
     margin-left: 6vw;
