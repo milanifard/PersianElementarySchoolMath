@@ -26,7 +26,7 @@
     --grid_purple_color:#a088ba;
     --grid_light_brown_color:#f19345;
     --creative_color:#e9f1d2;
-    --chocolate:#ff10f1;
+    --chocolate:#ff10f3;
 }
 
 ::placeholder {
@@ -301,8 +301,21 @@ table {
 }
 
 
-
-
+.guider{
+    width: 6vw;
+    height: 4vw;
+}
+.input-medium-style{
+    width: 2vw;
+    border-bottom:var(--main_color) solid 0.1vw;
+    margin: -1vw 1vw;
+    text-align: center;
+    float: left;
+    height: 3vw;
+}
+.new-input{
+    width: 3vw;
+}
 .input-large-style{
     width: 20vw;
     border-bottom:var(--main_color) solid 0.1vw;
