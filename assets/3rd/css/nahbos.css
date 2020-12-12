@@ -112,11 +112,10 @@
 }
 
 .that-ridiculous-red-parts-in-title{
-    height: 1vw;
+    height: 1.5vw;
 
     background-color: var(--red_level2);
     color: var(--red_level2);
-    border-style: solid;
 
     position: absolute;
     right: 34vw;
@@ -296,7 +295,7 @@
 
     position: relative;
     padding: 1.5vw;
-    margin: 18vw 1.5vw 5vw 7vw;
+    margin: 18vw 1.5vw 6vw 7vw;
 }
 .guess-box-text-right{
     background-color: var(--yellow_level3_border);
@@ -418,4 +417,15 @@
     content: "";
     position: absolute;
     display: block;
+}
+
+.page-no-input{
+
+    width: 20vw;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0vw;
+    margin: auto;
 }
