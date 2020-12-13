@@ -148,6 +148,13 @@
     top: 0.5vw;
     z-index: 2;
 }
+.homework-img{
+    width: 13vw;
+    position: absolute;
+    right: 4vw;
+    top: 2vw;
+    z-index: 2;
+}
 .ruler-img{
     width: 20vw;
 }
@@ -425,4 +432,22 @@
     bottom: 30vw;
     left: 25vw;
 }
-
+#page33-question1{
+    padding-right: 20vw;
+    padding-top: 3vw;
+}
+#page33-question1-tozih{
+    width: 50vw;
+}
+.page33-question2{
+    max-width: 80vw;
+    position: relative;
+    left: 5vw;
+    border: 0.3vw solid rgb(175, 55, 117);
+    border-radius: 3vw;
+    background-color: white;
+    margin-bottom: 2.5vw;
+}
+#page33-question2{
+    display: inline-block;
+}
