@@ -1,4 +1,8 @@
 *{padding: 0px; margin: 0px; }
+@font-face
+{
+    font-family:persianNum; src:url('../../../fonts/Farsi-Digits/Samim-FD.ttf'); font-weight:normal;
+}
 body{overflow-x: hidden;}
 .right-border{
     width: 90vw;
@@ -120,15 +124,6 @@ body{overflow-x: hidden;}
     height: 180px;
     padding-top:30px;
 }
-/* 
- .container {
-    width: 100%;
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-    border: none;
-    margin-top: 10px;
-  }  */
   .page-number{
     background-color: #44b869;
     border-radius: 2.5vw;
@@ -142,16 +137,6 @@ body{overflow-x: hidden;}
     bottom: -0.5vw;
     right: -5vw;
 }
-  /* .container textarea {
-    resize: none;
-    width: 100%;
-    height: 130px;
-    line-height: 4ch;
-    background-image: linear-gradient(transparent, transparent calc(4ch - 2px), #9bcce3 0px);
-    background-size: 100% 4ch;
-    border: none;
-    font-size: 18px;
-  } */
 
 .dastgah{
     width: 400px;
@@ -203,6 +188,7 @@ input{
     margin-top: -5px;
     height: 30px;
     color: red;
+    font-family:persianNum;
     
 }
 .counting{
@@ -273,9 +259,9 @@ input{
 }
 @media only screen and (max-width:1080px)
 {
-     .clocks{flex-direction: row-reverse; margin: auto;}
-     .digitalclock{padding-top:60px; margin: auto;}
-     .dastgah{padding:0px; margin: auto;} 
+    .clocks{flex-direction: row-reverse; margin: auto;}
+    .digitalclock{padding-top:60px; margin: auto;}
+    .dastgah{padding:0px; margin: auto;} 
     .ans-q{width:80%}
 
     .calculator{display: none;}
@@ -314,13 +300,12 @@ input{
 @media only screen and (max-width:450px){
     .review-box{top:-30px}
     .clock{width:100px; height:100px}
-     .digitalclock{width:100px; height:50px; padding-top: 0px;}
-     .dastgah{width:220px; height:130px} 
-     .q-text{font-size: 15px;}
-     .radio-part{font-size:13px;}
-     /* .container textarea{font-size: 15px;} */
-     .momDaughter{height: 120px; margin-top:-120px; position: relative; right: 50px;}
-     .counting{
+    .digitalclock{width:100px; height:50px; padding-top: 0px;}
+    .dastgah{width:220px; height:130px} 
+    .q-text{font-size: 15px;}
+    .radio-part{font-size:13px;}
+    .momDaughter{height: 120px; margin-top:-120px; position: relative; right: 50px;}
+    .counting{
         font-size: 15px;
     }
     input{
