@@ -70,10 +70,10 @@ input[type=number] {
 }
 
 .page-left-border {
-    width: 90vw;
+    width: 73vw;
     max-width: 100%;
     border: 0.8vw double var(--orange_level2);
-
+    padding: 2vw 7vw 5vw;
     margin: 6vw 0 0 10vw;
     border-right: none;
     border-top-left-radius: 5vw;
@@ -167,6 +167,36 @@ input[type=number] {
     z-index: 1;
 
     float: right;
+}
+
+.exercise_item {
+    position: absolute;
+    right: 3vw;
+}
+
+.exercise_item .exercise_title {
+    background-color: var(--orange_level1);
+    border-radius: 1.5vw;
+
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.5vw;
+    color: white;
+
+    position: relative;
+    right: -10vw;
+    z-index: 1;
+
+    padding-right: 8.5vw;
+    padding-left: 2vw;
+
+    float: right;
+}
+
+.exercise_item .exercise-cover {
+    float: right;
+    z-index: 2;
+    position: relative;
 }
 
 .text {
@@ -407,6 +437,19 @@ input[type=number] {
 
 #content_110 #complete_Q2_questions td{
     width: 50%;
+}
+
+/*** PAGE 110 ***/
+#content_111 #Q6_exercise{
+    width: 100%;
+}
+
+#content_111 #Q6_exercise td{
+    direction: ltr;
+}
+
+#content_111 #Q6_exercise input{
+    width: 5vw;
 }
 /*
 aewf
