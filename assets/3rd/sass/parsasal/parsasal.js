@@ -16,9 +16,12 @@ $('a').click(function () {
 });
 
 // pagination
-let numberPattern = /\d+/g;
-let url_numbers = window.location.href.match(numberPattern);
-let current_page = parseInt(url_numbers[url_numbers.length - 1])
+function getCurrentPageFromURL(){
+    let numberPattern = /\d+/g;
+    let url_numbers = window.location.href.match(numberPattern);
+    return parseInt(url_numbers[url_numbers.length - 1])
+}
+let current_page = getCurrentPageFromURL()
 console.log("current page : " + current_page)
 
 function prevPage() {
@@ -38,8 +41,6 @@ function changePage(page) {
     window.location.href = `./book_3_${page}.html`;
 
 }
-
-
 
 function loadPagination() {
     $(".page-number input").val(current_page)
