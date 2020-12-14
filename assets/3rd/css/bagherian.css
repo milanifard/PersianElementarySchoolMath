@@ -35,7 +35,8 @@ body{
     border:2px solid #201a74;
     border-radius: 3vh;
     background-color: white;
-    width: 20vw;
+    width: auto;
+    height: auto;
     position: relative;
     bottom: -15vh;
     background-image: linear-gradient(to right,#8ef0f3 , #ffffff);
@@ -45,7 +46,8 @@ body{
     text-decoration: none;
     font-size: 4vh;
     color: #201a74;
-    padding:2vh ;
+    padding: 1vh ;
+    margin-bottom: 1vh;
     transition: all 0.3s;
 }
 .link a:hover{
@@ -62,6 +64,35 @@ body{
       color: #5cb6cd;
   }
 
+  .review-box{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-box .review{
+    background-color: #5cb6cd;
+    border-radius: 2.5vw;
+}
+
+.review-box .rec{
+    width: 0.5vw;
+    height: 1.2vw;
+    background-color: #3728b9;
+    margin: auto;
+}
+
+.review-box .review .review-text
+{
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+
 /* ------------------------------------------------------------------------ */
 /* -----------------------        page 28       --------------------------- */
 /*------------------------------------------------------------------------- */
@@ -72,9 +103,8 @@ body .content{
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
-    padding-right: 10vh ;
-    width: 80%;
-    height: 80%;
+    width: auto;
+    height: auto;
     margin-right: 20%;
     margin-bottom: 20%;
     border : 1.5vh  double #5cb6cd;
@@ -105,14 +135,7 @@ body .content{
 
 body .content .activity1{  
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 70vw;
-    margin-left: 20vh;
-    margin-right: 0vh;
-    margin-bottom: 20vh;
-    margin-top: 0vh;
+    margin-bottom: 5vw;
 }
 
 
@@ -127,10 +150,8 @@ body .content .activity1 .activityTitle{
 body .content .activity1 .activityTitle p {
     background-color: #5cb6cd;
     color: #ffffff;
-    width: 7vw;
-    height: 5vh;
     font-size: 3vh;
-    text-align: center;
+    text-align: right;
     margin-top: 2px;
     padding: 5px 12px;
     border-radius: 15px 0px 0px 15px;
@@ -138,40 +159,57 @@ body .content .activity1 .activityTitle p {
 
 body .content .activity1 .activityTitle img{
     width: 8vw;
-    height: 20vh;
+    height: 15vw;
     border:none;
 }
 
-body .content .activity1 .picture  img{
-    border-radius: 10px;
-    border: 2PX solid #78c2d1;
-    width: 20vw;
+body .content .activity1 .activityContent{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 1vh 2vh;
 }
+
+
+body .content .activity1 .activityContent .question{
+    display: flex;
+    flex-direction: column;
+}
+
+body .content .activity1 .activityContent .question .answer{
+    display: flex;
+}
+
+body .content .activity1 .picture{
+    width: 40%;
+}
+
+body .content .activity1 .picture  img{
+    width: 100%;
+    border: 5px solid #0c9dc3;
+    border-radius: 15px;
+}
+
 @media screen and (max-width: 800px) {
 
     body .content .activity1{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+       flex-direction: column;
+       justify-content: stretch;
+       align-items: center;
+       margin: 3vh 0vh;
     }   
 
-    body .content .activity{
-        margin-bottom: 25vw;
-    }   
+    body .content .activity1 .activityContent{
+        width: 80%;
+    }
+
+    body .content .activity1 .picture{
+        width: 80%;
+    }
 
     body .content .activity1 .picture  img{
-        width: 50vw;
+        border: 2px solid #0c9dc3;
     }
-
-    body .content .activity1 .activityTitle img{
-        width: 15vw;
-        margin-bottom: 2vh;
-    }
-
-    body .content .activity1 .activityTitle p {  
-        width: 10vw;
-    }
-
   }
 
 body .content .activity1 .activity  {
@@ -184,15 +222,15 @@ body .content .activity1 .activity  span{
     color: #39c1f0;
 }
 
-body .content .activity1 .activity input,
+body .content .activity1 .activityContent .question .answer input,
 body .content .activity2  input,
 body .content .countAndSay input{
     width: 10vw;
     height: 3vh;
     border: none;
     border-bottom: 1px solid #39c1f0;
-    margin: 2vh;
-    padding: 2vh ;
+    margin: 1vh;
+    padding: 1vh ;
     text-align: center;
     z-index: 1;
 }
@@ -207,7 +245,6 @@ body .content .activity2{
 body .content .activity2 p{
     width: 100%;
     height: 100%;
-    font-size: 3.5vh;
 }
 
 body .content .activity2 span{
@@ -255,9 +292,11 @@ body .content .countAndSay .title .second{
 
  body .content .countAndSay .cube {
      display: flex;
-    
      justify-content:center;
 }
+
+
+
 @media screen and (max-width: 800px) {
     body .content .countAndSay .cube  {
         flex-wrap: wrap;
@@ -413,6 +452,7 @@ body .content29 .last{
     display: flex;
     flex-direction: column;
     margin-top: 10vh;
+   
 }
 
 body .content29 .last p{
@@ -571,7 +611,9 @@ body .content30 .question4{
     margin-top: 3vh;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
+
 
 body .content30 .question4 .cubes{
     display: flex;
@@ -583,6 +625,26 @@ body .content30 .question4 .cubes .cube{
     justify-content: space-between;
     align-items: center;
 }
+
+body .content30 .question4 .cubes .cube .correctAnswer{
+    background-color: #37ee56;
+    border-radius: 5px;
+    padding: 1px 3px;
+    display: none;
+  }
+  
+  body .content30 .question4 .cubes .cube .wrongAnswer{
+     background-color: #ce2f24;
+     color: #ffffff;
+     border-radius: 5px;
+     padding: 1px 3px;
+     display: none;
+  }
+
+body .content30 .question4 .cubes .cube img{
+    width: 60%;
+}
+
 @media screen and (max-width: 900px) {
     body .content30 .question4 .cubes{
         flex-direction: column;
@@ -618,6 +680,7 @@ body .content30 .reason{
     border: 0.5vh solid #79bed1;
     border-radius: 5vh;
     margin: 4vh 1vh 4vh 10vh;
+    width: 100%;
 }
 
 body .content30 .reason .logo{
@@ -650,6 +713,16 @@ body .content30 .reason .shapes .shape{
     flex: 16.5%;
 }
 
+body .content30 .reason .shapes .shape p{
+    background-color: #ffffff;
+    border-radius: 2vh;
+    margin: 1vh 1vh;
+    padding: 2vh;
+}
+
+body .content30 .reason .shapes .shape img{
+    width: 70%;
+}
 
 body .content30 .reason .answer{
    margin: 2vh 5vw;
@@ -662,10 +735,12 @@ body .content30 .reason .answer textarea{
 @media screen and (max-width: 1500px) {
     
     body .content30 .reason .shapes{
-         flex-direction: column;
+         /* flex-direction: column; */
+         flex-wrap: wrap;
          padding-left: 10vw;
          padding-right: 10vw;
     }
+
 
     body .content30 .reason .answer textarea {
         margin-top: 3vh;
@@ -687,6 +762,7 @@ body .content30 .reason .answer textarea{
         justify-content: center;
         text-align: center;
     }
+
 }
 
 

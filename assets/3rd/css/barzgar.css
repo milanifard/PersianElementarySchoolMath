@@ -148,6 +148,13 @@
     top: 0.5vw;
     z-index: 2;
 }
+.homework-img{
+    width: 13vw;
+    position: absolute;
+    right: 4vw;
+    top: 2vw;
+    z-index: 2;
+}
 .ruler-img{
     width: 20vw;
 }
@@ -370,4 +377,77 @@
     margin: auto;
     border: none;
     border-bottom: 0.15vw solid rgb(128, 190, 204);
+}
+#pitcher{
+    width: 10vw;
+    margin-left: 20vw;
+    position: absolute;
+    top: 2vw;
+}
+#cup-of-tea{
+    width: 10vw;
+    position: absolute;
+    left: 5vw;
+    top:10vw;
+}
+#match{
+    width: 10vw;
+    position: absolute;
+    left: 5vw;
+    top:17vw;
+}
+#house{
+    width: 25vw;
+    position: absolute;
+    top:22vw;
+    left: 2vw;
+}
+#box{
+    width: 10vw;
+    position: absolute;
+    top:37vw;
+    left: 25vw;
+}
+#truck{
+    width: 30vw;
+    position: absolute;
+    top:35vw;
+    right: 18vw;
+}
+#dah-riali{
+    width: 8vw;
+    position: absolute;
+    bottom: 30vw;
+    left: 8vw;
+}
+#sad-riali{
+    width: 9vw;
+    position: absolute;
+    bottom: 30vw;
+    left: 16vw;
+}
+#hezar-riali{
+    width: 10vw;
+    position: absolute;
+    bottom: 30vw;
+    left: 25vw;
+}
+#page33-question1{
+    padding-right: 20vw;
+    padding-top: 3vw;
+}
+#page33-question1-tozih{
+    width: 50vw;
+}
+.page33-question2{
+    max-width: 80vw;
+    position: relative;
+    left: 5vw;
+    border: 0.3vw solid rgb(175, 55, 117);
+    border-radius: 3vw;
+    background-color: white;
+    margin-bottom: 2.5vw;
+}
+#page33-question2{
+    display: inline-block;
 }
