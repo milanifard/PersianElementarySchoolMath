@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="MohadeseJabbari">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/Jabbari.css">
+    <title>ریاضی سوم دبستان صفحه‌ی ۴۸</title>
+</head>
+
+<body>
+    <div class="border">
+
+        <img class="activity-image" src="assets/3rd/images/girl_and_teacher_activity.png" alt="activity_image">
+        <span class="activity-text">تمرین</span>
+
+        <div id= "q1" class="question">
+            <span>
+                ۱- در هر یک از شکل های زیر، به طور تقریبی چه کسری از لیوان پر شده است؟        
+            </span>
+            <div class= "container-box">
+                <img class="container-image" src="assets/3rd/images/Jabbari/container1.png" alt="container_image">
+                <img class="container-image" src="assets/3rd/images/Jabbari/container2.png" alt="container_image">
+                <img class="container-image" src="assets/3rd/images/Jabbari/container3.png" alt="container_image">
+                <img class="container-image" src="assets/3rd/images/Jabbari/container4.png" alt="container_image">
+            </div>
+            <div class="container-box">
+                <input type="text" id="q1_input1" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input1')">
+                <input type="text" id="q1_input2" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input2')">
+                <input type="text" id="q1_input3" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input3')">
+                <input type="text" id="q1_input4" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input4')">
+            </div>
+            
+        </div>
+        <div id= "q2" class= "question CircleBlue_red">
+            <span>۲-کسری که هر دایره نشان میدهد را بنویسید و به همان اندازه از مستطیل را رنگ کنید.</span>
+            <table class = "table_circle">
+                <tr>
+                    <td>
+                        <input type="text" id="q2_input1" value="" class="input_style " onchange="checkvalue(0,'q2_input1')">
+                    </td>
+                    <td>
+                        <input type="text" id="q2_input1" value="" class="input_style " onchange="checkvalue(0,'check_part1')">
+                    </td>
+                    <td>
+                        <img class="img_width10" src="assets/3rd/images/Jabbari/2blueCircle1.png" alt="blueCircle_image">
+                    </td>
+                    <td id="Separator_col">
+                        <input type="text" id="q2_input2" value="" class="input_style " onchange="checkvalue(0,'check_part1')">
+                    </td>
+                    <td>
+                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                    </td>
+                    <td>
+                        <img class="img_width10" src="assets/3rd/images/Jabbari/2redCircle1.png" alt="redCircle_image">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                    </td>
+                    <td>
+                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                    </td>
+                    <td>
+                        <img class="img_width10" src="assets/3rd/images/Jabbari/2blueCircle2.png" alt="blueCircle_image">
+                    </td>
+                    <td id="Separator_col">
+                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                    </td>
+                    <td>
+                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                    </td>
+                    <td>
+                        <img class="img_width10" src="assets/3rd/images/Jabbari/2redCircle2.png" alt="redCircle_image">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                    </td>
+                    <td>
+                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                    </td>
+                    <td>
+                        <img class="img_width10" src="assets/3rd/images/Jabbari/2blueCircle3.png" alt="blueCircle_image">
+                    </td>
+                    <td id="Separator_col">
+                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                    </td>
+                    <td>
+                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                    </td>
+                    <td>
+                        <img class="img_width10" src="assets/3rd/images/Jabbari/2redCircle3.png" alt="redCircle_image">
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="q2" class = "question">
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            ۳- طول مورچه ای را با خط کش اندازه گرفته ایم.
+                            <br>
+                            برای اینکه مورچه بهتر دیده شود، آن را زیر ذره‌بین گذاشته ایم. 
+                            <br>
+                            طول مورچه 
+                            <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                            میلی متر است.
+                            <br>
+                            طول مورچه 
+                           <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                            قسمت از ۱۰ قسمت مساوی است.
+                           <br>
+                           طول مورچه چه کسری از یک سانتی متر است؟
+                           <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+           
+           
+                        </div> 
+                    </td>
+                    <td id= "Separator_col">
+                        <img class="img_ant" src="assets/3rd/images/Jabbari/3ant.png" alt="ant_image">
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div id= "q2" class="question">
+            ۴- هر شکل به طور تقریبی چه کسری را نشان می‌دهد؟
+            
+            <div class= "container-box">
+                <input type="text" id="q4_input1" value="" class="input_style" onchange="checkvalue(0,'q4_input1')">
+
+                <img class="img_width10" src="assets/3rd/images/Jabbari/4orangeCircle.png" alt="circle">
+                <input type="text" id="q2_input2" value="" class="input_style" onchange="checkvalue(0,'q2_input2')">
+
+                <img class="shape" src="assets/3rd/images/Jabbari/4Shape.png" alt="shape">
+            </div>
+        </div>
+        <div id= "q2" class="question">
+            ۵-یک نوار کاغذی درست کنید. آن‌را با تا کردن به ۲، ۳، ۴ قسمت مساوی تقسیم کنید. روش کار خود را توضیح دهید.
+            <textarea type="text" id="textBox1" class = "textarea" rows="3" cols="60" ></textarea>
+        </div>
+            
+        <span class ="number_of_page">
+            ۴۸
+        </span>
+        
+    </div>
+
+</body>
+
+
+</html>

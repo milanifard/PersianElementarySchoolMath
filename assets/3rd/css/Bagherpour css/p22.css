@@ -1,0 +1,329 @@
+*{padding: 0px; margin: 0px; }
+@font-face
+{
+    font-family:persianNum; src:url('../../../fonts/Farsi-Digits/Samim-FD.ttf'); font-weight:normal;
+}
+body{overflow-x: hidden;}
+.right-border{
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double #44b869;
+    margin: 6vw -10vw 0 0;
+    border-left: none;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: absolute;
+    background-color: white;
+}
+.background-style{
+    width: 100vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, #44b869, #44b869 1vw, #bbd75e 0vw, #bbd75e 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+}
+.review-box{
+    width: 15vw;
+    height: 5vw;
+    margin:auto;
+    display: flex;
+    position: relative;
+    top: -3vw;
+}
+
+.review{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bbd75e;
+    width: 14vw;
+    height: 5vw;   
+    border-radius: 2.5vw;
+}
+
+.rec{
+    width: 0.5vw;
+    height: 1.2vw;
+    background-color: #3e69eb;
+    margin: auto;
+}
+
+.review-text
+{
+    color:white;
+    text-align: center;
+    -webkit-text-stroke: 0.1vw black;
+    font-family: Koodak;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+.green-box
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.darker-green-part{
+    width: 3vw;
+    height: 70px;
+    background-color: #87c765;
+}
+.light-green-part{
+    display: flex;
+    justify-content: flex-end;
+    width: 13vw;
+    height: 70px;
+    background-color: #bbd75e;
+    border-top-left-radius: 2.5vw;
+    border-bottom-left-radius: 2.5vw;
+    align-items: center;
+}
+.text-in-green-box{
+    text-align: right;
+    padding-right: 1vw ;
+    font-family: Koodak;
+    font-size:2vw;
+}
+.question-part{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding-right:4vw ;
+    padding-top:50px;
+}
+.ans-q{
+    width: 55%;
+}
+.q-text{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 25px;
+    padding:20px 0 10px 0;
+}
+.num-color
+{
+    color:#3ab54a;
+}
+.clocks{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+     margin: auto;
+}
+.digitalclock{
+    width: 200px;
+    height: 100px;
+    padding-top:100px;
+}
+
+.clock{
+    width: 180px;
+    height: 180px;
+    padding-top:30px;
+}
+  .page-number{
+    background-color: #44b869;
+    border-radius: 2.5vw;
+    border: 0.9vw double white;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Koodak;
+    color: white;
+    padding: 0 3vw;
+    position: absolute;
+    bottom: -0.5vw;
+    right: -5vw;
+}
+
+.dastgah{
+    width: 400px;
+    height: 150px;
+    margin:auto;
+    padding-top:60px;
+}
+.practise-box
+{
+    display: flex;
+    background-color: #87c765;
+    border-top-left-radius: 1.5vw;
+    border-bottom-left-radius: 1.5vw;
+     width: 14vw; 
+    height: 70px;
+    align-items:center;
+    margin-left: auto;
+    margin-top:50px;    
+}
+.practise-text{
+    padding-left:15% ;
+    color: white;
+    font-family: Koodak;
+}
+.pic-and-q1-pracrice{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: flex-start;
+    
+}
+.momDaughter{
+    height: 300px;
+    margin-top: -80px;
+    margin-right: -70px;
+}
+.practice-q1-box{
+    margin-left: 15%;
+    width:70%;
+    margin-right: 5%;
+    
+}
+
+input{
+    border: none; 
+    border-bottom: 2px solid #9bcce3; 
+    width: 60px;
+    font-size: 25px;
+    margin-top: -5px;
+    height: 30px;
+    color: red;
+    font-family:persianNum;
+    
+}
+.counting{
+    display: inline-flex;
+    font-size: 30px;
+    flex-wrap: wrap;
+    margin-bottom:50px;
+    margin-right: 10%;
+}
+.and{
+    color: #f0595b;
+    margin-right: 2px;
+}
+
+.calculator{
+    width: 120px;
+    margin-left: 5%;
+}
+.count-olgoo-q2{
+    margin-left: 15%;
+    margin-top: -50px;
+}
+.q3-sum-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+     width: 55%;
+     margin-left: 15%; 
+}
+.no-bottom-margin{
+    margin-bottom:0px
+}
+.left-cal{
+    justify-content: space-between;
+}
+.right-float{float: right;}
+.radio-part{display: flex; float: right; padding-top: 3vw; font-size:20px;}
+ @media only screen and (max-width:1160px)
+{  
+    .clocks{margin: auto;}
+    .clock{padding-top: 0px;}
+    .digitalclock{padding-top: 0px;}
+    .dastgah{ margin-left : 0px;}
+    .calculator{margin-left: 1%;}
+    .practice-q1-box{margin-right: 3%;}
+    .review-box{
+        width: 150px;
+        height: 55px;
+        top:-35px;
+    }
+    .review{
+        width: 140px;
+        height: 55px;   
+    }
+    
+    .rec{
+        width: 5px;
+        height: 15px;
+    }
+    .review-text
+    {
+        -webkit-text-stroke: 1px black;
+        font-weight: bold;
+        font-size: 30px;
+    }
+     .clocks{flex-direction: column-reverse; } 
+}
+@media only screen and (max-width:1080px)
+{
+    .clocks{flex-direction: row-reverse; margin: auto;}
+    .digitalclock{padding-top:60px; margin: auto;}
+    .dastgah{padding:0px; margin: auto;} 
+    .ans-q{width:80%}
+
+    .calculator{display: none;}
+    
+    .momDaughter{
+        height: 200px;
+        margin-top: -50px;
+        margin-right: -50px;
+    }
+    .practise-text{
+        padding-left:15% ;
+        font-size: 17px;
+       
+    }
+    input{
+        margin-top:0px;
+    }
+
+    .counting{
+        display: inline-flex;
+        font-size: 25px;
+        flex-wrap: wrap;
+        margin-bottom:0px;
+        margin-top:50px;
+        margin-right: 10%;
+    }
+    .q-text{
+        font-size:20px;
+    }
+    .radio-part{font-size:18px;}
+    .and{
+        margin-top:5px;
+    }
+    .top-margin{margin-top:5px}
+} 
+@media only screen and (max-width:450px){
+    .review-box{top:-30px}
+    .clock{width:100px; height:100px}
+    .digitalclock{width:100px; height:50px; padding-top: 0px;}
+    .dastgah{width:220px; height:130px} 
+    .q-text{font-size: 15px;}
+    .radio-part{font-size:13px;}
+    .momDaughter{height: 120px; margin-top:-120px; position: relative; right: 50px;}
+    .counting{
+        font-size: 15px;
+    }
+    input{
+        font-size: 15px;
+        width:30px;
+        height: 18px;
+    }
+    .and{margin-top: 12px;}
+    .top-margin{
+        margin-top: 8px;
+    }
+    .text-in-green-box{font-size: 15px;}
+    .light-green-part{width:90px; height:50px;}
+    .darker-green-part{height:50px;}
+    .counting{margin-top: 10px;}
+    .count-olgoo-q2{margin-top: 10px;}
+    .practise-box{width:190px}
+    .question-part{padding-top: 0px;}
+
+}
+

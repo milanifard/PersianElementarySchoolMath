@@ -1,0 +1,129 @@
+.background-style {
+  width: 100vw;
+  height: 54.3vw;
+  background-image: repeating-linear-gradient(0deg, #ffdd2b, #ffdd2b 1vw, #fecc4e 0vw, #fecc4e 2.5vw);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -12vw;
+  z-index: -1;
+}
+
+.left-border {
+  width: 90vw;
+  max-width: 100%;
+  border: 0.8vw double var(#ffdd2b);
+  margin: 6vw 0 0 10vw;
+  border-right: none;
+  border-top-left-radius: 5vw;
+  border-bottom-left-radius: 5vw;
+  position: relative;
+  background-color: #fff;
+}
+
+.right-border {
+  width: 90vw;
+  max-width: 100%;
+  border: 0.8vw double var(--yellow_level2_border);
+  margin: 6vw 10vw 0 0;
+  border-left: none;
+  border-top-right-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+  position: relative;
+  background-color: white;
+}
+
+.title-style {
+  background-color: #fecc4e;
+  border-radius: 2vw;
+  text-align: center;
+  font-family: Koodak;
+  font-size: 3vw;
+  color: #000;
+  padding: 0 2vw;
+  position: absolute;
+  right: 35vw;
+  left: 35vw;
+  top: -3.3vw;
+}
+
+.that-ridiculous-red-parts-in-title {
+  height: 1vw;
+  background-color: #c8242b;
+  color: #c8242b;
+  border-style: solid;
+  position: absolute;
+  right: 34vw;
+  left: 34vw;
+  top: -1.2vw;
+}
+
+.activity-text {
+  background-color: #fecc4e;
+  border-radius: 1.5vw;
+  text-align: center;
+  font-family: Koodak;
+  font-size: 2.5vw;
+  color: #fff;
+  padding: 0 5vw 0 3vw;
+  position: absolute;
+  right: 8vw;
+  top: 2.5vw;
+  z-index: 1;
+}
+
+.activity-image {
+  width: 13vw;
+  position: absolute;
+  right: -2.3vw;
+  top: 0.5vw;
+  z-index: 2;
+}
+
+.table-container {
+  background-color: #ffd61e;
+  border-radius: 8px;
+  width: 50%;
+  max-width: 100%;
+  height: 80px;
+  margin: auto auto;
+  padding: 3px;
+}
+.table-container .table {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  border: solid 2px #e55726;
+  margin: 10px 50px;
+  top: 5px;
+  border-collapse: collapse;
+}
+.table-container .table .table-row .table-data {
+  border: solid 2px #e55726;
+  font-family: Zar;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Zar";
+  src: url("/assets/fonts/Zar.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/Zar.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Zar.woff2") format("woff2"), url("/assets/fonts/Zar.woff") format("woff"), url("/assets/fonts/Zar.ttf") format("truetype"), url("/assets/fonts/Zar.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "ZarBold";
+  src: url("/assets/fonts/ZarBold.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/ZarBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/ZarBold.woff2") format("woff2"), url("/assets/fonts/ZarBold.woff") format("woff"), url("/assets/fonts/ZarBold.ttf") format("truetype"), url("/assets/fonts/ZarBold.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "Faraz";
+  src: url("/assets/fonts/Faraz.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Faraz.woff2") format("woff2"), url("/assets/fonts/Faraz.woff") format("woff"), url("/assets/fonts/Faraz.ttf") format("truetype"), url("/assets/fonts/Faraz.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}

@@ -1,0 +1,28 @@
+.left-border{
+    width: 90vw;
+    max-width: 100%;
+
+    border: 0.8vw double var($yellow_level2_border);
+
+    margin: 6vw 0 0 10vw;
+    border-right: none;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    position: relative;
+    background-color: $white;
+}
+
+.right-border{
+
+    width: 90vw;
+    max-width: 100%;
+
+    border: 0.8vw double var(--yellow_level2_border);
+
+    margin: 6vw 10vw 0 0;
+    border-left: none;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
