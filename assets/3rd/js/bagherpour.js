@@ -1,28 +1,39 @@
 function p22answerQ1() {   
     if (document.getElementById('r12').checked) {
-        document.getElementById("labelRadio12").style.color = "red";
-        document.getElementById("labelRadio11").style.color = "black";
+        makeRed("labelRadio12");
+        makeBlack("labelRadio11");
     }
     else if (document.getElementById('r11').checked) {
-        document.getElementById("labelRadio11").style.color = "green";
-        document.getElementById("labelRadio12").style.color = "black";
+        makeGreen("labelRadio11");
+        makeBlack("labelRadio12");
     }
 }
+function makeGreen(id){    
+    document.getElementById(id).style.color = "green";
+ }
+ function makeRed(id){    
+    document.getElementById(id).style.color = "red";
+ }
+ function makeBlack(id){    
+    document.getElementById(id).style.color = "black";
+ }
+
+
 function p22answerQ2(){
     if (document.getElementById('r21').checked) {
-        document.getElementById("labelRadio21").style.color = "red";
-        document.getElementById("labelRadio22").style.color = "black";
-        document.getElementById("labelRadio23").style.color = "black";
+        makeRed("labelRadio21");
+       makeBlack("labelRadio22");
+       makeBlack("labelRadio23");
     }
     else if (document.getElementById('r22').checked) {
-        document.getElementById("labelRadio21").style.color = "black";
-        document.getElementById("labelRadio22").style.color = "green";
-        document.getElementById("labelRadio23").style.color = "black";
+        makeBlack("labelRadio21");
+        makeGreen("labelRadio22");
+        makeBlack("labelRadio23");
     }
     else if (document.getElementById('r23').checked) {
-        document.getElementById("labelRadio21").style.color = "black";
-        document.getElementById("labelRadio22").style.color = "black";
-        document.getElementById("labelRadio23").style.color = "red";
+        makeBlack("labelRadio21");
+        makeBlack("labelRadio22");
+        makeRed("labelRadio23");
     }
 }
 
@@ -34,27 +45,31 @@ function checkInputTextCorrect(id , value , answer ){
         makeRed(id);
     }
 }
- function makeGreen(id){    
-    document.getElementById(id).style.color = "green";
- }
- function makeRed(id){    
-    document.getElementById(id).style.color = "red";
- }
 
  function p23answerQ7(){
     if (document.getElementById('r71').checked) {
-        document.getElementById("labelRadio71").style.color = "green";
-        document.getElementById("labelRadio72").style.color = "black";
-        document.getElementById("labelRadio73").style.color = "black";
+        makeGreen("labelRadio71");
+        makeBlack("labelRadio72");
+        makeBlack("labelRadio73");
     }
     else if (document.getElementById('r72').checked) {
-        document.getElementById("labelRadio71").style.color = "black";
-        document.getElementById("labelRadio72").style.color = "red";
-        document.getElementById("labelRadio73").style.color = "black";
+        makeBlack("labelRadio71");
+        makeRed("labelRadio72");
+        makeBlack("labelRadio73");
     }
     else if (document.getElementById('r73').checked) {
-        document.getElementById("labelRadio71").style.color = "black";
-        document.getElementById("labelRadio72").style.color = "black";
-        document.getElementById("labelRadio73").style.color = "red";
+        makeBlack("labelRadio71");
+        makeBlack("labelRadio72");
+        makeRed("labelRadio73");
+    } 
+}
+
+function p23answerQ9(inputId , labelId, ans){
+    if (document.getElementById(inputId).checked){
+        if(ans == 0)
+            makeRed(labelId);
+        else if(ans == 1)
+            makeGreen(labelId);
     }
+    else makeBlack(labelId);
 }
