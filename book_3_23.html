@@ -8,46 +8,64 @@
     <link href="http://fonts.cdnfonts.com/css/zar" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
     <title>ریاضی سوم دبستان</title>
+    <script type="text/javascript" src="./assets/3rd/js/bagherpour.js"></script>
 </head>
 <body>
     <div class="left-border">
         <div class="background-style"></div>
         <div class="q-text" >
             <p class="num-color"> &nbsp-۴</p>
-            <p >.جدول زیر را کامل کنید</p> 
+            <div>
+                <p dir="rtl">جدول زیر را کامل کنید.</p>
+                <p dir="rtl">(فقط بین کلمات ورودی فاصله بگذارید.)</p>
+            </div>           
         </div>
         <div class="outer" dir="rtl">
-            <div class="inner"><input /></div>
+            <div class="inner"><input id="table1" onchange="checkInputTextCorrect(this.id , this.value, '9:30')"/></div>
             <div class="inner"><p class="table-element">بیست و ربع</p></div>
             <div class="inner"><p class="table-element"> ۱۹:۲۵</p></div>
             <div class="inner"><img src="./assets/3rd/images/bagherpour/time.png" class="time"></div>
-            <div class="inner"><input /></div>
-            <div class="inner"><input /></div>
+            <div class="inner"><input id="table2" onchange="checkInputTextCorrect(this.id , this.value, 'دو و ربع')"/></div>
+            <div class="inner"><input id="table3" onchange="checkInputTextCorrect(this.id , this.value, 'هفت')"/></div>
             <div class="inner"><p class="table-element">۱۵</p></div>
             <div class="inner"><p class="table-element">زمان</p></div>
             <div class="inner"><p class="table-element">نه و نیم</p></div>
-            <div class="inner"><input /></div>
-            <div class="inner"><input /></div>
-            <div class="inner"><input /></div>
+            <div class="inner"><input id="table4" onchange="checkInputTextCorrect(this.id , this.value, '20:15')"/></div>
+            <div class="inner"><input id="table5" onchange="checkInputTextCorrect(this.id , this.value, 'نونزده و بیست و پنج')"/></div>
+            <div class="inner"><input id="table6" onchange="checkInputTextCorrect(this.id , this.value, 'سیزده و هجده')"/></div>
             <div class="inner"><p class="table-element">02:15</p></div>
             <div class="inner"><p class="table-element">۷</p></div>
-            <div class="inner"><input /></div>
+            <div class="inner"><input id="table7" onchange="checkInputTextCorrect(this.id , this.value, 'پانزده')"/></div>
             <div class="inner"><p class="table-element">بعدظهر</p></div>
         </div>
+        <p  class="q-text">(سوالات زیر را با عدد پاسخ دهید)</p>
         <div class="q-text">
             <p class="num-color"> &nbsp-۵</p>
             <p dir="rtl">یک برنامه ی رادیویی در ساعت ۱۶ پخش می شود. زمان پخش این برنامه ساعت چند بعد از ظهر است؟</p> 
-            <input class="top-margin"/>
+            <input class="top-margin" id="q5" onchange="checkInputTextCorrect(this.id , this.value, 4)"/>
         </div>
         <div class="q-text">
             <p class="num-color"> &nbsp-۶</p>
             <p dir="rtl">زنگ مدرسه ای ساعت ۵ بعد از ظهر می خورد. در چه ساعتی زنگ می خورد؟</p> 
-            <input class="top-margin"/>
+            <input class="top-margin" id="q6" onchange="checkInputTextCorrect(this.id , this.value, 17)"/>
         </div>
         <div class="q-text">
             <p class="num-color"> &nbsp-۷</p>
             <p dir="rtl">جاهای خالی را پر کنید. بین ردیف های اول و سوم چه رابطه ای وجود دارد؟</p> 
-            <input class="top-margin"/>
+        </div>
+        <div class="radio-part">
+            <div> 
+                <label dir="rtl" for="r71" id="labelRadio71"> = </label>
+                <input type="radio" name="answer7" id="r71" onchange="p23answerQ7()"/>
+            </div>
+            <div> 
+                <label dir="rtl" for="r72" id="labelRadio72"> ردیف بالا کوچکتر </label>
+                <input type="radio" name="answer7" id="r72" onchange="p23answerQ7()"/>
+            </div>
+            <div> 
+                <label dir="rtl" for="r73" id="labelRadio73"> ردیف پایین کوچکتر </label>
+                <input type="radio" name="answer7" id="r73" onchange="p23answerQ7()"/>
+            </div>
         </div>
         <div class="recs">
             <div class="rec"><p>۱۴</p></div>

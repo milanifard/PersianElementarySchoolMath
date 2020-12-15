@@ -1,4 +1,9 @@
 *{margin:0px; padding:0px;}
+@font-face
+{
+    font-family:persianNum; src:url('../../../fonts/Farsi-Digits/Samim-FD.ttf'); font-weight:normal;
+}
+body{overflow-x: hidden;}
 .left-border{
     width: 89vw;
     max-width: 100%;
@@ -46,7 +51,7 @@
 .inner{
     border:0.2vw solid #b41777;
     background-color: white;
-    width: 8vw;
+    width: 8.5vw;
     height: 6vw; 
     display: flex;
     justify-content: center;
@@ -82,7 +87,8 @@
     width: 7.8vw;
     font-size: 1.5vw;
     height: 2.5vw;
-    color:gray;
+    color:red;
+   font-family:persianNum; ;
   
 }
 .top-margin{margin-top:-0.4vw;}
@@ -107,6 +113,7 @@
     justify-content: space-between;
     width:50vw;
     margin:2vw auto 2vw;
+    clear: both;
 
 }
 .fletcher{
@@ -151,12 +158,21 @@
 .checkbox{width:1vw; margin: 0; height: auto;}
 .shape{width: 11vw; height: auto;}
 .shape1{width: 8vw; height: auto;}
+.radio-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top:0.8vw;
+    font-size:1.8vw;
+    padding-right:10vw ;
+} 
 @media only screen and (max-width:800px){
     .shapes{width: 50vw;}
     .checkbox{width:10px;}
     .shape{width: 80px;}
     .shape1{width: 80px;}
     .q-text{font-size: 10px;}
+    .radio-part{font-size: 10px;}
     .table-element{font-size: 10px;}
     input{font-size: 10px; height: 11px;}
     .rec{font-size: 10px;}

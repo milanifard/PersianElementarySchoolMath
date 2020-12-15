@@ -40,3 +40,21 @@ function checkInputTextCorrect(id , value , answer ){
  function makeRed(id){    
     document.getElementById(id).style.color = "red";
  }
+
+ function p23answerQ7(){
+    if (document.getElementById('r71').checked) {
+        document.getElementById("labelRadio71").style.color = "green";
+        document.getElementById("labelRadio72").style.color = "black";
+        document.getElementById("labelRadio73").style.color = "black";
+    }
+    else if (document.getElementById('r72').checked) {
+        document.getElementById("labelRadio71").style.color = "black";
+        document.getElementById("labelRadio72").style.color = "red";
+        document.getElementById("labelRadio73").style.color = "black";
+    }
+    else if (document.getElementById('r73').checked) {
+        document.getElementById("labelRadio71").style.color = "black";
+        document.getElementById("labelRadio72").style.color = "black";
+        document.getElementById("labelRadio73").style.color = "red";
+    }
+}
