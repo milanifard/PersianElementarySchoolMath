@@ -364,7 +364,7 @@
 
             let color = $(sector).style.backgroundColor;
 
-            switch (color) {
+            switch (color.trim()) {
 
                 case "var(--blue_level1)":
                     check_count.blue += 1;
@@ -389,12 +389,17 @@
         }
 
         else if (Object.values(check_count).reduce((a, b) => a + b, 0) == Object.values(ans).reduce((a, b) => a + b, 0) &&
-            Object.values(check_count).reduce((a, b) => a + b, 0) == 10 &&
-            color_picker_item != null){
+                 Object.values(check_count).reduce((a, b) => a + b, 0) == 10){
 
-            Q_feedback.textContent = "بیشتر دقت کن عزیزم. غلط حل کردی.";
+            Q_feedback.textContent = "دقت کن عزيزم. دوباره تلاش کن.";
             Q_feedback.classList.add("shaking-animation");
             Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level3');
+        }
+        else if (Object.values(check_count).reduce((a, b) => a + b, 0) < 10 && color_picker_item != null){
+            Q_feedback.textContent = "ابتدا جدول بالا را پر کن.";
+            Q_feedback.classList.add("shaking-animation");
+            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level3');
+
         }
     }
 
@@ -403,7 +408,7 @@
 
         $(parent).style.backgroundColor = $(id).style.backgroundColor;
 
-        switch ($(id).style.backgroundColor) {
+        switch (($(id).style.backgroundColor).trim()) {
 
             case "var(--red_level3)":
                 Q1_ans.red += 1;
@@ -459,7 +464,7 @@
     function guess_checker(id) {
         let btn = $(id).value;
         if (btn == "right"){
-            $("guess_box_feedback").textContent = "دقت کن عزيزم. غلط حدس زدي.";
+            $("guess_box_feedback").textContent = "دقت کن عزيزم. دوباره تلاش کن.";
             $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
             $("guess_box_feedback").classList.add("shaking-animation");
         }

@@ -262,7 +262,7 @@
         for(const sector of sectors_id) {
             let color = $(sector).style.backgroundColor;
 
-            switch (color) {
+            switch (color.trim()) {
                 case "var(--yellow_level3_border)":
                     check_count.yellow += 1;
                     break;
@@ -291,7 +291,7 @@
 
         else if (Object.values(check_count).reduce((a, b) => a + b, 0) == Object.values(ans).reduce((a, b) => a + b, 0)){
 
-            Q_feedback.textContent = "بیشتر دقت کن عزیزم. غلط حل کردی.";
+            Q_feedback.textContent = "دقت کن عزيزم. دوباره تلاش کن.";
             Q_feedback.classList.add("shaking-animation");
             Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
         }
@@ -300,7 +300,7 @@
     function guess_checker(id) {
         let btn = $(id).value;
         if (btn == "right"){
-            $("guess_box_feedback").textContent = "دقت کن عزيزم. غلط حدس زدي.";
+            $("guess_box_feedback").textContent = "دقت کن عزيزم. دوباره تلاش کن.";
             $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
             $("guess_box_feedback").classList.add("shaking-animation");
         }
