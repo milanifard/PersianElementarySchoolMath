@@ -7,6 +7,10 @@ var answerPack3=['12','11'];
 var answerPack3FA=['۱۲','۱۱'];
 var answerPack4=['107','7','10','10'];
 var answerPack4FA=['۱۰۷','۷','۱۰','۱۰'];
+var answerPack5=['9'];
+var answerPack5FA=['۹'];
+var answerPack6=['400'];
+var answerPack6FA=['۴۰۰'];
 
 function test1_26(index,id) {
     var obj = $(id);
@@ -44,11 +48,34 @@ function test3_26(index,id){
 
 function test1_27(index,id){
     var obj = $(id);
-    if (obj.value === answerPack4[index] || obj.value===answerPack4FA[index]) {
+    if (obj.value === answerPack5[index] || obj.value===answerPack5FA[index]) {
         window.alert("فوقع العاده بود!");
         obj.style.backgroundColor = "#67b56f";
     } else {
         obj.style.backgroundColor = "#db3a2e";
         window.alert("غلط کردی !");
+    }
+}
+
+function test2_27(index,id){
+    var obj = $(id);
+    if (obj.value === answerPack5[index] || obj.value===answerPack5FA[index]) {
+        window.alert("درست بود!");
+        obj.style.backgroundColor = "#67b56f";
+    } else {
+        obj.style.backgroundColor = "#db3a2e";
+        window.alert("دوباره تلاش کن!");
+    }
+}
+
+
+function test3_27(index,id){
+    var obj = $(id);
+    if (obj.value === answerPack6[index] || obj.value===answerPack6FA[index]) {
+        window.alert("درست بود!");
+        obj.style.backgroundColor = "#67b56f";
+    } else {
+        obj.style.backgroundColor = "#db3a2e";
+        window.alert("دوباره تلاش کن!");
     }
 }
