@@ -1,3 +1,8 @@
+@font-face
+{
+    font-family:persianNum; src:url('../../../fonts/Farsi-Digits/Samim-FD.ttf'); font-weight:normal;
+}
+body{overflow-x: hidden;}
 .right-border{
     width: 90vw;
     max-width: 100%;
@@ -109,6 +114,7 @@
     background-size: 100% 4ch;
     border: none;
     font-size: 1vw;
+    font-family:persianNum;
   }
   input{
     border: none; 
@@ -117,6 +123,7 @@
     font-size: 1vw;
     height: 2.5vw;
     background-color: transparent;
+    font-family:persianNum;
 }
 .page-number{
     background-color: #44b869;
