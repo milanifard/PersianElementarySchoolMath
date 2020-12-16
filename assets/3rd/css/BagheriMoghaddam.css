@@ -125,6 +125,9 @@ p1{
     margin-right: 4vw;
 
 }
+.NumberColor{
+    color: #79c2d2;
+}
 /***********************ID*****************************/
 /*********General***********/
 #BackGroundRight{
@@ -292,6 +295,22 @@ p1{
     padding-top: 28vw;
     padding-right: 4vw;
     margin-top: 3vw;
+}
+#textBox20_27{
+    /*style="position: absolute; margin-left: 70vw; margin-top: 4vw"*/
+    position: absolute;
+    margin-left: 70vw;
+    margin-top: 4vw;
+}
+#textBox21_27{
+    /*style="position: absolute; margin-left: 50vw; margin-top: 1vw" */
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: 1vw;
+
+}
+#SekePic{
+    padding-right: 5vw;
 }
 /****************** mein *********************************/
 .page-topic{
