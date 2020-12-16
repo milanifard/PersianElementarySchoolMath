@@ -46,10 +46,24 @@ p1{
     width: 50vw;
     height: 8vw;
     position: relative;
-    top: 80vw ;
+    top: 94vw ;
     font-size: 2vw;
     padding: 1vw;
+
     margin-bottom: 10vw;
+    margin-left: 10vw;
+}
+.Page25_Footer{
+    direction: rtl;
+
+    width: 5vw;
+    height: 8vw;
+    position: relative;
+    top: 84vw ;
+    font-size: 2vw;
+    padding: 1vw;
+
+    margin-bottom: 1vw;
     margin-left: 10vw;
 }
 .MyChartClass{
