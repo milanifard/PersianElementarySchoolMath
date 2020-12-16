@@ -234,7 +234,38 @@ p1{
     margin-top: 38.1vw;
 }
 
+#Q2{
+    /*style="padding-top: -4vw; padding-right: 2vw;"*/
+    padding-top: -4vw;
+    padding-right: 2vw;
+}
+#Q3{
+    /*style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw*/
+    padding-top: 10vw;
+    padding-right: 2vw;
+    maring-top:8vw;
+}
+#Q3-a{
+    /*style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw"*/
+    padding-top:6vw;
+    padding-right: 15vw;
+    margin-top: 3vw;
+}
+#textBox15{
+    /*style="font-size:2vw ; position: absolute; margin-left:1.2vw ; margin-top: 1vw" */
+    font-size: 2vw;
+    position: absolute;
+    margin-left: 1.2vw;
+    margin-top: 1vw;
 
+}
+#textBox16{
+    /*style="font-size:2vw ; position: absolute; margin-left:1.2vw ; margin-top: 1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: 1.2vw;
+    margin-top: 1vw;
+}
 /**********Page 27*************/
 #Question-1{
     padding-top: 2vw;
