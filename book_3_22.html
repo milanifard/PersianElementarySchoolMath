@@ -1,11 +1,213 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="ParastooBagherpour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/Bagherpour css/p22.css">
+    <link href="http://fonts.cdnfonts.com/css/zar" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
     <title>ریاضی سوم دبستان</title>
+    <script type="text/javascript" src="./assets/3rd/js/bagherpour.js"></script>
 </head>
-<body>
+<body >
+    <div class="right-border">
+        <div class="background-style"></div>
+        <div class="review-box">
+            <div class="rec">
+            </div>
+            <div class="review">
+                <h1 class="review-text">مرور فصل</h1>
+            </div>
+            <div class="rec">
+            </div>
+        </div>
+         <div class="green-box">
+            <div class="light-green-part" >
+                <h1 class="text-in-green-box">فرهنگ نوشتن</h1>
+            </div>
+            <div class="darker-green-part"></div>
+        </div> 
+        <div class="question-part">
+            <div class="ans-q">
+                <div class="q-text">
+                    <p class="num-color"> &nbsp-۱</p>
+                    <p dir="rtl">آیا هر دو ساعت یک زمان را نشان می دهند؟</p>
+                </div>
+                <div class="radio-part"> 
+                    <label dir="rtl" for="r11" id="labelRadio11">&nbsp بله این امکان وجود دارد ،چون ساعت چهارو نیم بعدظهر همان ساعت شانزده و سی دقیقه است پس دو ساعت  یک زمان را نشان می دهند چهار همان شانزده هست عدد شش همان سی دقیقه را نشان می دهد پس فقط نحوه ی بیان متفاوت است.  </label>
+                    <input type="radio" name="answer1" id="r11" onchange="p22answerQ1()"/>
+                </div>
+                <div class="radio-part"> 
+                    <label dir="rtl" for="r12" id="labelRadio12">&nbspخیر، یکی چهارو نیم است و دیگری شانزده و سی و این دو هیچگونه ارتباطی در هیچ زمانی نمی توانند داشته باشند و امکان یکی بودن زمان وجود ندارد.</label>
+                    <input type="radio" name="answer1" id="r12" onchange="p22answerQ1()"/>
+                </div>
+            </div>
+            <div class="clocks">
+                <img class="digitalclock" src="./assets/3rd/images/bagherpour/digitalclock.png"/>
+                <img class="clock" src="./assets/3rd/images/bagherpour/clock.png" />
+            </div>                      
+        </div>
+        <div class="question-part ">
+            <div class="ans-q">
+                <div class="q-text">
+                    <p class="num-color"> &nbsp-۲</p>
+                    <p dir="rtl">ماشین رو به رو چه کاری را انجام می دهد؟</p> 
+                </div>
+                <div class="radio-part"> 
+                    <label dir="rtl" for="r21" id="labelRadio21">&nbsp این ماشین عددی را از سمت راست به عنوان ورودی می گیرد ، ابتدا منهای چهار می کند سپس حاصل را با عدد پنج جمع میکند و از سمت چپ حاصل را به عنوان خروجی می دهد. </label>
+                    <input type="radio" name="answer1" id="r21" onchange="p22answerQ2()"/>
+                </div>
+                <div class="radio-part"> 
+                    <label dir="rtl" for="r22" id="labelRadio22">&nbsp این ماشین از سمت چپ عددی را به عنوان ورودی می گیرد سپس با عدد پنج جمع می کند سپس عدد چهار را از حاصل کم می کند و پس از آن جواب نهایی را از سمت راست به عنوان خروجی می دهد. </label>
+                    <input type="radio" name="answer1" id="r22" onchange="p22answerQ2()"/>
+                </div>
+                <div class="radio-part"> 
+                    <label dir="rtl" for="r23" id="labelRadio23">&nbsp این ماشین از سمت راست عددی را به عنوان ورودی می گیرد سپس با عدد چهار جمع می کند سپس عدد پنج را از حاصل کم می کند و پس از آن جواب نهایی را از سمت راست به عنوان خروجی می دهد. </label>
+                    <input type="radio" name="answer1" id="r23" onchange="p22answerQ2()"/>
+                </div>
+            </div>          
+            <img class="dastgah" src="./assets/3rd/images/bagherpour/dastah.png"/>
+        </div>
+        <div class="practise-box">
+            <h1 class="practise-text">تمرين</h1>
+        </div>
+        <div class="pic-and-q1-pracrice">
+            <img class="momDaughter" src="./assets/3rd/images/bagherpour/momDaughter.png"/>
+            <div class="practice-q1-box">
+                <div class="q-text">
+                    <p class="num-color"> &nbsp-۱</p>
+                    <pc dir="rtl">الگوهای شمارش چند تا چند تا را ادامه دهید.(برای دیدن درستی پاسخ خود، روی صفحه کلیک کنید)</p> 
+                </div>
+                <div class="counting">
+                    <span class="top-margin">۴</span><span class="and"> و </span>
+                    <span class="top-margin">۸</span><span class="and"> و </span>
+                    <span class="top-margin">۱۲</span><span class="and"> و </span>
+                    <span class="top-margin">۱۶</span><span class="and"> و </span>
+                    <input id="practice1first1" onchange="checkInputTextCorrect(this.id , this.value, 20)"/><span class="and"> و </span>
+                    <input id="practice1first2" onchange="checkInputTextCorrect(this.id , this.value, 24)"/><span class="and"> و </span>
+                    <input id="practice1first3" onchange="checkInputTextCorrect(this.id , this.value, 28)"/><span class="and"> و </span>
+                    <input id="practice1first4" onchange="checkInputTextCorrect(this.id , this.value, 32)"/><span class="and"> و </span>
+                    <input id="practice1first5" onchange="checkInputTextCorrect(this.id , this.value, 36)"/><span class="and"> و </span>
+                    <input id="practice1first6" onchange="checkInputTextCorrect(this.id , this.value, 40)"/><span class="and"> و </span>
+                    <input id="practice1first7" onchange="checkInputTextCorrect(this.id , this.value, 44)"/>
+                  </div>
+                  <div class="counting"> 
+                    <span class="top-margin">۶</span><span class="and">و</span>
+                    <span class="top-margin">۱۲</span><span class="and">و</span>
+                    <span class="top-margin">۱۸</span><span class="and">و</span>
+                    <input id="practice1second1" onchange="checkInputTextCorrect(this.id , this.value , 24)"/><span class="and">و</span>
+                    <input id="practice1second2" onchange="checkInputTextCorrect(this.id , this.value , 30)"/><span class="and">و</span>
+                    <input id="practice1second3" onchange="checkInputTextCorrect(this.id , this.value , 36)"/><span class="and">و</span>
+                    <input id="practice1second4" onchange="checkInputTextCorrect(this.id , this.value, 42)"/><span class="and">و</span>
+                    <input id="practice1second5" onchange="checkInputTextCorrect(this.id , this.value , 48)"/><span class="and">و</span>
+                    <input id="practice1second6" onchange="checkInputTextCorrect(this.id , this.value,54)"/><span class="and">و</span>
+                    <input id="practice1second7" onchange="checkInputTextCorrect(this.id , this.value,60)"/><span class="and">و</span>
+                    <input id="practice1second8" onchange="checkInputTextCorrect(this.id , this.value,66)"/>
+            </div>
+            <p class="q-text" dir="rtl" class="right-float">چه عدد هایی در این دو الگو مشترک اند؟ (به ترتیب کوچک به بزرگ از چپ به راست وارد کنید.)</p>
+                <input id="practice1third1" onchange="checkInputTextCorrect(this.id , this.value , 12)"/>&nbsp&nbsp
+                <input id="practice1third2" onchange="checkInputTextCorrect(this.id , this.value , 24)"/>&nbsp&nbsp
+                <input id="practice1third3" onchange="checkInputTextCorrect(this.id , this.value , 36)"/>
+            </div>
 
+        </div>
+        <div class="question-part left-cal">
+            <div class="q-text">
+                <p class="num-color"> &nbsp-۲</p>
+                <p dir="rtl">الگو های شمارش رو به عقب را کامل کنید. از ماشین حساب کمک بگیرید.</p> 
+            </div>
+            <img class="calculator" src="./assets/3rd/images/bagherpour/calculator.png"/>
+        </div>
+        <div class="count-olgoo-q2">
+            <div class="counting"> 
+                <input id="practice2first1" onchange="checkInputTextCorrect(this.id , this.value , 0)"/><span class="and">و</span>
+                <input id="practice2first2" onchange="checkInputTextCorrect(this.id , this.value , 5)"/><span class="and">و</span>
+                <input id="practice2first3" onchange="checkInputTextCorrect(this.id , this.value,10)"/><span class="and">و</span>
+                <input id="practice2first4" onchange="checkInputTextCorrect(this.id , this.value,15)"/><span class="and">و</span>
+                <input id="practice2first5" onchange="checkInputTextCorrect(this.id , this.value,20)"/><span class="and">و</span>
+                <input id="practice2first6" onchange="checkInputTextCorrect(this.id , this.value,25)"/><span class="and">و</span>
+                <input id="practice2first7" onchange="checkInputTextCorrect(this.id , this.value,30)"/><span class="and">و</span>
+                <input id="practice2first8" onchange="checkInputTextCorrect(this.id , this.value,35)"/><span class="and">و</span>
+                <span class="top-margin">۴۰</span><span class="and">و</span>
+                <span class="top-margin">۴۵</span><span class="and">و</span>
+                <span class="top-margin">۵۰</span>
+            </div>
+            <div class="counting"> 
+                <input id="practice2second1" onchange="checkInputTextCorrect(this.id , this.value , 12)"/><span class="and">و</span>
+                <input id="practice2second2" onchange="checkInputTextCorrect(this.id , this.value , 14)"/><span class="and">و</span>
+                <input id="practice2second3" onchange="checkInputTextCorrect(this.id , this.value,16)"/><span class="and">و</span>
+                <input id="practice2second4" onchange="checkInputTextCorrect(this.id , this.value,18)"/><span class="and">و</span>
+                <input id="practice2second5" onchange="checkInputTextCorrect(this.id , this.value,20)"/><span class="and">و</span>
+                <input id="practice2second6" onchange="checkInputTextCorrect(this.id , this.value,22)"/><span class="and">و</span>
+                <input id="practice2second7" onchange="checkInputTextCorrect(this.id , this.value,24)"/><span class="and">و</span>
+                <span class="top-margin">۲۶</span><span class="and">و</span>
+                <span class="top-margin">۲۸</span><span class="and">و</span>
+                <span class="top-margin">۳۰</span>
+            </div>
+            <div class="counting"> 
+                <input id="practice2third1" onchange="checkInputTextCorrect(this.id , this.value,3)"/><span class="and">و</span>
+                <input id="practice2third2" onchange="checkInputTextCorrect(this.id , this.value,6)"/><span class="and">و</span>
+                <input id="practice2third3" onchange="checkInputTextCorrect(this.id , this.value,9)"/><span class="and">و</span>
+                <input id="practice2third4" onchange="checkInputTextCorrect(this.id , this.value,12)"/><span class="and">و</span>
+                <input id="practice2third5" onchange="checkInputTextCorrect(this.id , this.value,15)"/><span class="and">و</span>
+                <input id="practice2third6" onchange="checkInputTextCorrect(this.id , this.value,18)"/><span class="and">و</span>
+                <input id="practice2third7" onchange="checkInputTextCorrect(this.id , this.value,21)"/><span class="and">و</span>
+                <span class="top-margin">۲۴</span><span class="and">و</span>
+                <span class="top-margin">۲۷</span><span class="and">و</span>
+                <span class="top-margin">۳۰</span>
+            </div>
+            <div class="counting no-bottom-margin"> 
+                <input id="practice2forth1" onchange="checkInputTextCorrect(this.id , this.value,0)"/><span class="and">و</span>
+                <input id="practice2forth2" onchange="checkInputTextCorrect(this.id , this.value,7)"/><span class="and">و</span>
+                <input id="practice2forth3" onchange="checkInputTextCorrect(this.id , this.value,14)"/><span class="and">و</span>
+                <input id="practice2forth4" onchange="checkInputTextCorrect(this.id , this.value,21)"/><span class="and">و</span>
+                <input id="practice2forth5" onchange="checkInputTextCorrect(this.id , this.value,28)"/><span class="and">و</span>
+                <input id="practice2forth6" onchange="checkInputTextCorrect(this.id , this.value,35)"/><span class="and">و</span>
+                <span class="top-margin">۴۲</span><span class="and">و</span>
+                <span class="top-margin">۴۹</span><span class="and">و</span>
+                <span class="top-margin">۵۶</span>
+            </div>
+        </div>
+        <div class="question-part">
+            <div class="q-text">
+                <p class="num-color"> &nbsp-۳</p>
+                <p dir="rtl">حاصل جمع های زیر را به روش های مختلف پیدا کنید.</p> 
+            </div>
+        </div>
+        <div class="q3-sum-box">
+            <div class="counting">
+                <span class="top-margin">۵</span><span class="and">+</span>
+                <span class="top-margin">۷</span><span class="and">+</span>
+                <span class="top-margin">۳</span><span class="and">+</span>
+                <span class="top-margin">۴</span><span class="and">+</span> 
+                <span class="top-margin">۶</span><span class="and">=</span>
+                <input id="practice3" onchange="checkInputTextCorrect(this.id , this.value,25)"/>            
+            </div>
+            <div class="counting">
+                <span class="top-margin">۱<span class="and">+</span>
+                <span class="top-margin">۸<span class="and">+</span>
+                <span class="top-margin">۲<span class="and">+</span>
+                <span class="top-margin">۹<span class="and">=</span>
+                <input id="practice31" onchange="checkInputTextCorrect(this.id , this.value,20)"/>            
+            </div>
+            <div class="counting">
+                <span class="top-margin">۸</span><span class="and">+</span>
+                <span class="top-margin">۹</span><span class="and">+</span>
+                <span class="top-margin">۲</span><span class="and">+</span>
+                <span class="top-margin">۱</span><span class="and">+</span> 
+                <span class="top-margin">۵</span><span class="and">=</span>
+                <input id="practice32" onchange="checkInputTextCorrect(this.id , this.value,25)" />            
+            </div>
+            <div class="counting">
+                <span class="top-margin">۳</span><span class="and">+</span>
+                <span class="top-margin">۸</span><span class="and">+</span>
+                <span class="top-margin">۵</span><span class="and">+</span>
+                <span class="top-margin">۷</span><span class="and">+</span> 
+                <span class="top-margin">۵</span><span class="and">=</span>
+                <input id="practice33" onchange="checkInputTextCorrect(this.id , this.value,28)"/>            
+            </div>
+        </div>
+        <div class="page-number">۲۲</div>  
 </body>
 </html>

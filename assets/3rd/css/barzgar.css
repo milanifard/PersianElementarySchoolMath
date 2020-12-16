@@ -10,6 +10,36 @@
     --color-purple: rgb(175, 55, 117);
 }
 
+#question-2 {
+    direction: rtl;
+}
+
+#question-2-text {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+#question-3 {
+    direction: rtl;
+}
+
+#question3-input-number {
+    display: inline-block;
+    width: 15vw;
+}
+
+#question-3-input-text {
+    display: inline-block;
+    width: 15vw;
+}
+
+.question-1-inputs {
+    display: inline-block;
+    width: 20vw;
+    margin-left: 3vw;
+    vertical-align: top;
+}
+
 .right-page {
 
     width: 90vw;
@@ -77,6 +107,12 @@
     right: -5vw;
 }
 
+.left-page-number {
+    left: -5vw;
+    right: auto;
+    bottom: -1vw;
+}
+
 .title-background-rectangle {
     height: 1vw;
 
@@ -113,6 +149,18 @@
     z-index: 2;
 }
 
+.homework-img {
+    width: 13vw;
+    position: absolute;
+    right: 4vw;
+    top: 2vw;
+    z-index: 2;
+}
+
+.ruler-img {
+    width: 20vw;
+}
+
 .text-config {
     font-family: Zar;
     font-size: 2vw;
@@ -137,6 +185,22 @@
     margin: 5px 0;
 }
 
+.hezar-taii {
+    vertical-align: top;
+}
+
+.sad-taii {
+    vertical-align: top;
+}
+
+.dah-taii {
+    vertical-align: top;
+}
+
+.yeki {
+    vertical-align: top;
+}
+
 .circle {
     height: 4vw;
     width: 4vw;
@@ -144,6 +208,18 @@
     border: 0.1vw solid #cfcfcf;
     border-radius: 50%;
     display: inline-block;
+    color: transparent;
+
+}
+
+.first-circle {
+    margin-left: 1.5vw;
+}
+
+.last-circle {
+    color: black;
+    font-size: 1.5vw;
+    text-align: center;
 }
 
 .question-number {
@@ -152,9 +228,7 @@
 
 .overlay-circle {
     margin-left: -3vw;
-    text-align: center;
-    direction: rtl;
-    padding: 0vw;
+
 }
 
 .question-1-table-cells {
@@ -167,8 +241,8 @@
 .question-1-table {
     border-collapse: collapse;
     width: 20vw;
-    margin: 0;
-    padding: 0;
+    /*margin: 0;*/
+    /*padding: 0;*/
 }
 
 .input-config-question-1 {
@@ -232,6 +306,42 @@
     z-index: 1;
 }
 
+.line {
+    background: rgb(175, 55, 117);
+    height: 0.2vw;
+    margin-left: 5vw;
+}
+
+#andazegiri-line1 {
+    width: 15vw;
+    margin-right: 5vw;
+    transform: rotate(15deg);
+}
+
+#andazegiri-line2 {
+    width: 10vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+
+}
+
+#line1-width {
+    margin: 5vw;
+}
+
+#line1-width {
+    margin: 5vw;
+}
+
+.input-config-andazegiri {
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    border-bottom: 0.15vw solid #79c2d2;
+}
+
 .andazegiri-background-rectangle {
     height: 3.5vw;
 
@@ -262,12 +372,131 @@
     background-color: white;
     margin-bottom: 2.5vw;
 }
-.sign{
+
+.sign {
     color: rgb(231, 96, 96);;
 }
-.page32-question3-input{
+
+.page32-question3-input {
     width: 5vw;
     margin: auto;
     border: none;
     border-bottom: 0.15vw solid rgb(128, 190, 204);
+}
+
+#pitcher {
+    width: 10vw;
+    margin-left: 20vw;
+    position: absolute;
+    top: 2vw;
+}
+
+#cup-of-tea {
+    width: 10vw;
+    position: absolute;
+    left: 5vw;
+    top: 10vw;
+}
+
+#match {
+    width: 10vw;
+    position: absolute;
+    left: 5vw;
+    top: 17vw;
+}
+
+#house {
+    width: 25vw;
+    position: absolute;
+    top: 22vw;
+    left: 2vw;
+}
+
+#box {
+    width: 10vw;
+    position: absolute;
+    top: 37vw;
+    left: 25vw;
+}
+
+#truck {
+    width: 30vw;
+    position: absolute;
+    top: 35vw;
+    right: 18vw;
+}
+
+#dah-riali {
+    width: 8vw;
+    position: absolute;
+    bottom: 30vw;
+    left: 8vw;
+}
+
+#sad-riali {
+    width: 9vw;
+    position: absolute;
+    bottom: 30vw;
+    left: 16vw;
+}
+
+#hezar-riali {
+    width: 10vw;
+    position: absolute;
+    bottom: 30vw;
+    left: 25vw;
+}
+
+#page33-question1 {
+    padding-right: 20vw;
+    padding-top: 3vw;
+}
+
+#page33-question1-tozih {
+    width: 50vw;
+}
+
+.page33-question2 {
+    max-width: 80vw;
+    position: relative;
+    left: 5vw;
+    border: 0.3vw solid rgb(175, 55, 117);
+    border-radius: 3vw;
+    background-color: white;
+    margin-bottom: 2.5vw;
+    direction: rtl;
+}
+
+.page33-question3-4 {
+    max-width: 45vw;
+    position: relative;
+    left: 22.5vw;
+    border: 0.3vw solid #79c2d2;
+    border-radius: 3vw;
+    background-color: white;
+    margin-bottom: 2.5vw;
+    direction: rtl;
+}
+.arrow {
+    color: rgb(175, 55, 117);
+}
+.center-text{
+    text-align: center;
+}
+.page33-question5{
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    padding-top: 0vw;
+    padding-bottom: 0vw;
+}
+#worm{
+    position: absolute;
+    top: 8vw;
+    width: 10vw;
+}
+#sheets{
+    position: absolute;
+    top: 0vw;
+    left: 11vw;
+    width: 10vw;
 }

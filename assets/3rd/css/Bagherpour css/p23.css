@@ -1,0 +1,174 @@
+*{margin:0px; padding:0px;}
+@font-face
+{
+    font-family:persianNum; src:url('../../../fonts/Farsi-Digits/Samim-FD.ttf'); font-weight:normal;
+}
+body{overflow-x: hidden;}
+.left-border{
+    width: 89vw;
+    max-width: 100%;
+    border: 0.8vw double #44b869;
+    margin: 6vw 0 0 10vw;
+    border-right: none;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+.background-style{
+    width: 100vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, #44b869, #44b869 1vw, #bbd75e 0vw, #bbd75e 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    left:-11vw;
+    z-index: -1;
+}
+.q-text{
+    margin-top:0.8vw;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size:1.8vw;
+    padding-right:10vw ;
+}
+.num-color
+{
+    color:#3ab54a;
+}
+.outer{
+    margin: 0.8vw 3vw 0 auto;
+    border:0.2vw solid #b41777;
+    background-color: #f0595b;
+    border-radius: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 1vw 1vw 1vw 0;
+    width:75vw;
+}
+.inner{
+    border:0.2vw solid #b41777;
+    background-color: white;
+    width: 8.5vw;
+    height: 6vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.table-element{
+    font-size: 1.8vw ;
+    line-height: 10px;
+}
+
+  input{
+    border: none; 
+    border-bottom: 1px solid #f0595b; 
+    width: 7.8vw;
+    font-size: 1.5vw;
+    text-align: center;
+   font-family:persianNum; ;
+   color: #4f4f4f;
+  
+}
+.top-margin{margin-top:-0.4vw;}
+.page-number{
+    background-color: #44b869;
+    border-radius: 2.5vw;
+    border: 0.9vw double white;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Koodak;
+    color: white;
+    padding: 0 3vw;
+    position: absolute;
+    bottom: -0.5vw;
+    left: -5vw;
+}
+.time{
+    width:6vw;
+}
+.recs{
+    display: flex;
+    justify-content: space-between;
+    width:50vw;
+    margin:2vw auto 2vw;
+    clear: both;
+
+}
+.fletcher{
+    margin-left: 45%;
+    width: 8vw;
+}
+.rec{
+    width:4.5vw;
+    height:4.5vw;
+    background-color: #ece6d6;
+    color:#253f8e;
+    font-size:1.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    border:none;
+}
+.pic{
+    height:7vw;
+}
+.pics{
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    width:50vw;
+    padding-right:10vw ;
+    margin:2vw 0 2vw 0;
+}
+.flex-col{display: flex; flex-direction: column;}
+.option{
+    font-size: 2vw;
+    margin: auto;
+}
+.clear-float{
+    clear:both;
+}
+.con{ margin-left: 2vw; margin-top: 3vw; height:5vw;}
+.shapes{display: flex; justify-content: space-between; flex-direction: row-reverse; flex-wrap: wrap; width: 65vw;  margin:2vw auto 2vw;}
+.checkboxes{display: flex; flex-direction: column; justify-content: center;}
+.flex-row{display: flex;}
+.checkbox{width:1vw; margin: 5px 0px; height: auto;}
+.shape{width: 11vw; height: auto;}
+.shape1{width: 8vw; height: auto;}
+.radio-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top:0.8vw;
+    font-size:1.8vw;
+    padding-right:10vw ;
+} 
+@media only screen and (max-width:1100px){
+    .checkbox{ margin: 0;}
+}
+@media only screen and (max-width:800px){
+    .shapes{width: 50vw;}
+    .checkbox{width:10px;}
+    .shape{width: 80px;}
+    .shape1{width: 80px;}
+    p {font-size: 18px;}
+    label {font-size: 18px;}
+    .q-text {font-size: 18px;}
+    .radio-part{font-size: 10px;}
+    .table-element{font-size: 12px;}
+    input{font-size: 12px; height: 11px;}
+    .option {font-size: 15px;}
+
+}
+@media only screen and (max-width:600px){
+    .fletcher{width: 50px;}
+    .con{ height:25px;}
+}
+@media only screen and (max-width:400px){
+    .rec{font-size: 18px; height: 30px; width:30px;}
+    .recs{width:270px;}
+}

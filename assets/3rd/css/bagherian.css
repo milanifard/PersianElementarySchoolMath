@@ -4,98 +4,235 @@
     box-sizing: border-box;
 }
 
+
+@font-face {
+    font-family: 'zar';
+    src: url("../../fonts/Zar.eot");
+    src: url("../../fonts/Zar.ttf") format("ttf");
+  }
+
+@font-face{
+    font-family: 'samin';
+    src: url("../../fonts/Samim-Bold.eot");
+}  
+
+/* ------------------------------------------------------------------------ */
+/* -----------------------      GLOBAL CSS      --------------------------- */
+/*------------------------------------------------------------------------- */
+
 body{
+    background-image: repeating-linear-gradient(0deg, #79c2d2, #79c2d2 1vw, #e1f4fd 0vw, #e1f4fd 2.5vw);
+    background-position:0vh 170vh;
+    background-repeat: no-repeat;
+    bottom: -90vh;
+    z-index: -1;
+}
+
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:2px solid #201a74;
+    border-radius: 3vh;
+    background-color: white;
+    width: auto;
+    height: auto;
+    position: relative;
+    bottom: -15vh;
+    background-image: linear-gradient(to right,#8ef0f3 , #ffffff);
+}
+
+.link a{
+    text-decoration: none;
+    font-size: 4vh;
+    color: #201a74;
+    padding: 1vh ;
+    margin-bottom: 1vh;
+    transition: all 0.3s;
+}
+.link a:hover{
+    font-size: 5vh;
+    color: #000000;
+}
+
+  p ,span{
+      font-family: 'zar' !important;
+  }
+
+  .number{
+      font-family: 'samin';
+      color: #5cb6cd;
+  }
+
+  .review-box{
+    margin:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.review-box .review{
+    background-color: #5cb6cd;
+    border-radius: 2.5vw;
+}
+
+.review-box .rec{
+    width: 0.5vw;
+    height: 1.2vw;
+    background-color: #3728b9;
+    margin: auto;
+}
+
+.review-box .review .review-text
+{
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+
+/* ------------------------------------------------------------------------ */
+/* -----------------------        page 28       --------------------------- */
+/*------------------------------------------------------------------------- */
+
 body .content{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     margin-top: 10vh;
-    padding-right: 10vh ;
-    width: 80%;
-    height: 80%;
+    width: auto;
+    height: auto;
     margin-right: 20%;
     margin-bottom: 20%;
     border : 1.5vh  double #5cb6cd;
     border-left: none;
     border-radius: 0px 30px 30px 0px;
-    z-index: -2;
+    background-color: #ffffff;
 }
 
-body .content .relative{
-    position: relative;
+.review {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items:center;
-}
-
-
-body .content .relative  .title{
-    width: 100%;
-    height: 100%;
-    font-size: 3.5vh;
-    background-color: #78c2d1;
-    padding: 10px 20px;
-    border-radius: 25px;
+    background-color: #5cb6cd;
+    width: 16vw;
+    height: 5vw;
+    border-radius: 2.5vw;
     position: relative;
-    top: -30px;
+    top: -5vh;
+}
+.review-text {
+    color: black;
     text-align: center;
+    font-family: Koodak;
+    font-weight: bold;
+    font-size: 2.5vw;
 }
 
-body .content .activity{  
+
+body .content .activity1{  
+    display: flex;
+    margin-bottom: 5vw;
+}
+
+
+body .content .activity1 .activityTitle{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    right: -3%;
+}
+body .content .activity1 .activityTitle p {
+    background-color: #5cb6cd;
+    color: #ffffff;
+    font-size: 3vh;
+    text-align: right;
+    margin-top: 2px;
+    padding: 5px 12px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+body .content .activity1 .activityTitle img{
+    width: 8vw;
+    height: 15vw;
+    border:none;
+}
+
+body .content .activity1 .activityContent{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 1vh 2vh;
 }
 
 
-body .content .activity img{
-    width: 35%;
-    height: 100%;
-    border-radius: 10px;
-    border: 2PX solid #78c2d1;
+body .content .activity1 .activityContent .question{
+    display: flex;
+    flex-direction: column;
 }
-@media screen and (max-width: 480px) {
-    body .content .activity{
-        justify-content: flex-start;
-        flex-direction: column;
+
+body .content .activity1 .activityContent .question .answer{
+    display: flex;
+}
+
+body .content .activity1 .picture{
+    width: 40%;
+}
+
+body .content .activity1 .picture  img{
+    width: 100%;
+    border: 5px solid #0c9dc3;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 800px) {
+
+    body .content .activity1{
+       flex-direction: column;
+       justify-content: stretch;
+       align-items: center;
+       margin: 3vh 0vh;
+    }   
+
+    body .content .activity1 .activityContent{
+        width: 80%;
     }
-    body .content .activity img{
-        margin-top: 5%;
-        width: 100%;
-        height: 100%;
+
+    body .content .activity1 .picture{
+        width: 80%;
+    }
+
+    body .content .activity1 .picture  img{
+        border: 2px solid #0c9dc3;
     }
   }
 
-body .content .activity .activityText {
-    width: 65%;
-    height: 100%;
+body .content .activity1 .activity  {
+    width: 50vw;
+    height: 40vh;
     font-size: 3.5vh;
 }
 
-
-
-body .content .activity .activityText span{
+body .content .activity1 .activity  span{
     color: #39c1f0;
 }
 
-body .content .activity input,body .content .activity2 input{
-    width: 10vh;
+body .content .activity1 .activityContent .question .answer input,
+body .content .activity2  input,
+body .content .countAndSay input{
+    width: 10vw;
+    height: 3vh;
     border: none;
     border-bottom: 1px solid #39c1f0;
     margin: 1vh;
+    padding: 1vh ;
+    text-align: center;
+    z-index: 1;
 }
 
 body .content .activity2{
@@ -103,14 +240,11 @@ body .content .activity2{
     justify-content: center;
     align-items: center;
     width: 80%;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 body .content .activity2 p{
     width: 100%;
     height: 100%;
-    font-size: 3.5vh;
 }
 
 body .content .activity2 span{
@@ -126,54 +260,532 @@ body .content .countAndSay{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 5vh;
-    margin-bottom: 15vh;
     background-color: #e1f4fc;
-    width: 80%;
-    padding: 20px;
+    width: 70vw;
+    padding: 1vw 4vw;
     margin-left: 20%;
     margin-right: 20%;
     border: 2px solid #39c1f0;
     border-radius: 15px;
 }
 
-body .content .countAndSay .title .first{
+
+body .content .countAndSay .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #78c2d1;
-    width: 20%;
-    height: 7vh;
     color: #ffffff;
-    padding: 5px;
-    padding-left: -5px;
+    padding: 2vh 5vh;
+    border-radius: 2vh 0vh 0vh 2vh;
+    margin: 2vh 0vh;
 }
+
 
 body .content .countAndSay .title .second{
     text-align: center;
     font-size: 3vh;
+    margin-bottom: 5vh;
 }
 
  body .content .countAndSay .cube {
      display: flex;
-    
      justify-content:center;
 }
-@media screen and (max-width: 480px) {
+
+
+
+@media screen and (max-width: 800px) {
     body .content .countAndSay .cube  {
         flex-wrap: wrap;
     }
   }
-body .content .countAndSay .cube img{
+body .content .countAndSay .cube img {
     width: 15vh;
     height: 15vh;
 }
 
 body .content .countAndSay .cube .pencel{
-    height: 20vh;
+    height: 25vh;
 }
 
-body .content .countAndSay .cube input{
-    width: 30%;
-    height: 10%;
+body .content .pageNumber {
+    background-color: #0c9dc3;
+    border-radius: 2.5vw;
+    border: 0.9vw double white;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Koodak;
+    color: white;
+    padding: 0 3vw;
+    position: relative;
+    top: 30%;
+    left: 55%;
+  
+}
+
+/* ------------------------------------------------------------------------ */
+/* -----------------------        page 29       --------------------------- */
+/*------------------------------------------------------------------------- */
+.content29 p{
+    font-size: 3ex;
+}
+
+body .content29{
+    padding: 5vh;
+    padding-right: 0%;
+    border : 1.5vh  double #5cb6cd;
+    margin: 5% 0 20% 20%;
+    padding: 0% 5% 10% 10%;
+    border-right: none; 
+    border-radius: 30px 0px 0px 30px;
+    background-color: #ffffff;
+}
+
+body .content29 .question1{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 820px) {
+    body .content29 .question1{
+        align-items:center ;
+    }
+}
+
+body .content29 .question1 .questiontitle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+body .content29 .question1 .questiontitle .text {
+    width: 50vw;
+}
+
+body .content29 .question1 .questiontitle .logo img{
+    width: 20vw;
+    height: 25vh;
+}
+
+body .content29 .question1 .questiontitle .cubeShape img{
+    width: 30vw;
+    height: 35vh;
+}
+
+@media screen and (max-width: 820px) {
+
+    body .content29 .question1 .questiontitle{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body .content29 .question1 .questiontitle .cubeShape img{
+        margin-top: 3vh;
+        width: 50vw;
+        height: 30vh;
+    }
+
+}
+
+
+body .content29 .question1 .answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 6vh;
+}
+
+
+body .content29 .question1 .answer  p{
+    text-align: right;
+    padding: 2vh;
+}
+
+
+body .content29 .question1 .answerTitle p{
+    margin-top: 2vh;
+    margin-bottom: -2vh; 
+    text-align: right;
+}
+body .content29 .question1 .answerTitle .redText{
+    color: #f165bd;
+}
+body .content29 .question1 .answer input{
+    border: none;
+    border-bottom:1px solid #39c1f0;
+    width: 5vw;
+}
+
+body .content29 .question2{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin-top: 6vh;
+}
+
+@media screen and (max-width: 820px) {
+    body .content29 .question2{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+body .content29 .question2 img{
+    width: 20vw;
+}
+
+@media screen and (max-width: 820px) {
+    body .content29 .question2 img{
+        margin-top: 3vh ;   
+    }
+}
+
+body .content29 .last{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+   
+}
+
+body .content29 .last p{
+    margin-bottom: 5vh;
+    text-align: right;
+}
+
+@media screen and (max-width: 820px) {
+    body .content29 .last {
+        justify-content: center;
+        align-items: center;
+    }
+
+    body .content29 .last p{
+        text-align: center;
+    }
+}
+
+
+body .content29 .last .shapes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 820px) {
+    body .content29 .last .shapes{
+        flex-direction: column;
+    }
+}
+
+body .content29 .last .shapes .cubeAndCoin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline ;
+}
+
+
+@media screen and (max-width: 820px) {
+    body .content29 .last .shapes .cubeAndCoin{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3vh;
+    }
+
+    body .content29 .last .shapes .cubeAndCoin img{
+        width: 20vh;
+    }
+}
+
+body .content29 .pageNumber {
+    background-color: #0c9dc3;
+    border-radius: 2.5vw;
+    border: 0.9vw double white;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Koodak;
+    color: white;
+    padding: 0 3vw;
+    position: absolute;
+    margin-top: 8.2%;
+    margin-left: -14%;
+}
+
+
+/* ------------------------------------------------------------------------ */
+/* -----------------------        page 30       --------------------------- */
+/*------------------------------------------------------------------------- */
+
+body .content30{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    padding-right: 5vh ;
+    width: 80%;
+    height: 80%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+    border : 1.5vh  double #5cb6cd;
+    border-left: none;
+    border-radius: 0px 30px 30px 0px;
+    background-color: #ffffff;
+}
+
+body .content30 .practice1-3-part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+body .content30 .practice1-3-part1 .shape img{
+    width: 12vw;
+    height: 12vw;
+}
+
+body .content30 .practice1-3-part1 .logo  img{
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    right: 18vw;
+}
+
+body .content30 .practice1-3-part1 .text .question{
+    display: flex;
+    justify-content: space-between;
+}
+body .content30 .practice1-3-part1 .text input,
+body .content30 .practice1-3-part2 input,
+body .content30 .question4 .cubes .cube input,
+body .content30 .question5 p input{
+    width: 10vw;
+    height: 3vh;
     border: none;
     border-bottom: 1px solid #39c1f0;
+    margin: 0vh 2vh 1vh 2vh;
+    padding: 2vh ;
+    text-align: center;
+    z-index: 1;
 }
+
+body .content30 .practice1-3-part1 .text p{
+    margin: 1vh;
+}
+
+@media screen and (max-width: 820px) {
+    body .content30 .practice1-3-part1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body .content30 .practice1-3-part1 .text .question{
+        flex-direction: column;
+    }
+}
+
+body .content30 .practice1-3-part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body .content30 .practice1-3-part2 p{
+    margin: 2vh;
+}
+body .content30 .practice1-3-part2 img{
+    width: 55vw;
+}
+
+body .content30 .question4{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+body .content30 .question4 .cubes{
+    display: flex;
+}
+
+body .content30 .question4 .cubes .cube{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body .content30 .question4 .cubes .cube .correctAnswer{
+    background-color: #37ee56;
+    border-radius: 5px;
+    padding: 1px 3px;
+    display: none;
+  }
+  
+  body .content30 .question4 .cubes .cube .wrongAnswer{
+     background-color: #ce2f24;
+     color: #ffffff;
+     border-radius: 5px;
+     padding: 1px 3px;
+     display: none;
+  }
+
+body .content30 .question4 .cubes .cube img{
+    width: 60%;
+}
+
+@media screen and (max-width: 900px) {
+    body .content30 .question4 .cubes{
+        flex-direction: column;
+    }
+}
+
+body .content30 .question5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+body .content30 .question5 .text p{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+} 
+body .content30 .question5 .red{
+    color: #f2759c;
+}
+
+body .content30 .question5 p{
+    margin-top: 2vh;
+}
+
+body .content30 .reason{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #e1f4fc;
+    border: 0.5vh solid #79bed1;
+    border-radius: 5vh;
+    margin: 4vh 1vh 4vh 10vh;
+    width: 100%;
+}
+
+body .content30 .reason .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #78c2d1;
+    color: #ffffff;
+    padding: 2vh 5vh;
+    border-radius: 2vh 0vh 0vh 2vh;
+    margin: 2vh 0vh;
+}
+body .content30 .reason .logo p{
+    font-size: 1.5vw;
+}
+body .content30 .reason  .questionText p{
+    margin: 2vw;
+}
+
+body .content30 .reason .shapes{
+    display: flex;
+}
+
+body .content30 .reason .shapes .shape{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 16.5%;
+}
+
+body .content30 .reason .shapes .shape p{
+    background-color: #ffffff;
+    border-radius: 2vh;
+    margin: 1vh 1vh;
+    padding: 2vh;
+}
+
+body .content30 .reason .shapes .shape img{
+    width: 70%;
+}
+
+body .content30 .reason .answer{
+   margin: 2vh 5vw;
+}
+
+body .content30 .reason .answer textarea{
+    resize: none;
+}
+
+@media screen and (max-width: 1500px) {
+    
+    body .content30 .reason .shapes{
+         /* flex-direction: column; */
+         flex-wrap: wrap;
+         padding-left: 10vw;
+         padding-right: 10vw;
+    }
+
+
+    body .content30 .reason .answer textarea {
+        margin-top: 3vh;
+        width: 30vw;
+        height: 10vw;
+     }
+
+     body .content30 .question5 .inputs{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 5vh;
+        margin-left: 10vh;
+     }
+
+     body .content30 .question5 .answer5{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    body .content30 .reason .shapes{
+        flex-direction: column;
+        padding-left: 5vw;
+        padding-right: 5vw;
+   }
+}
+
+body .content30 .pageNumber {
+    background-color: #0c9dc3;
+    border-radius: 2.5vw;
+    border: 0.9vw double white;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Koodak;
+    color: white;
+    padding: 0 3vw;
+    position: relative;
+    top: 30%;
+    left: 55%;
+  
+}
+
