@@ -8,46 +8,64 @@
     <link href="http://fonts.cdnfonts.com/css/zar" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
     <title>ریاضی سوم دبستان</title>
+    <script type="text/javascript" src="./assets/3rd/js/bagherpour.js"></script>
 </head>
 <body>
     <div class="left-border">
         <div class="background-style"></div>
         <div class="q-text" >
             <p class="num-color"> &nbsp-۴</p>
-            <p >.جدول زیر را کامل کنید</p> 
+            <div>
+                <p dir="rtl">جدول زیر را کامل کنید.</p>
+                <p dir="rtl">(همه ی ساعت هارا به صورت عددی بنویسید.)</p>
+            </div>           
         </div>
         <div class="outer" dir="rtl">
-            <div class="inner"><input /></div>
+            <div class="inner"><input id="table1" onchange="checkInputTextCorrect(this.id , this.value, '21:30')"/></div>
             <div class="inner"><p class="table-element">بیست و ربع</p></div>
             <div class="inner"><p class="table-element"> ۱۹:۲۵</p></div>
             <div class="inner"><img src="./assets/3rd/images/bagherpour/time.png" class="time"></div>
-            <div class="inner"><input /></div>
-            <div class="inner"><input /></div>
+            <div class="inner"><input id="table2" onchange="checkInputTextCorrect(this.id , this.value, '14:15')"/></div>
+            <div class="inner"><input id="table3" onchange="checkInputTextCorrect(this.id , this.value, 19)"/></div>
             <div class="inner"><p class="table-element">۱۵</p></div>
             <div class="inner"><p class="table-element">زمان</p></div>
             <div class="inner"><p class="table-element">نه و نیم</p></div>
-            <div class="inner"><input /></div>
-            <div class="inner"><input /></div>
-            <div class="inner"><input /></div>
+            <div class="inner"><input id="table4" onchange="checkInputTextCorrect(this.id , this.value, '8:15')"/></div>
+            <div class="inner"><input id="table5" onchange="checkInputTextCorrect(this.id , this.value, '7:25')"/></div>
+            <div class="inner"><input id="table6" onchange="checkInputTextCorrect(this.id , this.value, '1:18')"/></div>
             <div class="inner"><p class="table-element">02:15</p></div>
             <div class="inner"><p class="table-element">۷</p></div>
-            <div class="inner"><input /></div>
+            <div class="inner"><input id="table7" onchange="checkInputTextCorrect(this.id , this.value, 3)"/></div>
             <div class="inner"><p class="table-element">بعدظهر</p></div>
         </div>
+        <p  class="q-text">(سوالات زیر را با عدد پاسخ دهید)</p>
         <div class="q-text">
             <p class="num-color"> &nbsp-۵</p>
             <p dir="rtl">یک برنامه ی رادیویی در ساعت ۱۶ پخش می شود. زمان پخش این برنامه ساعت چند بعد از ظهر است؟</p> 
-            <input class="top-margin"/>
+            <input class="top-margin" id="q5" onchange="checkInputTextCorrect(this.id , this.value, 4)"/>
         </div>
         <div class="q-text">
             <p class="num-color"> &nbsp-۶</p>
             <p dir="rtl">زنگ مدرسه ای ساعت ۵ بعد از ظهر می خورد. در چه ساعتی زنگ می خورد؟</p> 
-            <input class="top-margin"/>
+            <input class="top-margin" id="q6" onchange="checkInputTextCorrect(this.id , this.value, 17)"/>
         </div>
         <div class="q-text">
             <p class="num-color"> &nbsp-۷</p>
             <p dir="rtl">جاهای خالی را پر کنید. بین ردیف های اول و سوم چه رابطه ای وجود دارد؟</p> 
-            <input class="top-margin"/>
+        </div>
+        <div class="radio-part">
+            <div> 
+                <label dir="rtl" for="r71" id="labelRadio71"> = </label>
+                <input type="radio" name="answer7" id="r71" onchange="p23answerQ7()"/>
+            </div>
+            <div> 
+                <label dir="rtl" for="r72" id="labelRadio72"> ردیف بالا کوچکتر </label>
+                <input type="radio" name="answer7" id="r72" onchange="p23answerQ7()"/>
+            </div>
+            <div> 
+                <label dir="rtl" for="r73" id="labelRadio73"> ردیف پایین کوچکتر </label>
+                <input type="radio" name="answer7" id="r73" onchange="p23answerQ7()"/>
+            </div>
         </div>
         <div class="recs">
             <div class="rec"><p>۱۴</p></div>
@@ -55,36 +73,36 @@
             <div class="rec"><p>۱۸</p></div>
             <div class="rec"><p>۱۵</p></div>
             <div class="rec"><p>۲۴</p></div>
-            <input class="rec"/>
-            <input class="rec"/>
-            <input class="rec"/>
+            <input class="rec" id="q71" onchange="checkInputTextCorrect(this.id , this.value, 22)"/>
+            <input class="rec" id="q72" onchange="checkInputTextCorrect(this.id , this.value, 20)"/>
+            <input class="rec" id="q73" onchange="checkInputTextCorrect(this.id , this.value, 17)"/>
         </div>
         <img src="./assets/3rd/images/bagherpour/flesh1.png" class="fletcher" />
         <div class="recs">
-            <input class="rec"/>
-            <input class="rec"/>
-            <input class="rec"/>
-            <input class="rec"/>
-            <input class="rec"/>
+            <input class="rec" id="q74" onchange="checkInputTextCorrect(this.id , this.value, 2)" />
+            <input class="rec" id="q75" onchange="checkInputTextCorrect(this.id , this.value, 8)"/>
+            <input class="rec" id="q76" onchange="checkInputTextCorrect(this.id , this.value, 6)"/>
+            <input class="rec" id="q77" onchange="checkInputTextCorrect(this.id , this.value, 3)"/>
+            <input class="rec" id="q78" onchange="checkInputTextCorrect(this.id , this.value, 12)"/>
             <div class="rec"><p>۱۰</p></div>
             <div class="rec"><p>۸</p></div>
-            <input class="rec"/>
+            <input class="rec" id="q79" onchange="checkInputTextCorrect(this.id , this.value, 5)"/>
         </div>
         <img src="./assets/3rd/images/bagherpour/flesh2.png" class="fletcher" />
         <div class="recs">
-            <input class="rec"/>
-            <input class="rec"/>
-            <input class="rec"/>
-            <input class="rec"/>
-            <input class="rec"/>
-            <input class="rec"/>
-            <input class="rec"/>
+            <input class="rec" id="q710" onchange="checkInputTextCorrect(this.id , this.value, 14)"/>
+            <input class="rec" id="q711" onchange="checkInputTextCorrect(this.id , this.value, 20)"/>
+            <input class="rec" id="q712" onchange="checkInputTextCorrect(this.id , this.value, 18)"/>
+            <input class="rec" id="q713" onchange="checkInputTextCorrect(this.id , this.value, 15)"/>
+            <input class="rec" id="q714" onchange="checkInputTextCorrect(this.id , this.value, 24)"/>
+            <input class="rec" id="q715" onchange="checkInputTextCorrect(this.id , this.value, 22)"/>
+            <input class="rec" id="q716" onchange="checkInputTextCorrect(this.id , this.value, 20)"/>
             <div class="rec"><p>۱۷</p></div>
         </div>
         <div class="q-text">
             <p class="num-color"> &nbsp-۸</p>
-            <p dir="rtl">کدام یک از کاغذهای زیر باز شده ی شکل رو به روست؟</p> 
-            <input class="top-margin"/>
+            <p dir="rtl">کدام یک از کاغذهای زیر باز شده ی شکل رو به روست؟ شماره ی شکل را به صورت عددی وارد کنید.</p> 
+            <input class="top-margin"  placeholder="پاسخ:" id="q8" onchange="checkInputTextCorrect(this.id , this.value, 1)"/>
         </div>
         <img src="./assets/3rd/images/bagherpour/pic2.png" class="con"/>
         <div class="pics">
@@ -109,9 +127,7 @@
             <div class="flex-col">
                 <img src="./assets/3rd/images/bagherpour/pic7.png" class="pic"/>
                 <p class="option">(۱)</p>
-            </div>
-
-            
+            </div>           
         </div>
         <div class="q-text clear-float">
             <p class="num-color"> &nbsp-۹</p>
@@ -122,12 +138,12 @@
                 <img src="./assets/3rd/images/bagherpour/p1.png" class="shape"/>
                 <div class="checkboxes">
                     <div class="flex-row">
-                        <input type="checkbox" id="c1" class="checkbox"/>
-                        <label for="c1">:صورتی</label>
+                        <input type="checkbox" id="q9c1" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c1" id="q9c1l">:صورتی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1" class="checkbox"/>
-                        <label for="c1">:آبی</label>
+                        <input type="checkbox" id="q9c2" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 0)"/>
+                        <label for="q9c2" id="q9c2l">:آبی</label>
                     </div>
                 </div>                
             </div>
@@ -135,12 +151,12 @@
                 <img src="./assets/3rd/images/bagherpour/p2.png" class="shape"/>
                 <div class="checkboxes">
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:صورتی</label>
+                        <input type="checkbox" id="q9c3"  class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 0)"/>
+                        <label for="q9c3" id="q9c3l">:صورتی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:آبی</label>
+                        <input type="checkbox" id="q9c4" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c4" id="q9c4l">:آبی</label>
                     </div>
                 </div>                
             </div>
@@ -148,16 +164,16 @@
                 <img src="./assets/3rd/images/bagherpour/p3.png" class="shape"/>
                 <div class="checkboxes">
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:صورتی</label>
+                        <input type="checkbox" id="q9c5" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c5" id="q9c5l">:صورتی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:آبی</label>
+                        <input type="checkbox" id="q9c6" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c6" id="q9c6l">:آبی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:نارنجی</label>
+                        <input type="checkbox" id="q9c7" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 0)"/>
+                        <label for="q9c7" id="q9c7l">:نارنجی</label>
                     </div>
                 </div>                
             </div>
@@ -167,16 +183,16 @@
                 <img src="./assets/3rd/images/bagherpour/p4.png" class="shape"/>
                 <div class="checkboxes">
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:صورتی</label>
+                        <input type="checkbox" id="q9c8" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 0)"/>
+                        <label for="q9c8" id="q9c8l">:صورتی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:آبی</label>
+                        <input type="checkbox" id="q9c9" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c9" id="q9c9l">:آبی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:نارنجی</label>
+                        <input type="checkbox" id="q9c10" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 0)"/>
+                        <label for="q9c10" id="q9c10l">:نارنجی</label>
                     </div>
                 </div>                
             </div>
@@ -187,24 +203,24 @@
                 <img src="./assets/3rd/images/bagherpour/p5.png" class="shape1"/>
                 <div class="checkboxes">
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:صورتی</label>
+                        <input type="checkbox" id="q9c11" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c11" id="q9c11l">:صورتی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:آبی</label>
+                        <input type="checkbox" id="q9c25" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c25" id="q9c25l">:آبی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:نارنجی</label>
+                        <input type="checkbox" id="q9c12" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c12" id="q9c12l">:نارنجی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:خاکستری</label>
+                        <input type="checkbox" id="q9c13" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c13" id="q9c13l">:خاکستری</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:قرمز</label>
+                        <input type="checkbox" id="q9c14" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 0)"/>
+                        <label for="q9c14" id="q9c14l">:قرمز</label>
                     </div>
                 </div>                
             </div>
@@ -215,20 +231,20 @@
                 <img src="./assets/3rd/images/bagherpour/p66.png" class="shape1"/>
                 <div class="checkboxes">
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:صورتی</label>
+                        <input type="checkbox" id="q9c15" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c15" id="q9c15l">:صورتی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:آبی</label>
+                        <input type="checkbox" id="q9c16" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c16" id="q9c16l">:آبی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:نارنجی</label>
+                        <input type="checkbox" id="q9c17" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 0)"/>
+                        <label for="q9c17" id="q9c17l">:نارنجی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:قرمز</label>
+                        <input type="checkbox" id="q9c18" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c18" id="q9c18l">:قرمز</label>
                     </div>
                 </div>                
             </div>
@@ -239,16 +255,16 @@
                 <img src="./assets/3rd/images/bagherpour/p7.png" class="shape1"/>
                 <div class="checkboxes">
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:صورتی</label>
+                        <input type="checkbox" id="q9c19" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c19" id="q9c19l">:صورتی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:آبی</label>
+                        <input type="checkbox" id="q9c20" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 0)"/>
+                        <label for="q9c20" id="q9c20l">:آبی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:نارنجی</label>
+                        <input type="checkbox" id="q9c21" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 0)"/>
+                        <label for="q9c21" id="q9c21l">:نارنجی</label>
                     </div>
                 </div>                
             </div>
@@ -259,16 +275,16 @@
                 <img src="./assets/3rd/images/bagherpour/p8.png" class="shape1"/>
                 <div class="checkboxes">
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:صورتی</label>
+                        <input type="checkbox" id="q9c22" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 0)"/>
+                        <label for="q9c22" id="q9c22l">:صورتی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:آبی</label>
+                        <input type="checkbox" id="q9c23" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` , 1)"/>
+                        <label for="q9c23" id="q9c23l">:آبی</label>
                     </div>
                     <div class="flex-row">
-                        <input type="checkbox" id="c1"  class="checkbox"/>
-                        <label for="c1">:نارنجی</label>
+                        <input type="checkbox" id="q9c24" class="checkbox" onchange="p23answerQ9(this.id , `${this.id}l` ,0)"/>
+                        <label for="q9c24" id="q9c24l">:نارنجی</label>
                     </div>
                 </div>                
             </div>       
