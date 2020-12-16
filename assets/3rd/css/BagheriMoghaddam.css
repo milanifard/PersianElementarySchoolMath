@@ -121,7 +121,7 @@ p1{
     border: solid;
 
     font-size: 2vw;
-    border-color: #ff0000;
+    border-color: #000000;
 }
 .my-Big-Black-Box{
     text-align: center;
@@ -310,13 +310,13 @@ p1{
     padding-right: 4vw;
     margin-top: 3vw;
 }
-#textBox20_27{
+#textBox21_27{
     /*style="position: absolute; margin-left: 70vw; margin-top: 4vw"*/
     position: absolute;
     margin-left: 70vw;
     margin-top: 4vw;
 }
-#textBox21_27{
+#textBox22_27{
     /*style="position: absolute; margin-left: 50vw; margin-top: 1vw" */
     position: absolute;
     margin-left: 50vw;

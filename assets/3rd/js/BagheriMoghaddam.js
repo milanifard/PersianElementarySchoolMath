@@ -5,6 +5,8 @@ var answerPack1FA=['۵۴۷','۵۴۶','۵۳۷','۵۳۶','۶','۷','۶','۷','۳',
 var answerPack2 =['890','895','897','490','495','497','۸۹۰','۸۹۵','۸۹۷','۴۹۰','۴۹۵','۴۹۷'];
 var answerPack3=['12','11'];
 var answerPack3FA=['۱۲','۱۱'];
+var answerPack4=['107','7','10','10'];
+var answerPack4FA=['۱۰۷','۷','۱۰','۱۰'];
 
 function test1_26(index,id) {
     var obj = $(id);
@@ -28,9 +30,21 @@ function test2_26(id){
         window.alert("غلط  بود!");
     }
 }
+
 function test3_26(index,id){
     var obj = $(id);
     if (obj.value === answerPack3[index]||obj.value===answerPack3FA[index]) {
+        window.alert("باریک الله!");
+        obj.style.backgroundColor = "#67b56f";
+    } else {
+        obj.style.backgroundColor = "#db3a2e";
+        window.alert("بیشتر فکر کن!");
+    }
+}
+
+function test1_27(index,id){
+    var obj = $(id);
+    if (obj.value === answerPack4[index] || obj.value===answerPack4FA[index]) {
         window.alert("فوقع العاده بود!");
         obj.style.backgroundColor = "#67b56f";
     } else {
