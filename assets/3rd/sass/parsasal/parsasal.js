@@ -42,7 +42,7 @@ function changePage(page) {
 
 }
 
-function loadPagination() {
+function loadPageChanger() {
     $(".page-number input").val(current_page)
 }
 $(document).ready(function () {
@@ -55,7 +55,7 @@ $(document).ready(function () {
         nextPage();
     })
 
-    loadPagination();
+    loadPageChanger();
 
 });
 
@@ -106,6 +106,7 @@ function checkTamrinP94() {
 }
 
 function checkFargangeNeveshtanP94() {
+    $("#farhange-neveshtan-messages").append(getWrongAnswerMessageBox())
     $("#farhange-neveshtan").find(".info-message").css("display", "flex")
         .hide()
         .fadeIn();
@@ -122,22 +123,49 @@ function checkFargangeNeveshtanP94() {
 })(jQuery);
 
 
-function getWrongAnswerMessageBox() {
+function createNewMessageBox(text , type ){
+    let iconClass;
+
     let container = document.createElement("div");
     let icon = document.createElement("i");
-    let text = document.createElement("p");
+    let paragraph = document.createElement("p");
     let closeButton = document.createElement("button");
 
+    
 
-    let ptext = document.createTextNode("بعضی پاسخ هات درست نبود، دوباره تلاش کن");
-    let btext = document.createTextNode("&times;");
+    if(type === "warn"){
+        iconClass = "fa-exclamation-circle"
+        container.classList.add("warn-message")
+    }else if (type === "info "){
+        iconClass = "fa-info-circle"
+        container.classList.add("info-message")
+    }
+
+    paragraph.classList.add("align-self-center")
+
+
+    icon.classList.add("fa")
+    icon.classList.add(iconClass)
+    icon.classList.add("align-self-center")
+
+
+    closeButton.classList.add("d-flex")
+    closeButton.classList.add("mr-auto")
+    closeButton.classList.add("close")
+    closeButton.innerHTML = "&times;"
+
+    let ptext = document.createTextNode(text);
 
     
-    text.appendChild(ptext)
-    closeButton.appendChild(btext)
+    paragraph.appendChild(ptext)
 
     container.appendChild(icon)
-    container.appendChild(text)
+    container.appendChild(paragraph)
     container.appendChild(closeButton)
-    
+
+    return container
+}
+function getWrongAnswerMessageBox() {
+
+    return createNewMessageBox("بعضی پاسخ هات درست نبود، دوباره تلاش کن" , "warn");
 }
