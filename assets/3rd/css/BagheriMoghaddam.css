@@ -126,6 +126,13 @@ p1{
 
 }
 /***********************ID*****************************/
+/*********General***********/
+#BackGroundRight{
+    right:-10vw;
+}
+#BackGroundLeft{
+    left: -10vw;
+}
 
 /***************Page 26**************/
 #Q1{
@@ -267,13 +274,25 @@ p1{
     margin-top: 1vw;
 }
 /**********Page 27*************/
-#Question-1_27{
+#Q-1_27{
     padding-top: 2vw;
     padding-right: 4vw;
     margin-top: 1vw;
     /*style="padding-top: 2vw; padding-right: 4vw; margin-top: 1vw"*/
 }
+#Q_2_27{
+    /*style="padding-top: 28vw; padding-right: 4vw; margin-top: 3vw*/
+    padding-top: 28vw;
+    padding-right: 4vw;
+    margin-top: 3vw;
 
+}
+#Q-3_27{
+    /*style="padding-top: 28vw; padding-right: 4vw; margin-top: 3vw"*/
+    padding-top: 28vw;
+    padding-right: 4vw;
+    margin-top: 3vw;
+}
 /****************** mein *********************************/
 .page-topic{
     margin-top: 1vw;
