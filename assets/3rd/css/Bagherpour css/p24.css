@@ -67,8 +67,10 @@ body{overflow-x: hidden;}
     margin-top:-2vw;  
     font-size: 1.8vw;
 }
+label{font-size: 1.4vw;}
 .text-width{
     width:60%; 
+    padding-left: 5px;
 }
 .moraba{
     width:20%;
@@ -116,16 +118,7 @@ body{overflow-x: hidden;}
     font-size: 1vw;
     font-family:persianNum;
   }
-  input{
-    border: none; 
-    border-bottom: 4px solid #9bcce3; 
-    width: 15vw;
-    font-size: 1vw;
-    height: 2.5vw;
-    background-color: transparent;
-    font-family:persianNum;
-    color: #4f4f4f;
-}
+
 .page-number{
     background-color: #44b869;
     border-radius: 2.5vw;
@@ -146,11 +139,13 @@ body{overflow-x: hidden;}
 .rowReverse{
     flex-direction: row;
 }
+
 @media only screen and (max-width:1160px){
     .boy{width:200px; margin-bottom: 20px;}
     .question-part{
         font-size:20px;
     }
+    label{font-size:17px;}
     .readCultureQ{font-size:20px;}
     .container textarea {
         font-size: 15px;
@@ -161,9 +156,6 @@ body{overflow-x: hidden;}
     }
     .moraba{
         width:150px;
-    }
-    input{
-        font-size:15px;
     }
     .green-box-text{
         text-align: right;
@@ -190,10 +182,6 @@ body{overflow-x: hidden;}
 @media only screen and (max-width:700px){
     .container textarea {height: 350px;}
     .text-width{width: 100%;}
-    input{
-        height: 40px;
-        width: 100px;
-    }
 }
 @media only screen and (max-width:500px){
     .boy{
