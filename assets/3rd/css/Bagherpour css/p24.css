@@ -124,6 +124,7 @@ body{overflow-x: hidden;}
     height: 2.5vw;
     background-color: transparent;
     font-family:persianNum;
+    color: #4f4f4f;
 }
 .page-number{
     background-color: #44b869;
@@ -143,7 +144,7 @@ body{overflow-x: hidden;}
     font-size: 1.8vw;
 }
 .rowReverse{
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 @media only screen and (max-width:1160px){
     .boy{width:200px; margin-bottom: 20px;}
