@@ -115,7 +115,8 @@
     border-bottom: 4px solid #9bcce3; 
     width: 15vw;
     font-size: 1vw;
-    height: 3vw;
+    height: 2.5vw;
+    background-color: transparent;
 }
 .page-number{
     background-color: #44b869;
@@ -130,11 +131,16 @@
     bottom: -0.5vw;
     right: -5vw;
 }
+.readCultureQ{
+    padding: 0 2vw;
+    font-size: 1.8vw;
+}
 @media only screen and (max-width:1160px){
     .boy{width:200px; margin-bottom: 20px;}
     .question-part{
         font-size:20px;
     }
+    .readCultureQ{font-size:20px;}
     .container textarea {
         font-size: 15px;
         height: 180px;
