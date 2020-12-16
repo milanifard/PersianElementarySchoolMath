@@ -73,3 +73,22 @@ function p23answerQ9(inputId , labelId, ans){
     }
     else makeBlack(labelId);
 }
+
+function p24answerQ1(){
+    console.log("llllllllllllll");
+    if (document.getElementById('rt1').checked) {
+        makeRed("rt1l");
+        makeBlack("rt2l");
+        makeBlack("rt3l");
+    }
+    else if (document.getElementById('rt2').checked) {
+        makeBlack("rt1l");
+        makeGreen("rt2l");
+        makeBlack("rt3l");
+    }
+    else if (document.getElementById('rt3').checked) {
+        makeBlack("rt1l");
+        makeBlack("rt2l");
+        makeRed("rt3l");
+    } 
+}
