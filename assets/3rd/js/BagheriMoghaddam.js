@@ -9,8 +9,8 @@ var answerPack4=['107','7','10','10'];
 var answerPack4FA=['۱۰۷','۷','۱۰','۱۰'];
 var answerPack5=['9'];
 var answerPack5FA=['۹'];
-var answerPack6=['400'];
-var answerPack6FA=['۴۰۰'];
+var answerPack6=['10'];
+var answerPack6FA=['۱۰'];
 
 function test1_26(index,id) {
     var obj = $(id);
@@ -72,10 +72,10 @@ function test2_27(index,id){
 function test3_27(index,id){
     var obj = $(id);
     if (obj.value === answerPack6[index] || obj.value===answerPack6FA[index]) {
-        window.alert("درست بود!");
+        window.alert("خیلی عالی بود!");
         obj.style.backgroundColor = "#67b56f";
     } else {
         obj.style.backgroundColor = "#db3a2e";
-        window.alert("دوباره تلاش کن!");
+        window.alert("بی دقتی کردی!");
     }
 }
