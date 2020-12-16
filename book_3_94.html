@@ -6,7 +6,7 @@
     <title>صفحه ۹۴ - سوم ابتدایی</title>
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/3rd/sass/parsasal/jquery.min.js"></script>
     <script src="assets/3rd/sass/parsasal/parsasal.js"></script>
     <meta name="author" content="Parsa Salehipour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@
         </nav>
 
         <div id="page-body">
-            <section id="farhange-neveshtan" >
+            <section id="farhange-neveshtan">
                 <header class="section-header">
 
                     <div class="title-container">
@@ -61,23 +61,28 @@
                         <textarea placeholder="پاسخ" class="explain-textarea" name="farhange_neveshtan_input"
                             id="farhange_neveshtan_input"></textarea>
                     </div>
-                    <div class="warn-message">
-                        <i class="fa fa-exclamation-circle align-self-center"></i>
-                        <p class="align-self-center">بعضی پاسخ هات درست نبود، دوباره تلاش کن</p>
-                        <button type="button" class="d-flex mr-auto close">&times;</button>
-                    </div>
-                    <div class="info-message">
-
-                        <i class="fa fa-info-circle align-self-center"></i>
-                        <p class="align-self-center d-flex"> اول یک سر نخ را روی ابتدای خط خمیده قرار می‌دهیم. سپس خط خمیده را با نخ می‌پوشانیم و وقتی به انتهای خط رسیدیم نقطه انتهایی را روی نخ مشخص می‌کنیم و دو سر نخ  را می‌گیریم و صاف می‌کنیم در آنها طول نخ صاف را اندازه می‌گیریم.طول این خط خمیده ۷ سانتی متر است.</p>
-                        <button type="button" class="d-flex mr-auto close">&times;</button>
+                    <div id="farhange-neveshtan-messages">
+                        <!-- <div class="warn-message">
+                            <i class="fa fa-exclamation-circle align-self-center"></i>
+                            <p class="align-self-center">بعضی پاسخ هات درست نبود، دوباره تلاش کن</p>
+                            <button type="button" class="d-flex mr-auto close">&times;</button>
+                        </div> -->
+                        <div class="info-message">
+    
+                            <i class="fa fa-info-circle align-self-center"></i>
+                            <p class="align-self-center d-flex"> اول یک سر نخ را روی ابتدای خط خمیده قرار می‌دهیم. سپس خط
+                                خمیده را با نخ می‌پوشانیم و وقتی به انتهای خط رسیدیم نقطه انتهایی را روی نخ مشخص می‌کنیم و
+                                دو سر نخ را می‌گیریم و صاف می‌کنیم در آنها طول نخ صاف را اندازه می‌گیریم.طول این خط خمیده ۷
+                                سانتی متر است.</p>
+                            <button type="button" class="d-flex mr-auto close">&times;</button>
+                        </div>
                     </div>
 
                 </div>
 
 
             </section>
-            <section id="tamrin" >
+            <section id="tamrin">
                 <header class="section-header">
                     <div class="title-container">
 
@@ -159,7 +164,7 @@
 
                         <i class="fa fa-info-circle align-self-center"></i>
                         <p class="align-self-center">مساحت همه مثلث ها برابر ۶ است.</p>
-                        <button  type="button" class="d-flex mr-auto close">&times;</button>
+                        <button type="button" class="d-flex mr-auto close">&times;</button>
                     </div>
                     <div class="info-message">
 
@@ -261,27 +266,25 @@
                     </div>
                 </div>
             </section>
-
+            
             <div class="page-footer"></div>
+
+
         </div>
-        <div class="pagination-wrapper">
-            <div class="pagination">
-                <a class="prev page-numbers">قبلی</a>
-                <span aria-current="page" class="page-numbers">1</span>
-                <a class="page-numbers">3</a>
-                <a class="page-numbers">4</a>
-                <span aria-current="page" class="page-numbers current">1</span>
-                <a class="page-numbers">5</a>
-                <a class="page-numbers">6</a>
-                <a class="page-numbers">7</a>
-                <a class="page-numbers">8</a>
-                <a class="page-numbers">9</a>
-                <a class="page-numbers">10</a>
-                <a class="next page-numbers">بعدی</a>
+        <div class="pagination-container">
+            <div class="page-number-button">
+                <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
             </div>
-
+           
+            <div class="page-number">
+                <input type="number" onfocusout="loadPageChanger()">
+            </div>
+           
+            <div class="page-number-button">
+                <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+            </div>
+            
         </div>
-
 
 
     </div>

@@ -54,10 +54,7 @@
 
   @extend .alert;
   @extend .align-content-start;
-  @extend .d-flex;
-  // display: none;
-
-
+  display: flex;
 
 }
 

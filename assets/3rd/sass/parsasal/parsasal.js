@@ -16,9 +16,12 @@ $('a').click(function () {
 });
 
 // pagination
-let numberPattern = /\d+/g;
-let url_numbers = window.location.href.match(numberPattern);
-let current_page = parseInt(url_numbers[url_numbers.length - 1])
+function getCurrentPageFromURL(){
+    let numberPattern = /\d+/g;
+    let url_numbers = window.location.href.match(numberPattern);
+    return parseInt(url_numbers[url_numbers.length - 1])
+}
+let current_page = getCurrentPageFromURL()
 console.log("current page : " + current_page)
 
 function prevPage() {
@@ -39,27 +42,8 @@ function changePage(page) {
 
 }
 
-function reloadPagination() {
-    console.log("reloading pagination")
-    let childs = $('.pagination').children(); //returns a HTMLCollection
-
-    for (let i = 1; i < childs.length - 1; i++) { // iterate over it
-        if ($(document).width() <= 1024) {
-            childs[i].innerHTML = current_page + i - 1;
-            console.log("your device is NOT a big screen device.");
-            childs[1].classList.add("current");
-            childs[4].classList.remove("current");
-        } else {
-            childs[i].innerHTML = current_page + i - 4;
-            childs[4].classList.add("current");
-            childs[1].classList.remove("current");
-            console.log("your device is a big device");
-        }
-
-        childs[i].onclick = function () { // attach event listener individually
-            window.location.href = `./book_3_${childs[i].innerHTML}.html`;
-        }
-    }
+function loadPageChanger() {
+    $(".page-number input").val(current_page)
 }
 $(document).ready(function () {
 
@@ -71,7 +55,7 @@ $(document).ready(function () {
         nextPage();
     })
 
-    reloadPagination();
+    loadPageChanger();
 
 });
 
@@ -82,7 +66,6 @@ function debounce(func) {
         timer = setTimeout(func, 100, event);
     };
 }
-window.addEventListener("resize", debounce(reloadPagination));
 
 
 // dark mode
@@ -123,6 +106,7 @@ function checkTamrinP94() {
 }
 
 function checkFargangeNeveshtanP94() {
+    $("#farhange-neveshtan-messages").append(getWrongAnswerMessageBox())
     $("#farhange-neveshtan").find(".info-message").css("display", "flex")
         .hide()
         .fadeIn();
@@ -139,22 +123,49 @@ function checkFargangeNeveshtanP94() {
 })(jQuery);
 
 
-function getWrongAnswerMessageBox() {
+function createNewMessageBox(text , type ){
+    let iconClass;
+
     let container = document.createElement("div");
     let icon = document.createElement("i");
-    let text = document.createElement("p");
+    let paragraph = document.createElement("p");
     let closeButton = document.createElement("button");
 
+    
 
-    let ptext = document.createTextNode("بعضی پاسخ هات درست نبود، دوباره تلاش کن");
-    let btext = document.createTextNode("&times;");
+    if(type === "warn"){
+        iconClass = "fa-exclamation-circle"
+        container.classList.add("warn-message")
+    }else if (type === "info "){
+        iconClass = "fa-info-circle"
+        container.classList.add("info-message")
+    }
+
+    paragraph.classList.add("align-self-center")
+
+
+    icon.classList.add("fa")
+    icon.classList.add(iconClass)
+    icon.classList.add("align-self-center")
+
+
+    closeButton.classList.add("d-flex")
+    closeButton.classList.add("mr-auto")
+    closeButton.classList.add("close")
+    closeButton.innerHTML = "&times;"
+
+    let ptext = document.createTextNode(text);
 
     
-    text.appendChild(ptext)
-    closeButton.appendChild(btext)
+    paragraph.appendChild(ptext)
 
     container.appendChild(icon)
-    container.appendChild(text)
+    container.appendChild(paragraph)
     container.appendChild(closeButton)
-    
+
+    return container
+}
+function getWrongAnswerMessageBox() {
+
+    return createNewMessageBox("بعضی پاسخ هات درست نبود، دوباره تلاش کن" , "warn");
 }
