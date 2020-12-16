@@ -20,17 +20,17 @@
             <div class="text">
                 <div class="question">
                     <p><span class="number"> ۱- </span>عدد ۱۰۰۰چندتا از ۹۹۱ بیشتر است؟</p>
-                    <input type="text" id="q1" onChange="checkQuestion1(this.id ,this.value)">
+                    <input type="text" id="q1" onChange="isCorrectValue(this.id ,this.value ,9)">
                 </div>
 
                 <div class="question">
                     <p><span class="number"> ۲- </span>عدد ۱۰۰۰چندرقم دارد؟</p>
-                    <input type="text" id="q2" onChange="checkQuestion2(this.id ,this.value)">
+                    <input type="text" id="q2" onChange="isCorrectValue(this.id ,this.value ,4)">
                 </div>
                 
                 <div class="question 3">
                     <p><span class="number"> ۳- </span>شکل روبه رو چه عددی را نشان میدهد؟</p>
-                    <input type="text" id="q3" onChange="checkQuestion3(this.id ,this.value)">
+                    <input type="text" id="q3" onChange="isCorrectValue(this.id ,this.value ,100)">
                 </div>
                 
             </div>
@@ -43,7 +43,7 @@
 
         <div class="practice1-3-part2">
             <p>۱۰ تا ازاین شکل را به صورت زیرکنارهم قرارمیدهیم. حالا این شکل چه عددی را نشان میدهد؟</p>
-            <input type="text" id="q3-2" onChange="checkQuestion3_2(this.id ,this.value)">
+            <input type="text" id="q3-2" onChange="isCorrectValue(this.id ,this.value ,1000)">
             <img src="./assets/3rd/images/bagherian/1000cube.png" alt="">
         </div>
 
@@ -83,15 +83,15 @@
 
             <div class="inputs">
                 <p class="answer5">
-                    <input type="text" name="" id="5-1-1" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-1-1" onChange="isCorrectValue(this.id ,this.value ,8000)">
                     <span class="red">و</span>
-                    <input type="text" name="" id="5-1-2" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-1-2" onChange="isCorrectValue(this.id ,this.value ,7000)">
                     <span class="red">و</span>
-                    <input type="text" name="" id="5-1-3" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-1-3" onChange="isCorrectValue(this.id ,this.value ,6000)">
                     <span class="red">و</span>
-                    <input type="text" name="" id="5-1-4" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-1-4" onChange="isCorrectValue(this.id ,this.value ,5000)">
                     <span class="red">و</span>
-                    <input type="text" name="" id="5-1-5" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-1-5" onChange="isCorrectValue(this.id ,this.value ,4000)">
                     <span class="red">و</span>
                     ۳۰۰۰ <span class="red">و</span>
                     ۲۰۰۰ <span class="red">و</span>
@@ -99,15 +99,15 @@
                 </p>
     
                 <p class="answer5">
-                    <input type="text" name="" id="5-2-1" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-2-1" onChange="isCorrectValue(this.id ,this.value ,15000)">
                     <span class="red">و</span>
-                    <input type="text" name="" id="5-2-2" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-2-2" onChange="isCorrectValue(this.id ,this.value ,13000)">
                     <span class="red">و</span>
-                    <input type="text" name="" id="5-2-3" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-2-3" onChange="isCorrectValue(this.id ,this.value ,11000)">
                     <span class="red">و</span>
-                    <input type="text" name="" id="5-2-4" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-2-4" onChange="isCorrectValue(this.id ,this.value ,9000)">
                     <span class="red">و</span>
-                    <input type="text" name="" id="5-2-5" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-2-5" onChange="isCorrectValue(this.id ,this.value ,7000)">
                     <span class="red">و</span>
                     ۵۰۰۰ <span class="red">و</span>
                     ۳۰۰۰ <span class="red">و</span>
@@ -115,15 +115,15 @@
                 </p>
     
                 <p class="answer5">
-                    <input type="text" name="" id="5-3-1" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-3-1" onChange="isCorrectValue(this.id ,this.value ,16000)">
                     <span class="red">و</span>
-                    <input type="text" name="" id="5-3-2" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-3-2" onChange="isCorrectValue(this.id ,this.value ,14000)">
                     <span class="red">و</span>
-                    <input type="text" name="" id="5-3-3" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-3-3" onChange="isCorrectValue(this.id ,this.value ,12000)">
                     <span class="red">و</span>
-                    <input type="text" name="" id="5-3-4" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-3-4" onChange="isCorrectValue(this.id ,this.value ,10000)">
                     <span class="red">و</span>
-                    <input type="text" name="" id="5-3-5" onChange="checkNumberSerialCorrectness(this.id ,this.value)">
+                    <input type="text" name="" id="5-3-5" onChange="isCorrectValue(this.id ,this.value ,8000)">
                     <span class="red">و</span>
                     ۶۰۰۰ <span class="red">و</span>
                     ۴۰۰۰ <span class="red">و</span>
@@ -149,19 +149,19 @@
 
                 <div class="shape" >
                     <img src="./assets/3rd/images/bagherian/last-30-1.png" alt="">
-                    <p id="shapeAnswer1">زیرا با تا کردن لبه های آن یک مکعب درست میشود.</p>
+                    <p id="shapeAnswer1">زیرا از بالا مثل مکعب است</p>
                     <input type="radio" id="1" name="drone" onclick="checkShapeCorrectness(this.id)">
                 </div>
 
                 <div class="shape">
                     <img src="./assets/3rd/images/bagherian/last-30-2.png" alt="">
-                    <p id="shapeAnswer2">زیرا با تا کردن لبه های آن یک مکعب درست میشود.</p>
+                    <p id="shapeAnswer2">زیرا تعداد لبه هایش به اندازه مکعب است</p>
                     <input type="radio" id="2" name="drone" onclick="checkShapeCorrectness(this.id)">
                 </div>
 
                 <div class="shape">
                     <img src="./assets/3rd/images/bagherian/last-30-3.png" alt="">
-                    <p id="shapeAnswer3">زیرا با تا کردن لبه های آن یک مکعب درست میشود.</p>
+                    <p id="shapeAnswer3">زیرا میشود با ان مکعب ساخت</p>
                     <input type="radio" id="3" name="drone" onclick="checkShapeCorrectness(this.id)">
                 </div>
 
@@ -173,7 +173,7 @@
 
                 <div class="shape">
                     <img src="./assets/3rd/images/bagherian/last-30-5.png" alt="">
-                    <p id="shapeAnswer5">زیرا با تا کردن لبه های آن یک مکعب درست میشود.</p>
+                    <p id="shapeAnswer5">زیرا شبیه مکعب است</p>
                     <input type="radio" id="5" name="drone" onclick="checkShapeCorrectness(this.id)">
                 </div>
 
