@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ریاضی سوم دبستان-صفحه بیست و شش </title>
     <link rel="stylesheet" href="assets/3rd/css/BagheriMoghaddam.css">
+    <script src="assets/3rd/js/BagheriMoghaddam.js"></script>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
 </head>
 <body style="margin: 0;">
@@ -62,6 +63,9 @@
                 <span class="NumberColor"> ۲- </span>همه ی عددهای سه رقمی را که رقم یکان آنها ۰ و ۷ و ۵، رقم دهگان آنها ۹ و رقم صدگان آنها ۴ یا ۸ باشد، بنویسید.
             </div>
         </div>
+        <div id="Q2-a" class="my-questions-text-config">
+            <input type="text" id="textBox17" onchange="javascript: test2_26('textBox17')" class="my-Big-Black-Box" >
+        </div>
         <div id="Q3_container">
             <div id="Q3" class="text-config questions-text-config">
                 <span class="NumberColor"> ۳- </span>جمع دو عدد را که حاصل جمع آنها ۱۲ باشد، به چند حالت می توانیم بنویسیم؟
@@ -74,7 +78,7 @@
                 ۰+<input type="text" id="textBox15" class = "my-textBox-style" value="۱۱">
                 &nbsp &nbsp = ۱۲
                 <br>
-                ۱+<input type="text" id="textBox16" class = "my-textBox-style" value="۱۱">
+                ۱+<input type="text" id="textBox16" onchange="javascript: testQ2('textBox16');" class = "my-textBox-style" value="۱۱">
                 &nbsp &nbsp = ۱۲
             </div>
         </div>
