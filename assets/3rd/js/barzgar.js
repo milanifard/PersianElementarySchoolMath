@@ -2,6 +2,16 @@
     const correct = "rgba(103, 181, 111,0.8)";
     const notCorrect = "rgba(219, 58, 46,0.8)";
     const orange = "rgba(255, 102, 0, 0.8)";
+    function value_check(elem, val) {
+        if (elem.value == val){
+            elem.style.background = correct;
+        }else if (elem.value == ''){
+            elem.style.background = orange;
+        }else{
+            elem.style.background = notCorrect;
+        }
+    }
+
     function page31_Q1(){
         var hezar = $('page31-question1-1-hezar');
         var sad = $('page31-question1-1-sad');
@@ -52,12 +62,74 @@
         value_check(digit,4);
     }
 
-    function value_check(elem, val) {
-        if (elem.value == val){
-            elem.style.background = correct;
-        }else if (elem.value == ''){
-            elem.style.background = orange;
-        }else{
-            elem.style.background = notCorrect;
+    function page31_Q3() {
+        var text = $('question3-input-text');
+        var num = $('question3-input-number');
+
+        if (num.value%10 == 4 && parseInt(num.value/10, 10)%10 == 5 && parseInt(num.value/1000) == 7){
+            num.style.background = correct;
+        }else if(num.value == ''){
+            num.style.background = orange;
+        }
+        else{
+            num.style.background = notCorrect;
+        }
+
+        if (text.value.includes('هفت هزار') && text.value.includes('پنجاه') && text.value.includes('چهار')){
+                switch(parseInt(num.value/100)%10) {
+                    case 0:
+                        text.style.background = correct;
+                        break;
+                    case 1:
+                        if (text.value.includes('صد')){
+                            text.style.background = correct;
+                        }else text.style.background = notCorrect;
+                        break;
+                    case 2:
+                        if (text.value.includes('دویست')){
+                            text.style.background = correct;
+                        }else text.style.background = notCorrect;
+                        break;
+                    case 3:
+                        if (text.value.includes('سیصد')){
+                            text.style.background = correct;
+                        }else text.style.background = notCorrect;
+                        break;
+                    case 4:
+                        if (text.value.includes('چهار صد')){
+                            text.style.background = correct;
+                        }else text.style.background = notCorrect;
+                        break;
+                    case 5:
+                        if (text.value.includes('پانصد')){
+                            text.style.background = correct;
+                        }else text.style.background = notCorrect;
+                        break;
+                    case 6:
+                        if (text.value.includes('ششصد')){
+                            text.style.background = correct;
+                        }else text.style.background = notCorrect;
+                        break;
+                    case 7:
+                        if (text.value.includes('هفت صد')){
+                            text.style.background = correct;
+                        }else text.style.background = notCorrect;
+                        break;
+                    case 8:
+                        if (text.value.includes('هشت صد')){
+                            text.style.background = correct;
+                        }else text.style.background = notCorrect;
+                        break;
+                    case 9:
+                        if (text.value.includes('نه صد')){
+                            text.style.background = correct;
+                        }else text.style.background = notCorrect;
+                        break;
+                }
+        }else if(num.value == ''){
+            text.style.background = orange;
+        }
+        else{
+            text.style.background = notCorrect;
         }
     }
