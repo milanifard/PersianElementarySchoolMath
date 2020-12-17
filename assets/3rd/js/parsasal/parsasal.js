@@ -16,7 +16,7 @@ $('a').click(function () {
 });
 
 // pagination
-function getCurrentPageFromURL(){
+function getCurrentPageFromURL() {
     let numberPattern = /\d+/g;
     let url_numbers = window.location.href.match(numberPattern);
     return parseInt(url_numbers[url_numbers.length - 1])
@@ -83,26 +83,51 @@ window.onkeypress = function (e) {
 
 function checkTamrinP94() {
     console.log("mohit labels: " + $(".triangles"))
+    let hasWrongAnswer = false
     $(".triangle-answer").each(function (i, obj) {
         if (obj.value !== "") {
             if (obj.value !== "6") {
+                hasWrongAnswer = true
                 obj.classList.add("is-invalid")
                 obj.classList.remove("is-valid")
+
             } else {
                 obj.classList.add("is-valid")
                 obj.classList.remove("is-invalid")
+
             }
 
         }
 
     });
 
-    $("#tamrin").find(".info-message").css("display", "flex")
+    console.log("checking tamrin answer , clickedRectangleId="+clickedRectangleId)
+    if(clickedRectangleId){
+        console.log("clickedRectangleId is not null")
+        if(clickedRectangleId === "rect2"){
+            $("#rect2").css("box-shadow" , "0 0 8px green");
+            $("#tamrin94-2-messages").find(".info-message").css("display", "flex")
+            .hide()
+            .fadeIn();
+        }else{
+            $("#"+clickedRectangleId).css("box-shadow" , "0 0 8px red");
+        }
+    }
+
+    if (hasWrongAnswer) {
+        $("#tamrin94-1-messages").append(getWrongAnswerMessageBox())
+        $("#tamrin94-1-messages").find(".warn-message").css("display", "flex")
         .hide()
         .fadeIn();
-    $("#tamrin").find(".warn-message").css("display", "flex")
-        .hide()
-        .fadeIn();
+    } else {
+        $("#tamrin94-1-messages").find(".warn-message").remove()
+        $("#tamrin94-1-messages").find(".info-message").css("display", "flex")
+            .hide()
+            .fadeIn();
+
+    }
+
+
 }
 
 function checkFargangeNeveshtanP94() {
@@ -120,10 +145,23 @@ function checkFargangeNeveshtanP94() {
         $(this).parent().fadeOut();
     });
 
+    
 })(jQuery);
+var clickedRectangleId;
+$(document).ready(function () {
 
 
-function createNewMessageBox(text , type ){
+    $(".clickable-image").click(function(event) {
+       
+        clickedRectangleId =  $(event.target).attr('id')
+        console.log("clicked image : "+clickedRectangleId)
+        $(".clickable-image").css("box-shadow" , "")
+        $(event.target).css("box-shadow" , "0 0 8px blue");
+    });
+
+});
+
+function createNewMessageBox(text, type) {
     let iconClass;
 
     let container = document.createElement("div");
@@ -131,12 +169,12 @@ function createNewMessageBox(text , type ){
     let paragraph = document.createElement("p");
     let closeButton = document.createElement("button");
 
-    
 
-    if(type === "warn"){
+
+    if (type === "warn") {
         iconClass = "fa-exclamation-circle"
         container.classList.add("warn-message")
-    }else if (type === "info "){
+    } else if (type === "info ") {
         iconClass = "fa-info-circle"
         container.classList.add("info-message")
     }
@@ -156,7 +194,7 @@ function createNewMessageBox(text , type ){
 
     let ptext = document.createTextNode(text);
 
-    
+
     paragraph.appendChild(ptext)
 
     container.appendChild(icon)
@@ -165,7 +203,8 @@ function createNewMessageBox(text , type ){
 
     return container
 }
+
 function getWrongAnswerMessageBox() {
 
-    return createNewMessageBox("بعضی پاسخ هات درست نبود، دوباره تلاش کن" , "warn");
+    return createNewMessageBox("بعضی پاسخ هات درست نبود، دوباره تلاش کن", "warn");
 }
