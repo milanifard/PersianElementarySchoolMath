@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <title>صفحه ۹۶ - سوم ابتدایی</title>
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/3rd/sass/parsasal/tangram_styles.css">
     <script src="./assets/3rd/sass/parsasal/jquery.min.js"></script>
     <script src="./assets/3rd/sass/parsasal/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw==" crossorigin="anonymous"></script>
-    <script src="assets/3rd/sass/parsasal/parsasal.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+        crossorigin="anonymous"></script>
+    <script src="assets/3rd/js/parsasal/parsasal.js"></script>
+    <link rel="icon" href="./assets/3rd/images/favicon.png">
     <meta name="author" content="Parsa Salehipour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -18,8 +21,7 @@
 <body>
 
     <div class="container-full">
-        <div id="myAnchor" style="display: block;"></div>
-        <a href="#myAnchor" class="go-top"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+        
         <nav id="main-header">
             <a type="submit" class="next-page btn btn-default">صفحه بعدی</a>
             <a type="submit" class="prev-page btn btn-default">صفحه قبلی</a>
@@ -65,8 +67,8 @@
                         <div id="canvas">
                             <div id="instruction">
                                 <h1>تانگرام</h1>
-                                <p >برای شروع یکی از شکل های بالا رو بکش اینجا</p>
-                                <p >برای چرخوندن شکل ها می‌تونی کلیک کنی</p>
+                                <p>برای شروع یکی از شکل های بالا رو بکش اینجا</p>
+                                <p>برای چرخوندن شکل ها می‌تونی کلیک کنی</p>
                             </div>
                         </div>
                         <script src="./assets/3rd/sass/parsasal/tangram_script.js"></script>
@@ -87,7 +89,7 @@
 
                     </header>
                     <div class="masale">
-                        <p >‫علی‪ ،‬پدر امین و اکبر است‪.‬او می خواهد یک قطعه زمین کشاورزی خود را به
+                        <p>‫علی‪ ،‬پدر امین و اکبر است‪.‬او می خواهد یک قطعه زمین کشاورزی خود را به
                             طور مساوی‬
                             ‫بین دو پسرش تقسیم کند‪ .‬برای این کار‪ ،‬او ابتدا باید مساحت این زمین را محاسبه کند اما
                             زمین‬
@@ -109,23 +111,21 @@
 
             <div class="page-footer"></div>
         </div>
-        <div class="pagination-wrapper">
-            <div class="pagination">
-                <a class="prev page-numbers">قبلی</a>
-                <span aria-current="page" class="page-numbers">1</span>
-                <a class="page-numbers">3</a>
-                <a class="page-numbers">4</a>
-                <span aria-current="page" class="page-numbers current">1</span>
-                <a class="page-numbers">5</a>
-                <a class="page-numbers">6</a>
-                <a class="page-numbers">7</a>
-                <a class="page-numbers">8</a>
-                <a class="page-numbers">9</a>
-                <a class="page-numbers">10</a>
-                <a class="next page-numbers">بعدی</a>
+        <div class="pagination-container">
+            <div class="page-number-button">
+                <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+            </div>
+
+            <div class="page-number">
+                <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+            </div>
+
+            <div class="page-number-button">
+                <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
             </div>
 
         </div>
+
     </div>
 
 

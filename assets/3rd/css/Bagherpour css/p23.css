@@ -1,4 +1,9 @@
 *{margin:0px; padding:0px;}
+@font-face
+{
+    font-family:persianNum; src:url('../../../fonts/Farsi-Digits/Samim-FD.ttf'); font-weight:normal;
+}
+body{overflow-x: hidden;}
 .left-border{
     width: 89vw;
     max-width: 100%;
@@ -46,7 +51,7 @@
 .inner{
     border:0.2vw solid #b41777;
     background-color: white;
-    width: 8vw;
+    width: 8.5vw;
     height: 6vw; 
     display: flex;
     justify-content: center;
@@ -54,35 +59,17 @@
 }
 .table-element{
     font-size: 1.8vw ;
+    line-height: 10px;
 }
-.container {
-    width: 100%;
-    height: 20vw;
-    position: relative;
-    overflow: hidden;
-    border: none;
-    margin: 10px 0 20px 0;
-    
-  } 
-  .container textarea {
-    float: right;
-    margin-right: 2vw;
-    resize: none;
-    width: 80%;
-    height: 20vw;
-    line-height: 4ch;
-    background-image: linear-gradient(#e4f0d4, #e4f0d4 calc(4ch - 2px), #9bcce3 0px);
-    background-size: 100% 4ch;
-    border: none;
-    font-size: 1vw;
-  }
+
   input{
     border: none; 
     border-bottom: 1px solid #f0595b; 
     width: 7.8vw;
     font-size: 1.5vw;
-    height: 2.5vw;
-    color:gray;
+    text-align: center;
+   font-family:persianNum; ;
+   color: #4f4f4f;
   
 }
 .top-margin{margin-top:-0.4vw;}
@@ -107,6 +94,7 @@
     justify-content: space-between;
     width:50vw;
     margin:2vw auto 2vw;
+    clear: both;
 
 }
 .fletcher{
@@ -148,17 +136,39 @@
 .shapes{display: flex; justify-content: space-between; flex-direction: row-reverse; flex-wrap: wrap; width: 65vw;  margin:2vw auto 2vw;}
 .checkboxes{display: flex; flex-direction: column; justify-content: center;}
 .flex-row{display: flex;}
-.checkbox{width:1vw; margin: 0; height: auto;}
+.checkbox{width:1vw; margin: 5px 0px; height: auto;}
 .shape{width: 11vw; height: auto;}
 .shape1{width: 8vw; height: auto;}
+.radio-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top:0.8vw;
+    font-size:1.8vw;
+    padding-right:10vw ;
+} 
+@media only screen and (max-width:1100px){
+    .checkbox{ margin: 0;}
+}
 @media only screen and (max-width:800px){
     .shapes{width: 50vw;}
     .checkbox{width:10px;}
     .shape{width: 80px;}
     .shape1{width: 80px;}
-    .q-text{font-size: 10px;}
-    .table-element{font-size: 10px;}
-    input{font-size: 10px; height: 11px;}
-    .rec{font-size: 10px;}
-    .inner{font-size: 8px;}
+    p {font-size: 18px;}
+    label {font-size: 18px;}
+    .q-text {font-size: 18px;}
+    .radio-part{font-size: 10px;}
+    .table-element{font-size: 12px;}
+    input{font-size: 12px; height: 11px;}
+    .option {font-size: 15px;}
+
+}
+@media only screen and (max-width:600px){
+    .fletcher{width: 50px;}
+    .con{ height:25px;}
+}
+@media only screen and (max-width:400px){
+    .rec{font-size: 18px; height: 30px; width:30px;}
+    .recs{width:270px;}
 }

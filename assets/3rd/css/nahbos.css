@@ -421,11 +421,11 @@
 
 .page-no-input{
 
-    width: 20vw;
+    width: 25vw;
 
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 0vw;
+    bottom: -7vw;
     margin: auto;
 }
