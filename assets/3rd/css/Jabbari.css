@@ -148,7 +148,7 @@ body{
 }
 
 #q2{
-    margin: 1vw 5vw 3vw 5vw;
+    margin: 1vw 3vw 3vw 2vw;
 }
 
 
@@ -228,12 +228,11 @@ body{
     bottom : 70vw;
 }
 .table_circle{
-    margin: 1vw 5vw 0vw 0vw;
+    margin: 1vw 1vw 0vw 0vw;
 }
 
 td{
-padding-left: 1vw;
-padding-right: 1vw;
+    padding-right: 1vw;
 }
 .td_padding_top{
     padding-top: 3vw;
@@ -253,7 +252,7 @@ padding-right: 1vw;
 }
 
 #Separator_col{
-    padding-right: 10vw;
+    padding-right: 2vw;
 }
 .img_width10{
     width:10vw;
@@ -276,4 +275,24 @@ padding-right: 1vw;
     margin: 2vw 8vw 0 2vw;
     margin-left: 10vw;
 
+}
+
+.Rectangle{
+    border : 0.5px solid var(--purple);
+    padding-top: 2vw;
+    padding-right : 1.8vw;
+    background-color:#fff4f8;
+}
+
+.padding_R2{
+    padding-right : 7.2vw;
+}
+.padding_R3{
+    padding-right : 2.4vw;
+}
+.padding_R4{
+    padding-right : 4.8vw;
+}
+.padding_R5{
+    padding-right : 3.6vw;
 }

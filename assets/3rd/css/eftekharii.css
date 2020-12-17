@@ -32,6 +32,19 @@
     font-family: Zar;
     src: url("/assets/fonts/Zar.woff") format("woff");
 }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 
 body{
     font-family:"B Zar";
@@ -59,6 +72,15 @@ body{
 
 .pull-left{
     float: left;
+}
+
+.pull-center{
+    position: relative;
+    text-align: center;
+}
+
+.topmargin{
+    margin:2vw 0 ;
 }
 
 .text-center{
@@ -194,8 +216,13 @@ body{
      grid-template-columns: 4vw 4vw 4vw 4vw ;
      grid-column-gap: 0.7vw;
      float: right;
-     margin: 0 37%;
+     margin: 0 38%;
+    alignment: center;
  }
+.gridcontainer1_4{
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
 
 .container {
     width: 100%;
@@ -206,6 +233,7 @@ body{
     float: right;
     margin: 0 -4vw;
     margin-left: 4vw;
+    text-align: center;
 }
 
 .one-third-page{
@@ -365,7 +393,31 @@ body{
     text-align: center;
     background-color: transparent;
 }
+.input-light-blue{
+    border-bottom-color: var(--grid_light_blue_color);
+}
+.input-gold{
+    border-bottom-color: var(--grid_gold_color);
+}
+.input-light-purple{
+    border-bottom-color: var(--grid_light_purple_color);
+}
+.input-purple{
+    border-bottom-color: var(--grid_purple_color);
+}
+.input-green{
+    border-bottom-color: var(--grid_green_color);
+}
+.input-red{
+    border-bottom-color: var(--grid_red_color);
+}
+.input-black{
+     border-bottom-color: black;
+ }
 
+.input-brown{
+    border-bottom-color: var(--grid_light_brown_color);
+}
 
 .input-large-style{
     width: 20vw;
@@ -392,17 +444,27 @@ body{
 }
 
 .submit{
-     width:10vw;
-     border-radius: 1vw;
-     background: var(--main_color);
-     text-align: center;
-     color: white;
-     text-decoration: none;
-     margin:0 44% 2vw;
- }
+      width:11vw;
+      border-radius: 1vw;
+      background: var(--main_color);
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+  }
+
+.feedback{
+    text-align: center;
+    margin: 0vw;
+    display: block;
+}
+
+/*#feedback1_2{*/
+/*    padding: 0vw 3vw;*/
+/*}*/
 
 .submit-half-page{
-    margin:0 50% 2vw;
+    margin:0 40% 2vw;
 }
 .submit-third-page{
     margin:0 33.33% 2vw;
@@ -473,6 +535,17 @@ body{
     color: olive;
     font-size: 3vw;
 }
+
+#input-row-1-2{
+    margin-right: 4vw;
+}
+
+.shake {
+    animation: shake;
+    animation-iteration-count: infinite;
+}
+
+
 
 
 

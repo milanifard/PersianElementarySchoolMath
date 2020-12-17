@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>صفحه ۹۶ - سوم ابتدایی</title>
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/3rd/sass/parsasal/tangram_styles.css">
     <script src="./assets/3rd/sass/parsasal/jquery.min.js"></script>
     <script src="./assets/3rd/sass/parsasal/jquery-ui.min.js"></script>
@@ -109,22 +110,19 @@
 
             <div class="page-footer"></div>
         </div>
-        <div class="pagination-wrapper">
-            <div class="pagination">
-                <a class="prev page-numbers">قبلی</a>
-                <span aria-current="page" class="page-numbers">1</span>
-                <a class="page-numbers">3</a>
-                <a class="page-numbers">4</a>
-                <span aria-current="page" class="page-numbers current">1</span>
-                <a class="page-numbers">5</a>
-                <a class="page-numbers">6</a>
-                <a class="page-numbers">7</a>
-                <a class="page-numbers">8</a>
-                <a class="page-numbers">9</a>
-                <a class="page-numbers">10</a>
-                <a class="next page-numbers">بعدی</a>
+        <div class="pagination-container">
+            <div class="page-number-button">
+                <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
             </div>
-
+           
+            <div class="page-number">
+                <input type="number" onfocusout="loadPageChanger()">
+            </div>
+           
+            <div class="page-number-button">
+                <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+            </div>
+            
         </div>
     </div>
 
