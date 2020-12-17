@@ -260,11 +260,11 @@
                 </a>
             </div>
             <div class="page-number" style="float: left; position: relative; padding: 0.1vw 1vw; right: 0; bottom: 0">
-                <input style="width: 5vw; font-size: 1.5vw; background-color: var(--orange_level2); text-align: center; color: white" type="number" name="page_number" id="page_number">
+                <input style="width: 5vw; font-size: 1.5vw; background-color: var(--orange_level2); text-align: center; color: white" type="number" name="page_number" id="page_switcher">
             </div>
             <div style="float: left; margin-left: 2vw; margin-top: 1vw">
                 <a href="book_3_124.html">
-                    <img style="width: 3vw" src="assets/3rd/images/chevron.png" alt="next_page">
+                    <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="next_page">
                 </a>
             </div>
         </div>
@@ -498,6 +498,22 @@
             $("guess_box_feedback").textContent = "آفرين عزيزم. درست حدس زدي.";
             $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
             $("guess_box_feedback").classList.add("shaking-animation");
+        }
+    }
+
+    $("page_switcher").onkeypress=function(e){
+
+        if(e.which===13){
+
+            let page_no = $("page_switcher").value;
+
+            let tag = document.createElement("a");
+            tag.href = 'book_3_' + page_no + '.html';
+
+            tag.id = "switch";
+            document.body.appendChild(tag);
+
+            $("switch").click();
         }
     }
 
