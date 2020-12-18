@@ -5,7 +5,9 @@
     <meta name="author" content="ParastooBagherpour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/Bagherpour css/p23.css">
+    <link rel="stylesheet" href="./assets/3rd/css/Bagherpour css/page-changer.css">
     <link href="http://fonts.cdnfonts.com/css/zar" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
     <title>ریاضی سوم دبستان</title>
     <script type="text/javascript" src="./assets/3rd/js/bagherpour.js"></script>
@@ -21,8 +23,7 @@
             </div>           
         </div>
         <div class="outer" dir="rtl">
-            <div class="inner"><input id="table1" onchange="checkInputTextCorrect(this.id , this.value, '21:30')"/></div>
-			
+            <div class="inner"><input id="table1" onchange="checkInputTextCorrect(this.id , this.value, '21:30')"/></div>			
             <div class="inner"><p class="table-element">بیست و ربع</p></div>
             <div class="inner"><p class="table-element"> ۱۹:۲۵</p></div>
             <div class="inner"><img src="./assets/3rd/images/bagherpour/time.png" class="time"></div>
@@ -291,7 +292,18 @@
             </div>       
         </div>
         
-        <div class="page-number">۲۳</div>
+        <!-- <div class="page-number">۲۳</div> -->
+        <div class="pagination-container">
+            <div class="page-number-button">
+                <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+            </div>   
+            <div class="page-number">
+                <input class="paginationInput" type="number" id="page-number-input" onfocusout="loadPageChanger()">
+            </div>    
+            <div class="page-number-button">
+                <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+            </div>   
+        </div> 
     </div>
 </body>
 </html>

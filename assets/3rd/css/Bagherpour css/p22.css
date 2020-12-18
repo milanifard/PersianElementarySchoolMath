@@ -124,7 +124,7 @@ body{overflow-x: hidden;}
     height: 180px;
     padding-top:30px;
 }
-  .page-number{
+  /* .page-number{
     background-color: #44b869;
     border-radius: 2.5vw;
     border: 0.9vw double white;
@@ -136,7 +136,7 @@ body{overflow-x: hidden;}
     position: absolute;
     bottom: -0.5vw;
     right: -5vw;
-}
+} */
 
 .dastgah{
     width: 400px;
@@ -227,6 +227,9 @@ input{
 }
 .right-float{float: right;}
 .radio-part{display: flex; float: right; padding-top: 3vw; font-size:20px;}
+
+
+
  @media only screen and (max-width:1160px)
 {  
     .clocks{margin: auto;}
