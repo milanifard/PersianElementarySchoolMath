@@ -5,7 +5,7 @@
         var points = 25;
 
         // The distance between the points:
-        var length = 15;
+        var length = 25;
 
         var path = new Path({
             strokeColor: '#E4141B',
@@ -23,13 +23,11 @@
             minDistanceSegment = getNearestSegmentOnPath(path, event.point , points)
 
             if (minDistanceSegment !== undefined) {
-                if (minDistanceSegment.point.getDistance(event.point) < 30) {
+                if (minDistanceSegment.point.getDistance(event.point) < 75) {
                     var segment = minDistanceSegment;
                     segment.point = event.point
                     while (!segment.isLast()) {
-                        console.log("segment  point : "+segment.point)
-
-                        
+   
                         var nextSegment = segment.next;
                         var vector = segment.point - nextSegment.point;
                         vector.length = length;
@@ -38,21 +36,20 @@
                     }
 
                     var segment = minDistanceSegment;
-                    segment.point = event.point
+                    
                     while (!segment.isFirst()) {
-                        console.log("segment  point : "+segment.point)
 
-                        
                         var previousSegment = segment.previous;
                         var vector = segment.point - previousSegment.point;
                         vector.length = length;
                         previousSegment.point = segment.point - vector;
                         var segment = segment.previous;
                     }
+                    path.smooth({ type: 'continuous' });
                 }
             }
 
-            path.smooth({ type: 'continuous' });
+            
 
 
         }
