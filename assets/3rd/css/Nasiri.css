@@ -1,0 +1,86 @@
+:root{
+
+    --light-pink:rgb(252,210,192);
+    --pink:rgb(253,199,171);
+    --blue:rgb(92,182,206)
+}
+
+.left-border{
+    width: 90vw;
+    max-width: 100%;
+    padding: 100% 0;
+    border: 0.8vw double var(--pink);
+    margin: 6vw 0 0 10vw;
+    border-right: none;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    border-right: none;
+    position: relative;
+    background-color: white;
+}
+.background-style{
+    width: 102vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, var(--light-pink), var(--light-pink) 1vw, var(--pink) 0vw, var(--pink) 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    left: -12vw;
+    z-index: -1;
+}
+.title_side{
+    height: 1vw;
+    background-color: var(--blue);
+    color: var(--blue);
+    border-style: solid;
+    position: absolute;
+    right: 31vw;
+    left: 31vw;
+    top: -1.2vw;
+}
+.title_box{
+    background-color: var(--pink);
+    border-radius: 2vw;
+    text-align: center;
+    font-family: Koodak;
+    font-size: 1.2vw;
+    color: black;
+    position: absolute;
+    right: 32vw;
+    left: 32vw;
+    top: -3.3vw;
+}
+.activity-image{
+    width: 13vw;
+    position: absolute;
+    right: 3.5vw;
+    top: 0.5vw;
+    z-index: 2;
+}
+.activity-text{
+    background-color: var(--pink);
+    border-radius: 1.5vw;
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.25vw;
+    color: white;
+    padding: 0 5vw 0 3vw;
+    position: absolute;
+    right: 12.5vw;
+    top: 2.5vw;
+    z-index: 1;
+}
+.page-number-odd{
+    background-color: var(--pink);
+    border-radius: 2.5vw;
+    border: 0.9vw double white;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Koodak;
+    color: white;
+    padding: 0 3vw;
+    position: absolute;
+    bottom: -0.5vw;
+    left: -5vw;
+}
