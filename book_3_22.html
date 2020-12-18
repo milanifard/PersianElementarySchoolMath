@@ -5,6 +5,8 @@
     <meta name="author" content="ParastooBagherpour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/Bagherpour css/p22.css">
+    <link rel="stylesheet" href="./assets/3rd/css/Bagherpour css/page-changer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="http://fonts.cdnfonts.com/css/zar" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
     <title>ریاضی سوم دبستان</title>
@@ -14,16 +16,13 @@
     <div class="right-border">
         <div class="background-style"></div>
         <div class="review-box">
-            <div class="rec">
-            </div>
+            <div class="rec"></div>
             <div class="review">
                 <h1 class="review-text">مرور فصل</h1>
-            </div>
-			
-            <div class="rec">
-            </div>
+            </div>			
+            <div class="rec"></div>
         </div>
-         <div class="green-box">
+        <div class="green-box">
             <div class="light-green-part" >
                 <h1 class="text-in-green-box">فرهنگ نوشتن</h1>
             </div>
@@ -92,8 +91,8 @@
                     <input id="practice1first5" onchange="checkInputTextCorrect(this.id , this.value, 36)"/><span class="and"> و </span>
                     <input id="practice1first6" onchange="checkInputTextCorrect(this.id , this.value, 40)"/><span class="and"> و </span>
                     <input id="practice1first7" onchange="checkInputTextCorrect(this.id , this.value, 44)"/>
-                  </div>
-                  <div class="counting"> 
+                </div>
+                <div class="counting"> 
                     <span class="top-margin">۶</span><span class="and">و</span>
                     <span class="top-margin">۱۲</span><span class="and">و</span>
                     <span class="top-margin">۱۸</span><span class="and">و</span>
@@ -105,13 +104,12 @@
                     <input id="practice1second6" onchange="checkInputTextCorrect(this.id , this.value,54)"/><span class="and">و</span>
                     <input id="practice1second7" onchange="checkInputTextCorrect(this.id , this.value,60)"/><span class="and">و</span>
                     <input id="practice1second8" onchange="checkInputTextCorrect(this.id , this.value,66)"/>
-            </div>
-            <p class="q-text" dir="rtl" class="right-float">چه عدد هایی در این دو الگو مشترک اند؟ (به ترتیب کوچک به بزرگ از چپ به راست وارد کنید.)</p>
+                </div>
+                <p class="q-text" dir="rtl" class="right-float">چه عدد هایی در این دو الگو مشترک اند؟ (به ترتیب کوچک به بزرگ از چپ به راست وارد کنید.)</p>
                 <input id="practice1third1" onchange="checkInputTextCorrect(this.id , this.value , 12)"/>&nbsp&nbsp
                 <input id="practice1third2" onchange="checkInputTextCorrect(this.id , this.value , 24)"/>&nbsp&nbsp
                 <input id="practice1third3" onchange="checkInputTextCorrect(this.id , this.value , 36)"/>
             </div>
-
         </div>
         <div class="question-part left-cal">
             <div class="q-text">
@@ -209,6 +207,18 @@
                 <input id="practice33" onchange="checkInputTextCorrect(this.id , this.value,28)"/>            
             </div>
         </div>
-        <div class="page-number">۲۲</div>  
+        <!-- <div class="page-number">۲۲</div> -->
+        <div class="pagination-container">
+            <div class="page-number-button">
+                <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+            </div>   
+            <div class="page-number">
+                <input class="paginationInput" type="number" id="page-number-input" onfocusout="loadPageChanger()">
+            </div>    
+            <div class="page-number-button">
+                <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+            </div>   
+        </div> 
+    </div> 
 </body>
 </html>
