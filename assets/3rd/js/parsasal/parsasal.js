@@ -51,7 +51,7 @@ $(document).ready(function () {
     input.addEventListener('keypress', logKey);
 
     function logKey(e) {
-        if(e.code === "Enter"){
+        if (e.key === "Enter") {
             window.location.href = `./book_3_${input.value}.html`;
         }
     }
@@ -132,13 +132,48 @@ function createNewMessageBox(text, type) {
 
     return container
 }
-function showWrongAnswerMessage(containerId){
+
+function showWrongAnswerMessage(containerId) {
     $(containerId).append(getWrongAnswerMessageBox())
     $(containerId).find(".warn-message").css("display", "flex")
         .hide()
         .fadeIn();
 }
+
 function getWrongAnswerMessageBox() {
 
     return createNewMessageBox("بعضی پاسخ هات درست نبود، دوباره تلاش کن", "warn");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function getNearestSegmentOnPath(path, point , points) {
+    let minDistance = 99999;
+    let minDistanceSegment = undefined;
+    for (var i = 0; i < points - 1; i++) {
+        var segment = path.segments[i];
+        if (segment.point.getDistance(point) < minDistance) {
+            minDistance = segment.point.getDistance(point)
+            minDistanceSegment = segment
+        }
+
+    }
+    return minDistanceSegment;
+
 }
