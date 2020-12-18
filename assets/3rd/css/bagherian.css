@@ -1,24 +1,15 @@
+
+/* ------------------------------------------------------------------------ */
+/* -----------------------      GLOBAL CSS      --------------------------- */
+/*------------------------------------------------------------------------- */
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-
-@font-face {
-    font-family: 'zar';
-    src: url("../../fonts/Zar.eot");
-    src: url("../../fonts/Zar.ttf") format("ttf");
-  }
-
-@font-face{
-    font-family: 'samin';
-    src: url("../../fonts/Samim-Bold.eot");
-}  
-
-/* ------------------------------------------------------------------------ */
-/* -----------------------      GLOBAL CSS      --------------------------- */
-/*------------------------------------------------------------------------- */
 
 body{
     background-image: repeating-linear-gradient(0deg, #79c2d2, #79c2d2 1vw, #e1f4fd 0vw, #e1f4fd 2.5vw);
@@ -27,6 +18,24 @@ body{
     bottom: -90vh;
     z-index: -1;
 }
+
+
+.correctAnswer{
+    background-color: #37ee56;
+    border-radius: 5px;
+    padding: 1px 3px;
+    margin: 2px 2px;
+    display: none;
+  }
+  
+  .wrongAnswer{
+     background-color: #ce2f24;
+     color: #ffffff;
+     border-radius: 5px;
+     padding: 1px 3px;
+     margin: 2px 2px;
+     display: none;
+  }
 
 .link{
     display: flex;
@@ -377,10 +386,14 @@ body .content29 .question1 .questiontitle .cubeShape img{
     height: 35vh;
 }
 
+body .content29 .question1 .answer{
+    display: flex;
+}
+
 @media screen and (max-width: 820px) {
 
     body .content29 .question1 .questiontitle{
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -391,6 +404,11 @@ body .content29 .question1 .questiontitle .cubeShape img{
         height: 30vh;
     }
 
+    body .content29 .question1 .answer{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 
@@ -398,13 +416,13 @@ body .content29 .question1 .answer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: flex-end; */
     margin-top: 6vh;
 }
 
 
 body .content29 .question1 .answer  p{
-    text-align: right;
+    text-align: left;
     padding: 2vh;
 }
 
@@ -429,12 +447,38 @@ body .content29 .question2{
     justify-content: space-between;
     margin-top: 6vh;
 }
+body .content29 .question2 .images{
+    display: flex;
+    justify-content: space-between;
+}
+body .content29 .question2 .images .select{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+body .content29 .question2 .images .select img{
+    width: 100%;
+}
+body .content29 .question2 .images .select input{
+    margin-top: 1vh;
+}
 
 @media screen and (max-width: 820px) {
     body .content29 .question2{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+    body .content29 .question2 .images{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    body .content29 .question2 .images .select {
+        width: 50%;
     }
 }
 
@@ -567,7 +611,8 @@ body .content30 .practice1-3-part1 .text .question{
 body .content30 .practice1-3-part1 .text input,
 body .content30 .practice1-3-part2 input,
 body .content30 .question4 .cubes .cube input,
-body .content30 .question5 p input{
+body .content30 .question5 p input,
+body .content29 .question2 .title input{
     width: 10vw;
     height: 3vh;
     border: none;
@@ -626,20 +671,6 @@ body .content30 .question4 .cubes .cube{
     align-items: center;
 }
 
-body .content30 .question4 .cubes .cube .correctAnswer{
-    background-color: #37ee56;
-    border-radius: 5px;
-    padding: 1px 3px;
-    display: none;
-  }
-  
-  body .content30 .question4 .cubes .cube .wrongAnswer{
-     background-color: #ce2f24;
-     color: #ffffff;
-     border-radius: 5px;
-     padding: 1px 3px;
-     display: none;
-  }
 
 body .content30 .question4 .cubes .cube img{
     width: 60%;
