@@ -74,13 +74,14 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     overflow: visible;
     height: 3em;
+    margin-bottom: 5vh;
     /* to adjust page changer position , adjust position of this element */
     
 }
 
 .page-number {
     /* substitute your color */
-    background-color: #79c2d2;
+    background-color: #0c9dc3;
     border-radius: 2em;
     width: 5.8em;
     color: white;
@@ -95,9 +96,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-number input {
     /* substitute your color */
-    background-color: #79c2d2;
+    background-color: #0c9dc3;
     border: none;
     width: 100%;
+    height: inherit;
     text-align: center;
     font-size: 32px;
     color: white;
@@ -106,12 +108,12 @@ h1, h2, h3, h4, h5, h6 {
 .page-number-button {
     width: 3em;
     display: flex;
-    color: white;
+    color: rgb(19, 0, 70);
     justify-content: center;
 }
 
-.page-number-button > a {
-    color: white;
+.page-number-button  a {
+    color: rgb(19, 0, 70);
     font-size: 2.5em;
     display: flex;
 
@@ -250,8 +252,8 @@ body .content .activity1 .activityTitle p {
 }
 
 body .content .activity1 .activityTitle img{
-    width: 8vw;
-    height: 15vw;
+    width: 15vh;
+    height: 15vh;
     border:none;
 }
 
@@ -318,7 +320,7 @@ body .content .activity1 .activityContent .question .answer input,
 body .content .activity2  input,
 body .content .countAndSay input{
     width: 10vw;
-    height: 3vh;
+    height: inherit;
     border: none;
     border-bottom: 1px solid #39c1f0;
     margin: 1vh;
@@ -353,10 +355,11 @@ body .content .countAndSay{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 5vh;
     background-color: #e1f4fc;
     width: 70vw;
     padding: 1vw 4vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     margin-left: 20%;
     margin-right: 20%;
     border: 2px solid #39c1f0;
@@ -393,6 +396,12 @@ body .content .countAndSay .title .second{
     body .content .countAndSay .cube  {
         flex-wrap: wrap;
     }
+
+    body .content .countAndSay .cube input{
+        width: 50%;
+        height: inherit;
+    }
+
   }
 body .content .countAndSay .cube img {
     width: 15vh;
@@ -403,7 +412,7 @@ body .content .countAndSay .cube .pencel{
     height: 25vh;
 }
 
-body .content .pageNumber {
+/* body .content .pageNumber {
     background-color: #0c9dc3;
     border-radius: 2.5vw;
     border: 0.9vw double white;
@@ -415,8 +424,7 @@ body .content .pageNumber {
     position: relative;
     top: 30%;
     left: 55%;
-  
-}
+} */
 
 /* ------------------------------------------------------------------------ */
 /* -----------------------        page 29       --------------------------- */
@@ -487,11 +495,6 @@ body .content29 .question1 .answer{
         height: 30vh;
     }
 
-    body .content29 .question1 .answer{
-        display: flex;
-        flex-direction: column;
-    }
-
 }
 
 
@@ -520,6 +523,8 @@ body .content29 .question1 .answerTitle .redText{
 }
 body .content29 .question1 .answer input{
     border: none;
+    height: inherit;
+    text-align: center;
     border-bottom:1px solid #39c1f0;
     width: 5vw;
 }
@@ -545,8 +550,10 @@ body .content29 .question2 .images .select{
 body .content29 .question2 .images .select img{
     width: 100%;
 }
+
 body .content29 .question2 .images .select input{
     margin-top: 1vh;
+    width: inherit;
 }
 
 @media screen and (max-width: 820px) {
@@ -697,7 +704,7 @@ body .content30 .question4 .cubes .cube input,
 body .content30 .question5 p input,
 body .content29 .question2 .title input{
     width: 10vw;
-    height: 3vh;
+    height: inherit;
     border: none;
     border-bottom: 1px solid #39c1f0;
     margin: 0vh 2vh 1vh 2vh;
