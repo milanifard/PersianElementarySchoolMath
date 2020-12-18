@@ -703,3 +703,205 @@ function correct_p18_q5_3() {
         q5.classList.add("red_shadow");
     }
 }
+
+// pagination
+function getCurrentPageFromURL() {
+    /*
+    This function extracts page number from url
+    */
+    let numberPattern = /\d+/g;
+    let url_numbers = window.location.href.match(numberPattern);
+    return parseInt(url_numbers[url_numbers.length - 1])
+}
+let current_page = getCurrentPageFromURL()
+console.log("current page : " + current_page)
+
+function prevPage() {
+    if (current_page > 1) {
+        current_page--;
+        changePage(current_page);
+    }
+}
+
+function nextPage() {
+    current_page++;
+    changePage(current_page);
+}
+
+function changePage(page) {
+
+    window.location.href = `./book_3_${page}.html`;
+
+}
+
+function loadPageChanger() {
+    document.querySelector(".page-number input").value = current_page
+}
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    const input = document.querySelector(".page-number input")
+    input.addEventListener('keypress', changePageOnEnter);
+
+    function changePageOnEnter(e) {
+        if (e.code === "Enter") {
+            changePage(input.value)
+        }
+    }
+    document.querySelector(".prev-page,.prev").addEventListener("click", prevPage);
+    document.querySelector(".next-page,.next").addEventListener("click", nextPage);
+
+    loadPageChanger();
+});
+
+function submitSelect6() {
+    select = document.getElementById("s6")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect7() {
+    select = document.getElementById("s7")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect8() {
+    select = document.getElementById("s8")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect9() {
+    select = document.getElementById("s9")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect10() {
+    select = document.getElementById("s10")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect11() {
+    select = document.getElementById("s11")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect12() {
+    select = document.getElementById("s12")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect13() {
+    select = document.getElementById("s13")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect14() {
+    select = document.getElementById("s14")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect15() {
+    select = document.getElementById("s15")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect16() {
+    select = document.getElementById("s16")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect17() {
+    select = document.getElementById("s17")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect18() {
+    select = document.getElementById("s18")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect19() {
+    select = document.getElementById("s19")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect20() {
+    select = document.getElementById("s20")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect21() {
+    select = document.getElementById("s21")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect22() {
+    select = document.getElementById("s22")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect23() {
+    select = document.getElementById("s23")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}
+
+function submitSelect24() {
+    select = document.getElementById("s24")
+    select.className = '';
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    select.classList.add(id);
+}

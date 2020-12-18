@@ -5,159 +5,6 @@
     <title>Book 3 - Page 18</title>
     <link href="assets/3rd/css/imani.css" rel="stylesheet">
     <script src="assets/3rd/js/imani.js"></script>
-    <script>
-        function submitSelect6() {
-            select = document.getElementById("s6")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect7() {
-            select = document.getElementById("s7")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect8() {
-            select = document.getElementById("s8")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect9() {
-            select = document.getElementById("s9")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect10() {
-            select = document.getElementById("s10")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect11() {
-            select = document.getElementById("s11")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect12() {
-            select = document.getElementById("s12")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect13() {
-            select = document.getElementById("s13")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect14() {
-            select = document.getElementById("s14")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect15() {
-            select = document.getElementById("s15")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect16() {
-            select = document.getElementById("s16")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect17() {
-            select = document.getElementById("s17")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect18() {
-            select = document.getElementById("s18")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect19() {
-            select = document.getElementById("s19")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect20() {
-            select = document.getElementById("s20")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect21() {
-            select = document.getElementById("s21")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect22() {
-            select = document.getElementById("s22")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect23() {
-            select = document.getElementById("s23")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-
-        function submitSelect24() {
-            select = document.getElementById("s24")
-            select.className = '';
-            var options = select.options;
-            var id = options[options.selectedIndex].id;
-            select.classList.add(id);
-        }
-    </script>
 </head>
 
 <body>
@@ -618,10 +465,19 @@
             <br><br><br>
         </div>
     </div>
-    <div class="page_num_container">
-        <div class="page_num">
-            <p class="question">18</p>
+    <div class="pagination-container">
+        <div class="page-number-button">
+            <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
         </div>
+
+        <div class="page-number">
+            <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+        </div>
+
+        <div class="page-number-button">
+            <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+        </div>
+
     </div>
     <div class="back"></div>
 </body>

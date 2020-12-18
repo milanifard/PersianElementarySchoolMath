@@ -186,37 +186,63 @@ form>div>span {
     border: 1px solid black;
 }
 
-.page_num_container {
-    position: relative;
-    float: right;
-    margin-top: -3vw;
-    margin-right: -4.5vw;
-    z-index: 7;
-}
-
-.page_num {
-    width: 7vw;
-    height: 3vw;
-    text-align: center;
-    border-radius: 20px;
-    background-color: var(--dark-green);
-    border: 0.3vw double white;
-    margin-right: 7vw;
-    display: flex;
-    justify-content: center;
-}
-
-.page_num>p {
-    margin: auto;
-}
-
 .back {
     width: 100vw;
     height: 20vw;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2PcfT3uPwMRgHEoKOw+lkmcZ4aAQgAXZhxTFDFdogAAAABJRU5ErkJggg==) repeat;
     position: relative;
     margin-top: -15vw;
-    z-index: 0;
+    z-index: -2;
+}
+
+.pagination-container {
+    direction: rtl;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 3em;
+    /* to adjust page changer position , adjust position of this element */
+}
+
+.page-number {
+    /* substitute your color */
+    z-index: 20;
+    background-color: var(--middle-green);
+    border-radius: 2em;
+    width: 5.8em;
+    color: white;
+    border: 0.35em double white;
+    font-family: Koodak;
+    padding: 0 1.1em;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.page-number input {
+    /* substitute your color */
+    background-color: var(--dark-green);
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+
+.page-number-button {
+    width: 3em;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.page-number-button>a {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
 }
 
 

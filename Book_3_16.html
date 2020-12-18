@@ -186,13 +186,21 @@
             <br><br>
         </div>
     </div>
+    <div class="pagination-container">
+        <div class="page-number-button">
+            <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+        </div>
 
-    <div class="page_num_container">
-        <div class="page_num">
-            <p class="question">16</p>
+        <div class="page-number">
+            <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+        </div>
+
+        <div class="page-number-button">
+            <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
         </div>
     </div>
     <div class="back"></div>
+
 </body>
 
 </html>
