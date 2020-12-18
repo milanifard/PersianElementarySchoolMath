@@ -7,14 +7,20 @@
 }
 
 ::placeholder {
-    font-family: Koodak;
+    /* font-family: Koodak; */
     font-size: 1vw;
+}
+
+@font-face {
+    font-family: 'zar';
+    src: url("../../fonts/Zar.eot");
+    src: url("../../fonts/Zar.ttf") format("ttf");
 }
 
 p,
 h2,
 span {
-    font-family: Koodak;
+    /* font-family: Koodak; */
 }
 
 p.question {
@@ -215,7 +221,7 @@ form>div>span {
     width: 5.8em;
     color: white;
     border: 0.35em double white;
-    font-family: Koodak;
+    /* font-family: Koodak; */
     padding: 0 1.1em;
     position: relative;
     display: flex;
