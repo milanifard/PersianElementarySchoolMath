@@ -7,14 +7,13 @@
 }
 
 ::placeholder {
-    font-family: 'zar';
+    font-family: Koodak;
     font-size: 1vw;
 }
 
 @font-face {
     font-family: 'zar';
-    src: url("../../fonts/Zar.eot");
-    src: url("../../fonts/Zar.ttf") format("ttf");
+    src: url("../../fonts/Zar.woff") format("woff");
 }
 
 p,
@@ -194,12 +193,15 @@ form>div>span {
 
 .back {
     width: 100vw;
-    height: 20vw;
+    height: 25vw;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2PcfT3uPwMRgHEoKOw+lkmcZ4aAQgAXZhxTFDFdogAAAABJRU5ErkJggg==) repeat;
     position: relative;
-    margin-top: -15vw;
+    margin-top: -25vw;
     z-index: -2;
 }
+
+
+/* page number box */
 
 .pagination-container {
     direction: rtl;
@@ -234,7 +236,7 @@ form>div>span {
     border: none;
     width: 100%;
     text-align: center;
-    font-size: 32px;
+    font-size: 2vw;
     color: white;
 }
 
@@ -298,7 +300,7 @@ form>div>span {
 .form__field {
     width: 5vw;
     background: #fff;
-    color: #a3a3a3;
+    color: #424242;
     font: inherit;
     border: 0;
     outline: 0;
