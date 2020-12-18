@@ -1,8 +1,13 @@
+@font-face
+{
+    font-family:persianNum; src:url('../../../fonts/Farsi-Digits/Samim-FD.ttf'); font-weight:normal;
+}
+body{overflow-x: hidden;}
 .right-border{
     width: 90vw;
     max-width: 100%;
     border: 0.8vw double #44b869;
-    margin: 6vw 10vw 0 0;
+    margin: 6vw -10vw 0 -10px;
     border-left: none;
     border-top-right-radius: 5vw;
     border-bottom-right-radius: 5vw;
@@ -17,7 +22,7 @@
     background-repeat: no-repeat;
     position: absolute;
     bottom: -12vw;
-    z-index: -1;
+    z-index: -1; 
 }
 .snake{
     float: right;
@@ -62,8 +67,10 @@
     margin-top:-2vw;  
     font-size: 1.8vw;
 }
+label{font-size: 1.4vw;}
 .text-width{
     width:60%; 
+    padding-left: 5px;
 }
 .moraba{
     width:20%;
@@ -91,7 +98,7 @@
 }
 .container {
     width: 100%;
-    height: 20vw;
+    height: 200px;
     position: relative;
     overflow: hidden;
     border: none;
@@ -103,20 +110,15 @@
     margin-right: 2vw;
     resize: none;
     width: 80%;
-    height: 20vw;
+    height: 200px;
     line-height: 4ch;
     background-image: linear-gradient(#e4f0d4, #e4f0d4 calc(4ch - 2px), #9bcce3 0px);
     background-size: 100% 4ch;
     border: none;
     font-size: 1vw;
+    font-family:persianNum;
   }
-  input{
-    border: none; 
-    border-bottom: 4px solid #9bcce3; 
-    width: 15vw;
-    font-size: 1vw;
-    height: 3vw;
-}
+
 .page-number{
     background-color: #44b869;
     border-radius: 2.5vw;
@@ -130,11 +132,21 @@
     bottom: -0.5vw;
     right: -5vw;
 }
+.readCultureQ{
+    padding: 0 2vw;
+    font-size: 1.8vw;
+}
+.rowReverse{
+    flex-direction: row;
+}
+
 @media only screen and (max-width:1160px){
     .boy{width:200px; margin-bottom: 20px;}
     .question-part{
         font-size:20px;
     }
+    label{font-size:17px;}
+    .readCultureQ{font-size:20px;}
     .container textarea {
         font-size: 15px;
         height: 180px;
@@ -144,9 +156,6 @@
     }
     .moraba{
         width:150px;
-    }
-    input{
-        font-size:15px;
     }
     .green-box-text{
         text-align: right;
@@ -171,11 +180,8 @@
     }
 }
 @media only screen and (max-width:700px){
+    .container textarea {height: 350px;}
     .text-width{width: 100%;}
-    input{
-        height: 40px;
-        width: 100px;
-    }
 }
 @media only screen and (max-width:500px){
     .boy{

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/bagherian.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>ریاضی سوم دبستان</title>
 </head>
 <body>
@@ -27,21 +28,21 @@
 
             <div class="activityContent">
                 <p>
-                    ۱- در یک کارخانه مواد غذایی، ماشین اول ۱۰ کلوچه‌ی کوچک 
+                    <span class="number"> ۱- </span> در یک کارخانه مواد غذایی، ماشین اول ۱۰ کلوچه‌ی کوچک 
                     را در یک پاکت بسته‌بندی می‌کند.ماشین دوم
                     ۱۰ پاکت کلوچه را در یک جعبه می ‌گذارد. سپس، یک کارگر
-                    ۱۰ جعبه را در یک کارتن قرار میدهد و در کار را میبندد.
+                    ۱۰ جعبه را در یک کارتن قرار میدهد و در کارتن را میبندد.
                 </p>
 
                 <div class="question">
                     <div class="answer">
                         <p>تعداد کلوچه های هر بسته چندتاست؟</p>
-                        <input type="text" >
+                        <input type="text" id="28-q-1" onchange="isCorrectValue(this.id ,this.value , 10)">
                     </div>
 
                     <div class="answer">
                         <p>در هر کارتن چند بسته‌ی ده تایی کلوچه هست؟</p>
-                        <input type="text">
+                        <input type="text" id="28-q-2" onchange="isCorrectValue(this.id ,this.value , 10)">
                     </div>
                     
                 </div>
@@ -58,8 +59,8 @@
 
         <div class="activity2">
             <div>
-                <p><span class="number"> ۲- </span>درکلاس دوم دبستان یادگرفتیدکه میتوانید 10 تا 10ریالی را با یک 100 ریالی عوض کنید.علی پولهای ُقلک خود را بهصورت 10ّ سکه&zwnj;ی 10 ریالی بسته&zwnj;بندی کرده است تا به بانک بدهد.او10 تا بسته را به بانک برده و بانک به او 1000ریال داده است. اگر علی 9ّ سکهی 100 ریالی به بانک بدهد، چند ّسکهی 100 ریالی دیگر باید بدهد تا یک ّسکهی 1000 ریالی بگیرد؟ </p>
-                <input type="text">
+                <p><span class="number"> ۲- </span>درکلاس دوم دبستان یادگرفتیدکه میتوانید 10 تا 10ریالی را با یک 100 ریالی عوض کنید.علی پولهای ُقلک خود را بهصورت 10ّ سکه&zwnj;ی 10 ریالی بسته&zwnj;بندی کرده است تا به بانک بدهد.او10 تا بسته را به بانک برده و بانک به او 1000ریال داده است. اگر علی 9ّ سکه ی 100 ریالی به بانک بدهد، چند ّسکه ی 100 ریالی دیگر باید بدهد تا یک ّسکه ی 1000 ریالی بگیرد؟ </p>
+                <input type="text" id="28-q-3" onchange="isCorrectValue(this.id ,this.value , 1)">
                 <img src="./assets/3rd/images/bagherian/28-2.png" alt="تصویر سکه">
             </div>
          </div>
@@ -78,34 +79,46 @@
                 
                 <div class="twoelveCube" >
                     <img src="./assets/3rd/images/bagherian/12cube.png" alt="">
-                    <input type="text" >
+                    <input type="text" id="28-q-4" onchange="isCorrectValue(this.id ,this.value , 12)">
                 </div>
                
                 <div class="sixCube" >
                     <img src="./assets/3rd/images/bagherian/6cube.png" alt="">
-                    <input type="text" />
+                    <input type="text" id="28-q-5" onchange="isCorrectValue(this.id ,this.value , 6)">
                 </div>
                 <div class="fourCube" >
                     <img src="./assets/3rd/images/bagherian/4cube.png" alt="">
-                    <input type="text" name="" id="">
+                    <input type="text" id="28-q-6" onchange="isCorrectValue(this.id ,this.value , 4)">
                 </div>
                 <div class="threeCube" >
                     <img src="./assets/3rd/images/bagherian/3cube.png" alt="">
-                   <input type="text">
+                   <input type="text" id="28-q-7" onchange="isCorrectValue(this.id ,this.value , 3)">
                 </div>
                 <img class="pencel" src="./assets/3rd/images/bagherian/pencel.png" alt="">
             </div>
 
         </div>
 
-        <div class="pageNumber"> 28 </div>
+        <!-- <div class="pageNumber"> 28 </div> -->
 
-        <div class="link">
-            <a href="./book_3_29.html">صفحه بعد</a>
-            <a href="./book_3_27.html">صفحه قبل</a>
+    </div>
+
+    <div class="pagination-container">
+        <div class="page-number-button">
+            <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
         </div>
+
+        <div class="page-number">
+            <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+        </div>
+
+        <div class="page-number-button">
+            <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+        </div>
+
     </div>
     
-    
+    <script src="./assets/3rd/js/bagherian.js"></script>
+    <script src="./assets/3rd/js/pagination.js"></script>
 </body>
 </html>
