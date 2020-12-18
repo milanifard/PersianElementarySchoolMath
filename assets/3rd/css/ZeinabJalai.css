@@ -1,36 +1,72 @@
 body{
+
+    padding-left: 100px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(180deg, #b59ec8 5%, #a088ba 5%, #a088ba 10%, #b59ec8 10%, #b59ec8 15%, #a088ba 15%, #a088ba 20%, #b59ec8 20%, #b59ec8 25%, #a088ba 25%, #a088ba 30%, #b59ec8 30%, #b59ec8 35%, #a088ba 35%, #a088ba 40%, #b59ec8 40%, #b59ec8 45%, #a088ba 45%, #a088ba 50%, #b59ec8 50%, #b59ec8 55%, #a088ba 55%, #a088ba 60%, #b59ec8 60%, #b59ec8 65%, #a088ba 65%, #a088ba 70%, #b59ec8 70%, #b59ec8 75%, #a088ba 75%, #a088ba 80%, #b59ec8 80%, #b59ec8 85%, #a088ba 85%, #a088ba 90%, #b59ec8 90%, #b59ec8 95%, #a088ba 95%, #a088ba 100%);
+    background-size: 100vw 25vw;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.MainBox{
+
     background-color: #fff;
     border: 3px solid #A088BA;
-    border-radius: 20px;
+    border-radius: 30px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border-right: 0px solid white;
-    padding: 2em;
-    width: 16em;
-    height: 16em;
-    position: fixed;
-    margin: 150px 0px 152px 100px;
-    box-sizing: border-box;
+    padding-left: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 85vw;
+
 }
-.body ::before {
-    background: none;
-    border: 1px solid #B5A2CB;
-    border-radius: 15px;
-    border-right: 0px solid white;
+.MainBoxchild{
+
+    background-color: #fff;
+    border: 1px solid #A088BA;
+    border-radius: 27px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    content: "";
-    display: block;
+    border-right: 0px solid white;
+}
+
+.Rectangle_1 {
+    border-radius: 30px;
+    background-color: #CEB4D5;
     position: absolute;
-    top: 1px;
-    left: 1px;
-    right: 0px;
-    bottom: 1px;
-    pointer-events: none;
+    width: 309px;
+    height: 67px;
+    margin-left: 25%;
+    margin-top: -38px;
 }
-.main{
-    margin-top: 165px;
+
+.textreqtitle{
+
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    height: 100%;
+    padding: 6%;
 }
-.title{
-    margin-bottom: 100px;
+.pagenumparpar{
+
+    border: white 2px solid;
+    width: 8%;
+    border-radius: 12px;
+    margin-left: -4.6%;
+}
+.pagenumpar{
+
+    border: #A088BA 1px solid;
+    border-radius: 10px;
+}
+.pagenum{
+    color: white;
+    background-color: #A088BA;
+    text-align: center;
+    border: white 1px solid;
+    border-radius: 10px;
 }

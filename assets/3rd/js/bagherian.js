@@ -55,3 +55,17 @@ function isCorrectValue(id ,value ,correctAnswer){
         document.getElementById(id).style.backgroundColor="#ce2f24";
     }
 }
+
+function checkCube29Correctness(id , answerId){
+    if(id == '29-q2-1'){
+            document.getElementById(answerId).style.display = "initial";
+            
+            document.getElementById('29-q2-wrongAnswer2').style.display = "none";
+            document.getElementById('29-q2-wrongAnswer3').style.display = "none";
+            document.getElementById('29-q2-wrongAnswer4').style.display = "none";
+
+        }else{
+            document.getElementById(answerId).style.display = "initial";
+            document.getElementById('29-q2-correctAnswer1').style.display = "none";
+        }
+    }
