@@ -119,7 +119,7 @@ label{font-size: 1.4vw;}
     font-family:persianNum;
   }
 
-.page-number{
+/* .page-number{
     background-color: #44b869;
     border-radius: 2.5vw;
     border: 0.9vw double white;
@@ -131,7 +131,7 @@ label{font-size: 1.4vw;}
     position: absolute;
     bottom: -0.5vw;
     right: -5vw;
-}
+} */
 .readCultureQ{
     padding: 0 2vw;
     font-size: 1.8vw;
