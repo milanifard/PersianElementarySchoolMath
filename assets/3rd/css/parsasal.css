@@ -9562,7 +9562,5 @@ html {
 }
 
 .answer-message, .warn-message, .info-message {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }

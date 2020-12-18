@@ -16,7 +16,7 @@ $('a').click(function () {
 });
 
 // pagination
-function getCurrentPageFromURL(){
+function getCurrentPageFromURL() {
     let numberPattern = /\d+/g;
     let url_numbers = window.location.href.match(numberPattern);
     return parseInt(url_numbers[url_numbers.length - 1])
@@ -47,6 +47,14 @@ function loadPageChanger() {
 }
 $(document).ready(function () {
 
+    const input = document.querySelector(".page-number input")
+    input.addEventListener('keypress', logKey);
+
+    function logKey(e) {
+        if(e.code === "Enter"){
+            window.location.href = `./book_3_${input.value}.html`;
+        }
+    }
 
     $(".prev-page,.prev").click(function () {
         prevPage();
@@ -71,8 +79,8 @@ function debounce(func) {
 // dark mode
 window.onkeypress = function (e) {
     e = e || window.event;
-    if (e.keyCode === 13) {
-        console.log("enter hitted")
+    if (e.keyCode === 68) {
+        console.log("d pressed")
         document.documentElement.classList.toggle('dark-mode')
     }
 }
@@ -81,49 +89,8 @@ window.onkeypress = function (e) {
 // check answers
 // ***********************
 
-function checkTamrinP94() {
-    console.log("mohit labels: " + $(".triangles"))
-    $(".triangle-answer").each(function (i, obj) {
-        if (obj.value !== "") {
-            if (obj.value !== "6") {
-                obj.classList.add("is-invalid")
-                obj.classList.remove("is-valid")
-            } else {
-                obj.classList.add("is-valid")
-                obj.classList.remove("is-invalid")
-            }
 
-        }
-
-    });
-
-    $("#tamrin").find(".info-message").css("display", "flex")
-        .hide()
-        .fadeIn();
-    $("#tamrin").find(".warn-message").css("display", "flex")
-        .hide()
-        .fadeIn();
-}
-
-function checkFargangeNeveshtanP94() {
-    $("#farhange-neveshtan-messages").append(getWrongAnswerMessageBox())
-    $("#farhange-neveshtan").find(".info-message").css("display", "flex")
-        .hide()
-        .fadeIn();
-    $("#farhange-neveshtan").find(".warn-message").css("display", "flex")
-        .hide()
-        .fadeIn();
-
-}
-(function ($) {
-    $(document).on('click', '.close', function () {
-        $(this).parent().fadeOut();
-    });
-
-})(jQuery);
-
-
-function createNewMessageBox(text , type ){
+function createNewMessageBox(text, type) {
     let iconClass;
 
     let container = document.createElement("div");
@@ -131,12 +98,12 @@ function createNewMessageBox(text , type ){
     let paragraph = document.createElement("p");
     let closeButton = document.createElement("button");
 
-    
 
-    if(type === "warn"){
+
+    if (type === "warn") {
         iconClass = "fa-exclamation-circle"
         container.classList.add("warn-message")
-    }else if (type === "info "){
+    } else if (type === "info ") {
         iconClass = "fa-info-circle"
         container.classList.add("info-message")
     }
@@ -156,7 +123,7 @@ function createNewMessageBox(text , type ){
 
     let ptext = document.createTextNode(text);
 
-    
+
     paragraph.appendChild(ptext)
 
     container.appendChild(icon)
@@ -165,7 +132,13 @@ function createNewMessageBox(text , type ){
 
     return container
 }
+function showWrongAnswerMessage(containerId){
+    $(containerId).append(getWrongAnswerMessageBox())
+    $(containerId).find(".warn-message").css("display", "flex")
+        .hide()
+        .fadeIn();
+}
 function getWrongAnswerMessageBox() {
 
-    return createNewMessageBox("بعضی پاسخ هات درست نبود، دوباره تلاش کن" , "warn");
+    return createNewMessageBox("بعضی پاسخ هات درست نبود، دوباره تلاش کن", "warn");
 }

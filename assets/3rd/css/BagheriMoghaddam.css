@@ -46,10 +46,24 @@ p1{
     width: 50vw;
     height: 8vw;
     position: relative;
-    top: 80vw ;
+    top: 94vw ;
     font-size: 2vw;
     padding: 1vw;
+
     margin-bottom: 10vw;
+    margin-left: 10vw;
+}
+.Page25_Footer{
+    direction: rtl;
+
+    width: 5vw;
+    height: 8vw;
+    position: relative;
+    top: 84vw ;
+    font-size: 2vw;
+    padding: 1vw;
+
+    margin-bottom: 1vw;
     margin-left: 10vw;
 }
 .MyChartClass{
@@ -107,7 +121,7 @@ p1{
     border: solid;
 
     font-size: 2vw;
-    border-color: #ff0000;
+    border-color: #000000;
 }
 .my-Big-Black-Box{
     text-align: center;
@@ -125,7 +139,194 @@ p1{
     margin-right: 4vw;
 
 }
-/* mein */
+.NumberColor{
+    color: #79c2d2;
+}
+/***********************ID*****************************/
+/*********General***********/
+#BackGroundRight{
+    right:-10vw;
+}
+#BackGroundLeft{
+    left: -10vw;
+}
+
+/***************Page 26**************/
+#Q1{
+    padding-top: 1vw ;
+    padding-right: 3vw;
+    margin-top: 1vw;
+    /*style="padding-top: 1vw; padding-right: 5vw; margin-top: 1vw"*/
+}
+#textBox1{
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -8vw;
+    margin-top: 4vw;
+    /*style="font-size:2vw ; position: absolute; margin-left:-8vw ; margin-top: 4vw" value="547 "*/
+}
+#textBox2{
+    /*style="font-size:2vw ; position: absolute; margin-left:-8vw ; margin-top: 16vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -8vw;
+    margin-top: 16vw;
+
+}
+#textBox3{
+   /* style="font-size:2vw ; position: absolute; margin-left:-8vw ; margin-top: 26.1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left:-8vw ;
+    margin-top: 26.1vw;
+}
+#textBox4{
+   /* style="font-size:2vw ; position: absolute; margin-left:-8vw ; margin-top: 38.1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -8vw;
+    margin-top: 38.1vw;
+}
+#textBox5{
+    /*style="font-size:2vw ; position: absolute; margin-left:-22vw ; margin-top: 4vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -22vw;
+    margin-top: 4vw;
+}
+#textBox6{
+    /*style="font-size:2vw ; position: absolute; margin-left:-22vw ; margin-top: 16vw"*/
+    font-size:2vw ;
+    position: absolute;
+    margin-left: -22vw;
+    margin-top: 16vw;
+}
+#textBox7{
+    /*style="font-size:2vw ; position: absolute; margin-left:-22vw ; margin-top: 26.1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -22vw;
+    margin-top: 26.1vw;
+}
+#textBox8{
+    /*style="font-size:2vw ; position: absolute; margin-left:-22vw ; margin-top: 38.1vw"     */
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -22vw;
+    margin-top: 38.1vw;
+}
+#textBox9{
+    /*tyle="font-size:2vw ; position: absolute; margin-left:-30vw ; margin-top: 10vw"  */
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -30vw;
+    margin-top: 10vw;
+}
+#textBox10{
+   /* style="font-size:2vw ; position: absolute; margin-left:-30vw ; margin-top: 32vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -30vw;
+    margin-top: 32vw;
+}
+#textBox11{
+    /* style="font-size:2vw ; position: absolute; margin-left:-44vw ; margin-top: 26.1vw" */
+    font-size: 2vw;
+    position:absolute;
+    margin-left: -44vw;
+    margin-top: 26.1vw;
+}
+#textBox12{
+    /*style="font-size:2vw ; position: absolute; margin-left:-44vw ; margin-top: 38.1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left:-44vw;
+    margin-top: 38.1vw;
+}
+#textBox13{
+    /*style="font-size:2vw ; position: absolute; margin-left:-59vw ; margin-top: 26.1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -59vw;
+    margin-top: 26.1vw;
+}
+#textBox14{
+   /* style="font-size:2vw ; position: absolute; margin-left:-59vw ; margin-top: 38.1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -59vw;
+    margin-top: 38.1vw;
+}
+
+#Q2{
+    /*style="padding-top: -4vw; padding-right: 2vw;"*/
+    padding-top: -4vw;
+    padding-right: 2vw;
+}
+#Q3{
+    /*style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw*/
+    padding-top: 10vw;
+    padding-right: 2vw;
+    maring-top:8vw;
+}
+#Q3-a{
+    /*style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw"*/
+    padding-top:6vw;
+    padding-right: 15vw;
+    margin-top: 3vw;
+}
+#textBox15{
+    /*style="font-size:2vw ; position: absolute; margin-left:1.2vw ; margin-top: 1vw" */
+    font-size: 2vw;
+    position: absolute;
+    margin-left: 1.2vw;
+    margin-top: 1vw;
+
+}
+#textBox16{
+    /*style="font-size:2vw ; position: absolute; margin-left:1.2vw ; margin-top: 1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: 1.2vw;
+    margin-top: 1vw;
+}
+/**********Page 27*************/
+#Q-1_27{
+    padding-top: 2vw;
+    padding-right: 4vw;
+    margin-top: 1vw;
+    /*style="padding-top: 2vw; padding-right: 4vw; margin-top: 1vw"*/
+}
+#Q_2_27{
+    /*style="padding-top: 28vw; padding-right: 4vw; margin-top: 3vw*/
+    padding-top: 28vw;
+    padding-right: 4vw;
+    margin-top: 3vw;
+
+}
+#Q-3_27{
+    /*style="padding-top: 28vw; padding-right: 4vw; margin-top: 3vw"*/
+    padding-top: 28vw;
+    padding-right: 4vw;
+    margin-top: 3vw;
+}
+#textBox21_27{
+    /*style="position: absolute; margin-left: 70vw; margin-top: 4vw"*/
+    position: absolute;
+    margin-left: 70vw;
+    margin-top: 4vw;
+}
+#textBox22_27{
+    /*style="position: absolute; margin-left: 50vw; margin-top: 1vw" */
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: 1vw;
+
+}
+#SekePic{
+    padding-right: 5vw;
+}
+/****************** mein *********************************/
 .page-topic{
     margin-top: 1vw;
     width: 100%;
@@ -190,7 +391,17 @@ p1{
 }
 /*
     aqaye pourreza!
+
+
+
+
  */
+.text-config{
+    font-family: Zar;
+    font-size: 2vw;
+    direction: rtl;
+    white-space: pre-wrap;
+}
 .activity-text{
     background-color: #0c9ec3;
     border-radius: 1.5vw;
