@@ -73,7 +73,7 @@ body{overflow-x: hidden;}
   
 }
 .top-margin{margin-top:-0.4vw;}
-.page-number{
+/* .page-number{
     background-color: #44b869;
     border-radius: 2.5vw;
     border: 0.9vw double white;
@@ -85,7 +85,7 @@ body{overflow-x: hidden;}
     position: absolute;
     bottom: -0.5vw;
     left: -5vw;
-}
+} */
 .time{
     width:6vw;
 }
