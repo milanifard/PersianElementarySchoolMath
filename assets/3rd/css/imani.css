@@ -7,7 +7,7 @@
 }
 
 ::placeholder {
-    /* font-family: Koodak; */
+    font-family: 'zar';
     font-size: 1vw;
 }
 
@@ -20,7 +20,7 @@
 p,
 h2,
 span {
-    /* font-family: Koodak; */
+    font-family: 'zar';
 }
 
 p.question {
