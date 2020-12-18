@@ -3,6 +3,9 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/bagherian.css">
     <title>ریاضی سوم دبستان</title>
@@ -79,30 +82,26 @@
 
                 <div class="select">
                     <img src="./assets/3rd/images/bagherian/cubeline1.png" alt="">
-                    <p class="correctAnswer" id="correctAnswer1">افرین درست گفتی</p>
-                    <p class="wrongAnswer" id="wrongAnswer1">بیشتر دقت کن عزیزم</p>
-                    <input type="radio" id="29-q2-1" name="drone" onchange="checkCube29Correctness(id ,value)">
+                    <p class="correctAnswer" id="29-q2-correctAnswer1">افرین درست گفتی</p>
+                    <input type="radio" id="29-q2-1" name="drone" onchange="checkCube29Correctness(id ,'29-q2-correctAnswer1')">
                 </div>
 
                 <div class="select">
                     <img src="./assets/3rd/images/bagherian/cubeline2.png" alt="">
-                    <p class="correctAnswer" id="correctAnswer2">افرین درست گفتی</p>
-                    <p class="wrongAnswer" id="wrongAnswer2">بیشتر دقت کن عزیزم</p>
-                    <input type="radio" id="29-q2-2" name="drone" onchange="checkCube29Correctness(id ,value)">
+                    <p class="wrongAnswer" id="29-q2-wrongAnswer2">بیشتر دقت کن عزیزم</p>
+                    <input type="radio" id="29-q2-2" name="drone" onchange="checkCube29Correctness(id ,'29-q2-wrongAnswer2')">
                 </div>
 
                 <div class="select">
                     <img src="./assets/3rd/images/bagherian/cubeline3.png" alt="">
-                    <p class="correctAnswer" id="correctAnswer3">افرین درست گفتی</p>
-                    <p class="wrongAnswer" id="wrongAnswer3">بیشتر دقت کن عزیزم</p>
-                    <input type="radio" id="29-q2-3" name="drone" onchange="checkCube29Correctness(id ,value)">
+                    <p class="wrongAnswer" id="29-q2-wrongAnswer3">بیشتر دقت کن عزیزم</p>
+                    <input type="radio" id="29-q2-3" name="drone" onchange="checkCube29Correctness(id ,'29-q2-wrongAnswer3')">
                 </div>
 
                 <div class="select">
                     <img src="./assets/3rd/images/bagherian/cubeline4.png" alt="">
-                    <p class="correctAnswer" id="correctAnswer4">افرین درست گفتی</p>
-                    <p class="wrongAnswer" id="wrongAnswer4">بیشتر دقت کن عزیزم</p>
-                    <input type="radio" id="29-q2-4" name="drone" onchange="checkCube29Correctness(id ,value)">
+                    <p class="wrongAnswer" id="29-q2-wrongAnswer4">بیشتر دقت کن عزیزم</p>
+                    <input type="radio" id="29-q2-4" name="drone" onchange="checkCube29Correctness(id ,'29-q2-wrongAnswer4')">
                 </div>
 
             </div>
@@ -141,11 +140,25 @@
             </div>
         </div>
 
-        <div class="pageNumber"> 29 </div>
+        <div class="pagination-container">
+            <div class="page-number-button">
+                <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+            </div>
+    
+            <div class="page-number">
+                <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+            </div>
+    
+            <div class="page-number-button">
+                <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+            </div>
+    
+        </div>
 
 
     </div>
     
     <script src="./assets/3rd/js/bagherian.js"></script>
+    <script src="./assets/3rd/js/pagination.js.js"></script>
 </body>
 </html>
