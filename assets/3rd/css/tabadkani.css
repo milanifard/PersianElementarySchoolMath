@@ -389,6 +389,42 @@ pre{
     width: 30vw;
 }
 
+.s_q3{
+    right: 10vw;
+    top: 37vw;
+    position: absolute;
+    width: 30vw;
+}
+
+.farhange_khandan{
+    background-color: #e1f4fc;
+    top: 55vw;
+    right: 10vw;
+    position: absolute;
+    width: 80vw;
+    height: 68vw;
+    border-color: #0c9dc3;
+    border-style: solid;
+    border-radius: 5vw;
+    border-width: 0.4vw;
+    padding: 1vw;
+    font-size: 2.1vw;
+}
+
+#khandan{
+    top: 58vw;
+    right: 9.5vw;
+    position: absolute;
+}
+
+.boy-img{
+    top: 49vw;
+    right: 40vw;
+    position: absolute;
+    width: 16vw;
+    height: 13vw;
+}
+
 input{
     width: 7.5vw;
     margin: 0 1vw;
