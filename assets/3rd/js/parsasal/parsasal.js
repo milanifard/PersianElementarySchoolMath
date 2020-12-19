@@ -1,3 +1,6 @@
+jQuery.fn.exists = function(){ return this.length > 0; }
+
+
 // go top button
 /*Add class when scroll down*/
 $(window).scroll(function (event) {
@@ -188,3 +191,11 @@ function getNearestSegmentOnPath(path, point, points) {
     return minDistanceSegment;
 
 }
+
+(function ($) {
+    $(document).on('click', '.close', function () {
+        $(this).parent().fadeOut();
+    });
+
+
+})(jQuery);
