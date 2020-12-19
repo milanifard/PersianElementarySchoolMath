@@ -353,6 +353,42 @@ pre{
     margin-right: -5vw;
 }
 
+
+.page3{
+    border-top: 1vw double var(--main_color);
+    border-right: 1vw double var(--main_color);
+    border-bottom: 1vw double var(--main_color);
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    box-sizing: border-box;
+    width: 93vw;
+    height: 125vw;
+    background: white;
+    margin: 5vw 5vw 3vw 0;
+    padding:0vw 3vw;
+    /*position: relative;*/
+}
+
+.snake-img{
+    width: 13vw;
+    height: 11vw;
+    top: -0.5vw;
+    position: absolute;
+}
+
+.s_q1{
+    right: 30vw;
+    position: absolute;
+    width: 33vw;
+}
+
+.s_q2{
+    right: 10vw;
+    top: 20vw;
+    position: absolute;
+    width: 30vw;
+}
+
 input{
     width: 7.5vw;
     margin: 0 1vw;
