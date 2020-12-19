@@ -1,0 +1,413 @@
+.text
+{
+    color: black;
+
+    font-family: "B Nazanin";
+    font-size: 2vw;
+    direction: rtl;
+    text-align: justify;
+}
+#p1background
+{
+    background: linear-gradient(to right, sandybrown 0%, sandybrown 35%, chocolate 35%, chocolate 100%);
+}
+#page1header
+{
+    color: green;
+    background-color: white;
+
+    font-size: 4.5vw;
+
+    border-style: solid;
+    border-color: brown ;
+    border-width: 3px;
+    border-radius: 2.5vw;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    padding-left: 1vw;
+    padding-right: 2.8vw;
+
+    position: absolute;
+    top: 9.5vw;
+    left: 61.5vw;
+}
+#page2header
+{
+    color: white;
+    background-color: sandybrown;
+
+    font-size: 3vw;
+
+    border-style: solid;
+    border-color: sandybrown ;
+    border-width: 0.45vw;
+    border-radius: 1.5vw;
+    border-top-right-radius: 0vw;
+    border-bottom-right-radius: 0vw;
+
+    padding: 0.1vw;
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+
+    position: absolute;
+    top: 16.9vw;
+    left: 63.6vw;
+}
+#page3header
+{
+    background-color: orange;
+
+    font-size: 2.7vw;
+
+    border-style: solid;
+    border-color: orange ;
+    border-width: 3px;
+    border-radius: 3.2vw;
+
+    padding: 0.9vw;
+    padding-right: 0.3vw;
+    padding-left: 0.3vw;
+
+    position: absolute;
+    top: 10vw;
+    left: 51vw;
+}
+.pnumb
+{
+    color: white;
+    background-color: sandybrown;
+
+    font-family: "B Nazanin";
+    font-size: 2.2vw;
+    direction: rtl;
+    text-align: justify;
+
+    border-style: solid;
+    border-color: sandybrown ;
+    border-width: 0.25vw;
+    border-radius: 1.5vw;
+    border-style: double;
+
+    padding-left: 3.3vw;
+    padding-right: 3.3vw;
+
+}
+#p2numb
+{
+    position: absolute;
+    top: 133vw;
+    left: 82.5vw;
+}
+#p3numb
+{
+    position: absolute;
+    top: 126vw;
+    left: 5.4vw;
+}
+#p1text
+{
+    background-color: bisque;
+
+    border-style: solid;
+    border-color: bisque;
+    border-width: 2px;
+    border-radius: 2.5vw;
+
+    position:absolute;
+    top: 104vw;
+    left: 21vw;
+    right: 15vw;
+
+    padding: 0.5vw;
+}
+#p2text
+{
+    background-color: white;
+
+    border-style: double;
+    border-color: chocolate;
+    border-right: white;
+    border-width: 0.45vw;
+    border-bottom-style: groove;
+
+    position:absolute;
+    top: 133.3vw;
+    left: 8vw;
+
+    padding: 1vw;
+    padding-right: 1.3vw;
+}
+#p3text
+{
+    background-color: white;
+
+    border-style: double;
+    border-color: chocolate;
+    border-left: white;
+    border-width: 0.45vw;
+    border-bottom-style: groove;
+
+    position:absolute;
+    top: 125.25vw;
+    left: 29vw;
+
+    padding: 1.2vw;
+    padding-right: 4.5vw;
+    padding-left: 4.5vw;
+}
+#p2q
+{
+    position:absolute;
+    top: 26.5vw;
+    left: 25.5vw;
+}
+#p2q1
+{
+    position:absolute;
+    top: 29.45vw;
+    left: 31vw;
+}
+#p2q2
+{
+    position:absolute;
+    top: 45vw;
+    left: 24.6vw;
+}
+#p2q3
+{
+    position:absolute;
+    top: 61vw;
+    left: 11vw;
+}
+#p2q4
+{
+    position:absolute;
+    top: 98vw;
+    left: 13vw;
+}
+#p3q1
+{
+    position:absolute;
+    top: 23vw;
+    left: 53vw;
+}
+#p3q2
+{
+    position:absolute;
+    top: 60vw;
+    left: 54.3vw;
+}
+#p3q2_1
+{
+    position:absolute;
+    top: 80vw;
+    left: 32.5vw;
+}
+#p3q2_2
+{
+    position:absolute;
+    top: 95.5vw;
+    left: 65.3vw;
+}
+#p2t1
+{
+    color: purple;
+
+    position:absolute;
+    top: 33.5vw;
+    left: 29.5vw;
+}
+#p2t2
+{
+    color: purple;
+
+    position:absolute;
+    top: 51.3vw;
+    left: 35.8vw;
+}
+
+#p3t1
+{
+    color: purple;
+
+    position:absolute;
+    top: 26.2vw;
+    left: 24vw;
+}
+#calculator
+{
+    position: absolute;
+    left: 15vw;
+    top: 13vw;
+    width: 32vw
+}
+#topleft
+{
+    position: absolute;
+    left: 15vw;
+    top: 37vw;
+    height: 35vw;
+    width: 36vw
+}
+#topright
+{
+    position: absolute;
+    left: 52vw;
+    top: 37vw;
+    height: 35vw;
+    width: 37vw
+}
+#bottomleft
+{
+    position: absolute;
+    left: 15vw;
+    top: 73vw;
+    height: 27vw;
+    width: 39vw
+}
+#bottomright
+{
+    position: absolute;
+    left: 55vw;
+    top: 73vw;
+    height: 27vw;
+    width: 34vw
+}
+#boy
+{
+
+    position: absolute;
+    top: 17vw;
+    left: 77vw;
+    width: 14vw;
+}
+#clock
+{
+    position: absolute;
+    top: 32vw;
+    left: 66vw;
+    width: 14vw;
+}
+#mountain
+{
+    position: absolute;
+    top: 77vw;
+    left: 17.7vw;
+    width: 68.5vw;
+}
+#iran
+{
+    position: absolute;
+    top: 114vw;
+    left: 28vw;
+    width: 24vw;
+}
+#girl
+{
+    position: absolute;
+    top: 125.3vw;
+    left: 68.4vw;
+    width: 12.75vw;
+    height: 16.8vw;
+}
+#sum
+{
+    position: absolute;
+    top: 30vw;
+    left: 11vw;
+    width: 14vw;
+}
+#sum1
+{
+    position: absolute;
+    top: 48.5vw;
+    left: 11vw;
+    width: 14vw;
+}
+#sum2
+{
+    position: absolute;
+    top: 65.1vw;
+    left: 11vw;
+    width: 14vw;
+}
+#sum3
+{
+    position: absolute;
+    top: 107vw;
+    left: 11vw;
+    width: 14vw;
+}
+#pencil
+{
+    position: absolute;
+    top: 34.5vw;
+    left: 9.8vw;
+    width: 14vw;
+}
+#polygonal
+{
+    position: absolute;
+    top: 36vw;
+    left: 26vw;
+    width: 63vw;
+}
+#matches
+{
+    position: absolute;
+    top: 65vw;
+    left: 21vw;
+    width: 69vw;
+}
+#thought
+{
+    position: absolute;
+    top: 85vw;
+    left: 15vw;
+    width: 44vw;
+}
+.numb
+{
+    color: white;
+    background-color: orange;
+
+    font-family: "B Nazanin";
+    font-size: 2vw;
+    direction: rtl;
+    text-align: justify;
+
+    border-style: solid;
+    border-color: orange ;
+    border-width: 3px;
+    border-radius: 1.5vw;
+
+    padding-left: 1vw;
+    padding-right: 1vw;
+
+    position: absolute;
+    top: 75vw;
+}
+#n1
+{
+    left: 20vw;
+}
+#n2
+{
+    left: 34vw;
+}
+#n3
+{
+    left: 51.4vw;
+}
+#n4
+{
+    left: 77.1vw;
+}
+#man
+{
+    position: absolute;
+    top: 121vw;
+    left: 16.1vw;
+    width: 13vw;
+}

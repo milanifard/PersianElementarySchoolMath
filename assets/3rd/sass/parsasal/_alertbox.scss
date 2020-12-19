@@ -1,4 +1,3 @@
-
 .alert {
   padding: 10px 35px 10px 14px;
   background-color: #eee;
@@ -54,19 +53,23 @@
 
   @extend .alert;
   @extend .align-content-start;
-  @extend .d-flex;
-  // display: none;
-
-
+  display: none;
 
 }
 
-.warn-message{
+.warn-message {
   @extend .answer-message;
   @extend .alert--error;
 }
+
 .info-message {
   @extend .answer-message;
   @extend .alert--info;
+
+}
+
+.success-message {
+  @extend .answer-message;
+  @extend .alert--success;
 
 }
