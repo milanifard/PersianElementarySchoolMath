@@ -45,6 +45,10 @@ input[type=number] {
     direction: rtl;
 }
 
+.questions-number {
+    color: var(--orange_level3);
+}
+
 .page-left-border {
     width: 73vw;
     max-width: 100%;
@@ -123,6 +127,51 @@ input[type=number] {
     float: right;
     z-index: 2;
     position: relative;
+}
+
+.simple-table table {
+    border-collapse: collapse;
+}
+
+.simple-table td {
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: Koodak;
+
+    padding: 0.5vw;
+}
+
+.simple-table .bottom-border {
+    border-bottom: 0.3vw solid var(--pink_level3);
+}
+
+.simple-table .right-border {
+    border-right: 0.3vw solid var(--pink_level3);
+}
+
+.simple-table .top-border {
+    border-top: 0.3vw solid var(--pink_level3);
+}
+
+.underline-text-box {
+    border: none;
+    border-bottom: 2px solid var(--text-box-border-color);
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Koodak;
+    background: transparent;
+}
+
+.noborder-text-box {
+    border: none;
+    background-color: #00000000;
+    width: 4vw;
+    height: 2.5vw;
+    text-align: center;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: Koodak;
 }
 
 /*unclean code*/
@@ -205,39 +254,11 @@ input[type=number] {
     text-decoration: underline;
 }
 
-.questions-number {
-    color: var(--orange_level3);
-}
-
 .simple-table {
     background-color: var(--pink_level1);
     padding: 0.5vw;
     border: 0.2vw solid var(--pink_level2);
     border-radius: 3vw;
-}
-
-.simple-table table {
-    border-collapse: collapse;
-}
-
-.simple-table td {
-    font-size: 1.5vw;
-    text-align: center;
-    font-family: Koodak;
-
-    padding: 0.5vw;
-}
-
-.simple-table .bottom-border {
-    border-bottom: 0.3vw solid var(--pink_level3);
-}
-
-.simple-table .right-border {
-    border-right: 0.3vw solid var(--pink_level3);
-}
-
-.simple-table .top-border {
-    border-top: 0.3vw solid var(--pink_level3);
 }
 
 .dotted_table table {
@@ -248,27 +269,6 @@ input[type=number] {
 .dotted_table td {
     border: 0.5vw dotted var(--orange_level3);
     width: 50%;
-}
-
-.underline-text-box {
-    border: none;
-    border-bottom: 2px solid var(--text-box-border-color);
-    text-align: center;
-    font-size: 1.5vw;
-    font-family: Koodak;
-    background: transparent;
-}
-
-.noborder-text-box {
-    border: none;
-    background-color: #00000000;
-    width: 4vw;
-    height: 2.5vw;
-    text-align: center;
-    border-radius: 1vw;
-    font-size: 1.5vw;
-    text-align: center;
-    font-family: Koodak;
 }
 
 .small-text-box {
@@ -333,14 +333,9 @@ input[type=number] {
 
 /*** PAGE 109 ***/
 
-#content_109 {
-    padding-right: 15vw;
-    padding-left: 7vw;
-    margin-top: 9vw;
-}
-
 #content_109 #Q1_container {
-    padding-right: 2vw;
+    padding-right: 8vw;
+    margin-top: 6vw;
 }
 
 #content_109 #Q1_description {
