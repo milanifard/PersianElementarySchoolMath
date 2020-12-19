@@ -3,6 +3,8 @@
 
 <head>
     <title>Book 3 - Page 17</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/3rd/css/imani.css" rel="stylesheet">
     <script src="assets/3rd/js/imani.js"></script>
 </head>
@@ -21,7 +23,8 @@
     </div>
     <div class="main flex_row flex_end" style="margin-top: 3vw;">
         <div class="content">
-            <p class="question">زهرا کارهای خود را در روز جمعه (یک شبانه روز) به صورت زیر نشان داده است. عددهای مناسب برای ساعت‌های بعدازظهر را بنویسید و شکل را کامل کنید</p>
+            <p class="question">.زهرا کارهای خود را در روز جمعه (یک شبانه روز) به صورت زیر نشان داده است</p>
+            <p class="question">.عددهای مناسب برای ساعت‌های بعدازظهر را بنویسید و شکل را کامل کنید</p>
             <div class="clock_row flex_row">
                 <div class="clock_col flex_col">
                     <img src="assets/3rd/images/imani/clock4.png">
@@ -259,10 +262,19 @@
 
 
     </div>
-    <div class="page_num_container">
-        <div class="page_num">
-            <p class="question">17</p>
+    <div class="pagination-container">
+        <div class="page-number-button">
+            <a class="next-page" type="submit"><i class="fa fa-angle-right"></i></a>
         </div>
+
+        <div class="page-number">
+            <input id="page-number-input" type="number" onfocusout="loadPageChanger()">
+        </div>
+
+        <div class="page-number-button">
+            <a class="prev-page" type="submit"><i class="fa fa-angle-left"></i></a>
+        </div>
+
     </div>
     <div class="back"></div>
 </body>

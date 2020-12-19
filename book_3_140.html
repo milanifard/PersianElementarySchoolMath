@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Book 3 - Page 140</title>
     <meta charset="UTF-8">
+    <meta name="keywords" content="math">
+    <meta name="author" content="AliNasiriSarvi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book_5_90</title>
+    <link href="assets/3rd/css/Nasiri.css" rel="stylesheet">
 </head>
+
 <body>
-    
+
+<div class = "left-border">
+    <div class="background-style"></div>
+    <div>
+        <div class = title_side></div>
+        <span class="title_box">
+                <h2>
+                    ضرب عددهای یک رقمی در چند رقمی
+                </h2>
+        </span>
+    </div>
+    <span class="flex_row activity-container">
+        <img src="assets/3rd/images/activity.png" alt="activity-image" class="activity-image">
+        <span class="activity-text">فعّالیت</span>
+    </span>
+
+    <div id="Q1_container">
+        <div class="question" id="q1"> با رسم شکل حاصل ضرب‌ها را به دست‌ آورید. </div>
+        <div class="statement">
+
+            <span id="s1_1"> ۴ * ۲۳ = </span>
+            <span id="s1_2"> ۴ * ۱۲ = </span>
+            <span id="s1_3"> ۲ * ۲۱۳ = </span>
+        </div>
+    </div>
+    <img src="assets/3rd/images/Nasiri/sadgan_orange.png" id="sadgan_pool"  class="sadgan">
+    <span class="page-number-odd">139</span>
+</div>
 </body>
+<script>
+    // Make the DIV element draggable:
+    dragElement(document.getElementById("sadgan_pool"));
+
+    function dragElement(elmnt) {
+        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        if (document.getElementById(elmnt.id + "header")) {
+            // if present, the header is where you move the DIV from:
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        } else {
+            // otherwise, move the DIV from anywhere inside the DIV:
+            elmnt.onmousedown = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+
+        function closeDragElement() {
+            // stop moving when mouse button is released:
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+    }
+</script>
 </html>
