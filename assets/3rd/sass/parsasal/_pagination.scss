@@ -1,135 +1,35 @@
-
-//----------  pagination
-//------------------------------------------------------------------------------
-
-// Colors
-$white: #fff;
-$black: #000;
-$grey: #595959;
-$grey-dark: #2b2b2b;
-$grey-light: #eee;
-$green: #86c023;
-$blue: #017ac7;
-
-// Transition
-$duration: 400ms;
-$easing: ease;
-
-
-@mixin breakpoint ($value) {
-    @if $value=='phone' {
-        @media only screen and (min-width: 120px) and (max-width: 767px) {
-            @content;
-        }
-    }
-
-    @else if $value=='tablet' {
-        @media only screen and (min-width: 768px) and (max-width: 1024px) {
-            @content;
-        }
-    }
-
-    @else if $value=='touch' {
-        @media only screen and (min-width: 120px) and (max-width: 1024px) {
-            @content;
-        }
-    }
-
-    @else if $value=='desktop' {
-        @media only screen and (min-width: 1025px) {
-            @content;
-        }
-    }
-
-    @else {
-        @media only screen and (max-width: $value) {
-            @content;
-        }
-    }
-}
-
-
-
-
-
-.pagination-wrapper {
+.pagination-container {
+    @extend .justify-content-center;
     text-align: center;
-    padding-bottom: 3em;
+    display: flex;
+    align-items: center;
+    overflow: visible;
 }
 
-.pagination {
-    display: inline-block;
-    height: 70px;
-    margin-top: 10px;
-    padding: 0 15px;
-    border-radius: 35px;
-    background-color: $grey-light;
+.page-number {
+    background-color: $color-1;
+    border-radius: 2em;
+    width: 5em;
+    color: white !important;
+    border: 0.35em double white;
+    font-family: Koodak;
+    padding: 0 1.1em;
+    position: relative;
 
-    @include breakpoint(1199px) {
-        height: 50px;
-        margin-top: 50px;
-        padding: 0 10px;
-        border-radius: 25px;
-    }
 }
 
-.page-numbers {
-    display: block;
-    padding: 0 16px;
-    float: left;
-    transition: $duration $easing;
-    color: $grey;
-    font-size: 20px;
-    letter-spacing: 0.1em;
-    line-height: 70px;
-
-    &:hover,
-    &.current {
-        background-color: $color-1;
-        color: $white;
-    }
-
-    &.prev:hover,
-    &.next:hover {
-        background-color: transparent;
-        color: $green;
-    }
-
-    @include breakpoint(1199px) {
-        padding: 0 15px;
-        font-size: 16px;
-        line-height: 50px;
-    }
-
-    @include breakpoint('touch') {
-        padding: 0 10px;
-        display: none;
-
-        &:nth-of-type(2) {
-            position: relative;
-            padding-right: 50px;
-
-            &::after {
-                content: '...';
-                position: absolute;
-                font-size: 25px;
-                top: 0;
-                left: 45px;
-            }
-        }
-
-        &:nth-child(-n+3),
-        &:nth-last-child(-n+3) {
-            display: block;
-        }
-
-        &:nth-last-child(-n+4) {
-            padding-right: 14px;
-
-            &::after {
-                content: none;
-            }
-        }
+.page-number input {
+    background-color: $color-2;
+    border: none;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.page-number-button {
+    width: 3em;
+    color: white;
+    
+    a{
+        font-size: 2.5rem;
     }
 }
-

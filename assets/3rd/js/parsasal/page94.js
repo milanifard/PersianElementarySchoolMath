@@ -1,4 +1,3 @@
-
 function checkTamrinP94() {
     console.log("mohit labels: " + $(".triangles"))
     let hasWrongAnswer = false
@@ -39,6 +38,9 @@ function checkTamrinP94() {
         $("#tamrin94-1-messages").find(".info-message").css("display", "flex")
             .hide()
             .fadeIn();
+
+        modal.className = "open-modal";
+        setTimeout(function(){  modal.className = "close-modal";}, 3000);
 
     }
 

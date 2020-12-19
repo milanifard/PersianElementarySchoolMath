@@ -149,21 +149,19 @@ function getWrongAnswerMessageBox() {
 
 
 
+$(document).ready(function () {
+    const modal = document.querySelector("#modal");
 
 
+    modal.addEventListener("click", (e) => {
+
+        modal.className = "close-modal";
+
+    })
+});
 
 
-
-
-
-
-
-
-
-
-
-
-function getNearestSegmentOnPath(path, point , points) {
+function getNearestSegmentOnPath(path, point, points) {
     let minDistance = 99999;
     let minDistanceSegment = undefined;
     for (var i = 0; i < points - 1; i++) {
