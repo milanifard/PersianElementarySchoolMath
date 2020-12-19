@@ -5038,7 +5038,7 @@ section .section-header > .container-fluid {
   border-radius: 0;
 }
 
-.alert, .answer-message, .warn-message, .info-message {
+.alert, .answer-message, .warn-message, .info-message, .success-message {
   position: relative;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
@@ -6736,7 +6736,7 @@ button.bg-dark:focus {
           align-items: stretch !important;
 }
 
-.align-content-start, .answer-message, .warn-message, .info-message {
+.align-content-start, .answer-message, .warn-message, .info-message, .success-message {
   -ms-flex-line-pack: start !important;
       align-content: flex-start !important;
 }
@@ -9322,6 +9322,11 @@ hr {
   font-size: 0.9rem;
 }
 
+.small-input-wrapper .input-style, .small-input-wrapper .explain-textarea {
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
 .small-input-wrapper .input-style::-webkit-input-placeholder, .small-input-wrapper .explain-textarea::-webkit-input-placeholder {
   font-size: 0.8rem;
 }
@@ -9336,6 +9341,15 @@ hr {
 
 .small-input-wrapper .input-style::placeholder, .small-input-wrapper .explain-textarea::placeholder {
   font-size: 0.8rem;
+}
+
+.small-input-wrapper .input-style::-webkit-outer-spin-button, .small-input-wrapper .explain-textarea::-webkit-outer-spin-button, .small-input-wrapper .input-style::-webkit-inner-spin-button, .small-input-wrapper .explain-textarea::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.small-input-wrapper .input-style[type=number], .small-input-wrapper .explain-textarea[type=number] {
+  -moz-appearance: textfield;
 }
 
 .explain-textarea {
@@ -9475,7 +9489,7 @@ html {
   }
 }
 
-.alert, .answer-message, .warn-message, .info-message {
+.alert, .answer-message, .warn-message, .info-message, .success-message {
   padding: 10px 35px 10px 14px;
   background-color: #eee;
   border-radius: 4px;
@@ -9483,7 +9497,7 @@ html {
   margin: 10px 0;
 }
 
-.alert .close, .answer-message .close, .warn-message .close, .info-message .close {
+.alert .close, .answer-message .close, .warn-message .close, .info-message .close, .success-message .close {
   border: 0;
   background: none;
   color: inherit;
@@ -9495,19 +9509,20 @@ html {
   height: 20px;
 }
 
-.alert .close:active, .answer-message .close:active, .warn-message .close:active, .info-message .close:active,
+.alert .close:active, .answer-message .close:active, .warn-message .close:active, .info-message .close:active, .success-message .close:active,
 .alert .close:focus,
 .answer-message .close:focus,
 .warn-message .close:focus,
-.info-message .close:focus {
+.info-message .close:focus,
+.success-message .close:focus {
   outline: 0;
 }
 
-.alert p, .answer-message p, .warn-message p, .info-message p {
+.alert p, .answer-message p, .warn-message p, .info-message p, .success-message p {
   margin: 0;
 }
 
-.alert--success {
+.alert--success, .success-message {
   background: #ddf0d7;
   border-color: #a4cd98;
   color: #1c652c;
@@ -9529,7 +9544,7 @@ html {
   color: #972a3d;
 }
 
-.answer-message, .warn-message, .info-message {
+.answer-message, .warn-message, .info-message, .success-message {
   display: none;
 }
 

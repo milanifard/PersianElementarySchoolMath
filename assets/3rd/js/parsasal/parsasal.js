@@ -106,6 +106,9 @@ function createNewMessageBox(text, type) {
     } else if (type === "info ") {
         iconClass = "fa-info-circle"
         container.classList.add("info-message")
+    }else if (type === "success") {
+        iconClass = "fa-check"
+        container.classList.add("success-message")
     }
 
     paragraph.classList.add("align-self-center")
@@ -134,21 +137,25 @@ function createNewMessageBox(text, type) {
 }
 
 function showWrongAnswerMessage(containerId) {
-    $(containerId).append(getWrongAnswerMessageBox())
+    $(containerId).prepend(getWrongAnswerMessageBox())
     $(containerId).find(".warn-message").css("display", "flex")
         .hide()
         .fadeIn();
 }
-
+function showTrueAnswersMessageBox(containerId) {
+    $(containerId).prepend(getTrueAnswersMessageBox())
+    $(containerId).find(".success-message").css("display", "flex")
+        .hide()
+        .fadeIn();
+}
 function getWrongAnswerMessageBox() {
 
     return createNewMessageBox("بعضی پاسخ هات درست نبود، دوباره تلاش کن", "warn");
 }
 
-
-
-
-
+function getTrueAnswersMessageBox(){
+    return createNewMessageBox("آفرین ! پاسخ این بخش درست بود", "success");
+}
 $(document).ready(function () {
     const modal = document.querySelector("#modal");
 
@@ -159,6 +166,12 @@ $(document).ready(function () {
 
     })
 });
+
+function showAfarinModalAnimation(){
+    modal.className = "open-modal";
+    setTimeout(function(){  modal.className = "close-modal";}, 3000);
+}
+
 
 
 function getNearestSegmentOnPath(path, point, points) {
