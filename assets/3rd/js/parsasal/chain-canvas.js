@@ -17,6 +17,16 @@
         for (var i = 0; i < points; i++)
             path.add(start + new Point(i * length, 0));
 
+        // Create a raster item using the image tag with id='mona'
+        var raster = new Raster('ruler');
+
+        raster.scale("0.3")
+        // Move the raster to the center of the view
+        raster.position = new Point(400, 600);
+
+
+
+
 
         function onMouseDrag(event) {
 
