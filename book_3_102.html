@@ -30,24 +30,24 @@
         </p>
         <p class="question">
         عددهای دو رقمی
-        <input class="input-style_lessthan" type="text">
+        <input id="p18_q1_1" class="input-style_lessthan" type="text">
             از عددهای سه رقمی هستند؛ مثل:
-        <input class="pull-left input-style" type="number">
+        <input id="p18_q1_2" class="pull-left input-style" type="number">
         </p>
         <p class="question">
             عددهای چهار رقمی
-        <input class="input-style_lessthan" type="text">
+        <input id="p18_q1_3" class="input-style_lessthan" type="text">
             از عددهای سه رقمی هستند؛ مثل:
-            <input class="pull-left input-style" type="number">
+        <input id="p18_q1_4" class="pull-left input-style" type="number">
         </p>
         <p class="question">
             عددهای دو رقمی
-        <input class="input-style_lessthan" type="text">
+        <input id="p18_q1_5" class="input-style_lessthan" type="text">
             از عددهای چهار رقمی هستند؛ مثل
-        <input class="pull-left input-style " type="number">
+        <input id="p18_q1_6" class="pull-left input-style " type="number">
         </p>
         <div class="btn_div">
-            <button class="btn btn--primary btn--inside uppercase" type="button" >
+            <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_p18_q1()">
                 <span class="ok">ثبت</span>
             </button>
         </div>
@@ -62,7 +62,7 @@
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                <input class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                                <input id="p18_q2_1" class="form__field normal_shadow" type="text" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -75,7 +75,7 @@
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                <input  class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                                <input id="p18_q2_2" class="form__field normal_shadow" type="text" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -87,7 +87,7 @@
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                <input class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                                <input id="p18_q2_3" class="form__field normal_shadow" type="text" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -102,7 +102,7 @@
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                <input id="p17_q1_4" class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                                <input id="p18_q2_4" class="form__field normal_shadow" type="text" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -115,7 +115,7 @@
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                <input id="p17_q1_1" class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                                <input id="p18_q2_5" class="form__field normal_shadow" type="text" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -127,7 +127,7 @@
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                <input class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                                <input id="p18_q2_6" class="form__field normal_shadow" type="text" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -139,7 +139,7 @@
                     <td>
                         <br>
                         <div class="btn_div">
-                            <button class="btn btn--primary btn--inside uppercase" type="button" >
+                            <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_p18_q2()">
                                 <span class="ok">ثبت</span>
                             </button>
                         </div>
@@ -162,7 +162,7 @@
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                <input  class=" form__field-large normal_shadow" type="number" placeholder="پاسخ">
+                                <input id="p18_q3_1" class=" form__field-large normal_shadow" type="number" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -175,7 +175,7 @@
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                <input class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
+                                <input id="p18_q3_2" class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -188,7 +188,7 @@
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                <input class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
+                                <input id="p18_q3_3" class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -204,7 +204,7 @@
                         <div class="btn_div">
                             <form class="form">
                                 +
-                                <input  class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
+                                <input id="p18_q3_4" class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -217,7 +217,7 @@
                         <div class="btn_div">
                             <form class="form">
                                 +
-                                <input class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
+                                <input id="p18_q3_5" class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -231,7 +231,7 @@
                         <div class="btn_div">
                             <form class="form">
                                 -
-                                <input class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
+                                <input id="p18_q3_6" class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -240,7 +240,7 @@
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                <input  class="form__field-medium normal_shadow" type="number" placeholder="پاسخ">
+                                <input  id="p18_q3_7" class="form__field-medium normal_shadow" type="number" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -250,31 +250,14 @@
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                =<input  class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
+                                =<input id="p18_q3_8" class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                <input  class="form__field-medium normal_shadow" type="number" placeholder="پاسخ">
-                            </form>
-                        </div>
-                    </td>
-                    <td>
-                        <img class="guider2 pull-left" src="assets/3rd/images/alimoradi/greencursur.png">
-                    </td>
-                    <td>
-                        <div class="btn_div">
-                            <form class="form">
-                                =<input class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
-                            </form>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="btn_div">
-                            <form class="form">
-                                <input  class="form__field-medium normal_shadow" type="number" placeholder="پاسخ">
+                                <input id="p18_q3_9" class="form__field-medium normal_shadow" type="number" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -284,7 +267,24 @@
                     <td>
                         <div class="btn_div">
                             <form class="form">
-                                =<input class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
+                                =<input id="p18_q3_10" class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn_div">
+                            <form class="form">
+                                <input id="p18_q3_11" class="form__field-medium normal_shadow" type="number" placeholder="پاسخ">
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <img class="guider2 pull-left" src="assets/3rd/images/alimoradi/greencursur.png">
+                    </td>
+                    <td>
+                        <div class="btn_div">
+                            <form class="form">
+                                =<input id="p18_q3_12" class="form__field-large normal_shadow" type="number" placeholder="پاسخ">
                             </form>
                         </div>
                     </td>
@@ -293,7 +293,7 @@
                     <td>
                         <br>
                         <div class="btn_div">
-                            <button class="btn btn--primary btn--inside uppercase" type="button" >
+                            <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_p18_q3()">
                                 <span class="ok">ثبت</span>
                             </button>
                         </div>
@@ -444,8 +444,6 @@
     </div>
 </div>
 
-
-
 <div class="pagination-container">
     <div class="page-number-button">
         <!-- using next/prev icons from font awesome -->
@@ -459,7 +457,6 @@
     <div class="page-number-button">
         <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
     </div>
-
 </div>
 <div class="back"></div>
 
