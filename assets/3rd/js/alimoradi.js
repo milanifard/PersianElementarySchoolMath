@@ -49,6 +49,7 @@ function correct_p18_q1() {
     }
 
     if (q1_3.value.length == 0) {
+
         q1_3.classList.add("yellow_shadow");
     } else if (q1_3.value == '4') {
         q1_3.classList.add("green_shadow");
