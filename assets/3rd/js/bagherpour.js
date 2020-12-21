@@ -119,7 +119,7 @@ function nextPage() {
 
 function changePage(page) {
 
-    window.location.href = `./Book_3_${page}.html`;
+    window.location.href = `./book_3_${page}.html`;
 
 }
 
