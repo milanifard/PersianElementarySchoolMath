@@ -705,3 +705,24 @@ a:hover {
 #Q1_containerprime{
     margin-bottom: 15vw
 }
+#text24{
+    position: absolute; margin-left:38vw ; margin-top: -3vw;
+}
+#text25{
+    padding-top: 2vw; padding-right: 15vw;
+}
+#textBox19{
+    position: absolute; margin-left:53vw ; margin-top: -2em;
+}
+#text26{
+    position: absolute; margin-left:49vw ; margin-top: -3vw;
+}
+#text27{
+    padding-top: 6vw; padding-right: 15vw; margin-top: 3vw;
+}
+#candies{
+    float: left; width: 25vw; margin-top: 2vw; margin-left: 2vw ; border: 0.3vw solid #79c2d2; border-radius: 2vw;
+}
+#Q5_containerr{
+    margin-right: -7vw; margin-bottom: 10vw;
+}
