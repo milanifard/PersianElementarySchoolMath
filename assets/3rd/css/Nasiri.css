@@ -80,50 +80,10 @@
     font-size: 1.5vw;
     text-align: right;
 }
-.statement{
-    font-size: 1.5vw;
-    position: relative;
-    top: 1vw;
-    right: 1vw;
-    text-align: left;
-}
-.sadgan {
 
-    position: absolute;
-    z-index: 9;
-    background-color: #f1f1f1;
-    border: 1px solid #d3d3d3;
-    text-align: right;
-    text-justify: auto;
-    max-height: 5vw;
-    max-width: 5vw;
-}
-.flex_row {
-    display: flex;
-    flex-direction: row;
-}
 
-.flex_col {
-    display: flex;
-    flex-direction: column;
-}
 .activity-container{
     float: right;
-}
-.dahgan {
-    height: 20vw;
-    width: 1vw;
-    position: absolute;
-    margin-left: 6vw ;
-    background-color: red;
-    background-repeat: no-repeat;
-
-    margin-bottom: 1em;
-    background-image: linear-gradient(to bottom,var(--pink) 0% ,var(--pink) 20% , white 20%,white 22%,
-    var(--pink) 22% ,var(--pink) 40% , white 40%,white 42%,
-    var(--pink) 42% ,var(--pink) 60% , white 60%,white 62%,
-    var(--pink) 62% ,var(--pink) 80% , white 80%,white 82%,
-    var(--pink) 80%,var(--pink) 100% );
 }
 
 .page-number-odd{
@@ -139,32 +99,77 @@
     bottom: -0.5vw;
     left: -5vw;
 }
-
-
-
-#Q1_container{
-    position: relative;
-    top: 10vw;
-    right: -10vw;
+.answer-field{
+    width: 5vw;
 }
+
+.container_row{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+    align-items: end;
+}
+.container_col {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid cyan;
+    align-items: end;
+}
+
+.sadgan{
+    width: 100%;
+}
+.dahgan{
+    width: 100%;
+}
+.yekgan{
+    width: 100%;
+}
+
 #q1{
     margin-bottom: 3vw;
+    position: relative;
+    font-size: 2vw;
+    top: 10vw;
+    right: -4vw;
+    float: right;
+}
+.statements1{
+    font-size: 1.5vw;
+    position: relative;
+    width: 90vw;
+    top: 6vw;
+    right: 1vw;
+    left: 5vw;
+    display: flex;
+    justify-content: right;
 }
 #s1_1{
     position: relative;
-    right: 4vw;
-    margin-left: auto;
-    margin-right: 15vw;
+    width: 6vw;
+}
+#inp1_1{
+    position: relative;
+    width: 3vw;
+    margin-right: 5vw;
+
 }
 #s1_2{
     position: relative;
-    right: 4vw;
-    margin-left: 0;
-    margin-right: 15vw;
+    width: 6vw;
+}
+#inp1_2{
+    position: relative;
+    width: 3vw;
+    margin-right: 5vw;
 }
 #s1_3{
     position: relative;
-    right: 4vw;
-    margin-left: 0;
-    margin-right: 15vw;
+    width: 6vw;
+}
+
+#inp1_3{
+    position: relative;
+    width: 3vw;
+    margin-right: 5vw;
 }

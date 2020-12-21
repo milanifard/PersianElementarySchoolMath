@@ -75,7 +75,6 @@ function p23answerQ9(inputId , labelId, ans){
 }
 
 function p24answerQ1(){
-    console.log("llllllllllllll");
     if (document.getElementById('rt1').checked) {
         makeRed("rt1l");
         makeBlack("rt2l");
@@ -105,6 +104,7 @@ function getCurrentPageFromURL() {
 let current_page = getCurrentPageFromURL()
 console.log("current page : " + current_page)
 
+
 function prevPage() {
     if (current_page > 1) {
         current_page--;
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     input.addEventListener('keypress', changePageOnEnter);
 
     function changePageOnEnter(e) {
-        if (e.code === "Enter") {
+        if (e.key === "Enter") {
             changePage(input.value)
         }
     }
