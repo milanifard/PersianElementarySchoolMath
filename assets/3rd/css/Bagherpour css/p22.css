@@ -100,7 +100,7 @@ body{overflow-x: hidden;}
 .q-text{
     display: flex;
     flex-direction: row-reverse;
-    font-size: 25px;
+    font-size: 1.8vw;
     padding:20px 0 10px 0;
 }
 .num-color

@@ -4,7 +4,7 @@
 }
 .pagination-container {
     position: relative;
-    top:7vw;
+    top:100px;
     direction: rtl;
     font-size: 24px;
     justify-content: center;
@@ -57,4 +57,52 @@
     font-size: 2.5em;
     display: flex;
 
+}
+@media only screen and (max-width:1130px){
+    .page-number{
+         height: 50px;
+         width: 130px;
+    }
+}
+@media only screen and (max-width:900px){
+    .pagination-container{
+        top:80px;
+    }
+}
+@media only screen and (max-width:670px){
+    .pagination-container{
+        top:60px;
+        font-size: 15px;
+    }
+    .page-number{
+        height: 30px;
+        width: 90px;
+   }
+   .paginationInput {
+    font-size: 15px;
+   }
+}
+@media only screen and (max-width:500px){
+    .pagination-container{
+        top:50px;
+    }
+}
+@media only screen and (max-width:375px){
+    .pagination-container{
+        top:45px;
+    }
+}
+@media only screen and (max-width:330px){
+    .pagination-container{
+        top:38px;
+    }
+    .page-number{
+        height: 25px;
+        width: 80px;
+        padding: 0 1em;
+        border: 0.30em double white;
+   }
+   .paginationInput {
+    font-size: 13px;
+   }
 }
