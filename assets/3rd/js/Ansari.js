@@ -54,6 +54,10 @@ function p14ques3() {
 
 }
 
+function p14d() {
+  check("p14d",6)
+}
+
 function p15ques1() {
   check("p15q1_1",9)
 
