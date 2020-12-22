@@ -3,7 +3,7 @@
 {
     font-family:persianNum; src:url('../../../fonts/Farsi-Digits/Samim-FD.ttf'); font-weight:normal;
 }
-body{overflow-x: hidden;}
+body{overflow-x: hidden; font-family: zar;}
 .right-border{
     width: 90vw;
     max-width: 100%;
@@ -124,20 +124,6 @@ body{overflow-x: hidden;}
     height: 180px;
     padding-top:30px;
 }
-  /* .page-number{
-    background-color: #44b869;
-    border-radius: 2.5vw;
-    border: 0.9vw double white;
-    text-align: center;
-    font-size: 2vw;
-    font-family: Koodak;
-    color: white;
-    padding: 0 3vw;
-    position: absolute;
-    bottom: -0.5vw;
-    right: -5vw;
-} */
-
 .dastgah{
     width: 400px;
     height: 150px;
@@ -185,10 +171,10 @@ input{
     border-bottom: 2px solid #9bcce3; 
     width: 60px;
     font-size: 25px;
-    margin-top: -5px;
     height: 30px;
     color: #4f4f4f;
     font-family:persianNum;
+    text-align: center;
     
 }
 .counting{
@@ -196,7 +182,7 @@ input{
     font-size: 30px;
     flex-wrap: wrap;
     margin-bottom:50px;
-    margin-right: 10%;
+    margin-right: 13%;
 }
 .and{
     color: #f0595b;
@@ -226,7 +212,7 @@ input{
     justify-content: space-between;
 }
 .right-float{float: right;}
-.radio-part{display: flex; float: right; padding-top: 3vw; font-size:20px;}
+.radio-part{display: flex; float: right; padding-top: 3vw; font-size:25px;}
 
 
 
@@ -262,7 +248,10 @@ input{
 }
 @media only screen and (max-width:1080px)
 {
-    .clocks{flex-direction: row-reverse; margin: auto;}
+    .clocks{
+        flex-direction: row-reverse; 
+        margin: auto;
+    }
     .digitalclock{padding-top:60px; margin: auto;}
     .dastgah{padding:0px; margin: auto;} 
     .ans-q{width:80%}
@@ -278,9 +267,6 @@ input{
         padding-left:15% ;
         font-size: 17px;
        
-    }
-    input{
-        margin-top:0px;
     }
 
     .counting{
@@ -299,15 +285,29 @@ input{
         margin-top:5px;
     }
     .top-margin{margin-top:5px}
+}
+@media only screen and (max-width:715px){
+    .text-in-green-box{font-size: 15px;}
+    .light-green-part{width:90px; height:50px;}
+    .darker-green-part{height:50px;}
 } 
 @media only screen and (max-width:450px){
     .review-box{top:-30px}
     .clock{width:100px; height:100px}
-    .digitalclock{width:100px; height:50px; padding-top: 0px;}
+    .digitalclock{
+        width:100px; 
+        height:50px; 
+        padding-top: 0px;
+    }
     .dastgah{width:220px; height:130px} 
     .q-text{font-size: 15px;}
     .radio-part{font-size:13px;}
-    .momDaughter{height: 120px; margin-top:-120px; position: relative; right: 50px;}
+    .momDaughter{
+        height: 120px; 
+        margin-top:-120px; 
+        position: relative; 
+        right: 50px;
+    }
     .counting{
         font-size: 15px;
     }
@@ -320,9 +320,6 @@ input{
     .top-margin{
         margin-top: 8px;
     }
-    .text-in-green-box{font-size: 15px;}
-    .light-green-part{width:90px; height:50px;}
-    .darker-green-part{height:50px;}
     .counting{margin-top: 10px;}
     .count-olgoo-q2{margin-top: 10px;}
     .practise-box{width:190px}
