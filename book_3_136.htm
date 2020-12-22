@@ -3,54 +3,92 @@
     <title> ریاضی سوم، صفحه 136</title>
     <link href="assets/3rd/css/naderi.css" rel="stylesheet">
     <link href='http://www.fontonline.ir/css/BNazanin.css' rel='stylesheet' type='text/css'>
+    <script src="assets/3rd/js/Naderi.js"></script>
 </head>
 
 <body>
     
-    <div class="page-right-border">
-        <img id="little_boy_image" src="assets/3rd/images/Naderi/little_boy.png" alt="little boy">
-        <div class="background-style"></div>
-        <div class="activity_item">
-            <img class="activity-cover" src="assets/3rd/images/activity.png" alt="activity_image">
-            <div class="activity-title">فعّالیت</div>
-        </div>
-        <div id="content_136">
+    <div class="page-right-border" style="border: 2px solid red;">
+        <div class="background-style" style="border: 2px solid blue;"></div>
+        <img id="little_boy_image" src="assets/3rd/images/Naderi/little_boy.png" alt="little boy" style="border: 2px solid red;">
+        
+        <div id="content_136" >
+            <div style="border: 1px solid rgb(0, 255, 106);">
+                <img id="activity_cover_136"class="activity-cover" src="assets/3rd/images/activity.png" alt="activity_image" style="border: 2px solid blue;">
+                <div class="activity-title" style="border: 2px solid rgb(192, 114, 40);">فعّالیت</div>
+            </div>
             <div id="Q1_container">
-                <div id="Q1_description" class="text"><span class="questions-number">1ــ </span>حاصل ضرب عددهای زیر را به کمک ماشین حساب پیدا کنید.</div>
-                <div>
-                    <table style="font-size: 2vw;">
+                <div id="Q1_description" class="text" style="border: 2px solid rgb(41, 155, 163);"><span class="questions-number">1ــ </span>حاصل ضرب عددهای زیر را به کمک ماشین حساب پیدا کنید.</div>
+                <div style="border: 2px solid rgb(41, 155, 190);">
+                    <table>
                         <tr>
-                            <th>&#1779 × &#1777&#1776= </th> 
-                            <th>&#1780 × &#1778&#1776= </th> 
-                            <th>&#1784&#1776 × &#1779= </th>
+                            <th>
+                                <!-- &#1779 × &#1777&#1776=  -->
+                                <span class="text">3×10=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,3,10)"></span> 
+                            </th> 
+                            <th>
+                                <!-- &#1780 × &#1778&#1776=  -->
+                                <span class="text">4×20=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,4,20)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1784&#1776 × &#1779=  -->
+                                <span class="text">80×3=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,3,80)"></span>
+                            </th>
                         </tr>
                         <tr>
-                            <th>&#1778&#1776 × &#1779&#1776= </th> 
-                            <th>&#1782&#1776 × &#1780&#1776= </th> 
-                            <th>&#1784&#1776 × &#1778&#1776&#1776= </th>
+                            <th>
+                                <!-- &#1778&#1776 × &#1779&#1776=  -->
+                                <span class="text">20×30=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,30,20)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1782&#1776 × &#1780&#1776=  -->
+                                <span class="text">40×60=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,40,60)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1784&#1776 × &#1778&#1776&#1776=  -->
+                                <span class="text">80×200=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,80,200)"></span>
+                            </th>
                         </tr>
                         <tr>
-                            <th>&#1778&#1776&#1776 × &#1780&#1776&#1776= </th> 
-                            <th>&#1779&#1776&#1776 × &#1778&#1776= </th> 
-                            <th>&#1777&#1776 × &#1777&#1776&#1776= </th>
+                            <th>
+                                <!-- &#1778&#1776&#1776 × &#1780&#1776&#1776=  -->
+                                <span class="text">200×400=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,400,200)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1779&#1776&#1776 × &#1778&#1776=  -->
+                                <span class="text">300×20=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,300,20)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1777&#1776 × &#1777&#1776&#1776=  -->
+                                <span class="text">10×100=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,10,100)"></span>
+                            </th>
                         </tr>
                     </table>
                 </div>
             </div>
 
-            <div class="right_q_container">
-                <div class="text"><span class="questions-number">2ــ </span>بین تعداد صفرهای دو عدد و تعداد صفرهای حاصل ضرب چه رابطه ای وجود دارد؟ بنویسید.</div>
+            <div class="right_q_container" style="border: 2px solid rgb(41, 90, 0);">
+                <div class="text"><span class="questions-number">2ــ </span>بین تعداد صفرهای دو عدد و تعداد صفرهای حاصل&#8202;ضرب چه رابطه&#8202;ای وجود دارد؟ بنویسید.</div>
                 <hr id="answer_line">
             </div>
             
-            <div class="right_q_container">
-                <div class="text"><span class="questions-number">3ــ </span>به کمک رابطه ای که کشف کردید، توضیح دهید که چگونه می توانید حاصل ضرب ها را بدون ماشین حساب به دست آورید؟</div>
+            <div class="right_q_container" style="border: 2px solid rgb(41, 155, 163);">
+                <div class="text"><span class="questions-number">3ــ </span>به کمک رابطه ای که کشف کردید، توضیح دهید که چگونه می&#8202;توانید حاصل&#8202;ضرب&#8202;ها را بدون ماشین حساب به&#8202;دست&#8202;آورید؟</div>
                 <hr id="answer_line">
             </div>
 
-            <div class="right_q_container">
-                <div class="text"><span class="questions-number">4ــ </span>با توجّه به توضیح قسمت بالا، حاصل ضرب ها را پیدا کنید.</div>
-                <div>
+            <div class="right_q_container" style="border: 2px solid rgb(90, 155, 163);">
+                <div class="text" style="border: 2px solid rgb(41, 155, 163);"><span class="questions-number">4ــ </span>با توجّه به توضیح قسمت بالا، حاصل&#8202;ضرب&#8202;ها را پیدا کنید.</div>
+                <div style="border: 2px solid rgb(41, 155, 163);">
                     <table>
                         <tr>
                             <th>&#1780 × &#1782&#1776= </th> 
@@ -59,12 +97,19 @@
                         </tr>
                     </table>
                 </div>
-                <p class="text">درستی پاسخ های خود را با ماشین حساب بررسی کنید.<br>اگر جواب های شما نادرست باشند، باید درمورد سوالهای 2و3 فکر کنید. </p>
-
+                <p class="text">درستی پاسخ&#8202;های خود را با ماشین حساب بررسی کنید.<br>اگر جواب&#8202;های شما نادرست باشند، باید درمورد سوال&#8202;های 2و3 فکر کنید. </p>
+                <br><br>
             </div>
-            
+            <div class="creative_container" style="border: 2px solid rgb(9, 90, 6);">
+                <img id="colored_pencil_image" src="assets/3rd/images/Naderi/colored_pencil.png">
+                <div class="creative_title" >خلاق باش</div>
+                <div class="creative_content" style="border: 2px solid rgb(41, 155, 163);">
+                    <p class="text" style="border: 2px solid red;">الگوهای آجری را رنگ کنید.<br>در صورت امکان، شکل رنگ شده متقارن باشد.</p>
+                
+                </div>
+            </div>
         </div>
-        
+        <div class="page-number_right">136</div>
     </div>
     
 </body>
