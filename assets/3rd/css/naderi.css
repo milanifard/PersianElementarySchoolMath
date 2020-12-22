@@ -139,7 +139,7 @@ input[type=number] {
     /* font-family: BNazanin; */
     font-size: x-large;
     direction: rtl;
-    white-space: pre-wrap;
+    /* white-space: pre-wrap; */
 }
 #little_boy_image {
     /* position: absolute; */
@@ -158,13 +158,14 @@ input[type=number] {
     margin-bottom: 2vh;  
 }
 
-#answer_line{
+.answer_line{
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid rgb(81, 112, 197);
-    margin: 3vw 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
     padding: 0;
+    
 }
 
 table, td, th {
@@ -265,4 +266,15 @@ table {
     position: absolute;
     bottom: -0.5vw;
     right: -5vw;
+}
+
+
+
+
+.showanswerbutton, .hideanswerbutton {
+    background-color: #6fa3f1!important;
+    position: relative;
+    width: 20%;
+    margin-left: 80%;
+    border-color: #104ed3;
 }
