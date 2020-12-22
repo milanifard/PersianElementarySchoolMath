@@ -10,7 +10,16 @@
 
     <title>ریاضی سوم دبستان - صفحه سیزده</title>
 </head>
-    <body>
+
+<script>
+    function loadme(){
+                        var canvas = document.getElementById("myCanvas");
+                        var ctx = canvas.getContext("2d");
+                        var img = document.getElementById("pic");
+                        ctx.drawImage(img, 0, 0);}
+</script>
+    <body onload="loadme()">
+
         <div class = "flexrow">
             <div class = "paperCont" id ="leftgreen">
                 <h2 class="header" id = "colorLightGreen">ماشین های ورودی و خروجی</h2>
@@ -35,7 +44,13 @@
                     <div style = "  text-align: justify;
                                      text-justify: inter-word;">
                         <span>جواب را چگونه به دست می آورید؟ </span>
-                        <input id= "p13q1_2" placeholder="توضیح دهید ." class="gre" >
+                        <form>
+                            <label >انتخاب کنید</label>
+                            <select id="res" class ="gre">
+                                <option value="incorr">رابطه ورودی و خروجی را حدس می‌زنیم .</option>
+                                <option value="corr">رابطه ورودی و کار کرد خروجی را بررسی می‌کنیم و به خروجی می‌رسیم.</option>
+                            </select>
+                            </form>
                      </div>
                 </div>
                 
@@ -68,10 +83,38 @@
     
                 <div id= "find">
                     <h5 class="act" id="colorGreen" >بگرد و پیدا کن</h5>
-                    <p> در تصویر زیر،شکل های مثل شکل یک زیر را با کلیک راست و مثل شکل دو زیر را با کلیک چپ مشّخص کنید. به همه ی این شکل ها مکّعب گفته میشود.</p>
+                    <p> در تصویر زیر،شکل های مثل شکل یک شکل دو زیر را با کلیک مشّخص کنید. به همه ی این شکل ها مکّعب گفته میشود.</p>
                     <img src="./assets/3rd/images/Ansari/13-4.png" class="img-responsive"/>
+                    <img src="./assets/3rd/images/Ansari/13-3.png" id="pic" style="display: none;"/>
+
+                    <canvas id="myCanvas" width="500" height="374" ></canvas>
+
+                    <script>
+                        var canvas = document.getElementById("myCanvas");
+                        var ctx = canvas.getContext("2d");
+                        var img = document.getElementById("pic");
+                        ctx.drawImage(img, 0, 0);
+                    
+                        canvas.addEventListener("click", function (evt) {
+                            var mousePos = getMousePos(canvas, evt);
+                            console.log(mousePos.x, mousePos.y)
+                            ctx.beginPath();
+                            ctx.arc(mousePos.x, mousePos.y, 60, 0, 2 * Math.PI);
+                            ctx.strokeStyle = 'green';
+                            ctx.stroke();
+                        }, false);
+
+                        function getMousePos(canvas, evt) {
+                            var rect = canvas.getBoundingClientRect();
+                            return {
+                                x: evt.clientX - rect.left,
+                                y: evt.clientY - rect.top
+                            };
+                        }
+                        
+                    </script>
+
                     <img src="./assets/3rd/images/Ansari/13-5.png" class="img-responsive"/>
-                    <img src="./assets/3rd/images/Ansari/13-3.png" id="pic" class="img-responsive"/>
                     
 
                 </div>

@@ -1,5 +1,7 @@
 function p13ques1() {
   check("p13q1_1",8)
+  check("res","corr")
+
 }
 
 function p13ques2() {
@@ -94,11 +96,9 @@ function p15ques2() {
   check("p15q6_1",35)
   check("p15q6_2",30)
 
-
-
-
 }
  
 
 
-  
+
+
