@@ -66,6 +66,8 @@ function p15ques1() {
   check("p15q2_7",55)
   check("p15q2_8",60)
 
+  check("res","corr")
+
 }
 
 
