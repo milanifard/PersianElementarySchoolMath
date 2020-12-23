@@ -1,78 +1,233 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="SamanehKadKhodaMezerji">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/kadkhoda.css">
     <title>ریاضی سوم دبستان - صفحه صد و شش</title>
 </head>
-<body style="margin: 0; direction: rtl">
-
- <div>
-    <div class="border-level-right">
-        <div class="right-border-body">
-            <div class="background-style"></div>
-                <div class="page-title">جمع در جدول ارزش مکانی</div>
-                    <div class="clearfix"></div>
-                    <div id="activity_item">
-                        <img class="activity-image" src="assets/3rd/images/activity.png"
-                             alt="activity-image">
-                    </div>
-                    <div class="activity-text">فعّالیت</div>
-
-                    <div id="Q1_container">
-                            <div id="Q1" class="text-config questions-text-config"
-                                 style="float: right; font-family: 'B Zar'; direction: rtl; font-size: 2vw;">
-                                <span style="font-family: 'B Zar'; font-size: 2vw; color: var(--orange_level1);">1-</span>
-                                حمید 4735 ریال در قلّکش داشت. او 2231 ریال دیگر هم در قلّک ریخت. حالا چقدر پول دارد؟ <br>
-                                اگر پول هایش به صورت سکّه های 1و10و100و1000 ریالی باشند،<br>
-                            </div>
-                            <div id="Q1_table" class="simple-table" style="margin-top: 3vw; clear:both; float: left;">
-                                <table>
-                                    <tr>
-                                        <td class="bottom-border">ی</td>
-                                        <td class="bottom-border right-border">د</td>
-                                        <td class="bottom-border right-border">ص</td>
-                                        <td class="bottom-border right-border">هـ</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="">5</td>
-                                        <td class="right-border">3</td>
-                                        <td class="right-border">7</td>
-                                        <td class="right-border">4</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="bottom-border">1</td>
-                                        <td class="bottom-border right-border">3</td>
-                                        <td class="bottom-border right-border">2</td>
-                                        <td class="bottom-border right-border">2+</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="bottom-border">
-                                            <input class="input-style creative-input-style">
-                                        </td>
-                                        <td class="bottom-border right-border">
-                                            <input class="input-style creative-input-style">
-                                        </td>
-                                        <td class="bottom-border right-border">
-                                            <input class="input-style creative-input-style">
-                                        </td>
-                                        <td class="bottom-border right-border">
-                                            <input class="input-style creative-input-style">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class=""> </td>
-                                        <td class="right-border"> </td>
-                                        <td class="right-border"> </td>
-                                        <td class="right-border"> </td>
-                                    </tr>
-                                </table>
-                            </div>
+<body style="margin: 0;">
+<div class="border-level-right">
+    <div class="right-border-body">
+        <div class="background-style" style="height: 36.8vw"></div>
+        <div id="activity_item">
+            <img class="activity-image" src="assets/3rd/images/kadkhoda/activity.png"
+                 alt="activity_image"
+                 style="margin: -1vw -1vw 0 0;">
+            <div class="activity-text additional-style">فعّالیت</div>
+        </div>
+        <div id="Q1_container">
+            <div id="Q1" class="text-config"
+                 style="font-family: 'B Zar'; font-size: 2vw; direction: rtl; margin-top: 8vw; margin-right: -9vw;" ;>
+                <span style="font-family: 'B Zar'; font-size: 2vw; color: var(--orange_level1);">1-</span>
+                حمید 4735 ریال در قلّکش داشت. او 2231 ریال دیگر هم در قلّک ریخت. حالا چقدر پول دارد؟
+                <br>
+                اگر پول هایش به صورت سکّه‌های 1 و 10 و 100 و 1000 ریالی باشند،
+                <br>
+                <span style="font-family: 'B Zar'; font-size: 2vw;">چند سکّه‌ی 1 ریالی دارد؟</span>
+                <input class="input-style creative-input-style" id="question-1"
+                       onChange="isCorrectValue(this.id ,this.value ,9)" type="number">
+                <br>
+                <span style="font-family: 'B Zar'; font-size: 2vw;">چند سکّه‌ی 10 ریالی دارد؟</span>
+                <input class="input-style creative-input-style" id="question-2"
+                       onChange="isCorrectValue(this.id ,this.value ,9)" type="number">
+                <br>
+                <span style="font-family: 'B Zar'; font-size: 2vw;">چند سکّه‌ی 100 ریالی دارد؟</span>
+                <input class="input-style creative-input-style" id="question-3"
+                       onChange="isCorrectValue(this.id ,this.value ,9)" type="number" style="margin-top: -1vw">
+            </div>
+            <div id="Q1_table" class="simple-table"
+                 style="direction: rtl; margin: -11vw 0 5px 13vw; width: 24vw; height: 17vw; text-align: -webkit-center;">
+                <table>
+                    <tr>
+                        <td class="bottom-border">ی</td>
+                        <td class="bottom-border right-border">د</td>
+                        <td class="bottom-border right-border">ص</td>
+                        <td class="bottom-border right-border">هـ</td>
+                    </tr>
+                    <tr style="margin-left: 0;">
+                        <td class="">
+                            <span class="number">7</span>
+                        </td>
+                        <td class="right-border">
+                            <span class="number">3</span>
+                        </td>
+                        <td class="right-border">
+                            <span class="number">5</span>
+                        </td>
+                        <td class="right-border">
+                            <span class="number">4</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bottom-border">
+                            <span class="number number-table-td">5</span>
+                        </td>
+                        <td class="bottom-border right-border">
+                            <span class="number number-table-td">2</span>
+                        </td>
+                        <td class="bottom-border right-border">
+                            <span class="number number-table-td">3</span>
+                        </td>
+                        <td class="bottom-border  right-border">
+                            <span class="operator number-table-td">+</span>
+                            <span class="number number-table-td">2</span>
+                        </td>
+                    </tr>
+                    <tr style="padding-top: 4vw">
+                        <td class=""></td>
+                        <td class="right-border">
+                        </td>
+                        <td class="right-border"></td>
+                        <td class="right-border"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="Q2_container">
+            <div id="Q2" class="text-config"
+                 style="font-family: 'B Zar'; font-size: 2vw; direction: rtl; margin-top: 2vw; margin-right: 9vw;">
+                <span style="font-family: 'B Zar'; font-size: 2vw; color: var(--orange_level1);">2-</span>
+                حمید 6966 ریال در قلّکش دارد. او در این هفته 1221 ریال در قلّک خود پس‌انداز کرده است.
+                <br>
+                حالا چقدر پول دارد؟
+                <br>
+                <span style="font-family: 'B Zar'; font-size: 2vw;">چند سکّه‌ی 1 ریالی دارد؟</span>
+                <input class="input-style creative-input-style" type="number" id="question-4"
+                       onChange="isCorrectValue(this.id ,this.value ,9)">
+                <br>
+                <span style="font-family: 'B Zar'; font-size: 2vw;">چند سکّه‌ی 10 ریالی دارد؟</span>
+                <input class="input-style creative-input-style" type="number" id="question-5"
+                       onChange="isCorrectValue(this.id ,this.value ,9)">
+                <br>
+                <span style="font-family: 'B Zar'; font-size: 2vw;">چند سکّه‌ی 100 ریالی دارد؟</span>
+                <input class="input-style creative-input-style" type="number" id="question-6"
+                       onChange="isCorrectValue(this.id ,this.value ,9)" style="margin-top: -1vw">
 
             </div>
-         </div>
+            <div id="Q2_table" class="simple-table"
+                 style="direction: rtl; margin: -13vw 0 0 13vw; width: 24vw; height: 17vw; text-align: -webkit-center; ">
+                <table st>
+                    <tr>
+                        <td class="bottom-border">ی</td>
+                        <td class="bottom-border right-border">د</td>
+                        <td class="bottom-border right-border">ص</td>
+                        <td class="bottom-border right-border">هـ</td>
+                    </tr>
+                    <tr>
+                        <td class="">
+                            <span class="number">6</span>
+                        </td>
+                        <td class="right-border">
+                            <span class="number">9</span>
+                        </td>
+                        <td class="right-border">
+                            <span class="number">6</span>
+                        </td>
+                        <td class="right-border">
+                            <span class="number">6</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bottom-border">
+                            <span class="number">1</span>
+                        </td>
+                        <td class="bottom-border right-border">
+                            <span class="number">2</span>
+                        </td>
+                        <td class="bottom-border right-border">
+                            <span class="number">2</span>
+                        </td>
+                        <td class="bottom-border right-border">
+                            <span class="operator number-table-td">+</span>
+                            <span class="number number-table-td">2</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class=""></td>
+                        <td class="right-border"></td>
+                        <td class="right-border"></td>
+                        <td class="right-border"></td>
+                    </tr>
+                </table>
+            </div>
+            <div style="direction: rtl; margin-right: 8vw">
+                <br>
+                <span style="font-family: 'B Zar'; font-size: 2vw;">اگر حمید 10 سکّه‌ی 100 ریالی را با یک سکّه‌ی 1000 ریالی عوض کند، چند سکّه‌ی 100 ریالی برایش باقی می‌ماند؟</span>
+                <input class="input-style creative-input-style" type="number" style="margin-top: -1vw">
+                <br>
+                <span style="font-family: 'B Zar'; font-size: 2vw;">
+                    او با یک سکّه‌ی 1000 ریالی که در مقابل سکّه‌های 100 ریالی اش گرفته است، روی هم چند سکّه‌ی 1000 ریالی دارد؟</span>
+                <input class="input-style creative-input-style" type="number" style="margin-top: -1vw">
+
+            </div>
+        </div>
+        <div class="Q3_container" style="margin-bottom: 5vw;">
+            <div id="Q3" class="text-config"
+                 style="font-family: 'B Zar'; font-size: 2vw; direction: rtl; margin-top: 2vw; margin-right: 9vw;">
+                <span style="font-family: 'B Zar'; font-size: 2vw; color: var(--orange_level1);">3-</span>
+                جمعی را که شکل زیر نشان می‌دهد، در جدول ارزش مکانی بنویسید.
+                <br>
+                این ده سکّه‌ی 10 ریالی را با چه سکّه‌ای عوض می‌کنید؟
+
+            </div>
+            <div class="partition-q3">
+                <div class="right-coins">
+                    <img src="assets/3rd/images/kadkhoda/coins-removebg.png" width="500">
+                </div>
+                <div id="left-Q3_table" class="simple-table"
+                     style="direction: rtl; margin: 6vw 0 0 13vw; width: 24vw; height: 17vw; text-align: -webkit-center; ">
+                    <table st>
+                        <tr>
+                            <td class="bottom-border">ی</td>
+                            <td class="bottom-border right-border">د</td>
+                            <td class="bottom-border right-border">ص</td>
+                            <td class="bottom-border right-border">هـ</td>
+                        </tr>
+                        <tr>
+                            <td class="">
+                                <span class="number">1</span>
+                            </td>
+                            <td class="right-border">
+                                <span class="number">1</span>
+                            </td>
+                            <td class="right-border">
+                                <span class="number">1</span>
+                            </td>
+                            <td class="right-border">
+                                <span class="number">1</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bottom-border">
+                                <span class="number">7</span>
+                            </td>
+                            <td class="bottom-border right-border">
+                                <span class="number">7</span>
+                            </td>
+                            <td class="bottom-border right-border">
+                                <span class="number">7</span>
+                            </td>
+                            <td class="bottom-border right-border">
+                                <span class="operator number-table-td">+</span>
+                                <span class="number number-table-td">2</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class=""></td>
+                            <td class="right-border"></td>
+                            <td class="right-border"></td>
+                            <td class="right-border"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">106</div>
+
     </div>
 </div>
 </body>
+<script src="assets/3rd/js/s-kadkhoda.js"></script>
 </html>
