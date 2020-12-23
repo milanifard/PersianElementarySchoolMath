@@ -7,16 +7,6 @@
         // The distance between the points:
         var length = 30;
 
-        var path = new Path({
-            strokeColor: '#E4141B',
-            strokeWidth: 20,
-            strokeCap: 'round'
-        });
-
-
-        var start = view.center / [10, 1];
-        for (var i = 0; i < points; i++)
-            path.add(start + new Point(i * length, 0));
 
         // Create a raster item using the image tag with id='mona'
         var ruler = new Raster('ruler');
@@ -34,6 +24,19 @@
             radius: 5,
             fillColor: 'green'
         });
+        
+        var path = new Path({
+            strokeColor: '#E4141B',
+            strokeWidth: 20,
+            strokeCap: 'round'
+        });
+
+
+        var start = view.center / [10, 1];
+        for (var i = 0; i < points; i++)
+            path.add(start + new Point(i * length, 0));
+
+
         
         circle.attached_segment = getNearestSegmentOnPath(path, circle.point, points);
 
