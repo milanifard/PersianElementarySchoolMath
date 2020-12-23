@@ -7,6 +7,8 @@
 @font-face {
     font-family: Zar;
     src: url("/assets/fonts/Zar.woff") format("woff");
+    font-family: Koodak;
+    src: url("/assets/fonts/Koodak.ttf") format("woff");
 }
 
 body{
@@ -33,7 +35,7 @@ body{
     /*position: relative;*/
 }
 
-.page-title{
+#page-title{
     width: 18vw;
     height: 5vw;
     margin: 0 auto;
@@ -73,7 +75,7 @@ body{
     color: white;
 }
 
-.farhange_neveshtan{
+#farhange_neveshtan{
     background-color: #e1f4fc;
     width: 70vw;
     height: 30vw;
@@ -85,7 +87,7 @@ body{
     border-bottom-right-radius: 2vw;
 }
 
-.farhange_neveshtan_content{
+#farhange_neveshtan_content{
     background-color: white;
     border: double 0.5vw #5cb6d6;
     border-radius: 5vw;
@@ -95,21 +97,28 @@ body{
     padding: 1vw 2vw;
 }
 
-.image_one{
+#farhange_neveshtan_ta{
+    /*font-size: 0.6em;*/
+    font-family: ZAR;
+    /*border-style: none;*/
+    /*text-line-through-style: dot;*/
+}
+
+#turtle-img{
     top : 7.5vw;
     left: -4.6vw;
     position: absolute;
 }
 
-.image-two{
+#avtivity-img{
     width: 10vw;
     height: 14vw;
+    right: -3vw;
     top: 45vw;
     position: absolute;
-    margin-right: -3vw;
 }
 
-.tamrin-content{
+#tamrin-content{
     top: 50vw;
     position: relative;
     /*width: 70vw;*/
@@ -118,40 +127,138 @@ body{
     float: right;
 }
 
-/*p{*/
-/*    position: relative;*/
-/*    float: right;*/
-/*    overflow-x: auto;*/
-/*}*/
+#q1_ans{
+    /*top:20vw;*/
+    /*border: solid red;*/
+    margin: -1vw;
+    width: 50vw;
+    right: -10vw;
+    position: relative;
+    direction: ltr;
+}
 
-.q1{
+#q1_in1, #q1_in2, #q1_in3{
+
+}
+
+output{
+    width: 8vw;
+    display: inline-block;
+    font-weight: bold;
+    font-style: italic;
+    color: #7a43b6;
+    text-align: center;
+}
+
+#q1_result{
+    /*color: #1e7e34;*/
+    /*border:0.1vw solid blue;*/
+}
+
+button{
+    display: inline;
+    direction: rtl;
+    height: 3vw;
+    width: 7vw;
+    background-color: #0c9ec3;
+    color: white;
+}
+
+#q1_btn{
+    position: relative;
+}
+
+#q2_ans{
+    margin-top: -1vw;
+    color: #c3325f;
+    font-weight: bold;
+    font-family: Koodak;
+    font-size: 0.9em;
+}
+
+.student{
+    display: inline;
+    font-family: Koodak;
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #c3325f;
+}
+
+#q3_btn{
+    top: -1vw;
+    right: 9vw;
+    position: relative;
+}
+
+#q3_result{
+    top: -1vw;
+    right: 15vw;
+    position: relative;
+}
+
+.q4_select{
+    margin: 0 2.5vw;
+    width: 11vw;
+    height: 2vw;
+    text-align: center;
+    font-family: Koodak;
+    border-radius: 2vw;
+    direction: ltr;
+}
+
+.q6_select{
+    margin: 0 0.5vw;
+    width: 8vw;
+    height: 2vw;
+    text-align: center;
+    font-family: Koodak;
+    border-radius: 2vw;
+    direction: ltr;
+}
+
+#q6_btn{
+    /*top: vw;*/
+    right: 28vw;
+    position: relative;
+}
+
+#q6_result{
+    right: 33vw;
+    position: relative;
+}
+
+
+#q1{
     width: 45vw;
     display: block;
 }
 
-.q3{
+#q3{
+    top: 27vw;
+    position: absolute;
+    /*width: 70vw;*/
     display: block;
 }
 
-.q4{
+#q4{
     top: 85vw;
     right: 20vw;
     position: absolute;
 }
 
-.q5{
+#q5{
     top: 92vw;
     right: 20vw;
     position: absolute;
 }
 
-.q6{
+#q6{
     top: 100vw;
     right: 8vw;
     position: absolute;
 }
 
-.q6-content{
+#q6-content{
     font-family:"B Zar";
     top: 104vw;
     /*right: vw;*/
@@ -162,17 +269,17 @@ body{
     color: var(--title_color);
 }
 
-.image-three{
+#tabiat-img{
     width: 30vw;
     height: 20vw;
-    top: 48vw;
+    top: 46vw;
     left: 5vw;
     position: absolute;
     margin-right: -3vw;
     float: left;
 }
 
-.image-four{
+#joghd-img{
     width: 14vw;
     height: 12vw;
     top: 35vw;
@@ -185,7 +292,7 @@ body{
     margin-top: 2.5vw;
 }
 
-.tamrin{
+#tamrin{
     position: relative;
 }
 
@@ -426,8 +533,10 @@ pre{
 }
 
 input{
-    width: 7.5vw;
-    margin: 0 1vw;
+    display: inline;
+    direction: ltr;
+    height: 2vw;
+    width: 5vw;
 }
 
 .page-number{

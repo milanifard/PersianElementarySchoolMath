@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="math">
+    <meta name="author" content="AsiyeBahrami">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/bahrami.css">
+
+    <!-- import Page Number -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/3rd/js/pagination.js"></script>
+
+    <title>ریاضی سوم دبستان</title>
+</head>
+<body>
+<div>
+    <div class="right-border">
+        <div class="background-style">
+            <!-- Page Number -->
+            <div class="pagination-container">
+                <div class="page-number-button">
+                    <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+                </div>
+                <div class="page-number">
+                    <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+                </div>
+                <div class="page-number-button">
+                    <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="title">
+            <div class="that-ridiculous-red-parts-in-title"></div>
+            <div class="title-style">ارزش پول</div>
+        </div>
+        <div id="activity_item">
+            <img class="activity-image" src="assets/3rd/images/bahrami/activity.png" alt="activity_image">
+            <div class="activity-text">فعّاليت</div>
+        </div>
+        <div id="p34-Q1_container">
+            <div class="text-config">1ــ عددي را که هر قسمت نشان مي دهد، بنويسيد. آن‌گاه به کمک شکل اين دو عدد را مقايسه کنيد .</div>
+        </div>
+        <div class="p34-box-q1" id="Q1_1">
+            <div class="p34-box-inside-divs p34-img-box">
+                <img src="assets/3rd/images/bahrami/coins-1-1-1.png" alt="سکه سوال 1-1 سمت چپ" class="p34-coin-left">
+            </div>
+            <div class="p34-box-inside-divs p34-inputs">
+                <input type="text" id="textBox1_P34" onchange="javascript: test_P34(0,'textBox1_P34');"class = "textBox-style p34-inputs-textbox">
+                <input type="text" id="textBox2_P34" onchange="javascript: test_P34(1,'textBox2_P34');"class = "round_input">
+                <input type="text" id="textBox3_P34" onchange="javascript: test_P34(2,'textBox3_P34');"class = "textBox-style p34-inputs-textbox">
+            </div>
+            <div class="p34-box-inside-divs p34-img-box">
+                <img src="assets/3rd/images/bahrami/coins-1-1-2.png" alt="سکه سوال 1-1 سمت راست" class="p34-coin-right">
+            </div>
+        </div>
+        <div class="p34-box-q1" id="Q1_2">
+            <div class="p34-box-inside-divs p34-img-box">
+                <img src="assets/3rd/images/bahrami/coins-1-2-1.png" alt="سکه سوال 1-2 سمت چپ" class="p34-coin-left">
+            </div>
+            <div class="p34-box-inside-divs p34-inputs">
+                <input type="text" id="textBox4_P34" onchange="javascript: test_P34(3,'textBox4_P34');"class = "textBox-style p34-inputs-textbox">
+                <input type="text" id="textBox5_P34" onchange="javascript: test_P34(4,'textBox5_P34');"class = "round_input">
+                <input type="text" id="textBox6_P34" onchange="javascript: test_P34(5,'textBox6_P34');"class = "textBox-style p34-inputs-textbox">
+            </div>
+            <div class="p34-box-inside-divs p34-img-box">
+                <img src="assets/3rd/images/bahrami/coins-1-2-2.png" alt="سکه سوال 1-2 سمت راست" class="p34-coin-right">
+            </div>
+        </div>
+        <div class="p34-box-q1" id="Q1_3">
+            <div class="p34-box-inside-divs p34-img-box">
+                <img src="assets/3rd/images/bahrami/test1.png" alt="مکعب سوال 1-3 سمت چپ" id="p34-cube-left">
+            </div>
+            <div class="p34-box-inside-divs">
+                <input type="text" id="textBox7_P34" onchange="javascript: test_P34(6,'textBox7_P34');"class = "textBox-style p34-inputs-textbox">
+                <input type="text" id="textBox8_P34" onchange="javascript: test_P34(7,'textBox8_P34');"class = "round_input">
+                <input type="text" id="textBox9_P34" onchange="javascript: test_P34(8,'textBox9_P34');"class = "textBox-style p34-inputs-textbox">
+            </div>
+            <div class="p34-box-inside-divs p34-img-box">
+                <img src="assets/3rd/images/bahrami/test2.png" alt="مکعب سوال 1-3 سمت راست" id="p34-cube-right">
+            </div>
+        </div>
+        <div id="p34-Q2_container">
+            <div class="text-config">
+                2- چگونه دو عدد چهار رقمي را با هم مقايسه مي کنيد؟ توضيح دهيد.
+            </div>
+            <form>
+                <textarea type="text" id="p34-textareaBoxQ2" class="textarea" rows="10" cols="10"></textarea>
+                <button class="submit" id="p34-submit" onclick="javascript: testTextBoxQ2_P34('p34-textareaBoxQ2');">تاييد</button>
+            </form>
+        </div>
+
+        <div class="guess-box-level1 p34-guess-box-level1">
+            <div class="guess-box-text-right" >اندازه گيری کن</div>
+            <div>
+                <img src="assets/3rd/images/bahrami/meter34.png" class="p34-meter-img" alt="متر">
+            </div>
+            <div class="image_holder_p36 p34-class-img">
+            <img src="assets/3rd/images/bahrami/class.JPG" alt="کلاس">
+            </div>
+            <div class="text-config" id="p34-ruler-text">خانم احساني يک خط کش چوبي درجه ‌بندي شده به کلاس آورد.<br>او فاصله دو ديوار کلاس را با اين خط کش اندازه گرفت.<br>سپس، خط کش را به دانش آموزان نشان داد. خط کش 100<br> قسمت يک سانتي متري داشت.<br>خانم احساني توضيح داد که خط کش او يک متر را نشان مي دهد<br>و گفت که يک متر برابر 100 سانتي متر است.<br>شما فاصله دو ديوار کلاس را با متر اندازه بگيريد.
+            </div>
+            
+        </div>
+    </div>
+</div>
+</body>
+<script language="JavaScript" src="assets/3rd/js/bahrami.js">
+</script>
+</html>

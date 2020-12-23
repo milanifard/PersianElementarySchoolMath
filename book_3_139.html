@@ -7,300 +7,248 @@
     <meta name="author" content="AliNasiriSarvi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/3rd/css/Nasiri.css" rel="stylesheet">
+    <script src="assets/3rd/js/Nasiri.js"></script>
 </head>
 
 <body>
 
-<div class = "left-border">
-    <div class="background-style"></div>
-    <div>
-        <div class = title_side></div>
-        <span class="title_box">
-                <h2>
-                    ضرب عددهای یک رقمی در چند رقمی
-                </h2>
+
+
+    <div class="main_title">
+        <h2>
+            ضرب عددهای یک رقمی در چند رقمی
+        </h2>
+    </div>
+    <div class="marker" style="top: 7vw;">
+        <div class="activity container_row">
+            <div class="title">
+                <p>فعّالیت</p>
+            </div>
+            <div>
+                <img src="assets/3rd/images/activity.png">
+            </div>
+        </div>
+    </div>
+    <div class="main_left container_row flex_end" style="margin-top: -3vw;">
+        <div class="content">
+
+
+            <!-- Q1 START-->
+            <p class="question">.با رسم شکل حاصل ضرب‌ها را به دست‌ آورید</p>
+
+            <!-- q1 part 1 start-->
+            <div class="container_row question_container flex_between" >
+                    <h5 class="flex_center_self">
+                       ۳ * ۲۱ =   <input  class="answer_field normal_shadow" id="inp139_q1_1" type="number" placeholder="جواب" on>
+                    </h5>
+
+                    <h5 class="flex_center_self">
+                        گزینه ۱<input name="rad_q1_1" type="radio" id="radio139_q1_1_r1" title="گزینه ۱" class="radio_btn">
+                    </h5>
+                    <img src="assets/3rd/images/Nasiri/q1_1_1.png" class="image_container flex_center_self">
+
+                    <h5 class="flex_center_self">
+                        گزینه ۲<input name="rad_q1_1" type="radio" id="radio139_q1_1_r2" title="گزینه ۲" class="radio_btn">
+                    </h5>
+                    <img src="assets/3rd/images/Nasiri/q1_1_2.png" class="image_container flex_center_self">
+
+                    <span class="div_btn flex_center_self">
+                        <button class=" btn btn--primary btn--inside uppercase" type="button"
+                                onclick=correct_type1("inp139_q1_1",'63',"radio139_q1_1_r2","radio139_q1_1_r1")>
+                            <h5 class="apply">تصحیح</h5>
+                        </button>
+                    </span>
+            </div>
+            <!-- q1 part 1 end-->
+            <br>
+            <br>
+            <br>
+            <!-- q1 part 2 start-->
+            <div class="container_row question_container flex_between" >
+                <h5 class="flex_center_self">
+                    ۴ * ۱۲ =   <input  class="answer_field normal_shadow" id="inp139_q1_2" type="number" placeholder="جواب">
+                </h5>
+
+                <h5 class="flex_center_self">
+                    گزینه ۱<input name="q1_2" type="radio" title="گزینه ۱" id="radio139_q1_2_r1" class="radio_btn">
+                </h5>
+                <img src="assets/3rd/images/Nasiri/q1_2_1.png" class="image_container flex_center_self">
+
+                <h5 class="flex_center_self">
+                    گزینه ۲<input name="q1_2" type="radio" title="گزینه ۲"id="radio139_q1_2_r2"  class="radio_btn">
+                </h5>
+                <img src="assets/3rd/images/Nasiri/q1_2_2.png" class="image_container flex_center_self">
+
+                <span class="div_btn flex_center_self">
+                        <button class=" btn btn--primary btn--inside uppercase" type="button"
+                                onclick=correct_type1("inp139_q1_2",'48',"radio139_q1_2_r1","radio139_q1_2_r2")>
+                            <h5 class="apply">تصحیح</h5>
+                        </button>
+                    </span>
+            </div>
+            <!-- q1 part 2 end-->
+            <br>
+            <br>
+            <br>
+            <!-- q1 part 3 start-->
+            <div class="container_row question_container flex_between" >
+                <h5 class="flex_center_self">
+                    ۲ * ۲۱۳ =   <input  class="answer_field normal_shadow" id="inp139_q1_3" type="number" placeholder="جواب">
+                </h5>
+
+                <h5 class="flex_center_self">
+                    گزینه ۱<input name="q1_3" type="radio" title="گزینه ۱"  id="radio139_q1_3_r1" class="radio_btn">
+                </h5>
+                <img src="assets/3rd/images/Nasiri/q1_3_1.png" class="image_container flex_center_self">
+
+                <h5 class="flex_center_self">
+                    گزینه ۲<input name="q1_3" type="radio" title="گزینه ۲" id="radio139_q1_3_r2" class="radio_btn">
+                </h5>
+                <img src="assets/3rd/images/Nasiri/q1_3_2.png" class="image_container flex_center_self">
+
+                <span class="div_btn flex_center_self">
+                        <button class=" btn btn--primary btn--inside uppercase" type="button"
+                                onclick=correct_type1("inp139_q1_3","426","radio139_q1_3_r1","radio139_q1_3_r2")>
+                            <h5 class="apply">تصحیح</h5>
+                        </button>
+                </span>
+            </div>
+            <br><br><br>
+            <!-- Q1 END-->
+
+
+            <!-- Q2 START-->
+
+            <p class="question">.مانند نمونه برای شکل ها ضرب بنویسید و حاصل را پیدا کنید</p>
+            <!-- q2 part1 start-->
+            <div class="container_row question_container flex_between">
+                <span class="container_col flex_close">
+                    <h5 class="flex_center_self">
+                        ۲ * ۲۳ = <input class="answer_field normal_shadow" id="inp139_q2_1_1" type="number" placeholder="جواب">
+                        <br><br>
+                        ۲۳ = ۲۰+۳
+                    </h5>
+                </span>
+                <span class="container_col">
+                    <img src="assets/3rd/images/Nasiri/q2_1_2.png" class = image_container>
+                    <h5>
+                        ۲ * ۲۰ = <input class="answer_field normal_shadow" id="inp139_q2_1_2" type="number" placeholder="جواب">
+                    </h5>
+                </span>
+                <span class="container_col">
+                    <span class="container_row">
+                        <img src="assets/3rd/images/Nasiri/q2_1_3.png" class = image_container>
+                    </span>
+                    <h5>
+                        ۲ * ۳ = <input class="answer_field normal_shadow" id="inp139_q2_1_3" type="number" placeholder="جواب">
+                    </h5>
+                </span>
+                <span class="div_btn flex_center_self">
+                        <button class=" btn btn--primary btn--inside uppercase" type="button"
+                                onclick=correct_type2(["inp139_q2_1_1","inp139_q2_1_2","inp139_q2_1_3"],["46","40","6"])>
+                            <h5 class="apply">تصحیح</h5>
+                        </button>
+                </span>
+            </div>
+            <!-- q2 part 1 end -->
+
+            <!-- q2 part 2 start -->
+            <div class="container_row question_container flex_between">
+                <span class="container_col flex_close">
+                    <h5 class="flex_center_self">
+                        ۳ * ۳۴ = <input class="answer_field normal_shadow" id="inp139_q2_2_1" type="number" placeholder="جواب">
+                        <br><br>
+                        ۳۴ = ۳۰+۴
+                    </h5>
+                </span>
+                <span class="container_col">
+                    <img src="assets/3rd/images/Nasiri/q2_2_2.png" class = image_container>
+                    <h5>
+                        ۳ * ۳۰ = <input class="answer_field normal_shadow" id="inp139_q2_2_2" type="number" placeholder="جواب">
+                    </h5>
+                </span>
+                <span class="container_col">
+                    <span class="container_row">
+                        <img src="assets/3rd/images/Nasiri/q2_2_3.png" class = image_container>
+                    </span>
+                    <h5>
+
+                        <input class="answer_field normal_shadow" id="inp139_q2_2_3" type="number" placeholder="جواب">
+                        *
+                        <input class="answer_field normal_shadow" id="inp139_q2_2_4" type="number" placeholder="جواب">
+                        = <input class="answer_field normal_shadow" id="inp139_q2_2_5" type="number" placeholder="جواب">
+                    </h5>
+                </span>
+                <span class="div_btn flex_center_self">
+                        <button class=" btn btn--primary btn--inside uppercase" type="button"
+                                onclick=correct_type2(["inp139_q2_2_1","inp139_q2_2_2","inp139_q2_2_3","inp139_q2_2_4","inp139_q2_2_5"],["102","90","3","4","12"])>
+                            <h5 class="apply">تصحیح</h5>
+                        </button>
+                </span>
+            </div>
+            <!-- q2 part 2 end -->
+
+            <!-- q2 part 3 start -->
+            <div class="container_row question_container flex_between" style="width: 76vw">
+                <span class="container_col flex_close">
+                    <h5 class="flex_center_self">
+                        ۲ * ۳۲۴ = <input class="answer_field normal_shadow" id="inp139_q2_3_1" type="number" placeholder="جواب">
+                        <br><br>
+                        ۳۲۴ = ۳۰۰+۲۰+۴
+                    </h5>
+                </span>
+                <span class="container_col">
+                    <span class="container_row">
+                        <img src="assets/3rd/images/Nasiri/q2_3_1.png" class = image_container>
+                    </span>
+                    <h5>
+                        ۲ * ۳۰۰ = <input class="answer_field normal_shadow" id="inp139_q2_3_2" type="number" placeholder="جواب">
+                    </h5>
+                </span>
+                <span class="container_col">
+                    <span class="container_row">
+                        <img src="assets/3rd/images/Nasiri/q2_3_2.png" class = image_container>
+                    </span>
+                    <h5>
+                        <input class="answer_field normal_shadow" id="inp139_q2_3_3" type="number" placeholder="">
+                        *
+                        <input class="answer_field normal_shadow" id="inp139_q2_3_4" type="number" placeholder="">
+                        = <input class="answer_field normal_shadow" id="inp139_q2_3_5" type="number" placeholder="جواب">
+                    </h5>
+                </span>
+                <span class="container_col">
+                    <span class="container_row">
+                        <img src="assets/3rd/images/Nasiri/q2_3_3.png" class = image_container>
+                    </span>
+                    <h5>
+                        <input class="answer_field normal_shadow" id="inp139_q2_3_6" type="number" placeholder="جواب">
+                        *
+                        <input class="answer_field normal_shadow" id="inp139_q2_3_7" type="number" placeholder="جواب">
+                         = <input class="answer_field normal_shadow" id="inp139_q2_3_8" type="number" placeholder="جواب">
+                    </h5>
+                </span>
+                <span class="div_btn flex_center_self">
+                        <button class=" btn btn--primary btn--inside uppercase" type="button"
+                                onclick=correct_type2(["inp139_q2_3_1","inp139_q2_3_2","inp139_q2_3_3","inp139_q2_3_4","inp139_q2_3_5","inp139_q2_3_6","inp139_q2_3_7","inp139_q2_3_8"],["648","600","2","20","40","2","4","8"])>
+                            <h5 class="apply">تصحیح</h5>
+                        </button>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <div style="margin-top: -1vw ; z-index: 16;">
+        <span style=" margin-left: 44vw">
+            <a href="book_3_138.html">
+                <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+            </a>
+        </span>
+
+        <span style="margin-left: 5.125vw">
+            <a href="book_3_140.html">
+                <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="next_page">
+            </a>
         </span>
     </div>
-    <span class="container_row activity-container">
-        <img src="assets/3rd/images/activity.png" alt="activity-image" class="activity-image">
-        <span class="activity-text">فعّالیت</span>
-    </span>
-
-    <div class="question" id="q1"> با رسم شکل حاصل ضرب‌ها را به دست‌ آورید. </div>
-    <span class="container_row">
-        <span class="container_col">
-            <img src="assets/3rd/images/Nasiri/sadgan_orange.png" class="sadgan">
-            <h3> 100 </h3>
-        </span>
-        <span class="container_col">
-            <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class="dahgan">
-            <h3> 10 </h3>
-        </span>
-        <span class="container_col">
-            <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class="yekgan">
-            <h3> 1 </h3>
-        </span>
-
-
-    </span>
-    <div class="container_col">
-        <div class="container_row">
-            <span class="container_row">
-                <span id="s1_1" > ۳ * ۲۳ = </span>
-                <input class="answer-field" id="inp1_1" type="number" placeholder="جواب">
-            </span>
-            <span class="container_row">
-
-                <h3>گزینه ۱<input type="radio" title="گزینه ۱"></h3>
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-
-
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-
-            </span>
-            <span class="container_row">
-                <h3>گزینه ۲<input type="radio" title="گزینه ۲"></h3>
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png">
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png">
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png">
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png">
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png">
-
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png">
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png">
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png">
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png">
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png">
-
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png">
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png">
-                <img src="assets/3rd/images/Nasiri/dahgan_orange.png">
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png">
-                <img src="assets/3rd/images/Nasiri/yekgan_orange.png">
-            </span>
-        </div>
-
-        <div class="container_row">
-
-            <span id="s1_2"> ۴ * ۱۲ = </span>
-            <input class="answer-field" id="inp1_2" type="number" placeholder="جواب">
-        </div>
-
-        <div class="container_row">
-
-            <span id="s1_3"> ۲ * ۲۱۳ = </span>
-            <input class="answer-field" id="inp1_3" type="number" placeholder="جواب">
-        </div>
-
-    </div>
-
-    <div class="question" id="q2"> مانند نمونه برای شکل ها ضرب بنویسید و حاصل را پیدا کنید.</div>
-    <div class="container_col">
-        <div class="container_row">
-            <span class="container_col">
-                <h3>
-                    2 * 23 = <input class="answer-field" id="inp2_1_1" type="number" placeholder="جواب">
-                </h3>
-                <h3>
-                    23 = 20+3
-                </h3>
-            </span>
-            <span class="container_col">
-                <span class="container_row">
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                </span>
-                <h3>
-                    2 * 20 = <input class="answer-field" id="inp2_1_2" type="number" placeholder="جواب">
-                </h3>
-            </span>
-            <span class="container_col">
-                <span class="container_row">
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                </span>
-                <h3>
-                    2 * 3 = <input class="answer-field" id="inp2_1_3" type="number" placeholder="جواب">
-                </h3>
-            </span>
-        </div>
-
-    </div>
-    <div class="container_col">
-        <div class="container_row">
-            <span class="container_col">
-                <h3>
-                    3 * 34 = <input class="answer-field" id="inp2_2_1" type="number" placeholder="جواب">
-                </h3>
-                <h3>
-                    34 = 30+4
-                </h3>
-            </span>
-            <span class="container_col">
-                <span class="container_row">
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                </span>
-                <h3>
-                    3 * 30 = <input class="answer-field" id="inp2_2_2" type="number" placeholder="جواب">
-                </h3>
-            </span>
-            <span class="container_col">
-                <span class="container_row">
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                </span>
-                <h3>
-                    <input class="answer-field" id="inp2_2_3_1" type="number" placeholder="جواب">
-                    *
-                    <input class="answer-field" id="inp2_2_3_2" type="number" placeholder="جواب">
-                    = <input class="answer-field" id="inp2_2_3_3" type="number" placeholder="جواب">
-                </h3>
-            </span>
-        </div>
-
-    </div>
-    <div class="container_col">
-        <div class="container_row">
-            <span class="container_col">
-                <h3>
-                    2 * 324 = <input class="answer-field" id="inp2_3_1" type="number" placeholder="جواب">
-                </h3>
-                <h3>
-                    324 = 300+20+4
-                </h3>
-            </span>
-            <span class="container_col">
-                <span class="container_row">
-                    <img src="assets/3rd/images/Nasiri/sadgan_orange.png" class = sadgan>
-                    <img src="assets/3rd/images/Nasiri/sadgan_orange.png" class = sadgan>
-                    <img src="assets/3rd/images/Nasiri/sadgan_orange.png" class = sadgan>
-                    <img src="assets/3rd/images/Nasiri/sadgan_orange.png" class = sadgan>
-                    <img src="assets/3rd/images/Nasiri/sadgan_orange.png" class = sadgan>
-                    <img src="assets/3rd/images/Nasiri/sadgan_orange.png" class = sadgan>
-                </span>
-                <h3>
-                    2 * 300 = <input class="answer-field" id="inp2_3_2" type="number" placeholder="جواب">
-                </h3>
-            </span>
-            <span class="container_col">
-                <span class="container_row">
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                    <img src="assets/3rd/images/Nasiri/dahgan_orange.png" class = dahgan>
-                </span>
-                <h3>
-                    <input class="answer-field" id="inp2_3_2_1" type="number" placeholder="جواب">
-                    *
-                    <input class="answer-field" id="inp2_3_2_2" type="number" placeholder="جواب">
-                    = <input class="answer-field" id="inp2_3_2_3" type="number" placeholder="جواب">
-                </h3>
-            </span>
-            <span class="container_col">
-                <span class="container_row">
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                    <img src="assets/3rd/images/Nasiri/yekgan_orange.png" class = yekgan>
-                </span>
-                <h3>
-                    <input class="answer-field" id="inp2_3_3_1" type="number" placeholder="جواب">
-                    *
-                    <input class="answer-field" id="inp2_3_3_2" type="number" placeholder="جواب">
-                     = <input class="answer-field" id="inp2_3_3_3" type="number" placeholder="جواب">
-                </h3>
-            </span>
-        </div>
-
-    </div>
-    <span class="page-number-odd">139</span>
-</div>
 </body>
-<script>
-    // Make the DIV element draggable:
-    dragElement(document.getElementById("sadgan_pool"));
-
-    function dragElement(elmnt) {
-        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-        if (document.getElementById(elmnt.id + "header")) {
-            // if present, the header is where you move the DIV from:
-            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-        } else {
-            // otherwise, move the DIV from anywhere inside the DIV:
-            elmnt.onmousedown = dragMouseDown;
-        }
-
-        function dragMouseDown(e) {
-            e = e || window.event;
-            e.preventDefault();
-            // get the mouse cursor position at startup:
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-            document.onmouseup = closeDragElement;
-            // call a function whenever the cursor moves:
-            document.onmousemove = elementDrag;
-        }
-
-        function elementDrag(e) {
-            e = e || window.event;
-            e.preventDefault();
-            // calculate the new cursor position:
-            pos1 = pos3 - e.clientX;
-            pos2 = pos4 - e.clientY;
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-            // set the element's new position:
-            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-        }
-
-        function closeDragElement() {
-            // stop moving when mouse button is released:
-            document.onmouseup = null;
-            document.onmousemove = null;
-        }
-    }
-</script>
 </html>

@@ -7,6 +7,8 @@ let answers = {
     "7-2": "16"
 }
 
+
+
 function checkTamrin95Answers() {
     let hasWrongAnswer = false
     for (var key in answers) {
@@ -14,27 +16,15 @@ function checkTamrin95Answers() {
         if (inputNode.value === answers[key].toString()) {
             inputNode.classList.add("is-valid")
             inputNode.classList.remove("is-invalid")
-            
-            $("#tamrin-ans-" + key).parents(".masale").find(".warn-message").remove()
-            if(!$("#tamrin-ans-" + key).parents(".masale").find(".success-message").exists()){
+            showSuccessMessageOnMasale("#tamrin-ans-" + key)
 
-                $("#tamrin-ans-" + key).parents(".masale").append(getTrueAnswersMessageBox())
-                $("#tamrin-ans-" + key).parents(".masale").find(".success-message").css("display", "flex")
-                    .hide().fadeIn();
-            }
-            
 
         } else {
             hasWrongAnswer = true
             inputNode.classList.add("is-invalid")
             inputNode.classList.remove("is-valid")
-            if(!$("#tamrin-ans-" + key).parents(".masale").find(".warn-message").exists()){
 
-                $("#tamrin-ans-" + key).parents(".masale").append(getWrongAnswerMessageBox())
-            $("#tamrin-ans-" + key).parents(".masale").find(".warn-message").css("display", "flex")
-                .hide().fadeIn();
-            }
-            
+            showWarningMessageOnMasale("#tamrin-ans-" + key)
         }
         console.log(" masale : " + $("#tamrin-ans-" + key).parents(".masale")[0]);
 
