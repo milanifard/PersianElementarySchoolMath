@@ -1,0 +1,16 @@
+{
+  "name": "math-book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w assets/3rd/sass/ -o assets/3rd/css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "node-sass": "^5.0.0"
+  }
+}
