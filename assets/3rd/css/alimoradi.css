@@ -125,7 +125,17 @@ span.question {
     height: 3.5vw;
 
     font-size: 1vw;
-    color: deeppink;
+}
+.checktr2 {
+    width: 5vw;
+    height: 3.5vw;
+    font-size: 1.5vw;
+    text-align: right;
+}
+.checktr3 {
+    width: 1vw;
+    height: 1vw;
+    text-align: right;
 }
 .title>p {
     margin-right: 0.7vw;
