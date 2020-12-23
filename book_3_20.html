@@ -19,7 +19,7 @@
                 <div class="topic-title topic-title-classwork">کار در کلاس</div>
                 <div class="qboxActivity">
                     <p Class="question1page20">
-                        <span class="qnum">1-</span> تعداد مثلث های کوچک را در شکل بشمارید.<br>برای شمارش از تقارن استفاده کنید.سپس پروانه را به صورت متقارن رنگ آمیزی کنید.
+                        <span class="qnum">1-</span> تعداد مثلث های کوچک را در شکل بشمارید.<br>برای شمارش از تقارن استفاده کنید.سپس شماره تصویری که پروانه را به صورت متقارن وارد کرده است را وارد کنید .
                     </p>
                 </div>
                 <div class="clearfix"></div>
@@ -27,13 +27,64 @@
             </div>
 
             <div class="pictures">
-                <image class="butterfly" src="assets/3rd/images/baghkhani/butterfly.png"></image>
+
+                <table>
+                    <tr>
+                        <td>
+                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/butterfly.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color1.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color9.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/color5.png"></image>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="numSelection"></span>
+                        </td>
+                        <td>
+                            <span class="numSelection">(2)</span>
+
+                        </td>
+                        <td>
+                            <span class="numSelection">(3)</span>
+                        </td>
+                        <td>
+                            <span class="numSelection">(4)</span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="st-span"> تعدا مثلث ها</span>
+                            <input type="text" id="check_part1" value="" class="input-style" onchange="getValue(0,'check_part1')">
+                        </td>
+                        <td>
+                            <input class='checkbox1' type="radio" id="imagecolorn" onchange="getValuecheckbox()">
+                            <label dir="rtl" for="imagecolorn" id="lable1"> 1</label>
+
+
+                        </td>
+                        <td>
+                            <input class="checkbox1" type="radio" id="imagecolorn1" onclick="getValuecheckbox()">
+
+
+                        </td>
+                        <td>
+                            <input class="checkbox1" type="radio" id="imagecolorn2" onclick="getValuecheckbox()">
+
+
+                        </td>
+                    </tr>
+                </table>
             </div>
-            <div class="clearfix"></div>
-            <div style="margin: 2vw;">
-                <span style="font-size:1.75vw"> تعدا مثلث ها</span>
-                <input type="text" id="check_part1" value="" class="input-style" onchange="getValue(0,'check_part1')">
-            </div>
+
             <div class="clearfix"></div>
             <div class="qbox">
                 <p class="question">
