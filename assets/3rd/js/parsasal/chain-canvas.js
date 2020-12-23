@@ -36,11 +36,7 @@
         });
         
         circle.attached_segment = getNearestSegmentOnPath(path, circle.point, points);
-        function onKeyDown(event) {
-            if (event.key == 'shift') {
-                console.log("You're holding shift");
-            }
-        }
+
         path.onMouseDrag = function (event) {
             if (Key.isDown('shift')) {
                 path.position += event.delta;
