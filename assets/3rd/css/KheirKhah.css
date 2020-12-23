@@ -74,14 +74,14 @@ body > #firstPage{
 
 #downbar {
   overflow : scroll;
-  background-image: repeating-linear-gradient(#C47898 0px ,#C47898 4px ,#D18CA3 4px,#D18CA3 8px);
+  background-image: repeating-linear-gradient(#C47898 0px ,#C47898 8px ,#D18CA3 8px,#D18CA3 16px);
   padding: 10% 0% 3% 0%;
   align-items :baseline;
 }
 
 .side{
   overflow : scroll;
-  background-image: repeating-linear-gradient(#C47898 0px ,#C47898 4px ,#D18CA3 4px,#D18CA3 8px);
+  background-image: repeating-linear-gradient(#C47898 0px ,#C47898 8px ,#D18CA3 8px,#D18CA3 16px);
   padding: 10% 0% 3% 0%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -95,6 +95,7 @@ flex:1;
 margin-top: 7%;
 padding: 1%;
 border-top:double #C47898 10px;
+
 }
 
 #right{
@@ -158,18 +159,24 @@ input{
   text-justify: inter-word;
   padding: 2%;
 }
-#pageCounter{
-    background: #ffffff;
-    border-radius: 25px;
-    color:#C47898 ;  
-    width: 10%;
+.pageCounter{
+    color: #ffffff;
+    border-radius: 20px;
+    background:#C47898 ;  
+    width: 12%;
     text-align: center;
-    border: 4px double #C47898;
-    padding-top: 1%;
-    padding-bottom: 1%;
-
+    border: 5px double white;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    position: relative;
+    bottom: -3.25vw;
 }
-
+#l{
+  right:83.5vw;
+}
+#r{
+  left: 7vw;
+}
 #left{
   border-radius:25px 0 0 0;
   border-left:double #C47898 10px;
