@@ -58,7 +58,7 @@ img {
 	padding: 8px;
 	width: 16vw;
 	position: relative;
-    right: -3vw;
+    right: -3.1vw;
 	top: 1vw;
 	margin-bottom: 2vw;
     z-index: 1;
@@ -192,18 +192,6 @@ img {
 	&:focus {
 		outline: none;
 	}
-
-	// @media screen and (max-width: 991px) {
-	// 	padding: 9px 9px 0 9px;
-	// 	height: 18px;
-	// 	width: 24px;
-	// }
-
-	// @media screen and (max-width: 600px) {
-	// 	padding: 9px 9px 0 9px;
-	// 	height: 12px;
-	// 	width: 12px;
-	// }
 }
 
 ol {
