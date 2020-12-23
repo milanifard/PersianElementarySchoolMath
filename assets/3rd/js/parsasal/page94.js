@@ -41,7 +41,7 @@ function checkTamrinP94() {
 
     }
 
-
+    let hasWrongAnswer2 = false
     // check second masale (rectangles)
     if (clickedRectangleId) {
         console.log("clickedRectangleId is not null")
@@ -51,6 +51,7 @@ function checkTamrinP94() {
                 .hide()
                 .fadeIn();
         } else {
+            hasWrongAnswer2 = true
             $("#" + clickedRectangleId).css("box-shadow", "0 0 8px red");
         }
     }
@@ -63,7 +64,7 @@ function checkTamrinP94() {
         "31": 16,
         "32": 12,
     }
-    let hasWrongAnswer2 = false
+    
     for (var key in answers) {
         inputNode = $("#rect-ans" + key)[0]
         if (inputNode.value === answers[key].toString()) {
@@ -96,8 +97,6 @@ function checkTamrinP94() {
 
 var clickedRectangleId;
 $(document).ready(function () {
-
-
 
     $(".clickable-image").click(function (event) {
 

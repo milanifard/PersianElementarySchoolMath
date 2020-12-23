@@ -16,7 +16,6 @@ function p62ques1() {
     check("p62ques3_3_a",x3)
   }
 
-
   function p63ques1() {
     check("p63ques1_1_a",4)
     check("p63ques1_1_b",4)
@@ -45,20 +44,6 @@ function p62ques1() {
       }
   
 
-  //   function p63ques2() {
-  //     check("p63ques1_1_a",4)
-  //     check("p63ques1_1_b",4)
-  //     check("p63ques1_1_c",16)
-  //     check("p63ques1_2_a",6)
-  //     check("p63ques1_2_b",5)
-  //     check("p63ques1_2_c",30)
-  //     }
-
-
-
-
-
-
  function check(id,c){
   x = document.getElementById(id).value;
   if (x == c) {
@@ -77,8 +62,6 @@ function p62ques1() {
   function notCorrect(id){
     document.getElementById(id).style.background = "#e45f5f";
   }
-
-
  
 
   
