@@ -171,7 +171,6 @@ img {
 	border-color: $light_blue;
 	direction: ltr;
 	background-color: transparent;
-	text-align: center;
 	
 	&:focus {
 		outline: none;
@@ -188,6 +187,7 @@ img {
 	border-color: $light_blue;
 	direction: ltr;
 	background-color: transparent;
+	text-align: center;
 	
 	&:focus {
 		outline: none;
