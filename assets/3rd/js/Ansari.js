@@ -102,3 +102,12 @@ function p15ques2() {
 
 
 
+function checkplace(a,b,x1,x2,y1,y2){
+  if (x1<a && x2>a && y1<b && y2>b ){
+    rep = true
+  }
+  else{
+    rep = false
+  }
+  return rep
+}

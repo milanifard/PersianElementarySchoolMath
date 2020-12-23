@@ -83,9 +83,12 @@
     
                 <div id= "find">
                     <h5 class="act" id="colorGreen" >بگرد و پیدا کن</h5>
+                    <div class="flexrow">
                     <p> در تصویر زیر،شکل های مثل شکل یک شکل دو زیر را با کلیک مشّخص کنید. به همه ی این شکل ها مکّعب گفته میشود.</p>
-                    <img src="./assets/3rd/images/Ansari/13-4.png" class="img-responsive"/>
+                    <img src="./assets/3rd/images/Ansari/13-4.png " class="img-responsive"/>
+                    <img src="./assets/3rd/images/Ansari/13-5.png" class="img-responsive"/>
                     <img src="./assets/3rd/images/Ansari/13-3.png" id="pic" style="display: none;"/>
+                </div>
 
                     <canvas id="myCanvas" width="500" height="374" ></canvas>
 
@@ -100,7 +103,25 @@
                             console.log(mousePos.x, mousePos.y)
                             ctx.beginPath();
                             ctx.arc(mousePos.x, mousePos.y, 60, 0, 2 * Math.PI);
-                            ctx.strokeStyle = 'green';
+
+                            if(checkplace(mousePos.x,mousePos.y,59,106,25,70)
+                                                || checkplace(mousePos.x,mousePos.y,55,151,97,180)
+                                                || checkplace(mousePos.x,mousePos.y,79,169,195,243)
+                                                || checkplace(mousePos.x,mousePos.y,12,62,287,314)
+                                                || checkplace(mousePos.x,mousePos.y,84,156,256,270)
+                                                || checkplace(mousePos.x,mousePos.y,32,52,173,191)
+                                                || checkplace(mousePos.x,mousePos.y,326,367,111,204)
+                                                || checkplace(mousePos.x,mousePos.y,240,339,3,26)
+                                                || checkplace(mousePos.x,mousePos.y,313,359,45,71)
+                                                || checkplace(mousePos.x,mousePos.y,250,267,186,202)
+                                                || checkplace(mousePos.x,mousePos.y,240,266,42,65)
+                                                || checkplace(mousePos.x,mousePos.y,373,450,209,272)
+                                                ){
+                                ctx.strokeStyle = 'green';
+                            }
+                            else{
+                                ctx.strokeStyle = 'red';
+                            }
                             ctx.stroke();
                         }, false);
 
@@ -111,12 +132,7 @@
                                 y: evt.clientY - rect.top
                             };
                         }
-                        
-                    </script>
-
-                    <img src="./assets/3rd/images/Ansari/13-5.png" class="img-responsive"/>
-                    
-
+                    </script>                    
                 </div>
             </div>
             <div class= "side" id = "sideGreen" >
