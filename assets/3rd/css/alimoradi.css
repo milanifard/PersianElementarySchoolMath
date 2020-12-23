@@ -30,14 +30,19 @@
 }
 
 ::placeholder {
-    font-family: Koodak;
+    font-family: 'zar';
     font-size: 1vw;
 }
 
 p,
 h2,
 span {
-    font-family: B Zar;
+    font-family: 'zar';
+}
+
+@font-face {
+    font-family: 'zar';
+    src: url("../../fonts/Zar.woff") format("woff");
 }
 
 p.question {
@@ -59,7 +64,12 @@ span.question {
     display: flex;
     flex-direction: column;
 }
-
+.hey3{
+    margin-top: 3vw;
+}
+.hey{
+    margin-top: -3vw;
+}
 .flex_end {
     justify-content: flex-end;
 }
@@ -98,7 +108,12 @@ span.question {
     right: -1vw;
     z-index: 7;
 }
-
+.marker2 {
+    position: absolute;
+    top: 7vw;
+    right: -1vw;
+    z-index: 7;
+}
 .activity {
     margin-right: 5vw;
 }
@@ -260,7 +275,10 @@ body{
     font-size: 1.5vw;
     color: var(--purple);
 }
+.hey2{
 
+    margin-right: 10vw;
+}
 .clock_row {
     justify-content: flex-end;
 }
@@ -456,7 +474,7 @@ table {
     border-left-color: transparent;
 }
 .question-number{
-    font-family: "B Zar";
+    font-family: 'zar';
     font-size: 2vw;
     color: var(--question_number_color);
 }
