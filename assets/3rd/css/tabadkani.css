@@ -304,7 +304,7 @@ button{
     border-bottom-left-radius: 5vw;
     box-sizing: border-box;
     width: 93vw;
-    height: 125vw;
+    height: 128vw;
     background: white;
     margin: 3vw 0 3vw 5vw;
     padding:0vw 3vw;
@@ -344,11 +344,23 @@ button{
     position: absolute;
 }
 
-.q7{
+#q7{
     height: 28vw;
 }
 
-.q8{
+#q7_btn{
+    top: 2vw;
+    right: 5vw;
+    position: relative;
+}
+
+#q7_result{
+    top: 2vw;
+    right: 10vw;
+    position: relative;
+}
+
+#q8{
     border-style: solid;
     border-color: var(--title_color);
     border-radius: 5vw;
@@ -358,6 +370,12 @@ button{
     width: 70vw;
     margin-right: 5vw;
     padding: 2vw;
+}
+
+.q8_input{
+    height: 2vw;
+    width: 10vw;
+    border-radius: 2vw;
 }
 
 .circle, .triangle, .parallelogram, .diamond, .square, .rectangle{
@@ -448,8 +466,25 @@ pre{
     margin-bottom: -5vw;
 }
 
+#q8_end{
+    top: -7vw;
+    right: 5vw;
+    position: relative;
+}
+
+.q9_end {
+    float: left;
+    top: -13vw;
+    position: relative;
+}
+
+#q10_end{
+    margin:-4vw 35vw;
+}
+
 .q9{
     margin: 3vw;
+    padding: 5vw;
 }
 
 .q10{
@@ -537,6 +572,7 @@ input{
     direction: ltr;
     height: 2vw;
     width: 5vw;
+    text-align: center;
 }
 
 .page-number{
