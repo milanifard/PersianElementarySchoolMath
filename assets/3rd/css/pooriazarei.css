@@ -173,7 +173,8 @@ img {
   padding: 12px 12px 0 12px;
   border-color: #A5CDE0;
   direction: ltr;
-  background-color: transparent; }
+  background-color: transparent;
+  text-align: center; }
   .answer-box:focus {
     outline: none; }
 
