@@ -78,11 +78,13 @@ input {
     font-family: 'Koodak';
     font-size: 2.25vw;
     color: black;
-    padding: 0 2vw;
+    /* padding: 0 2vw; */
+    padding: 0.5vw 1.2vw;
     position: absolute;
     right: 35vw;
     left: 35vw;
-    top: -3.3vw;
+    /* top: -3.3vw; */
+    top: -2.8vw;
 }
 
 .that-ridiculous-red-parts-in-title{
