@@ -1,0 +1,56 @@
+.text
+{
+    font-family: "B Nazanin", sans-serif;
+    font-size: 2vw;
+    direction: rtl;
+    text-align: justify;
+}
+
+.chapter-text
+{
+    color: blueviolet;
+    font-family: "B Koodak", sans-serif;
+    font-size: 4vw;
+    direction: rtl;
+    text-align: justify;
+}
+
+.image
+{
+    border: 0.6vw solid white;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#chapter-background
+{
+    height: 128vw;
+    background: linear-gradient(to right, #e35459 0%, #e35459 35%, #d1555a 35%, #d1555a 100%);
+}
+
+#chapter-title
+{
+    background-color: white;
+    text-align: center;
+
+    border-style: solid;
+    border-color: red ;
+    border-width: 0.3vw;
+    border-radius: 2.5vw 0 0 2.5vw;
+
+    padding-left: 2vw;
+    padding-right: 8vw;
+
+    direction: rtl;
+    position: absolute;
+    top: 7vw;
+    right: 0.1vw;
+}
+
+#chapter-description
+{
+    background-color: #ffe4c4;
+    border-radius: 2.5vw;
+    padding: 1vw 2vw 2vw;
+    margin-bottom: 10vw;
+}
