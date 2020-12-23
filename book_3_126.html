@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="./assets/3rd/css/nahbos.css">
     <title>ریاضی سوم دبستان</title>
 
+    <style>
+        input[type='number'] {
+            -moz-appearance:textfield;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    </style>
+
 </head>
 <body style="margin: 0;">
 <div>
@@ -364,179 +375,26 @@
         </div>
 
         <div class="page-number">126</div>
+        <div class="page-no-input">
+            <div style="float: left; margin-right: 2vw; margin-top: 1vw">
+                <a href="book_3_127.html">
+                    <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+                </a>
+            </div>
+            <div class="page-number" style="float: left; position: relative; padding: 0.1vw 1vw; right: 0; bottom: 0">
+                <input style="width: 5vw; font-size: 1.5vw; background-color: var(--orange_level2); text-align: center; color: white" type="number" name="page_number" id="page_switcher">
+            </div>
+            <div style="float: left; margin-left: 2vw; margin-top: 1vw">
+                <a href="book_3_125.html">
+                    <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="next_page">
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
 </body>
 
-<script language="JavaScript">
-
-    function $(id){ return document.getElementById(id);}
-
-    let color_picker_item = null;
-    function color_picker(id) { color_picker_item = $(id);}
-
-    let pre_color = null;
-    function hover(id){
-        if (color_picker_item != null) {
-            $(id).onmouseenter = function () {
-                pre_color = $(id).style.backgroundColor;
-                $(id).style.backgroundColor = color_picker_item.style.backgroundColor;
-            }
-            $(id).onmouseout = function () {
-                $(id).style.backgroundColor = pre_color;
-            }
-        }
-    }
-    let Q1_color_picker_items = ["Q1_yellow_color", "Q1_blue_color", "Q1_red_color", "Q1_green_color"];
-    let Q3_color_picker_items = ["Q3_blue_color", "Q3_red_color"];
-
-    function sector_coloring(id, question_id) {
-
-        let [colors, Q_feedback] = (function () {
-            switch (question_id) {
-                case "Q1":
-                    return [Q1_color_picker_items, $("Q1_feedback")];
-
-                case "Q3":
-                    return [Q3_color_picker_items, $("Q3_feedback")];
-            }
-        })();
-
-        if (color_picker_item != null){
-            switch (color_picker_item.id) {
-                case colors[0]:
-                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
-                    pre_color = color_picker_item.style.backgroundColor;
-                    break;
-
-                case colors[1]:
-                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
-                    pre_color = color_picker_item.style.backgroundColor;
-                    break;
-
-                case colors[2]:
-                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
-                    pre_color = color_picker_item.style.backgroundColor;
-                    break;
-
-                case colors[3]:
-                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
-                    pre_color = color_picker_item.style.backgroundColor;
-                    break;
-                default:
-                    Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کن.";
-                    Q_feedback.classList.add("shaking-animation");
-                    Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-                    break;
-            }
-        }
-
-        else {
-            Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کن.";
-            Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-        }
-        check_circle_sectors(question_id);
-    }
-
-    let Q1_ans = {"yellow": 4, "blue": 2, "red": 1, "green": 1};
-    let Q3_ans = {"blue": 4, "red": 2};
-    let Q1_sectors_id = ["Q1_sector1", "Q1_sector2", "Q1_sector3", "Q1_sector4", "Q1_sector5", "Q1_sector6", "Q1_sector7", "Q1_sector8"];
-    let Q3_sectors_id = ["Q3_sector1", "Q3_sector2", "Q3_sector3", "Q3_sector4", "Q3_sector5", "Q3_sector6"];
-
-    function check_circle_sectors(question_id) {
-
-        let Q1_check_count = {"yellow": 0, "blue": 0, "red": 0, "green": 0};
-        let Q3_check_count = {"blue": 0, "red": 0};
-
-        let [ans, sectors_id, check_count, Q_feedback, Q_img] = (function () {
-            switch (question_id) {
-                case "Q1":
-                    return [Q1_ans, Q1_sectors_id, Q1_check_count, $("Q1_feedback"), $("Q1_tree_img")];
-
-                case "Q3":
-                    return [Q3_ans, Q3_sectors_id, Q3_check_count, $("Q3_feedback"), $("Q3_pencil")];
-            }
-        })();
-
-        for(const sector of sectors_id) {
-            let color = $(sector).style.backgroundColor;
-
-            switch (color) {
-                case "var(--yellow_level3_border)":
-                    check_count.yellow += 1;
-                    break;
-
-                case "var(--blue_level1)":
-                    check_count.blue += 1;
-                    break;
-
-                case "var(--red_level1)":
-                    check_count.red += 1;
-                    break;
-
-                case "var(--green_level2)":
-                    check_count.green += 1;
-                    break;
-
-                case "var(--red_level3)":
-                    check_count.red += 1;
-                    break;
-
-                case "var(--blue_level2)":
-                    check_count.blue += 1;
-                    break;
-            }
-        }
-
-        if (JSON.stringify(ans) === JSON.stringify(check_count)){
-
-            Q_feedback.textContent = "آفرین عزیزم. درست حل کردی.";
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
-            Q_img.classList.add("shaking-animation");
-
-        }
-
-        else if (Object.values(check_count).reduce((a, b) => a + b, 0) == Object.values(ans).reduce((a, b) => a + b, 0)){
-
-            Q_feedback.textContent = "بیشتر دقت کن عزیزم. غلط حل کردی.";
-            Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-        }
-    }
-
-    $('box_part1').addEventListener('input', check_ans_Q1);
-    $('box_part2').addEventListener('input', check_ans_Q1);
-    $('Q1_girl').addEventListener('input', check_ans_Q1);
-    $('Q1_boy').addEventListener('input', check_ans_Q1);
-    let green_count = 0;
-    function check_ans_Q1(e) {
-
-        switch (e.target.id) {
-
-            case 'Q1_boy':
-                if (e.target.value == 10){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
-                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
-                break;
-
-            case 'Q1_girl':
-                if (e.target.value == 30){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
-                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
-                break;
-
-            case 'box_part1':
-                if (e.target.value == 100){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
-                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
-                break;
-
-            case 'box_part2':
-                if (e.target.value == 200){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
-                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
-                break;
-        }
-    }
-
-</script>
+<script src="assets/3rd/js/nahbos.js" type="text/javascript" params="126"></script>
 
 </html>

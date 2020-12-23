@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/baghkhani.css">
     <title>صفحه 19-ریاضی سوم ابتدایی</title>
+    <script type="text/javascript" src="./assets/3rd/js/baghkhani.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <div class="TopicStartTitle">فعالیت</div>
                 <div class="qBox">
                     <p Class="question">
-                        <span class="qnum">1-</span> اگر یک شکل متقارن را از روی خط تقارن تا کنید دو نیمه آن مثل هم هستند و میتوانند به طور کامل یکدیگر را بپوشانند خط تقارن شکل های زیر را رسم کنید و سپس شکل هارا به صورت متقارن رنگ کنید
+                        <span class="qnum">1-</span>در هر قسمت با توجه به تصویر داده شده گزینه یا گزینه هایی که خط تقارن آن تصویر را به درستی رسم و باتوجه به آن به صورت متقارن رنگ کرده است را انتخاب کنید
                     </p>
                 </div>
                 <div class="clearfix"></div>
@@ -29,15 +30,112 @@
                 <table>
                     <tr>
                         <td>
-                            <image class="imagTagharon" src="assets/3rd/images/baghkhani/Tagharon3.png"></image>
+                            <image class="imagTagharon " src="assets/3rd/images/baghkhani/color1.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon" src="assets/3rd/images/baghkhani/Tagharon1.png"></image>
+                            <image class="imagTagharon " src="assets/3rd/images/baghkhani/color9.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon" src="assets/3rd/images/baghkhani/color5.png"></image>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="numSelection">(1)</span>
+                        </td>
+                        <td>
+                            <span class="numSelection">(2)</span>
+
+                        </td>
+                        <td>
+                            <span class="numSelection">(3)</span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <image class="imagTagharon" src="assets/3rd/images/baghkhani/color6.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon" src="assets/3rd/images/baghkhani/color2.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon" src="assets/3rd/images/baghkhani/color4.png"></image>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="numSelection">(4)</span>
+                        </td>
+                        <td>
+                            <span class="numSelection">(5)</span>
+
+                        </td>
+                        <td>
+                            <span class="numSelection">(6)</span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <image class="imagTagharon" src="assets/3rd/images/baghkhani/color7.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon" src="assets/3rd/images/baghkhani/color3.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon" src="assets/3rd/images/baghkhani/color8.png"></image>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="numSelection">(7)</span>
+                        </td>
+                        <td>
+                            <span class="numSelection">(8)</span>
+
+                        </td>
+                        <td>
+                            <span class="numSelection">(9)</span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <image class="imagTagharon " src="assets/3rd/images/baghkhani/Tagharon3.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon " src="assets/3rd/images/baghkhani/Tagharon1.png"></image>
                         </td>
                         <td>
                             <image class="imagTagharon" src="assets/3rd/images/baghkhani/Tagharon2.png"></image>
                         </td>
+
+
                     </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="check_part3" value="" class="input-style   input-st2 " onchange="getMultiValue(0,'check_part3')">
+                            <input type="text" id="check_part4" value="" class="input-style  input-st2  " onchange="getMultiValue(0,'check_part4')">
+                            <input type="text" id="check_part5" value="" class="input-style   input-st2 " onchange="getMultiValue(0,'check_part5')">
+                        </td>
+                        <td>
+                            <input type="text" id="check_part6" value="" class="input-style input-style2" onchange="getMultiValue(1,'check_part6')">
+                            <input type="text" id="check_part7" value="" class="input-style input-sty" onchange="getMultiValue(1,'check_part7')">
+
+                        </td>
+                        <td>
+                            <input type="text" id="check_part8" value="" class="input-style input-style3" onchange="getMultiValue(2,'check_part8')">
+                        </td>
+
+
+                    </tr>
+
                 </table>
             </div>
             <div class="clearfix"></div>
@@ -97,21 +195,7 @@
 
 
 
-            <script>
-                answers = [28, 38];
 
-                function getValue(i, x) {
-                    var obj = document.getElementById(x)
-                    if (obj.value == answers[i]) {
-                        obj.style.backgroundColor = "#3b9e3a";
-                    } else if (obj.value != "") {
-                        obj.style.backgroundColor = "#d35d6e";
-                        // alert("دوباره تلاش کن:(");
-                    }
-
-
-                }
-            </script>
 
 
 </body>

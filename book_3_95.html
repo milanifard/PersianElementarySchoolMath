@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <title>صفحه ۹۵ - سوم ابتدایی</title>
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/3rd/sass/parsasal/parsasal.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/3rd/js/jquery.min.js"></script>
+    <link rel="icon" href="./assets/3rd/images/favicon.png">
+    <script src="assets/3rd/js/parsasal/parsasal.js"></script>
+    <script src="assets/3rd/js/parsasal/page95.js"></script>
     <meta name="author" content="Parsa Salehipour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -14,8 +17,7 @@
 <body>
 
     <div class="container-full">
-        <div id="myAnchor" style="display: block;"></div>
-        <a href="#myAnchor" class="go-top"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+        
         <nav id="main-header">
             <a type="submit" class="next-page btn btn-default">صفحه بعدی</a>
             <a type="submit" class="prev-page btn btn-default">صفحه قبلی</a>
@@ -24,7 +26,7 @@
             <section>
                 <header class="section-header">
 
-                    <button type="button" class="btn btn-info">بررسی پاسخ</button>
+                    <button onclick="checkTamrin95Answers()" type="button" class="btn btn-info">بررسی پاسخ</button>
 
                 </header>
                 <div class="masale" style="counter-increment: big-num 3;">
@@ -39,7 +41,7 @@
                                     به
                                     اندازه های داده شده، او چند سانتی متر تور به سجاده و جانماز دوخته است؟</p>
                                 <div class="float-right mr-3">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                    <input type="text" placeholder="پاسخ" class="input-style" id="tamrin-ans-3">
                                 </div>
 
                             </div>
@@ -49,9 +51,6 @@
                             <img src="./assets/3rd/images/parsasal/janamaz.png" alt=" akse ja janamaz"
                                 class="responsive-img">
                         </div>
-
-
-
                     </div>
 
                 </div>
@@ -63,7 +62,7 @@
                         </div>
 
                         <div>
-                            <input type="text" placeholder="پاسخ" class="input-style float-right w-25 mr-3">
+                            <input type="text" placeholder="پاسخ" class="input-style float-right w-25 mr-3" id="tamrin-ans-4">
                         </div>
                     </div>
 
@@ -80,7 +79,7 @@
                                     می
                                     شود؟</p>
                                 <div>
-                                    <input type="text" placeholder="پاسخ" class="input-style float-right mr-3">
+                                    <input type="text" placeholder="پاسخ" class="input-style float-right mr-3" id="tamrin-ans-5">
                                 </div>
 
                             </div>
@@ -102,7 +101,7 @@
                                     ضلعی
                                     از ۱۶ ضلعی استفاده کنیم پاسخ دقیق می شود چرا؟</p>
                                 <div>
-                                    <input type="text" placeholder="پاسخ" class="input-style float-right mr-3">
+                                    <input type="text" placeholder="پاسخ" class="input-style float-right mr-3" id="tamrin-ans-6">
                                 </div>
 
                             </div>
@@ -130,7 +129,7 @@
                             <div class="row justify-content-center">
                                 <div class="mohit_label">مساحت = </div>
                                 <div class="col-5 col-lg-5 align-items-end">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                    <input type="text" placeholder="پاسخ" class="input-style" id="tamrin-ans-7-1">
                                 </div>
                             </div>
 
@@ -147,7 +146,7 @@
                             <div class="row justify-content-center">
                                 <div class="mohit_label">مساحت = </div>
                                 <div class="col-5 col-lg-5 align-items-end">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                    <input type="text" placeholder="پاسخ" class="input-style" id="tamrin-ans-7-2">
                                 </div>
                             </div>
                         </div>
@@ -157,23 +156,25 @@
 
             <div class="page-footer"></div>
         </div>
-        <div class="pagination-wrapper">
-            <div class="pagination">
-                <a class="prev page-numbers">قبلی</a>
-                <span aria-current="page" class="page-numbers">1</span>
-                <a class="page-numbers">3</a>
-                <a class="page-numbers">4</a>
-                <span aria-current="page" class="page-numbers current">1</span>
-                <a class="page-numbers">5</a>
-                <a class="page-numbers">6</a>
-                <a class="page-numbers">7</a>
-                <a class="page-numbers">8</a>
-                <a class="page-numbers">9</a>
-                <a class="page-numbers">10</a>
-                <a class="next page-numbers">بعدی</a>
+        <div class="pagination-container">
+            <div class="page-number-button">
+                <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
             </div>
-
+           
+            <div class="page-number">
+                <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+            </div>
+           
+            <div class="page-number-button">
+                <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+            </div>
+            
         </div>
+
+        <div id="modal">
+            <h1>آفرین پاسخی که به این سوال دادی درست بود.</h1>
+        </div>
+
     </div>
 
 

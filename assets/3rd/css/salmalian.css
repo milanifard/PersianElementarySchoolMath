@@ -400,3 +400,24 @@ p {
 .owl-wrapper img {
     width: 250px;
 }
+
+#success-message {
+    background: #eee;
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    right: calc(50% - 100px);
+    top: 100px;
+    border-radius: 20px;
+    border: 2px solid greenyellow;
+    z-index: 1000;
+    box-shadow: 3px 5px #888888;
+
+    transition: all 1s linear;
+
+    opacity: 0;
+    display: none;
+    
+    justify-content: center;
+    align-items: center;
+}

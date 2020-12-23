@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/nahbos.css">
     <title>ریاضی سوم دبستان</title>
+
+    <style>
+        input[type='number'] {
+            -moz-appearance:textfield;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    </style>
 </head>
 
 <body style="margin: 0;">
@@ -242,233 +253,27 @@
         </div>
 
         <div class="page-number" style="left: -5vw; right: auto">125</div>
+        <div class="page-no-input">
+            <div style="float: left; margin-right: 2vw; margin-top: 1vw">
+                <a href="book_3_126.html">
+                    <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+                </a>
+            </div>
+            <div class="page-number" style="float: left; position: relative; padding: 0.1vw 1vw; right: 0; bottom: 0">
+                <input style="width: 5vw; font-size: 1.5vw; background-color: var(--orange_level2); text-align: center; color: white" type="number" name="page_number" id="page_switcher">
+            </div>
+            <div style="float: left; margin-left: 2vw; margin-top: 1vw">
+                <a href="book_3_124.html">
+                    <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="next_page">
+                </a>
+            </div>
+        </div>
 
     </div>
 </div>
 
 </body>
-<script language="JavaScript">
 
-    function $(id){ return document.getElementById(id);}
+<script src="assets/3rd/js/nahbos.js" type="text/javascript" params="125"></script>
 
-    let root = document.documentElement;
-    let last_degree = 0;
-
-    function rotation(id) {
-
-        if($(id).classList.contains("continues-rotation")){
-            $(id).classList.remove("continues-rotation");
-            $(id).style.transform = 'rotate(' + last_degree + 'deg)';
-            return rotation(id);
-        }
-        setTimeout(function () {
-
-            let random_number = Math.floor(Math.random() * 360 + 720);
-
-            root.style.setProperty('--dynamic_rnd', (random_number + last_degree) + "deg");
-            root.style.setProperty('--dynamic_rnd_last', last_degree + "deg");
-
-            $(id).classList.add("continues-rotation");
-
-
-            update_last_degree(random_number);
-
-        },10);
-    }
-
-    function update_last_degree(degree) {
-        last_degree = (last_degree + degree) % 360;
-    }
-
-
-    let color_picker_item = null;
-    function color_picker(id) { color_picker_item = $(id);}
-
-    let pre_color = null;
-    function hover(id){
-        if (color_picker_item != null) {
-            $(id).onmouseenter = function () {
-                pre_color = $(id).style.backgroundColor;
-                $(id).style.backgroundColor = color_picker_item.style.backgroundColor;
-            }
-            $(id).onmouseout = function () {
-                $(id).style.backgroundColor = pre_color;
-            }
-        }
-    }
-
-    let Q1_color_picker_items = ["Q1_red_color", "Q1_green_color"];
-    let Q2_color_picker_items = ["Q2_red_color", "Q2_blue_color"];
-
-    function sector_coloring(id, question_id) {
-
-        let [colors, Q_feedback] = (function () {
-            switch (question_id) {
-                case "Q1":
-                    return [Q1_color_picker_items, $("Q1_feedback")];
-
-                case "Q2":
-                    return [Q2_color_picker_items, $("Q2_feedback")];
-            }
-        })();
-
-        if (color_picker_item != null){
-            switch (color_picker_item.id) {
-                case colors[0]:
-                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
-                    pre_color = color_picker_item.style.backgroundColor;
-                    break;
-
-                case colors[1]:
-                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
-                    pre_color = color_picker_item.style.backgroundColor;
-                    break;
-
-                default:
-                    Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کنید.";
-                    Q_feedback.classList.add("shaking-animation");
-                    Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-                    break;
-            }
-        }
-
-        else {
-            Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کنید.";
-            Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-        }
-        check_circle_sectors(question_id);
-    }
-
-    let Q1_ans = {"red": 0, "green": 0}; // Sets in the coloring_table func
-    let Q2_ans = {"blue": 5, "red": 5};
-    let Q1_sectors_id = ["Q1_ans_sector1", "Q1_ans_sector2", "Q1_ans_sector3", "Q1_ans_sector4", "Q1_ans_sector5", "Q1_ans_sector6", "Q1_ans_sector7", "Q1_ans_sector8", "Q1_ans_sector9", "Q1_ans_sector10"];
-    let Q2_sectors_id = ["Q2_ans_sector1", "Q2_ans_sector2", "Q2_ans_sector3", "Q2_ans_sector4", "Q2_ans_sector5", "Q2_ans_sector6", "Q2_ans_sector7", "Q2_ans_sector8", "Q2_ans_sector9", "Q2_ans_sector10"];
-
-    function check_circle_sectors(question_id) {
-
-        let Q1_check_count = {"red": 0, "green": 0};
-        let Q2_check_count = {"blue": 0, "red": 0};
-
-        let [ans, sectors_id, check_count, Q_feedback, Q_img] = (function () {
-            switch (question_id) {
-                case "Q1":
-                    return [Q1_ans, Q1_sectors_id, Q1_check_count, $("Q1_feedback"), $("Q1_pencil")];
-
-                case "Q2":
-                    return [Q2_ans, Q2_sectors_id, Q2_check_count, $("Q2_feedback"), $("pencils")];
-            }
-        })();
-
-        for(const sector of sectors_id) {
-
-            let color = $(sector).style.backgroundColor;
-
-            switch (color) {
-
-                case "var(--blue_level1)":
-                    check_count.blue += 1;
-                    break;
-
-                case "var(--red_level3)":
-                    check_count.red += 1;
-                    break;
-
-                case "var(--green_level4)":
-                    check_count.green += 1;
-                    break;
-            }
-        }
-
-        if (JSON.stringify(ans) === JSON.stringify(check_count) && Object.values(ans).reduce((a, b) => a + b, 0) == 10){
-
-            Q_feedback.textContent = "آفرین عزیزم. درست حل کردی.";
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
-            Q_img.classList.add("shaking-animation");
-
-        }
-
-        else if (Object.values(check_count).reduce((a, b) => a + b, 0) == Object.values(ans).reduce((a, b) => a + b, 0) &&
-            Object.values(check_count).reduce((a, b) => a + b, 0) == 10 &&
-            color_picker_item != null){
-
-            Q_feedback.textContent = "بیشتر دقت کن عزیزم. غلط حل کردی.";
-            Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level3');
-        }
-    }
-
-
-    function coloring_table(parent, id) {
-
-        $(parent).style.backgroundColor = $(id).style.backgroundColor;
-
-        switch ($(id).style.backgroundColor) {
-
-            case "var(--red_level3)":
-                Q1_ans.red += 1;
-                break;
-
-            case "var(--green_level4)":
-                Q1_ans.green += 1;
-                break;
-        }
-
-        $(parent).innerText = '';
-    }
-
-    const input = document.querySelector('input');
-    $('Q2_red_input').addEventListener('input', check_ans_Q2);
-    $('Q2_blue_input').addEventListener('input', check_ans_Q2);
-    function check_ans_Q2(e) {
-        if (e.target.value == 50){
-            $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');
-        }
-        else {
-            $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');
-
-        }
-    }
-
-    $('Q1_part1').addEventListener('input', check_ans_Q1);
-    $('Q1_part2_top').addEventListener('input', check_ans_Q1);
-    $('Q1_part2_down').addEventListener('input', check_ans_Q1);
-    let green_count = 0;
-    function check_ans_Q1(e) {
-
-        switch (e.target.id) {
-
-            case 'Q1_part1':
-                green_count = e.target.value;
-                if (green_count >= 0 && green_count <= 10){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
-                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
-                break;
-
-            case 'Q1_part2_top':
-                if (e.target.value == (10 - green_count)){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
-                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
-                break;
-
-            case 'Q1_part2_down':
-                if (e.target.value == 10){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
-                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
-                break;
-        }
-    }
-
-    function guess_checker(id) {
-        let btn = $(id).value;
-        if (btn == "right"){
-            $("guess_box_feedback").textContent = "دقت کن عزيزم. غلط حدس زدي.";
-            $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-            $("guess_box_feedback").classList.add("shaking-animation");
-        }
-        else if (btn == "left"){
-            $("guess_box_feedback").textContent = "آفرين عزيزم. درست حدس زدي.";
-            $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
-            $("guess_box_feedback").classList.add("shaking-animation");
-        }
-    }
-
-</script>
 </html>

@@ -8,57 +8,377 @@
 </head>
 <body>
 
+<script language="JavaScript">
+    function $(id) {return document.getElementById(id);}
+    var a, b, c, d;
+    function test_q1(){
+        a = $("q1_in1");
+        b = $("plus_or_minus");
+        c = $("q1_in2");
+        d = $("q1_in3");
+
+        var total = 0;
+
+        if(a.value === "27") {
+            a.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            a.style.backgroundColor = "red";
+
+        if(b.value === "+") {
+            b.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            b.style.backgroundColor = "red";
+
+        if(c.value === "120") {
+            c.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            c.style.backgroundColor = "red";
+
+        if(d.value === "147") {
+            d.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            d.style.backgroundColor = "red";
+
+        if(total === 4){
+            $("q1_result").innerHTML = "آفرین";
+        }
+        else
+            $("q1_result").innerHTML = "دقت کن";
+
+    }
+
+    function test_q2(){
+        var second = $("q2_second_grade");
+        var sixth = $("q2_sixth_grade");
+        var total = 0;
+
+        if(second.value === "3000") {
+            second.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            second.style.backgroundColor = "red";
+
+        if(sixth.value === "2000") {
+            sixth.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            sixth.style.backgroundColor = "red";
+
+        if(total === 2){
+            $("q2_result").innerHTML = "آفرین";
+        }
+        else
+            $("q2_result").innerHTML = "دقت کن";
+
+    }
+
+    function test_q3(){
+        var toman = $("q3_in1");
+        var rial = $("q3_in2");
+        var total = 0;
+
+        if(toman.value === "700") {
+            toman.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            toman.style.backgroundColor = "red";
+
+        if(rial.value === "8000") {
+            rial.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            rial.style.backgroundColor = "red";
+
+        if(total === 2){
+            $("q3_result").innerHTML = "آفرین";
+        }
+        else
+            $("q3_result").innerHTML = "دقت کن";
+    }
+
+    function test_q4(){
+        var a = $("q4_in1");
+        var b = $("q4_in2");
+        var c = $("q4_in3");
+        var total = 0;
+
+        if(a.value === "desk") {
+            a.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            a.style.backgroundColor = "red";
+
+        if(b.value === "heater") {
+            b.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            b.style.backgroundColor = "red";
+
+        if(c.value === "lcd") {
+            c.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            c.style.backgroundColor = "red";
+
+        if(total === 3){
+            $("q4_result").innerHTML = "آفرین";
+        }
+        else
+            $("q4_result").innerHTML = "دقت کن";
+    }
+
+    function test_q5(){
+        var a = $("q5_in1");
+        var b = $("q5_in2");
+        var c = $("q5_in3");
+        var total = 0;
+
+        if(a.value === "laptop") {
+            a.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            a.style.backgroundColor = "red";
+
+        if(b.value === "can") {
+            b.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            b.style.backgroundColor = "red";
+
+        if(c.value === "pan") {
+            c.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            c.style.backgroundColor = "red";
+
+        if(total === 3){
+            $("q5_result").innerHTML = "آفرین";
+        }
+        else
+            $("q5_result").innerHTML = "دقت کن";
+    }
+
+    function test_q6(){
+        var a = $("q6_in1");
+        var b = $("q6_in2");
+        var c = $("q6_in3");
+        var d = $("q6_in4");
+        var total = 0;
+
+        if(a.value === "mm") {
+            a.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            a.style.backgroundColor = "red";
+
+        if(b.value === "cm") {
+            b.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            b.style.backgroundColor = "red";
+
+        if(c.value === "cm") {
+            c.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            c.style.backgroundColor = "red";
+
+        if(d.value === "m") {
+            d.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            d.style.backgroundColor = "red";
+
+        if(total === 4){
+            $("q6_result").innerHTML = "آفرین";
+        }
+        else
+            $("q6_result").innerHTML = "دقت کن";
+    }
+
+</script>
+
 <div class="main">
     <div class="page1">
-        <div class="page-title"><b>مرور فصل</b></div>
+        <div id="page-title"><b>مرور فصل</b></div>
         <div class="little-title" id="fn_title">فرهنگ نوشتن</div>
-        <div class="farhange_neveshtan">
-            <div class="farhange_neveshtan_content">از پدر یا مادر خود مقداری پول بگیرید. با آن پول چیزی بخرید. پول را به فروشنده
+        <div id="farhange_neveshtan">
+            <div id="farhange_neveshtan_content">از پدر یا مادر خود مقداری پول بگیرید. با آن پول چیزی بخرید. پول را به فروشنده
                 بدهید و باقیمانده ی آن را از او پس بگیرید. ماجرای این خرید خود را به اضافه ی
                 مقدار پولی که داشته اید، چیزی که خریده اید و مقدار پول باقیمانده را بنویسید.
-                <hr class="line">
-                <hr class="line">
-                <hr class="line">
+                <textarea id="farhange_neveshtan_ta" rows="5" cols="63" lang="fa" dir="rtl"></textarea>
             </div>
-            <img class="image_one" src="assets/3rd/images/tabadkani/wr.png">
+            <img id="turtle-img" src="assets/3rd/images/tabadkani/wr.png">
         </div>
-        <div class="tamrin">
+        <div id="tamrin">
             <div class="little-title" id="tamrin_title">تمرین</div>
-            <img class="image-two" src="assets/3rd/images/girl_and_teacher_activity.png">
-            <div class="tamrin-content">
-                <p class="q1"><span class="number">۱-</span> فاصله ی یک روستا تا شهر ۲۷ کیلومتروفاصله ی آن شهرتا تهران ۱۲۰
+            <img id="avtivity-img" src="assets/3rd/images/girl_and_teacher_activity.png">
+            <div id="tamrin-content">
+                <p id="q1"><span class="number">۱-</span> فاصله ی یک روستا تا شهر ۲۷ کیلومتروفاصله ی آن شهرتا تهران ۱۲۰
             کیلومتر است.
-               <br>
-                فاصله ی این روستا تا تهران چندکیلومتر است؟</p>
-                <p class="q2"><span class="number">۲-</span>
+                فاصله ی این روستا تا تهران چندکیلومتر است؟
+                    <br>
+                    <div id="q1_ans">
+                        <input type="text" id="q1_in1">
+                        <select id="plus_or_minus">
+                            <option selected disabled>انتخاب کنید</option>
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                        </select>
+                        <input type="text" id="q1_in2">
+                        =
+                        <input type="text" id="q1_in3">
+                        <output id="q1_result"></output>
+                        <button type="button" id="q1_btn" onclick="test_q1()">تست</button>
+                    </div>
+                </p>
+                <p id="q2"><span class="number">۲-</span>
             در شهربَم در یک سال، ۳۶۳۴ دانش آموز در پایه ی دوم و ۲۱۰۱<br>
             دانش آموز در پایه ی ششم ابتدایی درس میخواندند.
-                    <br>
             عددصفررا به جای رقمهای یکان،دهگان وصدگان قراردهیدوبگویید شهر بم درآن سال به طورتقریبی
             چنددانش آموز پایه ی دوم و ششم داشته است؟
+               <div id="q2_ans">
+                پایه دوم :
+                <input id="q2_second_grade"> <pre class="student">دانش آموز    ,</pre>
+                پایه ششم :
+                <input id="q2_sixth_grade"> <pre class="student">دانش آموز   </pre>
+                <button onclick="test_q2()">تست</button>
+                <output id="q2_result"></output>
+                <output></output>
+            </div>
                 </p>
-                <p class="q3"><span class="number">۳-</span> ۷۰۰۰ ریال چندتومان است؟
+                <p id="q3"><span class="number">۳-</span> ۷۰۰۰ ریال چندتومان است؟
+                    <select id="q3_in1">
+                        <option selected disabled>انتخاب کنید</option>
+                        <option value="70000">70000</option>
+                        <option value="7000">7000</option>
+                        <option value="700">700</option>
+                        <option value="70">70</option>
+                    </select>
+                    <span class="student"> تومان </span>
                     <br>
             ۸۰۰ تومان چندریال است؟
+                    <select id="q3_in2">
+                        <option selected disabled>انتخاب کنید</option>
+                        <option value="8000">8000</option>
+                        <option value="800">800</option>
+                        <option value="80">80</option>
+                        <option value="8">8</option>
+                    </select>
+                    <span class="student" >ریال</span>
+
+                    <button id="q3_btn" onclick="test_q3()">تست</button>
+                    <output id="q3_result"></output>
                 </p>
-                <img class="image-four" src="assets/3rd/images/tabadkani/joghd.png">
+                <img id="joghd-img" src="assets/3rd/images/tabadkani/joghd.png">
             </div>
-            <img class="image-three" src="assets/3rd/images/tabadkani/tabiat.png">
-            <p class="q4"><span class="number">۴-</span>
+            <img id="tabiat-img" src="assets/3rd/images/tabadkani/tabiat.png">
+            <p id="q4"><span class="number">۴-</span>
                 3 شیء را نام ببریدکه طول آن ها در حدود یک متر باشد.
             <br>
+                <select id="q4_in1" class="q4_select">
+                    <option selected disabled>انتخاب کنید</option>
+                    <option value="desk">میز تحریر</option>
+                    <option value="car">ماشین</option>
+                    <option value="mobile">گوشی موبایل</option>
+                </select>
+
+                <select id="q4_in2" class="q4_select">
+                    <option selected disabled>انتخاب کنید</option>
+                    <option value="bed">تخت خواب</option>
+                    <option value="heater">بخاری</option>
+                    <option value="waTch">ساعت</option>
+                </select>
+
+                <select id="q4_in3" class="q4_select">
+                    <option selected disabled>انتخاب کنید</option>
+                    <option value="chair">صندلی</option>
+                    <option value="book">کتاب ریاضی</option>
+                    <option value="lcd">تلویزیون ال سی دی</option>
+                </select>
+                <button onclick="test_q4()">تست</button>
+                <output id="q4_result"></output>
             </p>
-            <p class="q5"><span class="number">۵-</span>
+            <p id="q5"><span class="number">۵-</span>
                 3 شیء را نام ببریدکه جرم آن‌ها در حدود یک کیلوگرم باشد.
                 <br>
+                <select id="q5_in1" class="q4_select">
+                    <option selected disabled>انتخاب کنید</option>
+                    <option value="laptop">لپ تاپ</option>
+                    <option value="mobile"> گوشی موبایل</option>
+                    <option value="glass">لیوان</option>
+                </select>
+
+                <select id="q5_in2" class="q4_select">
+                    <option selected disabled>انتخاب کنید</option>
+                    <option value="can">قوطی رب</option>
+                    <option value="desk">میز تحریر</option>
+                    <option value="refrigerator">یخچال</option>
+                </select>
+
+                <select id="q5_in3" class="q4_select">
+                    <option selected disabled>انتخاب کنید</option>
+                    <option value="closet">کمد</option>
+                    <option value="pen">خودکار</option>
+                    <option value="pan">ماهیتابه</option>
+                </select>
+                <button onclick="test_q5()">تست</button>
+                <output id="q5_result"></output>
             </p>
-            <p class="q6"><span class="number">۶-</span>
+            <p id="q6"><span class="number">۶-</span>
                 در کنار هر اندازه، واحدمناسب را بنویسید.
                 <br>
-                <pre class="q6-content">
-                        ضخامت کتاب ریاضی ۸... است.	     طول کتاب ریاضی به طورتقریبی ۲۷... است.
-                        قد یک ورزشکار ۱۷۶... است.	             طول یک کالس به طور تقریبی ۸... است.
-                </pre>
+                <pre id="q6-content">
+                        ضخامت کتاب ریاضی ۸<select id="q6_in1" class="q6_select">
+            <option selected disabled>انتخاب کنید</option>
+            <option  value="km">کیلومتر</option>
+            <option  value="m">متر</option>
+            <option  value="cm">سانتی متر</option>
+            <option  value="mm">میلی متر</option>
+        </select> است.	     طول کتاب ریاضی به طورتقریبی ۲۷<select id="q6_in2" class="q6_select">
+            <option selected disabled>انتخاب کنید</option>
+            <option  value="km">کیلومتر</option>
+            <option  value="m">متر</option>
+            <option  value="cm">سانتی متر</option>
+            <option  value="mm">میلی متر</option>
+        </select> است.
+                        قد یک ورزشکار ۱۷۶<select id="q6_in3" class="q6_select">
+            <option selected disabled>انتخاب کنید</option>
+            <option  value="km">کیلومتر</option>
+            <option  value="m">متر</option>
+            <option  value="cm">سانتی متر</option>
+            <option  value="mm">میلی متر</option>
+        </select> است.	             طول یک کلاس به طور تقریبی ۸<select id="q6_in4" class="q6_select">
+            <option selected disabled>انتخاب کنید</option>
+            <option  value="km">کیلومتر</option>
+            <option  value="m">متر</option>
+            <option  value="cm">سانتی متر</option>
+            <option  value="mm">میلی متر</option>
+        </select> است.
+        <button id="q6_btn" onclick="test_q6()">تست</button><output id="q6_result"></output>
+        </pre>
             </p>
         </div>
         <div class="page-navigator">

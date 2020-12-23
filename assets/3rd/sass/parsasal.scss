@@ -6,7 +6,6 @@ $theme-colors: ("primary": $color-1,
 
 
 @import "./parsasal/bootstrap-scss/bootstrap";
-@import "./parsasal/pagination";
 
 a {
     text-decoration: none;
@@ -272,22 +271,38 @@ hr {
     margin: auto 0;
     font-size: 0.9rem;
 }
+
 .input-style {
     @extend .form-control;
 
 }
+
 .small-input-wrapper {
     @extend .col-6;
     @extend .col-xl-5;
+
     .input-style {
         @extend .form-control;
-        &::placeholder{
+
+        &::placeholder {
             font-size: 0.8rem;
         }
-    
-    }
-}
 
+        /* Chrome, Safari, Edge, Opera */
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        &[type=number] {
+            -moz-appearance: textfield;
+        }
+    }
+
+
+}
 
 
 $paper-color: #F1EDE9;
@@ -376,5 +391,15 @@ $paper-line: #94ACD4;
 }
 
 
+canvas[resize] {
+    width: 100%;
+    height: 700px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
 @import "./parsasal/_fonts.scss";
 @import "./parsasal/alertbox";
+@import "./parsasal/pagination";
+@import "./parsasal/modalanimation";

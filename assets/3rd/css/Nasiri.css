@@ -1,0 +1,271 @@
+:root{
+
+    --light-pink:rgb(252,210,192);
+    --pink:rgb(253,199,171);
+    --blue:rgb(92,182,206)
+}
+p,
+h5,
+span {
+    font-family: 'zar';
+}
+h5{
+    font-size: 1.5vw;
+}
+p.question {
+    font-size: 1.5vw;
+    text-align: right;
+}
+
+span.question {
+    font-size: 1.5vw;
+    text-align: right;
+}
+
+.container_row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.container_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_end {
+    justify-content: flex-end;
+}
+
+.flex_between {
+    justify-content: space-between;
+}
+.flex_center{
+    align-content: center;
+}
+.flex_center_self{
+    align-self: center;
+}
+.flex_close{
+    justify-content: space-around;
+}
+.main_title {
+    background-color: var(--pink);
+    width: 30vw;
+    height: 4.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 30px;
+    font-size: 1.5vw;
+    margin-top: 4vw;
+    position: relative;
+    z-index: 7;
+}
+.marker {
+    position: absolute;
+    top: 5vw;
+    right: -1vw;
+    z-index: 7;
+}
+
+.activity {
+    margin-right: 5vw;
+}
+
+.activity>div>img {
+    width: 8vw;
+}
+
+.title {
+    background-color: var(--pink);
+    width: 12vw;
+    height: 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 2vw;
+    color: white;
+    margin-top: 10px;
+    margin-right: -2.2vw;
+}
+.title>p {
+    margin-right: 0.7vw;
+}
+.main_left {
+    margin-left: 7vw;
+    margin-right: -6vw;
+    border-left: 0.8vw double var(--pink);
+    border-top: 0.7vw double var(--pink);
+    border-bottom: 0.7vw double var(--pink);
+    border-radius: 1vw;
+    position: relative;
+    background-color: white;
+    z-index: 5;
+}
+.content {
+    margin-top: 7vw;
+    margin-right: 17vw;
+    width: 70%;
+}
+p.question {
+    font-size: 1.5vw;
+    text-align: right;
+}
+.question_container{
+    margin-left: -4vw;
+}
+span.question {
+    font-size: 1.5vw;
+    text-align: right;
+}
+
+.answer-field{
+    position: relative;
+    width: 5vw;
+    height: 2vh;
+}
+.image_container{
+    width: 12vw;
+    height: 10vw;
+}
+div>img{
+    width: 10vw;
+    height: 10vw;
+}
+span>img{
+    width: 10vw;
+    height: 10vw;
+}
+
+.h5>input{
+    size: 1vw;
+}
+
+/* btn */
+
+.btn_div {
+    display: inline-block;
+    float: right;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    -webkit-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: var(--pink);
+    color: black;
+    border-radius: 2px;
+    padding: 0.6vw 1vw;
+}
+
+.btn--primary:hover {
+    background: var(--pink);
+}
+
+.btn--primary:active {
+    background: var(--pink);
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.apply {
+    font-size: 1.1vw;
+}
+.answer_field {
+    width: 2.5vw;
+    background: #fff;
+    color: #424242;
+    font-size: 0.8vw;
+    border: 0;
+    outline: 0;
+    padding: 1vw 1.5vw;
+}
+.radio_btn{
+    width: 1.5vw;
+}
+
+
+/* page number box */
+
+.pagination-container {
+    direction: rtl;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 3em;
+    /* to adjust page changer position , adjust position of this element */
+}
+
+.page-number {
+    /* substitute your color */
+    z-index: 20;
+    background-color: var(--middle-green);
+    border-radius: 2em;
+    width: 5.8em;
+    color: white;
+    border: 0.35em double white;
+    /* font-family: Koodak; */
+    padding: 0 1.1em;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.page-number input {
+    /* substitute your color */
+    background-color: var(--dark-green);
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+}
+
+.page-number-button {
+    width: 3em;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.page-number-button>a {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
+}
+
+
+
+.normal_shadow {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.yellow_shadow {
+    box-shadow: 0 6px 10px 0 rgba(255, 235, 59, 0.8);
+}
+
+.red_shadow {
+    box-shadow: 0 6px 10px 0 rgba(244, 67, 54, 0.8);
+}
+
+.green_shadow {
+    box-shadow: 0 6px 10px 0 rgba(205, 220, 57, 0.8);
+}

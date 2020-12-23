@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/nahbos.css">
     <title>ریاضی سوم دبستان</title>
+
+    <style>
+        input[type='number'] {
+            -moz-appearance:textfield;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    </style>
 </head>
 
 <body style="margin: 0;">
@@ -149,14 +160,18 @@
 
         <div class="page-number">124</div>
         <div class="page-no-input">
-            <div style="float: left; margin-right: 2vw">
-                <img src="assets/3rd/images/left-arrow.png" alt="next_page">
+            <div style="float: left; margin-right: 2vw; margin-top: 1vw">
+                <a href="book_3_125.html">
+                    <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+                </a>
             </div>
-            <div style="float: left">
-                <input style="width: 7vw;" type="number" name="page_number" id="page_number">
+            <div class="page-number" style="float: left; position: relative; padding: 0.1vw 1vw; right: 0; bottom: 0">
+                <input style="width: 5vw; font-size: 1.5vw; background-color: var(--orange_level2); text-align: center; color: white" type="number" name="page_number" id="page_switcher">
             </div>
-            <div style="float: left; margin-left: 2vw">
-                <img src="assets/3rd/images/chevron.png" alt="next_page">
+            <div style="float: left; margin-left: 2vw; margin-top: 1vw">
+                <a href="book_3_123.html">
+                    <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="next_page">
+                </a>
             </div>
         </div>
 
@@ -165,153 +180,6 @@
 
 </body>
 
-<script language="JavaScript">
-
-    function $(id){ return document.getElementById(id);}
-
-    /* --------  The Q1-Q2 page 124  ----------------------------- */
-
-    let color_picker_item = null;
-    function color_picker(id) { color_picker_item = $(id);}
-
-    let pre_color = null;
-    function hover(id){
-        if (color_picker_item != null) {
-            $(id).onmouseenter = function () {
-                pre_color = $(id).style.backgroundColor;
-                $(id).style.backgroundColor = color_picker_item.style.backgroundColor;
-            }
-            $(id).onmouseout = function () {
-                $(id).style.backgroundColor = pre_color;
-            }
-        }
-    }
-
-    let Q1_color_picker_items = ["Q1_yellow_color", "Q1_blue_color", "Q1_red_color", "Q1_green_color"];
-    let Q2_color_picker_items = ["Q2_yellow_color", "Q2_red_color", "Q2_blue_color", "Q2_green_color"];
-
-    function sector_coloring(id, question_id) {
-
-        let [colors, Q_feedback] = (function () {
-            switch (question_id) {
-                case "P124-Q1":
-                    return [Q1_color_picker_items, $("Q1_feedback")];
-
-                case "P124-Q2":
-                    return [Q2_color_picker_items, $("Q2_feedback")];
-            }
-        })();
-
-        if (color_picker_item != null){
-            switch (color_picker_item.id) {
-                case colors[0]:
-                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
-                    pre_color = color_picker_item.style.backgroundColor;
-                    break;
-
-                case colors[1]:
-                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
-                    pre_color = color_picker_item.style.backgroundColor;
-                    break;
-
-                case colors[2]:
-                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
-                    pre_color = color_picker_item.style.backgroundColor;
-                    break;
-
-                case colors[3]:
-                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
-                    pre_color = color_picker_item.style.backgroundColor;
-                    break;
-                default:
-                    Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کن.";
-                    Q_feedback.classList.add("shaking-animation");
-                    Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-                    break;
-            }
-        }
-
-        else {
-            Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کن.";
-            Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-        }
-        check_circle_sectors(question_id);
-    }
-
-    let Q1_ans = {"yellow": 3, "blue": 5, "red": 2, "green": 2};
-    let Q2_ans = {"yellow": 3, "blue": 2, "red": 5, "green": 2};
-    let Q1_sectors_id = ["Q1_sector1", "Q1_sector2", "Q1_sector3", "Q1_sector4", "Q1_sector5", "Q1_sector6", "Q1_sector7", "Q1_sector8", "Q1_sector9", "Q1_sector10", "Q1_sector11", "Q1_sector12"];
-    let Q2_sectors_id = ["Q2_sector1", "Q2_sector2", "Q2_sector3", "Q2_sector4", "Q2_sector5", "Q2_sector6", "Q2_sector7", "Q2_sector8", "Q2_sector9", "Q2_sector10", "Q2_sector11", "Q2_sector12"];
-
-    function check_circle_sectors(question_id) {
-
-        let Q1_P124_check_count = {"yellow": 0, "blue": 0, "red": 0, "green": 0};
-        let Q2_P124_check_count = {"yellow": 0, "blue": 0, "red": 0, "green": 0};
-
-        let [ans, sectors_id, check_count, Q_feedback, Q_img] = (function () {
-            switch (question_id) {
-                case "P124-Q1":
-                    return [Q1_ans, Q1_sectors_id, Q1_P124_check_count, $("Q1_feedback"), $("Q1_clock_img")];
-
-                case "P124-Q2":
-                    return [Q2_ans, Q2_sectors_id, Q2_P124_check_count, $("Q2_feedback"), $("Q2_book_img")];
-            }
-        })();
-
-        for(const sector of sectors_id) {
-            let color = $(sector).style.backgroundColor;
-
-            switch (color) {
-                case "var(--yellow_level3_border)":
-                    check_count.yellow += 1;
-                    break;
-
-                case "var(--blue_level1)":
-                    check_count.blue += 1;
-                    break;
-
-                case "var(--red_level1)":
-                    check_count.red += 1;
-                    break;
-
-                case "var(--green_level2)":
-                    check_count.green += 1;
-                    break;
-            }
-        }
-
-        if (JSON.stringify(ans) === JSON.stringify(check_count)){
-
-            Q_feedback.textContent = "آفرین عزیزم. درست حل کردی.";
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
-            Q_img.classList.add("shaking-animation");
-
-        }
-
-        else if (Object.values(check_count).reduce((a, b) => a + b, 0) == Object.values(ans).reduce((a, b) => a + b, 0)){
-
-            Q_feedback.textContent = "بیشتر دقت کن عزیزم. غلط حل کردی.";
-            Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-        }
-    }
-
-    function guess_checker(id) {
-        let btn = $(id).value;
-        if (btn == "right"){
-            $("guess_box_feedback").textContent = "دقت کن عزيزم. غلط حدس زدي.";
-            $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-            $("guess_box_feedback").classList.add("shaking-animation");
-        }
-        else if (btn == "left"){
-            $("guess_box_feedback").textContent = "آفرين عزيزم. درست حدس زدي.";
-            $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
-            $("guess_box_feedback").classList.add("shaking-animation");
-        }
-    }
-    /* --------  The End of Q1-Q2 page 124  ------------------------------------ */
-
-</script>
+<script src="assets/3rd/js/nahbos.js" type="text/javascript" params="124"></script>
 
 </html>
