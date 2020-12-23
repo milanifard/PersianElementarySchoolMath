@@ -16,7 +16,7 @@ function test_P34(index,id){
 function testTextBoxQ2_P34(id) {
     var obj = $(id);
     var str = obj.value;
-    if ((str.includes("هزارگان") && str.includes("صدگان")) && str.includes("دهگان") && str.includes("يکان")){
+    if ((str.includes("هزارگان") && str.includes("صدگان")) && str.includes("دهگان") && (str.includes("يکان") || str.includes("یکان"))){
         alert("جواب شما درست است!");
     }
     else {
@@ -64,7 +64,7 @@ function testTextBoxQ3_P35(id) {
     var obj = $(id);
     var select = $('select-q3')
     var str = obj.value;
-    if ((str.includes("4000 ليره") || str.includes("4 هزار ليره")) && select.value == 2) {
+    if ((str.includes("4000 ليره") || str.includes("4 هزار ليره") || str.includes("4000 لیره") || str.includes("4 هزار لیره")) && select.value == 2) {
         alert("جواب شما درست است!");
     }
     else {

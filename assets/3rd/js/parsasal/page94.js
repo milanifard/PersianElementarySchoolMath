@@ -1,11 +1,9 @@
 function checkFargangeNeveshtanP94() {
     if ($("#farhange_neveshtan_input").val().length > 30) {
-        $("#farhange-neveshtan-messages").find(".warn-message").remove()
-        $("#farhange-neveshtan").find(".info-message").css("display", "flex")
-            .hide()
-            .fadeIn();
+        showSuccessMessageOnMasale("#farhange_neveshtan_input")
+
     } else {
-        showWrongAnswerMessage("#farhange-neveshtan-messages")
+        showWarningMessageOnMasale("#farhange_neveshtan_input");
     }
 
 }
@@ -36,13 +34,10 @@ function checkTamrinP94() {
 
 
     if (hasWrongAnswer1) {
-        showWrongAnswerMessage("#tamrin94-1-messages")
+        showWarningMessageOnMasale(".triangle-answer");
     } else {
-        $("#tamrin94-1-messages").find(".warn-message").remove()
-        $("#tamrin94-1-messages").find(".info-message").css("display", "flex")
-            .hide()
-            .fadeIn();
-        showTrueAnswersMessageBox("#tamrin94-1-messages")
+
+        showSuccessMessageOnMasale(".triangle-answer")
 
     }
 
@@ -82,16 +77,15 @@ function checkTamrinP94() {
         }
 
     }
+    
     if (hasWrongAnswer2) {
-        showWrongAnswerMessage("#tamrin94-2-messages")
+        showWarningMessageOnMasale("#rect-ans11");
     } else {
-        $("#tamrin94-2-messages").find(".warn-message").remove()
-        $("#tamrin94-2-messages").find(".info-message").css("display", "flex")
-            .hide()
-            .fadeIn();
-        showTrueAnswersMessageBox("#tamrin94-2-messages")
+
+        showSuccessMessageOnMasale("#rect-ans11")
 
     }
+
 
     if (!hasWrongAnswer1 && !hasWrongAnswer2) {
         showAfarinModalAnimation()
@@ -102,7 +96,7 @@ function checkTamrinP94() {
 
 var clickedRectangleId;
 $(document).ready(function () {
-    
+
 
 
     $(".clickable-image").click(function (event) {

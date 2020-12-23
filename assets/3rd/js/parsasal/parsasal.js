@@ -82,7 +82,7 @@ function debounce(func) {
 // dark mode
 window.onkeypress = function (e) {
     e = e || window.event;
-    if (e.keyCode === 68) {
+    if (e.key === "d") {
         console.log("d pressed")
         document.documentElement.classList.toggle('dark-mode')
     }
@@ -139,17 +139,29 @@ function createNewMessageBox(text, type) {
     return container
 }
 
-function showWrongAnswerMessage(containerId) {
-    $(containerId).prepend(getWrongAnswerMessageBox())
-    $(containerId).find(".warn-message").css("display", "flex")
-        .hide()
-        .fadeIn();
+
+function showSuccessMessageOnMasale(masaleChildNodeId){
+
+    $(masaleChildNodeId).parents(".masale").find(".warn-message").remove()
+    if(!$(masaleChildNodeId).parents(".masale").find(".success-message").exists()){
+
+        $(masaleChildNodeId).parents(".masale").append(getTrueAnswersMessageBox())
+        $(masaleChildNodeId).parents(".masale").find(".success-message").css("display", "flex")
+            .hide().fadeIn();
+    }
+    
 }
-function showTrueAnswersMessageBox(containerId) {
-    $(containerId).prepend(getTrueAnswersMessageBox())
-    $(containerId).find(".success-message").css("display", "flex")
-        .hide()
-        .fadeIn();
+
+function showWarningMessageOnMasale(masaleChildNodeId){
+
+    if(!$(masaleChildNodeId).parents(".masale").find(".warn-message").exists()){
+
+        $(masaleChildNodeId).parents(".masale").append(getWrongAnswerMessageBox())
+    $(masaleChildNodeId).parents(".masale").find(".warn-message").css("display", "flex")
+        .hide().fadeIn();
+    }
+    
+    
 }
 function getWrongAnswerMessageBox() {
 
