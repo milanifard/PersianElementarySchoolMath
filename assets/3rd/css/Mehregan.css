@@ -1,6 +1,4 @@
-:root {
- 
-
+ :root {
     --pink_level0: #fbdfeb;
     --rose:  #f9c6a9;
     --lighter_rose: #fbd2c1;
@@ -183,34 +181,187 @@
     margin-top: 2vw;
 }
 
-.fill {
-    background-color: yellowgreen;
-    position: relative;
-    height: 150px;
-    width: 150px;
-    top: 5px;
-    left: 5px;
-    cursor: pointer;
-  }
+.hint{
+
+  color: deeppink;
+}
+
+
+
+
+
+
+
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_end {
+  justify-content: flex-end;
+}
+form>div>span {
+  text-align: right;
+}
+.form{
+  position: relative;
+  right: 22vw;
+}
+.form__field {
+  width: 5vw;
+  height: 2.5vw;
   
-  .hold {
-    border: solid 5px #ccc;
-  }
-  
-  .empty {
-    display: inline-block;
-    height: 160px;
-    width: 160px;
-    margin: 10px;
-    border: solid 3px salmon;
-    background: white;
-  }
-  
+  background: #fff;
+  color: #424242;
+  font: inherit;
+  /* font-size: 2.5vw; */
+  border: 0;
+  outline: 0;
+  padding: 1vw 1.5vw;
+}
+.normal_shadow {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.yellow_shadow {
+  box-shadow: 0 6px 10px 0 rgba(255, 235, 59, 0.8);
+}
+
+.red_shadow {
+  box-shadow: 0 6px 10px 0 rgba(244, 67, 54, 0.8);
+}
+
+.green_shadow {
+  box-shadow: 0 6px 10px 0 rgba(205, 220, 57, 0.8);
+}
+
+.btn_div {
+  display: inline-block;
+  float: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  width: 5vw;
+  height: 3vw;
+ 
+}
+
+.btn--primary {
+  background: lightgreen;
+  color: #fff;
+  border-radius: 0.5vw;
+  padding: 0.6vw 1vw;
+}
+
+.btn--primary:hover {
+  background: greenyellow;
+}
+
+.btn--primary:active {
+  background: greenyellow;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn--inside {
+  margin-left: -3.5vw;
+}
+
+
+
+
   
   .hovered {
     background: #f4f4f4;
     border-style: dashed;
   }
+
+  .container {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0px;
+  }
+
+  .box.eight{
+
+    font-size: 8vw;
+    font-family: Koodak;
+    color: rgb(230, 173, 222);
+
+  }
+  .box.two{
+    font-size: 8vw;
+    font-family: Koodak;
+    color: rgb(52, 206, 193);
+  }
+  .box.three{
+    font-size: 8vw;
+    font-family: Koodak;
+    color: rgb(206, 52, 147);
+  }
+  .box.five{
+    font-size: 8vw;
+    font-family: Koodak;
+    color: rgb(75, 52, 206);
+  }
+  
+  .box {
+
+    display: inline-block;
+    position: relative;
+    height: 14vw;
+    width: 10vw;
+    margin: 3vw;
+    top: 0.5vw;
+    left: 0.1vw; 
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13vw;  
+    border: solid 3px greenyellow;
+    background-color: white;
+    cursor: pointer;
+
+    border-top-left-radius: 25px; 
+    border-bottom-left-radius: 25px; 
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+  }
+
+  
+
+  .box.over {
+    background: #f4f4f4;
+    border-style: dashed;
+  }
+
+  .hold {
+    border: solid 1vw #ccc;
+  }
+
+
+
+  /* inline styles */
+  #Q1{padding-top: 6vw; padding-right: 15vw; margin-top: 3vw;}
 
 
 

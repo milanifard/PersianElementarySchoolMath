@@ -21,31 +21,27 @@
         </div>
 
         <div id="Q1_container">
-            <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw">۱ـ با چهار کارت که روی آن ها رقم های ۳،۲،۵و ۸ نوشته شده است، همه عدد های ۴ رقمی را بسازید.
+            <div id="Q1" class="text-config questions-text-config">۱ـ با چهار کارت که روی آن ها رقم های ۳،۲،۵و ۸ نوشته شده است، همه عدد های ۴ رقمی را بسازید.
                 چند تا از آن ها زوج اند؟</div>
-       
-        
 
-        <div class="empty">
-            <div class="fill" id="0" ondragstart="reply_click(this.id)" draggable="true"></div>
+        <div class="flex_row flex_end">
+            <form class="form">
+                <input id="p134_q1" class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_p134_q1()"><span class="ok">تصحیح</span></button>
+            </form>
         </div>
-        <div class="empty">
-            <div class="fill" id="1" ondragstart="reply_click(this.id)" draggable="true"></div>
-        </div>
-        <div class="empty">
-            <div class="fill" id="2" ondragstart="reply_click(this.id)" draggable="true"></div>
-        </div>
-        <div class="empty">
-            <div class="fill" id="3" ondragstart="reply_click(this.id)" draggable="true"></div>
-        </div>
-        <br>
 
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        
-            
+        <div class="text-config questions-text-config hint">برای نوشتن تمام عددها از راهبرد الگوسازی استفاده کنید.</div>
+
+         <div class="container">
+            <div draggable="true" class="box eight" id="0" ondrop="reply_click(this.id)" ondragstart="start(this.id)">۸</div>
+            <div draggable="true" class="box five" id="1" ondrop="reply_click(this.id)" ondragstart="start(this.id)">۵</div>
+            <div draggable="true" class="box two" id="2" ondrop="reply_click(this.id)" ondragstart="start(this.id)">۲</div>
+            <div draggable="true" class="box three" id="3" ondrop="reply_click(this.id)" ondragstart="start(this.id)">۳</div>
+        </div>
+
+        <div class="text-config questions-text-config">۲-بزرگترین عدد ۴ رقمی را بنویسید.</div>
+
 
 
         <div class="page-number">۱۳۴</div>
