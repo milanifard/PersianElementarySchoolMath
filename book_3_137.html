@@ -1,11 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book_3_137</title>
+<head lang="far">
+    <title> ریاضی سوم، صفحه 137</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/3rd/css/naderi.css" rel="stylesheet">
+    <link href='http://www.fontonline.ir/css/BNazanin.css' rel='stylesheet' type='text/css'>
+    <script src="assets/3rd/js/Naderi.js"></script>
+
 </head>
 <body>
-    
+    <div class="page-left-border">
+        <div class="background-left"></div>
+        <div id="content_137" style="border: 2px solid red;">
+            <div>
+                <img id="activity_cover_136"class="activity-cover" src="assets/3rd/images/activity.png" alt="activity_image">
+                <div class="activity-title" >فعّالیت</div>
+            </div>
+            <div id="Q1_container">
+                <div class="text"><span class="questions-number">1ــ </span>
+                    برای هریک از شکلهای زیر یک ضرب بنویسید.
+                    (درست سبز و نادرست قرمز میشه.)
+                </div>
+                <div id="p137q1_content">
+                    <div class="shape_container">
+                        <div class="triangle-up"></div> <div class="triangle-up"></div>
+                        <br><br><br>
+                        <table>
+                            <th class="center_th">
+                                <span class="text" style="font-size: large;">2×1=  </span>
+                                <span><input class="tiny_number_in" type="number" onchange="cross_check(this,2,1)"></span> 
+                            </th> 
+                        </table>
+                    </div>
+                    <div class="shape_container">
+                        <div class="square"></div> <div class="square"></div> <div class="square"></div>
+                        <br><br><br>
+                        <table>
+                            <th class="center_th">
+                                <span class="text" style="font-size: large;">3×1=  </span>
+                                <span><input class="tiny_number_in" type="number" onchange="cross_check(this,3,1)" ></span> 
+                            </th> 
+                        </table>
+                    </div>
+                    <div class="shape_container">
+                        <div class="circle" style="background-color:rgb(233, 102, 51)"></div>
+                        <div class="circle" style="background-color:rgb(233, 102, 51)"></div> 
+                        <div class="circle" style="background-color:rgb(233, 102, 51)"></div>
+                        <br><br><br>
+                        <table>
+                            <th class="center_th">
+                                <!-- <span class="text" style="font-size: large;">3×1=  </span> -->
+                                <span><input id="q1p137_31" class="tiny_number_in" type="number" onchange="q1p137_3()" >×</span>
+                                <span><input id="q1p137_32" class="tiny_number_in" type="number" onchange="q1p137_3()" >=</span> 
+                                <span><input id="q1p137_33"class="tiny_number_in" type="number" onchange="q1p137_3()" ></span> 
+                            </th> 
+                        </table>
+                    </div>
+                    <div class="shape_container">
+                        <div class="circle" style="background-color:rgb(59, 172, 31)"></div>
+                        <div class="circle" style="background-color:rgb(59, 172, 31)"></div>
+                        <br><br> 
+                        <div class="circle" style="background-color:rgb(59, 172, 31)"></div>
+                        <div class="circle" style="background-color:rgb(59, 172, 31)"></div>
+                        <br>
+                        <table>
+                            <th class="center_th">
+                                <!-- <span class="text" style="font-size: large;">3×1=  </span> -->
+                                <span><input id="q1p137_41" class="tiny_number_in" type="number" onchange=" q1p137_4()" >×</span>
+                                <span><input id="q1p137_42" class="tiny_number_in" type="number" onchange=" q1p137_4()" >=</span> 
+                                <span><input id="q1p137_43" class="tiny_number_in" type="number" onchange=" q1p137_4()" ></span> 
+                            </th> 
+                        </table>
+                    </div>
+                    <div class="shape_container">
+                        <div style="margin-left:2vw ;">
+                            <div class="triangle-up" style="border-bottom-color:rgb(79, 90, 233)"></div>
+                            <div class="triangle-up" style="border-bottom-color:rgb(79, 90, 233)"></div>
+                        </div>
+                        
+                        <br><br> 
+                        <div class="triangle-up" style="border-bottom-color:rgb(79, 90, 233)"></div>
+                        <div class="triangle-up" style="border-bottom-color:rgb(79, 90, 233)"></div>
+                        <div class="triangle-up" style="border-bottom-color:rgb(79, 90, 233)"></div>
+                        <br>
+                        <table>
+                            <th class="center_th">
+                                <!-- <span class="text" style="font-size: large;">3×1=  </span> -->
+                                <span><input id="q1p137_51" class="tiny_number_in" type="number" onchange="q1p137_5()" >×</span>
+                                <span><input id="q1p137_52" class="tiny_number_in" type="number" onchange="q1p137_5()" >=</span> 
+                                <span><input id="q1p137_53" class="tiny_number_in" type="number" onchange="q1p137_5()" ></span> 
+                            </th> 
+                        </table>
+                    </div>
+                <!-- </div><div class="square"></div><div class="circle"></div> -->
+                </div>
+                <br>
+            </div>
+            <div class="text right_q_container">
+                از ضربها و پاسخهای آنها چه نتیجه ای میگیرید؟
+                <div>
+                    <form class="text" onclick="check_q1p137()">
+                        <!-- <input type="radio" name="q2_p136" value="none"checked=true><br> -->
+                        <input type="radio" id="q1p137_opt1" name="q1_p137" value="option1" >
+                        <label for="option1"> ضرب هر عدد در یک میشود خودش.</label><br>
+                        <input type="radio" id="q1p137_opt2" name="q1_p137" value="option2">
+                        <label for="option2"> ضرب هرعدد در یک میشود یک.</label><br>
+                        <input type="radio" id="q1p137_opt3" name="q1_p137" value="option3">
+                        <label for="option3"> نتیجه ای نمیتوان گرفت.</label>
+
+                        <span id="Q1P137_blank1_message" class="text"></span>
+                    </form>
+                </div>
+
+            </div>
+            <div class="right_q_container">
+                <div class="text"><span class="questions-number">2ــ </span>
+                    برای تعداد گیلاس ها در هرشکل یک تساوی ضرب بنویسید.
+                    (درست سبز و نادرست قرمز میشه.)
+                </div>
+                <div class="shape_container_l">
+                    <img src="assets/3rd/images/Naderi/double_chery.png" alt="double cherry">
+                    <img src="assets/3rd/images/Naderi/double_chery.png" alt="double cherry">
+                    <img src="assets/3rd/images/Naderi/double_chery.png" alt="double cherry">
+                    <table>
+                        <th class="center_th">
+                            <span><input id="q2p137_11" class="tiny_number_in" type="number" onchange="q2p137_1()" >×</span>
+                            <span><input id="q2p137_12" class="tiny_number_in" type="number" onchange="q2p137_1()" >=</span> 
+                            <span><input id="q2p137_13"class="tiny_number_in" type="number" onchange="q2p137_1()" ></span> 
+                        </th> 
+                    </table>
+
+                </div>
+                <div class="shape_container_l">
+                    <img src="assets/3rd/images/Naderi/Single_chery.png" alt="Single cherry">
+                    <img src="assets/3rd/images/Naderi/Single_chery.png" alt="Single cherry">
+                    <img src="assets/3rd/images/Naderi/Single_chery.png" alt="Single cherry">
+                    <table>
+                        <th class="center_th">
+                            <span><input id="q2p137_21" class="tiny_number_in" type="number" onchange="q2p137_2()" >×</span>
+                            <span><input id="q2p137_22" class="tiny_number_in" type="number" onchange="q2p137_2()" >=</span> 
+                            <span><input id="q2p137_23"class="tiny_number_in" type="number" onchange="q2p137_2()" ></span> 
+                        </th> 
+                    </table>
+
+                </div>
+                <div class="shape_container_l">
+                    <img src="assets/3rd/images/Naderi/none_chery.png" alt="double cherry">
+                    <img src="assets/3rd/images/Naderi/none_chery.png" alt="double cherry">
+                    <img src="assets/3rd/images/Naderi/none_chery.png" alt="double cherry">
+                    <table style="margin-top: 3vw;">
+                        <th class="center_th">
+                            <span><input id="q2p137_31" class="tiny_number_in" type="number" onchange="q2p137_3()" >×</span>
+                            <span><input id="q2p137_32" class="tiny_number_in" type="number" onchange="q2p137_3()" >=</span> 
+                            <span><input id="q2p137_33"class="tiny_number_in" type="number" onchange="q2p137_3()" ></span> 
+                        </th> 
+                    </table>
+
+                </div>
+            </div>
+            <div class="text right_q_container">
+                حاصل ضرب هرعدد در صفر چه عددی میشود؟
+                <span><input id="q2p137_4" class="tiny_number_in" type="number" onchange="q2p137_4()"></span>
+            </div>
+            <img id="pen_img" src="assets/3rd/images/Naderi/pen.png" alt="pen_image">
+            <div >
+                <img id="classwork_cover_137"class="activity-cover" src="assets/3rd/images/classwork.png" alt="activity_image">
+                <div id="classwork_title_137" style="float: left; ">کار در کلاس</div>
+            </div>
+            <div style="margin-right:10vw;margin-top: 6vw;">
+                <div class="text" style="float:right"><span class="questions-number">1ــ </span>
+                    حاصل ضربها را بنویسید.
+                    (درست سبز و نادرست قرمز میشه.)
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <!-- &#1779 × &#1777&#1776=  -->
+                                <span class="text">30×40=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,30,40)"></span> 
+                            </th> 
+                            <th>
+                                <!-- &#1780 × &#1778&#1776=  -->
+                                <span class="text">200×30=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,200,30)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1784&#1776 × &#1779=  -->
+                                <span class="text">80×10=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,10,80)"></span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <!-- &#1778&#1776 × &#1779&#1776=  -->
+                                <span class="text">10×100=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,10,100)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1782&#1776 × &#1780&#1776=  -->
+                                <span class="text">100×10=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,100,10)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1784&#1776 × &#1778&#1776&#1776=  -->
+                                <span class="text">10×10=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,10,10)"></span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <!-- &#1778&#1776&#1776 × &#1780&#1776&#1776=  -->
+                                <span class="text">2×3×10=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,cross(2,3),10)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1779&#1776&#1776 × &#1778&#1776=  -->
+                                <span class="text">50×2×10=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,cross(50,2),10)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1777&#1776 × &#1777&#1776&#1776=  -->
+                                <span class="text">40×20×3=  </span>
+                                <span class="tex"><input type="number" onchange="cross_check(this,cross(40,20),3)"></span>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+            <div class="right_q_container" style="margin-bottom: 10vw;">
+                <div class="text"><span class="questions-number">2ــ </span>
+                    برای هریک از شکلهای زیر یک ضرب بنویسید.
+                    (درست سبز و نادرست قرمز میشه.)
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <!-- &#1779 × &#1777&#1776=  -->
+                                <span class="text">2×0=  </span>
+                                <span class="tex"><input class="med_number_in" type="number" onchange="cross_check(this,2,0)"></span> 
+                            </th> 
+                            <th>
+                                <!-- &#1780 × &#1778&#1776=  -->
+                                <span class="text">4× </span>
+                                <span class="tex"><input class="med_number_in" type="number" onchange="div_check(this,0,4)"></span>
+                                <span class="text"> =0 </span>
+                            </th> 
+                            <th>
+                                <!-- &#1784&#1776 × &#1779=  -->
+                                <span class="text">30×1=  </span>
+                                <span class="tex"><input class="med_number_in" type="number" onchange="cross_check(this,30,1)"></span>
+                            </th>
+                            <th>
+                                <!-- &#1784&#1776 × &#1779=  -->
+                                <span class="text">1×7=  </span>
+                                <span class="tex"><input class="med_number_in" type="number" onchange="cross_check(this,7,1)"></span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <!-- &#1778&#1776 × &#1779&#1776=  -->
+                                <span class="tex"><input class="med_number_in" type="number" onchange="div_check(this,12,12)">×</span>
+                                <span class="text">12= </span>
+                                <span class="text">12</span>
+                                
+                            </th> 
+                            <th>
+                                <!-- &#1782&#1776 × &#1780&#1776=  -->
+                                <span class="text">1×6=  </span>
+                                <span class="tex"><input class="med_number_in" type="number" onchange="cross_check(this,1,6)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1784&#1776 × &#1778&#1776&#1776=  -->
+                                <span class="text">1×1=  </span>
+                                <span class="tex"><input class="med_number_in" type="number" onchange="cross_check(this,1,1)"></span>
+                            </th>
+                            <th>
+                                <!-- &#1778&#1776 × &#1779&#1776=  -->
+                                <span class="tex"><input class="med_number_in" type="number" onchange="div_check(this,5,5)">×</span>
+                                <span class="text">5= </span>
+                                <span class="text">5</span>
+                                
+                            </th> 
+                        </tr>
+                        <tr>
+                            <th>
+                                <span class="text">18× </span>
+                                <span class="tex"><input class="med_number_in" type="number" onchange="div_check(this,0,18)"></span>
+                                <span class="text"> =0 </span>
+                            </th> 
+                            <th>
+                                <!-- &#1779&#1776&#1776 × &#1778&#1776=  -->
+                                <span class="text">0×25=  </span>
+                                <span class="tex"><input class="med_number_in" type="number" onchange="cross_check(this,0,25)"></span>
+                            </th> 
+                            <th>
+                                <span class="text">1× </span>
+                                <span class="tex"><input class="med_number_in" type="number" onchange="div_check(this,8,1)"></span>
+                                <span class="text"> =8 </span>
+                            </th>
+                            <th>
+                                <!-- &#1779&#1776&#1776 × &#1778&#1776=  -->
+                                <span class="text">1×17=  </span>
+                                <span class="tex"><input class="med_number_in" type="number" onchange="cross_check(this,1,17)"></span>
+                            </th> 
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <div class="page-number_left">137</div>
+    </div>
 </body>
 </html>
