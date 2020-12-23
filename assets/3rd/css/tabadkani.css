@@ -181,13 +181,52 @@ button{
     font-family: Koodak;
     font-size: 0.9em;
     font-weight: normal;
+    color: #c3325f;
 }
 
-/*p{*/
-/*    position: relative;*/
-/*    float: right;*/
-/*    overflow-x: auto;*/
-/*}*/
+#q3_btn{
+    top: -1vw;
+    right: 9vw;
+    position: relative;
+}
+
+#q3_result{
+    top: -1vw;
+    right: 15vw;
+    position: relative;
+}
+
+.q4_select{
+    margin: 0 2.5vw;
+    width: 11vw;
+    height: 2vw;
+    text-align: center;
+    font-family: Koodak;
+    border-radius: 2vw;
+    direction: ltr;
+}
+
+.q6_select{
+    margin: 0 0.5vw;
+    width: 8vw;
+    height: 2vw;
+    text-align: center;
+    font-family: Koodak;
+    border-radius: 2vw;
+    direction: ltr;
+}
+
+#q6_btn{
+    /*top: vw;*/
+    right: 28vw;
+    position: relative;
+}
+
+#q6_result{
+    right: 33vw;
+    position: relative;
+}
+
 
 #q1{
     width: 45vw;
@@ -197,6 +236,7 @@ button{
 #q3{
     top: 27vw;
     position: absolute;
+    /*width: 70vw;*/
     display: block;
 }
 
