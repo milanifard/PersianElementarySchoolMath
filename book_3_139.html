@@ -7,6 +7,7 @@
     <meta name="author" content="AliNasiriSarvi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/3rd/css/Nasiri.css" rel="stylesheet">
+    <script src="assets/3rd/js/Nasiri.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             </div>
         </div>
     </div>
-    <div class="main container_row flex_end" style="margin-top: -3vw;">
+    <div class="main_left container_row flex_end" style="margin-top: -3vw;">
         <div class="content">
 
 
@@ -36,23 +37,24 @@
             <p class="question">.با رسم شکل حاصل ضرب‌ها را به دست‌ آورید</p>
 
             <!-- q1 part 1 start-->
-            <div class="container_row flex_between" >
+            <div class="container_row question_container flex_between" >
                     <h5 class="flex_center_self">
-                       ۳ * ۲۱ =   <input  class="answer_field normal_shadow" id="inp1_1" type="number" placeholder="جواب">
+                       ۳ * ۲۱ =   <input  class="answer_field normal_shadow" id="inp139_q1_1" type="number" placeholder="جواب" on>
                     </h5>
 
                     <h5 class="flex_center_self">
-                        گزینه ۱<input type="radio" title="گزینه ۱" class="radio_btn">
+                        گزینه ۱<input name="rad_q1_1" type="radio" id="radio139_q1_1_r1" title="گزینه ۱" class="radio_btn">
                     </h5>
                     <img src="assets/3rd/images/Nasiri/q1_1_1.png" class="image_container flex_center_self">
 
                     <h5 class="flex_center_self">
-                        گزینه ۲<input type="radio" title="گزینه ۲" class="radio_btn">
+                        گزینه ۲<input name="rad_q1_1" type="radio" id="radio139_q1_1_r2" title="گزینه ۲" class="radio_btn">
                     </h5>
                     <img src="assets/3rd/images/Nasiri/q1_1_2.png" class="image_container flex_center_self">
 
                     <span class="div_btn flex_center_self">
-                        <button class=" btn btn--primary btn--inside uppercase" type="button" onclick="correct_p16_q1()">
+                        <button class=" btn btn--primary btn--inside uppercase" type="button"
+                                onclick=correct_type1("inp139_q1_1",'63',"radio139_q1_1_r2","radio139_q1_1_r1")>
                             <h5 class="apply">تصحیح</h5>
                         </button>
                     </span>
@@ -62,23 +64,24 @@
             <br>
             <br>
             <!-- q1 part 2 start-->
-            <div class="container_row flex_between" >
+            <div class="container_row question_container flex_between" >
                 <h5 class="flex_center_self">
-                    ۴ * ۱۲ =   <input  class="answer_field normal_shadow" id="inp1_2" type="number" placeholder="جواب">
+                    ۴ * ۱۲ =   <input  class="answer_field normal_shadow" id="inp139_q1_2" type="number" placeholder="جواب">
                 </h5>
 
                 <h5 class="flex_center_self">
-                    گزینه ۱<input type="radio" title="گزینه ۱" class="radio_btn">
+                    گزینه ۱<input name="q1_2" type="radio" title="گزینه ۱" id="radio139_q1_2_r1" class="radio_btn">
                 </h5>
                 <img src="assets/3rd/images/Nasiri/q1_2_1.png" class="image_container flex_center_self">
 
                 <h5 class="flex_center_self">
-                    گزینه ۲<input type="radio" title="گزینه ۲" class="radio_btn">
+                    گزینه ۲<input name="q1_2" type="radio" title="گزینه ۲"id="radio139_q1_2_r2"  class="radio_btn">
                 </h5>
                 <img src="assets/3rd/images/Nasiri/q1_2_2.png" class="image_container flex_center_self">
 
                 <span class="div_btn flex_center_self">
-                        <button class=" btn btn--primary btn--inside uppercase" type="button" onclick="correct_p16_q1()">
+                        <button class=" btn btn--primary btn--inside uppercase" type="button"
+                                onclick=correct_type1("inp139_q1_2",'48',"radio139_q1_2_r1","radio139_q1_2_r2")>
                             <h5 class="apply">تصحیح</h5>
                         </button>
                     </span>
@@ -88,23 +91,24 @@
             <br>
             <br>
             <!-- q1 part 3 start-->
-            <div class="container_row flex_between" >
+            <div class="container_row question_container flex_between" >
                 <h5 class="flex_center_self">
-                    ۲ * ۲۱۳ =   <input  class="answer_field normal_shadow" id="inp1_3" type="number" placeholder="جواب">
+                    ۲ * ۲۱۳ =   <input  class="answer_field normal_shadow" id="inp139_q1_3" type="number" placeholder="جواب">
                 </h5>
 
                 <h5 class="flex_center_self">
-                    گزینه ۱<input type="radio" title="گزینه ۱" class="radio_btn">
+                    گزینه ۱<input name="q1_3" type="radio" title="گزینه ۱"  id="radio139_q1_3_r1" class="radio_btn">
                 </h5>
                 <img src="assets/3rd/images/Nasiri/q1_3_1.png" class="image_container flex_center_self">
 
                 <h5 class="flex_center_self">
-                    گزینه ۲<input type="radio" title="گزینه ۲" class="radio_btn">
+                    گزینه ۲<input name="q1_3" type="radio" title="گزینه ۲" id="radio139_q1_3_r2" class="radio_btn">
                 </h5>
                 <img src="assets/3rd/images/Nasiri/q1_3_2.png" class="image_container flex_center_self">
 
                 <span class="div_btn flex_center_self">
-                        <button class=" btn btn--primary btn--inside uppercase" type="button" onclick="correct_p16_q1()">
+                        <button class=" btn btn--primary btn--inside uppercase" type="button"
+                                onclick=correct_type1("inp139_q1_3","426","radio139_q1_3_r1","radio139_q1_3_r2")>
                             <h5 class="apply">تصحیح</h5>
                         </button>
                 </span>
@@ -117,10 +121,10 @@
 
             <p class="question">.مانند نمونه برای شکل ها ضرب بنویسید و حاصل را پیدا کنید</p>
             <!-- q2 part1 start-->
-            <div class="container_row flex_between">
+            <div class="container_row question_container flex_between">
                 <span class="container_col flex_close">
                     <h5 class="flex_center_self">
-                        ۲ * ۲۳ = <input class="answer_field normal_shadow" id="inp2_1_1" type="number" placeholder="جواب">
+                        ۲ * ۲۳ = <input class="answer_field normal_shadow" id="inp139_q2_1_1" type="number" placeholder="جواب">
                         <br><br>
                         ۲۳ = ۲۰+۳
                     </h5>
@@ -128,7 +132,7 @@
                 <span class="container_col">
                     <img src="assets/3rd/images/Nasiri/q2_1_2.png" class = image_container>
                     <h5>
-                        ۲ * ۲۰ = <input class="answer_field normal_shadow" id="inp2_1_2" type="number" placeholder="جواب">
+                        ۲ * ۲۰ = <input class="answer_field normal_shadow" id="inp139_q2_1_2" type="number" placeholder="جواب">
                     </h5>
                 </span>
                 <span class="container_col">
@@ -136,17 +140,23 @@
                         <img src="assets/3rd/images/Nasiri/q2_1_3.png" class = image_container>
                     </span>
                     <h5>
-                        ۲ * ۳ = <input class="answer_field normal_shadow" id="inp2_1_3" type="number" placeholder="جواب">
+                        ۲ * ۳ = <input class="answer_field normal_shadow" id="inp139_q2_1_3" type="number" placeholder="جواب">
                     </h5>
+                </span>
+                <span class="div_btn flex_center_self">
+                        <button class=" btn btn--primary btn--inside uppercase" type="button"
+                                onclick=correct_type2(["inp139_q2_1_1","inp139_q2_1_2","inp139_q2_1_3"],["46","40","6"])>
+                            <h5 class="apply">تصحیح</h5>
+                        </button>
                 </span>
             </div>
             <!-- q2 part 1 end -->
 
             <!-- q2 part 2 start -->
-            <div class="container_row flex_between">
+            <div class="container_row question_container flex_between">
                 <span class="container_col flex_close">
                     <h5 class="flex_center_self">
-                        ۳ * ۳۴ = <input class="answer_field normal_shadow" id="inp2_2_1" type="number" placeholder="جواب">
+                        ۳ * ۳۴ = <input class="answer_field normal_shadow" id="inp139_q2_2_1" type="number" placeholder="جواب">
                         <br><br>
                         ۳۴ = ۳۰+۴
                     </h5>
@@ -154,7 +164,7 @@
                 <span class="container_col">
                     <img src="assets/3rd/images/Nasiri/q2_2_2.png" class = image_container>
                     <h5>
-                        ۳ * ۳۰ = <input class="answer_field normal_shadow" id="inp2_2_2" type="number" placeholder="جواب">
+                        ۳ * ۳۰ = <input class="answer_field normal_shadow" id="inp139_q2_2_2" type="number" placeholder="جواب">
                     </h5>
                 </span>
                 <span class="container_col">
@@ -163,20 +173,26 @@
                     </span>
                     <h5>
 
-                        <input class="answer_field normal_shadow" id="inp2_2_3_1" type="number" placeholder="جواب">
+                        <input class="answer_field normal_shadow" id="inp139_q2_2_3" type="number" placeholder="جواب">
                         *
-                        <input class="answer_field normal_shadow" id="inp2_2_3_2" type="number" placeholder="جواب">
-                        = <input class="answer_field normal_shadow" id="inp2_2_3_3" type="number" placeholder="جواب">
+                        <input class="answer_field normal_shadow" id="inp139_q2_2_4" type="number" placeholder="جواب">
+                        = <input class="answer_field normal_shadow" id="inp139_q2_2_5" type="number" placeholder="جواب">
                     </h5>
+                </span>
+                <span class="div_btn flex_center_self">
+                        <button class=" btn btn--primary btn--inside uppercase" type="button"
+                                onclick=correct_type2(["inp139_q2_2_1","inp139_q2_2_2","inp139_q2_2_3","inp139_q2_2_4","inp139_q2_2_5"],["102","90","3","4","12"])>
+                            <h5 class="apply">تصحیح</h5>
+                        </button>
                 </span>
             </div>
             <!-- q2 part 2 end -->
 
             <!-- q2 part 3 start -->
-            <div class="container_row flex_between">
+            <div class="container_row question_container flex_between" style="width: 76vw">
                 <span class="container_col flex_close">
                     <h5 class="flex_center_self">
-                        ۲ * ۳۲۴ = <input class="answer_field normal_shadow" id="inp2_3_1" type="number" placeholder="جواب">
+                        ۲ * ۳۲۴ = <input class="answer_field normal_shadow" id="inp139_q2_3_1" type="number" placeholder="جواب">
                         <br><br>
                         ۳۲۴ = ۳۰۰+۲۰+۴
                     </h5>
@@ -186,7 +202,7 @@
                         <img src="assets/3rd/images/Nasiri/q2_3_1.png" class = image_container>
                     </span>
                     <h5>
-                        2 * 300 = <input class="answer_field normal_shadow" id="inp2_3_2" type="number" placeholder="جواب">
+                        ۲ * ۳۰۰ = <input class="answer_field normal_shadow" id="inp139_q2_3_2" type="number" placeholder="جواب">
                     </h5>
                 </span>
                 <span class="container_col">
@@ -194,10 +210,10 @@
                         <img src="assets/3rd/images/Nasiri/q2_3_2.png" class = image_container>
                     </span>
                     <h5>
-                        <input class="answer_field normal_shadow" id="inp2_3_2_1" type="number" placeholder="جواب">
+                        <input class="answer_field normal_shadow" id="inp139_q2_3_3" type="number" placeholder="">
                         *
-                        <input class="answer_field normal_shadow" id="inp2_3_2_2" type="number" placeholder="جواب">
-                        = <input class="answer_field normal_shadow" id="inp2_3_2_3" type="number" placeholder="جواب">
+                        <input class="answer_field normal_shadow" id="inp139_q2_3_4" type="number" placeholder="">
+                        = <input class="answer_field normal_shadow" id="inp139_q2_3_5" type="number" placeholder="جواب">
                     </h5>
                 </span>
                 <span class="container_col">
@@ -205,15 +221,34 @@
                         <img src="assets/3rd/images/Nasiri/q2_3_3.png" class = image_container>
                     </span>
                     <h5>
-                        <input class="answer_field normal_shadow" id="inp2_3_3_1" type="number" placeholder="جواب">
+                        <input class="answer_field normal_shadow" id="inp139_q2_3_6" type="number" placeholder="جواب">
                         *
-                        <input class="answer_field normal_shadow" id="inp2_3_3_2" type="number" placeholder="جواب">
-                         = <input class="answer_field normal_shadow" id="inp2_3_3_3" type="number" placeholder="جواب">
+                        <input class="answer_field normal_shadow" id="inp139_q2_3_7" type="number" placeholder="جواب">
+                         = <input class="answer_field normal_shadow" id="inp139_q2_3_8" type="number" placeholder="جواب">
                     </h5>
+                </span>
+                <span class="div_btn flex_center_self">
+                        <button class=" btn btn--primary btn--inside uppercase" type="button"
+                                onclick=correct_type2(["inp139_q2_3_1","inp139_q2_3_2","inp139_q2_3_3","inp139_q2_3_4","inp139_q2_3_5","inp139_q2_3_6","inp139_q2_3_7","inp139_q2_3_8"],["648","600","2","20","40","2","4","8"])>
+                            <h5 class="apply">تصحیح</h5>
+                        </button>
                 </span>
             </div>
 
         </div>
+    </div>
+    <div style="margin-top: -1vw ; z-index: 16;">
+        <span style=" margin-left: 44vw">
+            <a href="book_3_138.html">
+                <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+            </a>
+        </span>
+
+        <span style="margin-left: 5.125vw">
+            <a href="book_3_140.html">
+                <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="next_page">
+            </a>
+        </span>
     </div>
 </body>
 </html>

@@ -25,7 +25,9 @@ span.question {
 .container_row {
     display: flex;
     flex-direction: row;
+
 }
+
 
 .container_col {
     display: flex;
@@ -93,26 +95,29 @@ span.question {
 .title>p {
     margin-right: 0.7vw;
 }
-.main {
-    margin-right: 5vw;
-    border-right: 0.7vw double var(--pink);
+.main_left {
+    margin-left: 7vw;
+    margin-right: -6vw;
+    border-left: 0.8vw double var(--pink);
     border-top: 0.7vw double var(--pink);
     border-bottom: 0.7vw double var(--pink);
-    border-radius: 30px;
+    border-radius: 1vw;
     position: relative;
     background-color: white;
     z-index: 5;
 }
 .content {
     margin-top: 7vw;
-    margin-right: 15vw;
+    margin-right: 17vw;
     width: 70%;
 }
 p.question {
     font-size: 1.5vw;
     text-align: right;
 }
-
+.question_container{
+    margin-left: -4vw;
+}
 span.question {
     font-size: 1.5vw;
     text-align: right;
@@ -194,6 +199,73 @@ span>img{
     width: 1.5vw;
 }
 
+
+/* page number box */
+
+.pagination-container {
+    direction: rtl;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 3em;
+    /* to adjust page changer position , adjust position of this element */
+}
+
+.page-number {
+    /* substitute your color */
+    z-index: 20;
+    background-color: var(--middle-green);
+    border-radius: 2em;
+    width: 5.8em;
+    color: white;
+    border: 0.35em double white;
+    /* font-family: Koodak; */
+    padding: 0 1.1em;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.page-number input {
+    /* substitute your color */
+    background-color: var(--dark-green);
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+}
+
+.page-number-button {
+    width: 3em;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.page-number-button>a {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
+}
+
+
+
 .normal_shadow {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.yellow_shadow {
+    box-shadow: 0 6px 10px 0 rgba(255, 235, 59, 0.8);
+}
+
+.red_shadow {
+    box-shadow: 0 6px 10px 0 rgba(244, 67, 54, 0.8);
+}
+
+.green_shadow {
+    box-shadow: 0 6px 10px 0 rgba(205, 220, 57, 0.8);
 }
