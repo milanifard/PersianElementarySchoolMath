@@ -173,8 +173,7 @@ img {
   padding: 12px 12px 0 12px;
   border-color: #A5CDE0;
   direction: ltr;
-  background-color: transparent;
-  text-align: center; }
+  background-color: transparent; }
   .answer-box:focus {
     outline: none; }
 
@@ -187,7 +186,8 @@ img {
   height: 2vw;
   border-color: #A5CDE0;
   direction: ltr;
-  background-color: transparent; }
+  background-color: transparent;
+  text-align: center; }
   .small-answer-box:focus {
     outline: none; }
 
