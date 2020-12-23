@@ -497,6 +497,7 @@ body{margin: 0;}
 
 .radio-container{height: 4vw;
 }
+
 /* page 125 */
 
 #Q1_fun_far{float: right; margin: 3vw 0 0 25vw; position:absolute; color: var(--red_level2);}
@@ -572,13 +573,13 @@ body{margin: 0;}
 
 .Q2-red-blue-input{width: 8vw; font-size: 1.8vw;}
 
-.Q2-img-confige{width: 11vw; margin-top: 7vw; float: top;}
+.Q2-img-config{width: 11vw; margin-top: 7vw; float: top;}
 
-#red_pencil{width: 11vw; margin-top: 7vw;}
 #blue_pencil{width: 11vw; margin-top: 1.5vw;}
 
 #guess_box_level1{clear:both; left: -6vw; margin-top: 2vw;}
 
+/* 126 */
 
 
 
