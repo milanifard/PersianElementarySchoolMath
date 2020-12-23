@@ -1,0 +1,46 @@
+:root {
+    --color-dark-blue : #79c2d2;
+    --color-light-blue : #e1f4fd;
+    --color-very-dark-blue: #0c9ec3;
+    --color-dark-purple : #b41878;
+    --color-light-pink : #f8b0a0;
+    --color-veryLight-pink : #fdc6ab;
+    --color-dark-yellow : #fecc4e;
+    --color-title-purple: #9d86bd;
+}
+
+.right-border{
+
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double #79c2d2;
+    margin: 6vw 10vw 0 0;
+    border-left: none;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+
+.left-border{
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double #79c2d2;
+    margin: 6vw 0 0 10vw;
+    border-right: none;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+.background-style-right{
+    width: 100vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, #79c2d2, #79c2d2 1vw, #e1f4fd 0vw, #e1f4fd 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+    left: -10vw;
+}
