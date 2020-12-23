@@ -33,6 +33,13 @@
 
 }
 
+body{margin: 0;}
+
+/* In order to ignore input top-down btn */
+input[type='number'] {-moz-appearance:textfield;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+
 
 .right-border{
 
@@ -106,8 +113,8 @@
 
     padding: 0 2vw;
     position: absolute;
-    right: 35vw;
-    left: 35vw;
+    right: 33vw;
+    left: 33vw;
     top: -3.3vw;
 }
 
@@ -118,8 +125,8 @@
     color: var(--red_level2);
 
     position: absolute;
-    right: 34vw;
-    left: 34vw;
+    right: 32vw;
+    left: 32vw;
     top: -1.2vw;
 }
 
@@ -429,3 +436,81 @@
     bottom: -7vw;
     margin: auto;
 }
+
+
+
+/* From here, inline styles are supported */
+
+/* page 124 */
+#Q1{padding-top: 6vw; padding-right: 15vw; margin-top: 3vw;}
+
+#circle_Q1{float: left; margin-right: 15vw;}
+
+#Q1_sector1{transform: rotate(75deg) skew(60deg);}
+#Q1_sector2{transform: rotate(105deg) skew(60deg);}
+#Q1_sector3{transform: rotate(135deg) skew(60deg);}
+#Q1_sector4{transform: rotate(165deg) skew(60deg);}
+#Q1_sector5{transform: rotate(195deg) skew(60deg);}
+#Q1_sector6{transform: rotate(225deg) skew(60deg);}
+#Q1_sector7{transform: rotate(255deg) skew(60deg);}
+#Q1_sector8{transform: rotate(285deg) skew(60deg);}
+#Q1_sector9{transform: rotate(315deg) skew(60deg);}
+#Q1_sector10{transform: rotate(345deg) skew(60deg);}
+#Q1_sector11{transform: rotate(375deg) skew(60deg);}
+#Q1_sector12{transform: rotate(405deg) skew(60deg);}
+
+.color-picker-container{float: left; margin-left: -12vw;}
+
+#Q1_clock_img{width: 10vw; padding-left: 7vw; padding-top: 1vw;}
+#Q2{padding-top: 2vw;}
+
+.colored-td-yellow{background-color: var(--yellow_level3_border);}
+.colored-td-red{background-color: var(--red_level1);}
+.colored-td-blue{background-color: var(--blue_level1);}
+.colored-td-green{background-color: var(--green_level2);}
+
+#circle_Q2{float: left; margin-right: 15vw;}
+
+#Q2_sector1{transform: rotate(75deg) skew(60deg);}
+#Q2_sector2{transform: rotate(105deg) skew(60deg);}
+#Q2_sector3{transform: rotate(135deg) skew(60deg);}
+#Q2_sector4{transform: rotate(165deg) skew(60deg);}
+#Q2_sector5{transform: rotate(195deg) skew(60deg);}
+#Q2_sector6{transform: rotate(225deg) skew(60deg);}
+#Q2_sector7{transform: rotate(255deg) skew(60deg);}
+#Q2_sector8{transform: rotate(285deg) skew(60deg);}
+#Q2_sector9{transform: rotate(315deg) skew(60deg);}
+#Q2_sector10{transform: rotate(345deg) skew(60deg);}
+#Q2_sector11{transform: rotate(375deg) skew(60deg);}
+#Q2_sector12{transform: rotate(405deg) skew(60deg);}
+
+#Q2_book_img{width: 9vw; padding-left: 7vw; padding-top: 1vw;}
+
+#guess_box_Q{padding-top: 5vw; padding-right: 2vw;}
+
+.image-size-for-guess-box{width: 19vw;}
+
+#guess_box_items{float: right; margin-top: -18vw; margin-right: 10vw;}
+
+.radio-btn-style{width: 2vw; height: 2vw;}
+
+#guess_box_feedback{margin-right: 5vw; float: right; margin-top: -8vw;}
+
+.page-number-input{
+
+    background-color: var(--yellow_level4_guessbox);
+    border-radius: 2.5vw;
+    border: 0.9vw double white;
+
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+
+    padding: 0.1vw 0.5vw;
+    float: left;
+}
+
+#next_btn{float: left; margin-right: 1.5vw;}
+#pre_btn{float: left; margin-left: 1.5vw;}
+
+/* page 125 */

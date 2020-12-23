@@ -519,7 +519,11 @@ body {
 }
 
 .input-style2 {
-    margin-right: 3vw;
+    margin-right: 5vw;
+    width: 6vw;
+}
+
+.input-sty {
     width: 6vw;
 }
 
@@ -548,4 +552,8 @@ body {
 
 .input-st {
     margin-right: -1vw;
+}
+
+input-st2 {
+    margin-left: -4vw;
 }
