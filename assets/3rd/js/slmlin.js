@@ -21,10 +21,19 @@ var display_success = () => {
 
 }
 
+var check_splited_ = (event, splited_nums) => {
+    if (event.target.value.split(' ').length === splited_nums) {
+        event.target.style.background = 'rgb(141, 243, 128)'
+    } else {
+        event.target.style.background = 'rgb(250, 212, 108)'
+    }
+}
 
-var p84_q1 = (event) => {
-    console.log(event.target.value)
-    if (event.target.value === 'مربع') {
+var check_input_ = (event, check_values) => {
+    if (check_values.includes(event.target.value)) {
         display_success()
+        event.target.style.background = 'rgb(141, 243, 128)'
+    } else {
+        event.target.style.background = 'rgb(250, 212, 108)'
     }
 }

@@ -27,12 +27,14 @@
 
     --pink_level0: #fbdfeb;
     --pink_level1: #d47fa8;
+    --pink_level3: #b03776;
     --pink: #f287b6;
 
     --main_color: #47a758;
 
     --dynamic_rnd: 0;
     --dynamic_rnd_last: 0;
+
 }
 
 
@@ -198,11 +200,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "B Zar";
     font-size: 2vw;
     white-space: pre-wrap;
+
 }
 
 .questions-text-config {
     margin-right: 17vw;
-    margin-top: 8vw;
+    margin-top: 5vw;
 }
 
 .cube-numbers {
@@ -416,4 +419,69 @@ h1, h2, h3, h4, h5, h6 {
 .clearfix {
     clear: both;
     margin: 2vw 0;
+}
+
+.content-box{
+    width: 90%;
+    background: white;
+    margin: 3vw auto;
+    padding:0vw 3vw;
+    border: 1vw double;
+    border-color:var(--orange_level2_border);
+    border-radius: 2vw;
+    position: relative;
+}
+.page-topic{
+    margin-top: 1vw;
+    width: 100%;
+    height: 13vw;
+    float: right;
+    position: relative;
+}
+.page-title{
+    width: 18vw;
+    height: 5vw;
+    margin: 0 auto;
+    padding-top: .5vw;
+    background-color: var(--orange_level2_border);
+    border-style: double;
+    text-align: center;
+    font-size: 2vw;
+    color: black;
+    text-align: center;
+    top: -2.75vw;
+    position: absolute;
+    margin-right: 34%;
+    border-radius: 2vw;
+}
+
+
+.simple-table {
+    background-color: var(--pink_level0);
+    padding: 0.5vw;
+    border: 0.2vw solid var(--pink_level1);
+    border-radius: 3vw;
+}
+
+.simple-table table {
+    border-collapse: collapse;
+}
+
+.simple-table td {
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: "B Zar";
+    padding: 0.5vw 1.5vw;
+}
+
+.simple-table .bottom-border {
+    border-bottom: 0.3vw solid var(--pink_level3);
+}
+
+.simple-table .right-border {
+    border-right: 0.3vw solid var(--pink_level3);
+}
+
+.simple-table .top-border {
+    border-top: 0.3vw solid var(--pink_level3);
 }

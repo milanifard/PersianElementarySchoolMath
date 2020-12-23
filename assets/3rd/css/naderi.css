@@ -19,7 +19,7 @@ input[type=number] {
     --orange_level3: #e55726;
 
     --pink_level1: #fdebf3;
-    --pink_level2: #ffd4c2;
+    --pink_level2: #ffc9c2;
     --pink_level3: #b03776;
 
     --green-square: #47a758;
@@ -50,7 +50,7 @@ input[type=number] {
 
     --purple: #b09ac9;
 
-    --pink: #f287b6;
+    --pink: #e79abb;
 
     --dynamic_rnd: 0;
     --dynamic_rnd_last: 0;
@@ -87,10 +87,10 @@ input[type=number] {
 .background-style {
 
     width: 100vw;
-    height: 53vw;
+    height: 42vw;
     /* margin-top: 50vw; */
     background-image: repeating-linear-gradient(var(--pink_level2), var(--pink_level2) 1.5vw, var(--pink_level1) 0vw, var(--pink_level1) 2vw);
-    background-position: bottom;
+    /* background-position: bottom; */
     background-repeat: no-repeat;
 
     position: absolute;
@@ -98,21 +98,27 @@ input[type=number] {
     z-index: -1;
 }
 
-.activity_item .activity-cover {
+.activity-cover {
     width: 13vw;
     position: absolute;
+    /* right: -2.3vw;
+    top: 0.5vw;
+    margin-right: 5vw;
+    z-index: 2; */
+}
+#activity_cover_136{
     right: -2.3vw;
     top: 0.5vw;
     margin-right: 5vw;
     z-index: 2;
 }
-
-.activity_item .activity-title {
+.activity-title {
     background-color: var(--pink_level2);
     border-radius: 1.5vw;
 
     text-align: center;
-    font-family: Koodak;
+    font-family:BNazanin,'BNazanin';
+    /* font-family: Koodak; */
     font-size: 2.5vw;
     color: white;
 
@@ -120,10 +126,9 @@ input[type=number] {
     position: absolute;
     right: 3vw;
     top: 2.5vw;
-    z-index: 1;
+    /* z-index: 1; */
 
     margin-right: 3vw;
-    float: right;
 }
 
 .questions-number {
@@ -132,9 +137,9 @@ input[type=number] {
 .text {
     font-family:BNazanin,'BNazanin';
     /* font-family: BNazanin; */
-    font-size: 2vw;
+    font-size: x-large;
     direction: rtl;
-    white-space: pre-wrap;
+    /* white-space: pre-wrap; */
 }
 #little_boy_image {
     /* position: absolute; */
@@ -142,16 +147,25 @@ input[type=number] {
     width: 10vw;
     margin-left: 12vw;
     margin-top: -8vh;
-    margin-bottom: 2vh;
-    
+    margin-bottom: 2vh;  
 }
-#answer_line{
+#colored_pencil_image {
+    /* position: absolute; */
+    float: left;
+    width: 15vw;
+    /* margin-left: 1vw; */
+    margin-top: -10vh;
+    margin-bottom: 2vh;  
+}
+
+.answer_line{
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid rgb(81, 112, 197);
-    margin: 3em 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
     padding: 0;
+    
 }
 
 table, td, th {
@@ -160,6 +174,7 @@ table, td, th {
   }
   
 table {
+    /* font-family:Kodak ; */
     margin-top: 2vw;
     width: 100%;
     border-collapse: collapse;
@@ -187,4 +202,79 @@ table {
 }
 #content_136 #Q2_questions_content {
     clear: both;
+}
+
+
+.creative_container {
+    border: 0.3vw solid var(--pink);
+    border-radius: 3vw;
+    background-color: var(--orange_level0);
+
+    /* position: relative; */
+    margin-top: 1.5vw;
+    padding-left: 5vw;
+    padding-top: 1vw;
+    width: 99.1%;
+    height: 30vw;
+    margin-left: -1.5vw;
+    margin-bottom: 0.95vw;
+
+}
+
+.creative_title {
+    background-color: var(--pink);
+    border-top-left-radius: 1.5vw;
+    border-bottom-left-radius: 1.5vw;
+    border-right: 2vw solid var(--pink_level2);
+
+    text-align: center;
+    font-family:BNazanin,'BNazanin';
+    /* font-family: Koodak; */
+    font-size: 2.5vw;
+    color: white;
+    float: right;
+    z-index: 1;
+
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-top: 1vw;
+
+    position: relative;
+    /* position: left; */
+    right: -2vw;
+}
+
+.creative_content{
+    margin-top: 1vw;
+    margin-right: 13vw;
+    /* margin-block-start: auto; */
+    /* font-family: BNazanin, 'BNazanin'; */
+    
+}
+.page-number_right {
+    font-family:BNazanin,'BNazanin';
+    background-color: var(--pink_level2);
+    border-radius: 2.5vw;
+    border: 0.9vw double white;
+
+    text-align: center;
+    font-size: 2.1vw;
+    /* font-family: Koodak; */
+    color: white;
+
+    padding: 0 3vw;
+    position: absolute;
+    bottom: -0.5vw;
+    right: -5vw;
+}
+
+
+
+
+.showanswerbutton, .hideanswerbutton {
+    background-color: #6fa3f1!important;
+    position: relative;
+    width: 20%;
+    margin-left: 80%;
+    border-color: #104ed3;
 }

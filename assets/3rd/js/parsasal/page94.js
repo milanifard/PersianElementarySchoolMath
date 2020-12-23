@@ -99,21 +99,9 @@ function checkTamrinP94() {
 }
 
 
-(function ($) {
-    $(document).on('click', '.close', function () {
-        $(this).parent().fadeOut();
-    });
 
-
-})(jQuery);
 var clickedRectangleId;
 $(document).ready(function () {
-    // var ctx = document.getElementById('canvas').getContext('2d');
-    // var img = new Image();
-    // img.src = '/assets/3rd/images/parsasal/ruler-image.jpeg';
-    // img.onload = function() {
-    //   ctx.drawImage(img, 100, 100);
-    // };
     
 
 

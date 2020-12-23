@@ -35,7 +35,17 @@ body{
     position: relative;
     background-color: white;
 }
-
+.background-style-right{
+    width: 100vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, #79c2d2, #79c2d2 1vw, #e1f4fd 0vw, #e1f4fd 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+    left: -10vw;
+}
 .background-style{
     width: 100vw;
     height: 54.3vw;
@@ -47,7 +57,7 @@ body{
     z-index: -1;
 }
 
-.page-number{
+.page-numberr{
     background-color: #0c9ec3;
     border-radius: 2.5vw;
     border: 0.9vw double white;
@@ -691,4 +701,31 @@ a:hover {
 }
 #teextBox1{
     position: absolute; margin-left:15vw ;  rows:"10" ; cols:"30";
+}
+#Q1_containerprime{
+    margin-bottom: 15vw
+}
+#text24{
+    position: absolute; margin-left:38vw ; margin-top: -3vw;
+}
+#text25{
+    padding-top: 2vw; padding-right: 15vw;
+}
+#textBox19{
+    position: absolute; margin-left:53vw ; margin-top: -2em;
+}
+#text26{
+    position: absolute; margin-left:49vw ; margin-top: -3vw;
+}
+#text27{
+    padding-top: 6vw; padding-right: 15vw; margin-top: 3vw;
+}
+#candies{
+    float: left; width: 25vw; margin-top: 2vw; margin-left: 2vw ; border: 0.3vw solid #79c2d2; border-radius: 2vw;
+}
+#Q5_containerr{
+    margin-right: -7vw; margin-bottom: 10vw;
+}
+#Q11{
+    padding-top: 6vw; padding-right: 15vw; margin-top: 3vw;
 }
