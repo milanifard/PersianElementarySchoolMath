@@ -1,6 +1,7 @@
 :root{
 
     --light-pink:rgb(252,210,192);
+    --lighter-pink:rgb(252,230,211);
     --pink:rgb(253,199,171);
     --blue:rgb(92,182,206)
 }
@@ -106,9 +107,27 @@ span.question {
     background-color: white;
     z-index: 5;
 }
-.content {
+.main_right {
+    margin-left: -6vw;
+    margin-right: 7vw;
+    border-right: 0.8vw double var(--pink);
+    border-top: 0.7vw double var(--pink);
+    border-bottom: 0.7vw double var(--pink);
+    border-radius: 1vw;
+    position: relative;
+    background-color: white;
+    z-index: 5;
+}
+.content_left {
     margin-top: 7vw;
     margin-right: 17vw;
+    width: 70%;
+}
+.content_right {
+    position: relative;
+    right: 5vw;
+    margin-top: 7vw;
+    margin-left: 15vw;
     width: 70%;
 }
 p.question {
@@ -132,6 +151,15 @@ span.question {
     width: 12vw;
     height: 10vw;
 }
+.page_img_container{
+    width: 3vw;
+}
+.page_div{
+    position: relative;
+    right: -27vw;
+    top: 4.5vw;
+}
+
 div>img{
     width: 10vw;
     height: 10vw;
@@ -217,7 +245,7 @@ span>img{
 .page-number {
     /* substitute your color */
     z-index: 20;
-    background-color: var(--middle-green);
+    background-color: var(--pink);
     border-radius: 2em;
     width: 5.8em;
     color: white;
@@ -227,30 +255,10 @@ span>img{
     position: relative;
     display: flex;
     box-sizing: border-box;
-}
-
-.page-number input {
-    /* substitute your color */
-    background-color: var(--dark-green);
-    border: none;
-    width: 100%;
+    align-items: center;
     text-align: center;
-    font-size: 2vw;
-    color: white;
 }
 
-.page-number-button {
-    width: 3em;
-    display: flex;
-    color: white;
-    justify-content: center;
-}
-
-.page-number-button>a {
-    color: white;
-    font-size: 2.5em;
-    display: flex;
-}
 
 
 
@@ -268,4 +276,46 @@ span>img{
 
 .green_shadow {
     box-shadow: 0 6px 10px 0 rgba(205, 220, 57, 0.8);
+}
+.bottom_box {
+    width: 100%;
+    border-radius: 30px;
+    border: 3px solid var(--pink);
+    background-color: var(--lighter-pink);
+    padding-right: 4vw;
+    position: relative;
+    right: 2vw;
+}
+.bottom_box1 {
+    width: 70vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+.title_box {
+    background-color: var(--pink);
+    width: 9vw;
+    height: 3.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1vw;
+    border-radius: 10px;
+    font-size: 2vw;
+    color: white;
+    position: relative;
+    right: -3vw;
+    order: 3;
+}
+
+#box_img{
+    position: relative;
+    width: 20vw;
+    height: 15vw;
+    left: 10vw;
+}
+#q2_5{
+    height: 0.8vw;
+    position: relative;
+    top: 1vw;
+    right: 1vw;
 }
