@@ -192,7 +192,7 @@ function showAfarinModalAnimation(){
 function getNearestSegmentOnPath(path, point, points) {
     let minDistance = 99999;
     let minDistanceSegment = undefined;
-    for (var i = 0; i < points - 1; i++) {
+    for (var i = 0; i < points; i++) {
         var segment = path.segments[i];
         if (segment.point.getDistance(point) < minDistance) {
             minDistance = segment.point.getDistance(point)

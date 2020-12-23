@@ -8,173 +8,120 @@
     <title>ریاضی سوم دبستان - صفحه صد و هشت </title>
 </head>
 <body style="margin: 0;">
-<div>
+<div class="container">
     <div class="border-level-right">
         <div class="right-border-body">
             <div class="background-style"></div>
-
-            <div id="activity_item">
-                <img class="activity-image" src="assets/3rd/images/girl_and_teacher_activity.png" alt="activity_image"
-                     style="margin: 1vw 2vw 0 0;">
-                <div class="activity-text additional-style">تمرین</div>
-            </div>
-
-            <div id="Q1_container">
-                <div id="Q1" class="text-config questions-text-config"
-                     style="float: right; font-family: 'B Zar'; direction: rtl; font-size: 2vw;">
-                    <span style="font-family: 'B Zar'; font-size: 2vw; color: var(--orange_level1);">1-</span>
-                    در یک باغ 1143 درخت پرتقال و 185 <br>
-                    درخت نارنگی کاشته شده است.<br>
-                    این باغ چند درخت دارد؟
+            <div style="direction: rtl">
+                <div id="activity_item">
+                    <img class="activity-image" src="assets/3rd/images/kadkhoda/girl_and_teacher_activity.png"
+                         alt="activity_image"
+                         style="margin: 1vw 2vw 0 0;">
+                    <div class="activity-text additional-style">تمرین</div>
                 </div>
+                <div id="Q1_container" style="flex-direction: row">
+                    <div id="Q1" class="text-config"
+                         style="font-family: 'B Zar'; font-size: 2vw; margin:1vw 9vw 0 0;">
+                        <span style="font-family: 'B Zar'; font-size: 2vw; color: var(--orange_level1);">1-</span>
+                        در یک باغ 1143 درخت پرتقال و 185 <br>
+                        درخت نارنگی کاشته شده است.<br>
+                        این باغ چند درخت دارد؟
+                        <br> پاسخ:
+                        <input type="number" id="question-1" onChange="checkCorrectValue(this.id ,this.value ,19)" class="checkVal" style="margin-top: 1vw">
 
-                <div style="float: left">
-                    <img id="Q1_tree_img" src="assets/3rd/images/kadkhoda/tree.png" alt="tree_Q1"
-                         style="width: 25vw; padding-left: 5vw; padding-top: 1vw">
+                    </div>
+                    <div>
+                        <img id="Q1_tree_img" src="assets/3rd/images/kadkhoda/tree.png" alt="tree_Q1"
+                             style="width: 25vw; padding-left: 5vw; padding-top: 1vw">
+                    </div>
                 </div>
-
-                <div id="Q2"
-                     style="clear: both; float: right; font-family: 'B Zar'; direction: rtl; font-size: 2vw; margin-right: 4vw">
-                    <span style="font-family: 'B Zar'; font-size: 2vw; color: var(--orange_level1);">2-</span>
+                <div id="Q2" class="question-style">
+                    <span class="question-number">2-</span>
                     هاجر 1700 تومان و سارا 4350 تومان پول دارند. پول این دو نفر روی هم چقدر است؟
+                    <br> پاسخ:
+                    <input type="number" id="question-2" onChange="checkCorrectValue(this.id ,this.value ,19)" class="checkVal" style="margin-top: 1vw">
+
                 </div>
-                <br>
-                <div id="Q3"
-                     style="clear: both; float: right; font-family: 'B Zar'; direction: rtl; font-size: 2vw; margin-right: 4vw; margin-top: 4vw;margin-bottom: 3vw;">
-                    <span style="font-family: 'B Zar'; font-size: 2vw; color: var(--orange_level1);">3-</span>
+                <div id="Q3" class="question-style"
+                     style="margin-top: 4vw; margin-bottom: 3vw;">
+                    <span class="question-number">3-</span>
                     در یک شهر 3845 دانش آموز پسر و 3751 دانش آموز دختر درس می خوانند. این شهر چند دانش آموز دارد؟
+                    <br> پاسخ:
+                    <input type="number" id="question-3" onChange="checkCorrectValue(this.id ,this.value ,19)" class="checkVal" style="margin-top: 1vw">
+
                 </div>
-                <div id="Q4"
-                     style="clear: both; font-family: 'B Zar'; direction: rtl; font-size: 2vw; margin-right: 4vw; position: relative;">
-                    <span style="font-family: 'B Zar'; font-size: 2vw; color: var(--orange_level1);">4-</span>
+                <div id="Q4" class="question-style"
+                     style="">
+                    <span class="question-number">4-</span>
                     حاصل جمع ها را به دست آورید.
                     <div class="row-numbers">
                         <div class="numbers additional-style-number">
-                            <table class="columnOperation additional-style-table">
-                                <tr>
-                                    <td></td>
-                                    <td class="op1Tens">1</td>
-                                    <td class="op1Ones">3</td>
-                                    <td class="op1Ones">5</td>
-                                    <td class="op1Ones">7</td>
-                                </tr>
-                                <tr>
-                                    <td class="operand">+</td>
-                                    <td class="op2Tens">1</td>
-                                    <td class="op2Ones">3</td>
-                                    <td class="op2Ones">9</td>
-                                    <td class="op2Ones">1</td>
-                                </tr>
-                                <tr class="result">
-                                    <td colspan="3">
-                                        <input type="text" class="checkVal">
-                                    </td>
-                                </tr>
-                            </table>
+                        <span class="equation stacked">
+                            <span class="number">2333</span>
+                            <span class="operator">+</span>
+                            <span class="number">2244</span>
+                            <span class="equals">=</span>
+                            <input type="number" id="question-4" onChange="checkCorrectValue(this.id ,this.value ,19)" class="checkVal" style="margin-top: 1vw">
+                        </span>
                         </div>
                         <div class="numbers additional-style-number">
-                            <table class="columnOperation additional-style-table">
-                                <tr>
-                                    <td></td>
-                                    <td class="op1Tens">1</td>
-                                    <td class="op1Ones">3</td>
-                                    <td class="op1Ones">5</td>
-                                    <td class="op1Ones">7</td>
-                                </tr>
-                                <tr>
-                                    <td class="operand">+</td>
-                                    <td class="op2Tens">1</td>
-                                    <td class="op2Ones">3</td>
-                                    <td class="op2Ones">9</td>
-                                    <td class="op2Ones">1</td>
-                                </tr>
-                                <tr class="result">
-                                    <td colspan="3">
-                                        <input type="text" class="checkVal">
-                                    </td>
-                                </tr>
-                            </table>
+                        <span class="equation stacked">
+                            <span class="number">2333</span>
+                            <span class="operator">+</span>
+                            <span class="number">2244</span>
+                            <span class="equals">=</span>
+                            <input type="number" id="question-5" onChange="checkCorrectValue(this.id ,this.value ,19)" class="checkVal" style="margin-top: 1vw">
+                        </span>
                         </div>
                         <div class="numbers additional-style-number">
-                            <table class="columnOperation additional-style-table">
-                                <tr>
-                                    <td></td>
-                                    <td class="op1Tens">1</td>
-                                    <td class="op1Ones">3</td>
-                                    <td class="op1Ones">5</td>
-                                    <td class="op1Ones">7</td>
-                                </tr>
-                                <tr>
-                                    <td class="operand">+</td>
-                                    <td class="op2Tens">1</td>
-                                    <td class="op2Ones">3</td>
-                                    <td class="op2Ones">9</td>
-                                    <td class="op2Ones">1</td>
-                                </tr>
-                                <tr class="result">
-                                    <td colspan="3">
-                                        <input type="text" class="checkVal">
-                                    </td>
-                                </tr>
-                            </table>
+                        <span class="equation stacked">
+                            <span class="number">2333</span>
+                            <span class="operator">+</span>
+                            <span class="number">2244</span>
+                            <span class="equals">=</span>
+                            <input type="number" id="question-6" onChange="checkCorrectValue(this.id ,this.value ,19)" class="checkVal" style="margin-top: 1vw">
+                        </span>
                         </div>
                         <div class="numbers additional-style-number">
-                            <table class="columnOperation additional-style-table">
-                                <tr>
-                                    <td></td>
-                                    <td class="op1Tens">1</td>
-                                    <td class="op1Ones">3</td>
-                                    <td class="op1Ones">5</td>
-                                    <td class="op1Ones">7</td>
-                                </tr>
-                                <tr>
-                                    <td class="operand">+</td>
-                                    <td class="op2Tens">1</td>
-                                    <td class="op2Ones">3</td>
-                                    <td class="op2Ones">9</td>
-                                    <td class="op2Ones">1</td>
-                                </tr>
-                                <tr class="result">
-                                    <td colspan="3">
-                                        <input type="text" class="checkVal">
-                                    </td>
-                                </tr>
-                            </table>
+                        <span class="equation stacked">
+                            <span class="number">2333</span>
+                            <span class="operator">+</span>
+                            <span class="number">2244</span>
+                            <span class="equals">=</span>
+                            <input type="number" id="question-7" onChange="checkCorrectValue(this.id ,this.value ,19)" class="checkVal" style="margin-top: 1vw">
+                        </span>
                         </div>
                     </div>
                     <div class="activity-image disable-style">
                         <img src="assets/3rd/images/kadkhoda/shape-0.png" alt="activity_image" width="200px">
                     </div>
                 </div>
-            </div>
-
-
-            <div class="guess-box-level1" style="clear:both; direction: rtl; min-height: 450px;">
-                <div class="guess-box-text-right">کامل کن</div>
-                <div class="text-config additional-style-text-config">
-                    <p>
-                        محیط مستطيل‌ها را با نوشتن رابطه‌ي آن‌ها به دست آورید.
-                    </p>
-                </div>
-                <div class="guess-box-level2" style="display: flex; justify-content: left; margin-left: 7vw;">
-                    <img src="assets/3rd/images/kadkhoda/rect-3.png" style="width: 18vw;" alt="left_scissor">
-                    <img src="assets/3rd/images/kadkhoda/rect-4_preview.png" style="width: 25vw;" alt="right_scissor">
-                </div>
-                <div class="" style="text-align: center">
+                <div class="guess-box-level1">
+                    <div class="guess-box-text-right">کامل کن</div>
+                    <div class="text-config" style="margin-right: -1vw; margin-top:-5vw;">
+                        <p>
+                            محیط مستطيل‌ها را با نوشتن رابطه‌ي آن‌ها به دست آورید.
+                        </p>
+                    </div>
+                    <div class="guess-box-level2" style="display: flex; justify-content: left; margin-left: 7vw;">
+                        <img src="assets/3rd/images/kadkhoda/rect-3.png" style="width: 18vw;" alt="left_scissor">
+                        <img src="assets/3rd/images/kadkhoda/rect-4_preview.png" style="width: 25vw;"
+                             alt="right_scissor">
+                    </div>
+                    <div class="" style="text-align: center">
                 <span class="pull-left"> = عرض <span style="font-size: 2vw;">&#215;</span> 2 + طول <span
                         style="font-size: 2vw;">&#215;</span> 2 = محيط مستطيل</span>
-                    <input class="input-style creative-input-style pull-left">
-                    <div class="clearfix"></div>
-                    <span class="pull-left"> = محيط مستطيل</span>
-                    <input class="input-style creative-input-style pull-left">
+                        <input type="number" class="input-style creative-input-style pull-left" id="q5" onChange="checkCorrectValue(this.id ,this.value ,19)">
+                        <div class="clearfix"></div>
+                        <span class="pull-left"> = محيط مستطيل</span>
+                        <input class="input-style creative-input-style pull-left">
+                    </div>
                 </div>
+                <div class="page-number">108</div>
             </div>
-
-            <div class="page-number">108</div>
         </div>
     </div>
 </div>
-
 </body>
-
+<script src="assets/3rd/js/s-kadkhoda.js"></script>
 </html>

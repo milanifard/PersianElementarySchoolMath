@@ -1,0 +1,180 @@
+@font-face{
+    font-family: 'Zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Koodak';
+    src: url("../../fonts/KoodakBold.ttf");
+}
+*{
+    font-family: 'Zar';
+}
+
+/* all pages background*/
+input {
+    font-family: 'Koodak';
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.right-border{
+
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double #A088BA;
+    margin: 6vw 10vw 0 0;
+    border-left: none;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+
+.left-border{
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double #A088BA;
+    margin: 6vw 0 0 10vw;
+    border-right: none;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+
+.left-background-style{
+    width: 100vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, #A088BA, #A088BA 1vw, #CEB4D5 0vw, #CEB4D5 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+}
+.right-background-style{
+    width: 100vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, #A088BA, #A088BA 1vw, #CEB4D5 0vw, #CEB4D5 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+    left: -11vw;
+}
+
+/* page 58 style*/
+.title-fasl{
+    background-color: #A088BA;
+    border-radius: 1vw;
+    text-align: center;
+    font-family: 'Koodak';
+    font-size: 2.5vw;
+    color: white;
+    padding: 0.5vw 1.2vw;
+    position: absolute;
+    right: 37vw;
+    left: 37vw;
+    top: -2.8vw;
+}
+
+.line-title-background{
+    height: 1vw;
+    background-color: #6d0033;
+    color: #6d0033;
+    border-style: solid;
+    position: absolute;
+    right: 36vw;
+    left: 36vw;
+    top: -1.2vw;
+}
+.page{
+    margin-top: 2vw;
+}
+
+.farhang-title{
+    background-color: #A088BA;
+    border-radius: 1.1vw 0 0 1.1vw;
+    text-align: right;
+    font-family: 'Koodak';
+    font-size: 2.25vw;
+    color: black;
+
+    padding: 0 5vw 0 3vw;
+    right: 8vw;
+    top: 2.5vw;
+    z-index: 1;
+}
+
+.Question{
+    text-align: right;
+
+    font-family: 'Zar';
+    font-size: 2vw;
+    color: black;
+    margin-right: 7vw; 
+    margin-bottom: 5vw; 
+    white-space: pre-wrap;
+ 
+}
+
+/* pagination*/
+
+.pagination-container {
+    direction: rtl;
+    /* font-size: 24px; */
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 5vw;
+    margin-top: 43.6vw;
+    /* to adjust page changer position , adjust position of this element */
+    
+}
+
+.page-number {
+    /* substitute your color */
+    background-color:#A088BA;
+    border-radius: 2vw;
+    width: 10vw;
+    color: white;
+    border: 0.6vw double white;
+    /* Koodak font should be imported*/
+    font-family: 'Koodak';
+    padding: 0 1.1vw;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.page-number input {
+    /* substitute your color */
+    background-color: #A088BA;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2.35vw;
+    color: white;
+}
+
+.page-number-button {
+    width: 5vw;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.page-number-button > a {
+    color: white;
+    font-size: 4.5vw;
+    display: flex;
+}
