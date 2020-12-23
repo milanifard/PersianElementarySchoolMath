@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/KheirKhah.css">
+    <link rel="stylesheet" href="./assets/3rd/css/Ansari.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="./assets/3rd/js/KheirKhah.js"></script>
 
@@ -17,7 +19,7 @@
             </div> -->
         </div>
         <div class = "paperCont" id ="right">
-            <p class="act" >حل مسئله</p>
+            <h5 class="act" >حل مسئله</h5>
             
             <div  class="quest">
                 <div style = "  text-align: justify;
@@ -88,13 +90,21 @@
             <div class = "clear2"></div>
 
             <div  class="quest">
+                
                 <div style = "  text-align: justify;
                                 text-justify: inter-word;">
                     <span style= "color: #C47898;">۳-</span>
                     <span>
                         عددی را به ٥ اضافه میکنیم. از حاصل، ٥ تا کم میکنیم. چه عددی به دست می آید؟ چرا؟    
                     </span>
-                    <input id= "reason" placeholder="توضیح دهید .">
+                    <form> 
+                        <select id = "checklist" style=" border : 2px solid #C47898; ">
+                            <option >نمی توان تعین کرد</option>
+                            <option value="correct"> همان عدد زیرا با اضافه کردن ۵تا به عددی و سپس کم کردن ۵ تا از ان، همان عدد بدست میاید</option>
+                            <option >پنج عدد بیشتر از همان عدد زیرا با اضافه کردن ۵تا به عددی و کم کردن ۵ تا از ان همان عدد به علاوه ۵ بدست میاید</option>
+                            <option >پنج عدد کم از همان عدد زیرا با اضافه کردن ۵تا به عددی و کم کردن ۵ تا از ان همان عدد منهای ۵ بدست میاید</option>
+                        </select>
+                      </form>
                 </div>
             </div>
             <div class = "clear"></div>

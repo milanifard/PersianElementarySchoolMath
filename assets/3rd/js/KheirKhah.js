@@ -9,13 +9,14 @@ function p62ques1() {
   }
 
   function p62ques3() {
-    check("reason",'همان عدد')
+    check("checklist","correct")
     x2 = document.getElementById("p62ques3_2_b").value;
     x3 = document.getElementById("p62ques3_3_b").value;
+    // if()
     check("p62ques3_2_a",x2)
     check("p62ques3_3_a",x3)
   }
-
+  
 
   function p63ques1() {
     check("p63ques1_1_a",4)
@@ -47,7 +48,8 @@ function p62ques1() {
 
  function check(id,c){
   x = document.getElementById(id).value;
-  if (x == c) {
+  console.log(x)
+  if ((x == c) && (x!='')) {
       console.log("ok");
       correct(id);
     } else {
