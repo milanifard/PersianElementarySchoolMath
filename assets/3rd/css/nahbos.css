@@ -36,9 +36,9 @@
 body{margin: 0;}
 
 /* In order to ignore input top-down btn */
-input[type='number'] {-moz-appearance:textfield;}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {-webkit-appearance: none;}
+.input-1[type='number'] {-moz-appearance:textfield;}
+.input-2::-webkit-outer-spin-button,
+.input-3::-webkit-inner-spin-button {-webkit-appearance: none;}
 
 
 .right-border{
@@ -267,7 +267,6 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     border-radius: 2vw;
     position: relative;
     margin-top: 0.5vw;
-
 }
 
 .shaking-animation {
@@ -496,6 +495,97 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
 
 #guess_box_feedback{margin-right: 5vw; float: right; margin-top: -8vw;}
 
+.radio-container{height: 4vw;
+}
+/* page 125 */
+
+#Q1_fun_far{float: right; margin: 3vw 0 0 25vw; position:absolute; color: var(--red_level2);}
+
+.page-number-left{left: -5vw; right: auto;}
+.background-style-margin{left: -10vw;}
+
+#activity_img{margin-right: 5vw;}
+#activity_txt{margin-right: 3vw; float: right;}
+
+#Q1_125{padding-top: 6vw; padding-right: 17vw; margin-top: 3vw; float: right;}
+
+#circle_Q1_125{float: left; margin-top: 5vw; border: 2px solid black; animation-fill-mode: forwards;}
+
+#Q1_ans_circle{float: left; margin-left: -3vw;}
+
+#Q1_sector1_125{transform: rotate(90deg); background-color: var(--red_level3); border: 1px solid black;}
+#Q1_sector2_125{transform: rotate(180deg); background-color: var(--green_level4); border: 1px solid black;}
+#Q1_sector3_125{transform: rotate(270deg); background-color: var(--red_level3); border: 1px solid black;}
+#Q1_sector4_125{transform: rotate(360deg); background-color: var(--green_level4); border: 1px solid black;}
+
+.clock-hand-style{position:absolute; margin-left: 16.4vw; margin-top: 9vw; transform: rotate(-45deg);}
+
+#Q1_pencil{width: 12vw; margin-left: 3vw; margin-top: 2vw;}
+#Q1_pencil_container{clear:both; float: left;}
+
+#Q1_table{padding-top: 3vw; float: left;}
+
+.simple-td-orange{background-color: var(--orange_level1);}
+
+.color-picker-td-red{float: left;}
+.color-picker-td-green{float: left; margin-left: 0.5vw; margin-right: -2vw;}
+
+#Q1_continue1{padding-right: 8vw; float: top;}
+.Q1-continue{padding-right: 8vw;; margin-top: 0; float: right;}
+.Q1-input-parts{width: 5vw; font-size: 1.8vw; float: right;}
+
+#divider{float: right; font-size: 5vw; margin-top: -2.3vw;}
+
+#Q1_ans_sector1{transform: rotate(90deg) skew(50deg);}
+#Q1_ans_sector2{transform: rotate(126deg) skew(50deg);}
+#Q1_ans_sector3{transform: rotate(162deg) skew(50deg);}
+#Q1_ans_sector4{transform: rotate(198deg) skew(50deg);}
+#Q1_ans_sector5{transform: rotate(234deg) skew(50deg);}
+#Q1_ans_sector6{transform: rotate(270deg) skew(50deg);}
+#Q1_ans_sector7{transform: rotate(304deg) skew(50deg);}
+#Q1_ans_sector8{transform: rotate(342deg) skew(50deg);}
+#Q1_ans_sector9{transform: rotate(378deg) skew(50deg);}
+#Q1_ans_sector10{transform: rotate(414deg) skew(53deg);}
+
+.color-picker-container-2d{float: left; margin-left: 3vw; margin-top: 5vw;}
+
+#Q1_feedback{clear: both; float: bottom; margin-left: 10vw; padding-top: 2vw; padding-bottom: 2vw;}
+
+#Q2_125{padding-right: 8vw;}
+
+#Q2_floats{float: left; margin-left: -3vw;}
+
+#Q2_ans_sector1{transform: rotate(90deg) skew(50deg);}
+#Q2_ans_sector2{transform: rotate(126deg) skew(50deg);}
+#Q2_ans_sector3{transform: rotate(162deg) skew(50deg);}
+#Q2_ans_sector4{transform: rotate(198deg) skew(50deg);}
+#Q2_ans_sector5{transform: rotate(234deg) skew(50deg);}
+#Q2_ans_sector6{transform: rotate(270deg) skew(50deg);}
+#Q2_ans_sector7{transform: rotate(304deg) skew(50deg);}
+#Q2_ans_sector8{transform: rotate(342deg) skew(50deg);}
+#Q2_ans_sector9{transform: rotate(378deg) skew(50deg);}
+#Q2_ans_sector10{transform: rotate(414deg) skew(53deg);}
+
+#Q2_feedback{clear: both; float: bottom; margin-left: 10vw; padding-top: 2vw; padding-bottom: 2vw; width: 24vw;}
+
+#table{width: 30vw; margin-left: 0;}
+
+.Q2-red-blue-input{width: 8vw; font-size: 1.8vw;}
+
+.Q2-img-confige{width: 11vw; margin-top: 7vw; float: top;}
+
+#red_pencil{width: 11vw; margin-top: 7vw;}
+#blue_pencil{width: 11vw; margin-top: 1.5vw;}
+
+#guess_box_level1{clear:both; left: -6vw; margin-top: 2vw;}
+
+
+
+
+
+
+
+
 .page-number-input{
 
     background-color: var(--yellow_level4_guessbox);
@@ -513,4 +603,3 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
 #next_btn{float: left; margin-right: 1.5vw;}
 #pre_btn{float: left; margin-left: 1.5vw;}
 
-/* page 125 */
