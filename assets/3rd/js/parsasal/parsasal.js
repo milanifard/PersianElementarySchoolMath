@@ -1,4 +1,6 @@
-jQuery.fn.exists = function(){ return this.length > 0; }
+jQuery.fn.exists = function () {
+    return this.length > 0;
+}
 
 
 // go top button
@@ -106,10 +108,10 @@ function createNewMessageBox(text, type) {
     if (type === "warn") {
         iconClass = "fa-exclamation-circle"
         container.classList.add("warn-message")
-    } else if (type === "info ") {
+    } else if (type === "info") {
         iconClass = "fa-info-circle"
         container.classList.add("info-message")
-    }else if (type === "success") {
+    } else if (type === "success") {
         iconClass = "fa-check"
         container.classList.add("success-message")
     }
@@ -140,35 +142,45 @@ function createNewMessageBox(text, type) {
 }
 
 
-function showSuccessMessageOnMasale(masaleChildNodeId){
+function showSuccessMessageOnMasale(masaleChildNodeSelector) {
 
-    $(masaleChildNodeId).parents(".masale").find(".warn-message").remove()
-    if(!$(masaleChildNodeId).parents(".masale").find(".success-message").exists()){
+    $(masaleChildNodeSelector).parents(".masale").find(".warn-message").remove()
+    if (!$(masaleChildNodeSelector).parents(".masale").find(".success-message").exists()) {
 
-        $(masaleChildNodeId).parents(".masale").append(getTrueAnswersMessageBox())
-        $(masaleChildNodeId).parents(".masale").find(".success-message").css("display", "flex")
+        $(masaleChildNodeSelector).parents(".masale").append(getTrueAnswersMessageBox())
+        $(masaleChildNodeSelector).parents(".masale").find(".success-message").css("display", "flex")
             .hide().fadeIn();
     }
-    
+
 }
 
-function showWarningMessageOnMasale(masaleChildNodeId){
+function showWarningMessageOnMasale(masaleChildNodeSelector , messageText= "بعضی پاسخ هات درست نبود، دوباره تلاش کن" ) {
 
-    if(!$(masaleChildNodeId).parents(".masale").find(".warn-message").exists()){
+    if (!$(masaleChildNodeSelector).parents(".masale").find(".warn-message").exists()) {
 
-        $(masaleChildNodeId).parents(".masale").append(getWrongAnswerMessageBox())
-    $(masaleChildNodeId).parents(".masale").find(".warn-message").css("display", "flex")
-        .hide().fadeIn();
+        $(masaleChildNodeSelector).parents(".masale").append(getWrongAnswerMessageBox(messageText))
+        $(masaleChildNodeSelector).parents(".masale").find(".warn-message").css("display", "flex")
+            .hide().fadeIn();
     }
-    
-    
-}
-function getWrongAnswerMessageBox() {
 
-    return createNewMessageBox("بعضی پاسخ هات درست نبود، دوباره تلاش کن", "warn");
 }
 
-function getTrueAnswersMessageBox(){
+function showInfoMessageOnMasale(masaleChildNodeSelector, messageText) {
+    if (!$(masaleChildNodeSelector).parents(".masale").find(".info-message").exists()) {
+
+        $(masaleChildNodeSelector).parents(".masale").append(createNewMessageBox(messageText , "info"))
+        $(masaleChildNodeSelector).parents(".masale").find(".info-message").css("display", "flex")
+            .hide().fadeIn();
+    }
+
+}
+
+function getWrongAnswerMessageBox(messageText ) {
+
+    return createNewMessageBox(messageText, "warn");
+}
+
+function getTrueAnswersMessageBox() {
     return createNewMessageBox("آفرین ! پاسخ این بخش درست بود", "success");
 }
 $(document).ready(function () {
@@ -182,9 +194,11 @@ $(document).ready(function () {
     })
 });
 
-function showAfarinModalAnimation(){
+function showAfarinModalAnimation() {
     modal.className = "open-modal";
-    setTimeout(function(){  modal.className = "close-modal";}, 3000);
+    setTimeout(function () {
+        modal.className = "close-modal";
+    }, 3000);
 }
 
 

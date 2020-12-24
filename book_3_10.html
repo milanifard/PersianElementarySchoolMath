@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="./assets/3rd/css/eftekharii.css">
     <title>ریاضی سوم دبستان - صفحه ده</title>
 </head>
-<body>
-
+<body onload="setPageNumber(10)">
 <div class="main">
     <div class="content-box">
         <div class="page-title">شمارش چندتا چندتا</div>
@@ -157,7 +156,7 @@
 
                 </div>
                 <span class="feedback" id="feedback1_3"></span>
-                <input class="submit submit-half-page" type="submit" value="ثبت"  id="submit1_3"
+                <input class="submit submit-half-page" type="submit" value="ثبت" id="submit1_3"
                        onclick="checkAnswer1_3()">
             </div>
         </div>
@@ -169,7 +168,7 @@
         </p>
         <div class="container">
             <div class="half-page">
-                <div class="grid-container gridcontainer1_4" >
+                <div class="grid-container gridcontainer1_4">
                     <div class="grid-item grid-item-orange"></div>
                     <div class="grid-item grid-item-orange"></div>
                     <div class="grid-item grid-item-orange"></div>
@@ -193,7 +192,7 @@
                     <span>=</span>
                     <input id="inp4_4" class="input-style input-small-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input  id="inp4_3" class="input-style input-small-style" type="text" onkeypress="setTextBlack(id)">
+                    <input id="inp4_3" class="input-style input-small-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
                     <input id="inp4_2" class="input-style input-small-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
@@ -330,18 +329,20 @@
                 <input class="submit submit-half-page" type="submit" value="ثبت" id="submit1_7"
                        onclick="checkAnswer1_7()">
             </div>
+            <div class="clearfix"></div>
+            <div class="page-navigator">
+                <a href="book_3_9.html" class="change-page">
+                    <
+                </a>
+                <input id="page_number" class="page-number" onkeyup="page_changer(id)">
+                <a href="book_3_11.html" class="change-page">
+                    >
+                </a>
+            </div>
+            <div class="clearfix"></div>
         </div>
-
         <div class="clearfix"></div>
-        <div class="page-navigator">
-            <div class="previous-page">
-                <a href="book_3_9.html">< صفحه قبل</a>
-            </div>
-            <div class="next-page">
-                <a href="book_3_11.html">صفحه بعد ></a>
-            </div>
-        </div>
-        <div class="page-number">10</div>
+
     </div>
 
 </div>

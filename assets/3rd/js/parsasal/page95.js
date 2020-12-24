@@ -31,7 +31,16 @@ function checkTamrin95Answers() {
 
     }
 
-    if(!hasWrongAnswer){
+    let masale6Selected = $("#masale6-select").children("option:selected").val();
+    if (masale6Selected === "no") {
+        hasWrongAnswer = true
+        showWarningMessageOnMasale("#masale6-select")
+
+    } else if (masale6Selected === "yes") {
+        console.log("showing info message");
+        showInfoMessageOnMasale("#masale6-select", "بله دقیق تر می‌شود، زیرا هرچه تعداد پاره خط ها بیشتر شود، محیط چند ضلعی به محیط دایره نزدیک تر می‌شود.")
+    }
+    if (!hasWrongAnswer) {
         showAfarinModalAnimation();
     }
 

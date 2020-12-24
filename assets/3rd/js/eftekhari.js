@@ -346,4 +346,127 @@ function checkAnswer2_9() {
     }
 }
 
+//page 12 functions-----------------------------------------------------------------------------------------------------
+function checkAnswer3_1() {
+    setValueColor("inp17_1",700);
+    setValueColor("inp17_2",200);
+    setValueColor("inp17_3",200);
+
+    if($("inp17_1").value == 700 && $("inp17_2").value == 200 && $("inp17_3").value == 200){
+        trueAnswerlabel("feedback3_1");
+        $("submit3_1").style.backgroundColor = "var(--main_color)";
+    }
+    else{
+        falseAnswerlabel("feedback3_1");
+        $("submit3_1").style.backgroundColor = "red";
+    }
+}
+function checkAnswer3_2() {
+    setValueColor("inp18_1",750);
+    setValueColor("inp18_2",100);
+    setValueColor("inp18_3",100);
+
+    if($("inp18_1").value == 750 && $("inp18_2").value == 100 && $("inp18_3").value == 100){
+        trueAnswerlabel("feedback3_2");
+        $("submit3_2").style.backgroundColor = "var(--main_color)";
+    }
+    else{
+        falseAnswerlabel("feedback3_2");
+        $("submit3_2").style.backgroundColor = "red";
+    }
+}
+function checkAnswer3_3() {
+    setValueColor("inp19_1",52);
+    setValueColor("inp19_2",65);
+    setValueColor("inp19_3",78);
+
+    if($("inp19_1").value == 52 && $("inp19_2").value == 65 && $("inp19_3").value == 78){
+        trueAnswerlabel("feedback3_3");
+        $("submit3_3").style.backgroundColor = "var(--main_color)";
+    }
+    else{
+        falseAnswerlabel("feedback3_3");
+        $("submit3_3").style.backgroundColor = "red";
+    }
+}
+function checkAnswer3_4() {
+    setValueColor("inp20_1",36);
+    setValueColor("inp20_2",45);
+    setValueColor("inp20_3",54);
+    setValueColor("inp20_4",9);
+    setValueColor("inp20_5",9);
+
+    if($("inp20_1").value == 36 && $("inp20_2").value == 45 && $("inp20_3").value == 54 && $("inp20_4").value == 9 && $("inp20_5").value == 9){
+        trueAnswerlabel("feedback3_4");
+        $("submit3_4").style.backgroundColor = "var(--main_color)";
+    }
+    else{
+        falseAnswerlabel("feedback3_4");
+        $("submit3_4").style.backgroundColor = "red";
+    }
+}
+function checkAnswer3_5() {
+    setValueColor("inp21_1",45);
+    setValueColor("inp21_2",56);
+    setValueColor("inp21_3",67);
+    setValueColor("inp21_4",11);
+    setValueColor("inp21_5",11);
+
+    if($("inp21_1").value == 45 && $("inp21_2").value == 56 && $("inp21_3").value == 67 && $("inp21_4").value == 11 && $("inp21_5").value == 11){
+        trueAnswerlabel("feedback3_5");
+        $("submit3_5").style.backgroundColor = "var(--main_color)";
+    }
+    else{
+        falseAnswerlabel("feedback3_5");
+        $("submit3_5").style.backgroundColor = "red";
+    }
+}
+function checkAnswer3_6() {
+    setValueColor("inp22_1",8);
+    setValueColor("inp22_2",15);
+    setValueColor("inp22_3",22);
+    setValueColor("inp22_4",29);
+
+    if($("inp22_1").value == 8 && $("inp22_2").value == 15 && $("inp22_3").value == 22 && $("inp22_4").value == 29){
+        trueAnswerlabel("feedback3_6");
+        $("submit3_6").style.backgroundColor = "var(--main_color)";
+    }
+    else{
+        falseAnswerlabel("feedback3_6");
+        $("submit3_6").style.backgroundColor = "red";
+    }
+}
+function checkAnswer_creative(input,label,tvalue) {
+    setValueColor(input,tvalue);
+    if($(input) .value == tvalue){
+        trueAnswerlabel(label);
+    }
+    else{
+        falseAnswerlabel(label);
+    }
+
+}
+$("cb_true").addEventListener("click", checkboxtrue);
+function checkboxtrue() {
+    $("cb_false").checked = false;
+    trueAnswerlabel("feedback4_5");
+}
+$("cb_false").addEventListener("click", checkboxfalse);
+function checkboxfalse() {
+    $("cb_true").checked = false;
+    falseAnswerlabel("feedback4_5");
+}
+
+//page navigator -------------------------------------------------------------------------------------------------------
+function setPageNumber(number) {
+    $("page_number").value = number;
+}
+function page_changer(id){
+    if (event["keyCode"] === 13) {
+        var url = "book_3_" + $(id).value + ".html";
+        window.location.replace(url);
+    }
+}
+
+
 

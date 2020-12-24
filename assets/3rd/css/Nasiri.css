@@ -1,10 +1,30 @@
 :root{
-
     --light-pink:rgb(252,210,192);
     --lighter-pink:rgb(252,230,211);
     --pink:rgb(253,199,171);
-    --blue:rgb(92,182,206)
+    --blue:rgb(92,182,206);
+    --light-blue:rgb(198,234,251);
+    --lime:rgb(231,241,205);
 }
+
+@font-face{
+    font-family: 'Zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Koodak';
+    src: url("../../fonts/KoodakBold.ttf");
+}
+*{
+    font-family: 'Zar';
+}
+
+/* all pages background*/
+input {
+    font-family: 'Koodak';
+}
+
 p,
 h5,
 span {
@@ -39,6 +59,7 @@ span.question {
     justify-content: flex-end;
 }
 
+
 .flex_between {
     justify-content: space-between;
 }
@@ -50,6 +71,9 @@ span.question {
 }
 .flex_close{
     justify-content: space-around;
+}
+.flex_rev_row{
+    flex-flow: row-reverse;
 }
 .main_title {
     background-color: var(--pink);
@@ -199,7 +223,7 @@ span>img{
     background: var(--pink);
     color: black;
     border-radius: 2px;
-    padding: 0.6vw 1vw;
+    padding: 0.3vw 1vw;
 }
 
 .btn--primary:hover {
@@ -216,6 +240,7 @@ span>img{
 }
 .answer_field {
     width: 2.5vw;
+    height: 1vw;
     background: #fff;
     color: #424242;
     font-size: 0.8vw;
@@ -225,42 +250,70 @@ span>img{
 }
 .radio_btn{
     width: 1.5vw;
+    color: red;
+    font-size: 1vw;
 }
 
 
-/* page number box */
+/* pagination*/
 
 .pagination-container {
     direction: rtl;
-    font-size: 24px;
+    /* font-size: 24px; */
     justify-content: center;
     text-align: center;
     display: flex;
     align-items: center;
     overflow: visible;
-    height: 3em;
+    height: 5vw;
     /* to adjust page changer position , adjust position of this element */
+    position: relative;
+    top: 6vw;
+
 }
 
 .page-number {
     /* substitute your color */
-    z-index: 20;
-    background-color: var(--pink);
-    border-radius: 2em;
-    width: 5.8em;
+    background-color:var(--pink);
+    border-radius: 2vw;
+    width: 10vw;
     color: white;
-    border: 0.35em double white;
-    /* font-family: Koodak; */
-    padding: 0 1.1em;
+    border: 0.6vw double white;
+    /* Koodak font should be imported*/
+    font-family: 'Koodak';
+    padding: 0 1.1vw;
     position: relative;
     display: flex;
     box-sizing: border-box;
-    align-items: center;
+
+}
+
+.page-number input {
+    /* substitute your color */
+    background-color: var(--pink);
+    border: none;
+    width: 100%;
     text-align: center;
+    font-size: 2.35vw;
+    color: white;
+}
+
+.page-number-button {
+    width: 5vw;
+    display: flex;
+    color: black;
+    justify-content: center;
+}
+
+.page-number-button > a {
+    color: black;
+    font-size: 4.5vw;
+    display: flex;
 }
 
 
-
+.normal_shadow_circle{
+}
 
 .normal_shadow {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -275,13 +328,31 @@ span>img{
 }
 
 .green_shadow {
-    box-shadow: 0 6px 10px 0 rgba(205, 220, 57, 0.8);
+    box-shadow: 0 6px 10px 0 rgba(57, 220, 57, 0.8);
 }
 .bottom_box {
     width: 100%;
     border-radius: 30px;
     border: 3px solid var(--pink);
     background-color: var(--lighter-pink);
+    padding-right: 4vw;
+    position: relative;
+    right: 2vw;
+}
+.blue_box {
+    width: 100%;
+    border-radius: 30px;
+    border: 3px solid var(--light-blue);
+    background-color: var(--light-blue);
+    padding-right: 4vw;
+    position: relative;
+    right: 2vw;
+}
+.lime_box {
+    width: 100%;
+    border-radius: 30px;
+    border: 3px solid var(--lime);
+    background-color: var(--lime);
     padding-right: 4vw;
     position: relative;
     right: 2vw;
@@ -306,16 +377,46 @@ span>img{
     right: -3vw;
     order: 3;
 }
-
+.page_three_q{
+    position: relative;
+    right: -10vw;
+}
+.left_side_btn{
+    margin-right: 3vw;
+}
 #box_img{
     position: relative;
     width: 20vw;
     height: 15vw;
     left: 10vw;
 }
-#q2_5{
-    height: 0.8vw;
+#frog_img{
     position: relative;
-    top: 1vw;
-    right: 1vw;
+    width: 15vw;
+    height: 15vw;
+    margin-left: -10vw;
+    margin-right: 3vw;
+}
+#clock_img{
+    position: relative;
+    width: 12vw;
+    height: 15vw;
+    margin-right: 6vw;
+    left: -18vw;
+}
+
+#tri_img{
+    position: relative;
+    margin-right: 6vw;
+    left: -18vw;
+    top: -2vw;
+}
+#tile_img{
+    width: 3.4vw;
+    height: 1.7vw;
+}
+
+#check_img{
+    width: 30vw;
+    height: 20vw;
 }

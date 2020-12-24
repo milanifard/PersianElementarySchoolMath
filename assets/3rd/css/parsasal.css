@@ -9132,14 +9132,14 @@ body {
 
 @media (min-width: 992px) {
   .container-full {
-    width: 80% !important;
+    width: 90% !important;
     margin: auto;
   }
 }
 
 @media (min-width: 1200px) {
   .container-full {
-    width: 70% !important;
+    width: 80% !important;
     margin: auto;
   }
 }
@@ -9361,6 +9361,10 @@ hr {
   font-size: 30px;
 }
 
+#triangles_explain_input {
+  min-height: 5em;
+}
+
 .hover-glow:hover {
   border-color: #66afe9;
   -webkit-box-shadow: 0 0 8px skyblue;
@@ -9432,6 +9436,10 @@ canvas[resize] {
   height: 700px;
   border: 2px solid black;
   border-radius: 10px;
+}
+
+#canvas {
+  margin-top: 50px;
 }
 
 /* Reset Select */

@@ -393,7 +393,7 @@ body {
     padding-right: 7vw;
     padding-left: 15vw;
     margin-left: -9vw;
-    margin-top: -7vw;
+    margin-top: 2vw;
 }
 
 .draw1 {
@@ -567,6 +567,10 @@ input-st2 {
     width: 10vw;
 }
 
-.checkbox1 {
-    margin-right: 9vw;
+.radiobox {
+    margin-right: 8vw;
+}
+
+.radioItems {
+    margin-top: -10vw;
 }

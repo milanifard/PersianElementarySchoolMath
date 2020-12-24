@@ -34,6 +34,10 @@
 
 }
 /*-----------------------------------*/
+@font-face {
+    font-family: 'zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
 
 .right-border{
 
@@ -140,6 +144,8 @@
     position: relative;
     padding: 1.5vw;
     margin: 18vw 1.5vw 5vw 7vw;
+
+    font-family: ZAR;
 }
 
 .hint-box{
@@ -201,18 +207,7 @@
     left: 35vw;
     top: -2.1vw;
 }
-.that-ridiculous-red-parts-in-title{
-    height: 1vw;
 
-    background-color: #34b7eb;
-    color: #34b7eb;
-    border-style: solid;
-
-    position: absolute;
-    right: 34.5vw;
-    left: 34.5vw;
-    top: -1vw;
-}
 
 
 .previous-page{
@@ -256,8 +251,7 @@
     float: left  ;
     width: 20vw;
     height: 18vw ;
-
-
+    font-family: ZAR;
 
 }
 
@@ -267,7 +261,6 @@
     width: 5vw ;
     height: 6vw ;
     border-right: solid #f9c6a9 0.3vw;
-
 
 }
 .divide-right-top{
@@ -286,20 +279,34 @@
     margin-top: 0.5vw;
     margin-right: 3vw;
     font-size: 1.5vw;
+    font-family: ZAR;
 }
 
+.correct-ans {
+    position: relative;
+    border: 3px solid green;
+    outline: none;
+}
+
+.wrong-ans {
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+    border: 1px solid red;
+    outline: none;
+}
+
+@keyframes shake {
+    0% {
+        left: -5px;
+    }
+    100% {
+        right: -5px;
+    }
+}
 /*-----------------------------------*/
 
 
 
 
-.guess-box-level2{
-    background-color: white;
-    border: 0.3vw solid var(--green_level1);
-    border-radius: 4vw;
 
-    position: relative;
-    padding: 1.5vw;
-    margin-top: 2vw;
-    margin-right: 30vw;
-}
