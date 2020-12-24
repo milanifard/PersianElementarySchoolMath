@@ -25,6 +25,17 @@
 input {
     font-family: 'Koodak';
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
 
 p,
 h5,
@@ -32,8 +43,9 @@ span {
     font-family: 'zar';
     font-size: 1.5vw;
 }
+
 h5{
-    font-size: 1.5vw;
+    font-size: 2.7vw;
 }
 p.question {
     font-size: 1.5vw;
