@@ -273,9 +273,9 @@ function correct_p135_q_Shapes() {
   if (q1.value.length == 0) {
       q1.classList.add("yellow_shadow");
   } else if (q1.value == '2') {
-      q.classList.add("green_shadow");
+      q1.classList.add("green_shadow");
   } else {
-      q.classList.add("red_shadow");
+      q1.classList.add("red_shadow");
   }
 
   if (q6.value.length == 0) {
@@ -305,13 +305,15 @@ if (q8.value.length == 0) {
 if (q2.value.length == 0) {
   q2.classList.add("yellow_shadow");
 } else if (q2.value == '1') {
-  if(q3.value!='1'){
-  q2.classList.add("green_shadow");
-  }
+  if(q3.value=='1'){
+    q3.classList.add("green_shadow");
+    q2.classList.add("red_shadow");
+    }else{q2.classList.add("green_shadow");}
 }else if(q2.value=='7'){
-  if(q3.value!='7'){
-    q2.classList.add("green_shadow");
-    }
+  if(q3.value=='7'){
+    q3.classList.add("green_shadow");
+    q2.classList.add("red_shadow");
+    }else{q2.classList.add("green_shadow");}
 } else {
   q2.classList.add("red_shadow");
 }
@@ -319,13 +321,15 @@ if (q2.value.length == 0) {
 if (q3.value.length == 0) {
   q3.classList.add("yellow_shadow");
 } else if (q3.value == '1') {
-  if(q2.value!='1'){
+  if(q2.value=='1'){
   q3.classList.add("green_shadow");
-  }
+  q2.classList.add("red_shadow");
+  }else{q3.classList.add("green_shadow");}
 }else if(q3.value=='7'){
-  if(q2.value!='7'){
+  if(q2.value=='7'){
     q3.classList.add("green_shadow");
-    }
+    q2.classList.add("red_shadow");
+    }else{q3.classList.add("green_shadow");}
 } else {
   q3.classList.add("red_shadow");
 }
@@ -333,13 +337,15 @@ if (q3.value.length == 0) {
 if (q4.value.length == 0) {
   q4.classList.add("yellow_shadow");
 } else if (q4.value == '3') {
-  if(q5.value!='3'){
+  if(q5.value=='3'){
   q4.classList.add("green_shadow");
-  }
+  q5.classList.add("red_shadow");
+  }else{q4.classList.add("green_shadow");}
 }else if(q4.value=='5'){
-  if(q5.value!='5'){
+  if(q5.value=='5'){
     q4.classList.add("green_shadow");
-    }
+  q5.classList.add("red_shadow");
+  }else{q4.classList.add("green_shadow");}
 } else {
   q4.classList.add("red_shadow");
 }
@@ -347,13 +353,15 @@ if (q4.value.length == 0) {
 if (q5.value.length == 0) {
   q5.classList.add("yellow_shadow");
 } else if (q5.value == '3') {
-  if(q4.value!='3'){
-  q5.classList.add("green_shadow");
-  }
+  if(q4.value=='3'){
+    q4.classList.add("green_shadow");
+    q5.classList.add("red_shadow");
+    }else{q5.classList.add("green_shadow");}
 }else if(q5.value=='5'){
-  if(q4.value!='5'){
-    q5.classList.add("green_shadow");
-    }
+  if(q4.value=='5'){
+    q4.classList.add("green_shadow");
+    q5.classList.add("red_shadow");
+    }else{q5.classList.add("green_shadow");}
 } else {
   q5.classList.add("red_shadow");
 }
@@ -446,13 +454,15 @@ if (q5.value.length == 0) {
 if (q2.value.length == 0) {
   q2.classList.add("yellow_shadow");
 } else if (q2.value == '4') {
-  if(q7.value != '4'){
+  if(q7.value == '4'){
   q2.classList.add("green_shadow");
-  }else{  q2.classList.add("red_shadow");}
+  q7.classList.add("red_shadow");
+  }else{  q2.classList.add("green_shadow");}
 } else if(q2.value == '5'){
-  if(q7.value != '5'){
+  if(q7.value == '5'){
     q2.classList.add("green_shadow");
-  }else{  q2.classList.add("red_shadow");}
+  q7.classList.add("red_shadow");
+  }else{  q2.classList.add("green_shadow");}
 } else{
   q2.classList.add("red_shadow");
 }
@@ -460,13 +470,15 @@ if (q2.value.length == 0) {
 if (q7.value.length == 0) {
   q7.classList.add("yellow_shadow");
 } else if (q7.value == '4') {
-  if(q2.value != '4'){
-  q7.classList.add("green_shadow");
-  }else{  q7.classList.add("red_shadow");}
+  if(q2.value == '4'){
+    q2.classList.add("green_shadow");
+    q7.classList.add("red_shadow");
+    }else{  q7.classList.add("green_shadow");}
 } else if(q7.value == '5'){
-  if(q2.value != '5'){
-    q7.classList.add("green_shadow");
-  }else{  q7.classList.add("red_shadow");}
+  if(q2.value == '5'){
+    q2.classList.add("green_shadow");
+  q7.classList.add("red_shadow");
+  }else{  q7.classList.add("green_shadow");}
 } else{
   q7.classList.add("red_shadow");
 }
