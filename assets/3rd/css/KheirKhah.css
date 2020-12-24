@@ -11,11 +11,15 @@ body > #firstPage{
     width: 100%;
     padding: 10% 0 10% 0%;
   }
+
+  *{
+    overflow-x: scroll;
+  }
+
   .flexrow{
     display: flex;
     justify-content: space-around;
     flex-flow:row wrap;
-    
   }
   .titr{
     padding: 1% 3% 0% 1%;
@@ -77,6 +81,7 @@ body > #firstPage{
   background-image: repeating-linear-gradient(#C47898 0px ,#C47898 8px ,#D18CA3 8px,#D18CA3 16px);
   padding: 10% 0% 3% 0%;
   align-items :baseline;
+  overflow: visible;
 }
 
 .side{
@@ -169,13 +174,13 @@ input{
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
     position: relative;
-    bottom: -3.25vw;
+    bottom: 12vw;
 }
 #l{
-  right:83.5vw;
+  right: 83.5vw;
 }
 #r{
-  left: 7vw;
+  left: -5vw;
 }
 #left{
   border-radius:25px 0 0 0;
@@ -200,7 +205,6 @@ input{
   border-radius:25px ;
   background: white;
   padding: 10px;
-
   padding-bottom: 80px;
 }
 
@@ -394,8 +398,13 @@ input{
 .button{
   background : #D18CA3;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin: 10px 0px;
   color: #ffffff;
   text-align: center;
   width: 100px;
 }
+  .button:hover {
+    border: solid #C47898 2px ;
+    cursor: pointer;
+  }
+
