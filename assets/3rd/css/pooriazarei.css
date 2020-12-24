@@ -39,16 +39,6 @@
       * .left-border-template {
         margin-right: 10vw !important; } }
 
-body {
-  direction: rtl;
-  margin: 32px 0 32px 0; }
-
-img {
-  width: 100%; }
-
-#smallCube {
-  width: 60px; }
-
 .title-style {
   background-color: #DC9FBC;
   border-radius: 4vw;
@@ -104,24 +94,6 @@ img {
   right: -3vw;
   margin: 4vw 0 2vw 0;
   z-index: 1; }
-
-#rightArrow {
-  cursor: pointer;
-  border-right: 0.3vw solid #784a90;
-  border-bottom: 0.3vw solid #784a90;
-  width: 1.5vw;
-  height: 1.5vw;
-  transform: rotate(-45deg);
-  margin-bottom: -8px; }
-
-#leftArrow {
-  cursor: pointer;
-  border-left: 0.3vw solid #784a90;
-  border-top: 0.3vw solid #784a90;
-  width: 1.5vw;
-  height: 1.5vw;
-  transform: rotate(-45deg);
-  margin-top: 8px; }
 
 .right-border-template {
   width: 90vw;
@@ -208,23 +180,89 @@ img {
   .small-answer-box:focus {
     outline: none; }
 
-ol {
-  counter-reset: item;
-  list-style-type: none;
-  margin-right: -24px; }
-  ol li::before {
-    content: counter(item) "ـ";
-    color: #b03776;
-    counter-increment: item; }
-
 .page-number-wrapper {
   margin-top: -3vw; }
+
+.reading-culture li {
+  margin-left: 8px; }
+
+.square-wrapper {
+  width: 50vw; }
+
+.rtl {
+  direction: rtl !important; }
+
+.ltr {
+  direction: ltr !important; }
+
+.square {
+  border: 3px solid #64B1C7;
+  background-color: #A5CDE0;
+  width: 2vw;
+  height: 2vw; }
+
+.circle {
+  position: relative;
+  width: 1vw;
+  height: 1vw;
+  margin-right: 3vw;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 7.5px;
+  background-color: #784a90; }
+  .circle::before {
+    content: '';
+    display: inline-block;
+    width: 1vw;
+    height: 1vw;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #784a90;
+    left: 1vw;
+    top: 1vw;
+    position: absolute; }
+  .circle::after {
+    content: '';
+    display: inline-block;
+    width: 1vw;
+    height: 1vw;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    left: -1vw;
+    position: absolute;
+    top: 1vw;
+    background-color: #784a90; }
+
+.reading-culture {
+  background-color: #fdebf3;
+  border: 3px solid #D17FA6;
+  border-radius: 32px; }
+
+#smallCube {
+  width: 60px; }
 
 #readingCulture {
   right: -4.3vw; }
 
-.reading-culture li {
-  margin-left: 8px; }
+#rightArrow {
+  cursor: pointer;
+  border-right: 0.3vw solid #784a90;
+  border-bottom: 0.3vw solid #784a90;
+  width: 1.5vw;
+  height: 1.5vw;
+  transform: rotate(-45deg);
+  margin-bottom: -8px; }
+
+#leftArrow {
+  cursor: pointer;
+  border-left: 0.3vw solid #784a90;
+  border-top: 0.3vw solid #784a90;
+  width: 1.5vw;
+  height: 1.5vw;
+  transform: rotate(-45deg);
+  margin-top: 8px; }
 
 #readingCultureImg {
   position: absolute;
@@ -264,63 +302,25 @@ ol {
   width: 24vw;
   margin-top: 3vw; }
 
-.square-wrapper {
-  width: 50vw; }
+#circlesWrapperPage_78 {
+  margin-left: 1vw; }
 
-.rtl {
-  direction: rtl !important; }
+body {
+  direction: rtl;
+  margin: 32px 0 32px 0; }
 
-.ltr {
-  direction: ltr !important; }
-
-.square {
-  border: 3px solid #64B1C7;
-  background-color: #A5CDE0;
-  width: 2vw;
-  height: 2vw; }
+ol {
+  counter-reset: item;
+  list-style-type: none;
+  margin-right: -24px; }
+  ol li::before {
+    content: counter(item) "ـ";
+    color: #b03776;
+    counter-increment: item; }
 
 p {
   display: inline-block !important;
   margin: 0; }
 
-.circle {
-  position: relative;
-  width: 1vw;
-  height: 1vw;
-  margin-right: 3vw;
-  -moz-border-radius: 7.5px;
-  -webkit-border-radius: 7.5px;
-  border-radius: 7.5px;
-  background-color: #784a90; }
-  .circle::before {
-    content: '';
-    display: inline-block;
-    width: 1vw;
-    height: 1vw;
-    -moz-border-radius: 7.5px;
-    -webkit-border-radius: 7.5px;
-    border-radius: 7.5px;
-    background-color: #784a90;
-    left: 1vw;
-    top: 1vw;
-    position: absolute; }
-  .circle::after {
-    content: '';
-    display: inline-block;
-    width: 1vw;
-    height: 1vw;
-    -moz-border-radius: 7.5px;
-    -webkit-border-radius: 7.5px;
-    border-radius: 7.5px;
-    left: -1vw;
-    position: absolute;
-    top: 1vw;
-    background-color: #784a90; }
-
-#circlesWrapperPage_78 {
-  margin-left: 1vw; }
-
-.reading-culture {
-  background-color: #fdebf3;
-  border: 3px solid #D17FA6;
-  border-radius: 32px; }
+img {
+  width: 100%; }
