@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Zar';
   src: url("../../fonts/Zar.eot");
@@ -146,7 +147,7 @@ img {
 
 .page-number-on-bottom {
   box-sizing: border-box;
-  background-color: #d17fa7;
+  background-color: #D17FA6;
   border-radius: 2em;
   width: 5.8em;
   color: #fff;
@@ -208,7 +209,13 @@ img {
     outline: none; }
 
 ol {
+  counter-reset: item;
+  list-style-type: none;
   margin-right: -24px; }
+  ol li::before {
+    content: counter(item) "ـ";
+    color: #b03776;
+    counter-increment: item; }
 
 .page-number-wrapper {
   margin-top: -3vw; }
@@ -250,6 +257,8 @@ ol {
 
 #patternTitlePage_76 {
   margin-right: 8vw; }
+  #patternTitlePage_76 span {
+    color: #b03776; }
 
 #flowerPotPage_76 {
   width: 24vw;
@@ -271,6 +280,7 @@ ol {
   height: 2vw; }
 
 p {
+  display: inline-block !important;
   margin: 0; }
 
 .circle {
