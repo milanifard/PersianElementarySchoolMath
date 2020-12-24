@@ -153,10 +153,10 @@
                             <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/Tagharon5.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color1.png"></image>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/colorTrue.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color9.png"></image>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/colorN.png"></image>
                         </td>
 
 
@@ -178,7 +178,7 @@
                     <tr>
                         <td>
                             <span class="st-span">  تعداد مربع ها</span>
-                            <input type="text" id="check_partN14" value="" class="input-style" onchange="getValue(0,'check_partN14')">
+                            <input type="text" id="check_partN14" value="" class="input-style" onchange="getValue(15,'check_partN14')">
                         </td>
                         <td>
 
@@ -198,10 +198,10 @@
                             <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/Tagharon4.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color1.png"></image>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/colorfalse.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color9.png"></image>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/colortrue1.png"></image>
                         </td>
 
 
@@ -223,7 +223,7 @@
                     <tr>
                         <td>
                             <span class="st-span">  تعداد مربع ها</span>
-                            <input type="text" id="check_partN15" value="" class="input-style" onchange="getValue(0,'check_partN15')">
+                            <input type="text" id="check_partN15" value="" class="input-style" onchange="getValue(1,'check_partN15')">
                         </td>
                         <td>
 
@@ -241,23 +241,30 @@
 
                     <tr>
                         <td>
-                            <span class='st-span'>توضیح</span>
+                            <span class='st-span'>توضیح:</span>
+                        </td>
+
+
+                    </tr>
+
+
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <input class="radiobox" type="radio" name="answer7" id="result1" onclick="p19answerQ2(0);" />
+                            <label dir="rtl" for="result1" class='label' id="labeltagharon">باتوجه به خط تقارن واینکه هر تعداد مربع که در یک سمت خط تقارن وجود داشته باشد تعداد آن در کل دوبرابر 
+                            تعداد مربع ها در یک طرف خط تقارن <br></label>
                         </td>
 
 
                     </tr>
                     <tr>
                         <td>
-                            <input class="radiobox" type="radio" name="answer7" id="result1" onclick="p19answerQ2(0);" />
-                            <label dir="rtl" for="result1" id="labeltagharon">باتوجه به خط تقارن واینکه هر تعداد مربع که در یک سمت خط تقارن وجود داشته باشد تعداد آن در کل دوبرابر تعداد مربع ها در یک طرف خط تقارن میباشد.</label>
-                        </td>
-                        <td>
                             <input class="radiobox" type="radio" name="answer7" id="result2" onclick="p19answerQ2(1);" />
-                            <label dir="rtl" for="result2" id="labeltagharon1">باتوجه به خط تقارن واینکه هر تعداد مربع که در یک سمت خط تقارن وجود داشته باشد تعداد آن در کل دوبرابر تعداد مربع ها در یک طرف خط تقارن میباشد.</label>
+                            <label dir="rtl" for="result2" class='label' id="labeltagharon1">باتوجه به خط تقارن واینکه هر تعداد مربع که در یک سمت خط تقارن وجود داشته باشد تعداد آن در کل برابر تعداد مربع ها در یک طرف خط تقارن .</label>
                         </td>
-
                     </tr>
-
 
                 </table>
 
@@ -270,17 +277,22 @@
                 <div class="text-config">یک سیب زمینی را برش دهید و یک مکعب <br> درست کنید اگر این مکعب را از محلی که<br> خط کشیده شده است ببریم سطح برش خورده چه<br>شکلی خواهد داشت؟<br>مکعب را ببرید و حدس خود را آزمایش کنید.<br>برای اینکه سطح برش خورده را بهتر ببینید<br> میتوانید
                     آن را در جوهر یا رنگ بزنید و روی<br> کاغذ بگذارید.</div>
                 <div class="guess-box-level2">
-                    <img class='imgGuessBox' src="assets/3rd/images/baghkhani/hads1.png">
-                    <img class='imgGuessBox' src="assets/3rd/images/baghkhani/hads2.png">
+                    <img class='imgGuessBox' src="assets/3rd/images/baghkhani/triangle.png">
+                    <img class='imgGuessBox' src="assets/3rd/images/baghkhani/moraba.png">
                 </div>
-                <div class="radioItems">
-                    <input class="radiobox" type="radio" name="guess" id="guess1" onclick="guess_check(0);" />
-                    <label dir="rtl" for="guess1" id="labelguess1">شکل سمت راست</label>
-                </div>
+                <table>
+                    <tr>
+                        <div class='contain'>
+                            <input class="radiobox radiobox2" type="radio" name="guess" id="guess1" onclick="guess_check(0);" />
+                            <label dir="rtl" for="guess1" id="labelguess1">شکل سمت راست</label>
 
-                <input class="radiobox" type="radio" name="guess" id="guess2" onclick="guess_check(1);" />
-                <label dir="rtl" for="guess2" id="labelguess2">شکل سمت چپ</label>
 
+                            <input class="radiobox radiobox2" type="radio" name="guess" id="guess2" onclick="guess_check(1);" />
+                            <label dir="rtl" for="guess2" id="labelguess2">شکل سمت چپ</label>
+                    </tr>
+                    </div>
+
+                </table>
 
 
 

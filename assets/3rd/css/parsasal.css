@@ -9504,6 +9504,7 @@ select::-ms-expand {
   line-height: 3;
   overflow: hidden;
   border-radius: .25em;
+  text-align: left;
 }
 
 select {
@@ -9514,6 +9515,7 @@ select {
   color: #fff;
   cursor: pointer;
   text-align: left;
+  text-align-last: left;
 }
 
 /* Arrow */
@@ -9539,7 +9541,7 @@ select {
   font-family: 'Zar';
   src: url("../../fonts/Zar.eot");
   /* IE9 Compat Modes */
-  src: url("../../fonts/Zar.eot?#iefix") format("embedded-opentype"), url("../../fontsZar.woff2") format("woff2"), url("../../fonts/Zar.woff") format("woff"), url("../../fonts/Zar.ttf") format("truetype"), url("../../fonts/Zar.svg#svgFontName") format("svg");
+  src: url("../../fonts/Zar.eot?#iefix") format("embedded-opentype"), url("../../fonts/Zar.woff2") format("woff2"), url("../../fonts/Zar.woff") format("woff"), url("../../fonts/Zar.ttf") format("truetype"), url("../../fonts/Zar.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 

@@ -22,7 +22,21 @@
 * {
   font-family: 'Zar';
   font-weight: normal;
-  font-size: 2vh; }
+  font-size: 2vw; }
+  @media (max-width: 991px) {
+    * {
+      font-size: 3vh; }
+      * .right-border-template {
+        margin-right: 10vw !important; }
+      * .left-border-template {
+        margin-right: 10vw !important; } }
+  @media (max-width: 800px) {
+    * {
+      font-size: 2vh; }
+      * .right-border-template {
+        margin-right: 10vw !important; }
+      * .left-border-template {
+        margin-right: 10vw !important; } }
 
 body {
   direction: rtl;
@@ -110,7 +124,7 @@ img {
   width: 90vw;
   max-width: 90vw;
   border: 0.8vw double #D17FA6;
-  margin: 6vw 8.4vw 0 0;
+  margin: 6vw 8.9vw 0 0;
   border-left: none;
   border-top-right-radius: 5vw;
   border-bottom-right-radius: 5vw;
@@ -153,7 +167,7 @@ img {
   z-index: -1; }
 
 .background-style-left {
-  width: 98.4vw;
+  width: 98.9vw;
   height: 40vw;
   position: absolute;
   background-image: repeating-linear-gradient(0deg, #D17FA6, #D17FA6 1vw, #DC9FBC 0vw, #DC9FBC 2.5vw);
@@ -259,8 +273,9 @@ p {
 
 .circle {
   position: relative;
-  width: 10px;
-  height: 10px;
+  width: 1vw;
+  height: 1vw;
+  margin-right: 3vw;
   -moz-border-radius: 7.5px;
   -webkit-border-radius: 7.5px;
   border-radius: 7.5px;
@@ -268,27 +283,30 @@ p {
   .circle::before {
     content: '';
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 1vw;
+    height: 1vw;
     -moz-border-radius: 7.5px;
     -webkit-border-radius: 7.5px;
     border-radius: 7.5px;
     background-color: #784a90;
-    left: 8px;
-    top: 9px;
+    left: 1vw;
+    top: 1vw;
     position: absolute; }
   .circle::after {
     content: '';
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 1vw;
+    height: 1vw;
     -moz-border-radius: 7.5px;
     -webkit-border-radius: 7.5px;
     border-radius: 7.5px;
-    left: -8px;
+    left: -1vw;
     position: absolute;
-    top: 9px;
+    top: 1vw;
     background-color: #784a90; }
+
+#circlesWrapperPage_78 {
+  margin-left: 1vw; }
 
 .reading-culture {
   background-color: #fdebf3;

@@ -561,6 +561,7 @@ input-st2 {
 
 .st-span {
     margin-right: 2vw;
+    font-size: 2.5vw;
 }
 
 .imagtaghar {
@@ -573,4 +574,55 @@ input-st2 {
 
 .radioItems {
     margin-top: -10vw;
+}
+
+.label {
+    font-size: 1.40vw;
+}
+
+.radiobox2 {
+    margin-right: 4vw;
+}
+
+.contain {
+    margin-top: -5vw;
+    margin-left: -2vw;
+    font-size: 1.5vw;
+}
+
+.text {
+    margin-top: -2vw;
+}
+
+.text2 {
+    margin-top: -1vw;
+    margin-left: 2vw;
+}
+
+.input-styleNew {
+    margin-top: 1vw;
+}
+
+.inputStyleLeft {
+    margin-left: 18vw;
+}
+
+.containp20 {
+    margin-top: -9vw;
+    margin-left: -2vw;
+    font-size: 1.5vw;
+}
+
+.num_select {
+    margin-right: 15vw;
+}
+
+.imagheight {
+    height: 10vw;
+}
+
+.containp21 {
+    margin-top: -7vw;
+    margin-left: -1vw;
+    font-size: 1.5vw;
 }

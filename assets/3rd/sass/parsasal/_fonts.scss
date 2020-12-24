@@ -1,10 +1,12 @@
+// paths are relative to css file
+
 @font-face {
     font-family: 'Zar';
     src: url('../../fonts/Zar.eot');
     /* IE9 Compat Modes */
     src: url('../../fonts/Zar.eot?#iefix') format('embedded-opentype'),
         /* IE6-IE8 */
-        url('../../fontsZar.woff2') format('woff2'),
+        url('../../fonts/Zar.woff2') format('woff2'),
         /* Super Modern Browsers */
         url('../../fonts/Zar.woff') format('woff'),
         /* Pretty Modern Browsers */

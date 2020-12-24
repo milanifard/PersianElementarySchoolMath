@@ -138,3 +138,7 @@ th ,td{
   width: 30%;
 
 }
+
+*{
+  overflow: visible;
+}
