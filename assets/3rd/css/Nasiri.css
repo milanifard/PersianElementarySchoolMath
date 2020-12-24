@@ -186,6 +186,7 @@ span.question {
     position: relative;
     width: 5vw;
     height: 2vh;
+    font-size: 3vw;
 }
 .image_container{
     width: 12vw;
@@ -259,7 +260,7 @@ span>img{
     height: 1vw;
     background: #fff;
     color: #424242;
-    font-size: 0.8vw;
+    font-size: 1.8vw;
     border: 0;
     outline: 0;
     padding: 1vw 1.5vw;
