@@ -195,7 +195,7 @@ input[type=number] {
     color: var(--pink);
 }
 .text {
-    font-family:BNazanin,'BNazanin';
+    font-family: BNazanin,'BNazanin';
     /* font-family: BNazanin; */
     font-size: 1.8em;
     direction: rtl;
@@ -266,6 +266,7 @@ table, td, th {
     text-align: left;
     font-size: 1.4em;
     font-family:BNazanin,'BNazanin';
+
   }
 th{
     width: 11vw;
@@ -479,6 +480,7 @@ table {
     width:  4.5vw;
     font-size: 2vw;
     border: solid pink;
+    text-align: left;
   }
 
   .num_container_137{

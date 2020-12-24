@@ -1,6 +1,8 @@
 let correct_table_color = "rgba(144,255,145,0.5)";
 let incorrect_table_color = "rgb(255,118,118,0.5)";
 let transparent_color = "#ff000000";
+let white = "rgb(255,255,255,1)";
+
 
 let correct_message = "آفرین!";
 let correct_message_color = "#32e432";
@@ -217,13 +219,51 @@ function q2p137_3(){
             }
     }
 }
-function q2p137_4(){
-    let a = $("q2p137_4")
+function check_me(name, out){
+    let a = $(name)
 
-    if(Number(a.value) === 0){
+    if (a.value === ""){
+        a.style.backgroundColor = white;
+    }
+    else if(Number(a.value) === out){
         a.style.backgroundColor = correct_table_color;
     }
-    else if(a.value !== ""){
+    else{
         a.style.backgroundColor = incorrect_table_color;
+    }
+}
+
+
+// Page 138
+
+function cross_2_check(in1_name, in2_name, in3_name, ta, tb){
+    let a = $(in1_name)
+    let b = $(in2_name)
+    let r = $(in3_name)
+
+    var anum = Number(a.value);
+    var bnum = Number(b.value);
+    var rnum = Number(r.value);
+
+    if(r.value!==""){
+        if(a.value!== "" && b.value!==""){
+            if(((anum === ta && bnum === tb) || (bnum === ta && anum === tb)) && rnum === (ta*tb)){
+                a.style.backgroundColor = correct_table_color;
+                b.style.backgroundColor = correct_table_color;
+                r.style.backgroundColor = correct_table_color;
+            }
+            else{
+                a.style.backgroundColor = incorrect_table_color;
+                b.style.backgroundColor = incorrect_table_color;
+                r.style.backgroundColor = incorrect_table_color;
+            }
+        }
+
+       
+    }
+    else{
+        a.style.backgroundColor = transparent_color;
+        b.style.backgroundColor = transparent_color;
+        r.style.backgroundColor = transparent_color;
     }
 }
