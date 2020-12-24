@@ -6,13 +6,12 @@
     <link rel="stylesheet" href="./assets/3rd/css/eftekharii.css">
     <title>ریاضی سوم دبستان - صفحه یازده</title>
 </head>
-<body>
-
+<body onload="setPageNumber(11)">
 <div class="main">
     <div class="content-box">
         <div class="page-topic">
             <img class="topic-image" src="assets/3rd/images/classwork.png">
-            <div class="topic-title topic-title-classwork">کار در کلاس</div>
+            <div class="topic-title topic-title-classwork set_koodak_font">کار در کلاس</div>
         </div>
         <p>
             <span class="question_number">1.</span>
@@ -571,14 +570,15 @@
 
         <div class="clearfix"></div>
         <div class="page-navigator">
-            <div class="previous-page">
-                <a href="book_3_10.html">< صفحه قبل</a>
-            </div>
-            <div class="next-page">
-                <a href="book_3_12.html">صفحه بعد ></a>
-            </div>
+            <a href="book_3_10.html" class="change-page">
+                <
+            </a>
+            <input id="page_number" class="page-number" onkeyUp="page_changer(id)">
+            <a href="book_3_12.html" class="change-page">
+                >
+            </a>
         </div>
-        <div class="page-number">11</div>
+        <div class="clearfix"></div>
     </div>
 
 </div>

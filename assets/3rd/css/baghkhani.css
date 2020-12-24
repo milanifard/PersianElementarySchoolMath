@@ -164,7 +164,8 @@ body {
     float: right;
     font-size: 1.5vw;
     padding-right: 10vw;
-    margin-top: 10vw;
+    margin-top: 15vw;
+    position: static;
 }
 
 .question {
@@ -392,7 +393,7 @@ body {
     padding-right: 7vw;
     padding-left: 15vw;
     margin-left: -9vw;
-    margin-top: -7vw;
+    margin-top: 2vw;
 }
 
 .draw1 {
@@ -556,4 +557,20 @@ body {
 
 input-st2 {
     margin-left: -4vw;
+}
+
+.st-span {
+    margin-right: 2vw;
+}
+
+.imagtaghar {
+    width: 10vw;
+}
+
+.radiobox {
+    margin-right: 8vw;
+}
+
+.radioItems {
+    margin-top: -10vw;
 }

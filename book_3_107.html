@@ -8,13 +8,13 @@
     <title>ریاضی سوم دبستان - صفحه صد و هفت</title>
 </head>
 
-<body style="margin: 0; direction: rtl">
-<div style="margin-top: 8vw">
+<body>
+<div class="rtl-direction">
     <div class="border-level-left">
         <div class="left-border-body">
             <div class="background-style"></div>
             <div id="activity_item">
-                <img class="activity-image" style="margin-right: 6vw" src="assets/3rd/images/classwork.png"
+                <img class="activity-image mr-6" src="assets/3rd/images/classwork.png"
                      alt="activity_image">
                 <div class="activity-text">کار در کلاس</div>
             </div>
@@ -33,7 +33,8 @@
                             <span class="operator">+</span>
                             <span class="number">2244</span>
                             <span class="equals">=</span>
-                            <input type="number" id="question1" onChange="checkCorrectValue(this.id ,this.value ,4577)" class="checkVal" style="margin-top: 1vw; font-size: large; font-size: 1.7vw">
+                            <input type="number" id="question1" onkeyup="checkCorrectValue(this.id ,this.value ,4577)"
+                                   class="checkVal ">
                         </span>
                     </div>
 <!--                    <div class="flexible">-->
@@ -42,22 +43,24 @@
 <!--                    </div>-->
                 </div>
                 <div class="draw-cube">
-                    <div class="numbers" style="top: 1vw;left: 3vw;">
+                    <div class="numbers top left">
                         <span class="equation stacked">
                             <span class="number">1357</span>
                             <span class="operator">+</span>
                             <span class="number">1391</span>
                             <span class="equals">=</span>
-                            <input type="number"  id="question2" onChange="checkCorrectValue(this.id ,this.value ,2748)" class="checkVal" style="margin-top: 1vw; font-size: 1.7vw">
+                            <input type="number" id="question2" onkeyup="checkCorrectValue(this.id ,this.value ,2748)"
+                                   class="checkVal">
                         </span>
                     </div>
-                    <div class="numbers" style="top: 1vw; left: 38vw;">
+                    <div class="numbers top left-numbers">
                         <span class="equation stacked">
                             <span class="number">2013</span>
                             <span class="operator">+</span>
                             <span class="number">1020</span>
                             <span class="equals">=</span>
-                            <input type="number" id="question3" onChange="checkCorrectValue(this.id ,this.value ,3033)" class="checkVal" style="margin-top: 1vw; font-size: 1.7vw">
+                            <input type="number" id="question3" onkeyup="checkCorrectValue(this.id ,this.value ,3033)"
+                                   class="checkVal ">
                         </span>
                     </div>
                     <div class="show-maker">
@@ -65,30 +68,51 @@
                     </div>
                 </div>
             </div>
-            <div class="guess-box-level1" style="clear:both; left: -5vw; margin-top: 1vw; margin-right: 3vw;">
+            <div class="guess-box-level1 clear-both mr-3">
                 <div class="guess-box-text-left">کامل کن
                 </div>
-                <div class="text-config" style="margin-top: -3vw; margin-right: 0">
+                <div class="text-config m-text-config-107">
                     <p> محیط مستطیل را به دو صورت به دست آورید.
                     </p>
                 </div>
-                <div class="guess-box-level2">
-                    <img src="assets/3rd/images/kadkhoda/rect-1_preview.png" style="width: 18vw;" alt="left_scissor">
-                    <img src="assets/3rd/images/kadkhoda/rect2_preview.png" style="width: 25vw;" alt="right_scissor">
+                <div class="guess-box-level2" style="justify-content: space-around;">
+                    <img src="assets/3rd/images/kadkhoda/rect-1_preview.png" class="rect-1_preview" alt="left_scissor">
+                    <img src="assets/3rd/images/kadkhoda/rect2_preview.png" class="rect2_preview" alt="right_scissor">
                 </div>
                 <span class="pull-left"> = 4 + 7 + 5 + 3 = محيط مستطيل</span>
-                <input class="input-style creative-input-style pull-left" id="q3-1" onChange="checkCorrectValue(this.id ,this.value ,19)">
-                <span class="pull-right"> = محيط مستطيل</span>
+                <input class="input-style creative-input-style pull-left" id="q3-1"
+                       onkeyup="checkCorrectValue(this.id ,this.value ,19)">
+                <span class="pull-right"> = محيط مستطيل
+                <input class="input-style creative-input-style pull-right" id="q3-2"
+                       onkeyup="checkCorrectValue(this.id ,this.value ,20)">
+                </span>
+
+
                 <div class="clearfix"></div>
-                <span class="pull-left"> = (2 <span style="font-size: 2vw;">&#215;</span> 4) + (2 <span
-                        style="font-size: 2vw;">&#215;</span> 3) = محيط مستطيل</span>
-                <input class="input-style creative-input-style pull-left" id="q3-2" onChange="checkCorrectValue(this.id ,this.value ,19)">
-                <span class="pull-right"> = محيط مستطيل</span>
+                <span class="pull-left"> = (2 <span class="font-family">&#215;</span> 4) + (2 <span class="font-family">&#215;</span> 3) = محيط مستطيل</span>
+                <input class="input-style creative-input-style pull-left" id="q3-3"
+                       onkeyup="checkCorrectValue(this.id ,this.value ,19)">
+                <span class="pull-right"> = محيط مستطيل
+                                <input class="input-style creative-input-style pull-right" id="q3-4"
+                                       onkeyup="checkCorrectValue(this.id ,this.value ,20)">
+                </span>
+
             </div>
-            <div class="page-number" style="left: -5vw; right: auto">107</div>
+            <div class="page-navigator">
+                <div class="previous-page">
+                    <a href="book_3_106.html" title="106">
+                        <span class="font-family"><<</span>
+                        صفحه قبل</a>
+                </div>
+                <div class="next-page">
+                    <a href="book_3_108.html" title="108">صفحه بعد <span class="font-family">>></span></a>
+                </div>
+            </div>
+            <div class="page-number page-number-107">107</div>
         </div>
     </div>
 </div>
 </body>
+<script src="jquery.min.js"></script>
 <script src="assets/3rd/js/s-kadkhoda.js"></script>
 </html>

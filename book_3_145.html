@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nader Vafaii">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/3rd/js/vafaii.js"></script>
+    <link rel="stylesheet" href="./assets/3rd/css/vafaii.css">
+    <title>ریاضی سوم دبستان</title>
+</head>
+
+<body style="margin: 0; overflow-x: hidden">
+<div>
+    <div class="left-border" >
+        <div class="background-style" style="left: -10vw"></div>
+
+        <div>
+            <img class="activity-image" style="margin-right: 5vw" src="assets/3rd/images/activity.png" alt="activity_image">
+            <div class="activity-text" style="margin-right: 3vw; float: right">فعّاليت</div>
+
+            <div class="title-style" style="float: right">تقسيم با باقي مانده</div>
+
+        </div>
+
+        <div>
+
+            <div class="text-config questions-text-config" style="padding-top: 2vw; padding-right: 17vw; margin-top: 3vw; float: right">۱ــ ۱۷شاخه گل داریم. می خواهیم با هر۴شاخه ی آنها یک دسته گل درست کنیم.<br> چند دسته گل درست میشود؟<input id="input_145_1_1" class="input-1" style="margin-right: 0">
+                <br> چند شاخه گل باقی می ماند؟<input id="input_145_1_2" class="input-1" style="margin-right: 0"><br> با رسم شکل توضیح دهید.</div>
+
+        </div>
+
+        <div  style="clear:both; float: left;" >
+
+            <div  class="text-config questions-text-config" style="padding-right: 8vw;">٢ــ ۱۷  شاخه گل داریم. میخواهیم آنها را به طور مساوی در۴ گلدان تقسیم کنیم. شما گلها را یکی یکی در گلدانها بکشید. این کار را ادامه دهید تا همه ی گلها به تعداد مساوی در گلدان ها قرار گیرند.<br>  در هر گلدان چند گل قرار می گیرد؟<input id="input_145_2_1" class="input-1" style="margin-right: 0">
+                <br> چند گل باقی می ماند؟<input id="input_145_2_2" class="input-1" style="margin-right: 0"></div>
+
+
+
+            <div style=" padding-left: 3vw ; float: left ">
+                <div style=" float:top;height: 27vw;width: 10vw; float: left">
+                    <img id="cup-1" src="assets/3rd/images/vafaii/0-flower.png" style="width: 10vw; float: top;">
+                    <img src="assets/3rd/images/vafaii/cup.png" style="width: 10vw; float: top; margin-top: -1vw">
+
+                    <div style=" float: left;margin-left: auto;margin-right: auto; margin-top:-2vw ;">
+                        <div onclick="addFlower(1)"  style="float: left; font-size: 3vw ;font-style: oblique;white-space: pre; color: #9C27B0">  +</div>
+                        <div style="float: left; font-size: 3vw;white-space: pre">   </div>
+                        <div onclick="removeFlower(1)" style="float: left; font-size: 3vw;font-style: unset; color: #9C27B0">-</div>
+                    </div>
+
+
+                </div>
+
+                <div style=" float:top;height: 27vw;width: 10vw; float: left">
+                    <img id="cup-2" src="assets/3rd/images/vafaii/0-flower.png" style="width: 10vw; float: top;">
+                    <img src="assets/3rd/images/vafaii/cup.png" style="width: 10vw; float: top; margin-top: -1vw">
+
+                    <div style=" float: left;margin-left: auto;margin-right: auto; margin-top:-2vw ;">
+                        <div onclick="addFlower(2)" style="float: left; font-size: 3vw ;font-style: oblique;white-space: pre; color: #9C27B0">  +</div>
+                        <div style="float: left; font-size: 3vw;white-space: pre">   </div>
+                        <div onclick="removeFlower(2)" style="float: left; font-size: 3vw;font-style: unset; color: #9C27B0">-</div>
+                    </div>
+
+                </div>
+
+                <div style=" float:top;height: 27vw;width: 10vw; float: left">
+                    <img id="cup-3" src="assets/3rd/images/vafaii/0-flower.png" style="width: 10vw; float: top;">
+                    <img src="assets/3rd/images/vafaii/cup.png" style="width: 10vw; float: top; margin-top: -1vw">
+
+                    <div style=" float: left;margin-left: auto;margin-right: auto; margin-top:-2vw ;">
+                        <div onclick="addFlower(3)" style="float: left; font-size: 3vw ;font-style: oblique;white-space: pre; color: #9C27B0">  +</div>
+                        <div style="float: left; font-size: 3vw;white-space: pre">   </div>
+                        <div onclick="removeFlower(3)" style="float: left; font-size: 3vw;font-style: unset; color: #9C27B0">-</div>
+                    </div>
+
+                </div>
+
+                <div style=" float:top;height: 27vw;width: 10vw; float: left">
+                    <img id="cup-4" src="assets/3rd/images/vafaii/0-flower.png" style="width: 10vw; float: top;">
+                    <img src="assets/3rd/images/vafaii/cup.png" style="width: 10vw; float: top; margin-top: -1vw">
+
+                    <div style=" float: left;margin-left: auto;margin-right: auto; margin-top:-2vw ;">
+                        <div onclick="addFlower(4)" style="float: left; font-size: 3vw ;font-style: oblique;white-space: pre; color: #9C27B0">  +</div>
+                        <div style="float: left; font-size: 3vw;white-space: pre">   </div>
+                        <div onclick="removeFlower(4)" style="float: left; font-size: 3vw;font-style: inherit; color: #9C27B0">-</div>
+                    </div>
+
+                </div>
+                <div id="cups_result" style="width: 20vw; float: left;margin-top: 20vw;margin-left: 5vw ; font-family: ZAR ; font-size: 2vw ; direction: rtl"> </div>
+
+            </div>
+
+
+            <div  class="text-config questions-text-config" style="padding-right: 8vw;clear: both">برای حل کردن مسئله ی بالا می توانیم از نماد<img src="assets/3rd/images/vafaii/divide.png" style="width: 6vw; "> استفاده کنیم و پاسخ را به صورت زیر بنویسیم:</div>
+
+            <div class="divide" style=" padding-left: 7vw ;font-size: 2vw; width: 30vw">
+                <div style=" float: left; padding: 0">
+                    <div class="divide-left-top" style="border-right-color: #008C40 ; float: top">    ۱۷<br>-   ۱۶<br>______</div>
+                    <div style="margin-top: 2.8vw;white-space: pre">     ۱</div>
+                </div>
+                <div style="float: left;margin-left: 0">
+                    <div class="divide-right-top" style="border-bottom-color: #008C40">   ۴ </div>
+                    <div style=" margin-top: 0.5vw;white-space: pre">   خارج قسمت←     ۴</div>
+                    <div style=" margin-top: 1.3vw;white-space: pre">←  باقی مانده</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+
+            <img src="assets/3rd/images/vafaii/flowers.png" style="width: 100%" >
+
+        </div>
+
+
+
+        <div class="page-number" style="left: -5vw; right: auto ;" >145</div>
+    </div>
+
+
+    <div style="clear: none; padding-top: 3vw; font-size: 2vw;">
+        <div class="previous-page" style="padding-left: 5vw; float: left">
+            <a href="book_3_144.html">< صفحه قبل</a>
+        </div>
+
+        <div class="next-page" style="padding-right: 5vw; float: right">
+            <a href="book_3_146.html">صفحه بعد ></a>
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+
+</html>

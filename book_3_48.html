@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <div id="success-message" class="message">
+        آفرین عزیزم
+    </div>
+    <div id="unsuccess-message" class="message">
+        بیشتر تلاش کن :) 
+    </div>
     <div class="border">
 
         <img class="activity-image" src="assets/3rd/images/girl_and_teacher_activity.png" alt="activity_image">
@@ -25,10 +31,10 @@
                 <img class="container-image" src="assets/3rd/images/Jabbari/container4.png" alt="container_image">
             </div>
             <div class="container-box">
-                <input type="text" id="q1_input1" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input1')">
-                <input type="text" id="q1_input2" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input2')">
-                <input type="text" id="q1_input3" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input3')">
-                <input type="text" id="q1_input4" value="" class="input_style container-input" onchange="checkvalue(0,'q1_input4')">
+                <input type="text" id="q1_input4" value="" class="input_style container-input" onchange="checkValueFraction(5,'q1_input4')">
+                <input type="text" id="q1_input3" value="" class="input_style container-input" onchange="checkValueFraction(1,'q1_input3')">
+                <input type="text" id="q1_input2" value="" class="input_style container-input" onchange="checkValueFraction(10,'q1_input2')">
+                <input type="text" id="q1_input1" value="" class="input_style container-input" onchange="checkValueFraction(0,'q1_input1')">
             </div>
             
         </div>
@@ -37,7 +43,7 @@
             <table class = "table_circle">
                 <tr>
                     <td>
-                        <input type="text" id="q2_input1" value="" class="input_style " onchange="checkvalue(0,'q2_input1')">
+                        <input type="text" id="q2_input1" value="" class="input_style " onchange="checkValueFraction(6,'q2_input1')">
                     </td>
                     <td style="padding-top: 1vw;">
                         <span id= "rectangle011" class="Rectangle" onclick="click_rectangle('rectangle011',1,0)"></span>
@@ -53,7 +59,7 @@
                         <img class="img_width10" src="assets/3rd/images/Jabbari/2blueCircle1.png" alt="blueCircle_image">
                     </td>
                     <td id="Separator_col">
-                        <input type="text" id="q2_input2" value="" class="input_style " onchange="checkvalue(0,'check_part1')">
+                        <input type="text" id="q2_input2" value="" class="input_style " onchange="checkValueFraction(5,'q2_input2')">
                     </td>
                     <td style="padding-top: 1vw;">
                         <span id= "rectangle001" class="Rectangle padding_R2" onclick="click_rectangle('rectangle001',0,0)"></span>
@@ -65,7 +71,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                        <input type="text" id="q2_input3" value="" class="input_style" onchange="checkValueFraction(11,'q2_input3')">
                     </td>
                     <td style="padding-top: 1vw;">
                         <span id= "rectangle111" class="Rectangle padding_R3" onclick="click_rectangle('rectangle111',3,0)"></span>
@@ -79,7 +85,7 @@
                         <img class="img_width10" src="assets/3rd/images/Jabbari/2blueCircle2.png" alt="blueCircle_image">
                     </td>
                     <td id="Separator_col">
-                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                        <input type="text" id="q2_input4" value="" class="input_style" onchange="checkValueFraction(12,'q2_input4')">
                     </td>
                     <td style="padding-top: 1vw;">
                         <span id= "rectangle101" class="Rectangle padding_R4" onclick="click_rectangle('rectangle101',2,0)"></span>
@@ -92,7 +98,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                        <input type="text" id="q2_input5" value="" class="input_style" onchange="checkValueFraction(8,'q2_input5')">
                     </td>
                     <td style="padding-top: 1vw;">
                         <span id= "rectangle211" class="Rectangle" onclick="click_rectangle('rectangle211',5,0)"></span>
@@ -108,7 +114,7 @@
                         <img class="img_width10" src="assets/3rd/images/Jabbari/2blueCircle3.png" alt="blueCircle_image">
                     </td>
                     <td id="Separator_col">
-                        <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                        <input type="text" id="q2_input6" value="" class="input_style" onchange="checkValueFraction(3,'q2_input6')">
                     </td>
                     <td style="padding-top: 1vw;">
                         <span id= "rectangle201" class="Rectangle padding_R5" onclick="click_rectangle('rectangle201',4,0)"></span>
@@ -133,15 +139,15 @@
                             برای اینکه مورچه بهتر دیده شود، آن را زیر ذره‌بین گذاشته ایم. 
                             <br>
                             طول مورچه 
-                            <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                            <input type="text" id="q3_input1" value="" class="input_style" onchange="checkvalue(9,'q3_input1')">
                             میلی متر است.
                             <br>
                             طول مورچه 
-                           <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                           <input type="text" id="q3_input2" value="" class="input_style" onchange="checkvalue(9,'q3_input2')">
                             قسمت از ۱۰ قسمت مساوی است.
                            <br>
                            طول مورچه چه کسری از یک سانتی متر است؟
-                           <input type="text" id="check_part1" value="" class="input_style" onchange="checkvalue(0,'check_part1')">
+                           <input type="text" id="q3_input3" value="" class="input_style" onchange="checkValueFraction(13,'q3_input3')">
            
            
                         </div> 
@@ -157,22 +163,34 @@
             ۴- هر شکل به طور تقریبی چه کسری را نشان می‌دهد؟
             
             <div class= "container-box">
-                <input type="text" id="q4_input1" value="" class="input_style" onchange="checkvalue(0,'q4_input1')">
+                <input type="text" id="q4_input1" value="" class="input_style" onchange="checkValueFraction(14,'q4_input1')">
 
                 <img class="img_width10" src="assets/3rd/images/Jabbari/4orangeCircle.png" alt="circle">
-                <input type="text" id="q2_input2" value="" class="input_style" onchange="checkvalue(0,'q2_input2')">
+                <input type="text" id="q4_input2" value="" class="input_style" onchange="checkValueFraction(15,'q4_input2')">
 
                 <img class="shape" src="assets/3rd/images/Jabbari/4Shape.png" alt="shape">
             </div>
         </div>
         <div id= "q2" class="question">
             ۵-یک نوار کاغذی درست کنید. آن‌را با تا کردن به ۲، ۳، ۴ قسمت مساوی تقسیم کنید. روش کار خود را توضیح دهید.
-            <textarea type="text" id="textBox1" class = "textarea" rows="3" cols="60" ></textarea>
+            <textarea type="text" id="textBox" class = "textarea" rows="5" cols="70" ></textarea>
+            <button class="submit" onclick="javascript: testTextBox('textBox');">تاييد</button>
         </div>
-            
-        <span class ="number_of_page">
-            ۴۸
-        </span>
+        <div class="page-no-input">
+            <div id="next_btn">
+                <a href="book_3_49.html">
+                    <img src="assets/3rd/images/left-arrow.png" alt="next_page" style="width: 3vw">
+                </a>
+            </div>
+            <div>
+                <input class="number_of_page"  value="48" type="number" name="page_number" id="page_switcher" style="width: 5vw">
+            </div>
+            <div id="pre_btn">
+                <a href="book_3_47.html">
+                    <img src="assets/3rd/images/right-arrow.png" alt="next_page" style="width: 3vw">
+                </a>
+            </div>
+        </div>
         
     </div>
 

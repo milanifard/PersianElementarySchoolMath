@@ -188,14 +188,15 @@ else if (page_no === "125") {
         let [colors, Q_feedback] = (function () {
             switch (question_id) {
                 case "Q1":
-                    return [Q1_color_picker_items, $("Q1_feedback")];
+                    return [Q1_color_picker_items, $("Q1_feedback_125")];
 
                 case "Q2":
-                    return [Q2_color_picker_items, $("Q2_feedback")];
+                    return [Q2_color_picker_items, $("Q2_feedback_125")];
             }
         })();
 
         if (color_picker_item != null) {
+
             switch (color_picker_item.id) {
                 case colors[0]:
                     $(id).style.backgroundColor = color_picker_item.style.backgroundColor;
@@ -234,10 +235,10 @@ else if (page_no === "125") {
         let [ans, sectors_id, check_count, Q_feedback, Q_img] = (function () {
             switch (question_id) {
                 case "Q1":
-                    return [Q1_ans, Q1_sectors_id, Q1_check_count, $("Q1_feedback"), $("Q1_pencil")];
+                    return [Q1_ans, Q1_sectors_id, Q1_check_count, $("Q1_feedback_125"), $("Q1_pencil")];
 
                 case "Q2":
-                    return [Q2_ans, Q2_sectors_id, Q2_check_count, $("Q2_feedback"), $("pencils")];
+                    return [Q2_ans, Q2_sectors_id, Q2_check_count, $("Q2_feedback_125"), $("pencils")];
             }
         })();
 
@@ -304,7 +305,7 @@ else if (page_no === "125") {
     $('Q2_blue_input').addEventListener('input', check_ans_Q2);
 
     function check_ans_Q2(e) {
-        if (e.target.value === 50) {
+        if (e.target.value == 50) {
             $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');
         } else {
             $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');
@@ -359,7 +360,7 @@ else if (page_no === "126"){
         let [colors, Q_feedback] = (function () {
             switch (question_id) {
                 case "Q1":
-                    return [Q1_color_picker_items, $("Q1_feedback")];
+                    return [Q1_color_picker_items, $("Q1_feedback_126")];
 
                 case "Q3":
                     return [Q3_color_picker_items, $("Q3_feedback")];
@@ -405,7 +406,7 @@ else if (page_no === "126"){
 
     let Q1_ans = {"yellow": 4, "blue": 2, "red": 1, "green": 1};
     let Q3_ans = {"blue": 4, "red": 2};
-    let Q1_sectors_id = ["Q1_sector1", "Q1_sector2", "Q1_sector3", "Q1_sector4", "Q1_sector5", "Q1_sector6", "Q1_sector7", "Q1_sector8"];
+    let Q1_sectors_id = ["Q1_sector1_126", "Q1_sector2_126", "Q1_sector3_126", "Q1_sector4_126", "Q1_sector5_126", "Q1_sector6_126", "Q1_sector7_126", "Q1_sector8_126"];
     let Q3_sectors_id = ["Q3_sector1", "Q3_sector2", "Q3_sector3", "Q3_sector4", "Q3_sector5", "Q3_sector6"];
 
     function check_circle_sectors(question_id) {
@@ -416,7 +417,7 @@ else if (page_no === "126"){
         let [ans, sectors_id, check_count, Q_feedback, Q_img] = (function () {
             switch (question_id) {
                 case "Q1":
-                    return [Q1_ans, Q1_sectors_id, Q1_check_count, $("Q1_feedback"), $("Q1_tree_img")];
+                    return [Q1_ans, Q1_sectors_id, Q1_check_count, $("Q1_feedback_126"), $("Q1_tree_img")];
 
                 case "Q3":
                     return [Q3_ans, Q3_sectors_id, Q3_check_count, $("Q3_feedback"), $("Q3_pencil")];
