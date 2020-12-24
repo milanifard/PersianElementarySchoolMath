@@ -1,3 +1,8 @@
+jQuery.fn.exists = function () {
+    return this.length > 0;
+}
+
+
 // go top button
 /*Add class when scroll down*/
 $(window).scroll(function (event) {
@@ -51,7 +56,7 @@ $(document).ready(function () {
     input.addEventListener('keypress', logKey);
 
     function logKey(e) {
-        if(e.code === "Enter"){
+        if (e.key === "Enter") {
             window.location.href = `./book_3_${input.value}.html`;
         }
     }
@@ -76,15 +81,6 @@ function debounce(func) {
 }
 
 
-// dark mode
-window.onkeypress = function (e) {
-    e = e || window.event;
-    if (e.keyCode === 68) {
-        console.log("d pressed")
-        document.documentElement.classList.toggle('dark-mode')
-    }
-}
-
 // ****************************
 // check answers
 // ***********************
@@ -103,9 +99,12 @@ function createNewMessageBox(text, type) {
     if (type === "warn") {
         iconClass = "fa-exclamation-circle"
         container.classList.add("warn-message")
-    } else if (type === "info ") {
+    } else if (type === "info") {
         iconClass = "fa-info-circle"
         container.classList.add("info-message")
+    } else if (type === "success") {
+        iconClass = "fa-check"
+        container.classList.add("success-message")
     }
 
     paragraph.classList.add("align-self-center")
@@ -132,13 +131,88 @@ function createNewMessageBox(text, type) {
 
     return container
 }
-function showWrongAnswerMessage(containerId){
-    $(containerId).append(getWrongAnswerMessageBox())
-    $(containerId).find(".warn-message").css("display", "flex")
-        .hide()
-        .fadeIn();
-}
-function getWrongAnswerMessageBox() {
 
-    return createNewMessageBox("بعضی پاسخ هات درست نبود، دوباره تلاش کن", "warn");
+
+function showSuccessMessageOnMasale(masaleChildNodeSelector) {
+
+    $(masaleChildNodeSelector).parents(".masale").find(".warn-message").remove()
+    if (!$(masaleChildNodeSelector).parents(".masale").find(".success-message").exists()) {
+
+        $(masaleChildNodeSelector).parents(".masale").append(getTrueAnswersMessageBox())
+        $(masaleChildNodeSelector).parents(".masale").find(".success-message").css("display", "flex")
+            .hide().fadeIn();
+    }
+
 }
+
+function showWarningMessageOnMasale(masaleChildNodeSelector , messageText= "بعضی پاسخ هات درست نبود، دوباره تلاش کن" ) {
+
+    if (!$(masaleChildNodeSelector).parents(".masale").find(".warn-message").exists()) {
+
+        $(masaleChildNodeSelector).parents(".masale").append(getWrongAnswerMessageBox(messageText))
+        $(masaleChildNodeSelector).parents(".masale").find(".warn-message").css("display", "flex")
+            .hide().fadeIn();
+    }
+
+}
+
+function showInfoMessageOnMasale(masaleChildNodeSelector, messageText) {
+    if (!$(masaleChildNodeSelector).parents(".masale").find(".info-message").exists()) {
+
+        $(masaleChildNodeSelector).parents(".masale").append(createNewMessageBox(messageText , "info"))
+        $(masaleChildNodeSelector).parents(".masale").find(".info-message").css("display", "flex")
+            .hide().fadeIn();
+    }
+
+}
+
+function getWrongAnswerMessageBox(messageText ) {
+
+    return createNewMessageBox(messageText, "warn");
+}
+
+function getTrueAnswersMessageBox() {
+    return createNewMessageBox("آفرین ! پاسخ این بخش درست بود", "success");
+}
+$(document).ready(function () {
+    const modal = document.querySelector("#modal");
+
+
+    modal.addEventListener("click", (e) => {
+
+        modal.className = "close-modal";
+
+    })
+});
+
+function showAfarinModalAnimation() {
+    modal.className = "open-modal";
+    setTimeout(function () {
+        modal.className = "close-modal";
+    }, 3000);
+}
+
+
+
+function getNearestSegmentOnPath(path, point, points) {
+    let minDistance = 99999;
+    let minDistanceSegment = undefined;
+    for (var i = 0; i < points; i++) {
+        var segment = path.segments[i];
+        if (segment.point.getDistance(point) < minDistance) {
+            minDistance = segment.point.getDistance(point)
+            minDistanceSegment = segment
+        }
+
+    }
+    return minDistanceSegment;
+
+}
+
+(function ($) {
+    $(document).on('click', '.close', function () {
+        $(this).parent().fadeOut();
+    });
+
+
+})(jQuery);

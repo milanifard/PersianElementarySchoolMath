@@ -3,51 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Sobhan_Moradiyan_Daghigh">
+    <meta name="keywords" content="ریاضی سوم دبستان, کسر, مخروط, احتمال">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/nahbos.css">
-    <title>ریاضی سوم دبستان</title>
+    <title>ریاضی سوم دبستان صفحه 125</title>
 
-    <style>
-        input[type='number'] {
-            -moz-appearance:textfield;
-        }
-
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-        }
-    </style>
 </head>
 
-<body style="margin: 0;">
+<body>
 <div>
     <div class="left-border">
-        <div class="background-style" style="left: -10vw;"></div>
+        <div class="background-style background-style-margin"></div>
 
         <div id="activity_item">
-            <img class="activity-image" style="margin-right: 5vw" src="assets/3rd/images/classwork.png" alt="activity_image">
-            <div class="activity-text" style="margin-right: 3vw; float: right">کار در کلاس</div>
+            <img id="activity_img" class="activity-image" src="assets/3rd/images/classwork.png" alt="activity_image">
+            <div id="activity_txt" class="activity-text">کار در کلاس</div>
         </div>
 
-        <div class="text-config" style="float: right; margin: 3vw 0 0 25vw; position:absolute; color: var(--red_level2);">روی چرخنده کلیک کن تا بچرخه.</div>
+        <div id="Q1_fun_far" class="text-config">روی چرخنده کلیک کن تا بچرخه.</div>
 
         <div id="Q1_container">
 
-            <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 17vw; margin-top: 3vw; float: right">1ــ چرخنده ی روبه رو را ده بار بچرخانید. هر بار عقربه روی<br> چه رنگی می ایستد؟ جواب هایتان را در جدول زیر بنویسید.</div>
+            <div id="Q1_125" class="text-config questions-text-config">1ــ چرخنده ی روبه رو را ده بار بچرخانید. هر بار عقربه روی<br> چه رنگی می ایستد؟ جواب هایتان را در جدول زیر بنویسید.</div>
 
-            <div id="circle_Q1" class="wrapper" style="float: left; margin-top: 5vw; border: 2px solid black; animation-fill-mode: forwards;" onclick="rotation(id)">
-                <div id="Q1_sector1" class="sector" style="transform: rotate(90deg); background-color: var(--red_level3); border: 1px solid black;"></div>
-                <div id="Q1_sector2" class="sector" style="transform: rotate(180deg); background-color: var(--green_level4); border: 1px solid black;"></div>
-                <div id="Q1_sector3" class="sector" style="transform: rotate(270deg); background-color: var(--red_level3); border: 1px solid black;"></div>
-                <div id="Q1_sector4" class="sector" style="transform: rotate(360deg); background-color: var(--green_level4); border: 1px solid black;"></div>
+            <div id="circle_Q1_125" class="wrapper" onclick="rotation(id)">
+                <div id="Q1_sector1_125" class="sector"></div>
+                <div id="Q1_sector2_125" class="sector"></div>
+                <div id="Q1_sector3_125" class="sector"></div>
+                <div id="Q1_sector4_125" class="sector"></div>
             </div>
-            <div class="clock-hand" style="position:absolute; margin-left: 16.4vw; margin-top: 9.5vw; transform: rotate(-45deg)"></div>
+            <div class="clock-hand clock-hand-style"></div>
 
-            <div style="clear:both; float: left;">
-                <img id="Q1_pencil" src="assets/3rd/images/nahbos/pencil_125.png" alt="pencil" style="width: 12vw; margin-left: 3vw; margin-top: 2vw">
+            <div id="Q1_pencil_container">
+                <img id="Q1_pencil" src="assets/3rd/images/nahbos/pencil_125.png" alt="pencil">
             </div>
 
-            <div id="Q1_table" style="padding-top: 3vw; float: left;">
+            <div id="Q1_table">
                 <table class="simple-table">
                     <tr>
                         <td class="simple-td">10</td>
@@ -60,145 +51,144 @@
                         <td class="simple-td">3</td>
                         <td class="simple-td">2</td>
                         <td class="simple-td">1</td>
-                        <td class="simple-td" style="background-color: var(--orange_level1)">آزمایش</td>
+                        <td class="simple-td simple-td-orange">آزمایش</td>
                     </tr>
                     <tr>
                         <td id="Q1_td10" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td10" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td10', id)"></div>
-                                <div id="Q1_green_color_td10" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td10', id)"></div>
+                                <div id="Q1_red_color_td10" class="color-picker color-picker-td-red" style="background-color: var(--red_level3);" onclick="color_picker(id), coloring_table('Q1_td10', id)"></div>
+                                <div id="Q1_green_color_td10" class="color-picker color-picker-td-green" style="background-color: var(--green_level4);" onclick="color_picker(id), coloring_table('Q1_td10', id)"></div>
                             </div>
                         </td>
                         <td id="Q1_td9" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td9" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td9', id)"></div>
-                                <div id="Q1_green_color_td9" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td9', id)"></div>
+                                <div id="Q1_red_color_td9" class="color-picker color-picker-td-red" style="background-color: var(--red_level3);" onclick="color_picker(id), coloring_table('Q1_td9', id)"></div>
+                                <div id="Q1_green_color_td9" class="color-picker color-picker-td-green" style="background-color: var(--green_level4);" onclick="color_picker(id), coloring_table('Q1_td9', id)"></div>
                             </div>
                         </td>
                         <td id="Q1_td8" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td8" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td8', id)"></div>
-                                <div id="Q1_green_color_td8" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td8', id)"></div>
+                                <div id="Q1_red_color_td8" class="color-picker color-picker-td-red" style="background-color: var(--red_level3);" onclick="color_picker(id), coloring_table('Q1_td8', id)"></div>
+                                <div id="Q1_green_color_td8" class="color-picker color-picker-td-green" style="background-color: var(--green_level4);" onclick="color_picker(id), coloring_table('Q1_td8', id)"></div>
                             </div>
                         </td>
                         <td id="Q1_td7" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td7" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td7', id)"></div>
-                                <div id="Q1_green_color_td7" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td7', id)"></div>
+                                <div id="Q1_red_color_td7" class="color-picker color-picker-td-red" style="background-color: var(--red_level3);" onclick="color_picker(id), coloring_table('Q1_td7', id)"></div>
+                                <div id="Q1_green_color_td7" class="color-picker color-picker-td-green" style="background-color: var(--green_level4);" onclick="color_picker(id), coloring_table('Q1_td7', id)"></div>
                             </div>
                         </td>
                         <td id="Q1_td6" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td6" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td6', id)"></div>
-                                <div id="Q1_green_color_td6" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td6', id)"></div>
+                                <div id="Q1_red_color_td6" class="color-picker color-picker-td-red" style="background-color: var(--red_level3);" onclick="color_picker(id), coloring_table('Q1_td6', id)"></div>
+                                <div id="Q1_green_color_td6" class="color-picker color-picker-td-green" style="background-color: var(--green_level4);" onclick="color_picker(id), coloring_table('Q1_td6', id)"></div>
                             </div>
                         </td>
                         <td id="Q1_td5" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td5" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td5', id)"></div>
-                                <div id="Q1_green_color_td5" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td5', id)"></div>
+                                <div id="Q1_red_color_td5" class="color-picker color-picker-td-red" style="background-color: var(--red_level3);" onclick="color_picker(id), coloring_table('Q1_td5', id)"></div>
+                                <div id="Q1_green_color_td5" class="color-picker color-picker-td-green" style="background-color: var(--green_level4);" onclick="color_picker(id), coloring_table('Q1_td5', id)"></div>
                             </div>
                         </td>
                         <td id="Q1_td4" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td4" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td4', id)"></div>
-                                <div id="Q1_green_color_td4" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td4', id)"></div>
+                                <div id="Q1_red_color_td4" class="color-picker color-picker-td-red" style="background-color: var(--red_level3);" onclick="color_picker(id), coloring_table('Q1_td4', id)"></div>
+                                <div id="Q1_green_color_td4" class="color-picker color-picker-td-green" style="background-color: var(--green_level4);" onclick="color_picker(id), coloring_table('Q1_td4', id)"></div>
                             </div>
                         </td>
                         <td id="Q1_td3" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td3" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td3', id)"></div>
-                                <div id="Q1_green_color_td3" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td3', id)"></div>
+                                <div id="Q1_red_color_td3" class="color-picker color-picker-td-red" style="background-color: var(--red_level3);" onclick="color_picker(id), coloring_table('Q1_td3', id)"></div>
+                                <div id="Q1_green_color_td3" class="color-picker color-picker-td-green" style="background-color: var(--green_level4);" onclick="color_picker(id), coloring_table('Q1_td3', id)"></div>
                             </div>
                         </td>
                         <td id="Q1_td2" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td2" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td2', id)"></div>
-                                <div id="Q1_green_color_td2" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td2', id)"></div>
+                                <div id="Q1_red_color_td2" class="color-picker color-picker-td-red" style="background-color: var(--red_level3);" onclick="color_picker(id), coloring_table('Q1_td2', id)"></div>
+                                <div id="Q1_green_color_td2" class="color-picker color-picker-td-green" style="background-color: var(--green_level4);" onclick="color_picker(id), coloring_table('Q1_td2', id)"></div>
                             </div>
                         </td>
                         <td id="Q1_td1" class="simple-td">
                             <div>
-                                <div id="Q1_red_color_td1" class="color-picker" style="background-color: var(--red_level3); float: left" onclick="color_picker(id), coloring_table('Q1_td1', id)"></div>
-                                <div id="Q1_green_color_td1" class="color-picker" style="background-color: var(--green_level4); float: left; margin-left: 0.5vw; margin-right: -2vw;" onclick="color_picker(id), coloring_table('Q1_td1', id)"></div>
+                                <div id="Q1_red_color_td1" class="color-picker color-picker-td-red" style="background-color: var(--red_level3);" onclick="color_picker(id), coloring_table('Q1_td1', id)"></div>
+                                <div id="Q1_green_color_td1" class="color-picker color-picker-td-green" style="background-color: var(--green_level4);" onclick="color_picker(id), coloring_table('Q1_td1', id)"></div>
                             </div>
                         </td>
-                        <td class="simple-td" style="background-color: var(--orange_level1)">رنگ</td>
+                        <td class="simple-td simple-td-orange">رنگ</td>
                     </tr>
                 </table>
             </div>
 
             <div style="float: right">
-                <div id="Q1_continue1" class="text-config questions-text-config" style="padding-right: 8vw; float: top;">با توجه به جدول، دایره ی روبه رو را با رنگ های قرمز و سبز رنگ آمیزی کنید.<br>اگر چرخنده را ١٠ بار دیگر بچرخانیم، پیش بینی می کنید که</div>
+                <div id="Q1_continue1" class="text-config questions-text-config">با توجه به جدول، دایره ی روبه رو را با رنگ های قرمز و سبز رنگ آمیزی کنید.<br>اگر چرخنده را ١٠ بار دیگر بچرخانیم، پیش بینی می کنید که</div>
 
                 <div style="float: bottom">
-                    <div id="Q1_continue2" class="text-config questions-text-config" style="padding-right: 8vw;; margin-top: 0; float: right"> ــ چه مقدار از این نمودار به رنگ سبز باشد؟</div>
-                    <input id="Q1_part1" type="number" style="width: 5vw; font-size: 1.8vw; float: right;" min="0" max="10">
+                    <div id="Q1_continue2" class="text-config questions-text-config Q1-continue"> ــ چه مقدار از این نمودار به رنگ سبز باشد؟</div>
+                    <input id="Q1_part1" class="Q1-input-parts" type="number" min="0" max="10">
                 </div>
 
                 <div style="float: bottom">
-                    <div id="Q1_continue3" class="text-config questions-text-config" style="padding-right: 8vw; float: right; margin-top: 0">ــ چه کسری از نمودار قرمز باشد؟</div>
-                    <input id="Q1_part2_down" type="number" style="width: 5vw; font-size: 1.8vw; float: right;" min="0" max="10">
-                    <div class="text-config" style="float: right; font-size: 5vw; margin-top: -2.3vw"> / </div>
-                    <input id="Q1_part2_top" type="number" style="width: 5vw; font-size: 1.8vw; float: right;" min="0" max="10">
+                    <div id="Q1_continue3" class="text-config questions-text-config Q1-continue">ــ چه کسری از نمودار قرمز باشد؟</div>
+                    <input id="Q1_part2_down" class="Q1-input-parts" type="number" min="0" max="10">
+                    <div id="divider" class="text-config"> / </div>
+                    <input id="Q1_part2_top" class="Q1-input-parts" type="number" min="0" max="10">
                 </div>
             </div>
 
-            <div style="float: left; margin-left: -3vw">
+            <div id="Q1_ans_circle">
                 <div style="float: top">
                     <div id="circle_Q1_ans" class="wrapper" style="float: left;">
-                        <div id="Q1_ans_sector1" class="sector" style="transform: rotate(90deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                        <div id="Q1_ans_sector2" class="sector" style="transform: rotate(126deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                        <div id="Q1_ans_sector3" class="sector" style="transform: rotate(162deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                        <div id="Q1_ans_sector4" class="sector" style="transform: rotate(198deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                        <div id="Q1_ans_sector5" class="sector" style="transform: rotate(234deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                        <div id="Q1_ans_sector6" class="sector" style="transform: rotate(270deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                        <div id="Q1_ans_sector7" class="sector" style="transform: rotate(304deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                        <div id="Q1_ans_sector8" class="sector" style="transform: rotate(342deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                        <div id="Q1_ans_sector9" class="sector" style="transform: rotate(378deg) skew(50deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
-                        <div id="Q1_ans_sector10" class="sector" style="transform: rotate(414deg) skew(53deg);" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector1" class="sector" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector2" class="sector" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector3" class="sector" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector4" class="sector" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector5" class="sector" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector6" class="sector" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector7" class="sector" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector8" class="sector" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector9" class="sector" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_ans_sector10" class="sector" onclick="sector_coloring(id, 'Q1');" onmouseover="hover(id)"></div>
                     </div>
 
-                    <div style="float: left; margin-left: 3vw; margin-top: 5vw">
+                    <div class="color-picker-container-2d">
                         <div id="Q1_red_color" class="color-picker" style="background-color: var(--red_level3);" onclick="color_picker(id)"></div>
                         <div id="Q1_green_color" class="color-picker" style="background-color: var(--green_level4);" onclick="color_picker(id)"></div>
                     </div>
                 </div>
-                <div id="Q1_feedback" class="text-config" style="clear: both; float: bottom; margin-left: 10vw; padding-top: 2vw; padding-bottom: 2vw"> </div>
+                <div id="Q1_feedback_125" class="text-config"> </div>
             </div>
         </div>
 
 
-
         <div id="Q2_container" style="clear: both">
 
-            <div id="Q2" class="text-config questions-text-config" style="padding-right: 8vw;">٢ــ معصومه چرخنده ای را که به دو رنگ قرمز و آبی بود، ١٠٠ بار چرخاند. او هر بار رنگی را که عقربه روی آن می ایستاد،<br>یادداشت می کرد. در آخر هم جدول زیر را کشید.<br>شما با توجه به اطّلاعاتی که در جدول آمده است، دایره را رنگ آمیزی کنید. ابتدا عددهای تقریبی را بنویسید.</div>
+            <div id="Q2_125" class="text-config questions-text-config">٢ــ معصومه چرخنده ای را که به دو رنگ قرمز و آبی بود، ١٠٠ بار چرخاند. او هر بار رنگی را که عقربه روی آن می ایستاد،<br>یادداشت می کرد. در آخر هم جدول زیر را کشید.<br>شما با توجه به اطّلاعاتی که در جدول آمده است، دایره را رنگ آمیزی کنید. ابتدا عددهای تقریبی را بنویسید.</div>
 
-            <div style="float: left; margin-left: -3vw;">
+            <div id="Q2_floats">
                 <div style="float: top">
                     <div id="circle_Q2_ans" class="wrapper" style="float: left;">
-                        <div id="Q2_ans_sector1" class="sector" style="transform: rotate(90deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
-                        <div id="Q2_ans_sector2" class="sector" style="transform: rotate(126deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
-                        <div id="Q2_ans_sector3" class="sector" style="transform: rotate(162deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
-                        <div id="Q2_ans_sector4" class="sector" style="transform: rotate(198deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
-                        <div id="Q2_ans_sector5" class="sector" style="transform: rotate(234deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
-                        <div id="Q2_ans_sector6" class="sector" style="transform: rotate(270deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
-                        <div id="Q2_ans_sector7" class="sector" style="transform: rotate(304deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
-                        <div id="Q2_ans_sector8" class="sector" style="transform: rotate(342deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
-                        <div id="Q2_ans_sector9" class="sector" style="transform: rotate(378deg) skew(50deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
-                        <div id="Q2_ans_sector10" class="sector" style="transform: rotate(414deg) skew(53deg);" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector1" class="sector" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector2" class="sector" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector3" class="sector" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector4" class="sector" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector5" class="sector" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector6" class="sector" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector7" class="sector" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector8" class="sector" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector9" class="sector" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
+                        <div id="Q2_ans_sector10" class="sector" onclick="sector_coloring(id, 'Q2');" onmouseover="hover(id)"></div>
                     </div>
 
-                    <div style="float: left; margin-left: 3vw; margin-top: 5vw">
+                    <div class="color-picker-container-2d">
                         <div id="Q2_red_color" class="color-picker" style="background-color: var(--red_level3);" onclick="color_picker(id)"></div>
                         <div id="Q2_blue_color" class="color-picker" style="background-color: var(--blue_level1);" onclick="color_picker(id)"></div>
                     </div>
                 </div>
-                <div id="Q2_feedback" class="text-config" style="clear: both; float: bottom; margin-left: 10vw; padding-top: 2vw; padding-bottom: 2vw; width: 24vw"> </div>
+                <div id="Q2_feedback_125" class="text-config"> </div>
             </div>
 
             <div class="simple-table-border" style="float: left;">
-                <table class="simple-table" style="width: 30vw; margin-left: 0">
+                <table id="table" class="simple-table">
                     <tr>
                         <td class="simple-td">عدد تقریبی</td>
                         <td class="simple-td">تعداد</td>
@@ -207,7 +197,7 @@
 
                     <tr>
                         <td id="Q2_red_td" class="simple-td" style="width: 7vw">
-                            <input id="Q2_red_input" type="number" style="width: 8vw; font-size: 1.8vw" min="0" max="100">
+                            <input id="Q2_red_input" class="Q2-red-blue-input" type="number" min="0" max="100">
                         </td>
                         <td class="simple-td">49</td>
                         <td class="simple-td">قرمز</td>
@@ -215,7 +205,7 @@
 
                     <tr>
                         <td id="Q2_blue_td" class="simple-td">
-                            <input id="Q2_blue_input" type="number" style="width: 8vw; font-size: 1.8vw" min="0" max="100">
+                            <input id="Q2_blue_input" class="Q2-red-blue-input" type="number" min="0" max="100">
                         </td>
                         <td class="simple-td">51</td>
                         <td class="simple-td">آبی</td>
@@ -224,47 +214,47 @@
             </div>
 
             <div id="pencils" style="float: left">
-                <img style="width: 11vw; margin-top: 7vw; float: top" src="assets/3rd/images/nahbos/red_pencil_125.png" alt="red_pencil">
+                <img src="assets/3rd/images/nahbos/red_pencil_125.png" class="Q2-img-config" alt="red_pencil">
                 <div style=" float: bottom">
-                    <img style="width: 11vw; margin-top: 1.5vw;" src="assets/3rd/images/nahbos/blue_pencil_125.png" alt="blue_pencil">
+                    <img id="blue_pencil" src="assets/3rd/images/nahbos/blue_pencil_125.png" alt="blue_pencil">
                 </div>
             </div>
         </div>
 
-        <div class="guess-box-level1" style="clear:both; left: -6vw; margin-top: 2vw">
+        <div id="guess_box_level1" class="guess-box-level1">
             <div class="guess-box-text-left" >حدس بزن</div>
             <div class="text-config" style="padding-top: 5vw;">با کاغذ دو مخروط درست کنید. با توّجه به شکل هاي زير، مخروط ها را از محل مشخّص شده، برش بزنید.<br>قسمت های بریده شده را روی کاغذ بگذارید و دور آن ها خط بکشید.<br>در کدام برش، شکل به دست آمده دایره است؟</div>
             <div class="guess-box-level2">
-                <img src="assets/3rd/images/nahbos/left_scissor_125.png" style="width: 19vw;" alt="left_scissor">
-                <img src="assets/3rd/images/nahbos/right_scissor_125.png" style="width: 19vw;" alt="right_scissor">
+                <img src="assets/3rd/images/nahbos/left_scissor_125.png" alt="left_scissor" style="width: 19vw;">
+                <img src="assets/3rd/images/nahbos/right_scissor_125.png" alt="right_scissor" style="width: 19vw;">
             </div>
 
-            <div style="float: right; margin-top: -18vw; margin-right: 5vw;">
-                <div style="height: 4vw;">
-                    <label class="text-config"><input type="radio" name="guess" value="right" id="radio_right" style="width: 2vw; height: 2vw;" onclick="guess_checker(id)">شکل راست</label>
+            <div id="guess_box_items">
+                <div class="radio-container">
+                    <label class="text-config"><input class="radio-btn-style" type="radio" name="guess" value="right" id="radio_right" onclick="guess_checker(id)">شکل راست</label>
                 </div>
-                <div style="height: 4vw;">
-                    <label class="text-config"><input type="radio" name="guess" value="left" id="radio_left" style="width: 2vw; height: 2vw;" onclick="guess_checker(id)">شکل چپ</label>
+                <div class="radio-container">
+                    <label class="text-config"><input class="radio-btn-style" type="radio" name="guess" value="left" id="radio_left" onclick="guess_checker(id)">شکل چپ</label>
                 </div>
             </div>
 
-            <div id="guess_box_feedback" class="text-config" style="margin-right: 5vw; float: right; margin-top: -8vw"></div>
+            <div id="guess_box_feedback" class="text-config"></div>
 
         </div>
 
-        <div class="page-number" style="left: -5vw; right: auto">125</div>
+        <div class="page-number page-number-left">125</div>
         <div class="page-no-input">
-            <div style="float: left; margin-right: 2vw; margin-top: 1vw">
+            <div id="next_btn">
                 <a href="book_3_126.html">
-                    <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+                    <img src="assets/3rd/images/left-arrow.png" alt="next_page" style="width: 3vw">
                 </a>
             </div>
-            <div class="page-number" style="float: left; position: relative; padding: 0.1vw 1vw; right: 0; bottom: 0">
-                <input style="width: 5vw; font-size: 1.5vw; background-color: var(--orange_level2); text-align: center; color: white" type="number" name="page_number" id="page_switcher">
+            <div>
+                <input class="page-number-input" type="number" name="page_number" id="page_switcher" style="width: 5vw">
             </div>
-            <div style="float: left; margin-left: 2vw; margin-top: 1vw">
+            <div id="pre_btn">
                 <a href="book_3_124.html">
-                    <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="next_page">
+                    <img src="assets/3rd/images/right-arrow.png" alt="next_page" style="width: 3vw">
                 </a>
             </div>
         </div>
@@ -273,249 +263,9 @@
 </div>
 
 </body>
-<script language="JavaScript">
 
-    function $(id){ return document.getElementById(id);}
-
-    let root = document.documentElement;
-    let last_degree = 0;
-
-    function rotation(id) {
-
-        if($(id).classList.contains("continues-rotation")){
-            $(id).classList.remove("continues-rotation");
-            $(id).style.transform = 'rotate(' + last_degree + 'deg)';
-            return rotation(id);
-        }
-        setTimeout(function () {
-
-            let random_number = Math.floor(Math.random() * 360 + 720);
-
-            root.style.setProperty('--dynamic_rnd', (random_number + last_degree) + "deg");
-            root.style.setProperty('--dynamic_rnd_last', last_degree + "deg");
-
-            $(id).classList.add("continues-rotation");
+<script src="assets/3rd/js/nahbos.js" type="text/javascript" params="125"></script>
 
 
-            update_last_degree(random_number);
 
-        },10);
-    }
-
-    function update_last_degree(degree) {
-        last_degree = (last_degree + degree) % 360;
-    }
-
-
-    let color_picker_item = null;
-    function color_picker(id) { color_picker_item = $(id);}
-
-    let pre_color = null;
-    function hover(id){
-        if (color_picker_item != null) {
-            $(id).onmouseenter = function () {
-                pre_color = $(id).style.backgroundColor;
-                $(id).style.backgroundColor = color_picker_item.style.backgroundColor;
-            }
-            $(id).onmouseout = function () {
-                $(id).style.backgroundColor = pre_color;
-            }
-        }
-    }
-
-    let Q1_color_picker_items = ["Q1_red_color", "Q1_green_color"];
-    let Q2_color_picker_items = ["Q2_red_color", "Q2_blue_color"];
-
-    function sector_coloring(id, question_id) {
-
-        let [colors, Q_feedback] = (function () {
-            switch (question_id) {
-                case "Q1":
-                    return [Q1_color_picker_items, $("Q1_feedback")];
-
-                case "Q2":
-                    return [Q2_color_picker_items, $("Q2_feedback")];
-            }
-        })();
-
-        if (color_picker_item != null){
-            switch (color_picker_item.id) {
-                case colors[0]:
-                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
-                    pre_color = color_picker_item.style.backgroundColor;
-                    break;
-
-                case colors[1]:
-                    $(id).style.backgroundColor= color_picker_item.style.backgroundColor;
-                    pre_color = color_picker_item.style.backgroundColor;
-                    break;
-
-                default:
-                    Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کنید.";
-                    Q_feedback.classList.add("shaking-animation");
-                    Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-                    break;
-            }
-        }
-
-        else {
-            Q_feedback.textContent = "ابتدا رنگ موردنظر را انتخاب کنید.";
-            Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-        }
-        check_circle_sectors(question_id);
-    }
-
-    let Q1_ans = {"red": 0, "green": 0}; // Sets in the coloring_table func
-    let Q2_ans = {"blue": 5, "red": 5};
-    let Q1_sectors_id = ["Q1_ans_sector1", "Q1_ans_sector2", "Q1_ans_sector3", "Q1_ans_sector4", "Q1_ans_sector5", "Q1_ans_sector6", "Q1_ans_sector7", "Q1_ans_sector8", "Q1_ans_sector9", "Q1_ans_sector10"];
-    let Q2_sectors_id = ["Q2_ans_sector1", "Q2_ans_sector2", "Q2_ans_sector3", "Q2_ans_sector4", "Q2_ans_sector5", "Q2_ans_sector6", "Q2_ans_sector7", "Q2_ans_sector8", "Q2_ans_sector9", "Q2_ans_sector10"];
-
-    function check_circle_sectors(question_id) {
-
-        let Q1_check_count = {"red": 0, "green": 0};
-        let Q2_check_count = {"blue": 0, "red": 0};
-
-        let [ans, sectors_id, check_count, Q_feedback, Q_img] = (function () {
-            switch (question_id) {
-                case "Q1":
-                    return [Q1_ans, Q1_sectors_id, Q1_check_count, $("Q1_feedback"), $("Q1_pencil")];
-
-                case "Q2":
-                    return [Q2_ans, Q2_sectors_id, Q2_check_count, $("Q2_feedback"), $("pencils")];
-            }
-        })();
-
-        for(const sector of sectors_id) {
-
-            let color = $(sector).style.backgroundColor;
-
-            switch (color.trim()) {
-
-                case "var(--blue_level1)":
-                    check_count.blue += 1;
-                    break;
-
-                case "var(--red_level3)":
-                    check_count.red += 1;
-                    break;
-
-                case "var(--green_level4)":
-                    check_count.green += 1;
-                    break;
-            }
-        }
-
-        if (JSON.stringify(ans) === JSON.stringify(check_count) && Object.values(ans).reduce((a, b) => a + b, 0) == 10){
-
-            Q_feedback.textContent = "آفرین عزیزم. درست حل کردی.";
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
-            Q_img.classList.add("shaking-animation");
-
-        }
-
-        else if (Object.values(check_count).reduce((a, b) => a + b, 0) == Object.values(ans).reduce((a, b) => a + b, 0) &&
-                 Object.values(check_count).reduce((a, b) => a + b, 0) == 10){
-
-            Q_feedback.textContent = "دقت کن عزيزم. دوباره تلاش کن.";
-            Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level3');
-        }
-        else if (Object.values(check_count).reduce((a, b) => a + b, 0) < 10 && color_picker_item != null){
-            Q_feedback.textContent = "ابتدا جدول بالا را پر کن.";
-            Q_feedback.classList.add("shaking-animation");
-            Q_feedback.style.color= getComputedStyle(document.documentElement).getPropertyValue('--red_level3');
-
-        }
-    }
-
-
-    function coloring_table(parent, id) {
-
-        $(parent).style.backgroundColor = $(id).style.backgroundColor;
-
-        switch (($(id).style.backgroundColor).trim()) {
-
-            case "var(--red_level3)":
-                Q1_ans.red += 1;
-                break;
-
-            case "var(--green_level4)":
-                Q1_ans.green += 1;
-                break;
-        }
-
-        $(parent).innerText = '';
-    }
-
-    const input = document.querySelector('input');
-    $('Q2_red_input').addEventListener('input', check_ans_Q2);
-    $('Q2_blue_input').addEventListener('input', check_ans_Q2);
-    function check_ans_Q2(e) {
-        if (e.target.value == 50){
-            $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');
-        }
-        else {
-            $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');
-
-        }
-    }
-
-    $('Q1_part1').addEventListener('input', check_ans_Q1);
-    $('Q1_part2_top').addEventListener('input', check_ans_Q1);
-    $('Q1_part2_down').addEventListener('input', check_ans_Q1);
-    let green_count = 0;
-    function check_ans_Q1(e) {
-
-        switch (e.target.id) {
-
-            case 'Q1_part1':
-                green_count = e.target.value;
-                if (green_count >= 0 && green_count <= 10){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
-                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
-                break;
-
-            case 'Q1_part2_top':
-                if (e.target.value == (10 - green_count)){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
-                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
-                break;
-
-            case 'Q1_part2_down':
-                if (e.target.value == 10){ $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');}
-                else { $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');}
-                break;
-        }
-    }
-
-    function guess_checker(id) {
-        let btn = $(id).value;
-        if (btn == "right"){
-            $("guess_box_feedback").textContent = "دقت کن عزيزم. دوباره تلاش کن.";
-            $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
-            $("guess_box_feedback").classList.add("shaking-animation");
-        }
-        else if (btn == "left"){
-            $("guess_box_feedback").textContent = "آفرين عزيزم. درست حدس زدي.";
-            $("guess_box_feedback").style.color = getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
-            $("guess_box_feedback").classList.add("shaking-animation");
-        }
-    }
-
-    $("page_switcher").onkeypress=function(e){
-
-        if(e.which===13){
-
-            let page_no = $("page_switcher").value;
-
-            let tag = document.createElement("a");
-            tag.href = 'book_3_' + page_no + '.html';
-
-            tag.id = "switch";
-            document.body.appendChild(tag);
-
-            $("switch").click();
-        }
-    }
-
-</script>
 </html>

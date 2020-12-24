@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alireza Aghelan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ریاضی سوم دبستان</title>
+    <link rel="stylesheet" href="./assets/3rd/css/Aghelan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div id="p2background"></div>
+
+<main id="p2content">
+
+<img id="boy" src="./assets/3rd/images/Aghelan/boy.jpg">
+<img id="clock" src="./assets/3rd/images/Aghelan/clock.png">
+<img id="sum1" class="sum" src="./assets/3rd/images/Aghelan/sum.png">
+<img id="sum2" class="sum" src="./assets/3rd/images/Aghelan/sum.png">
+<img id="sum3" class="sum" src="./assets/3rd/images/Aghelan/sum.png">
+<img id="sum4" class="sum" src="./assets/3rd/images/Aghelan/sum.png">
+<img id="mountain" src="./assets/3rd/images/Aghelan/mountain.png">
+<img id="iran" src="./assets/3rd/images/Aghelan/iran.png">
+<img id="girl" src="./assets/3rd/images/Aghelan/girl.png">
+
+<h1 id="page2header" class="text">حل مسئله</h1>
+
+<span id="p2q" class="text">در مسئله های زیر فقط نوع عمل را تشخیص دهید. (به دست آوردن جواب لازم نیست.)</span>
+<span id="p2q1" class="text"><span class="q">1ــ</span> هر سال 365 روز دارد. هر روز 24 ساعت است. هر سال چند ساعت است؟</span>
+<span id="p2t1" class="text">می توانیم به طور ساده بگوییم: 300 تا 20 تا چقدر می شود؟</span>
+<input type="text" id="p2a1" class="answer" size="5">
+<input type="button" id="p2r1" class="review" value="ثبت پاسخ" onclick="check(this.id)">
+<span id="p2f1" class="feedback"></span>
+
+<div id="p2q2" class="text">
+    <span class="q">2ــ</span> فاصله ی شهر تهران تا قم 123 کیلومتر است. از قم تا کاشان نیز 123 کیلومتر است.
+    <br>
+    فاصله ی تهران تا کاشان چند کیلومتر است؟
+</div>
+<span id="p2t2" class="text"> فاصله ی شهرها را به طور تقریبی بیان کنید؛ برای مثال، 100 کیلومتر.</span>
+<input type="text" id="p2a2" class="answer" size="5">
+<input type="button" id="p2r2" class="review" value="ثبت پاسخ" onclick="check(this.id)">
+<span id="p2f2" class="feedback"></span>
+
+<div id="p2q3" class="text">
+    <span class="q">3ــ</span> بلندترین قله ی ایران  «دماوند» نام دارد و 5671 متر است. بلندترین قله ی روی زمین «اورست» نام دارد و
+    <br>
+    8848 متر است. قله ی اورست چند متر از قله ی دماوند بلندتر است؟
+</div>
+<input type="text" id="p2a3" class="answer" size="5">
+<input type="button" id="p2r3" class="review" value="ثبت پاسخ" onclick="check(this.id)">
+<span id="p2f3" class="feedback"></span>
+
+<div id="p2q4" class="text">
+    <span class="q">4ــ</span> در روزهای 10 و 11 فروردین ماه 1358 مردم ایران به جمهوری اسلامی  رأی دادند. تعداد رأی های سه
+    <br>
+    صندوق به ترتیب 1895 ، 2834 و 4539 بوده است. چند رأی به این سه صندوق ریخته شده است؟
+</div>
+<input type="text" id="p2a4" class="answer" size="5">
+<input type="button" id="p2r4" class="review" value="ثبت پاسخ" onclick="check(this.id);">
+<span id="p2f4" class="feedback"></span>
+
+<div id="p2text" class="text">
+    گاهی استفاده از عددهای تقریبی به شما کمک می کند که راه حل یک مسئله را تشخیص دهید.
+    <br>
+    پس از اینکه راه حل مسئله را تشخیص دادید، می توانید عدد های اصلی را به کار ببرید.
+</div>
+
+</main>
+
+<div class="pagination-container" id="pg2">
+
+    <div class="page-number-button">
+        <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
+    </div>
+
+    <div class="page-number">
+        <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+    </div>
+
+    <div class="page-number-button">
+        <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
+    </div>
+
+</div>
+
+
+<script src="./assets/3rd/js/Aghelan.js"></script>
+
+</body>
+</html>

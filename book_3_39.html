@@ -6,7 +6,7 @@
     <meta name="author" content="MohammadrezaPourreza">
     <link href="http://fonts.cdnfonts.com/css/zar" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/3rd/js/pourreza_page_39.js"></script>
+    <script src="assets/3rd/js/pourreza.js"></script>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
     <link rel="stylesheet" href="./assets/3rd/css/pourreza.css">
     <title>ریاضی سوم دبستان</title>
@@ -14,25 +14,25 @@
 <body>
 <div >
     <div class="left-border">
-        <div class="background-style"  style="left: -10vw;"></div>
+        <div class="background-style-right"></div>
         <div id="activity_item">
             <img class="activity-image" src="assets/3rd/images/girl_and_teacher_activity.png" alt="activity_image">
             <div class="activity-text">تمرین</div>
         </div>
-        <div id="Q1_container" style="margin-bottom: 15vw">
+        <div id="Q1_containerprime">
             <div>
                 <img src="assets/3rd/images/pourreza/metr.png" id="Q1-Image-metre">
             <div  id="text1" >1ــ 325 سانتي متر </div>
-            <input type="text" id="textBox2" onchange="javascript: test(1,'textBox2');">
+            <input type="text" id="textBox2" onchange="javascript: test2(1,'textBox2');">
             <div id="text2" class="text-config"> متر و</div>
-            <input type="text" id="textBox3" onchange="javascript: test(2,'textBox3');"class = "textBox-style">
+            <input type="text" id="textBox3" onchange="javascript: test2(2,'textBox3');"class = "textBox-style">
             <div id="text3" class="text-config">سانتي متر است.</div>
             <div id="text4" class="text-config" > 420 سانتي متر </div>
-            <input type="text" id="textBox4" onchange="javascript: test(3,'textBox4');"class = "textBox-style">
+            <input type="text" id="textBox4" onchange="javascript: test2(3,'textBox4');"class = "textBox-style">
             <div class="text-config" id="text5" >متر و </div>
-            <input type="text" id="textBox5"onchange="javascript: test(4,'textBox5');" class = "textBox-style">
+            <input type="text" id="textBox5"onchange="javascript: test2(4,'textBox5');" class = "textBox-style">
             <div id="text6" class="text-config">سانتي متر است. </div>
-                <input type="text" id="textBox6" onchange="javascript: test(5,'textBox6');"class = "textBox-style">
+                <input type="text" id="textBox6" onchange="javascript: test2(5,'textBox6');"class = "textBox-style">
                 <div id="text7" class="text-config">سانتي متر 1 متر و 27 سانتي متر است. </div>
             </div>
         </div>
@@ -40,60 +40,68 @@
             <div id="text8" class="text-config">2ــ اندازه ي قد شما</div>
             <input type="text" id="textBox7" onchange="javascript: getValue('textBox7');"class = "textBox-style">
             <div id="text9" class="text-config" >سانتي متر است ، يعنی</div>
-            <input type="text" id="textBox8" onchange="javascript:checkAnswer2('textBox8',1);"class = "textBox-style">
+            <input type="text" id="textBox8" onchange="javascript:checkAnswer2prime('textBox8',1);"class = "textBox-style">
             <div id="text10" class="text-config">متر و</div>
-            <input type="text" id="textBox9" onchange="javascript:checkAnswer2('textBox9',2);"class = "textBox-style">
+            <input type="text" id="textBox9" onchange="javascript:checkAnswer2prime('textBox9',2);"class = "textBox-style">
             <div id="text11" class="text-config">سانتي متر.</div>
         </div>
         <div class="Q2_container">
             <div id="text12" class="text-config">3ــ يک کيلومتر چندتا 100 متر است؟</div>
-            <input type="text" id="textBox10" onchange="javascript: test(6,'textBox10');"class = "textBox-style">
+            <input type="text" id="textBox10" onchange="javascript: test2(6,'textBox10');"class = "textBox-style">
             <div id="text13" class="text-config" style="padding-top: 2vw; padding-right: 15vw; ">9 کيلومتر چند متر است؟</div>
-            <input type="text" id="textBox11" onchange="javascript: test(7,'textBox11');"class = "textBox-style">
+            <input type="text" id="textBox11" onchange="javascript: test2(7,'textBox11');"class = "textBox-style">
             <div id="text14" class="text-config">4000 متر چند کيلومتر است؟</div>
-            <input type="text" id="textBox12" onchange="javascript: test(8,'textBox12');"class = "textBox-style">
+            <input type="text" id="textBox12" onchange="javascript: test2(8,'textBox12');"class = "textBox-style">
             <div id="text15" class="text-config">3 کيلومتر و 200 متر يعنی</div>
-            <input type="text" id="textBox13" onchange="javascript: test(9,'textBox13');"class = "textBox-style" >
+            <input type="text" id="textBox13" onchange="javascript: test2(9,'textBox13');"class = "textBox-style" >
             <div id="text16" class="text-config">متر.</div>
         </div>
         <div class="Q2_container">
             <img src="assets/3rd/images/pourreza/digitalTarazoo.png" style="float: left; width: 19vw; margin-top: 2vw; margin-left: 1vw">
             <div id="text17" class="text-config" >4ــ يک کيلوگرم 1000 گرم است.      5000 گرم</div>
-            <input type="text" id="textBox14" onchange="javascript: test(10,'textBox14');"class = "textBox-style">
+            <input type="text" id="textBox14" onchange="javascript: test2(10,'textBox14');"class = "textBox-style">
             <div id="text18" class="text-config" >کيلوگرم است.</div>
             <div id="text19" class="text-config" >3 کيلوگرم</div>
-            <input type="text" id="textBox15" onchange="javascript: test(11,'textBox15');"class = "textBox-style">
+            <input type="text" id="textBox15" onchange="javascript: test2(11,'textBox15');"class = "textBox-style">
             <div id="text20" class="text-config">گرم است.        4000 گرم</div>
-            <input type="text" id="textBox16" onchange="javascript: test(12,'textBox16');"class = "textBox-style" >
+            <input type="text" id="textBox16" onchange="javascript: test2(12,'textBox16');"class = "textBox-style" >
             <div id="text21" class="text-config">کيلوگرم است.</div>
             <div id="text22" class="text-config">2700 گرم يعنی</div>
-            <input type="text" id="textBox17" onchange="javascript: test(13,'textBox17');"class = "textBox-style" style="position: absolute; margin-left:60vw ; margin-top: -2em">
+            <input type="text" id="textBox17" onchange="javascript: test2(13,'textBox17');"class = "textBox-style" style="position: absolute; margin-left:60vw ; margin-top: -2em">
             <div id="text23" class="text-config">کيلوگرم و</div>
-            <input type="text" id="textBox18" onchange="javascript: test(14,'textBox18');" class = "textBox-style" style="position: absolute; margin-left:42vw ; margin-top: -2em">
-            <div class="text-config" style="position: absolute; margin-left:38vw ; margin-top: -3vw">گرم.</div>
-            <div class="text-config" style="padding-top: 2vw; padding-right: 15vw; ">3 کيلوگرم و 250 گرم يعنی</div>
-            <input type="text" id="textBox19"onchange="javascript: test(15,'textBox19');" class = "textBox-style" style="position: absolute; margin-left:53vw ; margin-top: -2em">
-            <div class="text-config" style="position: absolute; margin-left:49vw ; margin-top: -3vw">گرم.</div>
+            <input type="text" id="textBox18" onchange="javascript: test2(14,'textBox18');" class = "textBox-style" style="position: absolute; margin-left:42vw ; margin-top: -2em">
+            <div id="text24" class="text-config">گرم.</div>
+            <div id="text25" class="text-config">3 کيلوگرم و 250 گرم يعنی</div>
+            <input type="text" id="textBox19"onchange="javascript: test2(15,'textBox19');" class = "textBox-style">
+            <div id="text26" class="text-config">گرم.</div>
         </div>
-        <div id="Q5_container" style="margin-right: -7vw; margin-bottom: 10vw;">
-            <div class="text-config" style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw">5ــ براي اندازگيري جرم يک جعبه شيرينی، آن را در يک کفه ي ترازو و يک وزنه ي 500 گرمي، يک وزنه 250 گرمي و</div>
-            <img src="assets/3rd/images/pourreza/candies.png" style="float: left; width: 25vw; margin-top: 2vw; margin-left: 2vw ; border: 0.3vw solid #79c2d2; border-radius: 2vw">
-            <div class="text-config" style="padding-top: 2vw; padding-right: 15vw; ">يک وزنه ي 100 گرمي را در کفه ي ديگر ترازو گذاشتيم تا ترازو ميزان بايستد.</div>
-            <div class="text-config" style="padding-top: 2vw; padding-right: 15vw; ">جرم جعبه شيرينی چقدر است؟</div>
-            <input type="text" id="textBox20" onchange="javascript: test(16,'textBox20');"class = "textBox-style" style="position: absolute; margin-left:23vw ; margin-top: -2em">
+        <div id="Q5_containerr">
+            <div id="text27" class="text-config" >5ــ براي اندازگيري جرم يک جعبه شيرينی، آن را در يک کفه ي ترازو و يک وزنه ي 500 گرمي، يک وزنه 250 گرمي و</div>
+            <img id="candies" src="assets/3rd/images/pourreza/candies.png">
+            <div class="text-config" id="text28" >يک وزنه ي 100 گرمي را در کفه ي ديگر ترازو گذاشتيم تا ترازو ميزان بايستد.</div>
+            <div class="text-config" id="text29" >جرم جعبه شيرينی چقدر است؟</div>
+            <input type="text" id="textBox20" onchange="javascript: test2(16,'textBox20');"class = "textBox-style">
         </div>
         <div class="guess-box-level1" style="clear:both; left: -6vw; margin-top: 5vw">
             <div class="guess-box-text-left" >انجام بده</div>
             <div class="text-config" style="padding-top: 5vw;">ترازوي روبرو جرم هندوانه را چند گرم نشان داده است؟</div>
             <p style="position:absolute; left: 0 ;margin-left: 32vw; font-size: 2vw">3973</p>
-            <img src="assets/3rd/images/pourreza/waterMelon.png" style="width: 19vw; margin-left: 20vw" alt="ترازو">
-            <input type="text" id="textBox1" class = "textBox-style" onchange="javascript: test(0,'textBox1');">
+            <img id="waterMelon" src="assets/3rd/images/pourreza/waterMelon.png" style="width: 19vw; margin-left: 20vw" alt="ترازو">
+            <input type="text" id="textBox1" class = "textBox-style" onchange="javascript: test2(0,'textBox1');">
         </div>
-        <div class="page-navigator" style="width: 35%">
-            <a href="book3_38.html" class="previous">&laquo; Previous</a>
-            <a href="book_3_40.html" class="next">Next &raquo;</a>
-        </div>
-        <div class="page-number" style="left: -5vw; right: auto">39</div>
+        <span class="page-numberr" style="margin-right:47vw; margin-bottom: -5.5vw" >39</span>
+    </div>
+    <div class="page-no-input">
+        <span style=" margin-left: 44vw">
+            <a href="book3_40.html">
+                <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+            </a>
+        </span>
+        <span style="margin-left: 5.125vw">
+            <a href="book_3_38.html">
+                <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="next_page">
+            </a>
+        </span>
     </div>
 </div>
 </body>

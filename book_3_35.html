@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="math">
+    <meta name="author" content="AsiyeBahrami">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/bahrami.css">
+
+    <!-- import Page Number -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/3rd/js/pagination.js"></script>
+
+    <title>ریاضی سوم دبستان</title>
+</head>
+
+<body>
+
+    <div>
+        <div class="left-border">
+            <div class="background-style" id="p35-background-style">
+            <!-- Page Number -->
+                <div class="pagination-container">
+                    <div class="page-number-button">
+                        <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="page-number">
+                        <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+                    </div>
+                    <div class="page-number-button">
+                        <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div id="activity_item">
+                <img class="activity-image girl-image" src="assets/3rd/images/bahrami/classwork.png" alt="classwork_image">
+                <div class="activity-text p35-activity-text">کاردرکلاس</div>
+            </div>
+            <div>
+                <main class="main" id="p35-main-q1">
+                    <aside>
+                        <div class="img-box-level1">
+                            <div class="img-box-level2">
+                                <img src="assets/3rd/images/bahrami/money.png" alt="پول" class="p35-money-img">
+                            </div>
+                        </div>
+                    </aside>
+                    <section id="Q1" class="main">
+                        <article id="Q1_1" class="article size2">
+                            <div class="text-config">
+                                1-با 1000 ريال چه چيزی مي توان خريد؟
+                            </div>
+                            <form>
+                                <textarea type="text" id="textareaBoxQ1_1" class="textarea p35-textareas p35-textarea-q1" rows="4" cols="10"></textarea>
+                                <button class="submit p35-submit-q p35-submit-q1" onclick="javascript: testTextBoxQ1_P35('textareaBoxQ1_1');">تاييد</button>
+                            </form>
+                        </article>
+                        <article id="Q1_2" class="article size2">
+                            <div class="text-config">
+                                با 1000 تومان چه چيزی مي توان خريد؟
+                            </div>
+                            <form>
+                                <textarea type="text" id="textareaBoxQ1_2" class="textarea p35-textareas p35-textarea-q1" rows="4" cols="10"></textarea>
+                                <button class="submit p35-submit-q p35-submit-q1" onclick="javascript: testTextBoxQ1_P35('textareaBoxQ1_2');">تاييد</button>
+                            </form>
+                        </article>
+                        <article id="Q1_3" class="article size2">
+                            <div class="text-config">
+                                با 5000 ريال چه چيزی مي توان خريد؟
+                            </div>
+                            <form>
+                                <textarea type="text" id="textareaBoxQ1_3" class="textarea p35-textareas p35-textarea-q1" rows="4" cols="10"></textarea>
+                                <button class="submit p35-submit-q p35-submit-q1" onclick="javascript: testTextBoxQ1_P35('textareaBoxQ1_3');">تاييد</button>
+                            </form>
+                        </article>
+                    </section>
+
+                </main>
+                <main class="main">
+                    <!-- aside -->
+                    <aside id="aside-q234">
+                        <img src="assets/3rd/images/bahrami/frog.png" alt="قورباغه">
+                    </aside>
+                    <!-- section -->
+                    <section id="Q234" class="main">
+                        <article id="p35-Q2" class="article size">
+                            <div class="text-config">
+                                2- يک دلار کشور شورستان به اندازه 1000 تومان ارزش دارد.
+                                4 دلار اين کشور ارزش بيشتری دارد يا 3528 تومان؟ چرا؟
+                            </div>
+                            <div class="select" id="select-div-q2">
+                                <select id="select-q2">
+                                    <option value="1">4 دلار</option>
+                                    <option value="2">3528 تومان</option>
+                                </select>
+                            </div>
+                            <form>
+                                <textarea type="text" id="textareaBoxQ2" class="textarea p35-textareas p35-textarea-q23" rows="4" cols="10"></textarea>
+                                <button class="submit p35-submit-q p35-submit-q23" onclick="javascript: testTextBoxQ2_P35('textareaBoxQ2');">تاييد</button>
+                            </form>
+                        </article>
+                        <article id="p35-Q3" class="article size">
+                            <div class="text-config">
+                                3-يک ريال ايران به اندازه 1000 ليره‌ی کشور قندستان مي ارزد.
+                                4 ريال ايران با ارزش تر است يا 4500 ليره قندستان؟ چرا؟
+                            </div>
+                            <div class="select" id="select-div-q3">
+                                <select id="select-q3">
+                                    <option value="1">4 ريال</option>
+                                    <option value="2">4500 ليره</option>
+                                </select>
+                            </div>
+                            <form>
+                                <textarea type="text" id="textareaBoxQ3" class="textarea p35-textareas p35-textarea-q23" rows="4" cols="10"></textarea>
+                                <button class="submit p35-submit-q p35-submit-q23" onclick="javascript: testTextBoxQ3_P35('textareaBoxQ3');">تاييد</button>
+                            </form>
+                        </article>
+                        <article id="p35-Q4" class="article">
+                            <div class="text-config">
+                                4- 100 تومان با ارزش تر است يا 989 ريال؟
+                            </div>
+                            <div class="select" id="select-div-q4">
+                                <select id="select-q4">
+                                    <option value="1">100 تومان</option>
+                                    <option value="2">989 ريال</option>
+                                </select>
+                            </div>
+                            <form>
+                                <button class="submit p35-submit-q" id="p35-submit-q4" onclick="javascript: testTextBoxQ4_P35();">تاييد</button>
+                            </form>
+                        </article>
+                    </section>
+                </main>
+                <div>
+                    <div class="guess-box-level1 p35-guess-box-level1">
+                        <div class="guess-box-text-left">اندازه گيري کن</div>
+                        <div class="p35-text-config">
+                            در شکل روبه‌رو مي بينيد که چگونه پارچه را با متر اندازه گيری مي کنند؟
+                        </div>
+                        <div class="image_holder_p36 cloth-img">
+                            <img src="assets/3rd/images/bahrami/cloth.JPG" alt="اندازه گيري پارچه">
+                        </div>
+                        <div class="p35-text-config" id="p35-text-cm">
+                            137 سانتي متر يعنی يک متر و 37 سانتی‌متر.
+                            <br>
+                            حالا شما هم با يک متر پارچه اي قد خود
+                            <br>
+                            و طول ميزتان را اندازه بگيريد.
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/3rd/images/bahrami/meter.png" alt="متر" id="p35-meter-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script language="JavaScript" src="assets/3rd/js/bahrami.js">
+</script>
+</html>

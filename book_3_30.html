@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/3rd/css/bagherian.css">
     <title>ریاضی سوم دبستان</title>
 </head>
@@ -78,7 +79,7 @@
 
         <div class="question5">
             <div class="text">
-                <p><span class="number"> 5- </span>الگو را ادامه دهید. </p>
+                <p><span class="number"> ۵- </span>الگو را ادامه دهید. </p>
             </div>
 
             <div class="inputs">
@@ -183,22 +184,25 @@
                     <input type="radio" id="6" name="drone" onclick="checkShapeCorrectness(this.id)">
 
                 </div>
-
-
             </div>
-
-
         </div>
 
-        <div class="pageNumber"> 30 </div>
-
-        <div class="link">
-            <a href="./book_3_31.html">صفحه بعد</a>
-            <a href="./book_3_29.html">صفحه قبل</a>
-        </div>
+        
     </div>
+    <div class="pagination-container">
+        <div class="page-number-button">
+            <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+        </div>   
+        <div class="page-number">
+            <input class="paginationInput" type="number" id="page-number-input" onfocusout="loadPageChanger()">
+        </div>    
+        <div class="page-number-button">
+            <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+        </div>   
+    </div> 
 
 
     <script src="./assets/3rd/js/bagherian.js"></script>
+    <script src="./assets/3rd/js/pagination.js"></script>
 </body>
 </html>

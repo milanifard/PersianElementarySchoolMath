@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="math">
+    <meta name="author" content="AsiyeBahrami">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/bahrami.css">
+
+    <!-- import Page Number -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/3rd/js/pagination.js"></script>
+
+    <title>ریاضی سوم دبستان</title>
+</head>
+<body>
+<div>
+    <div class="right-border">
+        <div class="background-style">
+            <div class="pagination-container">
+                <div class="page-number-button">
+                    <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
+                </div>
+                <div class="page-number">
+                    <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+                </div>
+                <div class="page-number-button">
+                    <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="activity_item">
+            <img class="activity-image" src="assets/3rd/images/bahrami/girl_and_teacher_activity.png" alt="activity_image">
+            <div class="activity-text p36-activity-text">تمرین</div>
+        </div>
+        <div id="Q1_container" class="p36-question1">
+            <div class="text-config p36-text-questions">1ــ يک دلار کشور شکرستان 1200 تومان ارزش دارد. 3 دلار اين کشور چند تومان ارزش دارد؟</div>
+            <input type="text" id="textBox1" onchange="javascript: test(0,'textBox1');"class = "textBox-style p36-textbox-q1">
+        </div>
+        <div id="Q2_container" class="p36-question1">
+            <div class="text-config p36-text-questions">2ــ ارزش 2100 ليره کشوري 10 ريال ايران است. 2 تومان ايران چند ليره آن کشور است؟</div>
+            <input type="text" id="textBox2" onchange="javascript: test(1,'textBox2');"class = "textBox-style p36-textbox-q1">
+        </div>
+        <div id="Q3_1_container" class="p36-question1">
+            <div class="text-config p36-text-questions">3ــ عدد هفت هزار و چهارصد و سي را با رقم بنويسيد.</div>
+            <input type="text" id="textBox3_1" onchange="javascript: test(2,'textBox3_1');"class = "textBox-style p36-textbox-q1">
+        </div>
+
+        <div id="Q3_2_container" class="p36-question1">
+            <div class="text-config p36-text-questions">عدد 6872 را با عدد بنويسيد.</div>
+            <input type="text" id="textBox3_2" onchange="javascript: test(3,'textBox3_2');"class = "textBox-style p36-textbox-q1">
+        </div>
+        <div class="box-level1">
+            <div class="box-level2">
+                <div id="Q2" class="text-config questions-text-config">4ــ الگوها را ادامه دهيد. </div>
+                <div class="image_holder">
+                    <img src="assets/3rd/images/bahrami/pencil.png" alt="مداد" id="pencil">
+                </div>
+                <div id="first">
+                    <div class="text-config p36-text-q4" >1000 , 1100 , 1200 , </div>
+                    <input type="text" id="textBox4" onchange="javascript: test(4,'textBox4');" class = "textBox-style p36-textbox-q456 p36-1st-q4">
+                    <div class="text-config comma p36-comma-q4-1"> , </div>
+                    <input type="text" id="textBox5" onchange="javascript: test(5,'textBox5');" class = "textBox-style p36-textbox-q456 p36-2nd-q4">
+                    <div class="text-config comma p36-comma-q4-2"> , </div>
+                    <input type="text" id="textBox6" onchange="javascript: test(6,'textBox6');" class = "textBox-style p36-textbox-q456 p36-3rd-q4">
+                    <div class="text-config comma p36-comma-q4-3"> , </div>
+                    <input type="text" id="textBox7" onchange="javascript: test(7,'textBox7');" class = "textBox-style p36-textbox-q456 p36-4th-q4">
+                    <div class="text-config comma p36-comma-q4-4"> , </div>
+                    <input type="text" id="textBox8" onchange="javascript: test(8,'textBox8');" class = "textBox-style p36-textbox-q456 p36-5th-q4">
+                    <div class="text-config comma p36-comma-q4-5"> , </div>
+                    <input type="text" id="textBox9" onchange="javascript: test(9,'textBox9');" class = "textBox-style p36-textbox-q456 p36-6th-q4">
+                </div>
+                <div id="second">
+                    <div class="text-config p36-text-q4" >1000 , 1500 , 2000 , </div>
+                    <input type="text" id="textBox10" onchange="javascript: test(10,'textBox10');" class = "textBox-style p36-textbox-q456 p36-1st-q4">
+                    <div class="text-config comma p36-comma-q4-1"> , </div>
+                    <input type="text" id="textBox11" onchange="javascript: test(11,'textBox11');" class = "textBox-style p36-textbox-q456 p36-2nd-q4">
+                    <div class="text-config comma p36-comma-q4-2"> , </div>
+                    <input type="text" id="textBox12" onchange="javascript: test(12,'textBox12');" class = "textBox-style p36-textbox-q456 p36-3rd-q4">
+                    <div class="text-config comma p36-comma-q4-3"> , </div>
+                    <input type="text" id="textBox13" onchange="javascript: test(13,'textBox13');" class = "textBox-style p36-textbox-q456 p36-4th-q4">
+                    <div class="text-config comma p36-comma-q4-4"> , </div>
+                    <input type="text" id="textBox14" onchange="javascript: test(14,'textBox14');" class = "textBox-style p36-textbox-q456 p36-5th-q4">
+                    <div class="text-config comma p36-comma-q4-5"> , </div>
+                    <input type="text" id="textBox15" onchange="javascript: test(15,'textBox15');" class = "textBox-style p36-textbox-q456 p36-6th-q4">
+                </div>
+            </div>
+        </div>
+        <div id="Q5_container" class="p36-q56-container">
+            <div class="text-config p36-text-questions">5ــ از 1000 تا 3000 را 200 تا 200 تا بنويسيد.</div>
+            <div class="p36-inputs-q56">
+                <input type="text" class = "textBox-style p36-textbox-q456 p36-1st-q56"value="1000">
+                <div class="text-config comma p36-comma-q56-1"> , </div>
+                <input type="text" class = "textBox-style p36-textbox-q456 p36-2nd-q56"value="1200">
+                <div class="text-config comma p36-comma-q56-2"> , </div>
+                <input type="text" id="textBox16" onchange="javascript: test(16,'textBox16');" class = "textBox-style p36-textbox-q456 p36-3rd-q56">
+                <div class="text-config comma p36-comma-q56-3"> , </div>
+                <input type="text" id="textBox17" onchange="javascript: test(17,'textBox17');" class = "textBox-style p36-textbox-q456 p36-4th-q56">
+                <div class="text-config comma p36-comma-q56-4"> , </div>
+                <input type="text" id="textBox18" onchange="javascript: test(18,'textBox18');" class = "textBox-style p36-textbox-q456 p36-5th-q56">
+                <div class="text-config comma p36-comma-q56-5"> , </div>
+                <input type="text" id="textBox19" onchange="javascript: test(19,'textBox19');" class = "textBox-style p36-textbox-q456 p36-6th-q56">
+                <div class="text-config comma p36-comma-q56-6"> , </div>
+                <input type="text" id="textBox20" onchange="javascript: test(20,'textBox20');" class = "textBox-style p36-textbox-q456 p36-7th-q56">
+                <div class="text-config comma p36-comma-q56-7"> , </div>
+                <input type="text" id="textBox21" onchange="javascript: test(21,'textBox21');" class = "textBox-style p36-textbox-q456 p36-8th-q56">
+                <div class="text-config comma p36-comma-q56-8"> , </div>
+                <input type="text" id="textBox22" onchange="javascript: test(22,'textBox22');" class = "textBox-style p36-textbox-q456 p36-9th-q56">
+                <div class="text-config comma p36-comma-q56-9"> , </div>
+                <input type="text" id="textBox23" onchange="javascript: test(23,'textBox23');" class = "textBox-style p36-textbox-q456 p36-10th-q56">
+                <div class="text-config comma p36-comma-q56-10"> , </div>
+                <input type="text" id="textBox24" onchange="javascript: test(24,'textBox24');" class = "textBox-style p36-textbox-q456 p36-11th-q56">
+            </div>
+        </div>
+        <div id="Q6_container" class="p36-q56-container">
+            <div class="text-config p36-text-questions">6ــ از 5000 تا 6000 را 100 تا 100 تا بنويسيد.</div>
+            <div class="p36-inputs-q56">
+                <input type="text" id="textBox25" onchange="javascript: test(25,'textBox25');" class = "textBox-style p36-textbox-q456 p36-1st-q56">
+                <div class="text-config comma p36-comma-q56-1"> , </div>
+                <input type="text" id="textBox26" onchange="javascript: test(26,'textBox26');" class = "textBox-style p36-textbox-q456 p36-2nd-q56">
+                <div class="text-config comma p36-comma-q56-2"> , </div>
+                <input type="text" id="textBox27" onchange="javascript: test(27,'textBox27');" class = "textBox-style p36-textbox-q456 p36-3rd-q56">
+                <div class="text-config comma p36-comma-q56-3"> , </div>
+                <input type="text" id="textBox28" onchange="javascript: test(28,'textBox28');" class = "textBox-style p36-textbox-q456 p36-4th-q56">
+                <div class="text-config comma p36-comma-q56-4"> , </div>
+                <input type="text" id="textBox29" onchange="javascript: test(29,'textBox29');" class = "textBox-style p36-textbox-q456 p36-5th-q56">
+                <div class="text-config comma p36-comma-q56-5"> , </div>
+                <input type="text" id="textBox30" onchange="javascript: test(30,'textBox30');" class = "textBox-style p36-textbox-q456 p36-6th-q56">
+                <div class="text-config comma p36-comma-q56-6"> , </div>
+                <input type="text" id="textBox31" onchange="javascript: test(31,'textBox31');" class = "textBox-style p36-textbox-q456 p36-7th-q56">
+                <div class="text-config comma p36-comma-q56-7"> , </div>
+                <input type="text" id="textBox32" onchange="javascript: test(32,'textBox32');" class = "textBox-style p36-textbox-q456 p36-8th-q56">
+                <div class="text-config comma p36-comma-q56-8"> , </div>
+                <input type="text" id="textBox33" onchange="javascript: test(33,'textBox33');" class = "textBox-style p36-textbox-q456 p36-9th-q56">
+                <div class="text-config comma p36-comma-q56-9"> , </div>
+                <input type="text" id="textBox34" onchange="javascript: test(34,'textBox34');" class = "textBox-style p36-textbox-q456 p36-10th-q56">
+                <div class="text-config comma p36-comma-q56-10"> , </div>
+                <input type="text" id="textBox35" onchange="javascript: test(35,'textBox35');" class = "textBox-style p36-textbox-q456 p36-11th-q56">
+            </div>
+        </div>
+        <div class="guess-box-level1 p36-guess-box-level1">
+            <div class="guess-box-text-right" >کامل کن</div>
+            <div class="image_holder_p36">
+                <img src="assets/3rd/images/bahrami/40km.JPG" id="p36-img-40km" alt="تابلو تهران 40 کیلومتر">
+            </div>
+            <div class="text-config" id="p36-guess-box-km">سارا و پدر و مادرش با ماشين به طرف تهران مي رفتند.  <br> سارا که تابلوهاي کنار جاده را مي خواند، از پدرش پرسيد:<br>«تهران 40 يعني چه؟»<br>پدرش جواب داد : «يعني فاصله اينجا تا شهر تهران 40 کيلومتر است.»<br> از واحد کيلومتر برای اندازه گيری طول هاي زياد مثل فاصله بين دو شهر <br> استفاده مي کنند.</div>
+            <div class="text-config"> هر کيلومتر 1000 متر است. 3 کيلومتر چند متر است؟
+            </div>
+            <input type="text" id="textBox36" onchange="javascript: test(36,'textBox36');"class = "textBox-style p36-guess-box-textbox">
+            <div class="text-config">7000 متر چند کيلومتر است؟
+            </div>
+            <input type="text" id="textBox37" onchange="javascript: test(37,'textBox37');"class = "textBox-style p36-guess-box-textbox">
+        </div>
+    </div>
+</div>
+</body>
+<script language="JavaScript" src="assets/3rd/js/bahrami.js">
+</script>
+</html>

@@ -11,11 +11,11 @@
     <div id="success-message">
         آفرین گوگولی مگولی
     </div>
+    <div class="buttons-nb flex-center">
+        <a href="book_3_84.html" class="nb-bt flex-center">بعدی</a>
+        <a href="book_3_82.html" class="nb-bt flex-center">قبلی</a>
+    </div>
     <div class="full-bg">
-        <div class="buttons-nb flex-center">
-            <a href="book_3_84.html" class="nb-bt flex-center">بعدی</a>
-            <a href="book_3_82.html" class="nb-bt flex-center">قبلی</a>
-        </div>
         <div class="content-wrapper right">
             <div class="page-hw pg83">
                 <div class="box-base tip-abs flex-center hw-title bold pg83">کار در کلاس</div>
@@ -28,7 +28,7 @@
                             <p>
                                 <span class="red">۱ ـــ </span>
                                 آیا میتوان یک خط راست را اندازه گیری کرد؟
-                                <input type="text" dir="rtl" class="full-inp small-inp">
+                                <input type="text" onkeyup="check_input_(event, ['خیر', 'نه'])" dir="rtl" class="full-inp small-inp">
                                 چرا؟
                                 <input type="text" dir="rtl" class="full-inp small-inp meduim1-inp">
                             </p>
@@ -69,12 +69,12 @@
                             <p>
                                 میلی متر
                                 <input type="text" dir="auto" class="full-inp small-inp">
-                                = <span class="red">س ی</span>
+                                = <span class="red">م ن</span>
                             </p>
                             <p>
                                 سانتی متر
                                 <input type="text" dir="auto" class="full-inp small-inp">
-                                = <span class="red">س ی</span>
+                                = <span class="red">م ن</span>
                             </p>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                             <p>دور این مثلث را رنگ کنید.</p>
                             <p>
                                 دور این مثلث از چند پاره خط درست شده است؟
-                                <input type="text" dir="auto" class="full-inp small-inp">
+                                <input type="text" onkeyup="check_input_(event, ['۳'])" dir="auto" class="full-inp small-inp">
                                 آن ها را نام ببرید.
                             </p>
                         </div>
@@ -119,10 +119,10 @@
                             <p>فاصله ی هر یک از نقطه های روی دایره تا نقطه ی «م» را با خط کش اندازه بگیرید و خط بکشید.</p>
                             <p>
                                 آیا اندازه این پاره خط ها برابر است؟
-                                <input type="text" dir="auto" class="full-inp small-inp">
+                                <input type="text" onkeyup="check_input_(event, ['بله', 'آره'])" dir="auto" class="full-inp small-inp">
                             </p>
                             <p>نام این پاره خط ها چیست؟
-                                <input type="text" dir="auto" class="full-inp small-inp">
+                                <input type="text" onkeyup="check_input_(event, ['شعاع'])" dir="auto" class="full-inp small-inp">
                             </p>
                         </div>
                     </div>
@@ -133,13 +133,13 @@
                         <div class="float50" dir="rtl">
                             <p>نام این پاره خط ها چیست؟</p>
                             <p>پاره خط «ب م»
-                                <input type="text" dir="auto" class="full-inp small-inp">
+                                <input type="text" onkeyup="check_input_(event, ['شعاع'])" dir="auto" class="full-inp small-inp">
                             </p>
                             <p>پاره خط «ب ن»
-                                <input type="text" dir="auto" class="full-inp small-inp">
+                                <input type="text" onkeyup="check_input_(event, ['قطر'])" dir="auto" class="full-inp small-inp">
                             </p>
                             <p>پاره خط «م ن»
-                                <input type="text" dir="auto" class="full-inp small-inp">
+                                <input type="text" onkeyup="check_input_(event, ['شعاع'])" dir="auto" class="full-inp small-inp">
                             </p>
                         </div>
                     </div>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/pourreza.css">
     <link href="http://fonts.cdnfonts.com/css/zar" rel="stylesheet">
-    <script src="assets/3rd/js/pourreza_page_37.js"></script>
+    <script src="assets/3rd/js/pourreza.js"></script>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
     <title>ریاضی سوم دبستان</title>
 </head>
@@ -15,7 +15,7 @@
 <body>
 <div>
     <div class="left-border">
-        <div class="background-style"  style="left: -10vw;"></div>
+        <div class="background-style-right"></div>
         <div id="title">
             <div class="that-ridiculous-red-parts-in-title"></div>
             <div class="title-style">عدد های تقريبی</div>
@@ -25,12 +25,12 @@
             <div class="activity-text">فعّاليت</div>
         </div>
         <div id="Q1_container">
-            <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw">1ــ باتوجه به محور ، عددهاي داده شده را به صورت تقريبي نمايش دهيد. </div>
+            <div id="Q11" class="text-config questions-text-config">1ــ باتوجه به محور ، عددهاي داده شده را به صورت تقريبي نمايش دهيد. </div>
         </div>
         <div id="test"></div>
         <div id="anothertest"></div>
         <div id="first-vector">
-            <div class="container" style="margin-left: 10vw;margin-top: 5vw;">
+            <div class="container" id="cnt-1">
                 <div class="vector" id="firstVector" onclick="firstvector(event,'test')">
                     <div id="firstDiv" class="vector_font">۰</div>
                     <div class="vector_font">۱۰۰</div>
@@ -45,7 +45,7 @@
                     <div id="lastDiv" class="vector_font">۱۰۰۰</div>
                 </div>
             </div>
-            <div class="select"  style="margin-left: 60vw; margin-top: -7vw;">
+            <div class="select" id="select1">
                 <select id="firstSelect">
                     <option value="1">27</option>
                     <option value="2" >439</option>
@@ -56,7 +56,7 @@
             </div>
         </div>
         <div id="second-vector">
-            <div class="container" style="margin-left: 10vw;margin-top: 5vw;">
+            <div class="container" id="cnt-2">
                 <div class="vector" id="secondVector" onclick="secondvector(event,'test')">
                     <div id="firstDiv2" class="vector_font">۰</div>
                     <div class="vector_font">۱۰۰۰</div>
@@ -71,7 +71,7 @@
                     <div id="lastDiv2" class="vector_font">۱۰۰۰۰</div>
                 </div>
             </div>
-            <div class="select" style="margin-left: 60vw; margin-top: -7vw;">
+            <div class="select" id="select2">
                 <select id="secondSelect">
                     <option value="1">920</option>
                     <option value="2" >2250</option>
@@ -81,7 +81,7 @@
             </div>
         </div>
         <div id="third-vector">
-            <div class="container" style="margin-left: 10vw;margin-top: 5vw;">
+            <div class="container" id="cnt-3">
                 <div class="vector" id="thirdVector" onclick="thirdvector(event,'test')">
                     <div id="firstDiv3" class="vector_font">۱۰۰۰</div>
                     <div class="vector_font">۱۱۰۰</div>
@@ -96,7 +96,7 @@
                     <div id="lastDiv3" class="vector_font">۲۰۰۰</div>
                 </div>
             </div>
-            <div class="select" style="margin-left: 60vw; margin-top: -7vw;">
+            <div class="select" id="select3">
                 <select id="thirdSelect">
                     <option value="1">1050</option>
                     <option value="2" >1170</option>
@@ -120,14 +120,14 @@
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 31.5vw;margin-top: -1.7vw"></div>
                 </div>
-                <input type="text" id="textBox3" onchange="javascript: testQ2(0,'textBox3');" class = "textBox-style" style="position: absolute; margin-left:34vw ; margin-top: -2em">
+                <input type="text" id="textBox3" onchange="javascript: testQ2prime(0,'textBox3');" class = "textBox-style" style="position: absolute; margin-left:34vw ; margin-top: -2em">
             </div>
             <div id="third">
                 <div class="text-config" style="position: absolute ;direction:ltr;padding-top: 1vw; margin-top: -4vw;margin-left: 54vw">3026</div>
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 58.5vw;margin-top: -1.7vw"></div>
                 </div>
-                <input type="text" id="textBox4"  onchange="javascript: testQ2(1,'textBox4');"class = "textBox-style" style="position: absolute; margin-left:61vw ; margin-top: -2em">
+                <input type="text" id="textBox4"  onchange="javascript: testQ2prime(1,'textBox4');"class = "textBox-style" style="position: absolute; margin-left:61vw ; margin-top: -2em">
             </div>
             <div id="Q3" class="text-config questions-text-config" style="padding-top: 1.5vw; padding-right: 2vw; margin-top: 2vw">3ــ به جاي رقم های يکان، دهگان و صدگان عددهاي زير، صفر قرار دهيد و آن هارا بنويسيد. </div>
             <div id="first2">
@@ -135,21 +135,21 @@
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 4.5vw;margin-top: -1.7vw"></div>
                 </div>
-                <input type="text" id="textBox5" onchange="javascript: testQ2(2,'textBox5');" class = "textBox-style" style="position: absolute; margin-left:7vw ; margin-top: -2em">
+                <input type="text" id="textBox5" onchange="javascript: testQ2prime(2,'textBox5');" class = "textBox-style" style="position: absolute; margin-left:7vw ; margin-top: -2em">
             </div>
             <div id="second2">
                 <div class="text-config" style="position: absolute ;direction:ltr;padding-top: 1vw; margin-top: -4vw;margin-left: 27vw">8070</div>
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 31.5vw;margin-top: -1.7vw"></div>
                 </div>
-                <input type="text" id="textBox6" onchange="javascript: testQ2(3,'textBox6');" class = "textBox-style" style="position: absolute; margin-left:34vw ; margin-top: -2em">
+                <input type="text" id="textBox6" onchange="javascript: testQ2prime(3,'textBox6');" class = "textBox-style" style="position: absolute; margin-left:34vw ; margin-top: -2em">
             </div>
             <div id="third2">
                 <div class="text-config" style="position: absolute ;direction:ltr;padding-top: 1vw; margin-top: -4vw;margin-left: 54vw">6721</div>
                 <div class="arrow2">
                     <div class="line2 "style="position: absolute; margin-left: 58.5vw;margin-top: -1.7vw"></div>
                 </div>
-                <input type="text" id="textBox7" onchange="javascript: testQ2(4,'textBox7');" class = "textBox-style" style="position: absolute; margin-left:61vw ; margin-top: -2em">
+                <input type="text" id="textBox7" onchange="javascript: testQ2prime(4,'textBox7');" class = "textBox-style" style="position: absolute; margin-left:61vw ; margin-top: -2em">
             </div>
         </div>
         </div>
@@ -165,15 +165,23 @@
             <div class="guess-box-level2">
                 <img src="assets/3rd/images/pourreza/tarazoo.png" style="width: 19vw;" alt="ترازو">
                 <textarea type="text" id="teextBox1" class = "textarea"></textarea>
-                <button class="submit" onclick="javascript: testTextBox('textBox1');" style="position: absolute; margin-left:32vw ; margin-top: 16vw">تاييد</button>
+                <button class="submit" onclick="javascript: testTextBox('teextBox1');" style="position: absolute; margin-left:32vw ; margin-top: 16vw">تاييد</button>
             </div>
             <div class="text-config" style="padding-top: 5vw;">با ترازويي که ساخته ايد، جرم چيزهاي مختلف را اندازه گيري کنيد.</div>
         </div>
-        <div class="page-navigator" style="width: 35%">
-        <a href="book_3_36.html" class="previous">&laquo; Previous</a>
-        <a href="book3_38.html" class="next">Next &raquo;</a>
-        </div>
-        <div class="page-number" style="left: -5vw; right: auto">37</div>
-        </div>
+        <span class="page-numberr" style="margin-right:47vw; margin-bottom: -5.5vw" >37</span>
+    </div>
+    <div class="page-no-input">
+        <span style=" margin-left: 44vw">
+            <a href="book_3_38.html">
+                <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+            </a>
+        </span>
+        <span style="margin-left: 5.125vw">
+            <a href="book_3_36.html">
+                <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="next_page">
+            </a>
+        </span>
+    </div>
     </div>
 </body>

@@ -11,11 +11,11 @@
     <div id="success-message">
         آفرین گوگولی مگولی
     </div>
+    <div class="buttons-nb flex-center">
+        <a href="book_3_83.html" class="nb-bt flex-center">بعدی</a>
+        <a href="book_3_81.html" class="nb-bt flex-center">قبلی</a>
+    </div>
     <div class="full-bg">
-        <div class="buttons-nb flex-center">
-            <a href="book_3_83.html" class="nb-bt flex-center">بعدی</a>
-            <a href="book_3_81.html" class="nb-bt flex-center">قبلی</a>
-        </div>
         <div class="content-wrapper">
             <div class="content-header-wrapper">
                 <div class="header-title flex-center bold">خط، نیم خط و پاره خط</div>
@@ -76,6 +76,11 @@
                                 <input dir="auto" class="full-inp" type="text">
                             </div>
                         </div>
+                        <div class="float100">
+                            <canvas class="paint-canvas">
+
+                            </canvas>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -95,9 +100,9 @@
                             <img src="assets/3rd/images/slmlin/pg84boxq.png" alt="">
                         </div>
                         <div class="float50" dir="rtl">
-                            <p>چند نقطه میتوان پیدا کرد؟<input dir="auto" class="full-inp small-inp" type="text"></p>
-                            <p>اگر این نقطه ها به هم خیلی نزدیک شوند، چه شکلی درست میشود؟<input dir="auto" class="full-inp small-inp" type="text"></p>
-                            <p>در این صورت، نقطه ی «م» چه نقطه ای است؟<input dir="auto" class="full-inp small-inp" type="text"></p>
+                            <p>چند نقطه میتوان پیدا کرد؟<input dir="auto" onkeyup="check_input_(event, ['بینهایت', 'خیلی'])" class="full-inp small-inp" type="text"></p>
+                            <p>اگر این نقطه ها به هم خیلی نزدیک شوند، چه شکلی درست میشود؟<input dir="auto" onkeyup="check_input_(event, ['دایره'])" class="full-inp small-inp" type="text"></p>
+                            <p>در این صورت، نقطه ی «م» چه نقطه ای است؟<input dir="auto" onkeyup="check_input_(event, ['مرکز'])" class="full-inp small-inp" type="text"></p>
                         </div>
                     </div>
                 </div>

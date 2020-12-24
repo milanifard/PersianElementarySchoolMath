@@ -30,14 +30,19 @@
 }
 
 ::placeholder {
-    font-family: Koodak;
+    font-family: 'zar';
     font-size: 1vw;
 }
 
 p,
 h2,
 span {
-    font-family: B Zar;
+    font-family: 'zar';
+}
+
+@font-face {
+    font-family: 'zar';
+    src: url("../../fonts/Zar.woff") format("woff");
 }
 
 p.question {
@@ -59,7 +64,12 @@ span.question {
     display: flex;
     flex-direction: column;
 }
-
+.hey3{
+    margin-top: 3vw;
+}
+.hey{
+    margin-top: -3vw;
+}
 .flex_end {
     justify-content: flex-end;
 }
@@ -98,7 +108,12 @@ span.question {
     right: -1vw;
     z-index: 7;
 }
-
+.marker2 {
+    position: absolute;
+    top: 7vw;
+    right: -1vw;
+    z-index: 7;
+}
 .activity {
     margin-right: 5vw;
 }
@@ -120,12 +135,26 @@ span.question {
     margin-top: 10px;
     margin-right: -2.2vw;
 }
+.frog2{
+    width: 12vw;
+    heigh:3.5vw
+}
 .checktr {
     width: 5vw;
     height: 3.5vw;
 
-    font-size: 1vw;
-    color: deeppink;
+    font-size: 0.6vw;
+}
+.checktr2 {
+    width: 5vw;
+    height: 3.5vw;
+    font-size: 1.5vw;
+    text-align: right;
+}
+.checktr3 {
+    width: 1vw;
+    height: 1vw;
+    text-align: right;
 }
 .title>p {
     margin-right: 0.7vw;
@@ -195,9 +224,12 @@ span.question {
     color: red;
 }
 .calman-size{
-    width: 12vw;
-    height: 14vw;
-
+    width: 8vw;
+    height: 8vw;
+}
+.calman-size2{
+    width: 10vw;
+    height: 10vw;
 }
 .topic-title-creative{
     width: 10vw;
@@ -210,21 +242,7 @@ span.question {
     right: 0;
     float: right;
 }
-.page-number{
-    width: 8vw;
-    height: 3vw;
-    margin: 0 auto;
-    position: absolute;
-    background-color: var(--main_color);
-    border-style: double;
-    text-align: center;
-    font-size: 2vw;
-    color: white;
-    background-position: center;
-    bottom: -1.5vw;
-    right:44%;
-    border-radius: 0.75vw;
-}
+
 
 a.pages{
     text-decoration: none;
@@ -257,7 +275,10 @@ body{
     font-size: 1.5vw;
     color: var(--purple);
 }
+.hey2{
 
+    margin-right: 10vw;
+}
 .clock_row {
     justify-content: flex-end;
 }
@@ -374,8 +395,113 @@ table {
     border-right-color: transparent;
     border-left-color: transparent;
 }
+
+.input-style20{
+    width: 3vw;
+    font-size: 1.5vw;
+    height: 4vw;
+    border-bottom:var(--dark-orange) solid 0.2vw;
+    margin: 0vw 0;
+    margin-bottom: 2vw;
+    text-align: center;
+    background-color: transparent;
+    border-color:var(--dark-orange);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+.input-style21{
+    width: 3vw;
+    font-size: 1.5vw;
+    height: 4vw;
+
+    margin: 0vw 0;
+    margin-bottom: 2vw;
+    text-align: center;
+    background-color: transparent;
+    border-bottom-color:transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+.back {
+    width: 100vw;
+    height: 25vw;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAvAAAABFCAYAAAAsPtKVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAhdEVYdENyZWF0aW9uIFRpbWUAMjAyMDoxMjowNyAyMTozMDowMjdscvQAAAGxSURBVHhe7dyxbUAhFATBj2uDCmmE1sjI7MRNrDST0MLqJN54Z/5+AABAws//CwAABAh4AAAIEfAAABAi4AEAIGTcvXxiBQCACAs8AACECHgAAAgR8AAAECLgAQAgRMADAECIgAcAgJDxznRGEgAAIizwAAAQIuABACBEwAMAQIiABwCAkHH38okVAAAiLPAAABAi4AEAIETAAwBAiIAHAIAQAQ8AACHjnekKDQAARFjgAQAgRMADAECIgAcAgBABDwAAIQIeAABCxt3LFRoAAIiwwAMAQIiABwCAEAEPAAAhAh4AAEIEPAAAhIx3pis0AAAQYYEHAIAQAQ8AACECHgAAQgQ8AACEjLuXT6wAABBhgQcAgBABDwAAIQIeAABCBDwAAIQIeAAACBHwAAAQMt6ZzkgCAECEBR4AAEIEPAAAhAh4AAAIEfAAABAy7l4+sQIAQIQFHgAAQgQ8AACECHgAAAgR8AAAECLgAQAgRMADAEDIeGc6IwkAABEWeAAACBHwAAAQIuABACBEwAMAQMi4e/nECgAAERZ4AAAIEfAAABAi4AEAIETAAwBAxvf9AWR7IrE/+um/AAAAAElFTkSuQmCC') repeat;
+    position: relative;
+    margin-top: -25vw;
+    z-index: -2;
+}
+
+/* page number box */
+
+.pagination-container {
+    direction: rtl;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 3em;
+    /* to adjust page changer position , adjust position of this element */
+}
+
+.page-number {
+    /* substitute your color */
+    z-index: 20;
+    background-color: var(--middle-orange);
+    border-radius: 2em;
+    width: 5.8em;
+    color: white;
+    border: 0.35em double white;
+    /* font-family: Koodak; */
+    padding: 0 1.1em;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.page-number input {
+    /* substitute your color */
+    background-color: var(--dark-orange);
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+}
+
+.page-number-button {
+    width: 3em;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.page-number-button>a {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
+}
+
+
 .input-stylemedium{
     width: 8vw;
+    height: 4vw;
+    border-bottom:var(--dark-orange) solid 0.2vw;
+    margin: 0vw 0;
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+    text-align: center;
+    background-color: transparent;
+    border-color:var(--dark-orange);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+.input-stylemedium2{
+    width: 6vw;
     height: 4vw;
     border-bottom:var(--dark-orange) solid 0.2vw;
     margin: 0vw 0;
@@ -388,7 +514,7 @@ table {
     border-left-color: transparent;
 }
 .question-number{
-    font-family: "B Zar";
+    font-family: 'zar';
     font-size: 2vw;
     color: var(--question_number_color);
 }
@@ -404,6 +530,14 @@ table {
     border-top-color: transparent;
     border-right-color: transparent;
     border-left-color: transparent;
+}
+.input-style_lessthan2{
+    width: 9vw;
+    font-size: 1.5vw;
+    height: 4vw;
+    margin: 0vw 0;
+    margin-bottom: 2vw;
+    text-align: center;
 }
 .content-box{
     width: 90%;
@@ -429,30 +563,30 @@ table {
     margin-bottom: 2vw;
 }
 .orange_box4 {
-    height: 5vw;
-    width:5vw;
+    height: 4vw;
+    width:4vw;
     margin: auto;
     margin-top: 1vw;
     margin-bottom: 1vw;
 }
 .orange_box5 {
-    height: 6vw;
-    width:6vw;
+    height: 5vw;
+    width:5vw;
     margin: auto;
     margin-top: 1vw;
     margin-bottom: 1vw;
     color: #0f6674;
 }
 .orange_box6 {
-    height: 5vw;
-    width:10vw;
+    height: 4vw;
+    width:9vw;
     margin: auto;
     margin-top: 1vw;
     margin-bottom: 1vw;
 }
 .orange_box7 {
-    height: 10vw;
-    width:5vw;
+    height: 9vw;
+    width:4vw;
     margin: auto;
     margin-top: 1vw;
     margin-bottom: 1vw;
@@ -550,14 +684,7 @@ form>div>span {
     margin: auto;
 }
 
-.back {
-    width: 100vw;
-    height: 20vw;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAvAAAABFCAYAAAAsPtKVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAhdEVYdENyZWF0aW9uIFRpbWUAMjAyMDoxMjowNyAyMTozMDowMjdscvQAAAGxSURBVHhe7dyxbUAhFATBj2uDCmmE1sjI7MRNrDST0MLqJN54Z/5+AABAws//CwAABAh4AAAIEfAAABAi4AEAIGTcvXxiBQCACAs8AACECHgAAAgR8AAAECLgAQAgRMADAECIgAcAgJDxznRGEgAAIizwAAAQIuABACBEwAMAQIiABwCAkHH38okVAAAiLPAAABAi4AEAIETAAwBAiIAHAIAQAQ8AACHjnekKDQAARFjgAQAgRMADAECIgAcAgBABDwAAIQIeAABCxt3LFRoAAIiwwAMAQIiABwCAEAEPAAAhAh4AAEIEPAAAhIx3pis0AAAQYYEHAIAQAQ8AACECHgAAQgQ8AACEjLuXT6wAABBhgQcAgBABDwAAIQIeAABCBDwAAIQIeAAACBHwAAAQMt6ZzkgCAECEBR4AAEIEPAAAhAh4AAAIEfAAABAy7l4+sQIAQIQFHgAAQgQ8AACECHgAAAgR8AAAECLgAQAgRMADAEDIeGc6IwkAABEWeAAACBHwAAAQIuABACBEwAMAQMi4e/nECgAAERZ4AAAIEfAAABAi4AEAIETAAwBAxvf9AWR7IrE/+um/AAAAAElFTkSuQmCC') repeat;
-    position: relative;
-    margin-top: -15vw;
-    z-index: 0;
-}
+
 
 .submit{
     width:5vw;
@@ -689,19 +816,21 @@ form>div>span {
 }
 
 .form__field-large {
-    width: 10vw;
+    width: 8vw;
     background: #fff;
     color: #a3a3a3;
     font: inherit;
+    font-size: 2vw;
     border: 0;
     outline: 0;
     padding: 1vw 1.5vw;
 }
 .form__field-medium {
-    width: 6vw;
+    width: 8vw;
     background: #fff;
     color: #a3a3a3;
     font: inherit;
+    font-size: 2vw;
     border: 0;
     outline: 0;
     padding: 1vw 1.5vw;
@@ -711,6 +840,7 @@ form>div>span {
     background: #fff;
     color: #a3a3a3;
     font: inherit;
+    font-size: 2vw;
     border: 0;
     outline: 0;
     padding: 1vw 1.5vw;
@@ -826,7 +956,9 @@ form>div>span {
 .empty {
     color: yellow;
 }
-
+.redo{
+    color: black;
+}
 .correct {
     color: green;
 }
