@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amirhosein_mazrooei">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/Mazrooei.css">
+    <title>ریاضی سوم دبستان</title>
+
+    <style>
+        input[type='number'] {
+            -moz-appearance:textfield;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+
+<body style="margin: 0;">
+<div>
+    <div class="left-border">
+        <div class="background-style" style="left: -10vw;"></div>
+
+        <div id="title">
+            <div class="that-ridiculous-red-parts-in-title"></div>
+            <div class="title-style"style="margin-top: 1vw">انتخاب نمودار</div>
+        </div>
+
+        <div id="activity_item">
+            <img class="activity-image" src="assets/3rd/images/activity.png" alt="activity_image">
+            <div class="activity-text">فعّالیت</div>
+        </div>
+
+        <div id="Q1_container">
+            <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw">محسن در خانه تعدادی کتاب دارد.او اطلاعات مربوط به تعداد و نوع کتاب های خود را در جدول زیر آورده است. </div>
+
+            <div id="Q1_table"style="clear:right; padding-top: -10vw; float: right;">
+                <div style="float: left">
+                    <table class="colored-table">
+                        <tr>
+                            <td class="colored-td">سرگرمی</td>
+                            <td class="colored-td">مذهبی</td>
+                            <td class="colored-td">علمی</td>
+                            <td class="colored-td">داستان</td>
+                            <td class="colored-td">نوع</td>
+                        </tr>
+                        <tr>
+                            <td class="colored-td" style="background-color: var(--red_level1)">۱۰</td>
+                            <td class="colored-td" style="background-color: var(--yellow_level3_border)">۳۰</td>
+                            <td class="colored-td" style="background-color: var(--blue_level1)">۲۰</td>
+                            <td class="colored-td" style="background-color: var(--green_level2)">۲۰</td>
+                            <td class="colored-td">تعداد</td>
+                        </tr>
+                        <div style="clear:left; float: left;">
+                            <img id="Q1_Book_Shelf" src="assets\3rd\images\Mazrooei\Book_Shelf.PNG" alt="Book_Shelf" style="width: 9vw; margin-left: -1vw; margin-top:0vw">
+                        </div>
+                    </table>
+
+                </div>
+            </div>
+
+            <div id="Q1_continue" class="text-config questions-text-config" style="margin-top:8vw; margin-right: 5vw;">با توجه به این جدول، نمودارهای مختلف را کامل کنید.</div>
+
+            <div style="float: none;margin-right: 10vw">
+                <div id="Q1_1_feedback" class="text-config"> </div>
+            </div>
+            <div style="float: right; margin-top:1vw;">
+                <div id="circle_Q1" class="wrapper" style="float: left; margin-right: 10vw">
+                    <div id="Q1_sector1" class="sector" style="transform: rotate(0deg) skew(45deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector2" class="sector" style="transform: rotate(45deg) skew(45deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>    
+                    <div id="Q1_sector3" class="sector" style="transform: rotate(90deg) skew(45deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector4" class="sector" style="transform: rotate(135deg) skew(45deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector5" class="sector" style="transform: rotate(180deg) skew(45deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector6" class="sector" style="transform: rotate(225deg) skew(45deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector7" class="sector" style="transform: rotate(270deg) skew(45deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector8" class="sector" style="transform: rotate(315deg) skew(45deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                </div>
+                <br>
+                <div style=" margin-top: 15vw; padding-left:17vw;">
+                    <div id="Q1_yellow_color" class="color-picker" style="background-color: var(--yellow_level3_border); margin-top: 2.5vw" onclick="color_picker(id)"></div>
+                    <div id="Q1_blue_color" class="color-picker" style="background-color: var(--blue_level1);" onclick="color_picker(id)"></div>
+                    <div id="Q1_red_color" class="color-picker" style="background-color: var(--red_level1);" onclick="color_picker(id)"></div>
+                    <div id="Q1_green_color" class="color-picker" style="background-color: var(--green_level2);" onclick="color_picker(id)"></div>
+                </div>
+
+
+            </div>
+            <div style="float: none;margin-right: 10vw">
+                <div id="Q1_2_feedback" class="text-config"> </div>
+            </div>
+            <div style="float: left; margin-left: 30vw ;margin-top:10vw;">
+                <div class="box">
+                    <div class="skill">
+                        <div class="graph" id="graph1">
+                            
+                        </div>
+                        <div class="percent">
+                            <input id="percent1" onchange=Q1_bar_input(id,1) type="number"  value="0"  min="0" max="100">
+                        </div>
+                        <div class="name">داستان</div>
+                    </div>
+                    <div class="skill">
+                        <div class="graph"id="graph2">
+                            
+                        </div>
+                        <div class="percent">
+                            <input id="percent2" onchange=Q1_bar_input(id,2) type="number"  value="0"  min="0" max="100">
+                        </div>
+                        <div class="name">علمی</div>
+                    </div>
+                    <div class="skill">
+                        <div class="graph" id="graph3">
+                            
+                        </div>
+                        <div class="percent">
+                            <input id="percent3" onchange=Q1_bar_input(id,3) type="number"  value="0"  min="0" max="100">
+                        </div>
+                        <div class="name">مذهبی</div>
+                    </div>
+                    <div class="skill">
+                        <div class="graph"id="graph4">
+                        </div>
+                        <div class="percent">
+                            <input id="percent4" onchange=Q1_bar_input(id,4) type="number"  value="0"  min=0 max=100>
+                        </div>
+                        <div class="name">سرگرمی</div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div style="float: none ;margin-top: 10vw">
+                <div id="Q1_2_feedback" class="text-config"> </div>
+            </div>
+
+
+            <div class="3rdchart" style="clear:both; margin-bottom: 30vw;">
+                <div style="clear:none; float: right;">
+                    <img id="Q1_Books" src="assets\3rd\images\Mazrooei\books.PNG" alt="Books" style="width: 20vw; margin-left: -15vw; margin-right: 10vw; margin-top:10vw">
+                </div>
+                <div style="float: none;margin-right: 10vw">
+                    <div id="Q1_3_feedback" class="text-config"> </div>
+                </div>
+                <div style="float: left; margin-left: 30vw ;margin-top:10vw;">
+                    <div class="box1">
+                        <div class="skill">
+                            <div class="graph1" id="graph1_1" onmouseover= graph_hover(id); onclick=graph_clicked(id,1)>
+                            </div>
+                            <div class="graph2" id="graph1_2" onmouseover= graph_hover(id); onclick=graph_clicked(id,1)>
+                            </div>
+                            <div class="graph3" id="graph1_3" onmouseover= graph_hover(id); onclick=graph_clicked(id,1)>
+                            </div>
+                            <div class="name">داستان</div>
+                        </div>
+                        <div class="skill">
+                            <div class="graph1" id="graph2_1" onmouseover= graph_hover(id); onclick=graph_clicked(id,2)>
+                            </div>
+                            <div class="graph2" id="graph2_2" onmouseover= graph_hover(id); onclick=graph_clicked(id,2)>
+                            </div>
+                            <div class="graph3" id="graph2_3" onmouseover= graph_hover(id); onclick=graph_clicked(id,2)>
+                            </div>
+                            <div class="name">علمی</div>
+                        </div>
+                        <div class="skill">
+                            <div class="graph1" id="graph3_1" onmouseover= graph_hover(id); onclick=graph_clicked(id,3)>
+                            </div>
+                            <div class="graph2" id="graph3_2" onmouseover= graph_hover(id); onclick=graph_clicked(id,3)>
+                            </div>
+                            <div class="graph3" id="graph3_3" onmouseover= graph_hover(id); onclick=graph_clicked(id,3)>
+                            </div>
+                            <div class="name">مذهبی</div>
+                        </div>
+                        <div class="skill">
+                            <div class="graph1" id="graph4_1" onmouseover= graph_hover(id) onclick=graph_clicked(id,4);>
+                            </div>
+                            <div class="graph2" id="graph4_2" onmouseover= graph_hover(id); onclick=graph_clicked(id,4)>
+                            </div>
+                            <div class="graph3" id="graph4_3" onmouseover= graph_hover(id); onclick=graph_clicked(id,4);>
+                            </div>
+                            <div class="name">سرگرمی</div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="Q1_3_info" class="text-config questions-text-config" style="float:left; margin-top:8vw; margin-left: 10vw;">هر مربع یعنی ۱۰ کتاب</div>
+            </div>
+        </div>
+        <div class="Q1_4" style="margin-top: 10vw;">
+            <div id="Q1_continue" class="text-config questions-text-config" style="margin-top:8vw; margin-right: 5vw;">به نظر شما کدام نمودار برای این موضوع مناسب تر است.</div>
+            <input id="Response" type="text"  value="اینجا بنویسید" style="float: none;margin-top: -1vw; margin-left: 10%; width: 30vw;height: 2vw; font-size: 1.5vw;  text-align: center; font-family: zar; " >
+            <div id="Q1_continue" class="text-config questions-text-config" style="margin-top:1vw; margin-right: 5vw;">در این باره در کلاس با آموزگار و همکلاسی هایتان گفت و گو کنید.</div>
+        </div>
+
+  
+
+        
+
+        <div class="page-number" style="left: -5vw; right: auto">۱۲۷</div>
+        <div class="page-no-input">
+            <div style="float: left; margin-right: 2vw; margin-top: 1vw">
+                <a href="book_3_125.html">
+                    <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+                </a>
+            </div>
+            <div class="page-number" style="float: left; position: relative; padding: 0.1vw 1vw; right: 0; bottom: 0">
+                <input style="width: 5vw; font-size: 1.5vw; background-color: var(--orange_level2); text-align: center; color: white" type="number" name="page_number" id="page_switcher">
+            </div>
+            <div style="float: left; margin-left: 2vw; margin-top: 1vw">
+                <a href="book_3_123.html">
+                    <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="next_page">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+<script src="assets/3rd/js/Mazrooei.js" type="text/javascript" params="127"></script>
+
+</html>

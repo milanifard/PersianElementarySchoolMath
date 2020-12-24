@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/3rd/css/KheirKhah.css">
+    <link rel="stylesheet" href="./assets/3rd/css/Ansari.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="./assets/3rd/js/Ansari.js"></script>
+
+
+    <title>ریاضی سوم دبستان - صفحه سیزده</title>
+</head>
+
+<script>
+    function loadme(){
+                        var canvas = document.getElementById("myCanvas");
+                        var ctx = canvas.getContext("2d");
+                        var img = document.getElementById("pic");
+                        ctx.drawImage(img, 0, 0);}
+</script>
+    <body onload="loadme()">
+
+        <div class = "flexrow">
+            <div class = "paperCont" id ="leftgreen">
+                <h2 class="header" id = "colorLightGreen">ماشین های ورودی و خروجی</h2>
+
+
+                <h5 class="act" id="colorGreen" >فعالیت</h5>
+            
+                <div  class="quest">
+                    <div style = "  text-align: justify;
+                                    text-justify: inter-word;">
+                        <span style= "color: #46A764;">۱-</span>
+                        <span>
+                            هر عددی که وارد این ماشین شود، با عدد ۵ جمع می شود و حاصل جمع، از ماشین بیرون می آید.<br>از ماشین روبه رو چه عددی خارج می شود؟
+                        </span>
+                        <input class="gre" id="p13q1_1" type="number">    
+                        <div class="clear"></div>
+                    </div>
+                    <div>
+                        <img src="./assets/3rd/images/Ansari/13-1.png" class="img-responsive"/> 
+                    </div>
+
+                    <div style = "  text-align: justify;
+                                     text-justify: inter-word;">
+                        <span>جواب را چگونه به دست می آورید؟ </span>
+                        <form>
+                            <label >انتخاب کنید</label>
+                            <select id="res" class ="gre">
+                                <option value="incorr">رابطه ورودی و خروجی را حدس می‌زنیم .</option>
+                                <option value="corr">رابطه ورودی و کار کرد خروجی را بررسی می‌کنیم و به خروجی می‌رسیم.</option>
+                            </select>
+                            </form>
+                     </div>
+                </div>
+                
+                <div class="button" id= "colorLightGreen" onclick="p13ques1()">ثبت</div>
+
+                <div class="clear2"></div>
+
+                <div  class="quest">
+                    <div style = "  text-align: justify;
+                                    text-justify: inter-word;">
+                        <span style= "color: #46A764;">2-</span>
+                        <span>
+                            عددهایی به ترتیب وارد ماشین زیر شده اند. با توّجه به کاری که ماشین انجام می دهد،عددهای خروجی را بنویسید.                        
+                        </span>
+                        <div>
+                            الف‌)‌‌ <input class="gre" id="p13q2_1" type="number">    
+                           ب) <input class="gre" id="p13q2_2" type="number">    
+                            ج) <input class="gre" id="p13q2_3" type="number">    
+                            د) <input class="gre" id="p13q2_4" type="number">    
+                        </div> 
+                        <div class="clear"></div>
+                    </div>
+                    <div>
+                        <img src="./assets/3rd/images/Ansari/13-2.png" class="img-responsive"/>
+                    </div>
+                </div>
+                <div class = "clear"></div>
+                <div class="button" id= "colorLightGreen" onclick="p13ques2()">ثبت</div>
+                <div class = "clear"></div>
+    
+                <div id= "find">
+                    <h5 class="act" id="colorGreen" >بگرد و پیدا کن</h5>
+                    <div class="flexrow">
+                    <p> در تصویر زیر،شکل های مثل شکل یک شکل دو زیر را با کلیک مشّخص کنید. به همه ی این شکل ها مکّعب گفته میشود.</p>
+                    <img src="./assets/3rd/images/Ansari/13-4.png " class="img-responsive"/>
+                    <img src="./assets/3rd/images/Ansari/13-5.png" class="img-responsive"/>
+                    <img src="./assets/3rd/images/Ansari/13-3.png" id="pic" style="display: none;"/>
+                </div>
+
+                    <canvas id="myCanvas" width="500" height="374" ></canvas>
+
+                    <script>
+                        var canvas = document.getElementById("myCanvas");
+                        var ctx = canvas.getContext("2d");
+                        var img = document.getElementById("pic");
+                        ctx.drawImage(img, 0, 0);
+                    
+                        canvas.addEventListener("click", function (evt) {
+                            var mousePos = getMousePos(canvas, evt);
+                            console.log(mousePos.x, mousePos.y)
+                            ctx.beginPath();
+                            ctx.arc(mousePos.x, mousePos.y, 60, 0, 2 * Math.PI);
+
+                            if(checkplace(mousePos.x,mousePos.y,59,106,25,70)
+                                                || checkplace(mousePos.x,mousePos.y,55,151,97,180)
+                                                || checkplace(mousePos.x,mousePos.y,79,169,195,243)
+                                                || checkplace(mousePos.x,mousePos.y,12,62,287,314)
+                                                || checkplace(mousePos.x,mousePos.y,84,156,256,270)
+                                                || checkplace(mousePos.x,mousePos.y,32,52,173,191)
+                                                || checkplace(mousePos.x,mousePos.y,326,367,111,204)
+                                                || checkplace(mousePos.x,mousePos.y,240,339,3,26)
+                                                || checkplace(mousePos.x,mousePos.y,313,359,45,71)
+                                                || checkplace(mousePos.x,mousePos.y,250,267,186,202)
+                                                || checkplace(mousePos.x,mousePos.y,240,266,42,65)
+                                                || checkplace(mousePos.x,mousePos.y,373,450,209,272)
+                                                ){
+                                ctx.strokeStyle = 'green';
+                            }
+                            else{
+                                ctx.strokeStyle = 'red';
+                            }
+                            ctx.stroke();
+                        }, false);
+
+                        function getMousePos(canvas, evt) {
+                            var rect = canvas.getBoundingClientRect();
+                            return {
+                                x: evt.clientX - rect.left,
+                                y: evt.clientY - rect.top
+                            };
+                        }
+                    </script>                    
+                </div>
+            </div>
+            <div class= "side" id = "sideGreen" >
+                <!-- <div class = "pageCounter">
+                    ۶۲
+                </div> -->
+            </div>
+
+        </div> 
+        <div class="flexrow"  id = "downbarGreen">
+            <a class = "page"  id="textGreen" href="" target="_blank">صفحه قبل</a>
+            <h5 id= "pageCounterGreen">۱۳</h5>
+            <a class = "page" id="textGreen" href="Book_3_14.html" target="_blank">صفحه بعد</a>
+        </div>
+    </body>
+</html>

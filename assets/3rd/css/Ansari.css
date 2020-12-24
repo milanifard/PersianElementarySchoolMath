@@ -1,0 +1,133 @@
+@font-face {
+  font-family: kodak;
+  src: url(./../../fonts/Ansari/B\ Koodak.ttf);
+}
+@font-face {
+  font-family: nazanin;
+  src: url(./../../fonts/Ansari/B\ Nazanin.ttf);
+}
+
+h1{
+  font-family: kodak;
+}
+h2{
+  font-family: kodak;
+}
+h3{
+  font-family: kodak;
+}
+h4{
+  font-family: kodak;
+}
+h5{
+  font-family: kodak;
+}
+p , span , input{
+  font-family: nazanin ;
+}
+
+.page{
+  font-family: kodak;
+}
+
+#leftgreen{
+    border-top:double #46A764 10px;
+    border-left:double #46A764 10px;
+    border-radius:25px 0 0 0;
+}
+
+#rightgreen{
+  border-top:double #46A764 10px;
+  border-right:double #46A764 10px;
+  border-radius:0 25px 0 0;
+}
+
+#colorLightGreen{
+    background: #B6D067;
+}
+
+#colorGreen{
+    background: #46A764;
+}
+
+#sideGreen{
+    background-image: repeating-linear-gradient(#B6D067 0px ,#B6D067 4px ,#46A764 4px,#46A764 8px);
+  }
+
+#downbarGreen {
+    overflow : scroll;
+    background-image: repeating-linear-gradient(#B6D067 0px ,#B6D067 4px ,#46A764 4px,#46A764 8px);
+    padding: 10% 0% 3% 0%;
+    align-items :baseline;
+  }
+
+  .gre{  
+    border:solid #46A764;
+    width: 75px;
+  }
+
+  #p13q1_2{
+    border:solid #46A764;
+    width: 200px;  
+  }
+
+  #find{
+    border: solid 2px #46A764;
+    background: #B6D067;
+    padding: 10px 20px ;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  #pageCounterGreen{background: #ffffff;
+  border-radius: 25px;
+  color:#46A764 ;  
+  width: 10%;
+  text-align: center;
+  border: 4px double #46A764;
+  padding-top: 1%;
+  padding-bottom: 1%;}
+
+#textGreen{
+    border-color: #46A764;
+}
+
+table {
+  height: 100%;
+  border: 1px solid #46A764;
+  margin: 10px;
+}
+th ,td{
+  border: 1px solid #46A764;
+  width: 75px;
+  text-align: center;
+}
+.small{
+  font-size: large;
+  border:  solid #46A764;
+  width: 45px;
+
+}
+
+#large{
+  font-size: larger;
+  border:  solid #4d2369;
+  background: #b98bd8 ;
+  }
+
+#small{
+    font-size: larger;
+    border:  solid #46A764;
+    }
+
+
+.fas{
+  margin:0 2px;
+  margin-top: 1%;
+
+}
+
+#res{
+  width: 30%;
+
+}

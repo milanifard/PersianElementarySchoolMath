@@ -1,5 +1,5 @@
 function getValue(i, x) {
-    answers = [28, 38, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11];
+    answers = [56, 38, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11];
     var obj = document.getElementById(x)
     obj.classList.remove('error');
     obj.classList.remove('correct');
@@ -59,4 +59,12 @@ function getMultiValue(j, x) {
             // alert("دوباره تلاش کن:(");
         }
     }
+}
+
+function getValuecheckbox() {
+    if (document.getElementById('imagecolorn').checked == true) {
+        makeGreen("label1");
+
+    }
+
 }
