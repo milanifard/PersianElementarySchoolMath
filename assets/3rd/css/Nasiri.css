@@ -43,7 +43,9 @@ span {
     font-family: 'zar';
     font-size: 1.5vw;
 }
-
+h6{
+    font-size: 2.4vw;
+}
 h5{
     font-size: 2.7vw;
 }
@@ -263,7 +265,6 @@ span>img{
 }
 .radio_btn{
     width: 1.5vw;
-    color: red;
     font-size: 1vw;
 }
 
@@ -324,10 +325,6 @@ span>img{
     display: flex;
 }
 
-
-.normal_shadow_circle{
-}
-
 .normal_shadow {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -341,8 +338,26 @@ span>img{
 }
 
 .green_shadow {
-    box-shadow: 0 6px 10px 0 rgba(57, 220, 57, 0.8);
+    box-shadow: 0 3px 10px 0 rgba(57, 220, 57, 0.8);
 }
+.yellow_shadow_radio {
+
+    background-color:white;
+    box-shadow:15px 30px 20px -10px rgba(0, 0, 0, 0.4), inset -20px -40px 40px 30px rgba(255, 235, 59, 0.3);
+}
+
+.red_shadow_radio {
+    background-color:white;
+    box-shadow:15px 30px 20px -10px rgba(0, 0, 0, 0.4), inset -20px -40px 40px 30px rgba(244, 67, 54, 0.3);
+}
+
+.green_shadow_radio {
+    background-color:white;
+    box-shadow:15px 30px 20px -10px rgba(0, 0, 0, 0.4), inset -20px -40px 40px 30px rgba(57, 220, 57, 0.3);
+}
+
+
+
 .bottom_box {
     width: 100%;
     border-radius: 30px;
