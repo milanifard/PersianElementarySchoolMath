@@ -12,6 +12,19 @@ function $(id) {
     return document.getElementById(id);
 }
 
+function check_text_box(text_box, value) {
+    if (text_box.value === "") {
+        text_box.style.backgroundColor = transparent_color;
+        return null;
+    } else if (text_box.value === value) {
+        text_box.style.backgroundColor = correct_table_color;
+        return true;
+    } else {
+        text_box.style.backgroundColor = incorrect_table_color;
+        return false;
+    }
+}
+
 function error_message(message_element) {
     message_element.innerHTML = incorrect_message;
     message_element.style.color = incorrect_message_color;

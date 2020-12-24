@@ -103,6 +103,8 @@ input[type=number] {
     right: -12vw;
 }
 .page-number {
+    clear: both;
+
     background-color: var(--orange_level2);
     border-radius: 2.5vw;
     border: 0.5vw double white;
@@ -433,8 +435,20 @@ input[type=number] {
     clear: both;
 }
 
+#content_109 #Q3_img {
+    margin-top: 2vw;
+    height: 10vw;
+    float: right;
+}
+
+#content_109 #Q3_img img {
+    height: 100%;
+}
+
 #content_109 #Q3_table {
+    float: left;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 /*** PAGE 110 ***/
