@@ -167,7 +167,7 @@ body {
 }
 
 .activity-title {
-    border-radius: 1.1vw;
+    border-radius: 1.1vw 0 0 1.1vw;
     color: white;
     margin-top: unset;
     margin-left: unset;
@@ -291,11 +291,12 @@ body {
 
 .short-answer-area {
     width: 7vw;
+    height: 3vw;
     margin: 0 0.5vw 0 0.5vw;
     padding: 0 0.5vw 0 0.5vw;
 
     font-family: 'Koodak';
-    font-size: 2vw;
+    font-size: 1.4vw;
     direction: rtl;
 
     box-sizing: border-box;
@@ -364,7 +365,7 @@ body {
 
 .q8-parent {
     position: relative;
-    margin-top: 5vw;
+    margin-top: 8vw;
 }
 
 .pargar-image {
@@ -393,12 +394,58 @@ body {
 .q10-parent {
     position: relative;
     margin-top: 3vw;
+    margin-bottom: 17vw;
+}
+
+.green-shapes-image{
+    width: 70vw;
+    height: 10vw;
+    position: absolute;
+    top: 4vw;
+    left: 10vw
+}
+
+.shape1-answer{
+    position: absolute;
+    top: 13vw;
+    left: 13vw;
+}
+
+.shape2-answer{
+    position: absolute;
+    top: 13vw;
+    left: 24vw;
+}
+
+.shape3-answer{
+    position: absolute;
+    top: 13vw;
+    left: 34vw;
+}
+
+.shape4-answer{
+    position: absolute;
+    top: 13vw;
+    left: 47vw;
+}
+
+.shape5-answer{
+    position: absolute;
+    top: 13vw;
+    left: 57vw;
+}
+
+.shape6-answer{
+    position: absolute;
+    top: 13vw;
+    left: 68vw;
 }
 
 /* q11 */
 
 .q11-parent {
     position: relative;
+    margin-bottom: 3vw;
     /*margin-top: 3vw;*/
 }
 
@@ -414,7 +461,7 @@ body {
 
 .q12-parent {
     position: relative;
-    margin-bottom: 2vw;
+    margin-bottom: 22vw;
 }
 
 .circle2-image {
@@ -444,3 +491,34 @@ body {
     top: 5vw;
     left: 32vw
 }
+.clocks-image{
+    width: 70vw;
+    height: 10vw;
+    position: absolute;
+    top: 10vw;
+    left: 10vw
+}
+
+ .clock1-answer{
+    position: absolute;
+    top: 20vw;
+    left: 12vw
+ }
+
+ .clock2-answer{
+    position: absolute;
+    top: 20vw;
+    left: 33vw
+ }
+
+ .clock3-answer{
+    position: absolute;
+    top: 20vw;
+    left: 50vw
+ }
+
+ .clock4-answer{
+    position: absolute;
+    top: 20vw;
+    left: 70vw
+ }
