@@ -122,3 +122,47 @@
     font-size: 2vw;
 }
 
+.pagination-container {
+    direction: rtl;
+    justify-content: center;
+    display: flex;
+    height: 5vw;
+    margin-top: 2vw;
+}
+
+.page-number {
+    background-color: #a1ea81;
+    border-radius: 2vw;
+    width: 10vw;
+    color: white;
+    border: 0.6vw double white;
+    padding: 0 1.1vw;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.page-number input {
+    font-family: 'B Koodak', sans-serif;
+    background-color: #00b344;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2.35vw;
+    color: white;
+}
+
+.page-number-button {
+    width: 5vw;
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.page-number-button > a {
+    color: white;
+    font-size: 4.5vw;
+    display: flex;
+}

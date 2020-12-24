@@ -6,9 +6,11 @@
     <title>صفحه‌ی ۸۰ - ریاضی سوم دبستان</title>
     <link rel="stylesheet" href="assets/3rd/css/Sargolzehi.css">
     <script src="assets/3rd/js/Sargolzehi.js"></script>
+    <script src="./assets/3rd/js/pagination.js"></script>
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style="margin: 0;">
 <div>
@@ -126,8 +128,19 @@
                 <br><br><br><br>
             </div>
         </div >
+    </div>
 
-
+    <div class="pagination-container">
+        <div class="page-number-button">
+            <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="page-number">
+            <label for="page-number-input"></label>
+            <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+        </div>
+        <div class="page-number-button">
+            <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+        </div>
     </div>
 </div>
 </body>
