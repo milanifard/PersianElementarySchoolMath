@@ -38,31 +38,7 @@
     box-sizing: border-box;
 }
 
-.farhangeKhandan{
-    background-color: rgb(255,252,224);
-    width: 90%;
-    padding: 9vw 2vw 2vw 2vw;
-    border-radius: 5vw;
-    border:0.3vw solid rgb(254, 204, 78);
-    margin-top: -10vw;
-    margin-right: 0.7vw;
-    
-    
-    
-}
-.pic_worm{
-    position: absolute;
-    width: 12vw;
-    top:-7.2vw;
-    height: 12.5vw;
-    right:3vw;
-}
-.pic_boy{
-position: absolute;
-width: 25vw;
-left: 12vw;
-margin-top: -22vw;
-}
+
 html, body {
     max-width: 100%;
 
@@ -187,7 +163,7 @@ z-index: 1;
     font-size: 2.3vw;
     color: black;
     margin-top: -4vw;
-    margin-right: 3vw;
+    margin-right: 4vw;
     padding-left: 2.5vw;
     padding-right: 0.7vw;
     
@@ -196,7 +172,7 @@ z-index: 1;
 }
 
 .rectangle {
-    width: 3vw;
+    width: 4vw;
     height: 4vw;
     background-color: var(--yellow_level3_border);
     margin-top: 5vw;
