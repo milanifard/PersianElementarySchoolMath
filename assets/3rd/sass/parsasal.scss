@@ -1,8 +1,8 @@
 $color-1 : #F13F52;
 $color-2 : #DC302F;
-$my-light :#f0cacf ;
+$my-light :#f0cacf;
 $theme-colors: ("primary": $color-1,
-    "light": $my-light//   "secondary": $color-2
+    "light": $my-light //   "secondary": $color-2
 );
 
 
@@ -46,14 +46,14 @@ body {
 
 @media (min-width:992px) {
     .container-full {
-        width: 80% !important;
+        width: 90% !important;
         margin: auto;
     }
 }
 
 @media (min-width:1200px) {
     .container-full {
-        width: 70% !important;
+        width: 80% !important;
         margin: auto;
     }
 }
@@ -320,6 +320,10 @@ $paper-line: #94ACD4;
     font-size: 30px;
 }
 
+#triangles_explain_input {
+    min-height: 5em;
+
+}
 
 .hover-glow:hover {
     border-color: #66afe9;
@@ -407,7 +411,7 @@ select {
     appearance: none;
     outline: 0;
     box-shadow: none;
-    border: 0 ;
+    border: 0;
     background-image: none;
     background: $color-1;
 
