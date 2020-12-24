@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ali Goldani">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/galiold.css">
+    <title>ریاضی سوم دبستان صفحه ۱۱۶</title>
+
+</head>
+
+<body class="right-border">
+    <div class="right-border-page">
+
+        <div id="activity_item">
+            <img class="activity-image" src="assets/3rd/images/activity.png" alt="activity_image">
+            <div class="activity-text">حلّ مسئله</div>
+        </div>
+
+        <div id="q1" class="question-container first">
+            <div class="prompt">۱- کدام عددهای یک‌رقمی هستند که اگر در خودشان ضرب شوند، حاصل آن‌ها بیشتر از ۳۰
+                می‌شود؟
+            </div>
+            <div class="guide">به جای مربّع عددهای یک‌رقمی قرار دهید و حاصل را پیدا کنید. مجموعه‌ی
+                عددهایی که پیدا کردید را با فاصله در فضای پایین بنویسید.</div>
+            <div class="test-pane">
+                <input id="q1-first-num" type="text" placeholder="0" onchange="p116_calcResult()" class="ans-box">
+                <span>x</span>
+                <input id="q1-second-num" type="number" placeholder="0" onchange="p116_calcResult()" class="ans-box">
+                <span>=</span>
+                <span id="q1-result">0</span>
+            </div>
+            <div class="ans-pane">
+                <input id="q1-ans" type="text" dir="ltr" class="ans-rect">
+            </div>
+            <div class="ans-pane">
+                <img src="assets/3rd/images/galiold/p116-q1.png" alt="thinking-figure">
+                <button id="q1-submit" onclick="p116_checkQ1()">بررسی</button>
+                <span id="q1-feedback-correct" class="feedback correct">آفرین</span>
+                <span id="q1-feedback-wrong" class="feedback wrong">دوباره تلاش کن</span>
+            </div>
+        </div>
+
+
+        <div id="q2" class="question-container">
+            <div class="prompt">۲- عددی را با خودش جمع کردیم و از حاصل جمع یکی کم کردیم، جواب ۳۹ شد. آن عدد را پیدا
+                کنید.</div>
+            <div class="guide">با اوّلین حدس شروع کنید. برای مثال عدد را ۱۵ در نظر بگیرید و آزمایش کنید.</div>
+            <div class="guide">حالا حدس بعدی شما باید بیشتر از ۱۵ باشد یا کمتر از آن؟ چرا؟ توضیحات خود را در فضای زیر
+                بنویسید.</div>
+            <div class="ans-pane">
+                <input id="q2-first-num" type="number" placeholder="0" onchange="p116_updateNextFieldQ2()"
+                    class="ans-box">
+                <span>+</span>
+                <input id="q2-second-num" type="number" placeholder="0" class="ans-box" readonly>
+                <span dir="ltr">- 1 = 39</span>
+            </div>
+            <div class="ans-pane">
+                <button id="q2-submit" onclick="p116_checkQ2()">بررسی</button>
+                <span id="q2-feedback-correct" class="feedback correct">آفرین</span>
+                <span id="q2-feedback-wrong" class="feedback wrong">دوباره تلاش کن</span>
+            </div>
+        </div>
+
+        <div id="q3" class="question-container">
+            <div class="prompt">۳- عددی را دو برابر کردیم. سپس حاصل را با ۲۰ جمع کردیم؛ جواب ۳۶ شد. آن عدد را پیدا کنید.
+            </div>
+            <div class="ans-pane">
+                <input id="q3-first-num" type="number" placeholder="0" onchange="p116_updateNextField()"
+                    class="ans-box">
+                <span dir="ltr">x 2 + 20 = 36</span>
+            </div>
+            <div class="ans-pane">
+                <button id="q3-submit" onclick="p116_checkQ3()">بررسی</button>
+                <span id="q3-feedback-correct" class="feedback correct">آفرین</span>
+                <span id="q3-feedback-wrong" class="feedback wrong">دوباره تلاش کن</span>
+            </div>
+        </div>
+
+        <div id="q4" class="question-container last">
+            <div class="prompt">۴- یک سکّه را انداختیم، رو آمد. دوباره انداختیم، باز هم رو آمد. آیا می‌توانید حدس بزنید
+                که اگر سکّه را دوباره بیندازیم، رو می‌آید یا پشت؟ چرا؟</div>
+            <div class="ans-pane">
+                <input type="radio" id="uncertain" name="q4-result" value="uncertain">
+                <label for="uncertain">نامعلوم</label>
+                <input type="radio" id="tail" name="q4-result" value="tail">
+                <label for="tail">پشت</label><br>
+                <input type="radio" id="head" name="q4-result" value="head">
+                <label for="head">رو</label><br>
+            </div>
+            <div class="ans-pane">
+                <input id="q4-ans" type="text" class="ans-rect extended">
+            </div>
+            <div class="ans-pane">
+                <button id="q4-submit" onclick="p116_checkQ4()">بررسی</button>
+                <span id="q4-feedback-correct" class="feedback correct">آفرین</span>
+                <span id="q4-feedback-wrong" class="feedback wrong">دوباره تلاش کن</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="assets/3rd/images/galiold/page116-footer2.png" alt="worm-coin">
+            <div class="sub-footer left txt">
+                <img src="assets/3rd/images/galiold/page116-footer1.png" alt="studying-girl">
+                <p>
+                    حدس زدن پاسخ مسئله براساس موضوع مسئله انجام می شود. از حدس زدن‌های بدون دلیل پرهیز کنید. در مسائل بالا ابتدا
+                    با روش‌های نمادین یک تساوی بنویسید. سپس، از راهبرد
+                    <span class="guide">حدس و آزمایش</span>
+                    استفاده کنید.
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="pagination">
+        <a href="book_3_117.html">
+            <img src="assets/3rd/images/right-arrow.png" alt="next_page">
+        </a>
+
+        <input class="page-number-input" type="number" name="page_number" id="page-switcher" placeholder="116">
+
+        <a href="book_3_115.html">
+            <img src="assets/3rd/images/left-arrow.png" alt="next_page">
+        </a>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="assets/3rd/js/galiold.js" type="text/javascript" params="124"></script>
+
+</html>
