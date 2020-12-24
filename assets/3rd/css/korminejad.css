@@ -77,11 +77,11 @@ body {
 
 
 .left-border {
-    width: 90vw;
+    width: 88vw;
     max-width: 100%;
     border: 0.8vw double var(--orange-bg-level1);
 
-    margin: 6vw 0 0 10vw;
+    margin: 6vw 0 0 9vw;
     border-right: none;
     border-top-left-radius: 5vw;
     border-bottom-left-radius: 5vw;
@@ -92,12 +92,12 @@ body {
 
 .right-border{
 
-    width: 90vw;
+    width: 89vw;
     max-width: 100%;
 
     border: 0.8vw double var(--orange-bg-level1);
 
-    margin: 6vw 10vw 0 0;
+    margin: 6vw 9vw 0 0;
     border-left: none;
     border-top-right-radius: 5vw;
     border-bottom-right-radius: 5vw;
@@ -107,7 +107,7 @@ body {
 
 .background-style {
 
-    width: 100vw;
+    width: 99vw;
     height: 53vw;
 
     background-image: repeating-linear-gradient(0deg, var(--yellow-bg-level2), var(--yellow-bg-level2) 1vw, var(--orange-bg-level1) 0vw, var(--orange-bg-level1) 2.5vw);
@@ -1643,4 +1643,50 @@ box-shadow: 0 0 1px rgba(0, 0, 0, .75);
     height: 5.4vw;
 
     position: absolute;
+}
+
+
+.page-navigator {
+    width: 100%;
+    margin: 7vw auto ;
+    /* margin-left: 40vw; */
+    padding: 5vw 0vw 0vw ;
+}
+
+.previous-page {
+    display: block;
+    float: right;
+    position: absolute;
+
+}
+
+.previous-page a {
+    text-decoration: none;
+    color: var(--main_color);
+    font-size: 3vw;
+    font-family: B Zar;
+}
+
+.previous-page a:hover {
+    text-decoration: none;
+    color: olive;
+    font-size: 3vw;
+}
+
+.next-page {
+    display: block;
+    float: left;
+}
+
+.next-page a {
+    text-decoration: none;
+    color: var(--main_color);
+    font-size: 3vw;
+    font-family: B Zar;
+}
+
+.next-page a:hover {
+    text-decoration: none;
+    color: olive;
+    font-size: 3vw;
 }
