@@ -1,7 +1,7 @@
 $light_blue: #A5CDE0;
 $dark_blue: #64B1C7;
 $green: #84B954;
-$darker_pink: #d17fa7;
+$darker_pink: #b03776;
 $dark_pink: #D17FA6;
 $light_pink: #DC9FBC;
 $lighter_pink: #fdebf3;
@@ -126,7 +126,7 @@ img {
 
 .page-number-on-bottom {
 	box-sizing: border-box;
-    background-color: $darker_pink;
+    background-color: $dark_pink;
     border-radius: 2em;
     width: 5.8em;
     color: #fff;
@@ -204,7 +204,7 @@ ol {
 	li {
 		&::before {
 			content: counter(item) "ـ"; 
-			color: #b03776;
+			color: $darker_pink;
 			counter-increment: item;
 		}
 	}
@@ -259,7 +259,11 @@ ol {
 }
 
 #patternTitlePage_76 {
-	margin-right: 8vw
+	margin-right: 8vw;
+	
+	span {
+		color: $darker_pink;
+	}
 }
 
 #flowerPotPage_76 {

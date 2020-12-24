@@ -147,7 +147,7 @@ img {
 
 .page-number-on-bottom {
   box-sizing: border-box;
-  background-color: #d17fa7;
+  background-color: #D17FA6;
   border-radius: 2em;
   width: 5.8em;
   color: #fff;
@@ -257,6 +257,8 @@ ol {
 
 #patternTitlePage_76 {
   margin-right: 8vw; }
+  #patternTitlePage_76 span {
+    color: #b03776; }
 
 #flowerPotPage_76 {
   width: 24vw;
