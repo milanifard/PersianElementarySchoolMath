@@ -196,6 +196,7 @@ else if (page_no === "125") {
         })();
 
         if (color_picker_item != null) {
+
             switch (color_picker_item.id) {
                 case colors[0]:
                     $(id).style.backgroundColor = color_picker_item.style.backgroundColor;
@@ -304,7 +305,7 @@ else if (page_no === "125") {
     $('Q2_blue_input').addEventListener('input', check_ans_Q2);
 
     function check_ans_Q2(e) {
-        if (e.target.value === 50) {
+        if (e.target.value == 50) {
             $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');
         } else {
             $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');
