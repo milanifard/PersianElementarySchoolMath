@@ -1,55 +1,82 @@
-.title-style{
+.activity-container {
+    width: 25%;
+    .activity-header {
+        display: flex;
+        flex-direction: row;
+        
+        .activity-image-container {
+            z-index: 2;
+            .activity-image {
+                width: 13vw;
+            }
+        }
 
-    background-color: $yellow_level3_border;
-    border-radius: 2vw;
-
-    text-align: center;
-    font-family: Koodak;
-    font-size: 3vw;
-    color: $black;
-
-    padding: 0 2vw;
-    position: absolute;
-    right: 35vw;
-    left: 35vw;
-    top: -3.3vw;
+        .activity-title-container {
+            background-color: $yellow_level3_border;
+            border-radius: 1.5vw;
+            z-index: 1;
+            .activity-title {
+                color: $white;
+                font-family: Koodak;
+                font-size: 2.5vw;
+                text-align: center;
+            }
+        }
+    }
 }
 
-.that-ridiculous-red-parts-in-title{
-    height: 1vw;
+// .title-style{
 
-    background-color: $red_level2;
-    color: $red_level2;
-    border-style: solid;
+//     background-color: $yellow_level3_border;
+//     border-radius: 2vw;
 
-    position: absolute;
-    right: 34vw;
-    left: 34vw;
-    top: -1.2vw;
-}
+//     text-align: center;
+//     font-family: Koodak;
+//     font-size: 3vw;
+//     color: $black;
 
-.activity-text{
+//     padding: 0 2vw;
+//     position: absolute;
+//     right: 35vw;
+//     left: 35vw;
+//     top: -3.3vw;
+// }
 
-    background-color: $yellow_level3_border;
-    border-radius: 1.5vw;
+// .that-ridiculous-red-parts-in-title{
+//     height: 1vw;
 
-    text-align: center;
-    font-family: Koodak;
-    font-size: 2.5vw;
-    color: $white;
+//     background-color: $red_level2;
+//     color: $red_level2;
+//     border-style: solid;
 
-    padding: 0 5vw 0 3vw;
-    position: absolute;
-    right: 8vw;
-    top: 2.5vw;
-    z-index: 1;
-}
+//     position: absolute;
+//     right: 34vw;
+//     left: 34vw;
+//     top: -1.2vw;
+// }
 
-.activity-image{
+// .activity-text{
 
-    width: 13vw;
-    position: absolute;
-    right: -2.3vw;
-    top: 0.5vw;
-    z-index: 2;
-}
+//     background-color: $yellow_level3_border;
+//     border-radius: 1.5vw;
+
+//     text-align: center;
+//     font-family: Koodak;
+//     font-size: 2.5vw;
+//     color: $white;
+
+//     padding: 0 5vw 0 3vw;
+//     position: absolute;
+//     right: 8vw;
+//     top: 2.5vw;
+//     z-index: 1;
+// }
+
+// .activity-image{
+
+//     width: 13vw;
+//     position: absolute;
+//     right: -2.3vw;
+//     top: 0.5vw;
+//     z-index: 2;
+// }
