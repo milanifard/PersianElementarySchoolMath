@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/mkp.css">
     <title>ریاضی سوم دبستان</title>
+    <script src="assets/3rd/js/Kermanipoor/page_110.js"></script>
 </head>
 
 <body>
@@ -19,51 +20,51 @@
         </div>
 
         <div id="practice_container">
-            <div id="practice_part_1" style="margin-right: 20vw;">
+            <div id="practice_part_1">
                 <div id="practice_part_1_description" class="text">با توجّه به شکل، حاصل تفریق ها را به دست آورید یا
                     برای تفریق&#8202;های داده شده، شکل بکشید.
                 </div>
 
-                <div style="margin-top: 1vw">
-                    <div class="text" style="float: right">
+                <div id="practice_Q1_container_1">
+                    <div id="practice_Q1_text_container_1" class="text">
                         <div>3435<br><span class="underline-text">1123 -</span></div>
-                        <div><input type="number" class="underline-text-box small-text-box"></div>
-                        <div class="text">بیشتر دقت کن</div>
+                        <div><input onchange="check_text_box(this, '2312')" type="number" class="underline-text-box small-text-box"></div>
                     </div>
-                    <div style="width:32vw; float: left; direction: ltr" >
-                        <img style="width: 100%" src="assets/3rd/images/Kermanipoor/orange_shapes.JPG" alt="orange shapes">
+                    <div id="practice_Q1_img_container_1">
+                        <img src="assets/3rd/images/Kermanipoor/orange_shapes.JPG" alt="orange shapes">
                     </div>
                 </div>
 
-                <div style="clear:both; padding-top: 3vw;">
-                    <div class="text" style="float: right">
-                        <div><input type="number" class="underline-text-box small-text-box"></div>
-                        <div><input type="number" class="underline-text-box small-text-box">-</div>
-                        <div><input style="border-top: solid;" type="number" class="underline-text-box small-text-box"></div>
-                        <div class="text">بیشتر دقت کن</div>
+                <div id="practice_Q1_container_2">
+                    <div id="practice_Q1_text_container_2" class="text">
+                        <div><input onchange="check_text_box(this, '2250')" id="practice_text_box_2_1" type="number" class="underline-text-box small-text-box"></div>
+                        <div><input onchange="check_text_box(this, '1421')" id="practice_text_box_2_2" type="number" class="underline-text-box small-text-box">-</div>
+                        <div><input onchange="check_text_box(this, '829')" id="practice_text_box_2_3" type="number" class="underline-text-box small-text-box"></div>
                     </div>
 
-                    <div style="float: left;">
-                        <div><img style="width:48vw;" src="assets/3rd/images/Kermanipoor/green_shapes.png" alt="orange shapes"></div>
-                        <div class="text" style="text-align: center; font-size: 1.5vw; clear: both; float: left; margin-left:10vw" >یک دسته ی ١٠٠٠ تایی که<br>به ١٠ تا ١٠٠ تایی تبدیل شده است</div>
+                    <div id="practice_Q1_img_container_2">
+                        <div>
+                            <img src="assets/3rd/images/Kermanipoor/green_shapes.png" alt="orange shapes">
+                        </div>
+                        <div id="practice_Q1_img_container_2_alter" class="text">یک دسته ی ١٠٠٠ تایی که<br>به ١٠ تا ١٠٠ تایی تبدیل شده است</div>
                     </div>
                 </div>
             </div>
 
-            <div class="dotted_table" style="clear:both; margin-right: 2vw;">
+            <div class="dotted_table">
                 <table>
                     <tr>
                         <td>
-                            <div style="margin-left:2vw;float: left">
-                                <div class="text">3435<br><span class="underline-text">1123 -</span></div>
-                                <div><input type="number" class="underline-text-box small-text-box"></div>
+                            <div class="question-box">
+                                <div class="text">3459<br><span class="underline-text">2356 -</span></div>
+                                <div><input onchange="check_text_box(this, '1103')" type="number" class="underline-text-box small-text-box"></div>
                             </div>
-                            <div style="position: relative;right: -2vw;height: 23vw;"><img style="height: 100%" src="assets/3rd/images/Kermanipoor/Ladybird%20beetle.png" alt="Ladybird beetle"></div>
+                            <div id="ladybird_beetle_img"><img src="assets/3rd/images/Kermanipoor/Ladybird%20beetle.png" alt="Ladybird beetle"></div>
                         </td>
                         <td>
-                            <div style="margin-left:2vw;float: left">
-                                <div class="text">3435<br><span class="underline-text">1123 -</span></div>
-                                <div><input type="number" class="underline-text-box small-text-box"></div>
+                            <div class="question-box">
+                                <div class="text">2512<br><span class="underline-text">1351 -</span></div>
+                                <div><input onchange="check_text_box(this, '1161')" type="number" class="underline-text-box small-text-box"></div>
                             </div>
                         </td>
                     </tr>
@@ -78,7 +79,7 @@
                     <div class="text"><span class="questions-number">1ــ </span>تعداد کلّ مربّع ها را با نوشتن ضرب و جمع
                         به دست آورید.
                     </div>
-                    <div style="direction: ltr">
+                    <div class="square_table">
                         <table class="square_table">
                             <tr>
                                 <td>
@@ -206,26 +207,26 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="text" style="clear: both; margin-top: 6vw">
+                    <div id="complete_Q1" class="text">
                             <span>
-                                <input type="number" class="underline-text-box small-text-box">
+                                <input onchange="check_text_box(this, '23')" onchange="check_text_box(this, '64')" type="number" class="underline-text-box small-text-box">
                                 =
-                                <input type="number" class="underline-text-box small-text-box">
+                                <input onchange="check_text_box(this, '15')" type="number" class="underline-text-box small-text-box">
                                 +
-                                <input type="number" class="underline-text-box small-text-box">
+                                <input onchange="check_text_box(this, '8')" type="number" class="underline-text-box small-text-box">
                                 = (
-                                <input type="number" class="underline-text-box small-text-box">
+                                <input onchange="check_text_box(this, '5')" type="number" class="underline-text-box small-text-box">
                                 ×
-                                <input type="number" class="underline-text-box small-text-box">
+                                <input onchange="check_text_box(this, '3')" type="number" class="underline-text-box small-text-box">
                                 ) + (
-                                <input type="number" class="underline-text-box small-text-box">
+                                <input onchange="check_text_box(this, '2')" type="number" class="underline-text-box small-text-box">
                                 ×
-                                <input type="number" class="underline-text-box small-text-box">
+                                <input onchange="check_text_box(this, '4')" type="number" class="underline-text-box small-text-box">
                                 )
                             </span>
                     </div>
                 </div>
-                <div style="clear: both; margin-top: 2vw">
+                <div id="complete_Q2">
                     <div class="text">
                         <span class="questions-number">2ــ </span>
                         حاصل عبارت ها را به دست آورید.
@@ -234,37 +235,37 @@
                         <table>
                             <tr>
                                 <td>
-                                    <input type="number" class="underline-text-box small-text-box">
+                                    <input onchange="check_text_box(this, '64')" type="number" class="underline-text-box small-text-box">
                                     =
-                                    <input type="number" class="underline-text-box small-text-box">
+                                    <input onchange="check_text_box(this, '8')" type="number" class="underline-text-box small-text-box">
                                     ×
-                                    <input type="number" class="underline-text-box small-text-box">
+                                    <input onchange="check_text_box(this, '8')" type="number" class="underline-text-box small-text-box">
                                     <span>= 8 × ( 5 + 3 )</span>
                                 </td>
                                 <td>
-                                    <input type="number" class="underline-text-box small-text-box">
+                                    <input onchange="check_text_box(this, '36')" type="number" class="underline-text-box small-text-box">
                                     =
-                                    <input type="number" class="underline-text-box small-text-box">
+                                    <input onchange="check_text_box(this, '9')" type="number" class="underline-text-box small-text-box">
                                     ×
-                                    <input type="number" class="underline-text-box small-text-box">
+                                    <input onchange="check_text_box(this, '4')" type="number" class="underline-text-box small-text-box">
                                     <span>= ( 2 + 7 ) × 4</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="number" class="underline-text-box small-text-box">
+                                    <input onchange="check_text_box(this, '37')" type="number" class="underline-text-box small-text-box">
                                     =
-                                    <input type="number" class="underline-text-box small-text-box">
-                                    ×
-                                    <input type="number" class="underline-text-box small-text-box">
+                                    <input onchange="check_text_box(this, '35')" type="number" class="underline-text-box small-text-box">
+                                    +
+                                    <input onchange="check_text_box(this, '2')" type="number" class="underline-text-box small-text-box">
                                     <span>= ( 5 × 7 ) + ( 4 ÷ 8 )</span>
                                 </td>
                                 <td>
-                                    <input type="number" class="underline-text-box small-text-box">
+                                    <input onchange="check_text_box(this, '10')" type="number" class="underline-text-box small-text-box">
                                     =
-                                    <input type="number" class="underline-text-box small-text-box">
+                                    <input onchange="check_text_box(this, '5')" type="number" class="underline-text-box small-text-box">
                                     ×
-                                    <input type="number" class="underline-text-box small-text-box">
+                                    <input onchange="check_text_box(this, '2')" type="number" class="underline-text-box small-text-box">
                                     <span>= ( 3 - 8 ) × ( 5 - 7 )</span>
                                 </td>
                             </tr>

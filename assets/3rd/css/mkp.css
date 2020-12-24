@@ -213,6 +213,11 @@ input[type=number] {
     font-family: Koodak;
 }
 
+.dotted_table {
+    clear:both;
+    margin-right: 2vw;
+}
+
 .dotted_table table {
     border-collapse: collapse;
     width: 100%;
@@ -221,6 +226,10 @@ input[type=number] {
 .dotted_table td {
     border: 0.5vw dotted var(--orange_level3);
     width: 50%;
+}
+.dotted_table .question-box {
+    margin-left:2vw;
+    float: left;
 }
 
 .small-text-box {
@@ -319,7 +328,12 @@ input[type=number] {
     padding-bottom: 3vw;
 }
 
-.square_table {
+.square_table{
+    margin-top: 1vw;
+    direction: ltr;
+}
+
+.square_table table{
     float: left;
 }
 
@@ -424,6 +438,75 @@ input[type=number] {
 }
 
 /*** PAGE 110 ***/
+#content_110 #practice_part_1{
+    margin-right: 20vw;
+}
+
+#content_110 #practice_Q1_container_1{
+    margin-top: 1vw;
+}
+
+#content_110 #practice_Q1_text_container_1{
+    float: right;
+}
+
+#content_110 #practice_Q1_img_container_1{
+    width:32vw;
+    float: left;
+}
+
+#content_110 #practice_Q1_img_container_1 img{
+    width:100%;
+}
+
+#content_110 #practice_Q1_container_2{
+    clear:both;
+    padding-top: 3vw;
+}
+
+#content_110 #practice_Q1_text_container_2{
+    float: right;
+}
+
+#content_110 #practice_text_box_2_3{
+    border-top: solid;
+}
+
+#content_110 #practice_Q1_img_container_2{
+    float: left;
+}
+
+#content_110 #practice_Q1_img_container_2 img{
+    width:48vw;
+}
+
+#content_110 #practice_Q1_img_container_2_alter{
+    text-align: center;
+    font-size: 1.5vw;
+    clear: both;
+    float: left;
+    margin-left:10vw;
+}
+
+#content_110 #ladybird_beetle_img{
+    position: relative;
+    right: -2vw;
+    height: 23vw;
+}
+
+#content_110 #ladybird_beetle_img img{
+    height: 100%;
+}
+
+#content_110 #complete_Q1{
+    clear: both;
+    margin-top: 7vw;
+}
+
+#content_110 #complete_Q2{
+    clear: both;
+    margin-top: 2vw;
+}
 
 #content_110 #complete_Q2_questions {
     width: 100%;
@@ -437,7 +520,7 @@ input[type=number] {
     width: 50%;
 }
 
-/*** PAGE 110 ***/
+/*** PAGE 111 ***/
 #content_111 #Q1_container {
     margin-right: 15.5vw;
 }
