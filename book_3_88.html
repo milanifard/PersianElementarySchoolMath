@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/sheikholeslami.css">
+    <title>ریاضی سوم دبستان - صفحه هشتاد و هشت</title>
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="content-box">
+            <div class="unitArea">اندازه ی سطح</div>
+            <div class="page-topic">
+                <img class="topic-image" src="./assets/3rd/images/Sheikholeslami/newboy.jpeg">
+                <div class="topic-title topic-title-classwork">فعالیت</div>
+            </div>
+            <div class="one-forth-page" style="margin-top: -5vw">
+                <img class="image-size pull-left" src="./assets/3rd/images/Sheikholeslami/table.png " alt="نیمکت" id="table">
+            </div>
+            <div class="third-forth-page">
+                <p>
+                    <span class="question_number pull-right mt">1-</span>
+                    <div class="question">
+                        به سطح نیمکت خود دست بکشید.<br>
+                        به سطح کتاب ریاضی تان دست بکشید.<br>
+                        سطح میز روبرو را با یکی از رنگ های روبرو رنگ کنید.<select id="colors" class="bg-select">
+                            <option value="not_chosen">انتخاب نشده</option>
+                            <option value="red">قرمز</option>
+                            <option value="green">سبز</option>
+                            <option value="blue">آبی</option>
+                        </select>
+                    </div>
+                </p>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div>
+                <p>
+                    <span class="question_number pull-right mt">2-</span>
+                    <div>
+                        اندازه ی سطح کدام مربع بیش تر است؟ آن را رنگ کنید. به کمک کاغذ شفاف اندازه این دو سطح را مقایسه
+                        کنید.
+                    </div>
+
+                </p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="container">
+                <div class="one-sixth-page">
+                    <canvas id="canvas1" class="bg-white"></canvas>
+                </div>
+                <div class=" one-sixth-page">
+                    <canvas class="bg-white" id="canvas2"></canvas>
+                </div>
+            </div>
+            <div class=" clearfix"></div>
+            <div>
+                <input type="button" value="ثبت" class="myBtn" id="saveBtn">
+            </div>
+            <div class=" clearfix"></div>
+            <div class="q3">
+                <p>
+                    <span class="question_number pull-right mt">3-</span>
+                    <div class="question">
+                        دو شکل زیر را روی کاغذ شفاف بکشید و دور آن ها را با قیچی ببرید. سپس شکل سمت راست را تکه تکه
+                        کنید
+                        و روی شکل سمت
+                        <br>
+                        چپ قرار دهید.آیا شکل سمت چپ را به صورت کامل می پوشاند؟
+                        <br>
+                    </div>
+                </p>
+            </div>
+            <div class="container">
+                <div class="one-sixth-page" >
+                    <div class="square-q3 pull-left">
+                       <div class="half_left imgContainer" ondrop="drop(event)" ondragover="allowDrop(event)" id="div1"></div>
+                       <div class="half-right" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2"></div>
+                    </div>
+                </div>
+                <div class="one-third-page">
+                    <div class="image123">
+                        <div class="imgContainer" ">
+                            <img class="w-5" src="./assets/3rd/images/Sheikholeslami/part1.png" alt="قسمت۱" draggable="true" ondragstart="drag(event)" id="drag1"/>
+                        </div>
+                        <div class="imgContainer">
+                            <img class="w-5" alt="قسمت۲" draggable="true" ondragstart="drag(event)" id="drag2" src="./assets/3rd/images/sheikholeslami/part2.png"//>
+                        </div>
+                        <div class="imgContainer">
+                             <img class="w-5" alt="قسمت۳" draggable="true" ondragstart="drag(event)" id="drag3" src="./assets/3rd/images/sheikholeslami/part3.png"/ />
+                        </div>
+                        <div class="imgContainer">
+                            <img class="w-5" alt="قسمت۴" draggable="true" ondragstart="drag(event)" id="drag4" src="./assets/3rd/images/sheikholeslami/part4.png"/  />
+                       </div>
+                    </div>
+                </div>
+                <!-- <div class="one-second-page-margin-0">
+                    اندازه سطح کدام شکل بزرگ تر است؟ چرا؟
+                </div> -->
+            </div>
+           
+            <div class="clearfix"></div>
+            <div class="q3">
+                <div class="one-forth-page" style="margin-top: -5vw">
+                    <img class="image-size pull-left mt-5" src="./assets/3rd/images/Sheikholeslami/scissor.png " alt="قیچی">
+                </div>
+                <div class="third-forth-page">
+                    <p>
+                        <span class="question_number pull-right mt">۴-</span>
+                        <div class="question">
+                            از هر کدام از شکل های زیر ده عدد روی کاغذ شفاف بکشید و دور آن ها را ببرید.<br>
+                            سطح سه مستطیل زیر را با کنار هم قرار دادن شکل موردنظر بپوشانید.<br>
+                            تعداد شکل هایی را که برای پوشاندن مستطیل ها به کار برده اید، بنویسید.<br>
+                            کار پوشاندن سطح مستطیل با کدام یک از شکل ها ساده تر بود؟<span><select id="shapes3"
+                                    class="bg-select">
+                                    <option value="not_chosen2">انتخاب نشده</option>
+                                    <option value="square2">مربع</option>
+                                    <option value="triangle2">مثلث</option>
+                                    <option value="hexagonal2">شش ضلعی</option>
+                                </select></span>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <!-- <div class=> -->
+            <div class="container">
+                <div class="one-sixth-page">
+                    <img class="small-size pull-left" src="./assets/3rd/images/Sheikholeslami/square.png " alt="مربع">
+                </div>
+                <div class="one-sixth-page">
+                    <img class="small-size pull-left" src="./assets/3rd/images/Sheikholeslami/triangle.png " alt="مثلث">
+                </div>
+                <div class="one-sixth-page">
+                    <img class="small-size pull-left" src="./assets/3rd/images/Sheikholeslami/Hexagonal.png " alt="شش ضلعی">
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+            <div class="container mt-3">
+                <div class="one-third-page-right">
+                    <img class="rec-image-size pull-left" src="./assets/3rd/images/Sheikholeslami/3.png " alt="مستطیل راست">
+                    <input type="number" class="input-style-right" id="input_right">
+
+                </div>
+                <div class="one-third-page-right">
+                    <img class="rec-image-size pull-left" src="./assets/3rd/images/Sheikholeslami/2.png " alt="مستطیل وسط">
+                    <input type="number" class="input-style-right" id="input_center">
+                </div>
+                <div class="one-third-page-right">
+                    <img class="rec-image-size pull-left" src="./assets/3rd/images/Sheikholeslami/1.png " alt="مستطیل چپ">
+                    <input type="number" class="input-style-right" id="input_left">
+
+                </div>
+            </div>
+            <!-- </div> -->
+            <div class="clearfix"></div>
+
+            <div class="page-navigator">
+                <div class="next-page">
+                    <a href="book_3_89.html">صفحه بعد ></a>
+                </div>
+            </div>
+            <div class="page-number">88</div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="assets/3rd/js/sheikholeslami/sweetalert2.min.js"></script>
+    <script src="assets/3rd/js/sheikholeslami/sweetalert2.all.js"></script>
+    <script type="text/javascript" src="assets/3rd/js/sheikholeslami/script.js"></script>
+</body>
+
+</html>
