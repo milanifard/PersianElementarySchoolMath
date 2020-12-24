@@ -125,10 +125,10 @@
     font-size: 2vw;
     font-family: Koodak;
     color: white;
-    padding: 0 3vw;
+    padding: 0 1.5vw;
     position: absolute;
-    bottom: -0.5vw;
-    right: -5vw;
+    bottom: -8vw;
+    right: 45vw;
 }
 
 .left-page-number {
@@ -558,4 +558,11 @@
     top: 0vw;
     left: 11vw;
     width: 10vw;
+}
+.page-no-input{
+    position: absolute;
+    right: 0;
+    left: -10vw;
+    bottom: -7vw;
+
 }

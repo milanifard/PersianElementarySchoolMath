@@ -3,8 +3,8 @@
   src: url(./../../fonts/Ansari/B\ Koodak.ttf);
 }
 @font-face {
-  font-family: nazanin;
-  src: url(./../../fonts/Ansari/B\ Nazanin.ttf);
+  font-family: zar;
+  src: url(./../../fonts/Zar.ttf);
 }
 
 h1{
@@ -23,7 +23,7 @@ h5{
   font-family: kodak;
 }
 p , span , input{
-  font-family: nazanin ;
+  font-family: zar ;
 }
 
 .page{
@@ -54,11 +54,13 @@ p , span , input{
     background-image: repeating-linear-gradient(#B6D067 0px ,#B6D067 4px ,#46A764 4px,#46A764 8px);
   }
 
-#downbarGreen {
+  #downbarGreen {
     overflow : scroll;
     background-image: repeating-linear-gradient(#B6D067 0px ,#B6D067 4px ,#46A764 4px,#46A764 8px);
     padding: 10% 0% 3% 0%;
     align-items :baseline;
+    overflow: visible;
+
   }
 
   .gre{  
@@ -79,14 +81,19 @@ p , span , input{
     text-justify: inter-word;
   }
 
-  #pageCounterGreen{background: #ffffff;
-  border-radius: 25px;
-  color:#46A764 ;  
-  width: 10%;
-  text-align: center;
-  border: 4px double #46A764;
-  padding-top: 1%;
-  padding-bottom: 1%;}
+  .pageCounterGreen{
+    color: #ffffff;
+    border-radius: 20px;
+    background:#46A764 ;  
+    width: 12%;
+    text-align: center;
+    border: 5px double white;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    position: relative;
+    bottom: 12vw;
+  }
+  
 
 #textGreen{
     border-color: #46A764;

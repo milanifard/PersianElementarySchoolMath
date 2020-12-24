@@ -150,23 +150,117 @@
                 <table>
                     <tr>
                         <td>
-                            <image class="imagTagharon1" src="assets/3rd/images/baghkhani/Tagharon5.png"></image>
-                            <p class="subtitle">طرح فرش را باتوجه به خط های تقارن رنگ کنید</p>
-                            <div style="margin: 2vw;">
-                                <span style="font-size:1.75vw">تعداد مربع ها</span>
-                                <input type="text" id="check_part1" value="" class="input-style" onchange="getValue(0,'check_part1')">
-                            </div>
+                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/Tagharon5.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon1" src="assets/3rd/images/baghkhani/Tagharon4.png"></image>
-                            <p class="subtitle">شکل پروانه را به صورت متقارن رنگ آمیزی کنید</p>
-                            <div style="margin: 2vw;">
-                                <span style="font-size:1.75vw">تعداد مربع ها</span>
-                                <input type="text" id="check_part2" value="" class="input-style" onchange="getValue(1,'check_part2')">
-                            </div>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color1.png"></image>
                         </td>
+                        <td>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color9.png"></image>
+                        </td>
+
+
                     </tr>
+                    <tr>
+                        <td>
+                            <span class="numSelection"></span>
+                        </td>
+                        <td>
+                            <span class="numSelection">(1)</span>
+
+                        </td>
+                        <td>
+                            <span class="numSelection">(2)</span>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="st-span">  تعداد مربع ها</span>
+                            <input type="text" id="check_partN14" value="" class="input-style" onchange="getValue(0,'check_partN14')">
+                        </td>
+                        <td>
+
+                            <input class="radiobox" type="radio" name="answer5" id="resul12" onclick="p21answerQ2(12);" />
+                            <label dir="rtl" for="resul12" id="label17">(1)</label>
+                        </td>
+                        <td>
+
+                            <input class="radiobox" type="radio" name="answer5" id="resul13" onclick="p21answerQ2(13);" />
+                            <label dir="rtl" for="resul13" id="label18">(2)</label>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/Tagharon4.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color1.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color9.png"></image>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="numSelection"></span>
+                        </td>
+                        <td>
+                            <span class="numSelection">(1)</span>
+
+                        </td>
+                        <td>
+                            <span class="numSelection">(2)</span>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="st-span">  تعداد مربع ها</span>
+                            <input type="text" id="check_partN15" value="" class="input-style" onchange="getValue(0,'check_partN15')">
+                        </td>
+                        <td>
+
+                            <input class="radiobox" type="radio" name="answer6" id="resul14" onclick="p21answerQ2(14);" />
+                            <label dir="rtl" for="resul14" id="label19">(1)</label>
+                        </td>
+                        <td>
+
+                            <input class="radiobox" type="radio" name="answer6" id="resul15" onclick="p21answerQ2(15);" />
+                            <label dir="rtl" for="resul15" id="label20">(2)</label>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class='st-span'>توضیح</span>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="radiobox" type="radio" name="answer7" id="result1" onclick="p19answerQ2(0);" />
+                            <label dir="rtl" for="result1" id="labeltagharon">باتوجه به خط تقارن واینکه هر تعداد مربع که در یک سمت خط تقارن وجود داشته باشد تعداد آن در کل دوبرابر تعداد مربع ها در یک طرف خط تقارن میباشد.</label>
+                        </td>
+                        <td>
+                            <input class="radiobox" type="radio" name="answer7" id="result2" onclick="p19answerQ2(1);" />
+                            <label dir="rtl" for="result2" id="labeltagharon1">باتوجه به خط تقارن واینکه هر تعداد مربع که در یک سمت خط تقارن وجود داشته باشد تعداد آن در کل دوبرابر تعداد مربع ها در یک طرف خط تقارن میباشد.</label>
+                        </td>
+
+                    </tr>
+
+
                 </table>
+
             </div>
 
             <div class="clearfix"></div>
@@ -179,6 +273,16 @@
                     <img class='imgGuessBox' src="assets/3rd/images/baghkhani/hads1.png">
                     <img class='imgGuessBox' src="assets/3rd/images/baghkhani/hads2.png">
                 </div>
+                <div class="radioItems">
+                    <input class="radiobox" type="radio" name="guess" id="guess1" onclick="guess_check(0);" />
+                    <label dir="rtl" for="guess1" id="labelguess1">شکل سمت راست</label>
+                </div>
+
+                <input class="radiobox" type="radio" name="guess" id="guess2" onclick="guess_check(1);" />
+                <label dir="rtl" for="guess2" id="labelguess2">شکل سمت چپ</label>
+
+
+
 
             </div>
             <div class="clearfix"></div>

@@ -17,7 +17,8 @@ $(document).ready(function () {
 
   $('.block').click(function () {
     if ($(this).attr('id') === "parallelogram") {
-      let skew_percent =  ((angle/180)%2) ? -1 : +1 ;
+      // let skew_percent =  ((angle/360)%2) ? -1 : +1 ;
+      let skew_percent = 1;
       
       $(this).css({
 
@@ -34,7 +35,7 @@ $(document).ready(function () {
       });
     }
 
-    angle += 90;
+    angle += 45;
   });
 
 });

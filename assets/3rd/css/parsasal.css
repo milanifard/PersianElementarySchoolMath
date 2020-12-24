@@ -9132,14 +9132,14 @@ body {
 
 @media (min-width: 992px) {
   .container-full {
-    width: 80% !important;
+    width: 90% !important;
     margin: auto;
   }
 }
 
 @media (min-width: 1200px) {
   .container-full {
-    width: 70% !important;
+    width: 80% !important;
     margin: auto;
   }
 }
@@ -9359,6 +9359,10 @@ hr {
   line-height: 32px;
   outline: 0;
   font-size: 30px;
+}
+
+#triangles_explain_input {
+  min-height: 5em;
 }
 
 .hover-glow:hover {
