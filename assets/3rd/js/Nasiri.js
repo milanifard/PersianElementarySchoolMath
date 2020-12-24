@@ -64,3 +64,19 @@ function correct_type2(group_name,values){
         }
     }
 }
+function show_hint(){
+    let answer = $("hint")
+    let showBut = $("hint_show")
+    let hideBut = $("hint_hide")
+    answer.style.display = "block";
+    showBut.style.display = "none";
+    hideBut.style.display = "block";
+}
+function hide_hint(){
+    let answer = $("hint")
+    let showBut = $("hint_show")
+    let hideBut = $("hint_hide")
+    answer.style.display = "none";
+    showBut.style.display = "block";
+    hideBut.style.display = "none";
+}

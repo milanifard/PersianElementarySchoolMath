@@ -91,6 +91,7 @@ span.question {
 .flex_rev_row{
     flex-flow: row-reverse;
 }
+
 .main_title {
     background-color: var(--pink);
     width: 30vw;
@@ -185,6 +186,7 @@ span.question {
     position: relative;
     width: 5vw;
     height: 2vh;
+    font-size: 3vw;
 }
 .image_container{
     width: 12vw;
@@ -258,7 +260,7 @@ span>img{
     height: 1vw;
     background: #fff;
     color: #424242;
-    font-size: 0.8vw;
+    font-size: 1.8vw;
     border: 0;
     outline: 0;
     padding: 1vw 1.5vw;
@@ -342,18 +344,15 @@ span>img{
 }
 .yellow_shadow_radio {
 
-    background-color:white;
-    box-shadow:15px 30px 20px -10px rgba(0, 0, 0, 0.4), inset -20px -40px 40px 30px rgba(255, 235, 59, 0.3);
+    box-shadow: 0 6px 10px 0 rgba(255, 235, 59, 0.9);
 }
 
 .red_shadow_radio {
-    background-color:white;
-    box-shadow:15px 30px 20px -10px rgba(0, 0, 0, 0.4), inset -20px -40px 40px 30px rgba(244, 67, 54, 0.3);
+    box-shadow: 0 6px 10px 0 rgba(244, 67, 54, 0.9);
 }
 
 .green_shadow_radio {
-    background-color:white;
-    box-shadow:15px 30px 20px -10px rgba(0, 0, 0, 0.4), inset -20px -40px 40px 30px rgba(57, 220, 57, 0.3);
+    box-shadow: 0 3px 10px 0 rgba(57, 220, 57, 0.9);
 }
 
 
@@ -436,6 +435,32 @@ span>img{
 }
 .questions-number {
     color: var(--dark-pink);
+}
+.show_btn {
+    background-color: lightblue;
+    position: relative;
+    width: 18vw;
+    height: 3vw;
+    border-color: #104ed3;
+}
+.hide_btn {
+    background-color: lightblue;
+    position: relative;
+    width: 18vw;
+    height: 3vw;
+    border-color: #104ed3;
+}
+.hint_text {
+    font-family: BNazanin,'BNazanin', 'zar';
+    font-size: 1.8vw;
+    direction: rtl;
+
+    /* white-space: pre-wrap; */
+}
+.hint {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1vw dotted black; /* If you want dots under the hoverable text */
 }
 #box_img{
     position: relative;
