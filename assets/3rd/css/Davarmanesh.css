@@ -1,0 +1,639 @@
+@font-face {
+    font-family: 'zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
+
+
+.contentBox{
+    width: 100%;
+    height: 150vw;
+    border-color: pink;
+    border-style: double double double hidden;
+    /*margin : 10vw 10vw 10vw ;*/
+    border-radius: 0 2vw 2vw ;
+    position: absolute;
+    top : 5vw;
+    bottom: 5vw;
+    right: 5vw;
+    left: 0vw;
+
+    padding-bottom: 1vw;
+
+
+
+}
+
+
+body{
+    font-size: 1vw;
+
+}
+
+.pageTitle{
+    text-align: center;
+    font-size: 2vw;
+    color: black;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    width: 10vw;
+    height: 4vw;
+    background-color: hotpink;
+    border-radius: 2vw;
+    margin : 0 auto;
+    font-weight: bold;
+    position: absolute;
+    top : -2.5vw;
+    right : 40vw;
+    left: 45vw;
+    bottom:auto;
+
+
+
+}
+.rightSmallRectangle{
+    width: 0.5vw;
+    height: 1.5vw;
+    background-color: yellowgreen;
+    position: absolute;
+    top :1.5vw;
+    left : 11vw;
+
+
+}
+.leftSmallRectangle{
+    width:0.5vw ;
+    height : 1.5vw;
+    background-color: yellowgreen;
+    position: absolute;
+    top : 1.5vw;
+    right : 11vw;
+
+}
+
+.activityHeader{
+    width: 11vw;
+    height: 3vw;
+    position: absolute;
+    background-color: lightpink;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    top:3.5vw;
+    right: 13vw;
+    line-height: 3vw;/* always equal to height attr */
+    border-radius: 1vw 0 0 1vw;
+
+}
+.activitySpace{
+    width: 15vw;
+    height: 20vw;
+    position: relative;
+    top :1vw;
+    right: -5vw;
+    background-color: transparent;
+}
+
+.activityImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 2.5vw;
+}
+
+.firstParagraphPage64ُSpace{
+    width: 45vw;
+    height: 25vw;
+    position: absolute;
+    background-color: white;
+    top: 10vw;
+    right: 15vw;
+}
+.prophetImageSpace{
+    width: 25vw;
+    height: 25vw;
+    background-color: transparent;
+    position: absolute;
+    left: 12vw;
+    top :5vw;
+
+
+
+}
+
+.prophetImage{
+    width: 100%;
+    height: 100%;
+}
+.paragraphFont{
+    font-size: 1.7vw;
+    line-height: 2.5vw;
+    font-weight: bold;
+}
+
+.emptySpace{
+    width: 100%;
+    height: 10vw;
+    background-color: transparent;
+}
+
+.secondParagraphPage64Space{
+    width: 70vw;
+    height:30vw;
+    position: absolute;
+    top:50vw;
+    right: 15vw;
+    bottom: 10vw;
+    left: auto;
+    background-color: transparent;
+
+}
+
+.beCreative{
+    width: 80%;
+    height: 25%;
+    background-color: pink;
+    border-radius: 2vw;
+    position: absolute;
+    right: 2vw;
+    bottom: 2.5vw;
+
+
+
+}
+.beCreativeTitle{
+    width:13%;
+    height: 10%;
+    background-color: lightcoral;
+    border-radius: 1.5vw 0 0 1.5vw;
+    position: absolute;
+    top : 1vw;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    line-height: 2.8vw;
+
+
+}
+.beCreativeRightSmallTriangle{
+    width: 2vw;
+    height: 3.8vw;
+    background-color: hotpink;
+    position: absolute;
+    right: -2vw;
+    top: 1vw;
+
+
+}
+.beCreativeParagraphSpace{
+    width: 80%;
+    height: 40%;
+    position: absolute;
+    right:10vw;
+    top : 5vw;
+    background-color: transparent;
+}
+
+/* Beginning of second page :*/
+.bodyBackground{
+    width: 100%;
+    height: 200vw;
+
+    background-image: repeating-linear-gradient(0deg,pink, hotpink 1vw, pink 0vw , hotpink 2.5vw);
+    background-size: 100% 30%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+
+
+}
+
+.contentBoxSecondPage{
+    width: 100%;
+    height: 180vw;
+    border-color: pink;
+    border-style: double hidden double double;
+    /*margin : 10vw 10vw 10vw ;*/
+    border-radius: 2vw 0vw 0vw 2vw ;
+    position: absolute;
+    top : 10vw;
+    bottom: 10vw;
+    left: 10vw;
+    background-color: white;
+    font-family: 'zar';
+
+}
+
+.classWorkSpacePage65{
+    width: 16vw;
+    height: 20vw;
+    border-radius: 1vw;
+    background-color: transparent;
+    position: absolute;
+    left: 70vw;
+    top : 1vw;
+
+
+
+}
+.fullDivImage{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.classWorkTitle{
+    width: 16vw;
+    height: 3vw;
+    text-align: center;
+    line-height: 3vw;
+    color: white;
+    background-color: pink;
+    position: absolute;
+    left: 58vw;
+    top : 2.5vw;
+    border-radius: 2vw 0 0 2vw;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.firstQuestionPage65{
+    width: 30vw;
+    height: 3vw;
+    background-color: transparent;
+    position: absolute;
+    top: 3vw;
+    left: 25vw;
+
+}
+
+.page65FirstQuPhotoBoxRight{
+    width: 20vw;
+    height: 25vw;
+    background-color: white;
+    position: absolute;
+    left: 50vw;
+    top : 10vw;
+}
+
+.page65FirstQuPhotoBoxMid{
+    width: 20vw;
+    height:25vw ;
+    background-color: white;
+    position: absolute;
+    top : 10vw;
+    left: 27.5vw;
+}
+
+.page65FirstQuPhotoBoxLeft{
+    width: 20vw;
+    height: 25vw;
+    background-color: white;
+    position: absolute;
+    top: 10vw;
+    left: 5vw;
+}
+
+.page65DivImage{
+    width: 100%;
+    height: 60%;
+}
+.page65SecondQuestion{
+    width: 50vw;
+    height: 3vw;
+    background-color: white;
+    position: absolute;
+    top: 45vw;
+    left:20vw;
+
+
+}
+.page65SecondQuPhotoBoxRight{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    position: absolute;
+    top: 55vw;
+    left: 60vw;
+
+}
+
+.page65SecondQuPhotoBoxMid{
+    width: 25vw;
+    height: 20vw;
+    background-color: white;
+    position: absolute;
+    top: 55vw;
+    left: 30vw;
+
+}
+
+.page65SecondQuPhotoBoxLeft{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    position: absolute;
+    top: 55vw;
+    left: 5vw;
+}
+
+.page65ThirdQuPhotoBoxRight{
+    width: 20vw;
+    height: 25vw;
+    background-color: white;
+    position: absolute;
+    top :85vw;
+    left: 60vw;
+
+
+}
+
+.page65ThirdQuPhotoBoxMid{
+    width: 20vw;
+    height: 25vw;
+    background-color: white;
+    position: absolute;
+    top: 85vw;
+    left: 35vw;
+
+
+}
+
+.page65ThirdQuPhotoBoxLeft{
+    width: 20vw;
+    height: 25vw;
+    background-color: white;
+    position: absolute;
+    top: 85vw;
+    left: 10vw;
+}
+
+.page65WorkInClass{
+    width: 80%;
+    height: 50vw;
+    background-color: pink;
+    border-color: hotpink;
+    border-style:solid;
+    border-radius: 2vw;
+    position: absolute;
+    top :115vw;
+    right: 15vw;
+
+
+}
+
+.page65WorkInClassTitle{
+    width: 20vw;
+    height: 4vw;
+    background-color:hotpink;
+    border-radius: 0 2vw 2vw 0;
+    position: absolute;
+    top: 118vw;
+    right: 74vw;
+    text-align: center;
+    line-height: 4vw;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.page65WorkInClassParagraph{
+    width: 30vw;
+    height: 20vw;
+    background-color: transparent;
+    position: absolute;
+    top: 5vw;
+    right: 3vw;
+}
+.page65WorkInClassCalculatorPhotoBox{
+    width: 15vw;
+    height: 20vw;
+    background-color: transparent;
+    position: absolute;
+    top:20vw;
+    right: 60vw;
+
+}
+
+.page65WorkInClassMultiplyPhotoBox{
+    width: 25vw;
+    height: 10vw;
+    background-color: transparent;
+    position: absolute;
+    top:5vw;
+    right: 35vw;
+}
+.page65WorkInClassCalculation1{
+    width: 17vw;
+    height: 5vw;
+    background-color: transparent;
+    position: absolute;
+    top:25vw;
+    right: 38vw;
+}
+.page65WorkInClassCalculation2{
+    width: 30vw;
+    height: 5vw;
+    background-color: transparent;
+    position: absolute;
+    top:30vw;
+    right: 25vw;
+
+}
+
+.page65WorkInClassCalculation3{
+    width: 30vw;
+    height: 5vw;
+    background-color: transparent;
+    position: absolute;
+    top:35vw;
+    right: 25vw;
+
+}
+
+.page65WorkInClassLastParagraph{
+    width: 30vw;
+    height: 20vw;
+    background-color: transparent;
+    position: absolute;
+    top: 50vw;
+    right: 3vw;
+}
+.inputBox{
+    /*style="height: 5vw;background-color: transparent ;border-top-style: hidden"*/
+    width: 5vw;
+    height: 3vw;
+    background-color: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-color: blue;
+    text-align: center;
+    font-size: 1.5vw;
+
+
+}
+
+.pageFooter{
+    width:15vw;
+    height: 3vw;
+    background-color: pink;
+    color: white;
+    border-radius: 2vw 2vw 2vw 2vw;
+    text-align: center;
+    line-height: 3vw;
+    font-size: 2vw;
+
+
+}
+
+.page66BodyBackground{
+    width: 100%;
+    height: 250vw;
+
+    background-image: repeating-linear-gradient(0deg,pink, hotpink 1vw, pink 0vw , hotpink 2.5vw);
+    background-size: 100% 30%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+
+}
+
+/*start of page 66*/
+.page66ContentBox{
+    width: 100%;
+    height: 200vw;
+    border-color: pink;
+    border-style: double double double hidden;
+    /*margin : 10vw 10vw 10vw ;*/
+    border-radius: 2vw 2vw 2vw 2vw ;
+    position: absolute;
+    top : 10vw;
+    bottom: 10vw;
+    right: 10vw;
+    background-color: white;
+    font-family: 'zar';
+
+
+}
+
+.page66PracticeTitleBox{
+    width: 20vw;
+    height: 5vw;
+    border-radius: 1vw 1vw 1vw 1vw;
+    background-color: pink;
+    position: absolute;
+    top: 3vw;
+    right: 0vw;
+    text-align: center;
+    line-height: 5vw;
+    color: white;
+    font-size: 3vw;
+
+
+}
+
+.page66PracticeTitlePhotoBox{
+    width: 15vw;
+    height: 20vw;
+    background-color: pink;
+    position: absolute;
+    top: 8vw;
+    right: 0vw;
+    background-color: pink;
+
+
+}
+
+.page66FirstParagraphSpace{
+    width: 40vw;
+    height: 5vw;
+    background-color: white;
+    position: absolute;
+    top:5vw;
+    right: 22vw;
+
+}
+
+.page66ChartBoxTypeOne{
+    width: 40vw;
+    height: 5vw;
+    background-color: pink;
+
+}
+
+.page66FirstQuInputBox{
+    background-color: white;
+    width: 20vw;
+    height: 5vw;
+
+}
+.page66SecondParagraphSpace{
+    width: 40vw;
+    height: 5vw;
+    background-color: pink;
+    position: absolute;
+    top: 55vw;
+    right: 10vw;
+}
+
+.page66SecQuPhotoBox{
+    width: 30vw;
+    height: 12vw;
+    background-color: pink;
+}
+.inputBox2{
+    /*style="height: 5vw;background-color: transparent ;border-top-style: hidden"*/
+    width: 3vw;
+    height: 3vw;
+    background-color: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-color: blue;
+    text-align: center;
+    font-size: 1.5vw;
+
+
+}
+.page66ThirdParagraphSpace{
+    width: 80vw;
+    height: 30vw;
+    background-color: white;
+    position: absolute;
+    top: 100vw;
+    left: 10vw;
+}
+
+.page66ThirdQuInputBox1{
+    width: 30vw;
+    height: 5vw;
+    background-color: white;
+    position: absolute;
+
+}
+
+.page66ThirdQuInputBox2{
+    width: 30vw;
+    height: 5vw;
+    background-color: black;
+    position: absolute;
+    left: 10vw;
+}
+
+.page66ThirdQuInputBox3{
+    width: 30vw;
+    height: 5vw;
+    background-color: black;
+    position: absolute;
+    top: 15vw;
+}
+
+.page66ThirdQuInputBox4{
+    width: 30vw;
+    height: 5vw;
+    background-color: black;
+    position: absolute;
+    top:15vw;
+    left: 10vw;
+}

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./assets/3rd/css/eftekharii.css">
     <title>ریاضی سوم دبستان - صفحه ده</title>
 </head>
-<body>
+<body onload="setPageNumber(10)">
 
 <div class="main">
     <div class="content-box">
@@ -330,18 +330,20 @@
                 <input class="submit submit-half-page" type="submit" value="ثبت" id="submit1_7"
                        onclick="checkAnswer1_7()">
             </div>
+            <div class="clearfix"></div>
+            <div class="page-navigator">
+                <a href="book_3_9.html" class="change-page">
+                    <
+                </a>
+                <input id="page_number" class="page-number" onkeyup="page_changer(id)">
+                <a href="book_3_11.html" class="change-page">
+                    >
+                </a>
+            </div>
+            <div class="clearfix"></div>
         </div>
-
         <div class="clearfix"></div>
-        <div class="page-navigator">
-            <div class="previous-page">
-                <a href="book_3_9.html">< صفحه قبل</a>
-            </div>
-            <div class="next-page">
-                <a href="book_3_11.html">صفحه بعد ></a>
-            </div>
-        </div>
-        <div class="page-number">10</div>
+
     </div>
 
 </div>
