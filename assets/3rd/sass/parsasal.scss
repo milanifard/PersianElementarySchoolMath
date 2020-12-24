@@ -406,7 +406,33 @@ canvas[resize] {
 
 #canvas{
     margin-top: 50px;
+    filter: blur(10px);
 }
+#canvas-overlay{
+    
+    p{
+        position: relative;
+        align-self: center;
+    }
+    #understood-btn{
+        position: relative;
+        width: 5em;
+        align-self: center;
+        
+    }
+    &-elements{
+        z-index: 1;
+        width: 100%;
+        height: 50%;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+        display: inline-flex;
+        position: absolute;
+        flex-direction: column;
+    }
+}
+
 /* Reset Select */
 select {
     -webkit-appearance: none;

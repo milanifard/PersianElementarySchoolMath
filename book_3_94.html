@@ -60,7 +60,15 @@
                         </div>
 
                     </div>
-                    <canvas id="canvas" resize></canvas>
+                    <div id="canvas-overlay">
+                        <div id="canvas-overlay-elements">
+                            <p>برای جا به جا کردن نخ بدون تغییر شکل آن دکمه شیفت را نگه داشته و نخ را تکان دهید.</p>
+                            <button id="understood-btn" type="button" class="btn btn-outline-success" >فهمیدم</button>
+    
+                        </div>
+                        <canvas id="canvas" resize></canvas>
+                    </div>
+                    
                     <img src="/assets/3rd/images/parsasal/ruler-image.png" alt="ruler image" id="ruler"
                         style="display: none;">
                     <img src="/assets/3rd/images/parsasal/curved-line.png" alt="curved line image" id="curved-line"
@@ -280,7 +288,7 @@
         </div>
         <div class="pagination-container">
             <div class="page-number-button">
-                <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+                <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
             </div>
 
             <div class="page-number">
@@ -288,7 +296,7 @@
             </div>
 
             <div class="page-number-button">
-                <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+                <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
             </div>
 
         </div>
