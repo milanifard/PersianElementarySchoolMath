@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Zar';
   src: url("../../fonts/Zar.eot");
@@ -208,7 +209,13 @@ img {
     outline: none; }
 
 ol {
+  counter-reset: item;
+  list-style-type: none;
   margin-right: -24px; }
+  ol li::before {
+    content: counter(item) "ـ";
+    color: #b03776;
+    counter-increment: item; }
 
 .page-number-wrapper {
   margin-top: -3vw; }
@@ -271,6 +278,7 @@ ol {
   height: 2vw; }
 
 p {
+  display: inline-block !important;
   margin: 0; }
 
 .circle {
