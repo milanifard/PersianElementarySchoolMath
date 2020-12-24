@@ -273,8 +273,9 @@ p {
 
 .circle {
   position: relative;
-  width: 10px;
-  height: 10px;
+  width: 1vw;
+  height: 1vw;
+  margin-right: 3vw;
   -moz-border-radius: 7.5px;
   -webkit-border-radius: 7.5px;
   border-radius: 7.5px;
@@ -282,27 +283,30 @@ p {
   .circle::before {
     content: '';
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 1vw;
+    height: 1vw;
     -moz-border-radius: 7.5px;
     -webkit-border-radius: 7.5px;
     border-radius: 7.5px;
     background-color: #784a90;
-    left: 8px;
-    top: 9px;
+    left: 1vw;
+    top: 1vw;
     position: absolute; }
   .circle::after {
     content: '';
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 1vw;
+    height: 1vw;
     -moz-border-radius: 7.5px;
     -webkit-border-radius: 7.5px;
     border-radius: 7.5px;
-    left: -8px;
+    left: -1vw;
     position: absolute;
-    top: 9px;
+    top: 1vw;
     background-color: #784a90; }
+
+#circlesWrapperPage_78 {
+  margin-left: 1vw; }
 
 .reading-culture {
   background-color: #fdebf3;
