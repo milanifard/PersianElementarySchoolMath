@@ -41,6 +41,18 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {-webkit-appearance: none;}
 
 
+/* Font families */
+@font-face{
+    font-family: Zar;
+    src: url("../../fonts/Zar.ttf");
+}
+
+@font-face{
+    font-family: Koodak;
+    src: url("../../fonts/KoodakBold.ttf");
+}
+
+
 .right-border{
 
     width: 90vw;
