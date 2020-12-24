@@ -128,13 +128,14 @@ function checkCalculatorAnswers() {
 
 function checkDivisionCheckBoxes() {
     cb1 = document.querySelector('#cb_division1');
-    setElementAsCorrect(cb1.checked === false, cb1);
+    setElementAsCorrect(cb1.checked === true, cb1);
+    if (cb1.checked == true) {cb1.setAttribute("")}
     cb2 = document.querySelector('#cb_division2');
     setElementAsCorrect(cb2.checked === false, cb2);
     cb3 = document.querySelector('#cb_division3');
     setElementAsCorrect(cb3.checked === false, cb3);
     cb4 = document.querySelector('#cb_division4');
-    setElementAsCorrect(cb4.checked === false, cb4);
+    setElementAsCorrect(cb4.checked === true, cb4);
 }
 
 function checkP147Inputs() {
