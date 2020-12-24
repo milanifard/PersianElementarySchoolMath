@@ -22,16 +22,18 @@ img {
 
 .title-style{
     background-color: $light_pink;
-    border-radius: 3vw;
+    border-radius: 4vw;
     text-align: center;
-    font-size: 3vw;
-    color: black;
-    padding: 1vw;
-	position: absolute;
-	width: 18vw;
+    font-size: 4vw;
+	color: #fff;
+	-webkit-text-stroke: .01vw #000;
+    padding: .5vw;
+    font-weight: bold;
+    position: absolute;
+    width: 20vw;
     right: 40vw;
-	top: 3vw;
-	z-index: 1;
+    top: 3vw;
+    z-index: 1;
 }
 
 .behind-title-style {
@@ -40,7 +42,7 @@ img {
     color: $green;
     border-style: solid;
 	position: absolute;
-	width: 20vw;
+	width: 22vw;
     right: 39vw;
     left: 34vw;
 	top: 6vw;
