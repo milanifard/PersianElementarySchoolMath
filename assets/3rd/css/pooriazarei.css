@@ -39,6 +39,91 @@
       * .left-border-template {
         margin-right: 10vw !important; } }
 
+body {
+  direction: rtl;
+  margin: 32px 0 32px 0; }
+
+ol {
+  counter-reset: item;
+  list-style-type: none;
+  margin-right: -24px; }
+  ol li::before {
+    content: counter(item) "ـ";
+    color: #b03776;
+    counter-increment: item; }
+
+p {
+  display: inline-block !important;
+  margin: 0; }
+
+img {
+  width: 100%; }
+
+#smallCube {
+  width: 60px; }
+
+#readingCulture {
+  right: -4.3vw; }
+
+#rightArrow {
+  cursor: pointer;
+  border-right: 0.3vw solid #784a90;
+  border-bottom: 0.3vw solid #784a90;
+  width: 1.5vw;
+  height: 1.5vw;
+  transform: rotate(-45deg);
+  margin-bottom: -8px; }
+
+#leftArrow {
+  cursor: pointer;
+  border-left: 0.3vw solid #784a90;
+  border-top: 0.3vw solid #784a90;
+  width: 1.5vw;
+  height: 1.5vw;
+  transform: rotate(-45deg);
+  margin-top: 8px; }
+
+#readingCultureImg {
+  position: absolute;
+  width: 20vw;
+  left: 4vw;
+  top: -6vw; }
+
+#wormImage {
+  position: absolute;
+  width: 10vw;
+  right: 0vw;
+  top: -7.5vw; }
+
+#vectorImagePage_78 {
+  width: 40vw;
+  margin-top: -1vw; }
+
+#ladybirdBeetleImg {
+  position: absolute;
+  width: 16vw;
+  left: -2vw;
+  top: 8vw; }
+
+#girlAndMotherImg {
+  position: absolute;
+  width: 15vw;
+  right: -7vw;
+  top: 0vw;
+  z-index: 1; }
+
+#patternTitlePage_76 {
+  margin-right: 8vw; }
+  #patternTitlePage_76 span {
+    color: #b03776; }
+
+#flowerPotPage_76 {
+  width: 24vw;
+  margin-top: 3vw; }
+
+#circlesWrapperPage_78 {
+  margin-left: 1vw; }
+
 .title-style {
   background-color: #DC9FBC;
   border-radius: 4vw;
@@ -239,88 +324,3 @@
   background-color: #fdebf3;
   border: 3px solid #D17FA6;
   border-radius: 32px; }
-
-#smallCube {
-  width: 60px; }
-
-#readingCulture {
-  right: -4.3vw; }
-
-#rightArrow {
-  cursor: pointer;
-  border-right: 0.3vw solid #784a90;
-  border-bottom: 0.3vw solid #784a90;
-  width: 1.5vw;
-  height: 1.5vw;
-  transform: rotate(-45deg);
-  margin-bottom: -8px; }
-
-#leftArrow {
-  cursor: pointer;
-  border-left: 0.3vw solid #784a90;
-  border-top: 0.3vw solid #784a90;
-  width: 1.5vw;
-  height: 1.5vw;
-  transform: rotate(-45deg);
-  margin-top: 8px; }
-
-#readingCultureImg {
-  position: absolute;
-  width: 20vw;
-  left: 4vw;
-  top: -6vw; }
-
-#wormImage {
-  position: absolute;
-  width: 10vw;
-  right: 0vw;
-  top: -7.5vw; }
-
-#vectorImagePage_78 {
-  width: 40vw;
-  margin-top: -1vw; }
-
-#ladybirdBeetleImg {
-  position: absolute;
-  width: 16vw;
-  left: -2vw;
-  top: 8vw; }
-
-#girlAndMotherImg {
-  position: absolute;
-  width: 15vw;
-  right: -7vw;
-  top: 0vw;
-  z-index: 1; }
-
-#patternTitlePage_76 {
-  margin-right: 8vw; }
-  #patternTitlePage_76 span {
-    color: #b03776; }
-
-#flowerPotPage_76 {
-  width: 24vw;
-  margin-top: 3vw; }
-
-#circlesWrapperPage_78 {
-  margin-left: 1vw; }
-
-body {
-  direction: rtl;
-  margin: 32px 0 32px 0; }
-
-ol {
-  counter-reset: item;
-  list-style-type: none;
-  margin-right: -24px; }
-  ol li::before {
-    content: counter(item) "ـ";
-    color: #b03776;
-    counter-increment: item; }
-
-p {
-  display: inline-block !important;
-  margin: 0; }
-
-img {
-  width: 100%; }
