@@ -133,3 +133,31 @@
             text.style.background = notCorrect;
         }
     }
+
+    function page31_Q4(){
+        var num1 = $('line1-width');
+        var num2 = $('line2-width');
+        var num3 = $('line3-width');
+        var num4 = $('line4-width');
+
+        value_check(num1,5);
+        value_check(num2,6);
+        value_check(num3,80);
+        value_check(num4,60);
+    }
+
+    function page32_Q1() {
+        var txt1 = $('page32-question1-1');
+        var txt2 = $('page32-question1-2');
+        var txt3 = $('page32-question1-3');
+        var txt4 = $('page32-question1-4');
+        var txt5 = $('page32-question1-5');
+        var txt6 = $('page32-question1-6');
+
+        value_check(txt1,'پارچ');
+        value_check(txt2,'باغ');
+        value_check(txt3,'كارتن');
+        value_check(txt4,'اتوبان');
+        value_check(txt5,'دانشگاه');
+        value_check(txt6,'انبار');
+    }
