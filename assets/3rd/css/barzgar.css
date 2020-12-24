@@ -19,7 +19,7 @@
     height: 3vw;
     background: rgb(128, 190, 204);
     border-radius: 0.5vw;
-    font-family: ZAR;
+    font-family: 'zar';
     font-size: 1vw;
 }
 .check-button{
@@ -29,7 +29,7 @@
     border-radius: 0.5vw;
     border-color: white;
     box-shadow: none;
-    font-family: ZAR;
+    font-family: 'zar';
     font-size: 1vw;
     margin-left: 45vw;
     margin-top: 2vw;
@@ -186,7 +186,7 @@
 }
 
 .text-config {
-    font-family: Zar;
+    font-family: 'zar';
     font-size: 2vw;
     direction: rtl;
     white-space: pre-wrap;
@@ -289,7 +289,7 @@
 }
 
 .table-text-config {
-    font-family: ZAR;
+    font-family: 'zar';
     font-size: 1.5vw;
     direction: rtl;
     text-align: center;
@@ -300,6 +300,12 @@
 .no-padding-margin {
     margin: 0;
     padding: 0;
+}
+.inline{
+    display: inline-block;
+}
+.no-right-padd{
+    padding-right: 0;
 }
 
 #question3-input-number::before {
@@ -482,21 +488,21 @@
 #dah-riali {
     width: 8vw;
     position: absolute;
-    bottom: 30vw;
+    bottom: 40vw;
     left: 8vw;
 }
 
 #sad-riali {
     width: 9vw;
     position: absolute;
-    bottom: 30vw;
+    bottom: 40vw;
     left: 16vw;
 }
 
 #hezar-riali {
     width: 10vw;
     position: absolute;
-    bottom: 30vw;
+    bottom: 40vw;
     left: 25vw;
 }
 
