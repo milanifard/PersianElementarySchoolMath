@@ -122,15 +122,21 @@
                 <output id="q10_result"></output>
             </div>
         </div>
-<!--        <div class="page-navigator">-->
-<!--            <div class="previous-page">-->
-<!--                <a href="book_3_40.html">< صفحه قبل</a>-->
-<!--            </div>-->
-<!--            <div class="next-page">-->
-<!--                <a href="book_3_42.html">صفحه بعد ></a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="page-number">۴۱</div>-->
+        <div class="pagination-container">
+            <div class="page-number-button">
+                <!-- using next/prev icons from font awesome -->
+                <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
+            </div>
+
+            <div class="page-number" id="page-number-41">
+                <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+            </div>
+
+            <div class="page-number-button">
+                <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
+            </div>
+
+        </div>
     </div>
 </div>
 

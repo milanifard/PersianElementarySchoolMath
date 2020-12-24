@@ -4,11 +4,25 @@
     --footer_color2 : #78c2da;
 }
 
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 @font-face {
     font-family: Zar;
-    src: url("/assets/fonts/Zar.woff") format("woff");
+    src: url("/../../fonts/Zar.svg") format("woff");
     font-family: Koodak;
-    src: url("/assets/fonts/Koodak.ttf") format("woff");
+    src: url("../../fonts/KoodakBold.ttf") format("woff");
 }
 
 body{
@@ -18,12 +32,16 @@ body{
     /*background-repeat: no-repeat;*/
     font-family:"B Zar";
     font-size: 2vw;
+    background-image: repeating-linear-gradient(0deg,#5cb6d6, #5cb6d6 1vw,#78c2da  0vw , #78c2da 2.5vw);
+    background-size: 100% 40%;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .page1{
-    border-top: 1vw double var(--main_color);
-    border-right: 1vw double var(--main_color);
-    border-bottom: 1vw double var(--main_color);
+    border-top: 1vw double #78c2da;
+    border-right: 1vw double #78c2da;
+    border-bottom: 1vw double #78c2da;
     border-top-right-radius: 5vw;
     border-bottom-right-radius: 5vw;
     box-sizing: border-box;
@@ -40,7 +58,7 @@ body{
     height: 5vw;
     margin: 0 auto;
     padding-top: .5vw;
-    background-color: var(--title_color);
+    background-color: #5cb6d6;
     color: white;
     text-align: center;
     font-size: 2.5vw;
@@ -53,7 +71,7 @@ body{
 }
 
 .little-title{
-    background-color: var(--title_color);
+    background-color: #5cb6d6;
     font-weight: bold;
     text-align: center;
     width: 20vw;
@@ -100,6 +118,8 @@ body{
 #farhange_neveshtan_ta{
     /*font-size: 0.6em;*/
     font-family: ZAR;
+    width: 47vw;
+    height: 9vw;
     /*border-style: none;*/
     /*text-line-through-style: dot;*/
 }
@@ -266,7 +286,7 @@ button{
 }
 
 .number{
-    color: var(--title_color);
+    color: #5cb6d6;
 }
 
 #tabiat-img{
@@ -288,7 +308,7 @@ button{
 }
 
 .line{
-    border-top: 0.1vw solid var(--title_color);
+    border-top: 0.1vw solid #5cb6d6;
     margin-top: 2.5vw;
 }
 
@@ -297,9 +317,9 @@ button{
 }
 
 .page2{
-    border-top: 1vw double var(--main_color);
-    border-left: 1vw double var(--main_color);
-    border-bottom: 1vw double var(--main_color);
+    border-top: 1vw double #78c2da;
+    border-left: 1vw double #78c2da;
+    border-bottom: 1vw double #78c2da;
     border-top-left-radius: 5vw;
     border-bottom-left-radius: 5vw;
     box-sizing: border-box;
@@ -362,10 +382,10 @@ button{
 
 #q8{
     border-style: solid;
-    border-color: var(--title_color);
+    border-color: #5cb6d6;
     border-radius: 5vw;
     border-width: 0.3vw;
-    box-shadow: 1vw 1vw var(--title_color);
+    box-shadow: 1vw 1vw #5cb6d6;
     height: 57vw;
     width: 70vw;
     margin-right: 5vw;
@@ -497,9 +517,9 @@ pre{
 
 
 .page3{
-    border-top: 1vw double var(--main_color);
-    border-right: 1vw double var(--main_color);
-    border-bottom: 1vw double var(--main_color);
+    border-top: 1vw double #78c2da;
+    border-right: 1vw double #78c2da;
+    border-bottom: 1vw double #78c2da;
     border-top-right-radius: 5vw;
     border-bottom-right-radius: 5vw;
     box-sizing: border-box;
@@ -943,60 +963,74 @@ input{
     text-align: center;
 }
 
-.page-number{
-    width: 8vw;
-    height: 3vw;
-    margin: 0 auto;
-    position: absolute;
-    background-color: var(--title_color);
-    border-style: double;
-    text-align: center;
-    font-size: 2vw;
-    color: white;
-    background-position: center;
-    top: 126vw;
-    right: 44vw;
-    border-radius: 2vw;
-}
+/*body {*/
 
-.previous-page{
-    display: block;
-    float: right;
-    top: 120vw;
-    position: absolute;
-}
-.previous-page a{
-    text-decoration: none;
-    color: var(--main_color);
-    font-size: 3vw;
-}
-.previous-page a:hover{
-    text-decoration: none;
-    color: olive;
-    font-size: 3vw;
-}
-
-.next-page{
-    display: block;
-    float: left;
-    top: 121vw;
-    left: 7vw;
-    position: absolute;
-}
-/*.next-page-page2{*/
-/*    display: block;*/
-/*    float: left;*/
-/*    top: -6vw;*/
-/*    position: relative;*/
+/*    background-color: brown;*/
 /*}*/
 
-.next-page a{
-    text-decoration: none;
-    color: var(--main_color);
-    font-size: 3vw;
+.pagination-container {
+    direction: rtl;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 3em;
+    /* to adjust page changer position , adjust position of this element */
+
 }
-.next-page a:hover{
-    text-decoration: none;
-    color: olive;
-    font-size: 3vw;
+
+.page-number {
+    /* substitute your color */
+    background-color: #78c2da;
+    border-radius: 2em;
+    width: 5.8em;
+    color: white;
+    border: 0.35em double white;
+    /* Koodak font should be imported*/
+    font-family: Koodak;
+    padding: 0 1.1em;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+#page-number-40{
+    top: 119vw;
+    right: -30vw;
+}
+
+#page-number-41{
+    top: 6vw;
+}
+
+#page-number-42{
+    top: 120.5vw;
+    right: -5vw;
+}
+
+.page-number input {
+    /* substitute your color */
+    background-color: #78c2da;
+    border: none;
+    width: 5vw;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+
+.page-number-button {
+    width: 3em;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.page-number-button > a {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
+
 }
