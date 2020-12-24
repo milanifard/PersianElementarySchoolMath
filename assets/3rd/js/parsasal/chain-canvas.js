@@ -19,25 +19,44 @@
         curved_line.position = new Point(300, 200);
         curved_line.rotate(-45);
 
-        var circle = new Path.Circle({
-            center: view.center,
-            radius: 5,
-            fillColor: 'green'
-        });
-        
+
+
         var path = new Path({
             strokeColor: '#E4141B',
             strokeWidth: 20,
             strokeCap: 'round'
         });
 
-
+        var circle = new Path.Circle({
+            center: view.center,
+            radius: 5,
+            fillColor: 'green'
+        });
         var start = view.center / [10, 1];
-        for (var i = 0; i < points; i++)
-            path.add(start + new Point(i * length, 0));
 
 
         
+
+        var window_width = $(window).width();;
+
+        console.log("windows width is " + window_width);
+        if (window_width < 900) {
+            length = 20
+            for (var i = 0; i < points; i++)
+                path.add(start + new Point(i * length, 0));
+            path.rotate(90)
+            path.position = new Point(280, 250);
+            
+
+            curved_line.rotate(90);
+            curved_line.position = new Point(180, 250);
+            ruler.rotate(90)
+            ruler.position = new Point(40, 380);
+        }else{
+            for (var i = 0; i < points; i++)
+            path.add(start + new Point(i * length, 0));
+        }
+
         circle.attached_segment = getNearestSegmentOnPath(path, circle.point, points);
 
         path.onMouseDrag = function (event) {
@@ -47,12 +66,14 @@
             }
 
         }
-        
-        path.onDoubleClick = function (event){
+
+        path.onDoubleClick = function (event) {
             circle.attached_segment = getNearestSegmentOnPath(path, event.point, points);
             circle.position = circle.attached_segment.point
-            
+
         }
+
+
 
 
         function onMouseDrag(event) {

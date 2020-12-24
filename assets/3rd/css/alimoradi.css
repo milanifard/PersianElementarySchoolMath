@@ -396,8 +396,34 @@ table {
     border-left-color: transparent;
 }
 
+.input-style20{
+    width: 3vw;
+    font-size: 1.5vw;
+    height: 4vw;
+    border-bottom:var(--dark-orange) solid 0.2vw;
+    margin: 0vw 0;
+    margin-bottom: 2vw;
+    text-align: center;
+    background-color: transparent;
+    border-color:var(--dark-orange);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+.input-style21{
+    width: 3vw;
+    font-size: 1.5vw;
+    height: 4vw;
 
-
+    margin: 0vw 0;
+    margin-bottom: 2vw;
+    text-align: center;
+    background-color: transparent;
+    border-bottom-color:transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
 .back {
     width: 100vw;
     height: 25vw;
@@ -465,6 +491,20 @@ table {
     height: 4vw;
     border-bottom:var(--dark-orange) solid 0.2vw;
     margin: 0vw 0;
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+    text-align: center;
+    background-color: transparent;
+    border-color:var(--dark-orange);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+.input-stylemedium2{
+    width: 6vw;
+    height: 4vw;
+    border-bottom:var(--dark-orange) solid 0.2vw;
+    margin: 0vw 0;
     margin-bottom: 2vw;
     text-align: center;
     background-color: transparent;
@@ -490,6 +530,14 @@ table {
     border-top-color: transparent;
     border-right-color: transparent;
     border-left-color: transparent;
+}
+.input-style_lessthan2{
+    width: 9vw;
+    font-size: 1.5vw;
+    height: 4vw;
+    margin: 0vw 0;
+    margin-bottom: 2vw;
+    text-align: center;
 }
 .content-box{
     width: 90%;
@@ -768,19 +816,21 @@ form>div>span {
 }
 
 .form__field-large {
-    width: 10vw;
+    width: 8vw;
     background: #fff;
     color: #a3a3a3;
     font: inherit;
+    font-size: 2vw;
     border: 0;
     outline: 0;
     padding: 1vw 1.5vw;
 }
 .form__field-medium {
-    width: 6vw;
+    width: 8vw;
     background: #fff;
     color: #a3a3a3;
     font: inherit;
+    font-size: 2vw;
     border: 0;
     outline: 0;
     padding: 1vw 1.5vw;
@@ -790,6 +840,7 @@ form>div>span {
     background: #fff;
     color: #a3a3a3;
     font: inherit;
+    font-size: 2vw;
     border: 0;
     outline: 0;
     padding: 1vw 1.5vw;
@@ -905,7 +956,9 @@ form>div>span {
 .empty {
     color: yellow;
 }
-
+.redo{
+    color: black;
+}
 .correct {
     color: green;
 }
