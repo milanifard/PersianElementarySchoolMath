@@ -277,10 +277,16 @@
             </div>
 
         </div> 
-        <div class="flexrow"  id = "downbarGreen">
-            <a class = "page"  id="textGreen" href="Book_3_13.html" target="_blank">صفحه قبل</a>
-            <h5 id= "pageCounterGreen">۱۴</h5>
-            <a class = "page" id="textGreen" href="Book_3_15.html" target="_blank">صفحه بعد</a>
-        </div>
+        <div id = "downbarGreen">
+          <h5 class= "pageCounterGreen" id = "r">۱۴</h5>
+
+          <div class="flexrow" >
+              <a class = "page"  id="textGreen" href="Book_3_13.html" target="_blank">صفحه قبل</a>
+              <div class="page page-number" id="textGreen">
+              <input style= "border: none;" type="number" id="page-number-input" onfocusout="loadPageChanger()">
+          </div>
+          <a class = "page" id="textGreen" href="Book_3_15.html" target="_blank">صفحه بعد</a>
+      </div>
+      </div>
     </body>
 </html>
