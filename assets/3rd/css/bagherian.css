@@ -26,8 +26,6 @@
     font-family:persianNum; src:url('../../../fonts/Farsi-Digits/Samim-FD.ttf'); font-weight:normal;
 }
 .pagination-container {
-    position: relative;
-    top:100px;
     direction: rtl;
     font-size: 24px;
     justify-content: center;
@@ -42,11 +40,12 @@
 
 .page-number {
     /* substitute your color */
-    background-color: #57a4b6;
+    background-color: #79c2d2;
     border-radius: 2em;
-    width: 5.8em;
+    width: 8em;
     color: white;
     border: 0.35em double white;
+    /* Koodak font should be imported*/
     font-family: Koodak;
     padding: 0 1.1em;
     position: relative;
@@ -55,79 +54,28 @@
 
 }
 
-.paginationInput {
+.page-number input {
     /* substitute your color */
-    background-color: #338ca0;
+    background-color: #368394;
     border: none;
     width: 100%;
     text-align: center;
     font-size: 32px;
     color: white;
-    margin-top: 0px;
-    height: auto;
-    font-family:persianNum;
 }
 
 .page-number-button {
     width: 3em;
     display: flex;
-    color: white;
+    color: #79c2d2;
     justify-content: center;
 }
 
 .page-number-button > a {
-    color: #0f3d47;
+    color: #245b68;
     font-size: 2.5em;
     display: flex;
 
-}
-@media only screen and (max-width:1130px){
-    .page-number{
-         height: 50px;
-         width: 130px;
-    }
-}
-@media only screen and (max-width:900px){
-    .pagination-container{
-        top:80px;
-    }
-}
-@media only screen and (max-width:670px){
-    .pagination-container{
-        top:60px;
-        font-size: 15px;
-    }
-    .page-number{
-        height: 30px;
-        width: 90px;
-   }
-   .paginationInput {
-    font-size: 15px;
-   }
-}
-@media only screen and (max-width:500px){
-    .pagination-container{
-        top:50px;
-    }
-}
-@media only screen and (max-width:375px){
-    .pagination-container{
-        top:45px;
-    }
-}
-@media only screen and (max-width:330px){
-    .pagination-container{
-        top:38px;
-    }
-    .page-number{
-        height: 25px;
-        width: 80px;
-        padding: 0 1em;
-        border: 0.30em double white;
-   }
-   .paginationInput {
-    font-size: 13px;
-   }
 }
 
 
