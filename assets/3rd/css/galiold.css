@@ -47,11 +47,18 @@ body{
     padding-bottom: 10vw;
     padding-top: 5vw;
     display: flex;
-    justify-content: left;
     background-image: url('../images/galiold/background.svg');
     background-repeat: no-repeat;
     background-position: bottom;
     position: relative;
+}
+
+body.left-border {
+    justify-content: right;
+}
+
+body.right-border {
+    justify-content: left;
 }
 
 /* In order to ignore input top-down btn */
@@ -68,24 +75,24 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     border-top-right-radius: 5vw;
     border-bottom-right-radius: 5vw;
     position: relative;
-    left: 0px;
     background-color: white;
+    float: left;
     display: flex;
     flex-direction: column;
 }
 
-.left-border{
+.left-border-page {
     width: 90vw;
     max-width: 100%;
-
     border: 0.8vw double var(--yellow_level2_border);
-
-    margin: 6vw 0 0 5vw;
     border-right: none;
     border-top-left-radius: 5vw;
     border-bottom-left-radius: 5vw;
     position: relative;
     background-color: white;
+    float: right;
+    display: flex;
+    flex-direction: column;
 }
 
 .background-style{
