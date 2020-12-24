@@ -1,25 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
     <meta charset="UTF-8">
-    <title>صفحه 116</title>
+    <meta name="author" content="Ali Goldani">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/galiold.css">
+    <title>ریاضی سوم دبستان صفحه ۱۱۶</title>
+
 </head>
 
-<body style="border: 2px solid darkorange">
-    <h3 dir="rtl"> حل مسئله </h3>
-    <p dir="rtl">1_کدام عدد های یک رقمی هستند که اگر در خودشان ضرب شوند، حاصل آنها بیشتر<br> از 30 می شود؟</p>
-    <p dir="rtl">به جای مربع عددهای یک قرار دهید و حاصل را پیدا کنید</p>
-    <p dir="rtl">2_عددی را با خودش جمع کردیم و از حاصل جمع یکی کم کردیم، جواب 39 شد، آن عدد را پیدا کنید</p>
-    <p dir="rtl">با اولین حدس شروع کنید. برای مثال عدد را 15 در نظر بگیرید و آزمایش کنید.<br>
-        حالا حدس بعدی شما باید بیشتر از 15 باشد یا کمتر از آن؟چرا؟</p>
-    <p dir="rtl">3_عددی را دو برابر کردیم. سپس حاصل را با 20 جمع کردیم، جواب 36 شد. آن عدد را پیدا کنید.</p>
-    <p dir="rtl">4_یک سکه را انداختیم، رو آمد. دوباره انداختیم، بازهم رو آمد. آیا می توانید حدس بزنید که اگر سکه را
-        دوباره <br>
-        بیندازیم، رو می آید یا پشت؟ چرا؟</p>
-    <p dir="rtl">حدس بزنید پاسخ مسئله بر اساس موضوع مسئله انجام می شود. از حدس زدن های <br>
-        بدون دلیل پرهیز کنید. در مسائل بالا ابتدا با روش های نمادین یک تساوی بنویسید. سپس ،<br>
-        از راهبرد حدس و آزمایش استفاده کنید.</p>
+<body>
+    <div>
+        <div class="right-border-page">
+
+            <div id="activity_item">
+                <img class="activity-image" src="assets/3rd/images/activity.png" alt="activity_image">
+                <div class="activity-text">حلّ مسئله</div>
+            </div>
+
+            <div id="q1" class="question-container first">
+                <div class="prompt">۱- کدام عددهای یک‌رقمی هستند که اگر در خودشان ضرب شوند، حاصل آن‌ها بیشتر از ۳۰
+                    می‌شود؟
+                </div>
+                <div class="guide">به جای مربّع عددهای یک‌رقمی قرار دهید و حاصل را پیدا کنید. مجموعه‌ی
+                    عددهایی که پیدا کردید را با فاصله در فضای پایین بنویسید.</div>
+                <div class="test-pane">
+                    <img src="assets/3rd/images/galiold/p116-q1.png" alt="thinking-figure">
+                    <input id="q1-first-num" type="text" placeholder="0" class="ans-box">
+                    <span>x</span>
+                    <input id="q1-second-num" type="text" placeholder="0" class="ans-box">
+                    <span>=</span>
+                    <label id="q1-result">0</label>
+                </div>
+                <div class="ans-pane">
+                    <input id="q1-ans" type="text" class="ans-rect">
+                    <button id="q1-submit">ثبت</button>
+                </div>
+            </div>
+
+
+            <div id="q1" class="question-container">
+                <div class="prompt">۲- عددی را با خودش جمع کردیم و از حاصل جمع یکی کم کردیم، جواب ۳۹ شد. آن عدد را پیدا کنید.</div>
+                <div class="guide">با اوّلین حدس شروع کنید. برای مثال عدد را ۱۵ در نظر بگیرید و آزمایش کنید.</div>
+                <div class="guide">حالا حدس بعدی شما باید بیشتر از ۱۵ باشد یا کمتر از آن؟ چرا؟ توضیحات خود را در فضای زیر بنویسید.</div>
+                <div class="ans-pane">
+                    <input id="q1-ans" type="text" class="ans-rect">
+                    <button id="q1-submit">ثبت</button>
+                </div>
+            </div>
+
+            <div class="page-number">124</div>
+            <div class="page-no-input">
+                <div id="next_btn">
+                    <a href="book_3_125.html">
+                        <img src="assets/3rd/images/left-arrow.png" alt="next_page" style="width: 3vw">
+                    </a>
+                </div>
+                <div>
+                    <input class="page-number-input" type="number" name="page_number" id="page_switcher"
+                        style="width: 5vw">
+                </div>
+                <div id="pre_btn">
+                    <a href="book_3_123.html">
+                        <img src="assets/3rd/images/right-arrow.png" alt="next_page" style="width: 3vw">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div class="background-style"></div> -->
+
 </body>
+
+<script src="assets/3rd/js/nahbos.js" type="text/javascript" params="124"></script>
 
 </html>
