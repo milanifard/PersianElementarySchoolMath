@@ -11,7 +11,8 @@ function checkvalue(i,id) {
         display_unsuccess();
     }
 }
-var answerFraction = ["1","1/4","2/4","3/4","4/4","1/2","5/8","7/8","4/8","6/8","1/8","3/6","2/3","9/10","13/24","1/3"];
+var answerFraction = ["1","1/4","2/4","3/4","4/4","1/2","5/8","7/8",
+                    "4/8","6/8","1/8","3/6","2/3","9/10","13/24","1/3","6/10","3/5","8/10","4/5"];
 function checkValueFraction(i,id) {
     var inputValue = $(id);
     if(i == 0 && inputValue.value.replace(/ +/g, "") == answerFraction[i+4]){
@@ -31,6 +32,14 @@ function checkValueFraction(i,id) {
         display_success();
     }
     else if(i == 11 && inputValue.value.replace(/ +/g, "") == answerFraction[i-6]){
+        inputValue.style.backgroundColor = "#5aa469"; 
+        display_success();
+    }
+    else if(i == 16 && inputValue.value.replace(/ +/g, "") == answerFraction[i+1]){
+        inputValue.style.backgroundColor = "#5aa469"; 
+        display_success();
+    }
+    else if(i == 18 && inputValue.value.replace(/ +/g, "") == answerFraction[i+1]){
         inputValue.style.backgroundColor = "#5aa469"; 
         display_success();
     }
