@@ -46,3 +46,10 @@ function checkQ3Answer() {
     }
 }
 
+// )age 81
+function show(id) {
+    let item = document.getElementById(id);
+    console.log(item);
+    item.style.visibility = 'visible';
+}
+

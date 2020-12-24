@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه‌ی ۸۱ - ریاضی سوم دبستان</title>
+    <link rel="stylesheet" href="assets/3rd/css/Sargolzehi.css">
+    <script src="assets/3rd/js/Sargolzehi.js"></script>
+    <script src="./assets/3rd/js/pagination.js"></script>
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://raw.github.com/davidjbradshaw/imagemap-resizer/master/js/imageMapResizer.min.js"></script>
+</head>
+<body style="margin: 0;">
+<div>
+    <div class="left-border">
+        <div class="default-background"></div>
+
+        <div class="review-box">
+            <div class="rec"></div>
+            <div class="review">
+                <h1 class="review-text">زیر مسئله</h1>
+            </div>
+            <div class="rec"></div>
+        </div>
+
+        <div class="question-2-container">
+            <div id="question-1" class="question-text pb-4">
+                1- شکل‌های زیر از خط‌های مختلفی درست شده‌اند. مانند نمونه، این خط‌ها را جدا کنید.
+            </div>
+
+            <div class="question-box">
+                <img src="assets/3rd/images/Sargolzehi/P81/Q1/P1/Main.png" alt="Part 1" style="width: 60vw">
+            </div>
+
+            <div class="question-box d-flex justify-content-between" style="padding-right: 10vw">
+                <img id="p81-q1-p2-i1" src="assets/3rd/images/Sargolzehi/P81/Q1/P2/A2.png" alt="Answer 2" style="width: 8vw; visibility: hidden">
+                <img id="p81-q1-p2-i2" src="assets/3rd/images/Sargolzehi/P81/Q1/P2/A1.png" alt="Answer 1" style="width: 2.1vw; visibility: hidden">
+
+                <img src="assets/3rd/images/Sargolzehi/P81/Q1/P2/Main.png" alt="Part 2" style="width: 30vw" usemap="#image-map-1">
+                <map name="image-map-1">
+                    <area onclick="show('p81-q1-p2-i2')" alt="line-1" title="line-2" href="#" coords="2,5,18,115" shape="rect">
+                    <area onclick="show('p81-q1-p2-i1')" alt="line-2" title="line-1" href="#" coords="4,97,108,114" shape="rect">
+                </map>
+            </div>
+
+            <div class="question-box d-flex justify-content-between">
+                <img id="p81-q1-p3-i2" src="assets/3rd/images/Sargolzehi/P81/Q1/P3/B1.png" alt="Answer 2" style="width: 15vw; visibility: hidden">
+                <img id="p81-q1-p3-i1" src="assets/3rd/images/Sargolzehi/P81/Q1/P3/B2.png" alt="Answer 1" style="width: 15vw; visibility: hidden">
+                <img id="p81-q1-p3-i3" src="assets/3rd/images/Sargolzehi/P81/Q1/P3/B3.png" alt="Answer 3" style="width: 2.1vw; visibility: hidden">
+
+                <img src="assets/3rd/images/Sargolzehi/P81/Q1/P3/Main.png" alt="Part 3" style="width: 30vw" usemap="#image-map-2">
+                <map name="image-map-2">
+                    <area onclick="show('p81-q1-p3-i1')" alt="line-1" title="line-1" href="#" coords="2,12,266,30" shape="rect">
+                    <area onclick="show('p81-q1-p3-i2')" alt="line-2" title="line-2" href="#" coords="2,102,266,120" shape="rect">
+                    <area onclick="show('p81-q1-p3-i3')" alt="line-3" title="line-3" href="#" coords="2,12,20,120" shape="rect">
+                </map>
+            </div>
+        </div >
+
+    </div>
+
+    <div class="pagination-container">
+        <div class="page-number-button">
+            <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="page-number">
+            <label for="page-number-input"></label>
+            <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+        </div>
+        <div class="page-number-button">
+            <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+</script>
+</html>
