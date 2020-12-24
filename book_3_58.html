@@ -6,10 +6,9 @@
     <meta name="author" content="NajmeHabibi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/najmeHabibi.css">
-<!--    <link rel="script" href="./assets/3rd/js/najmeHabibi.js">-->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./assets/3rd/js/pagination.js"></script>
+    <script language="JavaScript" src="./assets/3rd/js/najmeHabibi.js"></script>
 
     <title>ریاضی سوم دبستان</title>
 </head>
@@ -38,11 +37,11 @@
 
 <!--                q1-->
                 <div class="question-text">۱- یک متر و ۲۵ سانتی‌متر برابر با ۱۲۵ سانتی‌متر است. توضیح دهید که عدد ۱۲۵ چگونه به دست می‌آید.</div>
-                <textarea type="text" class="answer-text-area"></textarea>
+                <textarea type="text" class="answer-text-area" id="q1-answer" onchange="q1_answer()" ></textarea>
 
 <!--                q2-->
                 <div class="question-text">۲- ۳۵۶۰ گرم یعنی ۳ کیلوگرم و ۵۶۰ گرم. توضیح دهید که این عددها چگونه به‌دست می‌آیند.</div>
-                <textarea type="text" class="answer-text-area"></textarea>
+                <textarea type="text" class="answer-text-area" id="q2-answer" onchange="q2_answer()" ></textarea>
 
 <!--                q3-->
                 <div class="q3-parent">
@@ -65,7 +64,7 @@
 
 <!--                q4-->
                 <div class="q4-parent">
-                    <div class="question-text">۲- یک تکه کاغذ را به‌صورت زیر دوبار تا کنید. سپس آن را باز کنید و با خط‌کش روی خط‌های تای کاغذ خط بکشید.<br> چند زاویه به وجود می‌آید؟<input type="text" class="short-answer-area"> چه نوع زاویه‌ای؟<input type="text" class="short-answer-area"><br> کاغذ به چند قسمت مساوی تقسیم شده است؟<input type="text" class="short-answer-area"></div>
+                    <div class="question-text">۲- یک تکه کاغذ را به‌صورت زیر دوبار تا کنید. سپس آن را باز کنید و با خط‌کش روی خط‌های تای کاغذ خط بکشید.<br> چند زاویه به وجود می‌آید؟<input type="number" class="short-answer-area" id="angel-count" onchange="angel_number()"> چه نوع زاویه‌ای؟<input type="text" class="short-answer-area" id="angel-type" onchange="angel_type()"><br> کاغذ به چند قسمت مساوی تقسیم شده است؟<input type="number" class="short-answer-area" id="part-count" onchange="part_count()"></div>
 
                     <img class="papers-image" src="./assets/3rd/images/najmeHabibi/papers.jpg" alt="صفحات">
                 </div>
@@ -84,7 +83,7 @@
 <!--                q6-->
                 <div class="q6-parent">
                     <div class="question-text">۴- از ۱۰۰۰ تا ۱۴۰۰ را ۵۰تا ۵۰تا بنویسید.</div>
-                    <textarea type="text" class="answer-text-area q6-answer-text-area">۱۰۰۰ - ۱۰۵۰</textarea>
+                    <textarea type="text" class="answer-text-area q6-answer-text-area" id="q6-tail" onchange="tail_checker()">۱۰۰۰ - ۱۰۵۰</textarea>
                 </div>
             </div>
 
@@ -94,6 +93,4 @@
     </div>
 </body>
 
-<script language="JavaScript" src="assets/3rd/js/najmeHabibi.js">
-</script>
 </html>
