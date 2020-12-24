@@ -189,7 +189,20 @@ body{
     height: 3vw;
 
 }
+#activity{
+    margin: 2vw; 
+    margin-bottom: 0;
+}
 
+#shwing-fraction{
+    border : 1px solid var(--purple);
+    margin-right: 2vw;
+    background-color: #c2abc7;
+    font-size: 3vw;
+    font-weight: bold;
+    width: 10vw;
+    height: 5vw;
+}
 #border{
     border: 1px solid var(--purple);
     border-radius: 5vw;
@@ -260,6 +273,10 @@ td{
 
 .img_ant{
     width: 20vw;
+}
+#img_fraction{
+    margin-right: 60vw;
+    margin-left: 5vw;;
 }
 
 .textarea {
