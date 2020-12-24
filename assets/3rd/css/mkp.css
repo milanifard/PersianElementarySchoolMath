@@ -45,6 +45,10 @@ input[type=number] {
     direction: rtl;
 }
 
+.underline-text {
+    text-decoration: underline;
+}
+
 .questions-number {
     color: var(--orange_level3);
 }
@@ -62,6 +66,22 @@ input[type=number] {
     background-color: white;
 }
 
+.page-right-border {
+    width: 80vw;
+    max-width: 100%;
+    border: 0.8vw double var(--orange_level2);
+    border-left: none;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+
+    padding: 2vw 1vw 5vw 7vw;
+    margin-top: 6vw;
+    margin-bottom: 10vw;
+    position: relative;
+    background-color: white;
+    float: left;
+}
+
 .background {
     width: 100vw;
     height: 43vw;
@@ -72,10 +92,16 @@ input[type=number] {
 
     position: absolute;
     bottom: -12vw;
-    right: 0;
     z-index: -1;
 }
 
+.page-left-border .background {
+    right: 0;
+}
+
+.page-right-border .background {
+    right: -12vw;
+}
 .page-number {
     background-color: var(--orange_level2);
     border-radius: 2.5vw;
@@ -90,6 +116,12 @@ input[type=number] {
     width: fit-content;
     width: -moz-fit-content;
     z-index: 1;
+}
+
+.page-right-border .page-number {
+    position: relative;
+    right: -6vw;
+    top: 5.5vw;
 }
 
 .page-left-border .page-number {
@@ -127,6 +159,13 @@ input[type=number] {
     float: right;
     z-index: 2;
     position: relative;
+}
+
+.simple-table {
+    background-color: var(--pink_level1);
+    padding: 0.5vw;
+    border: 0.2vw solid var(--pink_level2);
+    border-radius: 3vw;
 }
 
 .simple-table table {
@@ -174,25 +213,70 @@ input[type=number] {
     font-family: Koodak;
 }
 
-/*unclean code*/
-
-.page-right-border {
-    width: 90vw;
-    max-width: 100%;
-
-    border: 0.8vw double var(--orange_level2);
-
-    margin: 6vw 10vw 0 0;
-    border-left: none;
-    border-top-right-radius: 5vw;
-    border-bottom-right-radius: 5vw;
-    position: relative;
-    background-color: white;
+.dotted_table table {
+    border-collapse: collapse;
+    width: 100%;
 }
 
+.dotted_table td {
+    border: 0.5vw dotted var(--orange_level3);
+    width: 50%;
+}
 
-.page-right-border .background-style {
-    right: -9vw;
+.small-text-box {
+    width: 4vw;
+}
+
+.classwork_item .classwork-cover {
+    width: 13vw;
+    position: absolute;
+    right: -11vw;
+    top: 0.5vw;
+    margin-right: 5vw;
+    z-index: 2;
+}
+
+.classwork_item .classwork_title {
+    background-color: var(--orange_level1);
+    border-radius: 1.5vw;
+
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.5vw;
+    color: white;
+
+    padding: 0 9vw 0 2vw;
+    position: absolute;
+    right: -3vw;
+    top: 2.5vw;
+    z-index: 1;
+
+    float: right;
+}
+
+.complete_title {
+    background-color: var(--orange_level1);
+    border-top-left-radius: 1.5vw;
+    border-bottom-left-radius: 1.5vw;
+    border-right: 2vw solid var(--orange_level2);
+
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.5vw;
+    color: white;
+    float: right;
+    z-index: 1;
+
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-top: 1vw;
+
+    position: relative;
+    right: -2vw;
+}
+
+.complete_content {
+    margin-right: 11.5vw;
 }
 
 .activity_item .activity-cover {
@@ -223,58 +307,6 @@ input[type=number] {
     float: right;
 }
 
-.classwork_item .classwork-cover {
-    width: 13vw;
-    position: absolute;
-    right: -11vw;
-    top: 0.5vw;
-    margin-right: 5vw;
-    z-index: 2;
-}
-
-.classwork_item .classwork_title {
-    background-color: var(--orange_level1);
-    border-radius: 1.5vw;
-
-    text-align: center;
-    font-family: Koodak;
-    font-size: 2.5vw;
-    color: white;
-
-    padding: 0 9vw 0 2vw;
-    position: absolute;
-    right: -3vw;
-    top: 2.5vw;
-    z-index: 1;
-
-    float: right;
-}
-
-.underline-text {
-    text-decoration: underline;
-}
-
-.simple-table {
-    background-color: var(--pink_level1);
-    padding: 0.5vw;
-    border: 0.2vw solid var(--pink_level2);
-    border-radius: 3vw;
-}
-
-.dotted_table table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.dotted_table td {
-    border: 0.5vw dotted var(--orange_level3);
-    width: 50%;
-}
-
-.small-text-box {
-    width: 4vw;
-}
-
 .complete_container {
     border: 0.3vw solid var(--orange_level3);
     border-radius: 3vw;
@@ -284,32 +316,7 @@ input[type=number] {
     margin-top: 1.5vw;
     padding-left: 5vw;
     padding-top: 1vw;
-
-}
-
-.complete_title {
-    background-color: var(--orange_level1);
-    border-top-left-radius: 1.5vw;
-    border-bottom-left-radius: 1.5vw;
-    border-right: 2vw solid var(--orange_level2);
-
-    text-align: center;
-    font-family: Koodak;
-    font-size: 2.5vw;
-    color: white;
-    float: right;
-    z-index: 1;
-
-    padding-right: 1vw;
-    padding-left: 1vw;
-    margin-top: 1vw;
-
-    position: relative;
-    right: -2vw;
-}
-
-.complete_content {
-    margin-right: 11.5vw;
+    padding-bottom: 3vw;
 }
 
 .square_table {
