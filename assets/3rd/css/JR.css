@@ -1,4 +1,27 @@
 
+.homework-image{
+    width: 13vw;
+    position: absolute;
+    right: -2.3vw;
+    bottom: 7vw;
+    z-index: 2;
+}
+
+.homework-text{
+    background-color: var(--pink_level2);
+    border-radius: 1.5vw;
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.25vw;
+    color: white;
+    padding: 0 5vw 0 3vw;
+    position: absolute;
+    right: 8vw;
+    bottom: 15vw;
+    z-index: 1;
+}
+
+
 :root {
 
     --orange_level1: #f8b044;
@@ -172,7 +195,7 @@ p1{
 
 }
 .NumberColor{
-    color: #79c2d2;
+    color: var(--pink_level3);
 }
 /***********************ID*****************************/
 /*********General***********/
@@ -436,7 +459,7 @@ p1{
     white-space: pre-wrap;
 }
 .activity-text{
-    background-color: var(--pink_level1);
+    background-color: var(--pink_level2);
     border-radius: 1.5vw;
     text-align: center;
     font-family: Koodak;
