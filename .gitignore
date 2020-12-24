@@ -337,3 +337,5 @@ prepros.config
 ./*.DS_Store
 ./**.DS_Store
 
+prepros.config
+*.log
