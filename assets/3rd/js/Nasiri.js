@@ -10,13 +10,13 @@ function correct_type1(inp_id,input_val,true_radio,false_radio){
     inp_txt.classList.remove("green_shadow");
     inp_txt.classList.remove("red_shadow");
     radio_f.classList.remove("normal_shadow");
-    radio_f.classList.remove("yellow_shadow");
-    radio_f.classList.remove("green_shadow");
-    radio_f.classList.remove("red_shadow");
+    radio_f.classList.remove("yellow_shadow_radio");
+    radio_f.classList.remove("green_shadow_radio");
+    radio_f.classList.remove("red_shadow_radio");
     radio_t.classList.remove("normal_shadow");
-    radio_t.classList.remove("yellow_shadow");
-    radio_t.classList.remove("green_shadow");
-    radio_t.classList.remove("red_shadow");
+    radio_t.classList.remove("yellow_shadow_radio");
+    radio_t.classList.remove("green_shadow_radio");
+    radio_t.classList.remove("red_shadow_radio");
 
     if (inp_txt.value.length === 0) {
         inp_txt.classList.add("yellow_shadow");
@@ -27,16 +27,16 @@ function correct_type1(inp_id,input_val,true_radio,false_radio){
     }
 
     if (radio_f.checked){
-        radio_f.classList.add("red_shadow");
-        radio_t.classList.add("red_shadow");
+        radio_f.classList.add("red_shadow_radio");
+        radio_t.classList.add("red_shadow_radio");
     }
     else if (radio_t.checked){
-        radio_f.classList.add("green_shadow");
-        radio_t.classList.add("green_shadow");
+        radio_f.classList.add("green_shadow_radio");
+        radio_t.classList.add("green_shadow_radio");
     }
     else {
-        radio_f.classList.add("yellow_shadow");
-        radio_t.classList.add("yellow_shadow");
+        radio_f.classList.add("yellow_shadow_radio");
+        radio_t.classList.add("yellow_shadow_radio");
     }
 }
 
