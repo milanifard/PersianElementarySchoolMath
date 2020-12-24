@@ -106,7 +106,7 @@ function checkTamrinP94() {
 
 function understood_btn_clicked(){
     $("#canvas-overlay-elements").css("display", "none")
-    $("#canvas").css("filter", "none")
+    $("#chain-canvas").css("filter", "none")
 }
 
 var clickedRectangleId;

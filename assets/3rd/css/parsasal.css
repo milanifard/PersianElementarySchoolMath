@@ -9113,11 +9113,6 @@ a {
   margin: auto;
 }
 
-.dark-mode {
-  -webkit-filter: invert(1) hue-rotate(180deg);
-          filter: invert(1) hue-rotate(180deg);
-}
-
 .color1 {
   background-color: #F13F52;
 }
@@ -9438,7 +9433,7 @@ canvas[resize] {
   border-radius: 10px;
 }
 
-#canvas {
+#chain-canvas {
   margin-top: 50px;
   -webkit-filter: blur(10px);
           filter: blur(10px);
@@ -9686,7 +9681,12 @@ html {
 
 .page-number-button {
   width: 3em;
-  color: white;
+}
+
+@media (min-width: 1024px) {
+  .page-number-button {
+    color: white;
+  }
 }
 
 .page-number-button a {
