@@ -31,6 +31,29 @@
 * {
     font-family: 'Zar';
 	font-weight: normal;
-	font-size: 2vh;
+	font-size: 2vw;
+
+	@media (max-width: 991px) {
+		font-size: 3vh;
+
+		.right-border-template {
+			margin-right: 10vw !important;
+		}
+
+		.left-border-template {
+			margin-right: 10vw !important;
+		}
+	}
 	
+	@media (max-width: 800px) {
+		font-size: 2vh;
+
+		.right-border-template {
+			margin-right: 10vw !important;
+		}
+
+		.left-border-template {
+			margin-right: 10vw !important;
+		}
+	}
 }
