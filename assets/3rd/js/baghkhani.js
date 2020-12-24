@@ -16,7 +16,7 @@ function getValue(i, x) {
 
 
 }
-
+//CHECK MULTI VALUE
 function getMultiValue(j, x) {
 
     var obj = document.getElementById(x)
@@ -99,7 +99,7 @@ function p20answerQ1(i) {
 
     }
 }
-
+//GET VALUE AND CHECK
 function p21answerQ2(i) {
 
     if (i == 0) {
@@ -250,7 +250,7 @@ function p21answerQ2(i) {
 
 
 }
-
+//GET VALUE AND CHECK
 function p19answerQ2(i) {
     if (i == 0) {
         var obj = document.getElementById("labeltagharon");
