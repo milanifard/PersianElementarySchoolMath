@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Masoud Kermanipoor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/mkp.css">
+    <title>ریاضی سوم دبستان</title>
+    <script src="assets/3rd/js/Kermanipoor/page_111.js"></script>
+</head>
+
+<body>
+<div>
+    <div id="content_111" class="page-left-border">
+        <div class="background"></div>
+
+        <div class="exercise_item">
+            <img class="exercise-cover" src="assets/3rd/images/Kermanipoor/girl_and_teacher.png" alt="girl_and_teacher">
+            <div class="exercise_title">تمرین</div>
+        </div>
+
+        <div id="Q1_container">
+            <div class="text">
+                <span class="questions-number">1ــ </span>
+                فهیمه از سمیّه پرسید : «چقدر پول داری؟» سمیّه گفت : «اگر 1750 تومان از پدرم<br>
+                بگیرم، پول&#8202;هام 4000 تومان می&#8202;شود.» سمیّه چقدر پول داشت؟
+            </div>
+            <div id="Q1_answer" class="text">
+                <span>
+                    <input type="number" class="underline-text-box" onchange="question1(this)">
+                </span>
+                <span id="Q1_response"></span>
+            </div>
+        </div>
+
+        <div id="Q2_container">
+            <div class="text">
+                <span class="questions-number">2ــ </span>
+                قیمت پیراهنی که آرش می خواهد بخرد، 8900 تومان است. اگر او ٩ اسکناس 1000 تومانی به فروشنده بدهد،<br>
+                چقدر باید پس بگیرد؟
+            </div>
+            <div id="Q2_answer" class="text">
+                <span>
+                    <input type="number" class="underline-text-box" onchange="question2(this)">
+                </span>
+                <span id="Q2_response"></span>
+            </div>
+        </div>
+
+        <div id="Q3_container">
+            <div class="text">
+                <span class="questions-number">3ــ </span>
+                کوچک ترین عدد سه رقمی را از بزرگ ترین عدد 4 رقمی کم کرده ایم؛ حاصل چند شده است؟
+            </div>
+            <div id="Q3_answer" class="text">
+                <span>
+                    <input id="Q3_text_box1" type="number" class="underline-text-box" placeholder="بزرگترین عدد" onchange="question3()"> -
+                </span>
+                <span>
+                    <input id="Q3_text_box2" type="number" class="underline-text-box" placeholder="کوچکترین عدد" onchange="question3()"> =
+                </span>
+                <span>
+                    <input id="Q3_text_box3" type="number" class="underline-text-box" onchange="question3()">
+                </span>
+                <span id="Q3_response"></span>
+            </div>
+        </div>
+
+        <div id="Q4_container">
+            <div class="text">
+                <span class="questions-number">4ــ </span>
+                با رقم های 2،7،1،5 بزرگ ترین و کوچک ترین عدد 4 رقمی را بسازید.<br>
+                اختلاف این دو عدد را پیدا کنید.
+            </div>
+            <div id="Q4_answer" class="text">
+                <span>
+                    <input id="Q4_text_box1" type="number" class="underline-text-box" placeholder="بزرگترین عدد" onchange="question4()"> -
+                </span>
+                <span>
+                    <input id="Q4_text_box2" type="number" class="underline-text-box" placeholder="کوچکترین عدد" onchange="question4()"> =
+                </span>
+                <span>
+                    <input id="Q4_text_box3" type="number" class="underline-text-box" onchange="question4()">
+                </span>
+                <span id="Q4_response"></span>
+            </div>
+        </div>
+
+        <div id="Q5_container">
+            <div class="text">
+                <span class="questions-number">5ــ </span>
+                ارتفاع قلّه&#8202;ی توچال 3933 متر و قلّه&#8202;ی دنا 5200 متر است. قلّه&#8202;ی توچال چند متر از دنا کوتاه تر است؟
+            </div>
+            <div id="Q5_answer" class="text">
+                <span>
+                    <img id="Q5_image" src="assets/3rd/images/Kermanipoor/mountain.png" alt="mountain">
+                </span>
+                <span>
+                    <input id="Q5_text_box" type="number" class="underline-text-box" onchange="question5(this)">
+                </span>
+                <span id="Q5_response"></span>
+            </div>
+        </div>
+
+        <div id="Q6_container">
+            <div class="text">
+                <span class="questions-number">6ــ </span>
+                حاصل تفریق ها را به دست آورید.
+            </div>
+            <div id="Q6_response" class="text" style="margin: auto"></div>
+            <table class="text" id="Q6_exercise">
+                <tr>
+                    <td>
+                        <div id="Q6_exercise_1" class="text">7300<br><span class="underline-text">2170 -</span></div>
+                        <div id="Q6_answer_1">
+                            <input id="Q6_text_box1" type="number" class="underline-text-box" onchange="question6()">
+                        </div>
+                    </td>
+                    <td>
+                        <div id="Q6_exercise_2" class="text">8040<br><span class="underline-text">5205 -</span></div>
+                        <div id="Q6_answer_2">
+                            <input id="Q6_text_box2" type="number" class="underline-text-box" onchange="question6()">
+                        </div>
+                    </td>
+                    <td>
+                        <div id="Q6_exercise_3" class="text">8050<br><span class="underline-text">3027 -</span></div>
+                        <div id="Q6_answer_3">
+                            <input id="Q6_text_box3" type="number" class="underline-text-box" onchange="question6()">
+                        </div>
+                    </td>
+                    <td>
+                        <div id="Q6_exercise_4" class="text">3000<br><span class="underline-text">1234 -</span></div>
+                        <div id="Q6_answer_4">
+                            <input id="Q6_text_box4" type="number" class="underline-text-box" onchange="question6()">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="page-number">111</div>
+    </div>
+</div>
+</body>
+</html>

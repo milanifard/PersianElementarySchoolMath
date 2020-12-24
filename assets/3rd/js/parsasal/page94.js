@@ -104,11 +104,14 @@ function checkTamrinP94() {
     }
 }
 
-
+function understood_btn_clicked(){
+    $("#canvas-overlay-elements").css("display", "none")
+    $("#chain-canvas").css("filter", "none")
+}
 
 var clickedRectangleId;
 $(document).ready(function () {
-
+    $("#understood-btn").click(understood_btn_clicked);
     $(".clickable-image").click(function (event) {
 
         clickedRectangleId = $(event.target).attr('id')

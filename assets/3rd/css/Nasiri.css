@@ -1,4 +1,5 @@
 :root{
+    --dark-pink:rgb(247,155,134);
     --light-pink:rgb(252,210,192);
     --lighter-pink:rgb(252,230,211);
     --pink:rgb(253,199,171);
@@ -29,6 +30,7 @@ p,
 h5,
 span {
     font-family: 'zar';
+    font-size: 1.5vw;
 }
 h5{
     font-size: 1.5vw;
@@ -64,7 +66,7 @@ span.question {
     justify-content: space-between;
 }
 .flex_center{
-    align-content: center;
+    align-items: center;
 }
 .flex_center_self{
     align-self: center;
@@ -129,7 +131,6 @@ span.question {
     border-radius: 1vw;
     position: relative;
     background-color: white;
-    z-index: 5;
 }
 .main_right {
     margin-left: -6vw;
@@ -140,7 +141,6 @@ span.question {
     border-radius: 1vw;
     position: relative;
     background-color: white;
-    z-index: 5;
 }
 .content_left {
     margin-top: 7vw;
@@ -157,6 +157,7 @@ span.question {
 p.question {
     font-size: 1.5vw;
     text-align: right;
+    direction: rtl;
 }
 .question_container{
     margin-left: -4vw;
@@ -363,7 +364,7 @@ span>img{
     margin-bottom: 2vw;
 }
 .title_box {
-    background-color: var(--pink);
+    background-color: var(--dark-pink);
     width: 9vw;
     height: 3.2vw;
     display: flex;
@@ -383,6 +384,31 @@ span>img{
 }
 .left_side_btn{
     margin-right: 3vw;
+}
+.background-style-right{
+    width: 110vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, var(--pink), var(--pink) 1vw, var(--light-pink) 0vw, var(--light-pink) 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+    left: -10vw;
+}
+.background-style-left{
+    width: 110vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, var(--pink), var(--pink) 1vw, var(--light-pink) 0vw, var(--light-pink) 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+    right: -10vw;
+}
+.questions-number {
+    color: var(--dark-pink);
 }
 #box_img{
     position: relative;
@@ -419,4 +445,7 @@ span>img{
 #check_img{
     width: 30vw;
     height: 20vw;
+}
+#page3_q1{
+    margin-right: 2vw;
 }

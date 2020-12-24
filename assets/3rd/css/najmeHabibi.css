@@ -68,7 +68,6 @@ body {
     left: -11vw;
 }
 
-/* page 58 style*/
 .title-fasl{
     background-color: #A088BA;
     border-radius: 1vw;
@@ -93,9 +92,30 @@ body {
     left: 36vw;
     top: -1.2vw;
 }
+
 .page{
     margin-top: 2vw;
     position: relative;
+}
+
+/* worm */
+.worm-image{
+    width: 12vw;
+    height: 8vw;
+    position: absolute;
+    right: 5vw;
+    /* left: 37vw; */
+    top: -5vw;
+}
+
+/* tamrin */
+.tamrin-image{
+    width: 16vw;
+    height: 18vw;
+    position: absolute;
+    right: -3vw;
+    /* left: 37vw; */
+    top: 1vw;
 }
 
 /* pagination*/
@@ -192,6 +212,7 @@ body {
     /*position: absolute;*/
     margin-left: 10vw;
     margin-top: 0.5vw;
+    outline: none;
 }
 
 .q6-answer-text-area {
@@ -282,7 +303,7 @@ body {
 }
 
 .papers-image {
-    width: 29vw;
+    width: 26vw;
     height: 7vw;
     position: absolute;
     top: 4vw;
@@ -290,20 +311,21 @@ body {
 }
 
 .short-answer-area {
-    width: 7vw;
+    width: 9vw;
     height: 3vw;
     margin: 0 0.5vw 0 0.5vw;
     padding: 0 0.5vw 0 0.5vw;
 
     font-family: 'Koodak';
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     direction: rtl;
-
+    text-align: center;
     box-sizing: border-box;
     border: 0.2vw solid #A088BA;
     border-radius: 1vw;
     background-color: #f8f8f8;
     resize: none;
+    outline: none;
 }
 
 /* q5 */
@@ -522,3 +544,107 @@ body {
     top: 20vw;
     left: 70vw
  }
+
+ /* q13 */
+.q13-parent{
+    position: relative;
+    margin-bottom: 15vw;
+    top: 3vw;
+}
+
+.kebrit1-image{
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 1vw;
+    left: 10vw
+}
+
+ /* q14 */
+ .q14-parent{
+    position: relative;
+    margin-bottom: 20vw;
+    top: 3vw;
+}
+
+.kebrit2-image{
+    width: 25vw;
+    height: 20vw;
+    position: absolute;
+    top: 1vw;
+    left: 10vw
+}
+
+ /* q15 */
+ .q15-parent{
+    position: relative;
+    margin-bottom: 22vw;
+    top: 3vw;
+}
+
+.kebrit3-image{
+    width: 23vw;
+    height: 18vw;
+    position: absolute;
+    top: 1vw;
+    left: 10vw
+}
+
+/* farhange khandan */
+
+.final-part-container{
+    width: 75vw;
+    max-width: 100%;
+    border: 0.6vw solid #A088BA;
+    border-radius: 3vw;
+    position: relative;
+    background-color: #f7e4fc;
+    left: 11vw;
+    right: 0;
+    margin-bottom: 2vw;
+
+}
+
+.farhange-khandan-title{
+    background-color: #A088BA;
+    border-radius: 1.7vw 0 0 1.7vw;
+    text-align: left;
+    font-family: 'Koodak';
+    font-size: 2.25vw;
+    color: black;
+    position: absolute;
+    margin-top: 3vw;
+    margin-left: 55vw;
+    right: -4vw;
+}
+
+.boy-image{
+    width: 18vw;
+    height: 15vw;
+    position: absolute;
+    top: -5vw;
+    left: 5vw
+}
+
+.parent-q-farhang{
+    position: relative;
+    margin-top: 12vw;
+    margin-bottom: 12vw;
+}
+
+.question-text-farhang{
+    font-family: 'Zar';
+    font-size: 2vw;
+    direction: rtl;
+    text-align: right;
+    color: black;
+    margin-right: 2vw;
+    margin-top: 1vw;
+    white-space: pre-wrap;
+}
+ 
+.what-is-the-problem-answer{
+    position:absolute;
+    right: 2vw;
+    margin-bottom: 20vw;
+}

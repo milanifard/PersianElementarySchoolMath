@@ -23,10 +23,17 @@
     --orange_level2: #fcb94b;
     --orange_level3: #f89f6d;
 
+    --yellow_banana: #ffdd2b;
+    --brown_choclate:#d5c495;
+    --pink_cherry:#dd93b0;
+    --yellow_saffron:#fffac1;
+
+
     --purple: #b09ac9;
 
     --pink_level0: #fbdfeb;
     --pink: #f287b6;
+    --grey:#a1a1a1;
 
     --dynamic_rnd: 0;
     --dynamic_rnd_last: 0;
@@ -108,6 +115,14 @@
     display: flex;
     font-family: Koodak;
 }
+.box .school
+{
+    position: absolute;
+    bottom: -3vw;
+    left: 25%;
+
+    font-size: 1vw;
+} 
 .box .skill
 {
     position: relative;
@@ -269,7 +284,7 @@
     padding-right: 5vw;
     padding-left: 3vw;
     padding-bottom: 2vw;
-    margin-top: 2vw;
+    margin-top: 10vw;
 }
 
 .colored-table{
@@ -287,6 +302,7 @@
     font-family: Koodak;
     text-align: center;
 }
+
 
 .simple-table{
     width: 65vw;
@@ -306,7 +322,14 @@
 
 .simple-td-green{
     padding: 0.7vw;
-    border: 0.3vw solid var(--green_level4);
+    border: 0.3vw solid var(--green_level2);
+    font-size: 1.5vw;
+    font-family: Koodak;
+    text-align: center;
+}
+.simple-td-blue{
+    padding: 0.7vw;
+    border: 0.2vw solid var(--blue_level3);
     font-size: 1.5vw;
     font-family: Koodak;
     text-align: center;
@@ -346,7 +369,15 @@
     overflow: hidden;
     margin-left: 10vw;
 }
-
+.wrapper1 {
+    width: 14vw;
+    height: 14vw;
+    border: 2px solid var(--grey);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10vw;
+}
 .sector {
     width: 5000px;
     height: 5000px;
@@ -357,6 +388,20 @@
     left: 50%;
     top: 50%;
     border: 1px solid var(--purple);
+    margin-top: -5002px;
+    margin-left: -5002px;
+    background-color: white;
+}
+.sector1 {
+    width: 5000px;
+    height: 5000px;
+
+    position: absolute;
+    transform-origin: 100% 100%;
+
+    left: 50%;
+    top: 50%;
+    border: 1px solid var(--grey);
     margin-top: -5002px;
     margin-left: -5002px;
     background-color: white;
@@ -538,3 +583,4 @@
     bottom: -7vw;
     margin: auto;
 }
+.radio-btn-style{width: 2vw; height: 2vw;}
