@@ -91,6 +91,7 @@ span.question {
 .flex_rev_row{
     flex-flow: row-reverse;
 }
+
 .main_title {
     background-color: var(--pink);
     width: 30vw;
@@ -436,6 +437,32 @@ span>img{
 }
 .questions-number {
     color: var(--dark-pink);
+}
+.show_btn {
+    background-color: lightblue;
+    position: relative;
+    width: 10vw;
+    height: 3vw;
+    border-color: #104ed3;
+}
+.hide_btn {
+    background-color: lightblue;
+    position: relative;
+    width: 15vw;
+    height: 3vw;
+    border-color: #104ed3;
+}
+.hint_text {
+    font-family: BNazanin,'BNazanin', 'zar';
+    font-size: 1.8vw;
+    direction: rtl;
+
+    /* white-space: pre-wrap; */
+}
+.hint {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1vw dotted black; /* If you want dots under the hoverable text */
 }
 #box_img{
     position: relative;
