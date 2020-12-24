@@ -6,7 +6,7 @@
     <meta name="author" content="Ali Goldani">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/galiold.css">
-    <title>ریاضی سوم دبستان صفحه ۱۱۶</title>
+    <title>ریاضی سوم دبستان صفحه ۱۱۷</title>
 
 </head>
 
@@ -14,22 +14,251 @@
     <div class="left-border-page">
 
         <div id="q1" class="question-container">
-            <div class="prompt">۱- کدام عددهای یک‌رقمی هستند که اگر در خودشان ضرب شوند، حاصل آن‌ها بیشتر از ۳۰
-                می‌شود؟
+            <div class="prompt">۱- به شکل زیر چهار چوب‌کبریت اضافه می‌کنیم تا بیشترین تعداد مربّع‌ها دیده شود.
+                چوب‌کبریت‌ها را کجا قرار می‌دهید؟
             </div>
-            <div class="guide">به جای مربّع عددهای یک‌رقمی قرار دهید و حاصل را پیدا کنید. مجموعه‌ی
-                عددهایی که پیدا کردید را با فاصله در فضای پایین بنویسید.</div>
-            <div class="test-pane">
-                <img src="assets/3rd/images/galiold/p116-q1.png" alt="thinking-figure">
-                <input id="q1-first-num" type="text" placeholder="0" onchange="p116_calcResult()" class="ans-box">
-                <span>x</span>
-                <input id="q1-second-num" type="number" placeholder="0" onchange="p116_calcResult()" class="ans-box">
-                <span>=</span>
-                <span id="q1-result">0</span>
+            <div class="guide">برای قرار دادن چوب‌کبریت بر روی فضای خالی کلیک کنید. برای حذف آن دوباره آن را انتخاب کنید.</div>
+            <div class="ans-pane">
+                <div class="svg-container">
+                    <svg viewBox="0 0 150 200">
+                        <g transform="translate(3,3)">
+                            <g class="field" transform="translate(0,40)">
+                                <g class="row" transform="translate(0,0)">
+                                    <g class="col" transform="translate(0,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white"></rect>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                    </g>
+                                    <g class="col" transform="translate(40,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white"></rect>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline q1-ans" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5" opacity="0" placed="false"
+                                            onmouseover="highlight(this)" onmouseout="dehighlight(this)"
+                                            onclick="toggleLine(this)"></line>
+                                    </g>
+                                    <g class="col" transform="translate(80,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white"></rect>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline q1-ans" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5" opacity="0" placed="false"
+                                            onmouseover="highlight(this)" onmouseout="dehighlight(this)"
+                                            onclick="toggleLine(this)"></line>
+                                    </g>
+
+                                    <g class="col" transform="translate(120,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white">
+                                        </rect>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke-width="0" stroke="#e0bb8b"></line>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                    </g>
+                                </g>
+                                <g class="row" transform="translate(0,40)">
+                                    <g class="col" transform="translate(0,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white"></rect>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="hline q1-ans" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5" opacity="0" placed="false"
+                                            onmouseover="highlight(this)" onmouseout="dehighlight(this)"
+                                            onclick="toggleLine(this)"></line>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                    </g>
+                                    <g class="col" transform="translate(40,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white"></rect>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                    </g>
+                                    <g class="col" transform="translate(80,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white"></rect>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5" opacity="0" placed="false"
+                                            onmouseover="highlight(this)" onmouseout="dehighlight(this)"
+                                            onclick="toggleLine(this)"></line>
+                                    </g>
+
+                                    <g class="col" transform="translate(120,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white">
+                                        </rect>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke-width="0" stroke="#e0bb8b"></line>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                    </g>
+                                </g>
+                                <g class="row" transform="translate(0,80)">
+                                    <g class="col" transform="translate(0,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white"></rect>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="hline q1-ans" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5" opacity="0" placed="false"
+                                            onmouseover="highlight(this)" onmouseout="dehighlight(this)"
+                                            onclick="toggleLine(this)"></line>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                    </g>
+                                    <g class="col" transform="translate(40,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white"></rect>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5" opacity="0" placed="false"
+                                            onmouseover="highlight(this)" onmouseout="dehighlight(this)"
+                                            onclick="toggleLine(this)"></line>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                    </g>
+                                    <g class="col" transform="translate(80,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white"></rect>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5" opacity="0" placed="false"
+                                            onmouseover="highlight(this)" onmouseout="dehighlight(this)"
+                                            onclick="toggleLine(this)"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5" opacity="0" placed="false"
+                                            onmouseover="highlight(this)" onmouseout="dehighlight(this)"
+                                            onclick="toggleLine(this)"></line>
+                                    </g>
+
+                                    <g class="col" transform="translate(120,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white">
+                                        </rect>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke-width="0" stroke="#e0bb8b"></line>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                    </g>
+                                </g>
+
+                                <g class="row" transform="translate(0,120)">
+                                    <g class="col" transform="translate(0,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white">
+                                        </rect>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke-width="0" stroke="#e0bb8b"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                    </g>
+                                    <g class="col" transform="translate(40,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white">
+                                        </rect>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke-width="0" stroke="#e0bb8b"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                    </g>
+                                    <g class="col" transform="translate(80,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white">
+                                        </rect>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke="#e0bb8b" stroke-width="5"></line>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke-width="0" stroke="#e0bb8b"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                    </g>
+
+                                    <g class="col" transform="translate(120,0)">
+                                        <rect class="cell" rx="4" ry="4" opacity="1" x="4" y="4" width="32" height="32"
+                                            fill="white">
+                                        </rect>
+                                        <line class="hline" x1="4" x2="36" y1="0" y2="0" stroke-linecap="round"
+                                            stroke-width="0" stroke="#e0bb8b"></line>
+                                        <path d="M4,0L20,-13.333333333333334L36,0L20,13.333333333333334Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                        <line class="vline" y1="4" y2="36" x1="0" x2="0" stroke-linecap="round"
+                                            stroke-width="0" stroke="#e0bb8b"></line>
+                                        <path d="M0,4L-13.333333333333334,20L0,36L13.333333333333334,20Z" stroke="black"
+                                            stroke-width="2" opacity="0"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <span class="match-counter" id="match-cnt" for="match-game-box">چوب کبریت باقی‌مانده: 4</span>
             </div>
             <div class="ans-pane">
-                <input id="q1-ans" type="text" dir="ltr" class="ans-rect">
-                <button id="q1-submit" onclick="p116_checkQ1()">بررسی</button>
+                <button id="q1-submit" onclick="p117_checkQ1()">بررسی</button>
                 <span id="q1-feedback-correct" class="feedback correct">آفرین</span>
                 <span id="q1-feedback-wrong" class="feedback wrong">دوباره تلاش کن</span>
             </div>
@@ -37,68 +266,49 @@
 
 
         <div id="q2" class="question-container">
-            <div class="prompt">۲- عددی را با خودش جمع کردیم و از حاصل جمع یکی کم کردیم، جواب ۳۹ شد. آن عدد را پیدا
-                کنید.</div>
-            <div class="guide">با اوّلین حدس شروع کنید. برای مثال عدد را ۱۵ در نظر بگیرید و آزمایش کنید.</div>
-            <div class="guide">حالا حدس بعدی شما باید بیشتر از ۱۵ باشد یا کمتر از آن؟ چرا؟ توضیحات خود را در فضای زیر
-                بنویسید.</div>
+            <div class="prompt">۲- مساحت یک مستطیل ۱۸ سانتی‌متر مربّع شده‌است . اندازه‌ی ضلع‌ها را طوری قرار دهید که محیط آن ۲۲ شود.</div>
+            <div class="guide">اندازه‌ی ضلع مستطیل‌ها را حدس بزنید. محیط شکل‌ها را پیدا کنید تا پاسخ مسئله مشخّص شود.</div>
+            <div class="diagram-pane">
+                <img src="assets/3rd/images/galiold/page117-q3.png" alt="">
+            </div>
             <div class="ans-pane">
-                <input id="q2-first-num" type="number" placeholder="0" onchange="p116_updateNextFieldQ2()"
-                    class="ans-box">
-                <span>+</span>
-                <input id="q2-second-num" type="number" placeholder="0" class="ans-box" readonly>
-                <span dir="ltr">- 1 = 39</span>
+                <span dir="ltr">طول =</span>
+                <input id="q2-first-num" type="number" placeholder="0" class="ans-box">
+                <span dir="ltr">عرض =</span>
+                <input id="q2-first-num" type="number" placeholder="0" class="ans-box">
+            </div>
+            <div class="ans-pane">
                 <button id="q2-submit" onclick="p116_checkQ2()">بررسی</button>
                 <span id="q2-feedback-correct" class="feedback correct">آفرین</span>
                 <span id="q2-feedback-wrong" class="feedback wrong">دوباره تلاش کن</span>
             </div>
         </div>
 
-        <div id="q3" class="question-container">
-            <div class="prompt">۳- عددی را دو برابر کردیم. سپس حاصل را با ۲۰ جمع کردیم؛ جواب ۳۶ شد. آن عدد را پیدا کنید.
+        <div id="q3" class="question-container last">
+            <div class="prompt">۳- محیط یک مستطیل ۱۸ سانتی‌متر است. طول این مستطیل یک سانتی‌متر بیشتر از عرض آن است. طول و عرض را پیدا کنید.</div>
+            <div class="ans-pane">
+                <span dir="ltr">طول =</span>
+                <input id="q3-first-num" type="number" placeholder="0" class="ans-box">
+                <span dir="ltr">عرض =</span>
+                <input id="q3-first-num" type="number" placeholder="0" class="ans-box">
             </div>
             <div class="ans-pane">
-                <input id="q3-first-num" type="number" placeholder="0" onchange="p116_updateNextField()"
-                    class="ans-box">
-                <span dir="ltr">x 2 + 20 = 36</span>
-                <button id="q3-submit" onclick="p116_checkQ3()">بررسی</button>
+                <button id="q3-submit" onclick="p116_checkQ2()">بررسی</button>
                 <span id="q3-feedback-correct" class="feedback correct">آفرین</span>
                 <span id="q3-feedback-wrong" class="feedback wrong">دوباره تلاش کن</span>
             </div>
         </div>
 
-        <div id="q4" class="question-container last">
-            <div class="prompt">۴- یک سکّه را انداختیم، رو آمد. دوباره انداختیم، باز هم رو آمد. آیا می‌توانید حدس بزنید
-                که اگر سکّه را دوباره بیندازیم، رو می‌آید یا پشت؟ چرا؟</div>
-            <div class="ans-pane">
-                <input type="radio" id="uncertain" name="q4-result" value="uncertain">
-                <label for="uncertain">نامعلوم</label>
-                <input type="radio" id="tail" name="q4-result" value="tail">
-                <label for="tail">پشت</label><br>
-                <input type="radio" id="head" name="q4-result" value="head">
-                <label for="head">رو</label><br>
-            </div>
-            <div class="ans-pane">
-                <input id="q4-ans" type="text" class="ans-rect extended">
-            </div>
-            <div class="ans-pane">
-                <button id="q4-submit" onclick="p116_checkQ4()">بررسی</button>
-                <span id="q4-feedback-correct" class="feedback correct">آفرین</span>
-                <span id="q4-feedback-wrong" class="feedback wrong">دوباره تلاش کن</span>
-            </div>
-        </div>
-
-
     </div>
 
     <div class="pagination">
-        <a href="book_3_117-Goldani.html">
+        <a href="book_3_118.html">
             <img src="assets/3rd/images/left-arrow.png" alt="next_page">
         </a>
 
-        <input class="page-number-input" type="number" name="page_number" id="page-switcher" placeholder="116">
+        <input class="page-number-input" type="number" name="page_number" id="page-switcher" placeholder="117">
 
-        <a href="book_3_115.html">
+        <a href="book_3_116.html">
             <img src="assets/3rd/images/right-arrow.png" alt="next_page">
         </a>
     </div>
