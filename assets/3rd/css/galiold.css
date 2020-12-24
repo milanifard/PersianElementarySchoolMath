@@ -51,6 +51,7 @@ body{
     background-image: url('../images/galiold/background.svg');
     background-repeat: no-repeat;
     background-position: bottom;
+    position: relative;
 }
 
 /* In order to ignore input top-down btn */
@@ -159,6 +160,10 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     padding-right: 15vw;
 }
 
+.question-container.last {
+    margin-bottom: 10vw;
+}
+
 .question-container .prompt {
     direction: rtl;
 }
@@ -193,7 +198,7 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
 }
 
 .ans-rect {
-    width: 5vw;
+    width: 10vw;
     height: 2vw;
     border: 2px solid green;
     margin-left: 1vw;
@@ -202,35 +207,80 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     font-size: 1vw;
 }
 
+.ans-rect.extended {
+    width: 100%;
+    text-align: right;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
 .test-pane img {
     height: 15vmax;
 }
 
 .ans-pane button {
-    height: 2vw;
     border-radius: 5px;
     font-family: Zar;
-    font-size: 1vw;
+    font-size: 1.5vw;
+    margin-left: 1vw;
     cursor: pointer;
 }
 
-
-.page-number-input{
-
-    background-color: var(--yellow_level4_guessbox);
-    border-radius: 2.5vw;
-    border: 0.9vw double white;
-
-    text-align: center;
-    font-size: 2vw;
-    color: white;
-
-    padding: 0.1vw 0.5vw;
-    float: left;
+.ans-pane label {
+    margin-right: 2vw;
 }
 
-#next_btn{float: left; margin-right: 1.5vw;}
-#pre_btn{float: left; margin-left: 1.5vw;}
+.feedback {
+    display: none;
+    position: absolute;
+    right: 0;
+    /* left: 0; */
+    padding-right: 10vw;
+}
+
+.feedback.correct {
+    color: green;
+}
+
+.feedback.wrong {
+    color: red;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1vw;
+    left: 0;
+    right: 0;
+    align-self: center;
+}
+
+.pagination a {
+    padding: 0;
+    margin: 0;
+}
+
+.pagination a img {
+    width: 3vw;
+}
+
+.page-number-input{
+    background-color: var(--yellow_level4_guessbox);
+    border-radius: 30px;
+    border: 0.9vw double white;
+    text-align: center;
+    color: white;
+    font-family: Zar;
+    font-size: 2vw;
+    padding: 0;
+    width: 5vw
+}
+.page-number-input::placeholder {
+    opacity: 1;
+}
 
 /* page 125 */
 
