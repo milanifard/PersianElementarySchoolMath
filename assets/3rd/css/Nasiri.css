@@ -250,6 +250,8 @@ span>img{
 }
 .radio_btn{
     width: 1.5vw;
+    color: red;
+    font-size: 1vw;
 }
 
 
@@ -299,17 +301,19 @@ span>img{
 .page-number-button {
     width: 5vw;
     display: flex;
-    color: white;
+    color: black;
     justify-content: center;
 }
 
 .page-number-button > a {
-    color: white;
+    color: black;
     font-size: 4.5vw;
     display: flex;
 }
 
 
+.normal_shadow_circle{
+}
 
 .normal_shadow {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -324,7 +328,7 @@ span>img{
 }
 
 .green_shadow {
-    box-shadow: 0 6px 10px 0 rgba(205, 220, 57, 0.8);
+    box-shadow: 0 6px 10px 0 rgba(57, 220, 57, 0.8);
 }
 .bottom_box {
     width: 100%;
