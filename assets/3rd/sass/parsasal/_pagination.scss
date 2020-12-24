@@ -27,8 +27,10 @@
 }
 .page-number-button {
     width: 3em;
-    color: white;
     
+    @media (min-width: 1024px) {
+        color: white;
+    }
     a{
         font-size: 2.5rem;
     }
