@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/3rd/css/barzgar.css">
     <link href="http://fonts.cdnfonts.com/css/zar" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
+    <script src="assets/3rd/js/barzgar.js"></script>
     <title>ریاضی سوم دبستان</title>
 </head>
 <body style="margin: 0;">
@@ -30,35 +31,27 @@
         <div class="text-config questions-text-config" style="margin-top: 0vw" id="question-1-text">
             <span class="question-number">1-</span>در درس پيش با دسته های 1000تايي،100تايي،10تايي و يكي آشنا شديد.
             حالا با اين دسته ها ابتدا جدول ارزش مكاني را کامل كنيد. سپس، آن ها را با عدد و حروف بنويسيد.        </div>
-
-        <div id="bakhsh1">
-            <div style="margin-left: 0vw; display: inline-block;" id="question-1-shapes">
-
-                <div id="1k" style="display: inline-block; margin-left: 1.5vw;">
-                    <div class="circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <!--<div class="text-config"style="position: absolute;top:22.5vw;left: 4vw;">1000</div>-->
-                </div>
-                <div id="100taii" style="display: inline-block;margin-left: 1.5vw;">
-                    <div class="circle"></div>
-                    <!--<div class="text-config"style="position: absolute;top:22.5vw;left: 13vw;">100</div>-->
-                </div>
-                <div id="10taii" style="display: inline-block;margin-left: 1.5vw;">
-                    <div class="circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <!--<div class="text-config" style="position: absolute;top:22.5vw;left: 24.5vw;">10</div>-->
-                </div>
-                <div id="1i" style="display: inline-block;margin-left: 1.5vw;">
-                    <div class="circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <!--<div class="text-config" style="position: absolute;top:22.5vw;left: 37vw;" >1</div>-->
-                </div>
-            </div>
-            <div id="question-1-table" style="display: inline-block; margin-left: 1.5vw;">
-                <table class="question-1-table">
+    <div id="page31-question-1-1">
+        <span class="hezar-taii">
+            <span class="circle first-circle" >-</span>
+            <span class="circle overlay-circle last-circle"><span>1000</span></span>
+        </span>
+        <span class="sad-taii">
+            <span class="circle first-circle last-circle">100</span>
+        </span>
+        <span class="dah-taii">
+            <span class="circle first-circle" >-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle last-circle">10</span>
+        </span>
+        <span class="yeki">
+            <span class="circle first-circle" >-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle last-circle">1</span>
+        </span>
+        <span style="display: inline-block;margin-left: 5vw">
+            <table class="question-1-table">
                     <tr>
                         <td class="question-1-table-cells table-text-config" style="border-left: none;border-top: none">
                             هزارگان
@@ -72,222 +65,239 @@
                     </tr>
                     <tr>
                         <td class="question-1-table-cells" style="border-left: none;border-bottom: none;height: 0.5vw;">
-                            <input type="number" class="table-input-config-question-1">
+                            <input type="number" class="table-input-config-question-1" id="page31-question1-1-hezar">
                         </td>
                         <td class="question-1-table-cells" style="border-bottom: none ;height: 0.5vw;">
-                            <input type="number" class="table-input-config-question-1">
+                            <input type="number" class="table-input-config-question-1" id="page31-question1-1-sad">
                         </td>
                         <td class="question-1-table-cells" style="border-bottom: none ;height: 0.5vw;">
-                            <input type="number" class="table-input-config-question-1">
+                            <input type="number" class="table-input-config-question-1" id="page31-question1-1-dah">
                         </td>
                         <td class="question-1-table-cells"
                             style="border-bottom: none;border-right: none;height: 0.5vw;">
-                            <input type="number" class="table-input-config-question-1">
+                            <input type="number" class="table-input-config-question-1" id="page31-question1-1-yek">
                         </td>
                     </tr>
                 </table>
-            </div>
-
-            <div id="question-1-inputs" style="display: inline-block;width: 20vw; margin-left: 1.5vw;">
+        </span>
+        <span class="question-1-inputs" style="margin-left: 5vw">
                 <div>
-                    <input class="input-config-question-1" type="number">
-                </div>
-                <div>
-                    <input class="input-config-question-1" type="text">
-                </div>
-            </div>
-
-        </div>
-
-
-        <!--TODO create cubes fore these-->
-        <div id="bakhsh2" style="margin-top: 2vw">
-            <div style="margin-left: 0vw; display: inline-block;">
-
-                <div style="display: inline-block; margin-left: 1.5vw;">
-                    <div class="circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <!--<div class="text-config"style="position: absolute;top:22.5vw;left: 4vw;">1000</div>-->
-                </div>
-                <div style="display: inline-block;margin-left: 1.5vw;">
-                    <div class="circle"></div>
-                    <!--<div class="text-config"style="position: absolute;top:22.5vw;left: 13vw;">100</div>-->
-                </div>
-                <div style="display: inline-block;margin-left: 1.5vw;">
-                    <div class="circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <!--<div class="text-config" style="position: absolute;top:22.5vw;left: 24.5vw;">10</div>-->
-                </div>
-                <div style="display: inline-block;margin-left: 1.5vw;">
-                    <div class="circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <!--<div class="text-config" style="position: absolute;top:22.5vw;left: 37vw;" >1</div>-->
-                </div>
-            </div>
-            <div style="display: inline-block; margin-left: 1.5vw;">
-                <table class="question-1-table">
-                    <tr>
-                        <td class="question-1-table-cells table-text-config" style="border-left: none;border-top: none">
-                            هزارگان
-                        </td>
-                        <td class="question-1-table-cells table-text-config" style="border-top: none">صدگان</td>
-                        <td class="question-1-table-cells table-text-config" style="border-top: none">دهگان</td>
-                        <td class="question-1-table-cells table-text-config"
-                            style="border-top: none;border-right: none;">
-                            يكان
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="question-1-table-cells" style="border-left: none;border-bottom: none;height: 0.5vw;">
-                            <input type="number" class="table-input-config-question-1">
-                        </td>
-                        <td class="question-1-table-cells" style="border-bottom: none ;height: 0.5vw;">
-                            <input type="number" class="table-input-config-question-1">
-                        </td>
-                        <td class="question-1-table-cells" style="border-bottom: none ;height: 0.5vw;">
-                            <input type="number" class="table-input-config-question-1">
-                        </td>
-                        <td class="question-1-table-cells"
-                            style="border-bottom: none;border-right: none;height: 0.5vw;">
-                            <input type="number" class="table-input-config-question-1">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div style="display: inline-block;width: 20vw; margin-left: 1.5vw;">
-                <div>
-                    <input class="input-config-question-1" type="number">
+                    <input class="input-config-question-1" type="number" id="page31-question1-1-number">
                 </div>
                 <div>
-                    <input class="input-config-question-1" type="text">
+                    <input class="input-config-question-1" type="text" id="page31-question1-1-text">
                 </div>
-            </div>
-
-        </div>
-
-
-        <div id="bakhsh3" style="margin-top: 2vw">
-            <div style="margin-left: 0vw; display: inline-block;">
-
-                <div style="display: inline-block; margin-left: 1.5vw;">
-                    <div class="circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <!--<div class="text-config"style="position: absolute;top:22.5vw;left: 4vw;">1000</div>-->
-                </div>
-                <div style="display: inline-block;margin-left: 1.5vw;">
-                    <div class="circle"></div>
-                    <!--<div class="text-config"style="position: absolute;top:22.5vw;left: 13vw;">100</div>-->
-                </div>
-                <div style="display: inline-block;margin-left: 1.5vw;">
-                    <div class="circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <!--<div class="text-config" style="position: absolute;top:22.5vw;left: 24.5vw;">10</div>-->
-                </div>
-                <div style="display: inline-block;margin-left: 1.5vw;">
-                    <div class="circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <div class="circle overlay-circle"></div>
-                    <!--<div class="text-config" style="position: absolute;top:22.5vw;left: 37vw;" >1</div>-->
-                </div>
-            </div>
-            <div style="display: inline-block; margin-left: 1.5vw;">
-                <table class="question-1-table">
-                    <tr>
-                        <td class="question-1-table-cells table-text-config" style="border-left: none;border-top: none">
-                            هزارگان
-                        </td>
-                        <td class="question-1-table-cells table-text-config" style="border-top: none">صدگان</td>
-                        <td class="question-1-table-cells table-text-config" style="border-top: none">دهگان</td>
-                        <td class="question-1-table-cells table-text-config"
-                            style="border-top: none;border-right: none;">
-                            يكان
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="question-1-table-cells" style="border-left: none;border-bottom: none;height: 0.5vw;">
-                            <input type="number" class="table-input-config-question-1">
-                        </td>
-                        <td class="question-1-table-cells" style="border-bottom: none ;height: 0.5vw;">
-                            <input type="number" class="table-input-config-question-1">
-                        </td>
-                        <td class="question-1-table-cells" style="border-bottom: none ;height: 0.5vw;">
-                            <input type="number" class="table-input-config-question-1">
-                        </td>
-                        <td class="question-1-table-cells"
-                            style="border-bottom: none;border-right: none;height: 0.5vw;">
-                            <input type="number" class="table-input-config-question-1">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div style="display: inline-block;width: 20vw; margin-left: 1.5vw;">
-                <div>
-                    <input class="input-config-question-1" type="number">
-                </div>
-                <div>
-                    <input class="input-config-question-1" type="text">
-                </div>
-            </div>
-
-        </div>
-
-        <!--TODO adad haye in div bayad neveshte beshe-->
-
+        </span>
     </div>
-    <!--this div is for question 2-->
-    <div class="container no-padding-margin" id="question-2" style="direction: rtl;">
+        <br>
+    <div id="page31-question-1-2">
+        <span class="hezar-taii">
+            <span class="circle first-circle last-circle"><span>1000</span></span>
+        </span>
+        <span class="sad-taii">
+            <span class="circle first-circle" >-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle last-circle">100</span>
+        </span>
+        <span class="dah-taii">
+            <span class="circle first-circle" >-</span>
+            <span class="circle overlay-circle last-circle">10</span>
+        </span>
+        <span class="yeki">
+            <span class="circle first-circle" >-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle last-circle">1</span>
+        </span>
+        <span style="display: inline-block; margin-left: 3vw">
+            <table class="question-1-table">
+                    <tr>
+                        <td class="question-1-table-cells table-text-config" style="border-left: none;border-top: none">
+                            هزارگان
+                        </td>
+                        <td class="question-1-table-cells table-text-config" style="border-top: none">صدگان</td>
+                        <td class="question-1-table-cells table-text-config" style="border-top: none">دهگان</td>
+                        <td class="question-1-table-cells table-text-config"
+                            style="border-top: none;border-right: none;">
+                            يكان
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="question-1-table-cells" style="border-left: none;border-bottom: none;height: 0.5vw;">
+                            <input type="number" class="table-input-config-question-1" id="page31-question1-2-hezar">
+                        </td>
+                        <td class="question-1-table-cells" style="border-bottom: none ;height: 0.5vw;">
+                            <input type="number" class="table-input-config-question-1" id="page31-question1-2-sad">
+                        </td>
+                        <td class="question-1-table-cells" style="border-bottom: none ;height: 0.5vw;">
+                            <input type="number" class="table-input-config-question-1" id="page31-question1-2-dah">
+                        </td>
+                        <td class="question-1-table-cells"
+                            style="border-bottom: none;border-right: none;height: 0.5vw;">
+                            <input type="number" class="table-input-config-question-1" id="page31-question1-2-yek">
+                        </td>
+                    </tr>
+                </table>
+        </span>
+        <span class="question-1-inputs" style="margin-left: 3vw">
+                <div>
+                    <input class="input-config-question-1" type="number" id="page31-question1-2-number">
+                </div>
+                <div>
+                    <input class="input-config-question-1" type="text" id="page31-question1-2-text">
+                </div>
+        </span>
+    </div>
+        <br>
+        <div id="page31-question-1-3">
+        <span class="hezar-taii">
+            <span class="circle first-circle last-circle"><span>1000</span></span>
+        </span>
+        <span class="sad-taii">
+            <span class="circle first-circle">100</span>
+            <span class="circle overlay-circle last-circle">100</span>
+        </span>
+        <span class="dah-taii">
+            <span class="circle first-circle" >-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle last-circle">10</span>
+        </span>
+        <span class="yeki">
+            <span class="circle first-circle" >-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle">-</span>
+            <span class="circle overlay-circle last-circle">1</span>
+        </span>
+        <span style="display: inline-block;margin-left: 3vw">
+            <table class="question-1-table">
+                    <tr>
+                        <td class="question-1-table-cells table-text-config" style="border-left: none;border-top: none">
+                            هزارگان
+                        </td>
+                        <td class="question-1-table-cells table-text-config" style="border-top: none">صدگان</td>
+                        <td class="question-1-table-cells table-text-config" style="border-top: none">دهگان</td>
+                        <td class="question-1-table-cells table-text-config"
+                            style="border-top: none;border-right: none;">
+                            يكان
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="question-1-table-cells" style="border-left: none;border-bottom: none;height: 0.5vw;">
+                            <input type="number" class="table-input-config-question-1" id="page31-question1-3-hezar">
+                        </td>
+                        <td class="question-1-table-cells" style="border-bottom: none ;height: 0.5vw;">
+                            <input type="number" class="table-input-config-question-1" id="page31-question1-3-sad">
+                        </td>
+                        <td class="question-1-table-cells" style="border-bottom: none ;height: 0.5vw;">
+                            <input type="number" class="table-input-config-question-1" id="page31-question1-3-dah">
+                        </td>
+                        <td class="question-1-table-cells"
+                            style="border-bottom: none;border-right: none;height: 0.5vw;">
+                            <input type="number" class="table-input-config-question-1" id="page31-question1-3-yek">
+                        </td>
+                    </tr>
+                </table>
+        </span>
+        <span class="question-1-inputs">
+                <div>
+                    <input class="input-config-question-1" type="number" id="page31-question1-3-number">
+                </div>
+                <div>
+                    <input class="input-config-question-1" type="text" id="page31-question1-3-text">
+                </div>
+        </span>
+    </div>
+        <button class="check-button" type="button" onclick="page31_Q1()">ثبت پاسخ</button>
+    </div>
 
-        <div class="text-config questions-text-config no-padding-margin" style="display: inline-block;margin-bottom: 0;"
-             id="question-2-text">
+    <div class="container no-padding-margin" id="question-2">
+
+        <div class="text-config questions-text-config no-padding-margin" id="question-2-text">
             <span class="question-number">2-</span>عدد هايي كه ساخته ايد چند رقمي هستند؟</div>
 
         <div style="display: inline-block;">
-            <select name="تعداد ارقام" id="digits">
-                <option value="yek">يك رقمي</option>
-                <option value="do">دو رقمي</option>
-                <option value="se">سه رقمي</option>
-                <option value="char">چهار رقمي</option>
-                <option value="char">پنج رقمي</option>
+            <select name="تعداد ارقام" id="digits" class="page31-select">
+                <option value="1">يك رقمي</option>
+                <option value="2">دو رقمي</option>
+                <option value="3">سه رقمي</option>
+                <option value="4">چهار رقمي</option>
+                <option value="5">پنج رقمي</option>
             </select>
         </div>
     </div>
-    <!--this div is for question 3-->
-    <div class="container no-padding-margin" id="question-3" style="direction: rtl;">
+    <button class="check-button" type="button" onclick="page31_Q2()">ثبت پاسخ</button>
+    <div class="container no-padding-margin" id="question-3">
         <div class="text-config questions-text-config no-padding-margin" id="question-3-text">
             <span class="question-number">3-</span>يك عدد چهار رقمي بنويسيد كه رقم يكان آن 4، دهگانش پنج وهزارگانش 7باشد.</div>
         <div style="position:relative; right: 7vw;">
             <p class="text-config questions-text-config no-padding-margin" style="display: inline-block">به عدد</p>
-            <input type="number" id="question3-input-number" style="display: inline-block;width: 15vw;" class="input-config-question-1">
+            <input type="number" id="question3-input-number" class="input-config-question-1">
             <p class="text-config questions-text-config no-padding-margin" style="display: inline-block">به حروف</p>
-            <input type="text" id="question3-input-text" class="input-config-question-1" style="display: inline-block;width: 15vw;" >
+            <input type="text" id="question3-input-text" class="input-config-question-1" style="width: 20vw" >
         </div>
 
     </div>
-
+    <button class="check-button" type="button" onclick="page31_Q3()">ثبت پاسخ</button>
     <div class="andazegiri-kon">
         <div class="andazegiri-background-rectangle"></div>
         <div class="andazegiri-kon-text">فعالیت</div>
-        <div class="text-config questions-text-config no-padding-margin" id="andazegiri-kon-1-text">
-            <span class="question-number">1-</span>طول خط ها را با واحد سانتي متر بنويسيد.</div>
-        <div style="direction: rtl">
-            <!--TODO khat rasm kon-->
+        <div>
+          <div class="text-config questions-text-config no-padding-margin" id="andazegiri-kon-1-text">
+            <span class="question-number">1-</span>طول خط ها را به صورت تقريبي با واحد سانتي متر بنويسيد.</div>
+          <div class="page31-andazegiri-inp">اندازه خط سمت راست
+            <input type="number" class="input-config-andazegiri" id="line1-width">اندازه خط سمت چپ
+            <input type="number" class="input-config-andazegiri" id="line2-width">
+          </div>
         </div>
+
+            <span><img class="ruler-img" src="./assets/3rd/images/barzgar/ruler.png" alt="ruler"></span>
+        <span style="display: inline-block">
+            <div class="line" id="andazegiri-line1"></div>
+
+        </span>
+        <span style="display: inline-block">
+             <div class="line" id="andazegiri-line2"></div>
+
+        </span>
         <div class="text-config questions-text-config no-padding-margin" id="andazegiri-kon-2-text">
-            <span class="question-number">2-</span>طول خط ها را با واحد ميلي متر بنويسيد.</div>
-        <div style="direction: rtl">
-            <!--TODO khat rasm kon-->
+            <span class="question-number">2-</span>طول خط ها را به صورت تقريبي با واحد ميلي متر بنويسيد.</div>
+        <div class="page31-andazegiri-inp">
+            <div style="direction: rtl;">اندازه خط سمت راست
+                <input type="number" class="input-config-andazegiri" id="line3-width">اندازه خط سمت چپ
+                <input type="number" class="input-config-andazegiri" id="line4-width">
+            </div>
         </div>
+        <span style="display: inline-block;margin-left: 20vw;">
+            <div class="line" id="andazegiri-line3"></div>
+
+        </span>
+        <span style="display: inline-block;margin-left: 45vw;margin-bottom: 5vw;">
+             <div class="line" id="andazegiri-line4"></div>
+        </span>
+        <button class="check-button" type="button" style="margin-left: 42.5vw" onclick="page31_Q4()">ثبت پاسخ</button>
     </div>
-    <div class="page-number" style="left: -5vw; right: auto;bottom: -1vw;">
+    <div class="page-no-input">
+        <span style=" margin-left: 44vw">
+            <a href="book_3_32.html">
+                <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+            </a>
+        </span>
+        <span style="margin-left: 5.125vw">
+            <a href="book_3_30.html">
+                <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="previous_page">
+            </a>
+        </span>
+    </div>
+    <div class="page-number">
         31
     </div>
+
 </div>
 </body>
 </html>

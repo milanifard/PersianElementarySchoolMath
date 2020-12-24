@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>صفحه ۹۴ - سوم ابتدایی</title>
-
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/3rd/sass/parsasal/parsasal.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/3rd/js/jquery.min.js"></script>
+    <script src="./assets/3rd/js/parsasal/parsasal.js"></script>
+    <script src="./assets/3rd/js/parsasal/page94.js"></script>
+    <script src="./assets/3rd/js/parsasal/paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="chain-canvas" src="./assets/3rd/js/parsasal/chain-canvas.js"></script>
+    <link rel="icon" href="./assets/3rd/images/favicon.png">
     <meta name="author" content="Parsa Salehipour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -15,48 +19,105 @@
 <body>
 
     <div class="container-full">
-        <div id="myAnchor" style="display: block;"></div>
-        <a href="#myAnchor" class="go-top"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+
         <nav id="main-header">
-            <a type="submit" class="next-page btn btn-default">صفحه بعدی</a>
-            <h3>مرور فصل</h3>
             <a type="submit" class="prev-page btn btn-default">صفحه قبلی</a>
+
+            <h3>مرور فصل</h3>
+            <a type="submit" class="next-page btn btn-default">صفحه بعدی</a>
         </nav>
 
         <div id="page-body">
-            <section>
+            <section id="farhange-neveshtan">
                 <header class="section-header">
 
-                    <h5>فرهنگ نوشتن</h5>
-                    <button type="button" class="btn btn-primary">بررسی پاسخ</button>
+                    <div class="title-container">
+                        <div class="indent-square"></div>
+                        <h5>فرهنگ نوشتن</h5>
+                    </div>
+
+                    <button onclick="checkFargangeNeveshtanP94()" type="button" class="btn btn-info">بررسی پاسخ</button>
 
                 </header>
                 <div class="masale">
                     <div class="row">
-                        <p>از شما خواسته شده است که اندازه ی خط رو به رو را به کمک یک تکه نخ پیدا کنید.<br>
-                            روش کار خود را توضیح دهید.
-                        </p>
+                        <div class="col-lg-9 col-md-8">
+                            <p class="before-numbering">از شما خواسته شده است که اندازه ی خط رو به رو را به کمک یک تکه
+                                نخ پیدا کنید.<br>
+                                روش کار خود را توضیح دهید. می‌تونید از این نخ و خط کش هم استفاده کنید.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4">
+                            <div class="row  justify-content-end">
+                                <div class="col-12">
+                                    <img class="responsive-img" src="./assets/3rd/images/parsasal/q1-case.png"
+                                        alt="measure string length art">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div id="canvas-overlay">
+                        <div id="canvas-overlay-elements">
+                            <p>برای جا به جا کردن نخ بدون تغییر شکل آن دکمه شیفت را نگه داشته و نخ را تکان دهید.</p>
+                            <p>برای علامت زدن یک نقطه روی نخ، برروی نخ دوبار کلیک کنید..</p>
+                            <button id="understood-btn" type="button" class="btn btn-success">فهمیدم</button>
+
+                        </div>
+                        <canvas id="chain-canvas" resize></canvas>
                     </div>
 
-                    <textarea placeholder="پاسخ" class="explain-textarea" name="farhange_neveshtan_input"
-                        id="farhange_neveshtan_input"></textarea>
+                    <img src="./assets/3rd/images/parsasal/ruler-image.png" alt="ruler image" id="ruler"
+                        style="display: none;">
+                    <img src="./assets/3rd/images/parsasal/curved-line.png" alt="curved line image" id="curved-line"
+                        style="display: none;">
+                    <div class="row">
+                        <textarea placeholder="پاسخ" class="explain-textarea" name="farhange_neveshtan_input"
+                            id="farhange_neveshtan_input"></textarea>
+                    </div>
+
+                    <div class="info-message">
+
+                        <i class="fa fa-info-circle align-self-center"></i>
+                        <p class="align-self-center d-flex"> اول یک سر نخ را روی ابتدای خط خمیده قرار می‌دهیم. سپس
+                            خط
+                            خمیده را با نخ می‌پوشانیم و وقتی به انتهای خط رسیدیم نقطه انتهایی را روی نخ مشخص می‌کنیم
+                            و
+                            دو سر نخ را می‌گیریم و صاف می‌کنیم در آنها طول نخ صاف را اندازه می‌گیریم.طول این خط
+                            خمیده ۷
+                            سانتی متر است.</p>
+                        <button type="button" class="d-flex mr-auto close">&times;</button>
+                    </div>
+
                 </div>
 
 
             </section>
-            <section>
+            <section id="tamrin">
                 <header class="section-header">
-                    <h5>تمرین</h5>
-                    <button type="button" class="btn btn-primary ">بررسی پاسخ</button>
+                    <div class="title-container">
+
+                        <h5>تمرین</h5>
+
+                        <img class="responsive-img section-header-image "
+                            src="./assets/3rd/images/girl_and_teacher_activity.png" alt="girl and a teacher">
+                    </div>
+
+                    <button type="button" onclick="checkTamrinP94()" class="btn btn-info">بررسی پاسخ</button>
                 </header>
 
-                <div class="masale">
+                <div class="masale padded-for-image">
                     <div class="row">
-                        <p>محیط مثلث ها را پیدا کنید. چه نتیجه ای می گیرید؟ </p>
+                        <p class="before-numbering padded-for-image">محیط مثلث ها را پیدا کنید. چه نتیجه ای می گیرید؟
+                        </p>
                     </div>
 
                     <div style="clear: both;"></div>
-                    <div class="row-centered">
+                    <div class="row-centered dotted-border">
                         <div class="full-size-fit">
                             <div class="row-centered">
 
@@ -68,8 +129,8 @@
                             <div class="row-centered">
 
                                 <div class="mohit_label">محیط = </div>
-                                <div class="small-input">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                <div class="small-input-wrapper">
+                                    <input type="number" placeholder="پاسخ" class="input-style triangle-answer">
                                 </div>
 
                             </div>
@@ -86,8 +147,8 @@
                             <div class="row-centered">
 
                                 <div class="mohit_label">محیط = </div>
-                                <div class="small-input">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                <div class="small-input-wrapper">
+                                    <input type="number" placeholder="پاسخ" class="input-style  triangle-answer">
                                 </div>
                             </div>
 
@@ -103,8 +164,8 @@
                             <div class="row-centered">
 
                                 <div class="mohit_label">محیط = </div>
-                                <div class="small-input">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                <div class="small-input-wrapper ">
+                                    <input type="number" placeholder="پاسخ" class="input-style triangle-answer">
                                 </div>
 
                             </div>
@@ -113,58 +174,76 @@
 
                         </div>
                     </div>
+                    <textarea placeholder="پاسخ" class="explain-textarea mt-4" name="farhange_neveshtan_input"
+                        id="triangles_explain_input"></textarea>
+                    <div class="info-message">
 
+                        <i class="fa fa-info-circle align-self-center"></i>
+                        <p class="align-self-center">محیط همه مثلث ها برابر ۱۲ است.</p>
+                        <button type="button" class="d-flex mr-auto close">&times;</button>
+                    </div>
+                    <div class="info-message">
 
+                        <i class="fa fa-info-circle align-self-center"></i>
+                        <p class="align-self-center"> نتیجه میگیریم که محیط هر مثلث با اندازه های مشخص در اثر جا به
+                            جایی تغییر نمی‌کنه</p>
+                        <button type="button" class="d-flex mr-auto close">&times;</button>
+                    </div>
 
                 </div>
                 <hr>
-                <div class="masale">
+                <div class="masale" id="tamrin94-2">
                     <div class="row">
-                        <p>مساحت و محیط مستطیل ها را به دست آورید. </p>
+                        <p class="before-numbering">مساحت و محیط مستطیل ها را به دست آورید. </p>
+                    </div>
+                    <div class="row">
+                        <p>همان طور که میبینید، مساحت ها برابرند. محیط کدام شکل از همه کمتر است؟
+                            برروی آن کلیک کنید.
+                        </p>
                     </div>
 
                     <div class="row-centered">
                         <div class="full-size-fit">
                             <div class="row-centered small-vertical-margin">
 
-                                <img class="responsive-img  hover-glow"
+                                <img id="rect1" class="responsive-img  hover-glow clickable-image"
                                     src="./assets/3rd/images/parsasal/rectangle1.png" alt="rectangle1">
 
 
                             </div>
                             <div class="row small-vertical-margin">
                                 <div class="mohit_label">محیط = </div>
-                                <div class="small-input">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                <div class="small-input-wrapper">
+                                    <input type="number" placeholder="پاسخ" class="input-style" id="rect-ans11">
                                 </div>
 
                             </div>
                             <div class="row small-vertical-margin">
                                 <div class="mohit_label">مساحت = </div>
-                                <div class="small-input">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                <div class="small-input-wrapper">
+                                    <input type="number" placeholder="پاسخ" class="input-style" id="rect-ans12">
                                 </div>
                             </div>
 
                         </div>
                         <div class="full-size-fit">
                             <div class="row-centered small-vertical-margin">
-                                <img class="responsive-img  hover-glow"
+                                <img id="rect2" class="responsive-img  hover-glow clickable-image"
                                     src="./assets/3rd/images/parsasal/rectangle2.png" alt="rectangle2">
 
 
                             </div>
                             <div class="row small-vertical-margin">
                                 <div class="mohit_label">محیط = </div>
-                                <div class="small-input">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                <div class="small-input-wrapper">
+                                    <input type="number" placeholder="پاسخ" class="input-style" id="rect-ans21">
                                 </div>
 
                             </div>
                             <div class="row small-vertical-margin">
                                 <div class="mohit_label">مساحت = </div>
-                                <div class="small-input">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                <div class="small-input-wrapper">
+                                    <input type="number" placeholder="پاسخ" class="input-style" id="rect-ans22">
                                 </div>
                             </div>
 
@@ -173,52 +252,61 @@
                         <div class="full-size-fit">
                             <div class="row-centered small-vertical-margin">
 
-                                <img class="responsive-img hover-glow" src="./assets/3rd/images/parsasal/rectangle3.png"
-                                    alt="rectangle3">
+                                <img id="rect3" class="responsive-img hover-glow clickable-image"
+                                    src="./assets/3rd/images/parsasal/rectangle3.png" alt="rectangle3">
 
 
                             </div>
                             <div class="row small-vertical-margin">
                                 <div class="mohit_label">محیط = </div>
-                                <div class="small-input">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                <div class="small-input-wrapper">
+                                    <input type="number" placeholder="پاسخ" class="input-style" id="rect-ans31">
                                 </div>
 
                             </div>
                             <div class="row small-vertical-margin">
                                 <div class="mohit_label">مساحت = </div>
-                                <div class="small-input">
-                                    <input type="text" placeholder="پاسخ" class="input-style">
+                                <div class="small-input-wrapper">
+                                    <input type="number" placeholder="پاسخ" class="input-style" id="rect-ans32">
                                 </div>
                             </div>
 
 
                         </div>
                     </div>
-                    <div class="row">
-                        <p>همان طور که میبینید، مساحت ها برابرند. محیط کدام شکل از همه کمتر است؟ برروی آن کلیک کنید.
-                        </p>
+                    <div class="info-message">
+
+                        <i class="fa fa-info-circle align-self-center"></i>
+                        <p class="align-self-center">محیط مستطیل میانی از همه کم تر است</p>
+                        <button type="button" class="d-flex mr-auto close">&times;</button>
                     </div>
 
                 </div>
             </section>
+
+            <div class="page-footer"></div>
+
+
         </div>
-        <div class="pagination-wrapper">
-            <div class="pagination">
-                <a class="prev page-numbers">قبلی</a>
-                <span aria-current="page" class="page-numbers current">1</span>
-                <a class="page-numbers">2</a>
-                <a class="page-numbers">3</a>
-                <a class="page-numbers">4</a>
-                <a class="page-numbers">5</a>
-                <a class="page-numbers">6</a>
-                <a class="page-numbers">7</a>
-                <a class="page-numbers">8</a>
-                <a class="page-numbers">9</a>
-                <a class="page-numbers">10</a>
-                <a class="next page-numbers">بعدی</a>
+        <div class="pagination-container">
+            <div class="page-number-button">
+                <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
             </div>
+
+            <div class="page-number">
+                <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+            </div>
+
+            <div class="page-number-button">
+                <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
+            </div>
+
         </div>
+
+        <div id="modal">
+            <h1>آفرین پاسخی که به این سوال دادی درست بود.</h1>
+        </div>
+
     </div>
 
 </body>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="far">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link href="assets/3rd/css/naderi.css" rel="stylesheet">
+    <link href='http://www.fontonline.ir/css/BNazanin.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/3rd/js/Naderi.js"></script>
+    <script src="assets/3rd/js/pagination.js"></script>
+    <title>ریاضی سوم، صفحه 138</title>
+</head>
+<body>
+    <div class="page-right-border" >
+        <!-- <div class="activity-title" >فعّالیت</div> -->
+        <div class="background-right"></div>
+        <div class="normal_content" >
+            <div>
+                <img id="activity_cover_136"class="activity-cover" src="assets/3rd/images/girl_and_teacher_activity.png" alt="activity_image">
+                <div id="tamrin_138_cover" class="activity-title" >تمرین</div>
+            </div>
+            <div id="Q1p138_container">
+                <div id="Q1_description" class="text"><span class="questions-number">1ــ </span>در جای خالی عدد مناسب بنویسید.<br>(درست سبز و نادرست قرمز میشه.)</div>
+                <table>
+                    <tr>
+                        <th>
+                            <!-- &#1779 × &#1777&#1776=  -->
+                            <span>10×14= </span>
+                            <span><input class="med_number_in" type="number" onchange="cross_check(this,14,10)"></span> 
+                        </th> 
+                        <th>
+                            <!-- &#1779 × &#1777&#1776=  -->
+                            <span>42×10= </span>
+                            <span><input class="med_number_in" type="number" onchange="cross_check(this,42,10)"></span> 
+                        </th> 
+                        <th>
+                            <!-- &#1779 × &#1777&#1776=  -->
+                            <span>84×10= </span>
+                            <span><input class="med_number_in" type="number" onchange="cross_check(this,84,10)"></span> 
+                        </th> 
+                    </tr>
+                    <tr>
+                        <th>
+                            <span>14× </span>
+                            <span><input class="med_number_in" type="number" onchange="div_check(this,140,14)"></span>
+                            <span> =140 </span>
+                        </th>
+                        <th>
+                            <span>10× </span>
+                            <span><input class="med_number_in" type="number" onchange="div_check(this,750,10)"></span>
+                            <span> =750 </span>
+                        </th>
+                        <th>
+                            <span>10× </span>
+                            <span><input class="med_number_in" type="number" onchange="div_check(this,270,10)"></span>
+                            <span> =270 </span>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="right_q_container">
+                <div class="text">
+                    <span class="questions-number">2ــ </span>
+                    <span>یک گروه کارگر در هر ماه 10 کیلومتر جادۀ روستایی میسازد. این گروه در یک سال چند کیلومتر جادۀ روستایی میسازد؟</span>
+                </div>
+                <span class="text"><input id="p138q2_1"class="med_number_in" type="number" onchange="cross_2_check('p138q2_1', 'p138q2_2', 'p138q2_3', 10, 12)">×</span>
+                <span><input id="p138q2_2" class="med_number_in" type="number" onchange="cross_2_check('p138q2_1', 'p138q2_2', 'p138q2_3', 10, 12)">=</span>
+                <span class="text"><input id="p138q2_3" class="med_number_in" type="number" onchange="cross_2_check('p138q2_1', 'p138q2_2', 'p138q2_3', 10, 12)"></span>
+            </div>
+
+            <div class="right_q_container">
+                <img id="quran_img" src="assets/3rd/images/Naderi/quran_0.png" alt="q image">
+                <div class="text">
+                    <span class="questions-number">3ــ </span>
+                    <span>احمد روزی 10 آیۀ قرآن را میخواند. در یک ماه (30 روز) چند آیه میخواند؟</span>
+                </div>
+                <span class="text"><input id="p138q3_1" class="med_number_in" type="number" onchange="cross_2_check('p138q3_1', 'p138q3_2', 'p138q3_3', 10, 30)">×</span>
+                <span><input id="p138q3_2" class="med_number_in" type="number" onchange="cross_2_check('p138q3_1', 'p138q3_2', 'p138q3_3', 10, 30)">=</span>
+                <span class="text"><input id="p138q3_3" class="med_number_in" onchange="cross_2_check('p138q3_1', 'p138q3_2', 'p138q3_3', 10, 30)"></span>
+            </div>
+
+            <div  class="right_q_container">
+                <div class="text">
+                    <span class="questions-number">4ــ </span>
+                    <span>حاصل عبارتها را به دست آورید.</span>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <span>2×2×4=  </span>
+                            <span>(2×2) ×4= </span>
+                            <span><input class="med_number_in" type="number" onchange="cross_check(this,cross(2,2),4)"></span>
+                        </th> 
+                        <th>
+                            <span>7×1×3=  </span>
+                            <span><input class="med_number_in" type="number" onchange="cross_check(this,cross(7,1),3)"></span>
+                        </th> 
+                    </tr>
+                    <tr>
+                        <th>
+                            <span>0×4×6=  </span>
+                            <span><input class="med_number_in" type="number" onchange="cross_check(this,cross(0,4),6)"></span>
+                        </th> 
+                        <th>
+                            <span>2×5×7=  </span>
+                            <span><input class="med_number_in" type="number" onchange="cross_check(this,cross(2,5),7)"></span>
+                        </th> 
+                    </tr>
+                </table>
+            </div>
+
+            <div  class="right_q_container">
+                <div class="text">
+                    <span class="questions-number">5ــ </span>
+                    <span>
+                        زهره در برنامه درسی اش هفته ای دوبار ریاضی دارد و هربار 2 ساعت ریاضی میخواند.
+                        <br>
+                        زهره در 4 هفته چند ساعت ریاضی میخواند؟
+                    </span>
+                </div>
+                <span class="text">ساعات ریاضی خواندن در یک هفته: </span>
+                <span class="text"><input id="p138q5_11" class="med_number_in" type="number" onchange="cross_2_check('p138q5_11', 'p138q5_12', 'p138q5_13', 2, 2)">×</span>
+                <span><input id="p138q5_12" class="med_number_in" type="number" onchange="cross_2_check('p138q5_11', 'p138q5_12', 'p138q5_13', 2, 2)">=</span>
+                <span class="text"><input id="p138q5_13" class="med_number_in" type="number" onchange="cross_2_check('p138q5_11', 'p138q5_12', 'p138q5_13', 2, 2)"></span>
+                <br>
+                <span class="text">ساعات ریاضی خواندن در 4 هفته: </span>
+                <span class="text"><input id="p138q5_21" class="med_number_in" type="number" onchange="cross_2_check('p138q5_21', 'p138q5_22', 'p138q5_23', 4, 4)">×</span>
+                <span><input id="p138q5_22" class="med_number_in" type="number" onchange="cross_2_check('p138q5_21', 'p138q5_22', 'p138q5_23', 4, 4)">=</span>
+                <span class="text"><input id="p138q5_23" class="med_number_in" type="number" onchange="cross_2_check('p138q5_21', 'p138q5_22', 'p138q5_23', 4, 4)"></span>
+            </div>
+
+            <div  class="right_q_container">
+                <img id="boz_img" src="assets/3rd/images/Naderi/boz.png" alt="boz image">
+                <div class="text">
+                    <span class="questions-number">6ــ </span>
+                    <span>
+                        محسن 4 بز دارد که هرکدام روزی 2 کیلو شیر میدهند.
+                        <br>
+                        این بزها در 3 روز چند کیلو شیر میدهند؟
+                    </span>
+                </div>
+                <span class="text"> شیر تولیدی در یک روز: </span>
+                <span class="text"><input id="p138q6_11"class="med_number_in" type="number" onchange="cross_2_check('p138q6_11', 'p138q6_12', 'p138q6_13', 4, 2)">×</span>
+                <span><input id="p138q6_12" class="med_number_in" type="number" onchange="cross_2_check('p138q6_11', 'p138q6_12', 'p138q6_13', 4, 2)">=</span>
+                <span class="text"><input id="p138q6_13" class="med_number_in" type="number" onchange="cross_2_check('p138q6_11', 'p138q6_12', 'p138q6_13', 4, 2)"></span>
+                <br>
+                <span class="text"> شیر تولیدی در 3 روز: </span>
+                <span class="text"><input id="p138q6_21" class="med_number_in" type="number" onchange="cross_2_check('p138q6_21', 'p138q6_22', 'p138q6_23', 8, 3)">×</span>
+                <span><input id="p138q6_22" class="med_number_in" type="number" onchange="cross_2_check('p138q6_21', 'p138q6_22', 'p138q6_23', 8, 3)">=</span>
+                <span class="text"><input id="p138q6_23" class="med_number_in" type="number" onchange="cross_2_check('p138q6_21', 'p138q6_22', 'p138q6_23', 8, 3)"></span>
+            </div>
+
+            <div class="creative_container" >
+                <div class="creative_title" style="float: right;" >کار با ماشین حساب</div>
+
+                <img id="little_red_img" src="assets/3rd/images/Naderi/little_red_boy.png" alt="red calculator">
+
+                <!-- <img id="colored_pencil_image" src="assets/3rd/images/Naderi/colored_pencil.png"> -->
+                <div class="creative_content" >
+                    <p class="text" >
+                        به کمک ماشین حساب، حاصل عبارت زیر را به دست آورید.
+                    </p>
+                    <div style="position: relative; width: 100vw;">
+                        <div class="num_container_137">3</div>
+                        <div class="num_container_137">5</div>
+                        <div class="num_container_137">+</div>
+                        <div class="num_container_137">2</div>
+                        <div class="num_container_137">×</div>
+                        <div class="num_container_137">5</div>
+                        <div class="num_container_137">-</div>
+                        <div class="num_container_137">1</div>
+                        <div class="num_container_137">4</div>
+                        <div class="num_container_137">=</div>
+                        <input id="p137cal1" class="med_number_in" type="number" onchange="check_me('p137cal1',171)">
+                    </div>
+                    <br>
+                    <div> 
+                        <div class="num_container_137">4</div>
+                        <div class="num_container_137">8</div>
+                        <div class="num_container_137">÷</div>
+                        <div class="num_container_137">4</div>
+                        <div class="num_container_137">×</div>
+                        <div class="num_container_137">3</div>
+                        <div class="num_container_137">+</div>
+                        <div class="num_container_137">2</div>
+                        <div class="num_container_137">5</div>
+                        <div class="num_container_137">=</div>
+                        <input id="p137cal2" class="med_number_in" type="number" onchange="check_me('p137cal2',61)">
+                    </div>
+                    <div id="cal_137">
+                        <span >
+                            47 * 31 + 129 = 
+                        </span>
+                        <input id="p137cal3" class="med_number_in" type="number" onchange="check_me('p137cal3', 1586)">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-number_right">138</div>
+
+    </div>
+    <div class="pagination-container">
+        <div class="page-number-button">
+            <!-- using next/prev icons from font awesome -->
+            <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
+        </div>
+    
+        <div class="page-number">
+            <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+        </div>
+    
+        <div class="page-number-button">
+            <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
+        </div>
+    
+    </div>
+    <div class="back"></div>
+</body>
+</html>

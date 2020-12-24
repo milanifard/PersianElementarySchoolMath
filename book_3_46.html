@@ -9,52 +9,130 @@
 </head>
 
 <body>
+    <div id="success-message" class="message">
+        آفرین عزیزم
+    </div>
+    <div id="unsuccess-message" class="message">
+        بیشتر تلاش کن :) 
+    </div>
     <div class="border">
         <div>
             <div class="Rectangle_title"></div>
-            <div class="title_text">
+            <span class="title_text">
                 کسر
-            </div>
+            </span>
         </div>
-        <div>
-            <img class="activity-image" src="assets/3rd/images/activity.png" alt="activity_image">
-            <div class="activity-text">فعّالیت</div>
-        </div>
-        <div class="question1">
-            <div class="text">
+        <img class="activity-image" src="assets/3rd/images/activity.png" alt="activity_image">
+        <span class="activity-text">فعّالیت</span>
+        <div id ="q1" class="question">
+            <span>
                 ۱- علی آقا کشاورز است و یک قطعه زمین مستطیل شکل دارد.او نیمی از زمینش را گندم کاشته است.
                 نیمی دیگر را دو قسمت کرده و در یک قسمت یونجه و در قسمت دیگر جو کاشته است. 
-                <br>به سؤالهای زیر پاسخ دهید.
-                <br>در چند قسمت از زمین گندم کاشته شده است؟ قسمت از قسمت مساوی.
-                <br>در چند قسمت جو کاشته شده است؟
-                <br>در چند قسمت یونجه کاشته است؟
+                <br>به سؤالهای زیر پاسخ دهید         
+            </span>
+            <div id="activity">
+                در چند قسمت از زمین گندم کاشته شده است؟
+                <input type="text" id="check_part1" placeholder="1" class="input_style">
+                قسمت از 
+                <input type="text" id="check_part2" placeholder="2" class="input_style">
+                قسمت مساوی.
+            </div>
+            <div id="activity">
+                کسر =
+                <input type="text" id="fraction1" placeholder="1/2" class="input_style">
+            </div>
+            <div id="activity">
+                در چند قسمت از زمین جو کاشته شده است؟
+                <input type="text" id="check_part3" value="" class="input_style" onchange="checkvalue(4,'check_part3')">
+                قسمت از 
+                <input type="text" id="check_part4" value="" class="input_style" onchange="checkvalue(5,'check_part4')">
+                قسمت مساوی.
+            </div>
+            <div id="activity">
+                کسر =
+                <input type="text" id="fraction2" value="" class="input_style" onchange="checkValueFraction(1,'fraction2')">
+            </div>
+            <div id="activity">
+                در چند قسمت از زمین یونجه کاشته شده است؟
+                <input type="text" id="check_part5" value="" class="input_style" onchange="checkvalue(4,'check_part5')">
+                قسمت از 
+                <input type="text" id="check_part6" value="" class="input_style" onchange="checkvalue(5,'check_part6')">
+                قسمت مساوی.
+            </div>
+            <div id="activity">
+                کسر =
+                <input type="text" id="fraction3" value="" class="input_style" onchange="checkValueFraction(1,'fraction3')">
             </div>
             <img class="img_q1" src="assets/3rd/images/Jabbari/farm.png" alt="farm_img">
         </div>
-        <div class="question2">
-            <div class="text">
+        <div id="q2" class="question">
+            <span>
                 ۲- فاطمه با نوار کاغذی که خودش آن را درجه‌بندی کرده بود طول یک گیره‌ی کاغذ و یک پاک کن را اندازه گرفته است
-                <br>
-                <br> به پرسش های زیر پاسخ دهید :) 
-            </div>
+                <br> جاهای خالی را پرکنید. 
+            </span>
             <div>
-                <div class="text">طول گیره کاغذ ؟</div>
-                <img class="img_q1 img_paperClipRuler"src="assets/3rd/images/Jabbari/paperClip_ruler.png">
+                <div id="activity">
+                    طول گیره کاغذ
+                    <input type="text" id="check_part7" value="" class="input_style" onchange="checkvalue(6,'check_part7')">
+                    قسمت از 
+                    <input type="text" id="check_part8" value="" class="input_style" onchange="checkvalue(7,'check_part8')">
+                    قسمت مساوی است.
+                </div>
+                <div id="activity">
+                    کسر =
+                    <input type="text" id="fraction4" value="" class="input_style" onchange="checkValueFraction(16,'fraction4')">
+                </div>
+                <img class="img_paperClipRuler"src="assets/3rd/images/Jabbari/paperClip_ruler.png">
             </div> 
             <div>
-                <div class="text">طول گیره پاک کن ؟</div>
-                <img class="img_q1 img_paperClipRuler" src="assets/3rd/images/Jabbari/eraser_ruler.png">
+                <div id="activity">
+                    طول پاک کن 
+                    <input type="text" id="check_part9" value="" class="input_style" onchange="checkvalue(8,'check_part9')">
+                    قسمت از 
+                    <input type="text" id="check_part10" value="" class="input_style" onchange="checkvalue(7,'check_part10')">
+                    قسمت مساوی است.
+                </div>
+                <div id="activity">
+                    کسر =
+                    <input type="text" id="fraction5" value="" class="input_style" onchange="checkValueFraction(18,'fraction5')">
+                </div>
+                <img class="img_paperClipRuler" src="assets/3rd/images/Jabbari/eraser_ruler.png">
             </div>
-            <div class="text">
-                در ریاضی ۲ قسمت از ۳ قسمت مساوی را با ۲/۳ نشان می‌دهیم و به آن یک کسر می‌گوییم و آن را دو سوم می‌خوانیم.
-            </div>  
+            <span >
+                در ریاضی ۲ قسمت از ۳ قسمت مساوی را اینگونه نمایش می‌دهیم و به آن یک کسر می‌گوییم و آن را دو سوم می‌خوانیم.
+            </span>
+            <div>
+                <img id= "img_fraction" class="img_ant" src="assets/3rd/images/Jabbari/fraction.png" >
+            </div>
+            <div>
+                نکته بسیار مهم: ما در اینجا کسر را به این شکل وارد می‌کنیم:
+                <input type="text" id="shwing-fraction" value="2/3" class="input_style">
+                <br>
+                حال کسر های فعّالیت را در جای مخصوص خود بنویسید.
+            </div>
         </div>
             
-        <div class ="number_of_page">
-            ۴۶
+        <div class="page-no-input">
+            <div id="next_btn">
+                <a href="book_3_47.html">
+                    <img src="assets/3rd/images/left-arrow.png" alt="next_page" style="width: 3vw">
+                </a>
+            </div>
+            <div>
+                <input class="number_of_page"  value="46" type="number" name="page_number" id="page_switcher" style="width: 5vw">
+            </div>
+            <div id="pre_btn">
+                <a href="book_3_45.html">
+                    <img src="assets/3rd/images/right-arrow.png" alt="next_page" style="width: 3vw">
+                </a>
+            </div>
         </div>
         
     </div>
+
+
+<script src="assets/3rd/js/Jabbari.js"></script>
+
 
 </body>
 

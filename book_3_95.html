@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <title>صفحه ۹۵ - سوم ابتدایی</title>
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/3rd/sass/parsasal/parsasal.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/3rd/js/jquery.min.js"></script>
+
+    <link rel="icon" href="./assets/3rd/images/favicon.png">
+    <script src="./assets/3rd/js/parsasal/parsasal.js"></script>
+    <script src="./assets/3rd/js/parsasal/page95.js"></script>
     <meta name="author" content="Parsa Salehipour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -14,162 +18,183 @@
 <body>
 
     <div class="container-full">
-        <div id="myAnchor" style="display: block;"></div>
-        <a href="#myAnchor" class="go-top"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+
         <nav id="main-header">
-            <a type="submit" class="next-page btn btn-default">صفحه بعدی</a>
             <a type="submit" class="prev-page btn btn-default">صفحه قبلی</a>
+            <a type="submit" class="next-page btn btn-default">صفحه بعدی</a>
+            
         </nav>
+        <div id="page-body">
+            <section>
+                <header class="section-header">
 
-        <section>
-            <header class="section-header">
+                    <button onclick="checkTamrin95Answers()" type="button" class="btn btn-info">بررسی پاسخ</button>
 
-                <h5>ادامه تمرین</h5>
-                <button type="button" class="btn btn-primary ">بررسی پاسخ</button>
+                </header>
+                <div class="masale" style="counter-increment: big-num 3;">
 
-            </header>
-            <div class="masale" style="counter-increment: big-num 3;">
+                    <div class="row  justify-content-center">
+                        <div class="col-lg-8  zero-padding-margin">
+                            <div class="row">
+                                <p class="before-numbering float-right">مادر سمیه سجاده و جانماز جشن تکلیف او را به شکل
+                                    زیر دوخته و دور
+                                    آن ها
+                                    را تودوزی کرده است. با
+                                    توجه
+                                    به
+                                    اندازه های داده شده، او چند سانتی متر تور به سجاده و جانماز دوخته است؟</p>
+                                <div class="float-right mr-3">
+                                    <input type="text" placeholder="پاسخ" class="input-style" id="tamrin-ans-3">
+                                </div>
 
-                <div class="row  justify-content-center">
-                    <div class="col-lg-8  zero-padding-margin">
-                        <div class="row">
-                            <p class="float-right">مادر سمیه سجاده و جانماز جشن تکلیف او را به شکل زیر دوخته و دور آن ها
-                                را تودوزی کرده است. با
-                                توجه
-                                به
-                                اندازه های داده شده، او چند سانتی متر تور به سجاده و جانماز دوخته است؟</p>
-                            <div class="float-right mr-3">
-                                <input type="text" placeholder="پاسخ" class="input-style">
                             </div>
 
                         </div>
-
+                        <div class="col-lg-4 col-md-8 col-sm-10 justify-content-center">
+                            <img src="./assets/3rd/images/parsasal/janamaz.png" alt=" akse ja janamaz"
+                                class="responsive-img">
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-8 col-sm-10 justify-content-center">
-                        <img src="./assets/3rd/images/parsasal/janamaz.png" alt=" akse ja janamaz"
-                            class="responsive-img">
-                    </div>
-
-
 
                 </div>
+                <hr>
+                <div class="masale">
+                    <div class="row">
+                        <div class="col-md-auto zero-padding-margin">
+                            <p class="float-right before-numbering">پدر علی یک فرش ۶*۴ متر خریده است.مساحت این فرش چند
+                                متر مربع است؟</p>
+                        </div>
 
-            </div>
-            <hr>
-            <div class="masale">
-                <div class="row">
-                    <div class="col-md-auto zero-padding-margin">
-                        <p class="float-right">پدر علی یک فرش ۶*۴ متر خریده است.مساحت این فرش چند متر مربع است؟</p>
+                        <div>
+                            <input type="text" placeholder="پاسخ" class="input-style float-right w-25 mr-3"
+                                id="tamrin-ans-4">
+                        </div>
                     </div>
 
-                    <div>
-                        <input type="text" placeholder="پاسخ" class="input-style float-right w-25 mr-3">
+                </div>
+                <hr>
+                <div class="masale">
+                    <div class="row  justify-content-center">
+                        <div class="col-lg-6 col-md-12 zero-padding-margin">
+                            <div class="row">
+                                <p class="before-numbering">روی یک مقوای زرد به طول و عرض ۹ و ۶ سانتی متر یک عکس ۴*۳
+                                    چسبانده ایم. چه سطحی از
+                                    مقوای
+                                    زرد
+                                    دیده
+                                    می
+                                    شود؟</p>
+                                <div>
+                                    <input type="text" placeholder="پاسخ" class="input-style float-right mr-3"
+                                        id="tamrin-ans-5">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-6 col-md-10 justify-content-center">
+                            <img class="responsive-img" src="./assets/3rd/images/parsasal/kaghaze_zard.png"
+                                alt="kaghaze zard pesar">
+                        </div>
+
                     </div>
                 </div>
+                <hr>
+                <div class="masale" id="masale6">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 col-md-8 col-sm-12 zero-padding-margin">
+                            <div class="row">
+                                <p class="before-numbering">به کمک هشت ضلعی رسم شده، محیط دایره را به طور تقریبی پیدا
+                                    کنید. آیا اگر به جای یک ۸
+                                    ضلعی
+                                    از ۱۶ ضلعی استفاده کنیم پاسخ دقیق‌تر می‌شود؟</p>
+                                <div class="row">
+                                    <input type="text" placeholder="پاسخ" class="input-style float-right mr-3"
+                                        id="tamrin-ans-6">
+                                </div>
 
-            </div>
-            <hr>
-            <div class="masale">
-                <div class="row  justify-content-center">
-                    <div class="col-lg-6 col-md-12 zero-padding-margin">
-                        <div class="row">
-                            <p>روی یک مقوای زرد به طول و عرض ۹ و ۶ سانتی متر یک عکس ۴*۳ چسبانده ایم. چه سطحی از
-                                مقوای
-                                زرد
-                                دیده
-                                می
-                                شود؟</p>
-                            <div>
-                                <input type="text" placeholder="پاسخ" class="input-style float-right mr-3">
+                            </div>
+                            <div class="row pt-3 pr-3">
+
+                                <div class="option-select">
+                                    <select name="slct" id="masale6-select">
+                                        <option selected disabled><span>آیا دقیق تر می‌شود؟</span></option>
+                                        <option value="yes"><span>بله</span></option>
+                                        <option value="no">خیر</option>
+                                    </select>
+                                </div>
                             </div>
 
                         </div>
+                        <div class="col-lg-3 col-md-4 col-sm-8 mt-4 justify-content-center">
+                            <img style="width: 60vh;" class="responsive-img"
+                                src="./assets/3rd/images/parsasal/8zeli.png" alt="هشت ضلعی">
+                        </div>
 
                     </div>
-                    <div class="col-lg-6 col-md-10 justify-content-center">
-                        <img class="responsive-img" src="./assets/3rd/images/parsasal/kaghaze_zard.png"
-                            alt="kaghaze zard pesar">
-                    </div>
-
                 </div>
-            </div>
-            <hr>
-            <div class="masale">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9 col-md-8 col-sm-12 zero-padding-margin">
-                        <div class="row">
-                            <p>به کمک هشت ضلعی رسم شده، محیط دایره را به طور تقریبی پیدا کنید. آیا اگر به جای یک ۸ ضلعی
-                                از ۱۶ ضلعی استفاده کنیم پاسخ دقیق می شود چرا؟</p>
-                            <div>
-                                <input type="text" placeholder="پاسخ" class="input-style float-right mr-3">
+
+                <div class="masale">
+                    <div class="row">
+                        <p class="before-numbering">مساحت شکل های زیر را به دست آورید.</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-5 col-sm-10 justify-content-center">
+                            <div class="row justify-content-center">
+                                <img class="responsive-img" src="./assets/3rd/images/parsasal/page95-masale7-1.png"
+                                    alt="شکل هندسی">
                             </div>
 
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-8 mt-4 justify-content-center">
-                        <img style="width: 60vh;" class="responsive-img" src="./assets/3rd/images/parsasal/8zeli.png"
-                            alt="هشت ضلعی">
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="masale">
-                <div class="row">
-                    <p>مساحت شکل های زیر را به دست آورید.</p>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5 col-md-10 justify-content-center">
-                        <div class="row justify-content-center">
-                            <img class="responsive-img" src="./assets/3rd/images/parsasal/page95-masale7-1.png"
-                                alt="شکل هندسی">
-                        </div>
-
-                        <div class="row justify-content-center">
-                            <div class="mohit_label">مساحت = </div>
-                            <div class="col-5 col-sm-4 align-items-end">
-                                <input type="text" placeholder="پاسخ" class="input-style">
+                            <div class="row justify-content-center">
+                                <div class="mohit_label">مساحت = </div>
+                                <div class="col-5 col-lg-5 align-items-end">
+                                    <input type="text" placeholder="پاسخ" class="input-style" id="tamrin-ans-7-1">
+                                </div>
                             </div>
-                        </div>
 
 
-
-                    </div>
-                    <div class="col-lg-5 col-md-10 justify-content-center">
-                        <div class="row justify-content-center">
-                            <img class="responsive-img" src="./assets/3rd/images/parsasal/page95-masale7-2.png"
-                                alt="شکل هندسی">
 
                         </div>
+                        <div class="col-md-5 col-sm-10 justify-content-center">
+                            <div class="row justify-content-center">
+                                <img class="responsive-img" src="./assets/3rd/images/parsasal/page95-masale7-2.png"
+                                    alt="شکل هندسی">
 
-                        <div class="row justify-content-center">
-                            <div class="mohit_label">مساحت = </div>
-                            <div class="col-5 align-items-end">
-                                <input type="text" placeholder="پاسخ" class="input-style">
+                            </div>
+
+                            <div class="row justify-content-center">
+                                <div class="mohit_label">مساحت = </div>
+                                <div class="col-5 col-lg-5 align-items-end">
+                                    <input type="text" placeholder="پاسخ" class="input-style" id="tamrin-ans-7-2">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <div class="pagination-wrapper">
-            <div class="pagination">
-                <a class="prev page-numbers">قبلی</a>
-                <span aria-current="page" class="page-numbers current">1</span>
-                <a class="page-numbers">2</a>
-                <a class="page-numbers">3</a>
-                <a class="page-numbers">4</a>
-                <a class="page-numbers">5</a>
-                <a class="page-numbers">6</a>
-                <a class="page-numbers">7</a>
-                <a class="page-numbers">8</a>
-                <a class="page-numbers">9</a>
-                <a class="page-numbers">10</a>
-                <a class="next page-numbers">بعدی</a>
-            </div>
+            <div class="page-footer"></div>
         </div>
+        <div class="pagination-container">
+            <div class="page-number-button">
+                <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
+            </div>
+
+            <div class="page-number">
+                <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+            </div>
+
+            <div class="page-number-button">
+                <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
+            </div>
+
+        </div>
+
+        <div id="modal">
+            <h1>آفرین پاسخی که به این سوال دادی درست بود.</h1>
+        </div>
+
     </div>
 
 

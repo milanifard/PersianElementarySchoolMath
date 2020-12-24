@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head lang="far">
+    <title> ریاضی سوم، صفحه 136</title>
+    <meta charset="UTF-8">
+    <link href="assets/3rd/css/naderi.css" rel="stylesheet">
+    <link href='http://www.fontonline.ir/css/BNazanin.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/3rd/js/Naderi.js"></script>
+    <script src="assets/3rd/js/pagination.js"></script>
+</head>
+
+<body>
+    
+    <div class="page-right-border" >
+
+        <div class="background-right"></div>
+        <img id="little_boy_image" src="assets/3rd/images/Naderi/little_boy.png" alt="little boy">
+        
+        <div id="content_136">
+            <div id="top136title">ضرب در عدد 10</div>
+            <div >
+                <img id="activity_cover_136"class="activity-cover" src="assets/3rd/images/activity.png" alt="activity_image">
+                <div class="activity-title" >فعّالیت</div>
+            </div>
+            <div id="Q1_container">
+                <div class="text"><span class="questions-number">1ــ </span>حاصل ضرب عددهای زیر را به کمک ماشین حساب پیدا کنید.<br>(درست سبز و نادرست قرمز میشه.)</div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                <!-- &#1779 × &#1777&#1776=  -->
+                                <span>3×10= </span>
+                                <span><input class="med_number_in" type="number" onchange="cross_check(this,3,10)"></span> 
+                            </th> 
+                            <th>
+                                <!-- &#1780 × &#1778&#1776=  -->
+                                <span>4×20=  </span>
+                                <span><input class="med_number_in" type="number" onchange="cross_check(this,4,20)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1784&#1776 × &#1779=  -->
+                                <span>80×3=  </span>
+                                <span><input class="med_number_in" type="number" onchange="cross_check(this,3,80)"></span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <!-- &#1778&#1776 × &#1779&#1776=  -->
+                                <span>20×30=  </span>
+                                <span><input class="med_number_in" type="number" onchange="cross_check(this,30,20)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1782&#1776 × &#1780&#1776=  -->
+                                <span>40×60=  </span>
+                                <span><input class="med_number_in" type="number" onchange="cross_check(this,40,60)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1784&#1776 × &#1778&#1776&#1776=  -->
+                                <span>80×200=  </span>
+                                <span><input class="med_number_in" type="number" onchange="cross_check(this,80,200)"></span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <!-- &#1778&#1776&#1776 × &#1780&#1776&#1776=  -->
+                                <span>200×400=  </span>
+                                <span><input class="med_number_in" type="number" onchange="cross_check(this,400,200)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1779&#1776&#1776 × &#1778&#1776=  -->
+                                <span>300×20=  </span>
+                                <span><input class="med_number_in" type="number" onchange="cross_check(this,300,20)"></span>
+                            </th> 
+                            <th>
+                                <!-- &#1777&#1776 × &#1777&#1776&#1776=  -->
+                                <span>10×100=  </span>
+                                <span><input class="med_number_in" type="number" onchange="cross_check(this,10,100)"></span>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="right_q_container text" >
+                <div><span class="questions-number">2ــ </span>بین تعداد صفرهای دو عدد و تعداد صفرهای حاصل&#8202;ضرب چه رابطه&#8202;ای وجود دارد؟ (گزینه درست رو انتخاب کن).</div>
+                <br>
+                <div>
+                    <form onclick="check_q2p136()">
+                        <!-- <input type="radio" name="q2_p136" value="none"checked=true><br> -->
+                        <input type="radio" id="q2p136_opt1" name="q2_p136" value="option1" >
+                        <label for="option1"> تعداد صفرهای حاصل ضرب = حاصل جمع تعداد صفرهای اعداد در هم ضرب شده</label><br>
+                        <input type="radio" id="q2p136_opt2" name="q2_p136" value="option2">
+                        <label for="option2">تعداد صفرهای حاصل ضرب = حاصل ضرب تعداد صفرهای اعداد در هم ضرب شده</label>
+                            
+                        <span id="Q2P136_blank1_message"></span>
+                    </form>
+                </div>
+            </div>
+            <hr class="answer_line"/>
+            <div class="right_q_container" >
+                <div class="text">
+                    <span class="questions-number">3ــ </span>
+                    به کمک رابطه ای که کشف کردید، توضیح دهید که چگونه می&#8202;توانید حاصل&#8202;ضرب&#8202;ها را بدون ماشین حساب به&#8202;دست&#8202;آورید؟
+                    <br>
+                    (بعد از اینکه خوب فکر کردی و جوابت رو نوشتی، میتونی پاسخ درست رو ببینی.)
+                </div>
+                <input class="text"type="text" maxlength="170"style="position: relative; width: 99%;margin-bottom: 1%;margin-top:1%; font-size: 2vw;">
+                
+                <div>
+                    <button id="q3p136show"class="showanswerbutton text" onclick="q3p136show()">نمایش پاسخ </button>
+                </div>
+                <div>
+                    <button id="q3p136hide"class="hideanswerbutton text" onclick="q3p136hide()" style="display: none;">مخفی کردن پاسخ</button>
+                </div>
+                <div id="q3p136ans"class="text" style="display: none;"><span>
+                    بدون در نظر گرفتن صفرها، اعداد را در هم ضرب کرده، سپس به تعداد صفرهای هردوعدد به پاسخ صفر اضافه میکنیم.
+                </span></div>
+                <!-- <hr id="answer_line"> -->
+            </div>
+
+            <div class="right_q_container" >
+                <div class="text" ><span class="questions-number">4ــ </span>
+                    با توجّه به توضیح قسمت بالا، حاصل&#8202;ضرب&#8202;ها را پیدا کنید.
+                    (درست سبز و نادرست قرمز میشه.)
+                </div>
+                <div >
+                    <table>
+                        <tr>
+                            <th>
+                                <span>4×60=  </span>
+                                <span><input class="med_number_in" type="number" onchange="cross_check(this,4,60)"></span> 
+                            </th> 
+                            <th>
+                                <span>20×40=  </span>
+                                <span><input class="med_number_in" type="number" onchange="cross_check(this,40,20)"></span>
+                            </th> 
+                            <th>
+                                <span>800×30=  </span>
+                                <span><input class="med_number_in" type="number" onchange="cross_check(this,30,800)"></span>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="text">درستی پاسخ&#8202;های خود را با ماشین حساب بررسی کنید.<br>اگر جواب&#8202;های شما نادرست باشند، باید درمورد سوال&#8202;های 2و3 فکر کنید. </p>
+                <br><br>
+            </div>
+            <div class="creative_container" >
+                <img id="colored_pencil_image" src="assets/3rd/images/Naderi/colored_pencil.png">
+                <div class="creative_title" >خلاق باش</div>
+                <div class="creative_content" >
+                    <p class="text" >الگوهای آجری را رنگ کنید.<br>در صورت امکان، شکل رنگ شده متقارن باشد.</p>
+                    <div>
+                        <div class="shape_container_l">
+                            <img class="brick_img" src="assets/3rd/images/Naderi/brick_1.PNG">
+                        </div>
+                        <div class="shape_container_l">
+                            <img class="brick_img" src="assets/3rd/images/Naderi/brick_2.PNG">
+                        </div>
+                        <div class="shape_container_l">
+                            <img class="brick_img" src="assets/3rd/images/Naderi/brick_3.PNG">
+                        </div>
+                        <div class="shape_container_l">
+                            <img class="brick_img" src="assets/3rd/images/Naderi/brick_4.PNG">
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="page-number_right">136</div>
+    </div>
+    <div class="pagination-container">
+        <div class="page-number-button">
+            <!-- using next/prev icons from font awesome -->
+            <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
+        </div>
+    
+        <div class="page-number">
+            <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+        </div>
+    
+        <div class="page-number-button">
+            <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
+        </div>
+    
+    </div>
+    <div class="back"></div>
+    
+</body>

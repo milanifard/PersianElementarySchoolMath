@@ -9,24 +9,192 @@
 </head>
 
 <body>
+    <div id="success-message" class="message">
+        آفرین عزیزم
+    </div>
+    <div id="unsuccess-message" class="message">
+        بیشتر تلاش کن :) 
+    </div>
     <div class="border">
-        <div>
-            <div class="Rectangle_title"></div>
-            <div class="title_text">
-                کسر
+
+        <img class="activity-image" src="assets/3rd/images/girl_and_teacher_activity.png" alt="activity_image">
+        <span class="activity-text">تمرین</span>
+
+        <div id= "q1" class="question">
+            <span>
+                ۱- در هر یک از شکل های زیر، به طور تقریبی چه کسری از لیوان پر شده است؟        
+            </span>
+            <div class= "container-box">
+                <img class="container-image" src="assets/3rd/images/Jabbari/container1.png" alt="container_image">
+                <img class="container-image" src="assets/3rd/images/Jabbari/container2.png" alt="container_image">
+                <img class="container-image" src="assets/3rd/images/Jabbari/container3.png" alt="container_image">
+                <img class="container-image" src="assets/3rd/images/Jabbari/container4.png" alt="container_image">
+            </div>
+            <div class="container-box">
+                <input type="text" id="q1_input4" value="" class="input_style container-input" onchange="checkValueFraction(5,'q1_input4')">
+                <input type="text" id="q1_input3" value="" class="input_style container-input" onchange="checkValueFraction(1,'q1_input3')">
+                <input type="text" id="q1_input2" value="" class="input_style container-input" onchange="checkValueFraction(10,'q1_input2')">
+                <input type="text" id="q1_input1" value="" class="input_style container-input" onchange="checkValueFraction(0,'q1_input1')">
+            </div>
+            
+        </div>
+        <div id= "q2" class= "question CircleBlue_red">
+            <span>۲-کسری که هر دایره نشان میدهد را بنویسید و به همان اندازه از مستطیل را رنگ کنید.</span>
+            <table class = "table_circle">
+                <tr>
+                    <td>
+                        <input type="text" id="q2_input1" value="" class="input_style " onchange="checkValueFraction(6,'q2_input1')">
+                    </td>
+                    <td style="padding-top: 1vw;">
+                        <span id= "rectangle011" class="Rectangle" onclick="click_rectangle('rectangle011',1,0)"></span>
+                        <span id= "rectangle012" class="Rectangle" onclick="click_rectangle('rectangle012',1,1)"></span>
+                        <span id= "rectangle013" class="Rectangle" onclick="click_rectangle('rectangle013',1,2)"></span>
+                        <span id= "rectangle014" class="Rectangle" onclick="click_rectangle('rectangle014',1,3)"></span>
+                        <span id= "rectangle015" class="Rectangle" onclick="click_rectangle('rectangle015',1,4)"></span>
+                        <span id= "rectangle016" class="Rectangle" onclick="click_rectangle('rectangle016',1,5)"></span>
+                        <span id= "rectangle017" class="Rectangle" onclick="click_rectangle('rectangle017',1,6)"></span>
+                        <span id= "rectangle018" class="Rectangle" onclick="click_rectangle('rectangle018',1,7)"></span>
+                    </td>
+                    <td>
+                        <img class="img_width10" src="assets/3rd/images/Jabbari/2blueCircle1.png" alt="blueCircle_image">
+                    </td>
+                    <td id="Separator_col">
+                        <input type="text" id="q2_input2" value="" class="input_style " onchange="checkValueFraction(5,'q2_input2')">
+                    </td>
+                    <td style="padding-top: 1vw;">
+                        <span id= "rectangle001" class="Rectangle padding_R2" onclick="click_rectangle('rectangle001',0,0)"></span>
+                        <span id= "rectangle002" class="Rectangle padding_R2" onclick="click_rectangle('rectangle002',0,1)"></span>
+                    </td>
+                    <td>
+                        <img class="img_width10" src="assets/3rd/images/Jabbari/2redCircle1.png" alt="redCircle_image">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="q2_input3" value="" class="input_style" onchange="checkValueFraction(11,'q2_input3')">
+                    </td>
+                    <td style="padding-top: 1vw;">
+                        <span id= "rectangle111" class="Rectangle padding_R3" onclick="click_rectangle('rectangle111',3,0)"></span>
+                        <span id= "rectangle112" class="Rectangle padding_R3" onclick="click_rectangle('rectangle112',3,1)"></span>
+                        <span id= "rectangle113" class="Rectangle padding_R3" onclick="click_rectangle('rectangle113',3,2)"></span>
+                        <span id= "rectangle114" class="Rectangle padding_R3" onclick="click_rectangle('rectangle114',3,3)"></span>
+                        <span id= "rectangle115" class="Rectangle padding_R3" onclick="click_rectangle('rectangle115',3,4)"></span>
+                        <span id= "rectangle116" class="Rectangle padding_R3" onclick="click_rectangle('rectangle116',3,5)"></span>
+                    </td>
+                    <td>
+                        <img class="img_width10" src="assets/3rd/images/Jabbari/2blueCircle2.png" alt="blueCircle_image">
+                    </td>
+                    <td id="Separator_col">
+                        <input type="text" id="q2_input4" value="" class="input_style" onchange="checkValueFraction(12,'q2_input4')">
+                    </td>
+                    <td style="padding-top: 1vw;">
+                        <span id= "rectangle101" class="Rectangle padding_R4" onclick="click_rectangle('rectangle101',2,0)"></span>
+                        <span id= "rectangle102" class="Rectangle padding_R4" onclick="click_rectangle('rectangle102',2,1)"></span>
+                        <span id= "rectangle103" class="Rectangle padding_R4" onclick="click_rectangle('rectangle103',2,2)"></span>
+                    </td>
+                    <td>
+                        <img class="img_width10" src="assets/3rd/images/Jabbari/2redCircle2.png" alt="redCircle_image">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="q2_input5" value="" class="input_style" onchange="checkValueFraction(8,'q2_input5')">
+                    </td>
+                    <td style="padding-top: 1vw;">
+                        <span id= "rectangle211" class="Rectangle" onclick="click_rectangle('rectangle211',5,0)"></span>
+                        <span id= "rectangle212" class="Rectangle" onclick="click_rectangle('rectangle212',5,1)"></span>
+                        <span id= "rectangle213" class="Rectangle" onclick="click_rectangle('rectangle213',5,2)"></span>
+                        <span id= "rectangle214" class="Rectangle" onclick="click_rectangle('rectangle214',5,3)"></span>
+                        <span id= "rectangle215" class="Rectangle" onclick="click_rectangle('rectangle215',5,4)"></span>
+                        <span id= "rectangle216" class="Rectangle" onclick="click_rectangle('rectangle216',5,5)"></span>
+                        <span id= "rectangle217" class="Rectangle" onclick="click_rectangle('rectangle217',5,6)"></span>
+                        <span id= "rectangle218" class="Rectangle" onclick="click_rectangle('rectangle218',5,7)"></span>
+                    </td>
+                    <td>
+                        <img class="img_width10" src="assets/3rd/images/Jabbari/2blueCircle3.png" alt="blueCircle_image">
+                    </td>
+                    <td id="Separator_col">
+                        <input type="text" id="q2_input6" value="" class="input_style" onchange="checkValueFraction(3,'q2_input6')">
+                    </td>
+                    <td style="padding-top: 1vw;">
+                        <span id= "rectangle201" class="Rectangle padding_R5" onclick="click_rectangle('rectangle201',4,0)"></span>
+                        <span id= "rectangle202" class="Rectangle padding_R5" onclick="click_rectangle('rectangle202',4,1)"></span>
+                        <span id= "rectangle203" class="Rectangle padding_R5" onclick="click_rectangle('rectangle203',4,2)"></span>
+                        <span id= "rectangle204" class="Rectangle padding_R5" onclick="click_rectangle('rectangle204',4,3)"></span>
+                    </td>
+                    <td>
+                        <img class="img_width10" src="assets/3rd/images/Jabbari/2redCircle3.png" alt="redCircle_image">
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="q2" class = "question">
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            ۳- طول مورچه ای را با خط کش اندازه گرفته ایم.
+                            <br>
+                            برای اینکه مورچه بهتر دیده شود، آن را زیر ذره‌بین گذاشته ایم. 
+                            <br>
+                            طول مورچه 
+                            <input type="text" id="q3_input1" value="" class="input_style" onchange="checkvalue(9,'q3_input1')">
+                            میلی متر است.
+                            <br>
+                            طول مورچه 
+                           <input type="text" id="q3_input2" value="" class="input_style" onchange="checkvalue(9,'q3_input2')">
+                            قسمت از ۱۰ قسمت مساوی است.
+                           <br>
+                           طول مورچه چه کسری از یک سانتی متر است؟
+                           <input type="text" id="q3_input3" value="" class="input_style" onchange="checkValueFraction(13,'q3_input3')">
+           
+           
+                        </div> 
+                    </td>
+                    <td style="padding-right: 18vw;">
+                        <img class="img_ant" src="assets/3rd/images/Jabbari/3ant.png" alt="ant_image">
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div id= "q2" class="question">
+            ۴- هر شکل به طور تقریبی چه کسری را نشان می‌دهد؟
+            
+            <div class= "container-box">
+                <input type="text" id="q4_input1" value="" class="input_style" onchange="checkValueFraction(14,'q4_input1')">
+
+                <img class="img_width10" src="assets/3rd/images/Jabbari/4orangeCircle.png" alt="circle">
+                <input type="text" id="q4_input2" value="" class="input_style" onchange="checkValueFraction(15,'q4_input2')">
+
+                <img class="shape" src="assets/3rd/images/Jabbari/4Shape.png" alt="shape">
             </div>
         </div>
-        <div>
-            <img class="activity-image" src="assets/3rd/images/girl_and_teacher_activity.png" alt="activity_image">
-            <div class="activity-text">تمرین</div>
+        <div id= "q2" class="question">
+            ۵-یک نوار کاغذی درست کنید. آن‌را با تا کردن به ۲، ۳، ۴ قسمت مساوی تقسیم کنید. روش کار خود را توضیح دهید.
+            <textarea type="text" id="textBox" class = "textarea" rows="5" cols="70" ></textarea>
+            <button class="submit" onclick="javascript: testTextBox('textBox');">تاييد</button>
         </div>
-
-            
-        <div class ="number_of_page">
-            ۴۸
+        <div class="page-no-input">
+            <div id="next_btn">
+                <a href="book_3_49.html">
+                    <img src="assets/3rd/images/left-arrow.png" alt="next_page" style="width: 3vw">
+                </a>
+            </div>
+            <div>
+                <input class="number_of_page"  value="48" type="number" name="page_number" id="page_switcher" style="width: 5vw">
+            </div>
+            <div id="pre_btn">
+                <a href="book_3_47.html">
+                    <img src="assets/3rd/images/right-arrow.png" alt="next_page" style="width: 3vw">
+                </a>
+            </div>
         </div>
         
     </div>
+
+<script src="assets/3rd/js/Jabbari.js"></script>
 
 </body>
 

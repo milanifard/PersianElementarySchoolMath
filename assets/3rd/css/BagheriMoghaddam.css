@@ -1,0 +1,568 @@
+h1{
+    position: absolute;
+    color: #d07fa5;
+    width: 50vw;
+
+    max-width: 50vw;
+    font-size: 4vw;
+    max-font-size: 5vw;
+    border: 2px #365eec;
+    border-radius: 3vw;
+    border-right-color:#7fbdcb;
+    border-style: solid;
+    right: 2vw;
+    padding: 1vw;
+    background-color: white;
+
+
+}
+p1{
+
+
+    top: 50vw;
+    right: 40vw;
+    width: 50vw;
+    max-height: 10vw;
+    min-width: 45vw;
+    max-width: 50vw;
+    font-size: 2vw;
+    min-font-size: 2vw;
+    max-font-size: 5vw;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 12px;
+    float: bottom;
+    padding: 10px;
+    position: absolute;
+}
+
+.Text1{
+    direction: rtl;
+    border-color: #6788e7;
+    background-color: #ecf4ff;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 50vw;
+    height: 8vw;
+    position: relative;
+    top: 94vw ;
+    font-size: 2vw;
+    padding: 1vw;
+
+    margin-bottom: 10vw;
+    margin-left: 10vw;
+}
+
+.MyChartClass{
+
+    width: 80vw;
+    height: 50vw;
+
+}
+.FooterAkseZan{
+    width: 100%;
+
+}
+.my-questions-text-config{
+    font-size: 4vw;
+    padding-right: 5vw;
+    padding-left: 10vw;
+    padding-bottom: 2vw;
+    margin-top: 2vw;
+}
+.my-textBox-style{
+    text-align: center;
+    background-color: #ffffff;
+    width: 3vw;
+    border: solid;
+
+    font-size: 3vw;
+    border-color: #d07fa5;
+}
+.my-Children-Image{
+    width: 40vw;
+    height: 30vw;
+    position: absolute;
+    margin-left: 3vw;
+   /* position: absolute;
+    right: 40.3vw;
+    top: 10vw;
+    z-index: 2;*/
+}
+.my-Medad-Image{
+    width: 40vw;
+    height: 20vw;
+    position: absolute;
+    margin-left: 8vw;
+}
+.my-Seke-Image{
+    width: 20vw;
+    height: 10vw;
+    position: absolute;
+    right: 5vw;
+}
+.my-Children-TextBox{
+    text-align: center;
+    background-color: #ffffff;
+    width: 3vw;
+    border: solid;
+
+    font-size: 2vw;
+    border-color: #000000;
+}
+.my-Big-Black-Box{
+    text-align: center;
+    background-color: #ffffff;
+    width: 5vw;
+    border: solid;
+
+    font-size: 3vw;
+    border-color: #000000;
+}
+.my-Answer1{
+    font-size: 2vw;
+    position:absolute;
+    margin-top: 15vw;
+    margin-right: 4vw;
+
+}
+.NumberColor{
+    color: #79c2d2;
+}
+/***********************ID*****************************/
+/*********General***********/
+#BackGroundRight{
+    right:-10vw;
+}
+#BackGroundLeft{
+    left: -10vw;
+}
+
+/***************Page 26**************/
+#Q1{
+    padding-top: 1vw ;
+    padding-right: 3vw;
+    margin-top: 1vw;
+    /*style="padding-top: 1vw; padding-right: 5vw; margin-top: 1vw"*/
+}
+#textBox1{
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -8vw;
+    margin-top: 4vw;
+    /*style="font-size:2vw ; position: absolute; margin-left:-8vw ; margin-top: 4vw" value="547 "*/
+}
+#textBox2{
+    /*style="font-size:2vw ; position: absolute; margin-left:-8vw ; margin-top: 16vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -8vw;
+    margin-top: 16vw;
+
+}
+#textBox3{
+   /* style="font-size:2vw ; position: absolute; margin-left:-8vw ; margin-top: 26.1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left:-8vw ;
+    margin-top: 26.1vw;
+}
+#textBox4{
+   /* style="font-size:2vw ; position: absolute; margin-left:-8vw ; margin-top: 38.1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -8vw;
+    margin-top: 38.1vw;
+}
+#textBox5{
+    /*style="font-size:2vw ; position: absolute; margin-left:-22vw ; margin-top: 4vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -22vw;
+    margin-top: 4vw;
+}
+#textBox6{
+    /*style="font-size:2vw ; position: absolute; margin-left:-22vw ; margin-top: 16vw"*/
+    font-size:2vw ;
+    position: absolute;
+    margin-left: -22vw;
+    margin-top: 16vw;
+}
+#textBox7{
+    /*style="font-size:2vw ; position: absolute; margin-left:-22vw ; margin-top: 26.1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -22vw;
+    margin-top: 26.1vw;
+}
+#textBox8{
+    /*style="font-size:2vw ; position: absolute; margin-left:-22vw ; margin-top: 38.1vw"     */
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -22vw;
+    margin-top: 38.1vw;
+}
+#textBox9{
+    /*tyle="font-size:2vw ; position: absolute; margin-left:-30vw ; margin-top: 10vw"  */
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -30vw;
+    margin-top: 10vw;
+}
+#textBox10{
+   /* style="font-size:2vw ; position: absolute; margin-left:-30vw ; margin-top: 32vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -30vw;
+    margin-top: 32vw;
+}
+#textBox11{
+    /* style="font-size:2vw ; position: absolute; margin-left:-44vw ; margin-top: 26.1vw" */
+    font-size: 2vw;
+    position:absolute;
+    margin-left: -44vw;
+    margin-top: 26.1vw;
+}
+#textBox12{
+    /*style="font-size:2vw ; position: absolute; margin-left:-44vw ; margin-top: 38.1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left:-44vw;
+    margin-top: 38.1vw;
+}
+#textBox13{
+    /*style="font-size:2vw ; position: absolute; margin-left:-59vw ; margin-top: 26.1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -59vw;
+    margin-top: 26.1vw;
+}
+#textBox14{
+   /* style="font-size:2vw ; position: absolute; margin-left:-59vw ; margin-top: 38.1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: -59vw;
+    margin-top: 38.1vw;
+}
+
+#Q2{
+    /*style="padding-top: -4vw; padding-right: 2vw;"*/
+    padding-top: -4vw;
+    padding-right: 2vw;
+}
+#Q3{
+    /*style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw*/
+    padding-top: 10vw;
+    padding-right: 2vw;
+    maring-top:8vw;
+}
+#Q3-a{
+    /*style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw"*/
+    padding-top:6vw;
+    padding-right: 15vw;
+    margin-top: 3vw;
+}
+#textBox15{
+    /*style="font-size:2vw ; position: absolute; margin-left:1.2vw ; margin-top: 1vw" */
+    font-size: 2vw;
+    position: absolute;
+    margin-left: 1.2vw;
+    margin-top: 1vw;
+
+}
+#textBox16{
+    /*style="font-size:2vw ; position: absolute; margin-left:1.2vw ; margin-top: 1vw"*/
+    font-size: 2vw;
+    position: absolute;
+    margin-left: 1.2vw;
+    margin-top: 1vw;
+}
+/**********Page 27*************/
+#Q-1_27{
+    padding-top: 2vw;
+    padding-right: 4vw;
+    margin-top: 1vw;
+    /*style="padding-top: 2vw; padding-right: 4vw; margin-top: 1vw"*/
+}
+#Q_2_27{
+    /*style="padding-top: 28vw; padding-right: 4vw; margin-top: 3vw*/
+    padding-top: 28vw;
+    padding-right: 4vw;
+    margin-top: 3vw;
+
+}
+#Q-3_27{
+    /*style="padding-top: 28vw; padding-right: 4vw; margin-top: 3vw"*/
+    padding-top: 28vw;
+    padding-right: 4vw;
+    margin-top: 3vw;
+}
+#textBox21_27{
+    /*style="position: absolute; margin-left: 70vw; margin-top: 4vw"*/
+    position: absolute;
+    margin-left: 70vw;
+    margin-top: 4vw;
+}
+#textBox22_27{
+    /*style="position: absolute; margin-left: 50vw; margin-top: 1vw" */
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: 1vw;
+
+}
+#SekePic{
+    padding-right: 5vw;
+}
+/****************** mein *********************************/
+.page-topic{
+    margin-top: 1vw;
+    width: 100%;
+    height: 13vw;
+    float: right;
+    position: relative;
+}
+/*
+.page-number{
+    width: 8vw;
+    height: 3vw;
+    margin: 0 auto;
+    position: absolute;
+    background-color: var(--main_color);
+    border-style: double;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    background-position: center;
+    bottom: -1.5vw;
+    right:44%;
+    border-radius: 0.75vw;
+}
+
+.page-navigator{
+    width: 100%;
+    margin: 7vw auto;
+    padding: 5vw 0vw 0vw;
+}
+
+.previous-page{
+    display: ruby;
+    float: Left;
+    position: fixed;
+
+}
+.previous-page a{
+    text-decoration: none;
+    color: var(--main_color);
+    font-size: 3vw;
+}
+.previous-page a:hover{
+    text-decoration: none;
+    color: olive;
+    font-size: 3vw;
+}
+
+.next-page{
+    display: block;
+    float: left;
+
+
+}
+.next-page a{
+    text-decoration: none;
+    color: var(--main_color);
+    font-size: 3vw;
+}
+.next-page a:hover{
+    text-decoration: none;
+    color: olive;
+    font-size: 3vw;
+}*/
+/*
+    aqaye pourreza!
+
+
+
+
+ */
+.text-config{
+    font-family: Zar;
+    font-size: 2vw;
+    direction: rtl;
+    white-space: pre-wrap;
+}
+.activity-text{
+    background-color: #0c9ec3;
+    border-radius: 1.5vw;
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.25vw;
+    color: white;
+    padding: 0 5vw 0 3vw;
+    position: absolute;
+    right: 8vw;
+    top: 2.5vw;
+    z-index: 1;
+}
+
+.activity-image{
+    width: 13vw;
+    position: absolute;
+    right: -2.3vw;
+    top: 0.5vw;
+    z-index: 2;
+}
+
+.that-ridiculous-red-parts-in-title{
+    height: 1vw;
+    background-color: #9d86bd;
+    color: #9d86bd;
+    border-style: solid;
+    position: absolute;
+    right: 34vw;
+    left: 34vw;
+    top: -1.2vw;
+}
+.title-style{
+    background-color: #0c9ec3;
+    border-radius: 2vw;
+    text-align: center;
+    font-size: 3vw;
+    color: black;
+    padding: 1vw;
+    position: absolute;
+    right: 35vw;
+    left: 35vw;
+    top: -3.3vw;
+}
+
+.background-style{
+    width: 100vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, #79c2d2, #79c2d2 1vw, #e1f4fd 0vw, #e1f4fd 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+}
+.left-border{
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double #79c2d2;
+    margin: 6vw 0 0 10vw;
+    border-right: none;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+.questions-text-config{
+    direction: rtl;
+    padding-right: 5vw;
+    padding-left: 3vw;
+    padding-bottom: 2vw;
+    margin-top: 2vw;
+}
+.textBox-style{
+    text-align: center;
+    background-color: #e6f4fc;
+    width: 3vw;
+    border: none;
+    border-radius: 50vw;
+    font-size: 1.75vw;
+    border-color: #e6f4fc;
+}
+.textBox-style-White{
+    text-align: center;
+    background-color: #ffffff;
+    width: 3vw;
+    border: none;
+    border-radius: 50vw;
+    font-size: 1.75vw;
+    border-color: #ffffff;
+}
+.right-border{
+
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double #79c2d2;
+    margin: 6vw 10vw 0 0;
+    border-left: none;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+
+/*footer
+
+ */
+.Page25_Footer{
+    direction: rtl;
+
+    width: 30vw;
+    height: 8vw;
+    position: relative;
+    top: 84vw ;
+    font-size: 2vw;
+    padding: 1vw;
+
+    padding-bottom: 2vw;
+    margin-left: 30vw;
+}
+
+.pagination-container {
+    direction: rtl;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 3em;
+    /* to adjust page changer position , adjust position of this element */
+
+}
+
+.page-number {
+    /* substitute your color */
+    background-color: #0c9dc3;
+    border-radius: 2em;
+    width: 5.8em;
+    color: white;
+    border: 0.35em double white;
+    font-family: Koodak;
+    padding: 0 1.1em;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.page-number input {
+    /* substitute your color */
+    background-color: #0c9dc3;
+    border: none;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+
+.page-number-button {
+    width: 3em;
+    display: flex;
+    color: rgb(19, 0, 70);
+    justify-content: center;
+}
+
+.page-number-button  a {
+    color: rgb(19, 0, 70);
+    font-size: 2.5em;
+    display: flex;
+
+}
+
+

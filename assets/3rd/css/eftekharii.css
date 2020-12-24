@@ -30,11 +30,30 @@
 
 @font-face {
     font-family: Zar;
-    src: url("/assets/fonts/Zar.woff") format("woff");
+    src: url("../../fonts/Zar.ttf");
+}
+
+@font-face {
+    font-family: KoodakBold;
+    src: url("../../fonts/KoodakBold.ttf");
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 body{
-    font-family:"B Zar";
+    font-family:Zar;
     font-size: 2vw;
     text-align: justify-all;
     background-image: repeating-linear-gradient(0deg,var(--footer_color1), var(--footer_color1) 1vw, var(--footer_color2) 0vw , var(--footer_color2) 2.5vw);
@@ -44,6 +63,17 @@ body{
     overflow-x:hidden ;
 }
 
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+a{
+    text-decoration: none;
+}
 
 .center{
     text-align: center;
@@ -59,6 +89,15 @@ body{
 
 .pull-left{
     float: left;
+}
+
+.pull-center{
+    position: relative;
+    text-align: center;
+}
+
+.topmargin{
+    margin:2vw 0 ;
 }
 
 .text-center{
@@ -130,6 +169,21 @@ body{
     height: 11vw;
     position: absolute;
 }
+.negative-margin-top{
+    margin-top: -2vw;
+}
+
+#submit3_4 {
+    margin-right: -5vw;
+}
+
+#submit3_5{
+    margin-right: -6vw;
+}
+#feedback3_6{
+    margin-right: 5vw;
+}
+
 
 .topic-title{
     float: right;
@@ -167,35 +221,40 @@ body{
     float: right;
 }
 
- .question_box{
-     width: 80%;
-     padding: 0vw 0;
-     margin: 5vw auto;
-     position: relative;
+.question_box{
+    width: 80%;
+    padding: 0vw 0;
+    margin: 5vw auto;
+    position: relative;
 }
 
 
- .question_box p{
-     top: 3vw;
-     float: right;
-     position: absolute;
-     right: 5vw;
- }
+.question_box p{
+    top: 3vw;
+    float: right;
+    position: absolute;
+    right: 5vw;
+}
 
- .question-number{
-     font-family: "B Zar";
-     font-size: 2vw;
-     color: var(--question_number_color);
+.question-number{
+    font-family: "B Zar";
+    font-size: 2vw;
+    color: var(--question_number_color);
 }
 
 .grid-container {
-     width: 100%;
-     display: grid;
-     grid-template-columns: 4vw 4vw 4vw 4vw ;
-     grid-column-gap: 0.7vw;
-     float: right;
-     margin: 0 37%;
- }
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4vw 4vw 4vw 4vw ;
+    grid-column-gap: 0.7vw;
+    float: right;
+    margin: 0 38%;
+    alignment: center;
+}
+.gridcontainer1_4{
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
 
 .container {
     width: 100%;
@@ -206,6 +265,7 @@ body{
     float: right;
     margin: 0 -4vw;
     margin-left: 4vw;
+    text-align: center;
 }
 
 .one-third-page{
@@ -348,10 +408,10 @@ body{
 }
 
 .input-row{
-     width: 100%;
-     margin: 2vw 0;
-     text-align: center;
-     float: right;
+    width: 100%;
+    margin: 2vw 0;
+    text-align: center;
+    float: right;
 }
 .input-small-row{
     margin-right: 1.5vw;
@@ -365,7 +425,31 @@ body{
     text-align: center;
     background-color: transparent;
 }
+.input-light-blue{
+    border-bottom-color: var(--grid_light_blue_color);
+}
+.input-gold{
+    border-bottom-color: var(--grid_gold_color);
+}
+.input-light-purple{
+    border-bottom-color: var(--grid_light_purple_color);
+}
+.input-purple{
+    border-bottom-color: var(--grid_purple_color);
+}
+.input-green{
+    border-bottom-color: var(--grid_green_color);
+}
+.input-red{
+    border-bottom-color: var(--grid_red_color);
+}
+.input-black{
+    border-bottom-color: black;
+}
 
+.input-brown{
+    border-bottom-color: var(--grid_light_brown_color);
+}
 
 .input-large-style{
     width: 20vw;
@@ -392,17 +476,36 @@ body{
 }
 
 .submit{
-     width:10vw;
-     border-radius: 1vw;
-     background: var(--main_color);
-     text-align: center;
-     color: white;
-     text-decoration: none;
-     margin:0 44% 2vw;
- }
+    width:11vw;
+    border-radius: 1vw;
+    background: var(--main_color);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.feedback{
+    text-align: center;
+    margin: 0vw;
+    display: block;
+}
+
+.width3{
+    width: 3vw;
+    float: none;
+}
+.leftwidth3{
+    width: 3vw;
+    float: left;
+}
+
+.days_input{
+    width: 3vw ; float: right; margin-left: 5vw;
+}
 
 .submit-half-page{
-    margin:0 50% 2vw;
+    margin:0 40% 2vw;
 }
 .submit-third-page{
     margin:0 33.33% 2vw;
@@ -418,69 +521,58 @@ body{
     height: 4vw;
 }
 
+.checkbox_style{
+    max-width: 1vw;
+    max-height: 1vw;
+    margin-right: 1vw;
+}
 .page-number{
     width: 8vw;
     height: 3vw;
-    margin: 0 auto;
-    position: absolute;
-    background-color: var(--main_color);
-    border-style: double;
+    margin: 2vw auto 0;
+    float: right;
+    border: 0.3vw solid;
+    text-decoration: none;
     text-align: center;
-    font-size: 2vw;
-    color: white;
-    background-position: center;
     bottom: -1.5vw;
-    right:44%;
-    border-radius: 0.75vw;
+    border-color: var(--main_color);
+
 }
 
 .page-navigator{
     width: 100%;
-    margin: 7vw auto;
+    margin: 2vw auto;
     padding: 5vw 0vw 0vw;
+    margin-right: 40%;
+    position: relative;
 }
 
-.previous-page{
-    display: block;
+.change-page{
+    margin: 2vw 1vw;
     float: right;
-    position: absolute;
+    color: var(--main_color);
 
 }
-.previous-page a{
+.change-page a{
     text-decoration: none;
     color: var(--main_color);
     font-size: 3vw;
 }
-.previous-page a:hover{
+.change-page a:hover{
     text-decoration: none;
     color: olive;
     font-size: 3vw;
 }
 
-.next-page{
-    display: block;
-    float: left;
-
-
-}
-.next-page a{
-    text-decoration: none;
-    color: var(--main_color);
-    font-size: 3vw;
-}
-.next-page a:hover{
-    text-decoration: none;
-    color: olive;
-    font-size: 3vw;
+.set_koodak_font{
+    font-family: KoodakBold;
 }
 
+#input-row-1-2{
+    margin-right: 4vw;
+}
 
-
-
-
-
-
-
-
-
-
+.shake {
+    animation: shake;
+    animation-iteration-count: infinite;
+}

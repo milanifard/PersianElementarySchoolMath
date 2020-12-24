@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/KheirKhah.css">
+    <link rel="stylesheet" href="./assets/3rd/css/Ansari.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="./assets/3rd/js/KheirKhah.js"></script>
+
+    <title>ریاضی سوم دبستان - صفحه شصت و دو</title>
+</head>
+<body>
+    <div class = "flexrow">
+        <div class= "side">
+
+            <!-- <div class = "pageCounter">
+                ۶۲
+            </div> -->
+        </div>
+        <div class = "paperCont" id ="right">
+            <h5 class="act" >حل مسئله</h5>
+            
+            <div  class="quest">
+                <div style = "  text-align: justify;
+                                text-justify: inter-word;">
+                    <span style= "color: #C47898;">۱-</span>
+                    <span>
+                        بعد از ۹۹۹ چه عددی است؟<br> این مسئله را به صورت روبه رو مینویسیم:<br> پاسخ را حدس بزنید و در مربّع بنویسید.<br> حالا برای مسئله های زیر یک تساوی بنویسید و به جای سؤال (خواسته ی مسئله) مربّع بگذارید.
+                    </span>
+                </div>
+                <div>
+                    <input id="p62ques1_1" type="number">
+                    <span >=</span>
+                    <span style= "color: #498739;">۱</span>
+                    <span >+</span>
+                    <span style= "color: #498739;">۹۹۹</span>
+                </div>
+            </div>
+            <div  class="quest">
+                <div style = "  text-align: justify;
+                                text-justify: inter-word;"
+                                >
+
+                    <span >
+                        چه عددی اگر با ۹۹۹ جمع شود، حاصل ۱۰۰۰ میشود؟
+                    </span>
+                </div>
+                <div>
+                    <span style= "color: #498739;">۱۰۰۰</span>
+                    <span >=</span>
+                    <input id="p62ques1_2" type="number">
+                    <span >+</span>
+                    <span style= "color: #498739;">۹۹۹</span>
+                </div>
+                
+            </div>
+            <div class = "clear"></div>
+            <div  class="quest">
+                <div style = "  text-align: justify;
+                                text-justify: inter-word;"
+                                >
+
+                    <span >
+                        از ۱۰۰۰ چند واحد بر داریم تا ۹۹۰ بهدست آید؟
+                    </span>
+                    <input id="p62ques1_3" type="number">
+                </div>
+            </div>
+            <div class="button" onclick="p62ques1()">ثبت</div>
+            <div class = "clear2"></div>
+
+            <div  class="quest">
+                <div style = "  text-align: justify;
+                                text-justify: inter-word;">
+                    <span style= "color: #C47898;">۲-</span>
+                    <span>
+                        عددی را با ۱۰۰۰ جمع کردیم؛ حاصل ۱۱۰۰ شد. این عدد را بهدست آورید.
+                    </span>
+                </div>
+                <div>
+                    <span>۱۱۰۰</span>
+                    <span >=</span>
+                    <span >۱۰۰۰</span>
+                    <span >+</span>
+                    <input id = "p62ques2_1"type="number">
+                </div>
+            </div>
+            <div class="button" onclick="p62ques2()">ثبت</div>
+            <div class = "clear2"></div>
+
+            <div  class="quest">
+                
+                <div style = "  text-align: justify;
+                                text-justify: inter-word;">
+                    <span style= "color: #C47898;">۳-</span>
+                    <span>
+                        عددی را به ٥ اضافه میکنیم. از حاصل، ٥ تا کم میکنیم. چه عددی به دست می آید؟ چرا؟    
+                    </span>
+                    <form> 
+                        <select id = "checklist" style=" border : 2px solid #C47898; ">
+                            <option >نمی توان تعین کرد</option>
+                            <option value="correct"> همان عدد زیرا با اضافه کردن ۵تا به عددی و سپس کم کردن ۵ تا از ان، همان عدد بدست میاید</option>
+                            <option >پنج عدد بیشتر از همان عدد زیرا با اضافه کردن ۵تا به عددی و کم کردن ۵ تا از ان همان عدد به علاوه ۵ بدست میاید</option>
+                            <option >پنج عدد کم از همان عدد زیرا با اضافه کردن ۵تا به عددی و کم کردن ۵ تا از ان همان عدد منهای ۵ بدست میاید</option>
+                        </select>
+                      </form>
+                </div>
+            </div>
+            <div class = "clear"></div>
+            <div  class="quest">
+                <div style = "  text-align: justify;
+                                text-justify: inter-word;"
+                                >
+
+                    <span >
+                        با چند مثال، مسئله ی بالا را بررسی کنید.(برای مثال عدد ١٠ را در نظر بگیرید.) 
+                    </span>
+                </div>
+                <div>
+                    <input id= "p62ques3_2_a" type="number">
+                    <span >=</span>
+                    <span style= "color: #498739;">۱۰</span>
+                    <span >-</span>
+                    <span style= "color: #498739;">۱۰</span>
+                    <span >+</span>
+                    <input id= "p62ques3_2_b" type="number">
+                </div>
+                <p>,</p>
+                <div>
+                    <input  id= "p62ques3_3_a" type="number">
+                    <span >=</span>
+                    <span style= "color: #498739;">۱۰</span>
+                    <span >-</span>
+                    <span style= "color: #498739;">۱۰</span>
+                    <span >+</span>
+                    <input id= "p62ques3_3_b" type="number">
+                </div>           
+            </div>
+            <div class="button" onclick="p62ques3()">ثبت</div>
+
+            <img src="./assets/3rd/images/KheirKhah/62/Screen Shot 1399-09-20 at 01.09.50.png" class="img-responsive" id = "up"/> 
+            <div id= "ad">
+                <p>
+                    تبدیل کردن مسئله به یک تساوی یا عبارت و یا یک شکل نمادین به درک بهتر مسئله کمک می کندو راه پیدا کردن جواب را نیز مشّخص می سازد.
+                </p>
+            </div>
+        </div>
+
+    </div> 
+    <div id = "downbar">
+        <h5 class= "pageCounter" id="r">۶۲</h5>
+        <div class="flexrow">
+        <a class = "page" href="book_3_61.html" target="_blank">صفحه قبل</a>
+        <div class="page page-number">
+            <input style= "border: none;" type="number" id="page-number-input" onfocusout="loadPageChanger()">
+        </div>
+        <a class = "page" href="book_3_63.html" target="_blank">صفحه بعد</a>
+        </div>
+    </div>
+</body>
+</html>

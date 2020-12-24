@@ -6,16 +6,15 @@
     <link rel="stylesheet" href="./assets/3rd/css/eftekharii.css">
     <title>ریاضی سوم دبستان - صفحه یازده</title>
 </head>
-<body>
-
+<body onload="setPageNumber(11)">
 <div class="main">
     <div class="content-box">
         <div class="page-topic">
             <img class="topic-image" src="assets/3rd/images/classwork.png">
-            <div class="topic-title topic-title-classwork">کار در کلاس</div>
+            <div class="topic-title topic-title-classwork set_koodak_font">کار در کلاس</div>
         </div>
         <p>
-            <span class="question-number">1.</span>
+            <span class="question_number">1.</span>
             مربّع های شکل زیر را به 3 روش دسته بندی کنید و
             با شمارشِ چندتا چندتا، تعداد آن ها را به دست آورید.
         </p>
@@ -65,25 +64,27 @@
                     <div class="small-grid-item grid-item-pink"></div>
                 </div>
                 <div class="input-row input-small-row" style="float: right">
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="ans2_1" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>=</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp8_8" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp8_7" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp8_6" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp8_5" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp8_4" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp8_3" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp8_2" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp8_1" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                 </div>
-                <input class="submit submit-third-page" type="submit" value="ثبت">
+                <span class="feedback" id="feedback2_1"></span>
+                <input class="submit submit-third-page" type="submit" value="ثبت" id="submit2_1"
+                       onclick="checkAnswer2_1()">
             </div>
             <div class="one-third-page">
                 <div class="grid-container small-five-col">
@@ -130,18 +131,20 @@
                 </div>
 
                 <div class="input-row input-small-row">
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="ans2_2" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>=</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp9_4" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp9_3" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp9_2" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp9_1" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
 
                 </div>
-                <input class="submit submit-third-page" type="submit" value="ثبت">
+                <span class="feedback" id="feedback2_2"></span>
+                <input class="submit submit-third-page" type="submit" value="ثبت" id="submit2_2"
+                       onclick="checkAnswer2_2()">
             </div>
             <div class="one-third-page">
                 <div class="grid-container small-five-col">
@@ -188,14 +191,16 @@
                 </div>
 
                 <div class="input-row input-small-row">
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="ans2_3" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>=</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp10_2" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input  id="inp10_1" class="input-style input-xsmall-style" type="text" onkeypress="setTextBlack(id)">
 
                 </div>
-                <input class="submit submit-third-page" type="submit" value="ثبت">
+                <span class="feedback" id="feedback2_3"></span>
+                <input class="submit submit-third-page" type="submit" value="ثبت" id="submit2_3"
+                       onclick="checkAnswer2_3()">
             </div>
         </div>
 
@@ -204,14 +209,18 @@
             <span class="bullet">. </span>
             در کدام روش دسته بندی می توانید حاصل جمع ها را به صورت ذهنی به دست آورید؟
         </p>
-
-        <p class="pull-right">
-            <span class="question-number">2.</span>
-            در شکل های زیر تعداد مربّع ها را با توجّه به رنگ آن ها به دست آورید.
-            <br>
-            برای جمع کردن و شمارشِ چندتا چندتا می توانید از ماشین حساب استفاده کنید.
-        </p>
-        <img class="pull-left" src="assets/3rd/images/eftekhari/calculator.png " alt="ماشین حساب">
+        <div class="clearfix"></div>
+        <div class="one-forth-page" style="margin-top: -5vw">
+            <img class="calculator-size pull-left" src="assets/3rd/images/eftekhari/calculator.png " alt="ماشین حساب">
+        </div>
+        <div class="third-forth-page">
+            <p>
+                <span class="question_number pull-right">2.</span>
+                در شکل های زیر تعداد مربّع ها را با توجّه به رنگ آن ها به دست آورید.
+                <br>
+                برای جمع کردن و شمارشِ چندتا چندتا می توانید از ماشین حساب استفاده کنید.
+            </p>
+        </div>
         <div class="clearfix"></div>
         <div class="container">
             <div class="one-third-page">
@@ -275,19 +284,21 @@
 
                 </div>
                 <div class="input-row input-small-row" style="float: right">
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="ans2_4" class="input-style input-xsmall-style input-black" type="text" onkeypress="setTextBlack(id)">
                     <span>=</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp11_5" class="input-style input-xsmall-style input-light-purple" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp11_4" class="input-style input-xsmall-style input-green" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp11_3" class="input-style input-xsmall-style input-red" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp11_2" class="input-style input-xsmall-style input-gold" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp11_1" class="input-style input-xsmall-style input-light-blue" type="text" onkeypress="setTextBlack(id)">
                 </div>
-                <input class="submit submit-third-page" type="submit" value="ثبت">
+                <span class="feedback" id="feedback2_4"></span>
+                <input class="submit submit-third-page" type="submit" value="ثبت" id="submit2_4"
+                       onclick="checkAnswer2_4()">
             </div>
             <div class="one-third-page">
                 <div class="grid-container seven-col " style="margin-bottom: 1.4vw">
@@ -335,17 +346,19 @@
                     <div class="small-grid-item grid-item-white"></div>
                 </div>
                 <div class="input-row input-small-row">
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="ans2_5" class="input-style input-xsmall-style input-black" type="text" onkeypress="setTextBlack(id)">
                     <span>=</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp12_4" class="input-style input-xsmall-style input-gold" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp12_3" class="input-style input-xsmall-style input-green" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp12_2" class="input-style input-xsmall-style input-light-blue" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp12_1" class="input-style input-xsmall-style input-light-purple" type="text" onkeypress="setTextBlack(id)">
                 </div>
-                <input class="submit submit-third-page" type="submit" value="ثبت">
+                <span class="feedback" id="feedback2_5"></span>
+                <input class="submit submit-third-page" type="submit" value="ثبت" id="submit2_5"
+                       onclick="checkAnswer2_5()">
             </div>
             <div class="one-third-page">
                 <div class="grid-container small_six_col" style="margin-bottom: 2.7vw">
@@ -380,19 +393,21 @@
                     <div class="small-grid-item grid-item-light-purple"></div>
                     <div class="small-grid-item grid-item-gold"></div>
                 </div>
-                <div class="input-row input-small-row" style="float: right">
-                    <input class="input-style input-xsmall-style" type="text">
+                <div class="input-row input-small-row pull-right">
+                    <input id="ans2_6" class="input-style input-xsmall-style input-black" type="text" onkeypress="setTextBlack(id)">
                     <span>=</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp13_4" class="input-style input-xsmall-style input-green" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp13_3" class="input-style input-xsmall-style input-light-purple" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp13_2" class="input-style input-xsmall-style input-gold" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp13_1" class="input-style input-xsmall-style input-light-blue" type="text" onkeypress="setTextBlack(id)">
 
                 </div>
-                <input class="submit submit-third-page" type="submit" value="ثبت">
+                <span class="feedback" id="feedback2_6"></span>
+                <input class="submit submit-third-page" type="submit" value="ثبت" id="submit2_6"
+                       onclick="checkAnswer2_6()">
             </div>
         </div>
         <div class="clearfix"></div>
@@ -435,23 +450,25 @@
                     <div class="small-grid-item grid-item-white"></div>
                     <div class="small-grid-item grid-item-white"></div>
                 </div>
-                <div class="input-row input-small-row" style="float: right">
-                    <input class="input-style input-xsmall-style" type="text">
+                <div class="input-row input-small-row pull-right">
+                    <input id="ans2_7" class="input-style input-xsmall-style input-black" type="text" onkeypress="setTextBlack(id)">
                     <span>=</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp14_6" class="input-style input-xsmall-style input-red" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp14_5"class="input-style input-xsmall-style input-green" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp14_4" class="input-style input-xsmall-style input-gold" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp14_3" class="input-style input-xsmall-style input-purple" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp14_2" class="input-style input-xsmall-style input-light-purple" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp14_1" class="input-style input-xsmall-style input-light-blue" type="text" onkeypress="setTextBlack(id)">
 
                 </div>
-                <input class="submit submit-third-page" type="submit" value="ثبت">
+                <span class="feedback" id="feedback2_7"></span>
+                <input class="submit submit-third-page" type="submit" value="ثبت"  id="submit2_7"
+                       onclick="checkAnswer2_7()">
             </div>
             <div class="one-third-page">
                 <div class="grid-container small_six_col">
@@ -492,19 +509,21 @@
                     <div class="small-grid-item grid-item-red"></div>
                     <div class="small-grid-item grid-item-light-blue"></div>
                 </div>
-                <div class="input-row input-small-row" style="float: right">
-                    <input class="input-style input-xsmall-style" type="text">
+                <div class="input-row input-small-row pull-right">
+                    <input id="ans2_8" class="input-style input-xsmall-style input-black" type="text" onkeypress="setTextBlack(id)">
                     <span>=</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp15_4" class="input-style input-xsmall-style input-red" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp15_3" class="input-style input-xsmall-style input-gold" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp15_2" class="input-style input-xsmall-style input-light-purple" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp15_1" class="input-style input-xsmall-style input-light-blue" type="text" onkeypress="setTextBlack(id)">
 
                 </div>
-                <input class="submit submit-third-page" type="submit" value="ثبت">
+                <span class="feedback" id="feedback2_8"></span>
+                <input class="submit submit-third-page" type="submit" value="ثبت" id="submit2_8"
+                       onclick="checkAnswer2_8()">
             </div>
             <div class="one-third-page">
                 <div class="grid-container small-four-col" style="margin-bottom: 1.7vw">
@@ -529,36 +548,40 @@
                     <div class="small-grid-item grid-item-green"></div>
 
                 </div>
-                <div class="input-row input-small-row" style="float: right">
-                    <input class="input-style input-xsmall-style" type="text">
+                <div class="input-row input-small-row pull-right">
+                    <input id="ans2_9" class="input-style input-xsmall-style input-black" type="text" onkeypress="setTextBlack(id)">
                     <span>=</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp16_5" class="input-style input-xsmall-style input-brown" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp16_4" class="input-style input-xsmall-style input-light-blue " type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp16_3" class="input-style input-xsmall-style input-light-purple" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp16_2" class="input-style input-xsmall-style input-green" type="text" onkeypress="setTextBlack(id)">
                     <span>+</span>
-                    <input class="input-style input-xsmall-style" type="text">
+                    <input id="inp16_1" class="input-style input-xsmall-style input-gold" type="text" onkeypress="setTextBlack(id)">
 
                 </div>
-                <input class="submit submit-third-page" type="submit" value="ثبت">
+                <span class="feedback" id="feedback2_9"></span>
+                <input class="submit submit-third-page" type="submit" value="ثبت" id="submit2_9"
+                       onclick="checkAnswer2_9()">
             </div>
         </div>
 
         <div class="clearfix"></div>
         <div class="page-navigator">
-            <div class="previous-page">
-                <a href="book_3_10.html">< صفحه قبل</a>
-            </div>
-            <div class="next-page">
-                <a href="book_3_12.html">صفحه بعد ></a>
-            </div>
+            <a href="book_3_10.html" class="change-page">
+                <
+            </a>
+            <input id="page_number" class="page-number" onkeyUp="page_changer(id)" type="number">
+            <a href="book_3_12.html" class="change-page">
+                >
+            </a>
         </div>
-        <div class="page-number">11</div>
+        <div class="clearfix"></div>
     </div>
 
 </div>
+<script src="assets/3rd/js/eftekhari.js" type="text/javascript"></script>
 </body>
 </html>

@@ -1,0 +1,603 @@
+.text
+{
+    color: black;
+
+    font-family: "B Nazanin";
+    font-size: 2vw;
+    direction: rtl;
+    text-align: justify;
+}
+#p1background
+{
+    height: 127vw;
+    background: linear-gradient(to right, #fcb94b 0%, #fcb94b 35%, sandybrown 35%, sandybrown 100%);
+}
+#p2background
+{
+    width: 120vw;
+    height: 55vw;
+
+    background-image: repeating-linear-gradient(0deg, sandybrown, sandybrown 0.7vw, #fcb94b 0vw, #fcb94b 1.5vw);
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top:92.5vw;
+    right: 0.1vw;
+    z-index: -1;
+}
+#p3background
+{
+    width: 99.2vw;
+    height: 48vw;
+
+    background-image: repeating-linear-gradient(0deg, sandybrown, sandybrown 0.7vw, #fcb94b 0vw, #fcb94b 1.5vw);
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 90vw;
+    left: 0.1vw;
+    z-index: -1;
+}
+#p2content
+{
+    background-color: white;
+    border-style: double;
+    border-color: sandybrown ;
+    border-width: 0.7vw;
+    border-left: 0px;
+    border-bottom-right-radius: 4vw;
+    border-top-right-radius: 4vw;
+    position: relative;
+    top: 10vw;
+    right: 2vw;
+    height: 121vw;
+    width: 89.4vw;
+}
+#p3content
+{
+    background-color: white;
+    margin-left: 12vw;
+    border-style: double;
+    border-color: sandybrown ;
+    border-width: 0.7vw;
+    border-right: 0px;
+    border-bottom-left-radius: 4vw;
+    border-top-left-radius: 4vw;
+    position: relative;
+    top: 10vw;
+    height: 112vw;
+    right: 5vw;
+    width: 90.99vw;
+}
+#page1header
+{
+    color: green;
+    background-color: white;
+
+    font-size: 4.5vw;
+    text-align: center;
+
+    border-style: solid;
+    border-color: brown ;
+    border-width: 3px;
+    border-radius: 2.5vw;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    padding-left: 1vw;
+    padding-right: 2.8vw;
+
+    position: absolute;
+    top: 9.5vw;
+    left: 61.5vw;
+}
+#page2header
+{
+    color: white;
+    background-color: sandybrown;
+
+    font-size: 3vw;
+    text-align: center;
+
+    border-style: solid;
+    border-color: sandybrown ;
+    border-width: 0.45vw;
+    border-radius: 1.5vw;
+    border-top-right-radius: 0vw;
+    border-bottom-right-radius: 0vw;
+
+    padding: 0.1vw;
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+
+    position: absolute;
+    top: 0.5vw;
+    left: 63.7vw;
+}
+#page3header
+{
+    background-color: #fcb94b;
+
+    font-size: 2.7vw;
+    text-align: center;
+
+    border-style: solid;
+    border-color: #fcb94b;
+    border-width: 3px;
+    border-radius: 3.2vw;
+
+    padding: 0.9vw;
+    padding-right: 0.3vw;
+    padding-left: 0.3vw;
+
+    position: absolute;
+    top: -5.6vw;
+    left: 45vw;
+}
+#p1text
+{
+    background-color: bisque;
+
+    border-style: solid;
+    border-color: bisque;
+    border-width: 2px;
+    border-radius: 2.5vw;
+
+    position:absolute;
+    top: 104vw;
+    left: 21vw;
+    right: 15vw;
+
+    padding: 0.5vw;
+}
+#p2text
+{
+    background-color: white;
+
+    border-style: double;
+    border-color: chocolate;
+    border-right: white;
+    border-width: 0.47vw;
+    border-bottom-style: groove;
+
+    position:absolute;
+    top: 117.3vw;
+    left: 8vw;
+    height: 6vw;
+    width: 58vw;
+
+    padding: 1vw;
+    padding-right: 1.3vw;
+}
+#p3text
+{
+    background-color: white;
+
+    border-style: double;
+    border-color: chocolate;
+    border-left: white;
+    border-width: 0.45vw;
+    border-bottom-style: groove;
+
+    position:absolute;
+    top: 108.25vw;
+    left: 21vw;
+    height: 5.9vw;
+
+    padding: 1.2vw;
+    padding-right: 4.5vw;
+    padding-left: 4.5vw;
+}
+#p2q
+{
+    position:absolute;
+    top: 10.5vw;
+    left: 25.5vw;
+}
+#p2q1
+{
+    position:absolute;
+    top: 13.45vw;
+    left: 31vw;
+}
+#p2q2
+{
+    position:absolute;
+    top: 29vw;
+    left: 24.6vw;
+}
+#p2q3
+{
+    position:absolute;
+    top: 45vw;
+    left: 11vw;
+}
+#p2q4
+{
+    position:absolute;
+    top: 82vw;
+    left: 13vw;
+}
+#p3q1
+{
+    position:absolute;
+    top: 6vw;
+    left: 45vw;
+}
+#p3q2
+{
+    position:absolute;
+    top: 43vw;
+    left: 46.3vw;
+}
+#p3q2_1
+{
+    position:absolute;
+    top: 63vw;
+    left: 24.5vw;
+}
+#p3q2_2
+{
+    position:absolute;
+    top: 78.5vw;
+    left: 57vw;
+}
+#p2t1
+{
+    color: purple;
+
+    position:absolute;
+    top: 17.5vw;
+    left: 29.5vw;
+}
+#p2t2
+{
+    color: purple;
+
+    position:absolute;
+    top: 35.3vw;
+    left: 35.8vw;
+}
+
+#p3t1
+{
+    color: purple;
+
+    position:absolute;
+    top: 9.2vw;
+    left: 16vw;
+}
+#calculator
+{
+    position: absolute;
+    left: 15vw;
+    top: 13vw;
+    width: 32vw
+}
+#topleft
+{
+    position: absolute;
+    left: 15vw;
+    top: 37vw;
+    height: 35vw;
+    width: 36vw
+}
+#topright
+{
+    position: absolute;
+    left: 52vw;
+    top: 37vw;
+    height: 35vw;
+    width: 37vw
+}
+#bottomleft
+{
+    position: absolute;
+    left: 15vw;
+    top: 73vw;
+    height: 27vw;
+    width: 39vw
+}
+#bottomright
+{
+    position: absolute;
+    left: 55vw;
+    top: 73vw;
+    height: 27vw;
+    width: 34vw
+}
+#boy
+{
+
+    position: absolute;
+    top: 1vw;
+    left: 77.2vw;
+    width: 14vw;
+}
+#clock
+{
+    position: absolute;
+    top: 16vw;
+    left: 66vw;
+    width: 14vw;
+}
+#mountain
+{
+    position: absolute;
+    top: 61vw;
+    left: 17.7vw;
+    width: 68.5vw;
+}
+#iran
+{
+    position: absolute;
+    top: 98vw;
+    left: 28vw;
+    width: 24vw;
+}
+#girl
+{
+    position: absolute;
+    top: 109.3vw;
+    left: 68.4vw;
+    width: 12.75vw;
+    height: 16.8vw;
+}
+#sum
+{
+    position: absolute;
+    top: 14vw;
+    left: 11vw;
+    width: 14vw;
+}
+#sum1
+{
+    position: absolute;
+    top: 32.5vw;
+    left: 11vw;
+    width: 14vw;
+}
+#sum2
+{
+    position: absolute;
+    top: 49.1vw;
+    left: 11vw;
+    width: 14vw;
+}
+#sum3
+{
+    position: absolute;
+    top: 91vw;
+    left: 11vw;
+    width: 14vw;
+}
+#pencil
+{
+    position: absolute;
+    top: 17.5vw;
+    left: 1.8vw;
+    width: 14vw;
+}
+#polygonal
+{
+    position: absolute;
+    top: 19vw;
+    left: 18vw;
+    width: 63vw;
+}
+#matches
+{
+    position: absolute;
+    top: 48vw;
+    left: 13vw;
+    width: 69vw;
+}
+#thought
+{
+    position: absolute;
+    top: 68vw;
+    left: 7vw;
+    width: 44vw;
+}
+.numb
+{
+    color: white;
+    background-color: #fcb94b;
+
+    font-family: "B Nazanin";
+    font-size: 2vw;
+    direction: rtl;
+    text-align: justify;
+
+    border-style: solid;
+    border-color: #fcb94b;
+    border-width: 3px;
+    border-radius: 1.5vw;
+
+    padding-left: 1vw;
+    padding-right: 1vw;
+
+    position: absolute;
+    top: 58vw;
+}
+#n1
+{
+    left: 12vw;
+}
+#n2
+{
+    left: 26vw;
+}
+#n3
+{
+    left: 43.4vw;
+}
+#n4
+{
+    left: 69.1vw;
+}
+#man
+{
+    position: absolute;
+    top: 104vw;
+    left: 8.1vw;
+    width: 13vw;
+}
+.answer
+{
+    color: black;
+
+    font-family: "B Nazanin";
+    font-size: 2vw;
+    direction: rtl;
+    text-align: center;
+
+    border-style: solid;
+    border-color: black ;
+    border-width: 0.2vw;
+    border-radius: 1vw;
+
+    position:absolute;
+    left: 67vw;
+    width: 7.5vw;
+    height: 3vw;
+}
+#p2a1
+{
+    left: 57vw;
+    top: 23vw;
+}
+#p2a2
+{
+    top: 40vw;
+}
+#p2a3
+{
+    top: 56vw;
+}
+#p2a4
+{
+    top: 92vw;
+}
+#p3a1
+{
+    left: 73vw;
+    top: 37vw;
+}
+#p3a2_1
+{
+    left: 73vw;
+    top: 71vw;
+}
+#p3a2_2
+{
+    left: 73vw;
+    top: 83vw;
+}
+.review
+{
+    background-color: #fcb94b;
+    color: black;
+
+    font-family: "B Nazanin";
+    font-size: 2vw;
+    direction: rtl;
+    text-align: center;
+
+    border-style: solid;
+    border-color: #fcb94b ;
+    border-width: 0.2vw;
+    border-radius: 1vw;
+
+    position:absolute;
+    left: 55vw;
+    width: 9vw;
+    height: 3.5vw;
+}
+#p2r1
+{
+    left: 45vw;
+    top: 23vw;
+}
+#p2r2
+{
+    top: 40vw;
+}
+#p2r3
+{
+    top: 56vw;
+}
+#p2r4
+{
+    top: 92vw;
+}
+#p3r1
+{
+    left: 61vw;
+    top: 37vw;
+}
+#p3r2_1
+{
+    left: 61vw;
+    top: 71vw;
+}
+#p3r2_2
+{
+    left: 61vw;
+    top: 83vw;
+}
+.feedback
+{
+    color: black;
+    background-color: white;
+
+    font-family: "B Nazanin";
+    font-size: 3vw;
+    direction: rtl;
+    text-align: justify;
+
+    position: absolute;
+    right: 37.45vw;
+}
+#p2f1
+{
+    top: 22.5vw;
+    right: 47.3vw;
+}
+#p2f2
+{
+    top: 39.5vw;
+}
+#p2f3
+{
+    top: 55.5vw;
+}
+#p2f4
+{
+    top: 91.5vw;
+}
+#p3f1
+{
+    right: 32.5vw;
+    top: 36.5vw;
+}
+#p3f2_1
+{
+    right: 32.5vw;
+    top: 70.5vw;
+}
+#p3f2_2_1
+{
+    right: 8vw;
+    top: 90vw;
+}
+#p3f2_2_2
+{
+    right: 8vw;
+    top: 94vw;
+}
+#p3f2_2_3
+{
+    right: 8vw;
+    top: 98vw;
+}

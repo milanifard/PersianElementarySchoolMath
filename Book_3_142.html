@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mobin Vahdati Torkha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/MobinVahdati.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
+    <title>ریاضی سوم دبستان</title>
+
+</head>
+
+<body>
+    <div class="right-border">
+        <div class="right-inner-border">
+
+            <div id="title">
+                <div class="title_container">
+                    <div class="title-style">محاسبه ضرب</div>
+                </div>
+            </div>
+
+            <div id="activity_item">
+                <img class="activity-image" src="assets/3rd/images/MobinVahdati/activity.png" alt="activity_image">
+                <div class="activity-text">فعّالیت</div>
+            </div>
+
+            <div>
+                <div id="Q1" class="text-config questions-text-config"> شکل را کامل کنید. سپس حاصل‌ضرب هر بخش را در قسمت مربوط بنویسید.</div>
+
+                <div style="display: flex;">
+                    <div id="crosses_container">
+                        <div id="cr1" class="cross-text">
+                            21
+                            <br>
+                            × 4
+                            <hr>
+                            <input id="Cr1_1" class="cross-input">
+                            <div style="display: inline-block">+ <input id="Cr1_2" class="cross-input" type="number"></div>
+                            <hr>
+                            <input id="Cr1_3" class="cross-input" type="number">
+                        </div>
+                        <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_q11()" style="margin-left:1vw"><span class="ok">تصحیح</span></button>
+                        <div id="cr2" class="cross-text">
+                            232
+                            <br>
+                            × 3
+                            <hr>
+                            <input id="Cr2_1" class="cross-input">
+                            <div style="display: inline-block">+ <input id="Cr2_2" class="cross-input" type="number"></div>
+                            <div style="display: inline-block">+ <input id="Cr2_3" class="cross-input" type="number"></div>
+                            <hr>
+                            <input id="Cr2_4" class="cross-input" type="number">
+                        </div>
+                        <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_q12()" style="margin-left:1vw"><span class="ok">تصحیح</span></button>
+                        <div id="cr3" class="cross-text">
+                            53
+                            <br>
+                            × 3
+                            <hr>
+                            <input id="Cr3_1" class="cross-input">
+                            <div style="display: inline-block">+ <input id="Cr3_2" class="cross-input" type="number"></div>
+                            <hr>
+                            <input id="Cr3_3" class="cross-input" type="number">
+                        </div>
+                        <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_q13()" style="margin-left:1vw"><span class="ok">تصحیح</span></button>
+                        <div id="cr4" class="cross-text">
+                            241
+                            <br>
+                            × 5
+                            <hr>
+                            <input id="Cr4_1" class="cross-input">
+                            <div style="display: inline-block">+ <input id="Cr4_2" class="cross-input" type="number"></div>
+                            <div style="display: inline-block">+ <input id="Cr4_3" class="cross-input" type="number"></div>
+                            <hr>
+                            <input id="Cr4_4" class="cross-input" type="number">
+                        </div>
+                        <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_q14()" style="margin-left:1vw; margin-bottom: 5vw"><span class="ok">تصحیح</span></button>
+                    </div>
+                    <div id="shape_container">
+                    <div>
+                        <img class="image_q1_2" src="./assets/3rd/images/MobinVahdati/Q1_1.png"/>
+                        <main id="m1">
+                            <canvas id="paint-canvas-1" width="1200" height="780" style="width: 18vw; height: 11.7vw;"></canvas>
+                        </main>
+                    </div>
+                    <div>
+                        <img class="image_q1_3" src="./assets/3rd/images/MobinVahdati/Q1_2.png"/>
+                        <main id="m2">
+                            <canvas id="paint-canvas-2" width="1200" height="780" style="width: 18vw; height: 11.7vw;"></canvas>
+                        </main>
+                        <main id="m3">
+                            <canvas id="paint-canvas-3" width="1200" height="780" style="width: 18vw; height: 11.7vw; "></canvas>
+                        </main>
+                    </div>
+                    <div>
+                        <img class="image_q1_2" src="./assets/3rd/images/MobinVahdati/Q1_3.png"/>
+                        <main id="m4">
+                            <canvas id="paint-canvas-4" width="1200" height="780" style="width: 18vw; height: 11.7vw;"></canvas>
+                        </main>
+                        <main id="m5">
+                            <canvas id="paint-canvas-5" width="1200" height="780" style="width: 18vw; height: 11.7vw;"></canvas>
+                        </main>
+                    </div>
+                    <div>
+                        <img class="image_q1_3" src="./assets/3rd/images/MobinVahdati/Q1_4.png"/>
+                        <main id="m6">
+                            <canvas id="paint-canvas-6" width="1200" height="780" style="width: 18vw; height: 11.7vw;"></canvas>
+                        </main>
+                        <main id="m7">
+                            <canvas id="paint-canvas-7" width="1200" height="780" style="width: 18vw; height: 11.7vw;"></canvas>
+                        </main>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="page-number">۱۴۲</div>
+            <div class="page-no-input">
+                <div id="next_btn">
+                    <a href="book_3_141.html">
+                        <img src="assets/3rd/images/left-arrow.png" alt="next_page" style="width: 3vw">
+                    </a>
+                </div>
+                <div>
+                    <input class="page-number-input input-1 input-2 input-3" type="number" name="page_number"
+                           id="page_switcher" style="width: 5vw" value="142">
+                </div>
+                <div id="pre_btn">
+                    <a href="book_3_143.html">
+                        <img src="assets/3rd/images/right-arrow.png" alt="next_page" style="width: 3vw">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="assets/3rd/js/MobinVahdati.js" type="text/javascript" params="124"></script>
+
+</html>
