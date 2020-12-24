@@ -40,8 +40,8 @@ function correct_type1(inp_id,input_val,true_radio,false_radio){
     }
 }
 
-function correct_type2(values){
-    input_ids = document.getElementsByName("group2");
+function correct_type2(group_name,values){
+    input_ids = document.getElementsByName(group_name);
 
     if (input_ids.length!==values.length){
         return;
