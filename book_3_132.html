@@ -5,9 +5,12 @@
   <title>page 132</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/3rd/css/mohajer.css">
+  <link rel="stylesheet" href="./assets/3rd/css/mohajer/input-page.css">
   <script src="assets/3rd/js/mohajer/core.js"></script>
   <script src="assets/3rd/js/mohajer/charts.js"></script>
   <script src="assets/3rd/js/mohajer/animated.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <style>
 
@@ -37,25 +40,70 @@
       </div>
 
 
-     <div style="padding-right:2vw;padding-top:2vw;">
+      <div style="padding-right:2vw;padding-top:2vw;">
         <div class="farhangeKhandan">
-        <img src="assets/3rd/images/mohajer/boy.png" class="pic_boy">
-        <p>
-          خداوند جهان را به گونه‌ای آفریده است که توانایی‌ها، استعدادها، هنرها، مهارتها، ثروت ها و حتی پدیده های طبیعی مثل زلزله، سیل و طوفان به طور منظمی توزیع شده‌اند. برای مثال، اگر قد آدم‌ها را در نظر بگیریم، می بینیم که در هر جامعه تعداد محدودی قدبلندند و در مقابل آنها نیز تعدادی قد بسیار کوتاهی دارند. بقیه ی آدم‌ها هم دارای قد متوسطی هستند. پس توزيع قد آدم ها یک نظم دارد. کوتاه قد، متوسط، بلند قد. در مورد هوش هم همین طور است. تعدادی از انسان ها هوش فوق العاده‌ای دارند. در برابر آنها نیز تعدادی هستند که هوش پایینی دارند. اما اغلب انسان‌ها دارای هوش متوسط‌اند و با تلاش و پشتکار و به خصوص داشتن نظم در کارهایشان می توانند به موفقیت
-برسند.
+          <img src="assets/3rd/images/mohajer/boy.png" class="pic_boy">
+          <p>
+            خداوند جهان را به گونه‌ای آفریده است که توانایی‌ها، استعدادها، هنرها، مهارتها، ثروت ها و حتی پدیده های طبیعی
+            مثل زلزله، سیل و طوفان به طور منظمی توزیع شده‌اند. برای مثال، اگر قد آدم‌ها را در نظر بگیریم، می بینیم که در
+            هر جامعه تعداد محدودی قدبلندند و در مقابل آنها نیز تعدادی قد بسیار کوتاهی دارند. بقیه ی آدم‌ها هم دارای قد
+            متوسطی هستند. پس توزيع قد آدم ها یک نظم دارد. کوتاه قد، متوسط، بلند قد. در مورد هوش هم همین طور است. تعدادی
+            از انسان ها هوش فوق العاده‌ای دارند. در برابر آنها نیز تعدادی هستند که هوش پایینی دارند. اما اغلب انسان‌ها
+            دارای هوش متوسط‌اند و با تلاش و پشتکار و به خصوص داشتن نظم در کارهایشان می توانند به موفقیت
+            برسند.
 
-        </p>
+          </p>
 
         </div>
 
       </div>
-      <div class="page-number" style="margin-right: -6vw;margin-top: 0.1vw;">132</div>
+      <div class="page-number" style="margin-right: -6vw;margin-top: 0.1vw;">
+        <a class='fas fa-angle-double-right	' title="پایان" style='font-size:1.7vw ' href="book_3_147.html"></a>
+        <a class='fas fa-angle-right' title="بعدی" style='font-size:1.7vw ;' href="book_3_133.html"></a>
+        <input type="number" style="width:30%;    font-size:24px;        ; height:4vw;display:inline-block" value="132">
+        <a class='fas fa-angle-left' title="قبلی" style='font-size:1.7vw ;' href="book_3_131.html"></a>
+        <a class='fas fa-angle-double-left' title="شروع" style='font-size:1.7vw' href="book_3_10.html"></a>
 
+      </div>
     </div>
     <div class="background-style" style="margin-top: -31.7vw;"></div>
 
   </div>
 
 </body>
+<script>
+  jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+  jQuery('.quantity').each(function () {
+    var spinner = jQuery(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.quantity-up'),
+      btnDown = spinner.find('.quantity-down'),
+      min = input.attr('min'),
+      max = input.attr('max');
+
+    btnUp.click(function () {
+      var oldValue = parseFloat(input.val());
+      if (oldValue >= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function () {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+  });
+</script>
 
 </html>
