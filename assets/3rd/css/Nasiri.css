@@ -130,7 +130,6 @@ span.question {
     border-radius: 1vw;
     position: relative;
     background-color: white;
-    z-index: 5;
 }
 .main_right {
     margin-left: -6vw;
@@ -141,7 +140,6 @@ span.question {
     border-radius: 1vw;
     position: relative;
     background-color: white;
-    z-index: 5;
 }
 .content_left {
     margin-top: 7vw;
@@ -385,6 +383,29 @@ span>img{
 .left_side_btn{
     margin-right: 3vw;
 }
+.background-style-right{
+    width: 110vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, var(--pink), var(--pink) 1vw, var(--light-pink) 0vw, var(--light-pink) 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+    left: -10vw;
+}
+.background-style-left{
+    width: 110vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, var(--pink), var(--pink) 1vw, var(--light-pink) 0vw, var(--light-pink) 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+    right: -10vw;
+}
+
 #box_img{
     position: relative;
     width: 20vw;
