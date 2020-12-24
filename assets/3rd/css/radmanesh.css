@@ -245,8 +245,14 @@ body {
     border-bottom: 0.3vw solid #4ebf4a;
     border-left: 0.3vw solid #4ebf4a;
     border-right: 0.3vw solid #4ebf4a;
+
+    font-family: B Zar;
 }
 
+.jadval-zarb input{
+    font-family: B Zar;
+    font-size: 2vw;
+}
 
 .jadval-zarb td{
     width: 3vw;

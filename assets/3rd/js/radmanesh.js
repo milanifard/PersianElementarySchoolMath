@@ -190,3 +190,154 @@ function q2_67_bottom_left_l(enteredValue){
         document.getElementById("Q2-67-bottom-left-l").style.borderBottomColor = "red"
     }
 }
+
+
+function q1_68_r(enteredValue){
+    console.log(enteredValue)
+    if(enteredValue == 35){
+        document.getElementById("Q1-68-right").style.borderBottomColor = "#76ff03"
+    }
+    else if(enteredValue != "" && enteredValue != 35){
+        document.getElementById("Q1-68-right").style.borderBottomColor = "red"
+    }
+}
+
+
+function q1_68_l(enteredValue){
+    console.log(enteredValue)
+    if(enteredValue == 24){
+        document.getElementById("Q1-68-left").style.borderBottomColor = "#76ff03"
+    }
+    else if(enteredValue != "" && enteredValue != 24){
+        document.getElementById("Q1-68-left").style.borderBottomColor = "red"
+    }
+}
+
+
+
+function q2_68_r(){
+    if(document.getElementById("Q2-68-r-2").value == 8){
+        document.getElementById("Q2-68-r-2").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-r-2").style.backgroundColor = "red"
+        document.getElementById("Q2-68-r-2").style.color = "white"
+    }
+
+    if(document.getElementById("Q2-68-r-3").value == 12){
+        document.getElementById("Q2-68-r-3").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-r-3").style.backgroundColor = "red"
+        document.getElementById("Q2-68-r-3").style.color = "white"
+    }
+
+    if(document.getElementById("Q2-68-r-4").value == 16){
+        document.getElementById("Q2-68-r-4").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-r-4").style.backgroundColor = "red"
+        document.getElementById("Q2-68-r-4").style.color = "white"
+    }
+
+    if(document.getElementById("Q2-68-r-5").value == 20){
+        document.getElementById("Q2-68-r-5").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-r-5").style.backgroundColor = "red"
+        document.getElementById("Q2-68-r-5").style.color = "white"
+    }
+
+
+    if(document.getElementById("Q2-68-r-6").value == 24){
+        document.getElementById("Q2-68-r-6").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-r-6").style.backgroundColor = "red"
+        document.getElementById("Q2-68-r-6").style.color = "white"
+    }
+
+
+    if(document.getElementById("Q2-68-r-7").value == 28){
+        document.getElementById("Q2-68-r-7").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-r-7").style.backgroundColor = "red"
+        document.getElementById("Q2-68-r-7").style.color = "white"
+    }
+
+
+    if(document.getElementById("Q2-68-r-8").value == 32){
+        document.getElementById("Q2-68-r-8").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-r-8").style.backgroundColor = "red"
+        document.getElementById("Q2-68-r-8").style.color = "white"
+    }
+
+
+    if(document.getElementById("Q2-68-r-9").value == 36){
+        document.getElementById("Q2-68-r-9").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-r-9").style.backgroundColor = "red"
+        document.getElementById("Q2-68-r-9").style.color = "white"
+    }
+
+}
+
+
+function q2_68_l(){
+    if(document.getElementById("Q2-68-l-2-7").value == 14){
+        document.getElementById("Q2-68-l-2-7").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-l-2-7").style.backgroundColor = "red"
+        document.getElementById("Q2-68-l-2-7").style.color = "white"
+    }
+    
+
+    if(document.getElementById("Q2-68-l-2-6").value == 12){
+        document.getElementById("Q2-68-l-2-6").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-l-2-6").style.backgroundColor = "red"
+        document.getElementById("Q2-68-l-2-6").style.color = "white"
+    }
+
+
+    if(document.getElementById("Q2-68-l-2-5").value == 10){
+        document.getElementById("Q2-68-l-2-5").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-l-2-5").style.backgroundColor = "red"
+        document.getElementById("Q2-68-l-2-5").style.color = "white"
+    }
+
+
+
+    if(document.getElementById("Q2-68-l-3-7").value == 21){
+        document.getElementById("Q2-68-l-3-7").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-l-3-7").style.backgroundColor = "red"
+        document.getElementById("Q2-68-l-3-7").style.color = "white"
+    }
+    
+
+    if(document.getElementById("Q2-68-l-3-6").value == 18){
+        document.getElementById("Q2-68-l-3-6").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-l-3-6").style.backgroundColor = "red"
+        document.getElementById("Q2-68-l-3-6").style.color = "white"
+    }
+
+
+    if(document.getElementById("Q2-68-l-3-5").value == 15){
+        document.getElementById("Q2-68-l-3-5").style.backgroundColor = "#76ff03"
+    } else {
+        document.getElementById("Q2-68-l-3-5").style.backgroundColor = "red"
+        document.getElementById("Q2-68-l-3-5").style.color = "white"
+    }  
+}
+
+
+function q3_68(a, b, returnedValue){
+    if(a * b == returnedValue){
+        let id = "Q3-68-" + a + "-" + b
+        document.getElementById(id).style.borderBottomColor = "#76ff03"
+    }
+    else 
+    {
+        let id = "Q3-68-" + a + "-" + b
+        document.getElementById(id).style.borderBottomColor = "red"
+    }
+}

@@ -1,0 +1,27 @@
+body {
+	direction: rtl;
+	margin: 32px 0 32px 0;
+}
+
+ol { 
+    counter-reset: item;
+	list-style-type: none;
+	margin-right: -24px;
+
+	li {
+		&::before {
+			content: counter(item) "ـ"; 
+			color: $darker_pink;
+			counter-increment: item;
+		}
+	}
+}
+
+p {
+	display: inline-block !important;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+}
