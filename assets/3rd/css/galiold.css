@@ -147,6 +147,18 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     flex-direction: column;
 }
 
+.page-title {
+    position: absolute;
+    width: 15vw;
+    top: -3vw;
+    background-color: var(--orange_level2);
+    text-align: center;
+    font-size: 2.5vw;
+    margin-right: 35vw;   
+    border-radius: 5vw;
+    line-height: 5vw;
+}
+
 .background-style{
 
     width: 100%;
