@@ -102,7 +102,7 @@ img {
 	width: 90vw;
     max-width: 90vw;
     border: 0.8vw double $dark_pink;
-    margin: 6vw 8.4vw 0 0;
+    margin: 6vw 8.9vw 0 0;
     border-left: none;
     border-top-right-radius: 5vw;
     border-bottom-right-radius: 5vw;
@@ -149,7 +149,7 @@ img {
 }
 
 .background-style-left {
-	width: 98.4vw;
+	width: 98.9vw;
 	height: 40vw;
 	position: absolute;
     background-image: repeating-linear-gradient(0deg, $dark_pink, $dark_pink 1vw, $light_pink 0vw, $light_pink 2.5vw);
@@ -280,8 +280,9 @@ p {
 
 .circle {
 	position: relative;
-	width: 10px;
-	height: 10px;
+	width: 1vw;
+	height: 1vw;
+	margin-right: 3vw;
 	-moz-border-radius: 7.5px;
 	-webkit-border-radius: 7.5px;
 	border-radius: 7.5px;
@@ -291,30 +292,34 @@ p {
 	&::before {
 		content: '';
 		display: inline-block;
-		width: 10px;
-		height: 10px;
+		width: 1vw;
+		height: 1vw;
 		-moz-border-radius: 7.5px;
 		-webkit-border-radius: 7.5px;
 		border-radius: 7.5px;
 		background-color: $purple;
-		left: 8px;
-		top: 9px;
+		left: 1vw;
+		top: 1vw;
 		position: absolute;
 	}
 
 	&::after {
 		content: '';
 		display: inline-block;
-		width: 10px;
-		height: 10px;
+		width: 1vw;
+		height: 1vw;
 		-moz-border-radius: 7.5px;
 		-webkit-border-radius: 7.5px;
 		border-radius: 7.5px;
-		left: -8px;
+		left: -1vw;
 		position: absolute;
-		top: 9px;
+		top: 1vw;
 		background-color: $purple;
 	}
+}
+
+#circlesWrapperPage_78 {
+	margin-left: 1vw;
 }
 
 .reading-culture {

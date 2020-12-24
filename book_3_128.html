@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amirhosein_Mazrooei">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/Mazrooei.css">
+    <title>ریاضی سوم دبستان</title>
+
+</head>
+
+<body>
+<div>
+    <div class="right-border">
+        <div class="background-style"></div>
+
+        <div id="activity_item">
+            <img id="activity_img" class="activity-image" src="assets/3rd/images/classwork.png" alt="activity_image">
+            <div id="activity_txt" class="activity-text">کار در کلاس</div>
+        </div>
+
+
+        <div id="Q1_container" style="margin-bottom: 10vw;">
+
+            <div id="Q1_125" class="text-config questions-text-config" style="margin-right: 5vw;">1-تعداد گوسفندان چند روستا به صورت تقریبی در جدول زیر مشخص شده است.</div>
+
+            <div id="Q1_table"style="clear:right; padding-top: 0vw; float: right;">
+                <div style="float: left">
+                    <table class="colored-table">
+                        <tr>
+                            <td class="simple-td-green" >محمود آباد</td>
+                            <td class="simple-td-green">وکیل آباد</td>
+                            <td class="simple-td-green">حسن آباد</td>
+                            <td class="simple-td-green">علی آباد</td>
+                            <td class="simple-td-green">نام روستا</td>
+                        </tr>
+                        <tr>
+                            <td class="simple-td-green" style="background-color: var(--yellow_level3_border);" >۶۰۰۰</td>
+                            <td class="simple-td-green" style="background-color: var(--blue_level1);" >۸۰۰۰</td>
+                            <td class="simple-td-green" style="background-color: var(--red_level1);" >۴۰۰۰</td>
+                            <td class="simple-td-green" style="background-color: var(--green_level2);" >۲۰۰۰</td>
+                            <td class="simple-td-green">تعداد گوسفندان</td>
+                        </tr>
+                    </table>
+
+                </div>
+                
+            </div>
+
+            <div style="float: none;margin-right : -1vw;">
+                <div id="Q1_continue1" class="text-config questions-text-config Q1-continue">اگر بخواهید که این اطلاعات رادر نمودار نشان دهید، چه نوع نموداری را انتخاب می کنید؟ پس از انتخاب نمودار آن را رسم کنید.<br>کار خود را با دوستانتان مقایسه کنید.</div>
+                
+                <div id="guess_box_items" style="float: right; margin-right: 5vw;">
+                    <div class="radio-container" >
+                        <label class="text-config"><input class="radio-btn-style" type="radio" name="guess" value="right" id="radio_circle" onclick="Radio_btn(id)">دایره ای</label>
+                    </div>
+                    <div class="radio-container">
+                        <label class="text-config"><input class="radio-btn-style" type="radio" name="guess" value="left" id="radio_bar" onclick="Radio_btn(id)">میله ای</label>
+                    </div>
+                </div>
+                <div style="float: none;margin-right: 15vw">
+                    <div id="Q1_1_feedback" class="text-config"> </div>
+                </div>
+                <div id="circle_q1" style="display: none; float: right; margin-top:1vw;">
+                    <div id="circle_Q1" class="wrapper" style="float: left; margin-right: 10vw">
+                        <div id="Q1_sector1" class="sector" style="transform: rotate(0deg) skew(36deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_sector2" class="sector" style="transform: rotate(36deg) skew(36deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>    
+                        <div id="Q1_sector3" class="sector" style="transform: rotate(72deg) skew(36deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_sector4" class="sector" style="transform: rotate(108deg) skew(36deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_sector5" class="sector" style="transform: rotate(144deg) skew(36deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_sector6" class="sector" style="transform: rotate(180deg) skew(36deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_sector7" class="sector" style="transform: rotate(216deg) skew(36deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_sector8" class="sector" style="transform: rotate(252deg) skew(36deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_sector9" class="sector" style="transform: rotate(288deg) skew(36deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                        <div id="Q1_sector10" class="sector" style="transform: rotate(324deg) skew(53deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    </div>
+                    <br>
+                    <div style=" margin-top: 15vw; padding-left:17vw;">
+                        <div id="Q1_yellow_color" class="color-picker" style="background-color: var(--yellow_level3_border); margin-top: 2.5vw" onclick="color_picker(id)"></div>
+                        <div id="Q1_blue_color" class="color-picker" style="background-color: var(--blue_level1);" onclick="color_picker(id)"></div>
+                        <div id="Q1_red_color" class="color-picker" style="background-color: var(--red_level1);" onclick="color_picker(id)"></div>
+                        <div id="Q1_green_color" class="color-picker" style="background-color: var(--green_level2);" onclick="color_picker(id)"></div>
+                    </div>
+                </div>
+                <div style="float: none;margin-right: 10vw">
+                    <div id="Q1_2_feedback" class="text-config"> </div>
+                </div>
+                <div id="bar_q1" style="display: none;float: left; margin-left: 30vw ;margin-top:10vw;margin-bottom: 20vw;">
+                    <div class="box">
+                        <div class="skill">
+                            <div class="graph" id="graph1">
+                                
+                            </div>
+                            <div class="percent">
+                                <input id="percent1" style="width: 3vw; height: 1vw; font-size: 1vw;" onchange=Q1_bar_input(id,1) type="number"  value="0"  min="0" max="100">
+                            </div>
+                            <div class="name">علی آباد</div>
+                        </div>
+                        <div class="skill">
+                            <div class="graph"id="graph2">
+                                
+                            </div>
+                            <div class="percent">
+                                <input id="percent2" style="width: 3vw; height: 1vw; font-size: 1vw;" onchange=Q1_bar_input(id,2) type="number"  value="0"  min="0" max="100">
+                            </div>
+                            <div class="name">حسن آباد</div>
+                        </div>
+                        <div class="skill">
+                            <div class="graph" id="graph3">
+                                
+                            </div>
+                            <div class="percent">
+                                <input id="percent3" style="width: 3vw; height: 1vw; font-size: 1vw;" onchange=Q1_bar_input(id,3) type="number"  value="0"  min="0" max="100">
+                            </div>
+                            <div class="name">وکیل آباد</div>
+                        </div>
+                        <div class="skill">
+                            <div class="graph"id="graph4">
+                            </div>
+                            <div class="percent">
+                                <input id="percent4" style="width: 3vw; height: 1vw; font-size: 1vw;" onchange=Q1_bar_input(id,4) type="number"  value="0"  min=0 max=100>
+                            </div>
+                            <div class="name">محمودآباد</div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div id="Q2_container" style="clear: both; margin-bottom: 60vw;">
+
+            <div id="Q2_125" style="float: right; width: 50%;" class="text-config questions-text-config">خانم حسنی از ۳۰ دانش‌آموز پرسید که کدام نوع بستنی را بیشتر دوست دارند. بعد هم جدول زیر را کشید و پاسخ‌های آن‌ها را در آن ثبت کرد.شما چه نموداری را برای چنین موضوعی مناسب می<br>آن را رسم کنید.</div>
+
+            <div style=" float: none;">
+                <img id="Q1_Book_Shelf" src="assets\3rd\images\Mazrooei\ice cream.PNG" alt="Book_Shelf" style="float: left; width: 35%;margin-left: 4vw; margin-top:7vw">
+            </div>
+            <div style="float: none;margin-right: 17vw">
+                <div id="Q2_1_feedback" class="text-config"> </div>
+            </div>
+            <div id="guess_box_items" style="float: right; margin-right: 5vw;">
+                <div class="radio-container" >
+                    <label class="text-config"><input class="radio-btn-style" type="radio" name="guess" value="right" id="radio_circle_2" onclick="Radio_btn(id)">دایره ای</label>
+                </div>
+                <div class="radio-container">
+                    <label class="text-config"><input class="radio-btn-style" type="radio" name="guess" value="left" id="radio_bar_2" onclick="Radio_btn(id)">میله ای</label>
+                </div>
+            </div>
+            <div id="circle_q2" style="display: none;float: right; margin-right: 10vw">
+                <div id="circle_Q2" class="wrapper" style="float: right; margin-right: 10vw">
+                    <div id="Q2_sector1" class="sector" style="transform: rotate(0deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector2" class="sector" style="transform: rotate(12deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>    
+                    <div id="Q2_sector3" class="sector" style="transform: rotate(24deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector4" class="sector" style="transform: rotate(36deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector5" class="sector" style="transform: rotate(48deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector6" class="sector" style="transform: rotate(60deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector7" class="sector" style="transform: rotate(72deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector8" class="sector" style="transform: rotate(84deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector9" class="sector" style="transform: rotate(96deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector10" class="sector" style="transform: rotate(108deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector11" class="sector" style="transform: rotate(120deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector12" class="sector" style="transform: rotate(132deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector13" class="sector" style="transform: rotate(144deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector14" class="sector" style="transform: rotate(156deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector15" class="sector" style="transform: rotate(168deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector16" class="sector" style="transform: rotate(180deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector17" class="sector" style="transform: rotate(192deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector18" class="sector" style="transform: rotate(204deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector19" class="sector" style="transform: rotate(216deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector20" class="sector" style="transform: rotate(228deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector21" class="sector" style="transform: rotate(240deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector22" class="sector" style="transform: rotate(252deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector23" class="sector" style="transform: rotate(264deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector24" class="sector" style="transform: rotate(276deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector25" class="sector" style="transform: rotate(288deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector26" class="sector" style="transform: rotate(300deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector27" class="sector" style="transform: rotate(312deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector28" class="sector" style="transform: rotate(324deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector29" class="sector" style="transform: rotate(336deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                    <div id="Q2_sector30" class="sector" style="transform: rotate(348deg) skew(78deg);" onclick="sector_coloring(id, 'P124-Q2');" onmouseover="hover(id)"></div>
+                </div>
+                <br>
+                <div style=" margin-top: 15vw; padding-left:17vw;">
+                    <div id="Q2_yellow_color" class="color-picker" style="background-color: var(--yellow_banana); margin-top: 2.5vw" onclick="color_picker(id)"></div>
+                    <div id="Q2_blue_color" class="color-picker" style="background-color: var(--brown_choclate);" onclick="color_picker(id)"></div>
+                    <div id="Q2_red_color" class="color-picker" style="background-color: var(--pink_cherry);" onclick="color_picker(id)"></div>
+                    <div id="Q2_green_color" class="color-picker" style="background-color: var(--yellow_saffron);" onclick="color_picker(id)"></div>
+                </div>
+            </div>
+            <div id="bar_q2" style="display: none;float: left; margin-left: 30vw ;margin-top:10vw;margin-bottom: 20vw;">
+                <div class="box">
+                    <div class="skill">
+                        <div class="graph" id="graph2_1">
+                            
+                        </div>
+                        <div class="percent">
+                            <input id="percent2_1" style="width: 3vw; height: 1vw; font-size: 1vw;" onchange=Q2_bar_input(id,1) type="number"  value="0"  min="0" max="100">
+                        </div>
+                        <div class="name">موزی</div>
+                    </div>
+                    <div class="skill">
+                        <div class="graph"id="graph2_2">
+                            
+                        </div>
+                        <div class="percent">
+                            <input id="percent2_2" style="width: 3vw; height: 1vw; font-size: 1vw;" onchange=Q2_bar_input(id,2) type="number"  value="0"  min="0" max="100">
+                        </div>
+                        <div class="name">شکلاتی</div>
+                    </div>
+                    <div class="skill">
+                        <div class="graph" id="graph2_3">
+                            
+                        </div>
+                        <div class="percent">
+                            <input id="percent2_3" style="width: 3vw; height: 1vw; font-size: 1vw;" onchange=Q2_bar_input(id,3) type="number"  value="0"  min="0" max="100">
+                        </div>
+                        <div class="name">توت‌فرنگی</div>
+                    </div>
+                    <div class="skill">
+                        <div class="graph"id="graph2_4">
+                        </div>
+                        <div class="percent">
+                            <input id="percent2_4" style="width: 3vw; height: 1vw; font-size: 1vw;" onchange=Q2_bar_input(id,4) type="number"  value="0"  min=0 max=100>
+                        </div>
+                        <div class="name">زعفرانی</div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+
+        
+
+        <div class="page-number">۱۲۸</div>
+        <div class="page-no-input">
+            <div style="float: left; margin-right: 2vw; margin-top: 1vw">
+                <a href="book_3_129.html">
+                    <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+                </a>
+            </div>
+            <div class="page-number" style="float: left; position: relative; padding: 0.1vw 1vw; right: 0; bottom: 0">
+                <input style="width: 5vw; font-size: 1.5vw; background-color: var(--orange_level2); text-align: center; color: white" type="number" name="page_number" id="page_switcher">
+            </div>
+            <div style="float: left; margin-left: 2vw; margin-top: 1vw">
+                <a href="book_3_127.html">
+                    <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="next_page">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+<script src="assets/3rd/js/Mazrooei.js" type="text/javascript" params="128"></script>
+
+
+
+</html>

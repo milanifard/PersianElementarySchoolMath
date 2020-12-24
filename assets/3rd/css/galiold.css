@@ -1,0 +1,439 @@
+@font-face {
+    font-family: Zar;
+    src: url('../../fonts/Zar.woff') format('woff');
+}
+
+:root {
+    --yellow_level1_guessbox: #fffce0;
+    --yellow_level2_border: #ffdd2b;
+    --yellow_level3_border: #fecc4e;
+    --yellow_level4_guessbox: #fcb94b;
+
+    --red_level1: #f0595b;
+    --red_level2: #c8242b;
+    --red_level3: #db3f32;
+
+    --blue_level0: #d4effb;
+    --blue_level1: #6bcff6;
+    --blue_level2: #3853a3;
+    --blue_level3: #4192a7;
+
+    --green_level0: #d2e287;
+    --green_level1: #bbd75e;
+    --green_level2: #87c765;
+    --green_level3: #44b869;
+    --green_level4: #3ab54a;
+
+    --orange_level1: #fee6d3;
+    --orange_level2: #fcb94b;
+    --orange_level3: #f89f6d;
+
+    --purple: #b09ac9;
+    --bright_purple: #da156a;
+
+    --pink_level0: #fbdfeb;
+    --pink: #f287b6;
+
+
+    --dynamic_rnd: 0;
+    --dynamic_rnd_last: 0;
+}
+
+
+body{
+    margin: 0;
+    font-family: Zar;
+    padding-bottom: 10vw;
+    padding-top: 5vw;
+    display: flex;
+    background-image: url('../images/galiold/background.svg');
+    background-repeat: no-repeat;
+    position: relative;
+    justify-content: center;
+}
+
+body.cover{
+    background-image: url('../images/galiold/page115-bg.svg');
+    background-size: 100%;
+}
+
+.cover-page {
+    direction: rtl;
+    width: 60vw;    
+    display: flex;
+    align-items:flex-end;
+    flex-direction: column;
+    padding: 2vw;
+    position: relative;
+}
+
+.cover-title {
+    position: absolute;
+    border: .2vw solid rgb(240, 147, 40);
+    border-right: none;
+    font-size: 3vw;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    right: 0;
+    padding-right: 5vw;
+    padding-left: 2vw;
+    background-color: white;
+    color: var(--blue_level3);
+}
+
+.cover-page .img1 {
+    width: 25vw;
+    margin-bottom: 5vw;
+}
+
+.cover-page .img2 {
+    width: 50vw;
+    margin-bottom: 3vw;
+}
+
+.cover-desc {
+    width: 30vw;
+    border: .2vw solid rgb(240, 147, 40);
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    padding: 1vw;
+    background-color: white;
+}
+
+
+body.left-border {
+    justify-content: right;
+    background-position: bottom;
+}
+
+body.right-border {
+    justify-content: left;
+    background-position: bottom;
+}
+
+/* In order to ignore input top-down btn */
+input[type='number'] {-moz-appearance:textfield;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+
+
+.right-border-page {
+    direction: rtl;
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double var(--yellow_level2_border);
+    border-left: none;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: relative;
+    background-color: white;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-border-page {
+    direction: rtl;
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double var(--yellow_level2_border);
+    border-right: none;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    position: relative;
+    background-color: white;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title {
+    position: absolute;
+    width: 15vw;
+    top: -3vw;
+    background-color: var(--orange_level2);
+    text-align: center;
+    font-size: 2.5vw;
+    margin-right: 35vw;   
+    border-radius: 5vw;
+    line-height: 5vw;
+}
+
+.background-style{
+
+    width: 100%;
+    height: 20vw;
+    background-image: repeating-linear-gradient(0deg, var(--yellow_level2_border), var(--yellow_level2_border) 1vw, var(--yellow_level3_border) 0vw, var(--yellow_level3_border) 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -30vw;
+    z-index: -1;
+}
+
+.page-number{
+
+    background-color: var(--yellow_level4_guessbox);
+    border-radius: 2.5vw;
+    border: 0.9vw double white;
+
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+
+    padding: 0 3vw;
+    position: absolute;
+    bottom: -0.5vw;
+    right: -5vw;
+}
+
+
+
+.activity-text{
+
+    background-color: var(--yellow_level3_border);
+    border-radius: 1.5vw;
+
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.5vw;
+    color: white;
+
+    padding: 0 11vw 0 3vw;
+    position: absolute;
+    right: 2vw;
+    top: 2.5vw;
+    z-index: 1;
+}
+
+.activity-image{
+    width: 13vw;
+    position: absolute;
+    right: -2.3vw;
+    top: 0.5vw;
+    z-index: 2;
+}
+
+
+.question-container {
+    padding-right: 3vw;
+    padding-left: 15vw;
+    padding-bottom: 2vw;
+    margin-top: 2vw;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-container.first {
+    padding-top: 6vw;
+    padding-right: 15vw;
+}
+
+.question-container.right {
+    margin-top: 7vw;
+}
+
+.question-container.last {
+    margin-bottom: 30vw;
+}
+
+.question-container .prompt {
+    direction: rtl;
+}
+
+.guide {
+    color: var(--bright_purple);
+}
+
+.test-pane {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ans-pane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 2vw;
+    position: relative;
+}
+
+.diagram-pane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diagram-pane img {
+    max-width: 100%;
+}
+
+.ans-box {
+    width: 2vw;
+    height: 2vw;
+    border: 2px solid green;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.ans-rect {
+    width: 10vw;
+    height: 2vw;
+    border: 2px solid green;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.ans-rect.extended {
+    width: 100%;
+    text-align: right;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+.ans-pane img {
+    width: 8vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.ans-pane button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    padding: 0 2vw .5vw 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    font-family: Zar;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    border-radius: 1vw;
+}
+
+.ans-pane button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.ans-pane label {
+    margin-right: 2vw;
+}
+
+.feedback {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding-right: 10vw;
+}
+
+.feedback.correct {
+    color: green;
+}
+
+.feedback.wrong {
+    color: red;
+}
+
+
+.footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    bottom: -3vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+.footer img {
+    width: 25vw;
+}
+
+.sub-footer.txt.left {
+    border: .2vw solid var(--orange_level3);
+    font-size: 2vw;
+    padding-left: 2vw;
+    padding-right: 12vw;
+    background-color: white;
+}
+
+.sub-footer.txt.left img{
+    position: absolute;
+    width: 12vw;
+    bottom: 0;
+    right: -2vw;
+}
+
+.sub-footer.txt.right {
+    border: .2vw solid var(--orange_level3);
+    font-size: 2vw;
+    padding-left: 12vw;
+    padding-right: 2vw;
+    background-color: white;
+}
+
+.sub-footer.txt.right img{
+    position: absolute;
+    width: 15vw;
+    bottom: 0;
+    left: -3vw;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1vw;
+    left: 0;
+    right: 0;
+    align-self: center;
+}
+
+.pagination a {
+    padding: 0;
+    margin: 0;
+}
+
+.pagination a img {
+    width: 3vw;
+}
+
+.page-number-input{
+    background-color: var(--yellow_level4_guessbox);
+    border-radius: 2vw;
+    border: 0.9vw double white;
+    text-align: center;
+    color: white;
+    font-family: Zar;
+    font-size: 2vw;
+    padding: 0;
+    width: 5vw
+}
+.page-number-input::placeholder {
+    opacity: 1;
+}
+
+/* Specific styles for page 117 */
+.match-counter {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+svg {
+    width: 15vw;
+    height: auto;
+}
