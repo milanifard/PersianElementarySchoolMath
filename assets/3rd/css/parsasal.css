@@ -9681,7 +9681,12 @@ html {
 
 .page-number-button {
   width: 3em;
-  color: white;
+}
+
+@media (min-width: 1024px) {
+  .page-number-button {
+    color: white;
+  }
 }
 
 .page-number-button a {
