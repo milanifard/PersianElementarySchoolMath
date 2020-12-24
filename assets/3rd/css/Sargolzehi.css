@@ -111,7 +111,7 @@
 }
 
 .question-2-container {
-    margin: 0 8vw 8.5vw 10vw;
+    margin: 0 8vw 2vw 10vw;
     direction: rtl;
 }
 
@@ -204,7 +204,7 @@
     height: 10vw;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     padding: 1vw;
     margin-bottom: 1vw;
 }
