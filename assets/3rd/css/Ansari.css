@@ -3,8 +3,8 @@
   src: url(./../../fonts/Ansari/B\ Koodak.ttf);
 }
 @font-face {
-  font-family: nazanin;
-  src: url(./../../fonts/Ansari/B\ Nazanin.ttf);
+  font-family: zar;
+  src: url(./../../fonts/Zar.ttf);
 }
 
 h1{
@@ -23,7 +23,7 @@ h5{
   font-family: kodak;
 }
 p , span , input{
-  font-family: nazanin ;
+  font-family: zar ;
 }
 
 .page{
