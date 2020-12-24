@@ -19,11 +19,7 @@
         curved_line.position = new Point(300, 200);
         curved_line.rotate(-45);
 
-        var circle = new Path.Circle({
-            center: view.center,
-            radius: 5,
-            fillColor: 'green'
-        });
+        
         
         var path = new Path({
             strokeColor: '#E4141B',
@@ -31,7 +27,11 @@
             strokeCap: 'round'
         });
 
-
+        var circle = new Path.Circle({
+            center: view.center,
+            radius: 5,
+            fillColor: 'green'
+        });
         var start = view.center / [10, 1];
         for (var i = 0; i < points; i++)
             path.add(start + new Point(i * length, 0));

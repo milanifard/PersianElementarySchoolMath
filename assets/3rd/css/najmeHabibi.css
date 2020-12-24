@@ -23,7 +23,6 @@ body {
 }
 
 .right-border{
-
     width: 90vw;
     max-width: 100%;
     border: 0.8vw double #A088BA;
@@ -96,32 +95,7 @@ body {
 }
 .page{
     margin-top: 2vw;
-}
-
-.farhang-title{
-    background-color: #A088BA;
-    border-radius: 1.1vw 0 0 1.1vw;
-    text-align: right;
-    font-family: 'Koodak';
-    font-size: 2.25vw;
-    color: black;
-
-    padding: 0 5vw 0 3vw;
-    right: 8vw;
-    top: 2.5vw;
-    z-index: 1;
-}
-
-.Question{
-    text-align: right;
-
-    font-family: 'Zar';
-    font-size: 2vw;
-    color: black;
-    margin-right: 7vw; 
-    margin-bottom: 5vw; 
-    white-space: pre-wrap;
- 
+    position: relative;
 }
 
 /* pagination*/
@@ -177,4 +151,188 @@ body {
     color: white;
     font-size: 4.5vw;
     display: flex;
+}
+
+.general-title {
+    background-color: #A088BA;
+    border-radius: 1.7vw 0 0 1.7vw;
+    text-align: left;
+    font-family: 'Koodak';
+    font-size: 2.25vw;
+    color: black;
+    /*position: absolute;*/
+    margin-top: 3vw;
+    margin-left: 72vw;
+    padding: 0 1vw 0 1vw;
+}
+
+.activity-title {
+    border-radius: 1.1vw;
+    color: white;
+    margin-top: unset;
+    margin-left: unset;
+    position: absolute;
+    top: 3vw;
+    left: 75vw;
+    right: 0;
+}
+
+.answer-text-area {
+    font-family: 'Koodak';
+    font-size: 2vw;
+    direction: rtl;
+    width: 70vw;
+    height: 10vw;
+    padding: 1vw;
+    box-sizing: border-box;
+    border: 0.3vw solid #79c2d2;
+    border-radius: 2vw;
+    background-color: #f8f8f8;
+    resize: none;
+    /*position: absolute;*/
+    margin-left: 10vw;
+    margin-top: 0.5vw;
+}
+
+.q6-answer-text-area {
+    direction: ltr;
+    height: 6vw;
+    margin-bottom: 2vw;
+}
+
+.question-text {
+    font-family: 'Zar';
+    font-size: 2vw;
+    direction: rtl;
+    text-align: right;
+    color: black;
+    margin-right: 7vw;
+    margin-top: 1vw;
+    white-space: pre-wrap;
+    /*position: relative;*/
+}
+
+.q3-text {
+    margin-top: unset;
+    margin-right: unset;
+    position: absolute;
+    top: 3vw;
+    left: 0;
+    right: 25vw;
+}
+
+.q4-text {
+    margin-top: 27vw;
+}
+
+.q6-text {
+    margin-top: 14vw;
+}
+
+.relative-position {
+    position: relative;
+}
+
+/* q3 */
+
+.clock-image {
+    width: 12vw;
+    height: 11vw;
+    position: absolute;
+    top: 10vw;
+}
+
+.clock-image-1 {
+    left: 10vw;
+}
+
+.clock-image-2 {
+    left: 25vw;
+}
+
+.clock-image-3 {
+    left: 40vw;
+}
+
+.clock-image-4 {
+    left: 55vw;
+}
+
+.clock-text-1 {
+    position: absolute;
+    top: 22vw;
+    left: 15vw
+}
+
+.clock-text-2 {
+    position: absolute;
+    top: 22vw;
+    left: 30vw
+}
+
+.clock-text-3 {
+    position: absolute;
+    top: 22vw;
+    left: 45vw
+}
+
+.clock-text-4 {
+    position: absolute;
+    top: 22vw;
+    left: 60vw
+}
+
+/* q4 */
+
+.papers-image {
+    width: 32vw;
+    height: 8vw;
+    position: absolute;
+    top: 4vw;
+    left: 10vw;
+}
+
+.short-answer-area {
+    width: 5vw;
+    margin: 0 0.5vw 0 0.5vw;
+    padding: 0 0.5vw 0 0.5vw;
+
+    font-family: 'Koodak';
+    font-size: 2vw;
+    direction: rtl;
+
+    box-sizing: border-box;
+    border: 0.3vw solid #79c2d2;
+    border-radius: 1vw;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+/* q5 */
+
+.pattern-image {
+    width: 12vw;
+    height: 12vw;
+    position: absolute;
+    top: 4vw;
+}
+
+.pattern-image-1 {
+    left: 10vw;
+}
+
+.pattern-image-2 {
+    left: 25vw;
+}
+
+.pattern-image-3 {
+    left: 40vw;
+}
+
+.pattern-image-4 {
+    left: 55vw;
+}
+
+.pattern-image-5 {
+    left: 70vw;
 }

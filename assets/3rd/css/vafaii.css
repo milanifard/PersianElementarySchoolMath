@@ -34,6 +34,10 @@
 
 }
 /*-----------------------------------*/
+@font-face {
+    font-family: 'zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
 
 .right-border{
 
@@ -288,6 +292,28 @@
     font-size: 1.5vw;
 }
 
+.correct-ans {
+    position: relative;
+    border: 3px solid green;
+    outline: none;
+}
+
+.wrong-ans {
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+    border: 1px solid red;
+    outline: none;
+}
+
+@keyframes shake {
+    0% {
+        left: -5px;
+    }
+    100% {
+        right: -5px;
+    }
+}
 /*-----------------------------------*/
 
 
