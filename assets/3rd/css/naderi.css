@@ -160,19 +160,33 @@ input[type=number] {
     text-align: center;
     font-family:BNazanin,'BNazanin';
     /* font-family: Koodak; */
-    font-size: 2.5vw;
+    font-size: 1.9em;
     color: white;
 
-    padding: 0 11vw 0 3vw;
+    padding: 0 2vw 0 2vw;;
     position: absolute;
-    right: 3vw;
+    right: 4vw;
     top: 2.5vw;
     /* z-index: 1; */
 
-    margin-right: 3vw;
+    margin-right: 10vw;
 }
 
+#top136title{
+    background-color: var(--pink_level2);
+    border-radius: 1.5vw;
 
+    text-align: center;
+    font-family:BNazanin,'BNazanin';
+    /* font-family: Koodak; */
+    font-size: 2.5vw;
+    color: black;
+
+    padding: 0 1.2vw 0 1.2vw;
+    position: absolute;
+    margin-left:33%; 
+    margin-top: -11vw;
+}
 
 .questions-number {
     color: var(--pink);
@@ -180,8 +194,9 @@ input[type=number] {
 .text {
     font-family:BNazanin,'BNazanin';
     /* font-family: BNazanin; */
-    font-size: x-large;
+    font-size: 1.8em;
     direction: rtl;
+
     /* white-space: pre-wrap; */
 }
 #little_boy_image {
@@ -189,12 +204,12 @@ input[type=number] {
     float: left;
     width: 10vw;
     margin-left: 12vw;
-    margin-top: -8vh;
+    margin-top: -6vw;
     margin-bottom: 2vh;  
 }
 
 #pen_img{
-    /* width: 8vw; */
+    width: 12em;
     /* height: 10vh; */
     margin-top: -7vw;
     float: left;
@@ -204,7 +219,7 @@ input[type=number] {
     float: left;
     width: 15vw;
     /* margin-left: 1vw; */
-    margin-top: -10vh;
+    margin-top: -6vw;
     margin-bottom: 2vh;  
 }
 #p137q1_content {
@@ -223,15 +238,16 @@ input[type=number] {
 
 table, td, th {
     text-align: left;
-
+    font-size: 1.4em;
+    font-family:BNazanin,'BNazanin';
   }
-  
+
 table {
     /* font-family:Kodak ; */
     margin-top: 2vw;
     width: 100%;
     border-collapse: collapse;
-    font-size: 2vw;
+    
 }
 .center_th{
     text-align: center;
@@ -240,7 +256,7 @@ table {
     margin-top: 5vw;
     width: 100%;
     border-collapse: collapse;
-    font-size: 2vw;
+    /* font-size: 2vw; */
     float: right;
     display: inline;
 }
@@ -258,15 +274,19 @@ table {
     margin-top: 1vw;
 }
 #content_136 #Q1_container {
+    /* font-size: 2vw; */
     padding-right: 10vw;
+    /* font-size: 2vw; */
 }
 #content_137 #Q1_container {
+    position: relative;
     padding-right: 20vw;
-    margin-top: 2.8vh;
+    margin-top: 1.5vw;
 }
 
 #content_136 #Q1_description {
     float: right;
+    /* font-size: 2vw; */
 }
 
 .right_q_container {
@@ -400,15 +420,12 @@ table {
    
   }
   .shape_container{
-    /* height: 20vh; 
-    width: 10vw; */
-    /* margin-top: ; */
     float: left;
-    margin-right: 1.5vw;
+    margin-right: 0.5vw;
   }
   .shape_container_l{
     float: left;
-    margin-right: 13vw;
+    margin-right: 5vw;
     margin-top: 2vw;
     height: 13vw;
   }
@@ -416,5 +433,7 @@ table {
     width: 2vw;
   }
   .med_number_in{
-    width: 4vw;
+    height: 3vw;
+    width:  4.5vw;
+    font-size: 3vw;
   }
