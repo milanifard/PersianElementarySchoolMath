@@ -9434,6 +9434,67 @@ canvas[resize] {
   border-radius: 10px;
 }
 
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  background-image: none;
+  background: #F13F52;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+.option-select {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10em;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: .25em;
+}
+
+select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* Arrow */
+.option-select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
+  background: #DC302F;
+}
+
+/* Transition */
+.option-select:hover::after {
+  color: #f39c12;
+}
+
 @font-face {
   font-family: 'Zar';
   src: url("/assets/fonts/Zar.eot");

@@ -35,7 +35,6 @@ body{
 
 .border{
     width: 90%;
-    /* padding: 70% 0; */
     background: white;
     border: 0.8vw double var(--purple-dark) ;
     border-radius: 0 4vw 4vw 0 ;
@@ -99,11 +98,9 @@ body{
     font-size: 2vw;
     font-family: ZAR,koodak;
     color: white;
-
-    padding: 0 3vw;
-    position: absolute;
-    bottom: -0.5vw;
-    right: -5vw;  
+    direction: rtl;
+    padding: 0.7vw 1vw;
+    float: left; 
 }
 
 .activity-text{
@@ -137,7 +134,7 @@ body{
 
 .question{
     line-height: 1.8;
-    font-family: ZAR,koodak,Faraz;
+    font-family: ZAR,Faraz;
     font-size: 2vw;
     direction: rtl;
     font-weight: 1px;
@@ -268,13 +265,35 @@ td{
 .textarea {
     font-size:2vw;
     font-family: ZAR,Faraz;
+    direction: rtl;
 
     border : none;
-    border: 1px solid var(--purple);
-    border-radius: 0.5vw;
+    border: 0.5vw solid var(--purple);
+    border-radius: 2vw;
     margin: 2vw 8vw 0 2vw;
     margin-left: 10vw;
+    resize: none;
+    width: 55vw;
+    height: 10vw;
+    box-sizing: border-box;
+    padding: 2vw;
+}
+.submit{
+    font-size: 2vw;
+    font-family: ZAR,Faraz;
 
+    background-color: var(--purple--title);
+    border-radius: 1vw;
+    border: none;
+    color: black;
+    padding: 1.5vw 2vw;
+    text-align: center;
+    text-decoration: none;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: var(--purple-dark);
+    color: black;
 }
 
 .Rectangle{
@@ -295,4 +314,42 @@ td{
 }
 .padding_R5{
     padding-right : 3.6vw;
+}
+
+.page-no-input{
+
+    width: 25vw;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -7vw;
+    margin: auto;
+}
+
+#next_btn{float: left;margin-top: 1.4vw; margin-right: 1.5vw;}
+#pre_btn{float: left;margin-top: 1.4vw; margin-left: 1.5vw;}
+
+.message {
+    font-size: 3vw;
+    font-family: ZAR,Faraz;
+    direction: rtl;
+
+    background: #f8f1f1;
+    width:  20vw;
+    height: 8vw;
+    position: fixed;
+    left: 3vw;
+    top: 3vw;
+    border: 0.5vw solid var(--purple-light);
+    border-radius: 20px;
+    z-index: 5;
+    box-shadow: 3px 5px #888888;
+
+    transition: all 1s linear;
+
+    opacity: 0;
+    display: none;
+    
+    justify-content: center;
+    align-items: center;
 }

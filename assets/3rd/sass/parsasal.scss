@@ -1,7 +1,8 @@
 $color-1 : #F13F52;
 $color-2 : #DC302F;
+$my-light :#f0cacf ;
 $theme-colors: ("primary": $color-1,
-    "light": #f0cacf //   "secondary": $color-2
+    "light": $my-light//   "secondary": $color-2
 );
 
 
@@ -398,8 +399,66 @@ canvas[resize] {
     border-radius: 10px;
 }
 
+/* Reset Select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 ;
+    background-image: none;
+    background: $color-1;
 
-@import "./parsasal/_fonts.scss";
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+}
+
+/* Custom Select */
+.option-select {
+    position: relative;
+    display: flex;
+    width: 10em;
+    height: 3em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+
+}
+
+select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Arrow */
+.option-select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+    background: $color-2;
+}
+
+/* Transition */
+.option-select:hover::after {
+    color: #f39c12;
+}
+
+@import "./parsasal/fonts";
 @import "./parsasal/alertbox";
 @import "./parsasal/pagination";
 @import "./parsasal/modalanimation";

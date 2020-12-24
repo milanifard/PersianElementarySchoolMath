@@ -1,0 +1,524 @@
+@font-face{
+    font-family: 'Zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Koodak';
+    src: url("../../fonts/KoodakBold.ttf");
+}
+*{
+    font-family: 'Zar';
+}
+
+/* all pages background*/
+input {
+    font-family: 'Koodak';
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.right-border{
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double #A088BA;
+    margin: 6vw 10vw 0 0;
+    border-left: none;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+
+.left-border{
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double #A088BA;
+    margin: 6vw 0 0 10vw;
+    border-right: none;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+
+.left-background-style{
+    width: 100vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, #A088BA, #A088BA 1vw, #CEB4D5 0vw, #CEB4D5 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+}
+.right-background-style{
+    width: 100vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, #A088BA, #A088BA 1vw, #CEB4D5 0vw, #CEB4D5 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+    left: -11vw;
+}
+
+/* page 58 style*/
+.title-fasl{
+    background-color: #A088BA;
+    border-radius: 1vw;
+    text-align: center;
+    font-family: 'Koodak';
+    font-size: 2.5vw;
+    color: white;
+    padding: 0.5vw 1.2vw;
+    position: absolute;
+    right: 37vw;
+    left: 37vw;
+    top: -2.8vw;
+}
+
+.line-title-background{
+    height: 1vw;
+    background-color: #6d0033;
+    color: #6d0033;
+    border-style: solid;
+    position: absolute;
+    right: 36vw;
+    left: 36vw;
+    top: -1.2vw;
+}
+.page{
+    margin-top: 2vw;
+    position: relative;
+}
+
+/* pagination*/
+
+.pagination-container {
+    direction: rtl;
+    /* font-size: 24px; */
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 5vw;
+    margin-top: 43.6vw;
+    /* to adjust page changer position , adjust position of this element */
+    
+}
+
+.page-number {
+    /* substitute your color */
+    background-color:#A088BA;
+    border-radius: 2vw;
+    width: 10vw;
+    color: white;
+    border: 0.6vw double white;
+    /* Koodak font should be imported*/
+    font-family: 'Koodak';
+    padding: 0 1.1vw;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.page-number input {
+    /* substitute your color */
+    background-color: #A088BA;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2.35vw;
+    color: white;
+}
+
+.page-number-button {
+    width: 5vw;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.page-number-button > a {
+    color: white;
+    font-size: 4.5vw;
+    display: flex;
+}
+
+.general-title {
+    background-color: #A088BA;
+    border-radius: 1.7vw 0 0 1.7vw;
+    text-align: left;
+    font-family: 'Koodak';
+    font-size: 2.25vw;
+    color: black;
+    /*position: absolute;*/
+    margin-top: 3vw;
+    margin-left: 72vw;
+    padding: 0 1vw 0 1vw;
+}
+
+.activity-title {
+    border-radius: 1.1vw 0 0 1.1vw;
+    color: white;
+    margin-top: unset;
+    margin-left: unset;
+    position: absolute;
+    top: 3vw;
+    left: 75vw;
+    right: 0;
+}
+
+.answer-text-area {
+    font-family: 'Koodak';
+    font-size: 2vw;
+    direction: rtl;
+    width: 70vw;
+    height: 10vw;
+    padding: 1vw;
+    box-sizing: border-box;
+    border: 0.3vw solid #A088BA;
+    border-radius: 2vw;
+    background-color: #f8f8f8;
+    resize: none;
+    /*position: absolute;*/
+    margin-left: 10vw;
+    margin-top: 0.5vw;
+}
+
+.q6-answer-text-area {
+    direction: ltr;
+    height: 6vw;
+    margin-bottom: 2vw;
+}
+
+.question-text {
+    font-family: 'Zar';
+    font-size: 2vw;
+    direction: rtl;
+    text-align: right;
+    color: black;
+    margin-right: 7vw;
+    margin-top: 1vw;
+    white-space: pre-wrap;
+    /*position: relative;*/
+}
+
+/* q3 */
+
+.q3-parent {
+    position: relative;
+}
+
+.q3-text {  /* comes after question-text */
+    margin-top: unset;
+    margin-right: unset;
+    position: absolute;
+    top: 3vw;
+    left: 0;
+    right: 20vw;
+}
+
+.clock-image {
+    width: 12vw;
+    height: 11vw;
+    position: absolute;
+    top: 10vw;
+}
+
+.clock-image-1 {
+    left: 10vw;
+}
+
+.clock-image-2 {
+    left: 25vw;
+}
+
+.clock-image-3 {
+    left: 40vw;
+}
+
+.clock-image-4 {
+    left: 55vw;
+}
+
+.clock-text-1 {
+    position: absolute;
+    top: 22vw;
+    left: 15vw
+}
+
+.clock-text-2 {
+    position: absolute;
+    top: 22vw;
+    left: 30vw
+}
+
+.clock-text-3 {
+    position: absolute;
+    top: 22vw;
+    left: 45vw
+}
+
+.clock-text-4 {
+    position: absolute;
+    top: 22vw;
+    left: 60vw
+}
+
+/* q4 */
+
+.q4-parent {
+    position: relative;
+    margin-top: 27vw;
+}
+
+.papers-image {
+    width: 29vw;
+    height: 7vw;
+    position: absolute;
+    top: 4vw;
+    left: 10vw;
+}
+
+.short-answer-area {
+    width: 7vw;
+    height: 3vw;
+    margin: 0 0.5vw 0 0.5vw;
+    padding: 0 0.5vw 0 0.5vw;
+
+    font-family: 'Koodak';
+    font-size: 1.4vw;
+    direction: rtl;
+
+    box-sizing: border-box;
+    border: 0.2vw solid #A088BA;
+    border-radius: 1vw;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+/* q5 */
+
+.q5-parent {
+    position: relative;
+}
+
+.pattern-image {
+    width: 12vw;
+    height: 12vw;
+    position: absolute;
+    top: 4vw;
+}
+
+.pattern-image-1 {
+    left: 10vw;
+}
+
+.pattern-image-2 {
+    left: 25vw;
+}
+
+.pattern-image-3 {
+    left: 40vw;
+}
+
+.pattern-image-4 {
+    left: 55vw;
+}
+
+.pattern-image-5 {
+    left: 70vw;
+}
+
+/* q6 */
+
+.q6-parent {
+    position: relative;
+    margin-top: 14vw;
+}
+
+/* q7 */
+
+.q7-parent {
+    position: relative;
+    margin-top: 3vw;
+}
+
+.shape-image {
+    width: 15vw;
+    height: 8vw;
+    position: absolute;
+    top: -1vw;
+    left: 15vw;
+}
+
+/* q8 */
+
+.q8-parent {
+    position: relative;
+    margin-top: 8vw;
+}
+
+.pargar-image {
+    width: 20vw;
+    height: 25vw;
+    position: absolute;
+    top: -2vw;
+    left: 7vw;
+}
+
+/* q9 */
+
+.q9-parent {
+    position: relative;
+    margin-top: 18vw;
+}
+
+.q9-dm-text {
+    position: absolute;
+    left: 18vw;
+    top: 2vw;
+}
+
+/* q10 */
+
+.q10-parent {
+    position: relative;
+    margin-top: 3vw;
+    margin-bottom: 17vw;
+}
+
+.green-shapes-image{
+    width: 70vw;
+    height: 10vw;
+    position: absolute;
+    top: 4vw;
+    left: 10vw
+}
+
+.shape1-answer{
+    position: absolute;
+    top: 13vw;
+    left: 13vw;
+}
+
+.shape2-answer{
+    position: absolute;
+    top: 13vw;
+    left: 24vw;
+}
+
+.shape3-answer{
+    position: absolute;
+    top: 13vw;
+    left: 34vw;
+}
+
+.shape4-answer{
+    position: absolute;
+    top: 13vw;
+    left: 47vw;
+}
+
+.shape5-answer{
+    position: absolute;
+    top: 13vw;
+    left: 57vw;
+}
+
+.shape6-answer{
+    position: absolute;
+    top: 13vw;
+    left: 68vw;
+}
+
+/* q11 */
+
+.q11-parent {
+    position: relative;
+    margin-bottom: 3vw;
+    /*margin-top: 3vw;*/
+}
+
+.circle1-image {
+    width: 11vw;
+    height: 10vw;
+    position: absolute;
+    top: 0;
+    left: 20vw;
+}
+
+/* q12 */
+
+.q12-parent {
+    position: relative;
+    margin-bottom: 22vw;
+}
+
+.circle2-image {
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    top: 0;
+    left: 15vw;
+}
+
+.circle3-image {
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    top: 0;
+    left: 30vw;
+}
+
+.circle-text-1 {
+    position: absolute;
+    top: 5vw;
+    left: 17vw
+}
+
+.circle-text-2 {
+    position: absolute;
+    top: 5vw;
+    left: 32vw
+}
+.clocks-image{
+    width: 70vw;
+    height: 10vw;
+    position: absolute;
+    top: 10vw;
+    left: 10vw
+}
+
+ .clock1-answer{
+    position: absolute;
+    top: 20vw;
+    left: 12vw
+ }
+
+ .clock2-answer{
+    position: absolute;
+    top: 20vw;
+    left: 33vw
+ }
+
+ .clock3-answer{
+    position: absolute;
+    top: 20vw;
+    left: 50vw
+ }
+
+ .clock4-answer{
+    position: absolute;
+    top: 20vw;
+    left: 70vw
+ }

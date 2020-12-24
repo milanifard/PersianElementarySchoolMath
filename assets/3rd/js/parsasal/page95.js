@@ -31,6 +31,11 @@ function checkTamrin95Answers() {
 
     }
 
+    let masale6Selected = $("#masale6-select").children("option:selected").val();
+    if(masale6Selected === "no"){
+        hasWrongAnswer = true
+        showWarningMessageOnMasale("#masale6-select")
+    }
     if(!hasWrongAnswer){
         showAfarinModalAnimation();
     }

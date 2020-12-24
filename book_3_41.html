@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,267 @@
     <title>ریاضی سوم دبستان - صفحه چهل و یک</title>
 </head>
 <body>
+
+<script language="JavaScript">
+
+    function $(id) { return document.getElementById(id);}
+
+    function test_q7(){
+        var a = $("q7_in1");
+        var b = $("q7_in2");
+        var c = $("q7_in3");
+        var d = $("q7_in4");
+        var e = $("q7_in5");
+        var total = 0;
+
+        if(a.value === "g") {
+            a.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            a.style.backgroundColor = "red";
+
+        if(b.value === "kg") {
+            b.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            b.style.backgroundColor = "red";
+
+        if(c.value === "g") {
+            c.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            c.style.backgroundColor = "red";
+
+        if(d.value === "kg") {
+            d.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            d.style.backgroundColor = "red";
+
+        if(e.value === "kg") {
+            e.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            e.style.backgroundColor = "red";
+
+        if(total === 5){
+            $("q7_result").innerHTML = "آفرین";
+        }
+        else
+            $("q7_result").innerHTML = "دقت کن";
+    }
+
+    function test_q8(){
+        var one = $("q8_in3");
+        var two = $("q8_in2");
+        var three = $("q8_in1");
+        var four = $("q8_in4");
+        var five = $("q8_in5");
+        var six = $("q8_in6");
+        var seven = $("q8_in7");
+        var eight = $("q8_in9");
+        var nine = $("q8_in8");
+
+        var total = 0;
+
+        if(one.value === "3462") {
+            one.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            one.style.backgroundColor = "red";
+
+        if(two.value === "3562") {
+            two.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            two.style.backgroundColor = "red";
+
+        if(three.value === "4562") {
+            three.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            three.style.backgroundColor = "red";
+
+        if(four.value === "4552") {
+            four.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            four.style.backgroundColor = "red";
+
+        if(five.value === "4652") {
+            five.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            five.style.backgroundColor = "red";
+
+        if(six.value === "3652") {
+            six.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            six.style.backgroundColor = "red";
+
+        if(seven.value === "3552") {
+            seven.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            seven.style.backgroundColor = "red";
+
+        if(eight.value === "4552") {
+            eight.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            eight.style.backgroundColor = "red";
+
+        if(nine.value === "4562") {
+            nine.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            nine.style.backgroundColor = "red";
+
+        if(total === 9){
+            $("q8_result").innerHTML = "آفرین";
+        }
+        else
+            $("q8_result").innerHTML = "دقت کن";
+
+    }
+
+    function test_q9(){
+
+        var one = $("q9_in1");
+        var two = $("q9_in2");
+        var three = $("q9_in3");
+        var four = $("q9_in4");
+
+        var total = 0;
+
+        if(one.value === "100") {
+            one.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            one.style.backgroundColor = "red";
+
+        if(two.value === "9999") {
+            two.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            two.style.backgroundColor = "red";
+
+        if(three.value === "123") {
+            three.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            three.style.backgroundColor = "red";
+
+        if(four.value === "9876") {
+            four.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            four.style.backgroundColor = "red";
+
+        if(total === 4){
+            $("q9_result").innerHTML = "آفرین";
+        }
+        else
+            $("q9_result").innerHTML = "دقت کن";
+
+    }
+
+    function test_q10(){
+
+        var one = $("q10_in1");
+        var two = $("q10_in2");
+        var three = $("q10_in3");
+
+        var total = 0;
+
+        if(one.value === "6") {
+            one.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            one.style.backgroundColor = "red";
+
+        if(two.value === "234") {
+            two.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            two.style.backgroundColor = "red";
+
+        if(three.value === "432") {
+            three.style.backgroundColor = "#6CAC33";
+            total++;
+        }
+        else
+            three.style.backgroundColor = "red";
+
+
+        if(total === 3){
+            $("q10_result").innerHTML = "آفرین";
+        }
+        else
+            $("q10_result").innerHTML = "دقت کن";
+
+    }
+
+</script>
+
 <div class="main">
     <div class="page2">
-        <div class="q7">
+        <div id="q7">
             <p class="q7-content">
                 <span class="number">۷-</span>
                 واحدمناسب را بنویسید.<br>
-                جرم یک دفتر ریاضی ۱۲۷ ... است.<br>
-                جرم یک هندوانه ۶ ... و ۳۵۰ ... است.<br>
-                جرم یک خربزه به طور تقریبی ۵ ... است.<br>
-                جرم یکی از دانش آموزان ۵۳ ... است.<br>
+                جرم یک دفتر ریاضی ۱۲۷ <select id="q7_in1" class="q6_select">
+                <option selected disabled>انتخاب کنید</option>
+                <option value="kg">کیلوگرم</option>
+                <option value="g">گرم</option>
+                <option value="mg">میلی گرم</option>
+            </select> است.<br>
+                جرم یک هندوانه ۶ <select id="q7_in2" class="q6_select">
+                <option selected disabled>انتخاب کنید</option>
+                <option value="kg">کیلوگرم</option>
+                <option value="g">گرم</option>
+                <option value="mg">میلی گرم</option>
+            </select> و ۳۵۰ <select id="q7_in3" class="q6_select">
+                <option selected disabled>انتخاب کنید</option>
+                <option value="kg">کیلوگرم</option>
+                <option value="g">گرم</option>
+                <option value="mg">میلی گرم</option>
+            </select> است.<br>
+                جرم یک خربزه به طور تقریبی ۵ <select id="q7_in4" class="q6_select">
+                <option selected disabled>انتخاب کنید</option>
+                <option value="kg">کیلوگرم</option>
+                <option value="g">گرم</option>
+                <option value="mg">میلی گرم</option>
+            </select> است.<br>
+                جرم یکی از دانش آموزان ۵۳ <select id="q7_in5" class="q6_select">
+                <option selected disabled>انتخاب کنید</option>
+                <option value="kg">کیلوگرم</option>
+                <option value="g">گرم</option>
+                <option value="mg">میلی گرم</option>
+            </select> است.<br>
+                <button id="q7_btn" onclick="test_q7()">تست</button>
+                <output id="q7_result"></output>
             </p>
             <div class="q7-images">
                 <img class="book-img" src="assets/3rd/images/tabadkani/book.png">
@@ -24,7 +275,7 @@
                 <img class="melon-img" src="assets/3rd/images/tabadkani/melon.png">
             </div>
         </div>
-        <div class="q8">
+        <div id="q8">
             <div class="q8-content">
                 <p>
                 <span class="number">۸-</span>
@@ -37,11 +288,11 @@
                 <img class="square" src="assets/3rd/images/tabadkani/square.png">
                 <img class="rectangle" src="assets/3rd/images/tabadkani/rectangle.png">
                 <pre class="caption">۱۰ تا کمتر        ۱۰ تا بیشتر              ۱۰۰ تا کمتر                ۱۰۰ تا بیشتر        ۱۰۰۰ تا کمتر        ۱۰۰۰ تا بیشتر</pre>
-                <input>
+                <input class="q8_input" id="q8_in1">
                 <img class="rec-felesh" src="assets/3rd/images/tabadkani/rec-felesh.png">
-                <input>
+                <input class="q8_input" id="q8_in2">
                 <img class="dia-felesh" src="assets/3rd/images/tabadkani/dia-felesh.png">
-                <input>
+                <input class="q8_input" id="q8_in3">
                 <img class="tri-felesh" src="assets/3rd/images/tabadkani/tri-felesh.png">
                 <span>۳۴۵۲</span>
                 <img src="assets/3rd/images/tabadkani/felesh.png">
@@ -49,46 +300,59 @@
                 <br>
                 <img class="cir-felesh" src="assets/3rd/images/tabadkani/cir-felesh.png">
                 <br>
-                <input>
+                <input class="q8_input" id="q8_in4">
                 <img class="dia-felesh-rev"  src="assets/3rd/images/tabadkani/dia-felesh-reverse.png">
-                <input>
+                <input class="q8_input" id="q8_in5">
                 <img class="squ-felesh" src="assets/3rd/images/tabadkani/sq-felesh.png">
-                <input>
-                <img class="paras-felesh" src="assets/3rd/images/tabadkani/para-felesh.png">
-                <input>
+                <input class="q8_input" id="q8_in6">
+                <img class="paras-felesh" src="assets/3rd/images/tabadkani/para-felesh1.png">
+                <input class="q8_input" id="q8_in7">
                 <br>
                 <img id="rec-felesh-down" src="assets/3rd/images/tabadkani/rec-felesh-down.png">
                 <br>
                 <span class="finish">پایان</span>
                 <img id="felesh" src="assets/3rd/images/tabadkani/felesh.png">
-                <input>
+                <input class="q8_input" id="q8_in8">
                 <img class="tri-felesh" src="assets/3rd/images/tabadkani/tri-felesh.png">
-                <input>
+                <input class="q8_input" id="q8_in9">
+                <div id="q8_end">
+                    <button id="q8_btn" onclick="test_q8()">تست</button>
+                    <output id="q8_result"></output>
+                </div>
             </div>
         </div>
-        <div class="q9">
-            <span class="number">۹-</span>
-             کوچکترین عدد سه رقمی و بزرگترین عدد چهار رقمی را بنویسید.
+        <div id="q9">
+<!--            <br>-->
             <pre class="q9-con">
-                کوچک‌ ترین عدد سه رقمی <input>             بزرگ ترین عدد چهاررقمی <input>
-                اگر رقم های تکراری نداشته باشیم، چه عددهایی به دست می آید؟<input>  و  <input>
+                <span class="number">۹-</span>کوچکترین عدد سه رقمی و بزرگترین عدد چهار رقمی را بنویسید.
+                <span class="student"> کوچک‌ ترین عدد سه رقمی</span> <input class="q8_input" id="q9_in1">             <span class="student"> بزرگ ترین عدد چهاررقمی</span> <input class="q8_input" id="q9_in2">
+
+                اگر رقم های تکراری نداشته باشیم، چه عددهایی به دست می آید؟<input class="q8_input" id="q9_in3">  و  <input class="q8_input" id="q9_in4">
             </pre>
+            <div class="q9_end">
+                <button onclick="test_q9()">تست</button>
+                <output id="q9_result"></output>
+            </div>
         </div>
-        <div class="q10">
+        <div id="q10">
             <pre class="q10-con">
-                 <span class="number">۱۰-</span> با رقمهای ۲و ۳و ۴ چندعدد سه رقمی میتوان نوشت؟ <input>
-                بزرگ ترین و کوچک ترین آنها را ّ مشخص کنید: کوچک‌ ترین  <input>             بزرگ ترین <input>
+                 <span class="number">۱۰-</span> با رقمهای ۲و ۳و ۴ چندعدد سه رقمی میتوان نوشت؟ <input class="q8_input" id="q10_in1"><span class="student"> تا</span>
+                بزرگ ترین و کوچک ترین آنها را  مشخص کنید: <span class="student">کوچک‌ ترین</span>  <input class="q8_input" id="q10_in2">            <span class="student"> بزرگ ترین</span> <input class="q8_input" id="q10_in3">
             </pre>
-        </div>
-        <div class="page-navigator">
-            <div class="previous-page">
-                <a href="book_3_40.html">< صفحه قبل</a>
-            </div>
-            <div class="next-page">
-                <a href="book_3_42.html">صفحه بعد ></a>
+            <div id="q10_end">
+                <button onclick="test_q10()">تست</button>
+                <output id="q10_result"></output>
             </div>
         </div>
-        <div class="page-number">۴۱</div>
+<!--        <div class="page-navigator">-->
+<!--            <div class="previous-page">-->
+<!--                <a href="book_3_40.html">< صفحه قبل</a>-->
+<!--            </div>-->
+<!--            <div class="next-page">-->
+<!--                <a href="book_3_42.html">صفحه بعد ></a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="page-number">۴۱</div>-->
     </div>
 </div>
 

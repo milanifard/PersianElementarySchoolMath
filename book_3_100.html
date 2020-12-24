@@ -16,7 +16,7 @@
 <div class="main_title">
     <h2>مقایسه ی عددها</h2>
 </div>
-<div class="marker" style="top: 7vw;">
+<div class="marker2">
     <div class="activity flex_row">
         <div class="title">
             <p>فعالیت</p>
@@ -27,10 +27,16 @@
     </div>
 </div>
 
-<div class="main flex_row flex_end" style="margin-top: -3vw;">
+<div class="main flex_row flex_end hey">
     <div class="content">
-        <p class="question">به کمک شکل، دو عدد داده شده را با هم مقایسه کنید.</p>
-        <p class="question">توضیح دهید که چگونه دوعدد را مقایسه کردید.</p>
+        <p class="question">
+            .
+            به کمک شکل، دو عدد داده شده را با هم مقایسه کنید
+        </p>
+        <p class="question">
+            .
+            توضیح دهید که چگونه دوعدد را مقایسه کردید
+        </p>
         <div class="clock_row flex_row">
             <div class="clock_col flex_col">
                 <img src="assets/3rd/images/alimoradi/cubes11.png">
@@ -52,7 +58,8 @@
         </div>
 
         <p class="question">برای مقایسه ی دو عدد 3425 و 3431 ، ابتدا آن ها را با حذف رقم های یکان، دهگان و صدگان (و قرار دادن صفر
-            به جای آن ها) بنویسید و مقایسه کنید.</p>
+            به جای آن ها) بنویسید و مقایسه کنید؟
+        </p>
         <div class="input-row">
             <input id="p100_q2_1" class="input-style" type="number">
             <input id="p100_q2_2" class="input-style_lessthan" type="text">
@@ -63,7 +70,10 @@
                 </button>
             </div>
         </div>
-        <p class="question">دو عدد را با حذف رقم های یکان و دهگان بنویسید و مقایسه کنید.</p>
+        <p class="question">
+            .
+            دو عدد را با حذف رقم های یکان و دهگان بنویسید و مقایسه کنید
+            </p>
         <div class="input-row">
             <input id="p100_q3_1" class="input-style" type="number">
             <input id="p100_q3_2" class="input-style_lessthan" type="text">
@@ -75,7 +85,8 @@
             </div>
         </div>
         <p class="question">
-            دو عدد را با حذف رقم های یکان بنویسید و مقایسه کنید.</p>
+            .
+            دو عدد را با حذف رقم های یکان بنویسید و مقایسه کنید</p>
         <div class="input-row">
             <input id="p100_q4_1" class="input-style" type="number">
             <input id="p100_q4_2" class="input-style_lessthan" type="text">
@@ -88,13 +99,23 @@
         </div>
         <p class="question">کدام یک از حالت ها مناسب تر است؟ چرا؟</p>
         <br>
-        <div class="clock_row flex_row" style="margin-right: 10vw;">
+        <div>
+            <input class="checktr3" type="radio" name="answer2" id="r51" onchange="p52answerQ1()" >
+            <label class="checktr2" dir="rtl" for="r51" id="labelRadio51">حذف رقم های یکان، دهگان و صدگان</label><br>
+            <input class="checktr3" type="radio" name="answer2" id="r52" onchange="p52answerQ1()" >
+            <label class="checktr2" dir="rtl" for="r52" id="labelRadio52" >حذف رقم های یکان و دهگان</label><br>
+            <input class="checktr3" type="radio" name="answer2" id="r53" onchange="p52answerQ1()" >
+            <label class="checktr2" dir="rtl" for="r53" id="labelRadio53" >حذف رقم های یکان</label><br>
+        </div>
+        <div class="clock_row flex_row hey2">
             <div class="clock_col flex_col">
                 <img src="assets/3rd/images/alimoradi/frog.png">
             </div>
         </div>
         <br>
-        <p class="question">برای مقایسه ی دو عدد 3044 و 2857 ، آن ها را با حذف رقم های یکان، دهگان و صدگان بنویسید.</p>
+        <p class="question">
+            .
+            برای مقایسه ی دو عدد 3044 و 2857 ، آن ها را با حذف رقم های یکان، دهگان و صدگان بنویسید</p>
         <div class="input-row">
             <input id="p100_q5_1" class="input-style" type="number">
             <input id="p100_q5_2" class="input-style_lessthan" type="text">
@@ -106,10 +127,16 @@
             </div>
         </div>
         <p class="question"> آیا با همین اوّلین تقریب میتوانید دو عدد را مقایسه و عبارت
-            «2857
+            «3044
             <input id="p100_q6_1" class="input-style_lessthan" type="text">
-            3044»
+            2857»
             را کامل کنید؟ چرا؟
+        <div>
+        <input class="checktr3" type="radio" name="answer1" id="r22" onchange="p22answerQ2()" >
+            <label class="checktr2" dir="rtl" for="r22" id="labelRadio22">بله</label><br>
+            <input class="checktr3" type="radio" name="answer1" id="r21" onchange="p22answerQ2()" >
+            <label class="checktr2" dir="rtl" for="r21" id="labelRadio21" >خیر</label><br>
+        </div>
         <div class="btn_div">
             <button onclick="correct_p100_q6()" class="btn btn--primary btn--inside uppercase" type="button" >
                 <span class="ok">ثبت</span>
