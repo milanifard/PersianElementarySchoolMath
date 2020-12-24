@@ -2,11 +2,12 @@
 <html lang="far">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Mehregan">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link href="assets/3rd/css/naderi.css" rel="stylesheet">
     <link href='http://www.fontonline.ir/css/BNazanin.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/3rd/js/Naderi.js"></script>
+    <script src="assets/3rd/js/pagination.js"></script>
     <title>ریاضی سوم، صفحه 138</title>
 </head>
 <body>
@@ -196,7 +197,24 @@
                 </div>
             </div>
         </div>
+        <div class="page-number_right">138</div>
+
     </div>
+    <div class="pagination-container">
+        <div class="page-number-button">
+            <!-- using next/prev icons from font awesome -->
+            <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
+        </div>
     
+        <div class="page-number">
+            <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+        </div>
+    
+        <div class="page-number-button">
+            <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
+        </div>
+    
+    </div>
+    <div class="back"></div>
 </body>
 </html>
