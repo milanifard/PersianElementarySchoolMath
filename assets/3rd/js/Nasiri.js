@@ -28,10 +28,10 @@ function correct_type1(inp_id,input_val,true_radio,false_radio){
 
     if (radio_f.checked){
         radio_f.classList.add("red_shadow_radio");
-        radio_t.classList.add("red_shadow_radio");
+        //radio_t.classList.add("red_shadow_radio");
     }
     else if (radio_t.checked){
-        radio_f.classList.add("green_shadow_radio");
+        //radio_f.classList.add("green_shadow_radio");
         radio_t.classList.add("green_shadow_radio");
     }
     else {
