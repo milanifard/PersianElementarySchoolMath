@@ -9438,7 +9438,7 @@ canvas[resize] {
   border-radius: 10px;
 }
 
-#canvas {
+#chain-canvas {
   margin-top: 50px;
   -webkit-filter: blur(10px);
           filter: blur(10px);
