@@ -16,7 +16,7 @@
     --blue_level0: #d4effb;
     --blue_level1: #6bcff6;
     --blue_level2: #3853a3;
-    --blue_level3: #5cb6cd;
+    --blue_level3: #4192a7;
 
     --green_level0: #d2e287;
     --green_level1: #bbd75e;
@@ -49,16 +49,66 @@ body{
     display: flex;
     background-image: url('../images/galiold/background.svg');
     background-repeat: no-repeat;
-    background-position: bottom;
+    position: relative;
+    justify-content: center;
+}
+
+body.cover{
+    background-image: url('../images/galiold/page115-bg.svg');
+    background-size: 100%;
+}
+
+.cover-page {
+    width: 60vw;    
+    display: flex;
+    align-items:flex-end;
+    flex-direction: column;
+    padding: 2vw;
     position: relative;
 }
 
+.cover-title {
+    position: absolute;
+    border: .2vw solid rgb(240, 147, 40);
+    border-right: none;
+    font-size: 3vw;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    right: 0;
+    padding-right: 5vw;
+    padding-left: 2vw;
+    background-color: white;
+    color: var(--blue_level3);
+}
+
+.cover-page .img1 {
+    width: 25vw;
+    margin-bottom: 5vw;
+}
+
+.cover-page .img2 {
+    width: 50vw;
+    margin-bottom: 3vw;
+}
+
+.cover-desc {
+    width: 30vw;
+    border: .2vw solid rgb(240, 147, 40);
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    padding: 1vw;
+    background-color: white;
+}
+
+
 body.left-border {
     justify-content: right;
+    background-position: bottom;
 }
 
 body.right-border {
     justify-content: left;
+    background-position: bottom;
 }
 
 /* In order to ignore input top-down btn */
@@ -143,7 +193,6 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
 }
 
 .activity-image{
-
     width: 13vw;
     position: absolute;
     right: -2.3vw;
