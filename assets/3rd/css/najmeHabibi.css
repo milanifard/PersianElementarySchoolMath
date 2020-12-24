@@ -185,7 +185,7 @@ body {
     height: 10vw;
     padding: 1vw;
     box-sizing: border-box;
-    border: 0.3vw solid #79c2d2;
+    border: 0.3vw solid #A088BA;
     border-radius: 2vw;
     background-color: #f8f8f8;
     resize: none;
@@ -212,28 +212,20 @@ body {
     /*position: relative;*/
 }
 
-.q3-text {
+/* q3 */
+
+.q3-parent {
+    position: relative;
+}
+
+.q3-text {  /* comes after question-text */
     margin-top: unset;
     margin-right: unset;
     position: absolute;
     top: 3vw;
     left: 0;
-    right: 25vw;
+    right: 20vw;
 }
-
-.q4-text {
-    margin-top: 27vw;
-}
-
-.q6-text {
-    margin-top: 14vw;
-}
-
-.relative-position {
-    position: relative;
-}
-
-/* q3 */
 
 .clock-image {
     width: 12vw;
@@ -284,16 +276,21 @@ body {
 
 /* q4 */
 
+.q4-parent {
+    position: relative;
+    margin-top: 27vw;
+}
+
 .papers-image {
-    width: 32vw;
-    height: 8vw;
+    width: 29vw;
+    height: 7vw;
     position: absolute;
     top: 4vw;
     left: 10vw;
 }
 
 .short-answer-area {
-    width: 5vw;
+    width: 7vw;
     margin: 0 0.5vw 0 0.5vw;
     padding: 0 0.5vw 0 0.5vw;
 
@@ -302,13 +299,17 @@ body {
     direction: rtl;
 
     box-sizing: border-box;
-    border: 0.3vw solid #79c2d2;
+    border: 0.2vw solid #A088BA;
     border-radius: 1vw;
     background-color: #f8f8f8;
     resize: none;
 }
 
 /* q5 */
+
+.q5-parent {
+    position: relative;
+}
 
 .pattern-image {
     width: 12vw;
@@ -335,4 +336,111 @@ body {
 
 .pattern-image-5 {
     left: 70vw;
+}
+
+/* q6 */
+
+.q6-parent {
+    position: relative;
+    margin-top: 14vw;
+}
+
+/* q7 */
+
+.q7-parent {
+    position: relative;
+    margin-top: 3vw;
+}
+
+.shape-image {
+    width: 15vw;
+    height: 8vw;
+    position: absolute;
+    top: -1vw;
+    left: 15vw;
+}
+
+/* q8 */
+
+.q8-parent {
+    position: relative;
+    margin-top: 5vw;
+}
+
+.pargar-image {
+    width: 20vw;
+    height: 25vw;
+    position: absolute;
+    top: -2vw;
+    left: 7vw;
+}
+
+/* q9 */
+
+.q9-parent {
+    position: relative;
+    margin-top: 18vw;
+}
+
+.q9-dm-text {
+    position: absolute;
+    left: 18vw;
+    top: 2vw;
+}
+
+/* q10 */
+
+.q10-parent {
+    position: relative;
+    margin-top: 3vw;
+}
+
+/* q11 */
+
+.q11-parent {
+    position: relative;
+    /*margin-top: 3vw;*/
+}
+
+.circle1-image {
+    width: 11vw;
+    height: 10vw;
+    position: absolute;
+    top: 0;
+    left: 20vw;
+}
+
+/* q12 */
+
+.q12-parent {
+    position: relative;
+    margin-bottom: 2vw;
+}
+
+.circle2-image {
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    top: 0;
+    left: 15vw;
+}
+
+.circle3-image {
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    top: 0;
+    left: 30vw;
+}
+
+.circle-text-1 {
+    position: absolute;
+    top: 5vw;
+    left: 17vw
+}
+
+.circle-text-2 {
+    position: absolute;
+    top: 5vw;
+    left: 32vw
 }
