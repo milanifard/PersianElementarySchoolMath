@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/3rd/css/barzgar.css">
     <link href="http://fonts.cdnfonts.com/css/zar" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/koodak" type="text/css"/>
+    <script src="assets/3rd/js/barzgar.js"></script>
     <title>ریاضی سوم دبستان</title>
 </head>
 <body style="margin: 0;">
@@ -25,25 +26,27 @@
         <img id="sheets" src="./assets/3rd/images/barzgar/pages%20transparent.png" alt="sheets-img">
     </div>
 
-    <div class="container">
+    <div class="container" style="margin-bottom:0;">
         <div class="text-config questions-text-config" id="page33-question1"><span class="question-number">1-</span> 1000 برگ كاغذ را روي هم گذاشته ايم تا يك بسته كاغذ درست شود.
         ضخامت اين بسته كاغذ تقريبا چند سانتي متر است؟<input class="input-config-question-1" type="number" id="page33-question1-input">
         چگونه اين پاسخ را پيدا كرديد؟توضيح دهيد.
         <input class="input-config-question-1" id="page33-question1-tozih" type="text"></div>
     </div>
+    <button class="check-button" type="button" style="margin-bottom:1vw;" onclick="page33_Q1()">ثبت پاسخ</button>
     <div class="page33-question2">
         <span class="text-config questions-text-config"><span class="question-number">2-</span>باز شده ي هر عدد را بنويس</span>
         <span>
             <div style="text-align: left">
                 <span class="text-config questions-text-config">4000+20+5 = <span class="question-number">4025</span></span>
-                <span class="text-config questions-text-config"><input class="input-config-question-1" type="number" id="page33-question2-input-1"> = <span class="question-number">7110</span></span>
+                <span class="text-config questions-text-config"><input class="input-config-question-1" type="text" id="page33-question2-input-1"> = <span class="question-number">7110</span></span>
             </div>
             <div style="text-align: left">
-                <span class="text-config questions-text-config"><input class="input-config-question-1" type="number" id="page33-question2-input-2"> = <span class="question-number">8205</span></span>
-                <span class="text-config questions-text-config"><input class="input-config-question-1" type="number" id="page33-question2-input-3"> = <span class="question-number">9300</span></span>
+                <span class="text-config questions-text-config"><input class="input-config-question-1" type="text" id="page33-question2-input-2"> = <span class="question-number">8205</span></span>
+                <span class="text-config questions-text-config"><input class="input-config-question-1" type="text" id="page33-question2-input-3"> = <span class="question-number">9300</span></span>
             </div>
         </span>
     </div>
+    <button class="check-button" type="button" onclick="page33_Q2()">ثبت پاسخ</button>
     <div>
         <div class="text-config questions-text-config" id="page33-question3"><span class="question-number">3-</span>جمع عدد هاي زير به تومان هستند. آن ها را به واحد ريال بنويسيد.</div>
     </div>
@@ -51,9 +54,8 @@
         <div class="text-config questions-text-config center-text no-padding-margin">  <input class="input-config-question-1" type="text" id="page33-question3-input1"> <span class="arrow">&#10230;</span> 15 = 8 + 7 </div>
         <div class="text-config questions-text-config center-text no-padding-margin">  <input class="input-config-question-1" type="text" id="page33-question3-input2"> <span class="arrow">&#10230;</span> 51 = 13 + 38 </div>
         <div class="text-config questions-text-config center-text no-padding-margin">  <input class="input-config-question-1" type="text" id="page33-question3-input3"> <span class="arrow">&#10230;</span> 912 = 123 + 789  </div>
-
-
     </div>
+    <button class="check-button" type="button" onclick="page33_Q3()">ثبت پاسخ</button>
     <div>
         <div class="text-config questions-text-config" id="page33-question4"><span class="question-number">3-</span>جمع و تفريق هاي زير به واحد ريال هستند. آن ها را به تومان تبديل كنيد.</div>
     </div>
@@ -64,13 +66,27 @@
         <div class="text-config questions-text-config center-text no-padding-margin">  <input class="input-config-question-1" type="text" id="page33-question4-input4"> <span class="arrow">&#10230;</span> 5000 = 2600 - 7600 </div>
 
     </div>
-    <div class="container">
+    <button class="check-button" type="button" onclick="page33_Q4()">ثبت پاسخ</button>
+    <div class="container" style="margin-bottom: 0">
         <div class="text-config questions-text-config page33-question5"><span class="question-number">5-</span>عدد 5321 يعني <input class="input-config-question-1" type="number" id="page33-question5-input1">يكي، <input class="input-config-question-1" type="number" id="page33-question5-input2">دهتايي، <input class="input-config-question-1" type="number" id="page33-question5-input3">صدتايي،<input class="input-config-question-1" type="number" id="page33-question5-input4">هزارتايي.</div>
         <div class="text-config questions-text-config page33-question5">عدد <input class="input-config-question-1" type="number" id="page33-question5-input5"> يعني 3 يكي، 4 دهتايي، صفر صدتايي، 5 هزارتايي</div>
         <div class="text-config questions-text-config page33-question5">عدد <input class="input-config-question-1" type="number" id="page33-question5-input6"> يعني 5 يكي، 4 صدتايي، 3 هزارتايي</div>
         <div class="text-config questions-text-config page33-question5">عدد <input class="input-config-question-1" type="number" id="page33-question5-input7"> يعني 3 دهتايي، 4 هزارتايي</div>
     </div>
-    <div class="page-number left-page-number">
+    <button class="check-button" type="button" style="margin-bottom: 2vw" onclick="page33_Q5()">ثبت پاسخ</button>
+    <div class="page-no-input">
+        <span style=" margin-left: 44vw">
+            <a href="book_3_34.html">
+                <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+            </a>
+        </span>
+        <span style="margin-left: 5.125vw">
+            <a href="book_3_32.html">
+                <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="previous_page">
+            </a>
+        </span>
+    </div>
+    <div class="page-number">
         33
     </div>
 </div>

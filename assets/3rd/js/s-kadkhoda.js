@@ -8,10 +8,10 @@ function checkCorrectValue(id, value, correctAnswer) {
     console.log(1)
     if (value == correctAnswer) {
         document.getElementById(id).style.border = "0";
-        document.getElementById(id).style.backgroundColor = "#37ee56";
+        document.getElementById(id).style.backgroundColor = "#56BE00";
     } else {
         document.getElementById(id).style.border = "0";
-        document.getElementById(id).style.backgroundColor = "red";
+        document.getElementById(id).style.backgroundColor = "#E51212";
     }
 }
 
