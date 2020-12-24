@@ -260,6 +260,7 @@
     width: 20vw;
     height: 18vw ;
     font-family: ZAR;
+    font-size: 2vw;
 
 }
 
@@ -282,14 +283,18 @@
 
 }
 .input-1{
-    width: 4vw;
+    width: 3vw;
     height: 2vw;
     margin-top: 0.5vw;
     margin-right: 0vw;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-family: ZAR;
+    text-align: center;
 }
-
+.wall{
+    width: 15vw;
+    margin-right: 3vw
+}
 
 .correct-ans {
     position: relative;
@@ -303,6 +308,46 @@
     animation-iteration-count: 3;
     border: 1px solid red;
     outline: none;
+}
+
+.flower-and-cup-container{
+    height: 27vw;
+    width: 10vw;
+    float: left;
+}
+
+.flower-img{
+    width: 10vw;
+    float: top;
+}
+
+.cup-img{
+    width: 10vw;
+    float: top;
+    margin-top: -1vw
+}
+
+.add-and-remove-flower-div{
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-2vw ;
+}
+
+.add-and-remove-part{
+    float: left;
+    font-size: 3vw ;
+    white-space: pre;
+    color: #9C27B0
+}
+.result-container{
+    width: 20vw;
+    float: left;
+    margin-top: 20vw;
+    margin-left: 5vw ;
+    font-family: ZAR ;
+    font-size: 2vw ;
+    direction: rtl
 }
 
 @keyframes shake {
