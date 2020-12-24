@@ -8,20 +8,177 @@
     <title>ریاضی سوم دبستان</title>
 </head>
 <body>
-    <!-- <div class="left-border">
-        <div class="background-style"></div>
-        
-        <div id="title">
-            <div class="that-ridiculous-red-parts-in-title"></div>
-            <div class="title-style">احتمال</div>
-        </div>
+    <div>
 
-        <div id="activity_item">
-            <img class="activity-image" src="assets/3rd/images/activity.png" alt="activity_image">
-            <div class="activity-text">فعّالیت</div>
+        <div class="right-page-border">
+            <div class="background-style"></div>
+            
+            <div>
+                <div class="that-ridiculous-red-parts-in-title"></div>
+                <div class="title-style">
+                    <p>
+                        احتمال
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div> 
+                <img class="activity-image" src="./assets/3rd/images/activity.png" alt="activity_image">
+                <div class="activity-text">
+                    <p>
+                        فعّالیت
+                    </p>
+                </div>
+            </div>
+
+            <div id="Circle1" class="circleContainer" onclick="rotation(id)">
+                <div id="Slice1" class="circleSlice"></div>
+                <div id="Slice2" class="circleSlice"></div>
+                <div id="Slice3" class="circleSlice"></div>
+                <div id="Slice4" class="circleSlice"></div>
+                
+            </div>
+            <!-- <div id="clock-needle"></div> -->
+
+            <!-- <div> -->
+                
+                <div id="Question-1" class="text-config questions-text-config">
+                    <span class="question-num">1_</span> چرخنده ی روبه رو را می چرخانیم تا عقربه ی آن روی یک رنگ بایستد؛ رنگ را یادداشت می کنیم.<br>چند حالت ممکن است برای ایستادن عقربه روی یک رنگ اتفاق بیفتد؟ <br>این آزمایش را 10 بار انجام دهید و جدول زیر را کامل کنید.
+                </div>
+                
+                <div id="Table1-container" class="tableContainer">
+                    <table class="table">
+                        <tr>
+                            <td class="td td-title-name">آزمایش</td>
+                            <td class="td">1</td>
+                            <td class="td">2</td>
+                            <td class="td">3</td>
+                            <td class="td">4</td>
+                            <td class="td">5</td>
+                            <td class="td">6</td>
+                            <td class="td">7</td>
+                            <td class="td">8</td>
+                            <td class="td">9</td>
+                            <td class="td">10</td>
+                        </tr>
+                        <tr>
+                            <td class="td td-title-name">رنگ</td>
+                            <td id="Q1_td1" class="td">
+                                <div>
+                                    <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td1', id)"></div>
+                                    <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td1', id)"></div>
+                                    <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td1', id)"></div>
+                                </div>
+                            </td>
+                            <td id="Q1_td2" class="td">
+                                <div>
+                                        <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td2', id)"></div>
+                                        <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td2', id)"></div>
+                                        <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td2', id)"></div>
+                                </div>
+                            </td>
+                            <td id="Q1_td3" class="td">
+                                <div>
+                                        <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td3', id)"></div>
+                                        <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td3', id)"></div>
+                                        <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td3', id)"></div>
+                                </div>
+                            </td>
+                            <td id="Q1_td4" class="td">
+                                <div>
+                                    <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td4', id)"></div>
+                                    <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td4', id)"></div>
+                                    <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td4', id)"></div>
+                                </div>
+                            </td>
+                            
+                            <td id="Q1_td5" class="td">
+                                <div>
+                                    <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td5', id)"></div>
+                                    <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td5', id)"></div>
+                                    <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td5', id)"></div>
+                                </div>
+                            </td>
+                            <td id="Q1_td6" class="td">
+                                <div>
+                                    <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td6', id)"></div>
+                                    <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td6', id)"></div>
+                                    <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td6', id)"></div>
+                                </div>
+                            </td>
+                            <td id="Q1_td7" class="td">
+                                <div>
+                                    <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td7', id)"></div>
+                                    <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td7', id)"></div>
+                                    <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td7', id)"></div>
+                                </div>
+                            </td>
+                            
+                            <td id="Q1_td8" class="td">
+                                <div>
+                                    <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td8', id)"></div>
+                                    <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td8', id)"></div>
+                                    <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td8', id)"></div>
+                                </div>
+                            </td>
+                            <td id="Q1_td9" class="td">
+                                <div>
+                                    <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td9', id)"></div>
+                                    <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td9', id)"></div>
+                                    <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td9', id)"></div>
+                                </div>
+                            </td>
+                            
+                            <td id="Q1_td10" class="td">
+                                <div>
+                                    <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td10', id)"></div>
+                                    <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td10', id)"></div>
+                                    <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td10', id)"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="TableQuestion1-container" class="tableQuestionContainer">
+                    <div class="fractionalQuestionContainer">
+                        <div class="text-config questions-text-config">چه کسری از آزمایش ها رنگ قرمز است؟</div>
+                        <input type="number" min="0" max="10">
+                        <div class="text-config" style="float: right; font-size: 5vw; margin-top: -2.3vw"> / </div>
+                        <input type="number" min="0" max="10">
+                    </div>
+                    <div class="fractionalQuestionContainer">
+                        <div class="text-config questions-text-config" >چه کسری آبی؟</div>
+                        <input type="number" min="0" max="10">
+                        <div class="text-config" style="float: right; font-size: 5vw; margin-top: -2.3vw"> / </div>
+                        <input type="number" min="0" max="10">
+                    </div>
+                    <div class="fractionalQuestionContainer">
+                        <div class="text-config questions-text-config" >چه کسری سبز؟</div>
+                        <input type="number" min="0" max="10">
+                        <div class="text-config" style="float: right; font-size: 5vw; margin-top: -2.3vw"> / </div>
+                        <input type="number" min="0" max="10">
+                    </div>
+                </div>
+                    
+            <!-- </div> -->
         </div>
+    </div>
+    
+    <!-- <div class="activity-container">
+        <div class="activity-header">
+            <div class="activity-image-container">
+                    <img class="activity-image" src="./images/activity.png" alt="activity_image">
+            </div>
+            <div class="activity-title-container">
+                <p class="activity-title">فعّالیت</p>     
+            </div>
+        </div>
+        
+
     </div> -->
-    <div class="table-container">
+    <!-- <div class="table-container">
         <table class="table">
             <tr class="table-row">
                 <td class="table-data" width="(100/11)%">آزمایش</td>
@@ -50,7 +207,7 @@
                 <td class="table-data" width="(100/11)%"></td>
             </tr>
         </table>
-    </div>
+    </div> -->
     
 </body>
 </html>
