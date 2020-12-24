@@ -9504,6 +9504,7 @@ select::-ms-expand {
   line-height: 3;
   overflow: hidden;
   border-radius: .25em;
+  text-align: left;
 }
 
 select {
@@ -9514,6 +9515,7 @@ select {
   color: #fff;
   cursor: pointer;
   text-align: left;
+  text-align-last: left;
 }
 
 /* Arrow */
@@ -9537,31 +9539,31 @@ select {
 
 @font-face {
   font-family: 'Zar';
-  src: url("/assets/fonts/Zar.eot");
+  src: url("../../fonts/Zar.eot");
   /* IE9 Compat Modes */
-  src: url("/assets/fonts/Zar.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Zar.woff2") format("woff2"), url("/assets/fonts/Zar.woff") format("woff"), url("/assets/fonts/Zar.ttf") format("truetype"), url("/assets/fonts/Zar.svg#svgFontName") format("svg");
+  src: url("../../fonts/Zar.eot?#iefix") format("embedded-opentype"), url("../../fonts/Zar.woff2") format("woff2"), url("../../fonts/Zar.woff") format("woff"), url("../../fonts/Zar.ttf") format("truetype"), url("../../fonts/Zar.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'ZarBold';
-  src: url("/assets/fonts/ZarBold.eot");
+  src: url("../../fonts/ZarBold.eot");
   /* IE9 Compat Modes */
-  src: url("/assets/fonts/ZarBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/ZarBold.woff2") format("woff2"), url("/assets/fonts/ZarBold.woff") format("woff"), url("/assets/fonts/ZarBold.ttf") format("truetype"), url("/assets/fonts/ZarBold.svg#svgFontName") format("svg");
+  src: url("../../fonts/ZarBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/ZarBold.woff2") format("woff2"), url("../../fonts/ZarBold.woff") format("woff"), url("../../fonts/ZarBold.ttf") format("truetype"), url("../../fonts/ZarBold.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'Faraz';
-  src: url("/assets/fonts/Faraz.eot");
+  src: url("../../fonts/Faraz.eot");
   /* IE9 Compat Modes */
-  src: url("/assets/fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Faraz.woff2") format("woff2"), url("/assets/fonts/Faraz.woff") format("woff"), url("/assets/fonts/Faraz.ttf") format("truetype"), url("/assets/fonts/Faraz.svg#svgFontName") format("svg");
+  src: url("../../fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("../../fonts/Faraz.woff2") format("woff2"), url("../../fonts/Faraz.woff") format("woff"), url("../../fonts/Faraz.ttf") format("truetype"), url("../../fonts/Faraz.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'Koodak';
-  src: url("/assets/fonts/KoodakBold.ttf");
+  src: url("../../fonts/KoodakBold.ttf");
 }
 
 * {

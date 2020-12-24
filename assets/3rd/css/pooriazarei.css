@@ -22,7 +22,21 @@
 * {
   font-family: 'Zar';
   font-weight: normal;
-  font-size: 2vh; }
+  font-size: 2vw; }
+  @media (max-width: 991px) {
+    * {
+      font-size: 3vh; }
+      * .right-border-template {
+        margin-right: 10vw !important; }
+      * .left-border-template {
+        margin-right: 10vw !important; } }
+  @media (max-width: 800px) {
+    * {
+      font-size: 2vh; }
+      * .right-border-template {
+        margin-right: 10vw !important; }
+      * .left-border-template {
+        margin-right: 10vw !important; } }
 
 body {
   direction: rtl;
@@ -110,7 +124,7 @@ img {
   width: 90vw;
   max-width: 90vw;
   border: 0.8vw double #D17FA6;
-  margin: 6vw 8.4vw 0 0;
+  margin: 6vw 8.9vw 0 0;
   border-left: none;
   border-top-right-radius: 5vw;
   border-bottom-right-radius: 5vw;
@@ -153,7 +167,7 @@ img {
   z-index: -1; }
 
 .background-style-left {
-  width: 98.4vw;
+  width: 98.9vw;
   height: 40vw;
   position: absolute;
   background-image: repeating-linear-gradient(0deg, #D17FA6, #D17FA6 1vw, #DC9FBC 0vw, #DC9FBC 2.5vw);

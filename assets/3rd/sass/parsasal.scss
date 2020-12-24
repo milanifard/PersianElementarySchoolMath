@@ -457,7 +457,8 @@ select::-ms-expand {
     line-height: 3;
     overflow: hidden;
     border-radius: .25em;
-
+    text-align: left;
+    
 }
 
 select {
@@ -466,6 +467,7 @@ select {
     color: #fff;
     cursor: pointer;
     text-align: left;
+    text-align-last: left;
 }
 
 /* Arrow */

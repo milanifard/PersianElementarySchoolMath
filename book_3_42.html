@@ -4,24 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/tabadkani.css">
+    <script src="assets/3rd/js/tabadkani.js"></script>
     <title>ریاضی سوم دبستان - صفحه چهل و دو</title>
 </head>
 <body>
+
 <div class="main">
     <div class="page3">
-        <img class="snake-img" src="assets/3rd/images/tabadkani/snake.png">
+        <img id="snake-img" src="assets/3rd/images/tabadkani/snake.png">
         <div class="little-title" id="fn_title">سرگرمی و معما</div>
         <div class="s_q1">
             <p><span class="number">۱-</span>  شکل روبه‌رو را با چوب کبریت بسازید.۶  تا  از
-                چوب‌کبریت‌ها را بردارید تا شکل به ۳ مربّع تبدیل شود.</p>
+                چوب‌کبریت‌ها را بردارید تا شکل به ۳ مربّع تبدیل شود.
+            <span class="student">روی چوب‌کبریت‌ها کلیک کن تا حذف شوند:</span>
+                <span class="student"><span id="moves">6</span>حرکت باقی مانده</span>
+                <output id="s_q1_result"></output>
+            </p>
+            <div id="s_q1_images">
+                <div class="ofoghi">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_1_1" class="kebrit_ofoghi" onclick="clear_img(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_1_2" class="kebrit_ofoghi" onclick="clear_img(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_1_3" class="kebrit_ofoghi" onclick="clear_img(this)">
+                </div>
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" id="kebrit_1_4" class="kebrit_amoodi" onclick="clear_img(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" id="kebrit_1_5" class="kebrit_amoodi" onclick="clear_img(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" id="kebrit_1_6" class="kebrit_amoodi" onclick="clear_img(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" id="kebrit_1_7" class="kebrit_amoodi" onclick="clear_img(this)">
+                </div>
+                <div class="ofoghi">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_1_8" class="kebrit_ofoghi" onclick="clear_img(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_1_9" class="kebrit_ofoghi" onclick="clear_img(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_1_10" class="kebrit_ofoghi" onclick="clear_img(this)">
+                </div>
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" id="kebrit_1_11" class="kebrit_amoodi" onclick="clear_img(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" id="kebrit_1_12" class="kebrit_amoodi" onclick="clear_img(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" id="kebrit_1_13" class="kebrit_amoodi" onclick="clear_img(this)">
+                </div>
+                <div class="ofoghi">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_1_14" class="kebrit_ofoghi" onclick="clear_img(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_1_15" class="kebrit_ofoghi" onclick="clear_img(this)">
+                </div>
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" id="kebrit_1_16" class="kebrit_amoodi" onclick="clear_img(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" id="kebrit_1_17" class="kebrit_amoodi" onclick="clear_img(this)">
+                </div>
+                <div class="ofoghi">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_1_18" class="kebrit_ofoghi" onclick="clear_img(this)">
+                </div>
+            </div>
         </div>
         <div class="s_q2">
             <p><span class="number">۲-</span> حالا شکل روبه‌رو را بسازید. این‌بار ۵
                 چوب‌کبریت را بردارید تا ۵ مثلث باقی بماند.
-                (مثلث‌های باقیمانده هم اندازه نیستند.) </p>
+                (مثلث‌های باقیمانده هم اندازه نیستند.)
+                <span class="student"><br><span id="moves_2">5</span>حرکت باقی مانده</span>
+                <output id="s_q2_result"></output></p>
+            <div id="s_q2_images">
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_movarab_1.png" id="kebrit_2_1" class="kebrit_movarrab_1" onclick="q2(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_movarrab_2.png" id="kebrit_2_2" class="kebrit_movarrab_2" onclick="q2(this)">
+                </div>
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_2_3" class="kebrit_ofoghi" onclick="q2(this)">
+                </div>
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_movarab_1.png" id="kebrit_2_4" class="kebrit_movarrab_1" onclick="q2(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_movarrab_2.png" id="kebrit_2_5" class="kebrit_movarrab_2" onclick="q2(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_movarab_1.png" id="kebrit_2_6" class="kebrit_movarrab_1" onclick="q2(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_movarrab_2.png" id="kebrit_2_7" class="kebrit_movarrab_2" onclick="q2(this)">
+                </div>
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_2_8" class="kebrit_ofoghi" onclick="q2(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_2_9" class="kebrit_ofoghi" onclick="q2(this)">
+                </div>
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_movarab_1.png" id="kebrit_2_10" class="kebrit_movarrab_1" onclick="q2(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_movarrab_2.png" id="kebrit_2_11" class="kebrit_movarrab_2" onclick="q2(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_movarab_1.png" id="kebrit_2_12" class="kebrit_movarrab_1" onclick="q2(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_movarrab_2.png" id="kebrit_2_13" class="kebrit_movarrab_2" onclick="q2(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_movarab_1.png" id="kebrit_2_14" class="kebrit_movarrab_1" onclick="q2(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_movarrab_2.png" id="kebrit_2_15" class="kebrit_movarrab_2" onclick="q2(this)">
+                </div>
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_2_16" class="kebrit_ofoghi" onclick="q2(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_2_17" class="kebrit_ofoghi" onclick="q2(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" id="kebrit_2_18" class="kebrit_ofoghi" onclick="q2(this)">
+                </div>
+            </div>
         </div>
         <div class="s_q3">
-            <p><span class="number">۳-</span> ۳ چوب‌کبریت را از شکل روبه‌رو بردارید تا ۴ مربع باقی بماند. در هر سوال, شكلي كه به وجود مي‌آید بکشید.</p>
+            <p><span class="number">۳-</span>
+                ۳ چوب‌کبریت را از شکل روبه‌رو بردارید تا ۴ مربع باقی بماند. در هر سوال, شكلي كه به وجود مي‌آید بکشید.
+                <span class="student"><br><span id="moves_3">3</span>حرکت باقی مانده</span>
+                <output id="s_q3_result"></output>
+            </p>
+            <div id="s_q3_images">
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" class="kebrit_ofoghi" id="kebrit_3_1" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" class="kebrit_ofoghi" id="kebrit_3_2" onclick="q3(this)">
+                </div>
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" class="kebrit_amoodi" id="kebrit_3_3" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" class="kebrit_amoodi" id="kebrit_3_4" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" class="kebrit_amoodi" id="kebrit_3_5" onclick="q3(this)">
+                </div>
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" class="kebrit_ofoghi" id="kebrit_3_6" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" class="kebrit_ofoghi" id="kebrit_3_7" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" class="kebrit_ofoghi" id="kebrit_3_8" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" class="kebrit_ofoghi" id="kebrit_3_9" onclick="q3(this)">
+                </div>
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" class="kebrit_amoodi" id="kebrit_3_10" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" class="kebrit_amoodi" id="kebrit_3_11" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" class="kebrit_amoodi" id="kebrit_3_12" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" class="kebrit_amoodi" id="kebrit_3_13" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_amoodi.png" class="kebrit_amoodi" id="kebrit_3_14" onclick="q3(this)">
+                </div>
+                <div>
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" class="kebrit_ofoghi" id="kebrit_3_15" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" class="kebrit_ofoghi" id="kebrit_3_16" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" class="kebrit_ofoghi" id="kebrit_3_17" onclick="q3(this)">
+                    <img src="assets/3rd/images/tabadkani/kebrit_ofoghi.png" class="kebrit_ofoghi" id="kebrit_3_18" onclick="q3(this)">
+                </div>
+            </div>
         </div>
         <div class="farhange_khandan">
             <br>
