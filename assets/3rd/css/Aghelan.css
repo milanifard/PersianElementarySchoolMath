@@ -1,73 +1,96 @@
+:root {
+    --light-red: #ff564f;
+    --light-green: #88dd77;
+    --very-light-orange: #fcb94b;
+    --light-orange: #fbaf4b;
+    --middle-orange: #ee8900;
+    --light-brown: #ee7700;
+}
+@font-face
+{
+    font-family: 'zar';
+    src: url("../../fonts/Zar.woff");
+    format("woff");
+}
 .text
 {
     color: black;
 
-    font-family: "B Nazanin";
+    font-family: 'zar';
     font-size: 2vw;
     direction: rtl;
     text-align: justify;
 }
 #p1background
 {
-    height: 127vw;
-    background: linear-gradient(to right, #fcb94b 0%, #fcb94b 35%, sandybrown 35%, sandybrown 100%);
+    background: linear-gradient(to right, var(--light-orange) 0%, var(--light-orange) 35%, var(--middle-orange) 35%, var(--middle-orange) 100%);
+    height: 134vw;
 }
 #p2background
 {
-    width: 120vw;
-    height: 55vw;
-
-    background-image: repeating-linear-gradient(0deg, sandybrown, sandybrown 0.7vw, #fcb94b 0vw, #fcb94b 1.5vw);
+    background-image: repeating-linear-gradient(0deg, sandybrown, sandybrown 0.7vw, var(--very-light-orange)  0vw, var(--very-light-orange)  1.5vw);
     background-repeat: no-repeat;
 
     position: absolute;
     top:92.5vw;
     right: 0.1vw;
+
+    width: 120vw;
+    height: 61vw;
+
     z-index: -1;
 }
 #p3background
 {
-    width: 99.2vw;
-    height: 48vw;
-
-    background-image: repeating-linear-gradient(0deg, sandybrown, sandybrown 0.7vw, #fcb94b 0vw, #fcb94b 1.5vw);
+    background-image: repeating-linear-gradient(0deg, sandybrown, sandybrown 0.7vw, var(--very-light-orange) 0vw, var(--very-light-orange)  1.5vw);
     background-repeat: no-repeat;
 
     position: absolute;
     top: 90vw;
     left: 0.1vw;
+
+    width: 99.2vw;
+    height: 54vw;
+
     z-index: -1;
 }
 #p2content
 {
     background-color: white;
+
     border-style: double;
     border-color: sandybrown ;
-    border-width: 0.7vw;
+    border-width: 0.8vw;
     border-left: 0px;
     border-bottom-right-radius: 4vw;
     border-top-right-radius: 4vw;
+
     position: relative;
     top: 10vw;
     right: 2vw;
-    height: 121vw;
+
     width: 89.4vw;
+    height: 121vw;
 }
 #p3content
 {
     background-color: white;
+
     margin-left: 12vw;
+
     border-style: double;
     border-color: sandybrown ;
     border-width: 0.7vw;
     border-right: 0px;
     border-bottom-left-radius: 4vw;
     border-top-left-radius: 4vw;
+
     position: relative;
     top: 10vw;
-    height: 112vw;
     right: 5vw;
+
     width: 90.99vw;
+    height: 112vw;
 }
 #page1header
 {
@@ -101,38 +124,55 @@
 
     border-style: solid;
     border-color: sandybrown ;
-    border-width: 0.45vw;
-    border-radius: 1.5vw;
+    border-width: 0.1vw;
+    border-radius: 1.8vw;
     border-top-right-radius: 0vw;
     border-bottom-right-radius: 0vw;
 
-    padding: 0.1vw;
     padding-left: 1.4vw;
     padding-right: 1.4vw;
 
     position: absolute;
-    top: 0.5vw;
-    left: 63.7vw;
+    top: 0.6vw;
+    left: 65.8vw;
 }
 #page3header
 {
-    background-color: #fcb94b;
+    background-color: var(--very-light-orange) ;
 
     font-size: 2.7vw;
     text-align: center;
 
     border-style: solid;
-    border-color: #fcb94b;
+    border-color: var(--very-light-orange) ;
     border-width: 3px;
     border-radius: 3.2vw;
 
-    padding: 0.9vw;
+    padding: 0.5vw;
     padding-right: 0.3vw;
     padding-left: 0.3vw;
 
     position: absolute;
-    top: -5.6vw;
+    top: -5vw;
     left: 45vw;
+
+    z-index: 1;
+}
+#p3b
+{
+    background-color: purple;
+
+    border-style: solid;
+    border-color: purple;
+
+    position: absolute;
+    top: -1vw;
+    left: 44.1vw;
+
+    width: 18.58vw;
+    height: 1.1vw;
+
+    z-index: 0;
 }
 #p1text
 {
@@ -143,12 +183,12 @@
     border-width: 2px;
     border-radius: 2.5vw;
 
+    padding: 0.5vw;
+
     position:absolute;
     top: 104vw;
     left: 21vw;
     right: 15vw;
-
-    padding: 0.5vw;
 }
 #p2text
 {
@@ -160,14 +200,15 @@
     border-width: 0.47vw;
     border-bottom-style: groove;
 
-    position:absolute;
-    top: 117.3vw;
-    left: 8vw;
-    height: 6vw;
-    width: 58vw;
-
     padding: 1vw;
     padding-right: 1.3vw;
+
+    position:absolute;
+    top: 117.2vw;
+    left: 7.8vw;
+
+    height: 6.1vw;
+    width: 58vw;
 }
 #p3text
 {
@@ -179,44 +220,49 @@
     border-width: 0.45vw;
     border-bottom-style: groove;
 
-    position:absolute;
-    top: 108.25vw;
-    left: 21vw;
-    height: 5.9vw;
-
     padding: 1.2vw;
     padding-right: 4.5vw;
-    padding-left: 4.5vw;
+    padding-left: 6vw;
+
+    position:absolute;
+    top: 107.9vw;
+    left: 20vw;
+
+    height: 5.9vw;
+}
+.q
+{
+    color: var(--light-brown);
 }
 #p2q
 {
     position:absolute;
     top: 10.5vw;
-    left: 25.5vw;
+    left: 27.5vw;
 }
 #p2q1
 {
     position:absolute;
     top: 13.45vw;
-    left: 31vw;
+    left: 33vw;
 }
 #p2q2
 {
     position:absolute;
     top: 29vw;
-    left: 24.6vw;
+    left: 27.6vw;
 }
 #p2q3
 {
     position:absolute;
     top: 45vw;
-    left: 11vw;
+    left: 15vw;
 }
 #p2q4
 {
     position:absolute;
     top: 82vw;
-    left: 13vw;
+    left: 15vw;
 }
 #p3q1
 {
@@ -228,19 +274,19 @@
 {
     position:absolute;
     top: 43vw;
-    left: 46.3vw;
+    left: 45.8vw;
 }
 #p3q2_1
 {
     position:absolute;
-    top: 63vw;
-    left: 24.5vw;
+    top: 64vw;
+    left: 24vw;
 }
 #p3q2_2
 {
     position:absolute;
-    top: 78.5vw;
-    left: 57vw;
+    top: 78vw;
+    left: 55.4vw;
 }
 #p2t1
 {
@@ -248,7 +294,7 @@
 
     position:absolute;
     top: 17.5vw;
-    left: 29.5vw;
+    left: 31.5vw;
 }
 #p2t2
 {
@@ -256,7 +302,7 @@
 
     position:absolute;
     top: 35.3vw;
-    left: 35.8vw;
+    left: 36.8vw;
 }
 
 #p3t1
@@ -265,13 +311,14 @@
 
     position:absolute;
     top: 9.2vw;
-    left: 16vw;
+    left: 12.7vw;
 }
 #calculator
 {
     position: absolute;
     left: 15vw;
     top: 13vw;
+
     width: 32vw
 }
 #topleft
@@ -279,6 +326,7 @@
     position: absolute;
     left: 15vw;
     top: 37vw;
+
     height: 35vw;
     width: 36vw
 }
@@ -287,6 +335,7 @@
     position: absolute;
     left: 52vw;
     top: 37vw;
+
     height: 35vw;
     width: 37vw
 }
@@ -295,6 +344,7 @@
     position: absolute;
     left: 15vw;
     top: 73vw;
+
     height: 27vw;
     width: 39vw
 }
@@ -303,29 +353,33 @@
     position: absolute;
     left: 55vw;
     top: 73vw;
+
     height: 27vw;
     width: 34vw
 }
 #boy
 {
-
     position: absolute;
     top: 1vw;
-    left: 77.2vw;
+    left: 77.28vw;
+
     width: 14vw;
 }
 #clock
 {
     position: absolute;
-    top: 16vw;
-    left: 66vw;
-    width: 14vw;
+    top: 16.7vw;
+    left: 68vw;
+
+    width: 10.5vw;
+    height: 11.5vw;
 }
 #mountain
 {
     position: absolute;
-    top: 61vw;
-    left: 17.7vw;
+    top: 62vw;
+    left: 14.5vw;
+
     width: 68.5vw;
 }
 #iran
@@ -333,6 +387,7 @@
     position: absolute;
     top: 98vw;
     left: 28vw;
+
     width: 24vw;
 }
 #girl
@@ -340,42 +395,39 @@
     position: absolute;
     top: 109.3vw;
     left: 68.4vw;
+
     width: 12.75vw;
     height: 16.8vw;
 }
-#sum
+.sum
 {
     position: absolute;
-    top: 14vw;
-    left: 11vw;
+    left: 12vw;
+
     width: 14vw;
 }
 #sum1
 {
-    position: absolute;
-    top: 32.5vw;
-    left: 11vw;
-    width: 14vw;
+    top: 14vw;
 }
 #sum2
 {
-    position: absolute;
-    top: 49.1vw;
-    left: 11vw;
-    width: 14vw;
+    top: 32.5vw;
 }
 #sum3
 {
-    position: absolute;
+    top: 49.1vw;
+}
+#sum4
+{
     top: 91vw;
-    left: 11vw;
-    width: 14vw;
 }
 #pencil
 {
     position: absolute;
     top: 17.5vw;
     left: 1.8vw;
+
     width: 14vw;
 }
 #polygonal
@@ -383,6 +435,7 @@
     position: absolute;
     top: 19vw;
     left: 18vw;
+
     width: 63vw;
 }
 #matches
@@ -390,19 +443,21 @@
     position: absolute;
     top: 48vw;
     left: 13vw;
+
     width: 69vw;
 }
 #thought
 {
     position: absolute;
     top: 68vw;
-    left: 7vw;
+    left: 3.5vw;
+
     width: 44vw;
 }
 .numb
 {
     color: white;
-    background-color: #fcb94b;
+    background-color: var(--very-light-orange);
 
     font-family: "B Nazanin";
     font-size: 2vw;
@@ -410,9 +465,9 @@
     text-align: justify;
 
     border-style: solid;
-    border-color: #fcb94b;
+    border-color: var(--very-light-orange);
     border-width: 3px;
-    border-radius: 1.5vw;
+    border-radius: 11px;
 
     padding-left: 1vw;
     padding-right: 1vw;
@@ -440,14 +495,15 @@
 {
     position: absolute;
     top: 104vw;
-    left: 8.1vw;
+    left: 7.3vw;
+
     width: 13vw;
 }
 .answer
 {
     color: black;
 
-    font-family: "B Nazanin";
+    font-family: 'zar';
     font-size: 2vw;
     direction: rtl;
     text-align: center;
@@ -459,13 +515,14 @@
 
     position:absolute;
     left: 67vw;
+
     width: 7.5vw;
     height: 3vw;
 }
 #p2a1
 {
     left: 57vw;
-    top: 23vw;
+    top: 23.5vw;
 }
 #p2a2
 {
@@ -487,7 +544,7 @@
 #p3a2_1
 {
     left: 73vw;
-    top: 71vw;
+    top: 72vw;
 }
 #p3a2_2
 {
@@ -496,28 +553,29 @@
 }
 .review
 {
-    background-color: #fcb94b;
+    background-color: var(--very-light-orange);
     color: black;
 
-    font-family: "B Nazanin";
+    font-family: 'zar';
     font-size: 2vw;
     direction: rtl;
     text-align: center;
 
     border-style: solid;
-    border-color: #fcb94b ;
+    border-color: var(--very-light-orange);
     border-width: 0.2vw;
     border-radius: 1vw;
 
     position:absolute;
     left: 55vw;
+
     width: 9vw;
     height: 3.5vw;
 }
 #p2r1
 {
     left: 45vw;
-    top: 23vw;
+    top: 23.5vw;
 }
 #p2r2
 {
@@ -539,7 +597,7 @@
 #p3r2_1
 {
     left: 61vw;
-    top: 71vw;
+    top: 72vw;
 }
 #p3r2_2
 {
@@ -551,18 +609,18 @@
     color: black;
     background-color: white;
 
-    font-family: "B Nazanin";
+    font-family: 'zar';
     font-size: 3vw;
     direction: rtl;
     text-align: justify;
 
     position: absolute;
-    right: 37.45vw;
+    right: 37.1vw;
 }
 #p2f1
 {
-    top: 22.5vw;
-    right: 47.3vw;
+    top: 23vw;
+    right: 47vw;
 }
 #p2f2
 {
@@ -576,28 +634,98 @@
 {
     top: 91.5vw;
 }
-#p3f1
+#p3f1_1
 {
     right: 32.5vw;
-    top: 36.5vw;
+    top: 33.5vw;
 }
-#p3f2_1
+#p3f1_2
 {
     right: 32.5vw;
-    top: 70.5vw;
+    top: 38vw;
+}
+#p3f2_1_1
+{
+    right: 32.5vw;
+    top: 67.7vw;
+}
+#p3f2_1_2
+{
+    right: 32.5vw;
+    top: 72vw;
 }
 #p3f2_2_1
 {
-    right: 8vw;
-    top: 90vw;
+    right: 10.5vw;
+    top: 89vw;
 }
 #p3f2_2_2
 {
-    right: 8vw;
-    top: 94vw;
+    right: 10.5vw;
+    top: 93vw;
 }
 #p3f2_2_3
 {
-    right: 8vw;
-    top: 98vw;
+    right: 10.5vw;
+    top: 97vw;
+}
+.pagination-container {
+    direction: rtl;
+    font-size: 3.5vw;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 3em;
+    position: absolute;
+}
+#pg1
+{
+    left: 32vw;
+    top: 122.5vw;
+}
+#pg2
+{
+    left: 32vw;
+    top: 140.5vw;
+}
+#pg3
+{
+    left: 32vw;
+    top: 131.3vw;
+}
+.page-number
+{
+    background-color: var(--light-orange);
+    border-radius: 2em;
+    width: 5.8em;
+    color: white;
+    border: 0.35em double white;
+
+    font-family: 'zar';
+    padding: 0 1.1em;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+.page-number input
+{
+    background-color: var(--light-brown);
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+.page-number-button {
+    width: 3em;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+.page-number-button > a {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
 }
