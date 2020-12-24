@@ -57,6 +57,16 @@ input[type=number] {
 
 }
 
+@font-face {
+    font-family: 'zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Koodak';
+    src: url("../../fonts/KoodakBold.ttf");
+}
+
 .page-left-border {
     width: 90vw;
     max-width: 100%;
@@ -84,7 +94,25 @@ input[type=number] {
     background-color: white;
 }
 
-.background-style {
+
+.background-left {
+    width: 100vw;
+    height: 43vw;
+
+    background-image: repeating-linear-gradient(var(--pink_level2), var(--pink_level2) 1.5vw, var(--pink_level1) 0vw, var(--pink_level1) 2vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    bottom: -12vw;
+    right: 0;
+    z-index: -1;
+}
+/* .page-right-border .background-style {
+    right: -9vw;
+} */
+
+.background-right {
 
     width: 100vw;
     height: 42vw;
@@ -92,9 +120,9 @@ input[type=number] {
     background-image: repeating-linear-gradient(var(--pink_level2), var(--pink_level2) 1.5vw, var(--pink_level1) 0vw, var(--pink_level1) 2vw);
     /* background-position: bottom; */
     background-repeat: no-repeat;
-
     position: absolute;
     bottom: -12vw;
+    left: 0;
     z-index: -1;
 }
 
@@ -112,72 +140,165 @@ input[type=number] {
     margin-right: 5vw;
     z-index: 2;
 }
+
+#classwork_cover_137{
+    /* border: 2px solid rebeccapurple; */
+    right: -2.3vw;
+    margin-right: 5vw;
+    z-index: 2;
+}
+
+#classwork_title_137{
+    background-color: var(--pink_level2);
+    border-radius: 1.5vw;
+    text-align: center;
+    font-family: 'Koodak';
+
+    font-size: 2.5vw;
+    color: white;
+
+    padding: 0 9vw 0 2vw;
+    position: absolute;
+    right: 4vw;
+    margin-top: 2vw;
+    /* top: 2.5vw; */
+}
 .activity-title {
     background-color: var(--pink_level2);
     border-radius: 1.5vw;
 
     text-align: center;
-    font-family:BNazanin,'BNazanin';
-    /* font-family: Koodak; */
-    font-size: 2.5vw;
+    font-family: 'Koodak';
+    font-size: 1.9em;
     color: white;
 
-    padding: 0 11vw 0 3vw;
+    padding: 0 2vw 0 2vw;;
     position: absolute;
-    right: 3vw;
+    right: 4vw;
     top: 2.5vw;
     /* z-index: 1; */
 
-    margin-right: 3vw;
+    margin-right: 10vw;
+}
+
+#tamrin_138_cover{
+    padding-right: 8vw; margin-right: 2vw;
+}
+#top136title{
+    background-color: var(--pink_level2);
+    border-radius: 1.5vw;
+
+    text-align: center;
+    font-family:BNazanin,'BNazanin', 'zar';
+    font-size: 2.5vw;
+    color: black;
+
+    padding: 0 1.2vw 0 1.2vw;
+    position: absolute;
+    margin-left:33%; 
+    margin-top: -11vw;
 }
 
 .questions-number {
     color: var(--pink);
 }
 .text {
-    font-family:BNazanin,'BNazanin';
-    /* font-family: BNazanin; */
-    font-size: x-large;
+    font-family: BNazanin,'BNazanin', 'zar';
+    font-size: 1.8em;
     direction: rtl;
-    white-space: pre-wrap;
+
+    /* white-space: pre-wrap; */
 }
 #little_boy_image {
     /* position: absolute; */
     float: left;
     width: 10vw;
     margin-left: 12vw;
-    margin-top: -8vh;
+    margin-top: -6vw;
     margin-bottom: 2vh;  
+}
+#little_red_img{
+    width: 12vw;
+    float: right; 
+    position: relative;  
+    margin-top:5vw; 
+    margin-right: -18vw;
+}
+
+#pen_img{
+    width: 12em;
+    /* height: 10vh; */
+    margin-top: -7vw;
+    float: left;
+}
+#quran_img{
+    width: 12em;
+    position: relative;
+    /* margin-top: -7vw; */
+    float: left;
+}
+
+#boz_img{
+    width: 20em;
+    position: relative;
+    margin-right: 2vw;
+    /* margin-top: -7vw; */
+    float: left;
+    border: solid pink;
+    border-radius: 5%;
 }
 #colored_pencil_image {
     /* position: absolute; */
     float: left;
     width: 15vw;
     /* margin-left: 1vw; */
-    margin-top: -10vh;
+    margin-top: -6vw;
     margin-bottom: 2vh;  
 }
+#p137q1_content {
+    margin-top: 3vw;
+}
 
-#answer_line{
+.brick_img{
+    width: 11vw;
+    height: 11vw;
+}
+/* =============================== */
+.answer_line{
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid rgb(81, 112, 197);
-    margin: 3vw 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
     padding: 0;
+    
 }
 
 table, td, th {
     text-align: left;
+    font-size: 1.4em;
+    font-family:BNazanin,'BNazanin', 'zar';
 
   }
-  
+th{
+    width: 11vw;
+}
 table {
-    /* font-family:Kodak ; */
     margin-top: 2vw;
     width: 100%;
     border-collapse: collapse;
-    font-size: 2vw;
+    
+}
+.center_th{
+    text-align: center;
+}
+.q1p137table{
+    margin-top: 5vw;
+    width: 100%;
+    border-collapse: collapse;
+    /* font-size: 2vw; */
+    float: right;
+    display: inline;
 }
 /*** Page 136 ***/
 #content_136 {
@@ -185,18 +306,46 @@ table {
     padding-right: 5vw;
     margin-top: 9vw;
 }
-
-#content_136 #Q1_container {
-    padding-right: 10vw;
+.normal_content{
+    /* position: relative; */
+    padding-left: 1.8vw;
+    padding-right: 5vw;
+    margin-top: 1vw;
 }
 
+#content_137{
+    /* position: relative; */
+    padding-left: 1.8vw;
+    padding-right: 5vw;
+    margin-top: 1vw;
+}
+#content_136 #Q1_container {
+    /* font-size: 2vw; */
+    padding-right: 10vw;
+    /* font-size: 2vw; */
+}
+#content_137 #Q1_container {
+    position: relative;
+    padding-right: 20vw;
+    margin-top: 1.5vw;
+}
+
+#Q1p138_container{
+    position: relative; margin-right: 15vw;
+}
+#Q1p138_container #Q1_description {
+    position:relative;
+    right:3vw;
+}
 #content_136 #Q1_description {
     float: right;
+    /* font-size: 2vw; */
 }
 
 .right_q_container {
-    margin-top: 4vw;
+    padding-top: 4vw;
     margin-right: 0vw;
+    /* margin-bottom: 3vw; */
     clear: both;
 }
 #content_136 #Q2_questions_content {
@@ -227,8 +376,8 @@ table {
     border-right: 2vw solid var(--pink_level2);
 
     text-align: center;
-    font-family:BNazanin,'BNazanin';
-    /* font-family: Koodak; */
+    /* font-family:BNazanin,'BNazanin'; */
+    font-family: Koodak;
     font-size: 2.5vw;
     color: white;
     float: right;
@@ -245,12 +394,25 @@ table {
 
 .creative_content{
     margin-top: 1vw;
-    margin-right: 13vw;
-    /* margin-block-start: auto; */
-    /* font-family: BNazanin, 'BNazanin'; */
+    margin-right: 16vw;
     
 }
 .page-number_right {
+    font-family:BNazanin,'BNazanin';
+    background-color: var(--pink_level2);
+    border-radius: 2.5vw;
+    border: 0.9vw double white;
+
+    text-align: center;
+    font-size: 2.1vw;
+    color: white;
+
+    padding: 0 3vw;
+    position: absolute;
+    bottom: -0.5vw;
+    right: -5vw;
+}
+.page-number_left {
     font-family:BNazanin,'BNazanin';
     background-color: var(--pink_level2);
     border-radius: 2.5vw;
@@ -264,5 +426,143 @@ table {
     padding: 0 3vw;
     position: absolute;
     bottom: -0.5vw;
-    right: -5vw;
+    left: -5vw;
+}
+
+
+.showanswerbutton, .hideanswerbutton {
+    background-color: #6fa3f1!important;
+    position: relative;
+    width: 20%;
+    margin-left: 80%;
+    border-color: #104ed3;
+}
+
+.triangle-up {
+	display: inline;
+	width: 0;
+	height: 0;
+	border-left: 1.8vw solid transparent;
+	border-right: 1.8vw solid transparent;
+    border-bottom: 2.5vw solid rgb(112, 5, 116);
+    /* border-top: 1vw solid rgb(112, 5, 116); */
+    /* margin-left:2vw; */
+    margin-right: 1vw;
+    /* margin-bottom: 2vw; */
+    /* border-bottom-color: ; */
+    float: left;
+}
+.square {
+    height: 2.5vw;
+    width: 2.5vw;
+    float: left;
+    background-color: rgb(202, 19, 19);
+    margin-right:1vw;
+   
+  }
+  .circle {
+    height: 2.5vw;
+    width: 2.5vw;
+    float: left;
+    background-color: rgb(202, 19, 19);
+    margin-right:1vw;
+    border-radius: 50%;
+   
+  }
+  .shape_container{
+    float: left;
+    margin-right: 0.5vw;
+  }
+  .shape_container_l{
+    float: left;
+    margin-right: 4vw;
+    margin-top: 2vw;
+    height: 13vw;
+  }
+  .tiny_number_in{
+    border: solid pink;
+    width: 1.9vw;
+  }
+  .med_number_in{
+    height: 3vw;
+    width:  4.5vw;
+    font-size: 2vw;
+    border: solid pink;
+    text-align: left;
+  }
+
+  .num_container_137{
+      position: relative;
+      width: 5vw;
+      height: 4vw;
+      background-color: var(--blue_level3);
+      border-radius: 20%;
+      font-size: 2em;
+      text-align: center;
+      float: left;
+      margin-right: 1vw;
+  }
+#cal_137{
+    margin-top: 2vw;
+    position: relative;
+    font-size: 2em;
+    padding-right: 10vw;
+    /* text-align: left; */
+    /* right: 60vw; */
+}
+
+
+/* Page Changer Classes */
+
+.pagination-container {
+    direction: rtl;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 3em;
+    /* to adjust page changer position , adjust position of this element */
+    
+}
+
+.page-number {
+    /* substitute your color */
+    background-color: var(--pink);
+    border-radius: 2em;
+    width: 5.8em;
+    color: white;
+    border: 0.35em double white;
+    /* Koodak font should be imported*/
+    font-family: Koodak;
+    padding: 0 1.1em;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.page-number input {
+    /* substitute your color */
+    background-color: var(--pink_level3);
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+
+.page-number-button {
+    width: 3em;
+    display: flex;
+    color: var(--pink_level3);
+    justify-content: center;
+}
+
+.page-number-button > a {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
+
 }

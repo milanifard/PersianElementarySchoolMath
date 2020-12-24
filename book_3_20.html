@@ -19,7 +19,7 @@
                 <div class="topic-title topic-title-classwork">کار در کلاس</div>
                 <div class="qboxActivity">
                     <p Class="question1page20">
-                        <span class="qnum">1-</span> تعداد مثلث های کوچک را در شکل بشمارید.<br>برای شمارش از تقارن استفاده کنید.سپس پروانه را به صورت متقارن رنگ آمیزی کنید.
+                        <span class="qnum">1-</span> تعداد مثلث های کوچک را در شکل بشمارید.<br>برای شمارش از تقارن استفاده کنید.سپس شماره تصویری که پروانه را به صورت متقارن رنگ کرده است را انتخاب کنید .
                     </p>
                 </div>
                 <div class="clearfix"></div>
@@ -27,13 +27,65 @@
             </div>
 
             <div class="pictures">
-                <image class="butterfly" src="assets/3rd/images/baghkhani/butterfly.png"></image>
+
+                <table>
+                    <tr>
+                        <td>
+                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/butterfly.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color11.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color10.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/color12.png"></image>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="numSelection"></span>
+                        </td>
+                        <td>
+                            <span class="numSelection">(1)</span>
+
+                        </td>
+                        <td>
+                            <span class="numSelection">(2)</span>
+                        </td>
+                        <td>
+                            <span class="numSelection">(3)</span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="st-span"> تعدا مثلث ها</span>
+                            <input type="text" id="check_part1" value="" class="input-style" onchange="getValue(0,'check_part1')">
+                        </td>
+                        <td>
+
+                            <input class="radiobox" type="radio" name="answer7" id="r71" onclick="p20answerQ1(0);" />
+                            <label dir="rtl" for="r71" id="label1">(1)</label>
+                        </td>
+                        <td>
+
+                            <input class="radiobox" type="radio" name="answer7" id="r72" onclick="p20answerQ1(1);" />
+                            <label dir="rtl" for="r72" id="label2">(2)</label>
+
+                        </td>
+                        <td>
+
+                            <input class="radiobox" type="radio" name="answer7" id="r73" onclick="p20answerQ1(2);" />
+                            <label dir="rtl" for="r73" id="label3">(3)</label>
+
+                        </td>
+                    </tr>
+                </table>
             </div>
-            <div class="clearfix"></div>
-            <div style="margin: 2vw;">
-                <span style="font-size:1.75vw"> تعدا مثلث ها</span>
-                <input type="text" id="check_part1" value="" class="input-style" onchange="getValue(0,'check_part1')">
-            </div>
+
             <div class="clearfix"></div>
             <div class="qbox">
                 <p class="question">
@@ -60,22 +112,22 @@
                     <span class="pull-left pleft">1</span>
                     <div class="pull-left">
                         <img class="guider" src="assets/3rd/images/eftekhari/curveguider.png">
-                        <p class="text-center" style="margin-top: -2vw">2+</p>
+                        <p class="text-center text">2</p>
                     </div>
                     <span class="pull-left">3</span>
                     <div class="pull-left">
                         <img class="guider" src="assets/3rd/images/eftekhari/curveguider.png">
-                        <p class="text-center" style="margin-top: -2vw">3+</p>
+                        <p class="text-center text">3</p>
                     </div>
                     <input type="text" id="check_part9" value="" class="input-style pull-left input-st" onchange="getValue(7,'check_part9')">
                     <div class="pull-left">
                         <img class="guider" src="assets/3rd/images/eftekhari/curveguider.png">
-                        <p class="text-center" style="margin-top: -1vw; margin-left:2vw">
-                            <input type="text" id="check_part10" value="" class="input-style pull-left input-st" onchange="getValue(5,'check_part10')">
+                        <p class="text-center text2">
+                            <input type="text" id="check_part10" value="" class="input-style pull-left input-st input-styleNew" onchange="getValue(5,'check_part10')">
                         </p>
                     </div>
                     <input type="text" id="check_part11" value="" class="input-style pull-left input-st" onchange="getValue(10,'check_part11')">
-                    <input type="text" id="check_part12" value="" class="input-style pull-left" style="margin-left:15vw;" onchange="getValue(11,'check_part12')">
+                    <input type="text" id="check_part12" value="" class="input-style pull-left  inputStyleLeft" onchange="getValue(18,'check_part12')">
                 </div>
 
             </div>
@@ -83,12 +135,29 @@
 
             <div class="draw-box-level1 ">
                 <div class="draw-box-text-right ">رسم کنید</div>
-                <div class="text-config drawText ">مانند شکل یک مکعب را پشت طلق یا شیشه بگذارید. <br> در طرف دیگر آن بنشینیدو با ماژیک روی لبه های مکعب<br> خط بکشید<br>مکعب را برداریدو شیشه را نگاه کنید.شکل روی شیشه<br>تصویر یک مکعب را روی یک سطح نشان میدهد.
+                <div class="text-config drawText ">مانند شکل یک مکعب را پشت طلق یا شیشه بگذارید. <br> در طرف دیگر آن بنشینیدو با ماژیک روی لبه های مکعب<br> خط بکشید<br>مکعب را برداریدو شیشه را نگاه کنید.شکل روی شیشه<br>تصویر یک مکعب را روی یک سطح نشان میدهد.<br>کدام گزینه سطح مکعب روی
+                    شیشه را به درستی بیان میکند؟
 
                 </div>
                 <div class="guess-box-level2 ">
                     <img class='drawboxImage' src="assets/3rd/images/baghkhani/draw.png ">
                 </div>
+                <table>
+                    <tr>
+                        <div class='containp20'>
+                            <input class="radiobox radiobox2" type="radio" name="guess" id="guess1" onclick="guess_check(0);" />
+                            <label dir="rtl" for="guess1" id="labelguess1">مربع</label>
+
+
+                            <input class="radiobox radiobox2" type="radio" name="guess" id="guess2" onclick="guess_check(1);" />
+                            <label dir="rtl" for="guess2" id="labelguess2">مستطیل</label>
+                        </div>
+                    </tr>
+
+
+                </table>
+
+
 
             </div>
             <div class="clearfix "></div>

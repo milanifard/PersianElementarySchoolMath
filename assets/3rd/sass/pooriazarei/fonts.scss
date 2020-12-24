@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Zar';
+    src: url('../../fonts/Zar.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/Zar.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../fonts/Zar.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../fonts/Zar.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../fonts/Zar.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../fonts/Zar.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'ZarBold';
+    src: url('../../fonts/ZarBold.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/ZarBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../fonts/ZarBold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../fonts/ZarBold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../fonts/ZarBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../fonts/ZarBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Faraz';
+    src: url('../../fonts/Faraz.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/Faraz.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../fonts/Faraz.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../fonts/Faraz.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../fonts/Faraz.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../fonts/Faraz.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+* {
+    font-family: 'Zar';
+	font-weight: normal;
+	font-size: 2vw;
+
+	@media (max-width: 991px) {
+		font-size: 3vh;
+
+		.right-border-template {
+			margin-right: 10vw !important;
+		}
+
+		.left-border-template {
+			margin-right: 10vw !important;
+		}
+	}
+	
+	@media (max-width: 800px) {
+		font-size: 2vh;
+
+		.right-border-template {
+			margin-right: 10vw !important;
+		}
+
+		.left-border-template {
+			margin-right: 10vw !important;
+		}
+	}
+}

@@ -1,0 +1,314 @@
+@font-face {
+  font-family: 'Zar';
+  src: url("../../fonts/Zar.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Zar.eot?#iefix") format("embedded-opentype"), url("../../fonts/Zar.woff2") format("woff2"), url("../../fonts/Zar.woff") format("woff"), url("../../fonts/Zar.ttf") format("truetype"), url("../../fonts/Zar.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'ZarBold';
+  src: url("../../fonts/ZarBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/ZarBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/ZarBold.woff2") format("woff2"), url("../../fonts/ZarBold.woff") format("woff"), url("../../fonts/ZarBold.ttf") format("truetype"), url("../../fonts/ZarBold.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'Faraz';
+  src: url("../../fonts/Faraz.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("../../fonts/Faraz.woff2") format("woff2"), url("../../fonts/Faraz.woff") format("woff"), url("../../fonts/Faraz.ttf") format("truetype"), url("../../fonts/Faraz.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+* {
+  font-family: 'Zar';
+  font-weight: normal;
+  font-size: 2vw; }
+  @media (max-width: 991px) {
+    * {
+      font-size: 3vh; }
+      * .right-border-template {
+        margin-right: 10vw !important; }
+      * .left-border-template {
+        margin-right: 10vw !important; } }
+  @media (max-width: 800px) {
+    * {
+      font-size: 2vh; }
+      * .right-border-template {
+        margin-right: 10vw !important; }
+      * .left-border-template {
+        margin-right: 10vw !important; } }
+
+body {
+  direction: rtl;
+  margin: 32px 0 32px 0; }
+
+img {
+  width: 100%; }
+
+#smallCube {
+  width: 60px; }
+
+.title-style {
+  background-color: #DC9FBC;
+  border-radius: 3vw;
+  text-align: center;
+  font-size: 3vw;
+  color: black;
+  padding: 1vw;
+  position: absolute;
+  width: 18vw;
+  right: 40vw;
+  top: 3vw;
+  z-index: 1; }
+
+.behind-title-style {
+  height: 1vw;
+  background-color: #84B954;
+  color: #84B954;
+  border-style: solid;
+  position: absolute;
+  width: 20vw;
+  right: 39vw;
+  left: 34vw;
+  top: 6vw;
+  z-index: 1; }
+
+.header-title {
+  background-color: #DC9FBC;
+  border-radius: 1.7vw 0 0 1.7vw;
+  border-right: 2vw solid #D17FA6;
+  text-align: center;
+  font-size: 2.25vw;
+  color: #000;
+  font-weight: bold;
+  padding: 8px;
+  width: 16vw;
+  position: relative;
+  right: -3.1vw;
+  top: 1vw;
+  margin-bottom: 2vw;
+  z-index: 1; }
+
+.practice-title {
+  background-color: #D17FA6;
+  border-radius: 1.7vw 0 0 1.7vw;
+  text-align: center;
+  font-size: 2.25vw;
+  color: #fff;
+  padding: 8px;
+  width: 16vw;
+  position: relative;
+  right: -3vw;
+  margin: 4vw 0 2vw 0;
+  z-index: 1; }
+
+#rightArrow {
+  cursor: pointer;
+  border-right: 0.3vw solid #784a90;
+  border-bottom: 0.3vw solid #784a90;
+  width: 1.5vw;
+  height: 1.5vw;
+  transform: rotate(-45deg);
+  margin-bottom: -8px; }
+
+#leftArrow {
+  cursor: pointer;
+  border-left: 0.3vw solid #784a90;
+  border-top: 0.3vw solid #784a90;
+  width: 1.5vw;
+  height: 1.5vw;
+  transform: rotate(-45deg);
+  margin-top: 8px; }
+
+.right-border-template {
+  width: 90vw;
+  max-width: 90vw;
+  border: 0.8vw double #D17FA6;
+  margin: 6vw 8.9vw 0 0;
+  border-left: none;
+  border-top-right-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+  position: relative;
+  background-color: #fff; }
+
+.left-border-template {
+  width: 90vw;
+  max-width: 90vw;
+  border: 0.8vw double #D17FA6;
+  margin: 6vw 0 0 10vw;
+  border-right: none;
+  border-top-left-radius: 5vw;
+  border-bottom-left-radius: 5vw;
+  position: relative;
+  background-color: #fff; }
+
+.page-number-on-bottom {
+  box-sizing: border-box;
+  background-color: #d17fa7;
+  border-radius: 2em;
+  width: 5.8em;
+  color: #fff;
+  border: 0.35em double #fff;
+  padding: 0 1.1em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.background-style-right {
+  width: 100vw;
+  height: 48vw;
+  position: absolute;
+  background-image: repeating-linear-gradient(0deg, #D17FA6, #D17FA6 1vw, #DC9FBC 0vw, #DC9FBC 2.5vw);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  bottom: -20vw;
+  left: 0;
+  z-index: -1; }
+
+.background-style-left {
+  width: 98.9vw;
+  height: 40vw;
+  position: absolute;
+  background-image: repeating-linear-gradient(0deg, #D17FA6, #D17FA6 1vw, #DC9FBC 0vw, #DC9FBC 2.5vw);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  bottom: -20vw;
+  right: 0;
+  z-index: -1; }
+
+.answer-box {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  resize: none;
+  width: 100%;
+  height: 22px;
+  padding: 12px 12px 0 12px;
+  border-color: #A5CDE0;
+  direction: ltr;
+  background-color: transparent; }
+  .answer-box:focus {
+    outline: none; }
+
+.small-answer-box {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  resize: none;
+  width: 4vw;
+  height: 2vw;
+  border-color: #A5CDE0;
+  direction: ltr;
+  background-color: transparent;
+  text-align: center; }
+  .small-answer-box:focus {
+    outline: none; }
+
+ol {
+  margin-right: -24px; }
+
+.page-number-wrapper {
+  margin-top: -3vw; }
+
+#readingCulture {
+  right: -4.3vw; }
+
+.reading-culture li {
+  margin-left: 8px; }
+
+#readingCultureImg {
+  position: absolute;
+  width: 20vw;
+  left: 4vw;
+  top: -6vw; }
+
+#wormImage {
+  position: absolute;
+  width: 10vw;
+  right: 0vw;
+  top: -7.5vw; }
+
+#vectorImagePage_78 {
+  width: 40vw;
+  margin-top: -1vw; }
+
+#ladybirdBeetleImg {
+  position: absolute;
+  width: 16vw;
+  left: -2vw;
+  top: 8vw; }
+
+#girlAndMotherImg {
+  position: absolute;
+  width: 15vw;
+  right: -7vw;
+  top: 0vw;
+  z-index: 1; }
+
+#patternTitlePage_76 {
+  margin-right: 8vw; }
+
+#flowerPotPage_76 {
+  width: 24vw;
+  margin-top: 3vw; }
+
+.square-wrapper {
+  width: 50vw; }
+
+.rtl {
+  direction: rtl !important; }
+
+.ltr {
+  direction: ltr !important; }
+
+.square {
+  border: 3px solid #64B1C7;
+  background-color: #A5CDE0;
+  width: 2vw;
+  height: 2vw; }
+
+p {
+  margin: 0; }
+
+.circle {
+  position: relative;
+  width: 1vw;
+  height: 1vw;
+  margin-right: 3vw;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 7.5px;
+  background-color: #784a90; }
+  .circle::before {
+    content: '';
+    display: inline-block;
+    width: 1vw;
+    height: 1vw;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #784a90;
+    left: 1vw;
+    top: 1vw;
+    position: absolute; }
+  .circle::after {
+    content: '';
+    display: inline-block;
+    width: 1vw;
+    height: 1vw;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    left: -1vw;
+    position: absolute;
+    top: 1vw;
+    background-color: #784a90; }
+
+#circlesWrapperPage_78 {
+  margin-left: 1vw; }
+
+.reading-culture {
+  background-color: #fdebf3;
+  border: 3px solid #D17FA6;
+  border-radius: 32px; }

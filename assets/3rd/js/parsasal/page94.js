@@ -1,11 +1,12 @@
 function checkFargangeNeveshtanP94() {
     if ($("#farhange_neveshtan_input").val().length > 30) {
-        $("#farhange-neveshtan-messages").find(".warn-message").remove()
+        showSuccessMessageOnMasale("#farhange_neveshtan_input")
         $("#farhange-neveshtan").find(".info-message").css("display", "flex")
             .hide()
             .fadeIn();
+
     } else {
-        showWrongAnswerMessage("#farhange-neveshtan-messages")
+        showWarningMessageOnMasale("#farhange_neveshtan_input");
     }
 
 }
@@ -15,49 +16,50 @@ function checkTamrinP94() {
     console.log("mohit labels: " + $(".triangles"))
     let hasWrongAnswer1 = false
     $(".triangle-answer").each(function (i, obj) {
-        if (obj.value !== "") {
-            if (obj.value !== "12" && obj.value !== "۱۲") {
-                hasWrongAnswer1 = true
-                obj.classList.add("is-invalid")
-                obj.classList.remove("is-valid")
 
-            } else {
-                obj.classList.add("is-valid")
-                obj.classList.remove("is-invalid")
-
-            }
-
-        } else {
+        if (obj.value !== "12" && obj.value !== "۱۲") {
             hasWrongAnswer1 = true
+            obj.classList.add("is-invalid")
+            obj.classList.remove("is-valid")
+            hasWrongAnswer1 = true
+        } else {
+            obj.classList.add("is-valid")
+            obj.classList.remove("is-invalid")
+
         }
+
+
 
     });
 
 
 
     if (hasWrongAnswer1) {
-        showWrongAnswerMessage("#tamrin94-1-messages")
+        showWarningMessageOnMasale(".triangle-answer");
     } else {
-        $("#tamrin94-1-messages").find(".warn-message").remove()
-        $("#tamrin94-1-messages").find(".info-message").css("display", "flex")
-            .hide()
-            .fadeIn();
-        showTrueAnswersMessageBox("#tamrin94-1-messages")
+
+        showSuccessMessageOnMasale(".triangle-answer")
 
     }
 
 
     // check second masale (rectangles)
+    let hasWrongAnswer2 = false
+    var warningMessageText;
     if (clickedRectangleId) {
         console.log("clickedRectangleId is not null")
         if (clickedRectangleId === "rect2") {
             $("#rect2").css("box-shadow", "0 0 8px green");
-            $("#tamrin94-2-messages").find(".info-message").css("display", "flex")
+            $("#rect2").parents(".masale").find(".info-message").css("display", "flex")
                 .hide()
                 .fadeIn();
         } else {
+            hasWrongAnswer2 = true
             $("#" + clickedRectangleId).css("box-shadow", "0 0 8px red");
         }
+    } else {
+        hasWrongAnswer2 = true
+        warningMessageText = "یادت رفت روی کمترین محیط کلیک کنی"
     }
 
     answers = {
@@ -68,7 +70,7 @@ function checkTamrinP94() {
         "31": 16,
         "32": 12,
     }
-    let hasWrongAnswer2 = false
+
     for (var key in answers) {
         inputNode = $("#rect-ans" + key)[0]
         if (inputNode.value === answers[key].toString()) {
@@ -82,29 +84,34 @@ function checkTamrinP94() {
         }
 
     }
+
     if (hasWrongAnswer2) {
-        showWrongAnswerMessage("#tamrin94-2-messages")
+        if (warningMessageText) {
+            showWarningMessageOnMasale("#rect-ans11" , warningMessageText)
+        } else {
+            showWarningMessageOnMasale("#rect-ans11")
+        }
+        showWarningMessageOnMasale("#rect-ans11");
     } else {
-        $("#tamrin94-2-messages").find(".warn-message").remove()
-        $("#tamrin94-2-messages").find(".info-message").css("display", "flex")
-            .hide()
-            .fadeIn();
-        showTrueAnswersMessageBox("#tamrin94-2-messages")
+        showSuccessMessageOnMasale("#rect-ans11")
+
 
     }
+
 
     if (!hasWrongAnswer1 && !hasWrongAnswer2) {
         showAfarinModalAnimation()
     }
 }
 
-
+function understood_btn_clicked(){
+    $("#canvas-overlay-elements").css("display", "none")
+    $("#chain-canvas").css("filter", "none")
+}
 
 var clickedRectangleId;
 $(document).ready(function () {
-    
-
-
+    $("#understood-btn").click(understood_btn_clicked);
     $(".clickable-image").click(function (event) {
 
         clickedRectangleId = $(event.target).attr('id')

@@ -11,11 +11,11 @@
     <div id="success-message">
         آفرین گوگولی مگولی
     </div>
+    <div class="buttons-nb flex-center">
+        <a href="book_3_85.html" class="nb-bt flex-center">بعدی</a>
+        <a href="book_3_83.html" class="nb-bt flex-center">قبلی</a>
+    </div>
     <div class="full-bg">
-        <div class="buttons-nb flex-center">
-            <a href="book_3_85.html" class="nb-bt flex-center">بعدی</a>
-            <a href="book_3_83.html" class="nb-bt flex-center">قبلی</a>
-        </div>
         <div class="content-wrapper">
             <div class="page-hw pg84">
                 <div class="box-base tip-abs flex-center bold hw-title pg84">تمرین</div>
@@ -35,7 +35,8 @@
                             <p>نقطه های روی شکل را نام گذاری کنید.</p>
                             <p>
                                 از برخورد این چهار خط چه شکلی به وجود آمده است؟
-                                <input type="text" onkeyup="p84_q1(event)" dir="auto" class="full-inp small-inp">
+                                <input type="text" 
+                                    onkeyup="check_input_(event, ['لوزی'])" dir="auto" class="full-inp small-inp">
                             </p>
                         </div>
                     </div>
@@ -56,15 +57,18 @@
                     <div class="qs-part">
                         <div class="float33 flex-center-column">
                             <img src="assets/3rd/images/slmlin/p84q2_2.png" alt="">
-                            <input type="text" dir="auto" class="full-inp small-inp">
+                            <input type="text"
+                                onkeyup="check_splited_(event, 3)" dir="auto" class="full-inp small-inp">
                         </div>
                         <div class="float33 flex-center-column">
                             <img src="assets/3rd/images/slmlin/p84q2_3.png" alt="">
-                            <input type="text" dir="auto" class="full-inp small-inp">
+                            <input type="text"
+                                onkeyup="check_splited_(event, 4)" dir="auto" class="full-inp small-inp">
                         </div>
                         <div class="float33 flex-center-column">
                             <img src="assets/3rd/images/slmlin/p84q2_4.png" alt="">
-                            <input type="text" dir="auto" class="full-inp small-inp">
+                            <input type="text" 
+                                onkeyup="check_splited_(event, 6)" dir="auto" class="full-inp small-inp">
                         </div>
                     </div>
                 </div>
@@ -75,6 +79,11 @@
                                 <span class="red">۳ ـــ </span>
                                 با خط کش یک چهار ضلعی، یک پنج ضلعی و یک شش ضلعی بکشید و آن هارا نما گذاری کنید.
                             </p>
+                        </div>
+                        <div class="float100">
+                            <canvas class="paint-canvas">
+
+                            </canvas>
                         </div>
                     </div>
                 </div>
@@ -101,19 +110,19 @@
                     <div class="qs-part">
                         <div class="float25 flex-center-column">
                             <img src="assets/3rd/images/slmlin/pg84box2.png" alt="">
-                            <input type="text" dir="auto" class="full-inp small-inp">
+                            <input type="text" onkeyup="check_input_(event, ['۲'])" dir="auto" class="full-inp small-inp">
                         </div>
                         <div class="float25 flex-center-column">
                             <img src="assets/3rd/images/slmlin/p84box3.png" alt="">
-                            <input type="text" dir="auto" class="full-inp small-inp">
+                            <input type="text" dir="auto" onkeyup="check_input_(event, ['۲'])" class="full-inp small-inp">
                         </div>
                         <div class="float25 flex-center-column">
                             <img src="assets/3rd/images/slmlin/p84box4.png" alt="">
-                            <input type="text" dir="auto" class="full-inp small-inp">
+                            <input type="text" dir="auto" onkeyup="check_input_(event, ['۵'])" class="full-inp small-inp">
                         </div>
                         <div class="float25 flex-center-column">
                             <img src="assets/3rd/images/slmlin/p84box5.png" alt="">
-                            <input type="text" dir="auto" class="full-inp small-inp">
+                            <input type="text" dir="auto" onkeyup="check_input_(event, ['۹'])" class="full-inp small-inp">
                         </div>
                     </div>
                     
