@@ -218,15 +218,19 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     padding-right: 15vw;
 }
 
+.question-container.right {
+    margin-top: 7vw;
+}
+
 .question-container.last {
-    margin-bottom: 10vw;
+    margin-bottom: 30vw;
 }
 
 .question-container .prompt {
     direction: rtl;
 }
 
-.question-container .guide {
+.guide {
     color: var(--bright_purple);
 }
 
@@ -235,6 +239,7 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .ans-pane {
@@ -243,6 +248,7 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     align-items: center;
     flex-direction: row-reverse;
     margin-top: 2vw;
+    position: relative;
 }
 
 .diagram-pane {
@@ -282,8 +288,11 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     padding-left: 1vw;
 }
 
-.test-pane img {
-    max-height: 15vmax;
+.ans-pane img {
+    width: 8vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .ans-pane button {
@@ -314,7 +323,6 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     display: none;
     position: absolute;
     right: 0;
-    /* left: 0; */
     padding-right: 10vw;
 }
 
@@ -324,6 +332,51 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
 
 .feedback.wrong {
     color: red;
+}
+
+
+.footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    bottom: -3vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+.footer img {
+    width: 25vw;
+}
+
+.sub-footer.txt.left {
+    border: .2vw solid var(--orange_level3);
+    font-size: 2vw;
+    padding-left: 2vw;
+    padding-right: 12vw;
+    background-color: white;
+}
+
+.sub-footer.txt.left img{
+    position: absolute;
+    width: 12vw;
+    bottom: 0;
+    right: -2vw;
+}
+
+.sub-footer.txt.right {
+    border: .2vw solid var(--orange_level3);
+    font-size: 2vw;
+    padding-left: 12vw;
+    padding-right: 2vw;
+    background-color: white;
+}
+
+.sub-footer.txt.right img{
+    position: absolute;
+    width: 15vw;
+    bottom: 0;
+    left: -3vw;
 }
 
 .pagination {
@@ -367,14 +420,6 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     margin-left: 2vw;
     margin-right: 2vw;
 }
-
-/* .svg-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vw;
-    width: 10vw;
-} */
 
 svg {
     width: 15vw;
