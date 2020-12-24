@@ -9113,11 +9113,6 @@ a {
   margin: auto;
 }
 
-.dark-mode {
-  -webkit-filter: invert(1) hue-rotate(180deg);
-          filter: invert(1) hue-rotate(180deg);
-}
-
 .color1 {
   background-color: #F13F52;
 }
