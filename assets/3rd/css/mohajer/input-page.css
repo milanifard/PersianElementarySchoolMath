@@ -10,6 +10,10 @@ input[type=number]::-webkit-outer-spin-button
 input[type=number]
 {
   -moz-appearance: textfield;
+  border-radius: 50%;
+  border:0.1vw solid #fcb94b;
+ 
+
 }
 
 .quantity input {
