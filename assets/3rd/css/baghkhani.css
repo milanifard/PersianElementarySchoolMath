@@ -561,6 +561,7 @@ input-st2 {
 
 .st-span {
     margin-right: 2vw;
+    font-size: 2.5vw;
 }
 
 .imagtaghar {
@@ -573,4 +574,170 @@ input-st2 {
 
 .radioItems {
     margin-top: -10vw;
+}
+
+.label {
+    font-size: 1.40vw;
+}
+
+.radiobox2 {
+    margin-right: 4vw;
+}
+
+.contain {
+    margin-top: -5vw;
+    margin-left: -2vw;
+    font-size: 1.5vw;
+}
+
+.text {
+    margin-top: -2vw;
+}
+
+.text2 {
+    margin-top: -1vw;
+    margin-left: 2vw;
+}
+
+.input-styleNew {
+    margin-top: 1vw;
+}
+
+.inputStyleLeft {
+    margin-left: 18vw;
+}
+
+.containp20 {
+    margin-top: -9vw;
+    margin-left: -2vw;
+    font-size: 1.5vw;
+}
+
+.num_select {
+    margin-right: 15vw;
+}
+
+.imagheight {
+    height: 10vw;
+}
+
+.containp21 {
+    margin-top: -7vw;
+    margin-left: -1vw;
+    font-size: 1.5vw;
+}
+
+@font-face {
+    font-family: persianNum;
+    src: url('../../../fonts/Farsi-Digits/Samim-FD.ttf');
+    font-weight: normal;
+}
+
+.pagination-container {
+    position: relative;
+    top: 100px;
+    direction: rtl;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 3em;
+    margin-left: 45vw;
+    /* to adjust page changer position , adjust position of this element */
+}
+
+.page-number {
+    /* substitute your color */
+    background-color: #44b869;
+    border-radius: 2em;
+    width: 5.8em;
+    color: white;
+    border: 0.35em double white;
+    font-family: Koodak;
+    padding: 0 1.1em;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.paginationInput {
+    /* substitute your color */
+    background-color: #389255;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    margin-top: 0px;
+    height: auto;
+    font-family: persianNum;
+}
+
+.page-number-button {
+    width: 3em;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.page-number-button>a {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
+}
+
+@media only screen and (max-width:1130px) {
+    .page-number {
+        height: 50px;
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .pagination-container {
+        top: 80px;
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .pagination-container {
+        top: 60px;
+        font-size: 15px;
+    }
+    .page-number {
+        height: 30px;
+        width: 90px;
+    }
+    .paginationInput {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .pagination-container {
+        top: 50px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .pagination-container {
+        top: 45px;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    .pagination-container {
+        top: 38px;
+    }
+    .page-number {
+        height: 25px;
+        width: 80px;
+        padding: 0 1em;
+        border: 0.30em double white;
+    }
+    .paginationInput {
+        font-size: 13px;
+    }
 }

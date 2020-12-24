@@ -1,0 +1,210 @@
+.text {
+    font-family: "B Nazanin", sans-serif;
+    font-size: 2vw;
+    direction: rtl;
+    text-align: justify;
+}
+
+.chapter-text {
+    color: blueviolet;
+    font-family: "B Koodak", sans-serif;
+    font-size: 4vw;
+    direction: rtl;
+    text-align: justify;
+}
+
+.image {
+    border: 0.6vw solid white;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#chapter-background {
+    height: 128vw;
+    background: linear-gradient(to right, #e35459 0%, #e35459 35%, #d1555a 35%, #d1555a 100%);
+}
+
+#chapter-title {
+    background-color: white;
+    text-align: center;
+
+    border-style: solid;
+    border-color: red;
+    border-width: 0.3vw;
+    border-radius: 2.5vw 0 0 2.5vw;
+
+    padding-left: 2vw;
+    padding-right: 8vw;
+
+    direction: rtl;
+    position: absolute;
+    top: 7vw;
+    right: 0.1vw;
+}
+
+#chapter-description {
+    background-color: #ffe4c4;
+    border-radius: 2.5vw;
+    padding: 1vw 2vw 2vw;
+    margin-bottom: 10vw;
+}
+
+.default-background {
+    width: 100vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, #e55459, #e55459 1vw, #ec7c62 1vw, #ec7c62 2vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+}
+
+.activity-text {
+    background-color: #e55459;
+    border-radius: 1vw 0 0 1vw;
+    text-align: center;
+    font-family: "B Koodak", sans-serif;
+    font-size: 2.25vw;
+    color: white;
+    padding: 0 6vw 0 1.8vw;
+    position: absolute;
+    right: 4vw;
+    top: 2.5vw;
+    z-index: 1;
+}
+
+.activity-image {
+    width: 11vw;
+    position: absolute;
+    direction: rtl;
+    right: -2.3vw;
+    top: 0.5vw;
+    z-index: 2;
+}
+
+.right-border {
+    border: 0.8vw double #e35459;
+    margin: 6vw 10vw 0 0;
+    border-left: none;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+
+.left-border {
+    border: 0.8vw double #e35459;
+    margin: 6vw 0 0 10vw;
+    padding-left: 10vw;
+    direction: rtl;
+    border-right: none;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+
+.question-container {
+    margin: 8.5vw 8vw 8.5vw 24vw;
+    direction: rtl;
+}
+
+.question-2-container {
+    margin: 0 8vw 2vw 10vw;
+    direction: rtl;
+}
+
+.question-text {
+    font-family: "B Zar", sans-serif;
+    font-size: 2vw;
+}
+
+.pagination-container {
+    direction: rtl;
+    justify-content: center;
+    display: flex;
+    height: 5vw;
+    margin-top: 2vw;
+}
+
+.page-number {
+    background-color: #a1ea81;
+    border-radius: 2vw;
+    width: 10vw;
+    color: white;
+    border: 0.6vw double white;
+    padding: 0 1.1vw;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.page-number input {
+    font-family: 'B Koodak', sans-serif;
+    background-color: #00b344;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2.35vw;
+    color: white;
+}
+
+.page-number-button {
+    width: 5vw;
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.page-number-button > a {
+    color: white;
+    font-size: 4.5vw;
+    display: flex;
+}
+
+.review-box {
+    width: 20vw;
+    height: 5vw;
+    margin: auto;
+    display: flex;
+    position: relative;
+    top: -3vw;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e15459;
+    width: 20vw;
+    height: 5vw;
+    border-radius: 2vw;
+}
+
+.rec {
+    width: 0.8vw;
+    height: 1.2vw;
+    background-color: #b8cd4d;
+    margin: auto;
+}
+
+.review-text {
+    text-align: center;
+    font-family: "B Koodak", sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+.question-box {
+    border: 0.3vw dashed #e35459;
+    width: 63vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    margin-bottom: 1vw;
+}
