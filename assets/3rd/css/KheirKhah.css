@@ -408,3 +408,32 @@ input{
     cursor: pointer;
   }
 
+
+
+@font-face {
+  font-family: kodak;
+  src: url(./../../fonts/Ansari/B\ Koodak.ttf);
+}
+@font-face {
+  font-family: zar;
+  src: url(./../../fonts/Zar.ttf);
+}
+
+h1{
+  font-family: kodak;
+}
+h2{
+  font-family: kodak;
+}
+h3{
+  font-family: kodak;
+}
+h4{
+  font-family: kodak;
+}
+h5{
+  font-family: kodak;
+}
+p , span , input ,label{
+  font-family: zar ;
+}
