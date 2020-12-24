@@ -361,7 +361,6 @@ function checkAnswer3_1() {
         $("submit3_1").style.backgroundColor = "red";
     }
 }
-
 function checkAnswer3_2() {
     setValueColor("inp18_1",750);
     setValueColor("inp18_2",100);
@@ -376,7 +375,6 @@ function checkAnswer3_2() {
         $("submit3_2").style.backgroundColor = "red";
     }
 }
-
 function checkAnswer3_3() {
     setValueColor("inp19_1",52);
     setValueColor("inp19_2",65);
@@ -391,7 +389,6 @@ function checkAnswer3_3() {
         $("submit3_3").style.backgroundColor = "red";
     }
 }
-
 function checkAnswer3_4() {
     setValueColor("inp20_1",36);
     setValueColor("inp20_2",45);
@@ -424,7 +421,6 @@ function checkAnswer3_5() {
         $("submit3_5").style.backgroundColor = "red";
     }
 }
-
 function checkAnswer3_6() {
     setValueColor("inp22_1",8);
     setValueColor("inp22_2",15);
@@ -440,7 +436,6 @@ function checkAnswer3_6() {
         $("submit3_6").style.backgroundColor = "red";
     }
 }
-
 function checkAnswer_creative(input,label,tvalue) {
     setValueColor(input,tvalue);
     if($(input) .value == tvalue){
@@ -451,23 +446,21 @@ function checkAnswer_creative(input,label,tvalue) {
     }
 
 }
-
 $("cb_true").addEventListener("click", checkboxtrue);
 function checkboxtrue() {
     $("cb_false").checked = false;
     trueAnswerlabel("feedback4_5");
 }
-
 $("cb_false").addEventListener("click", checkboxfalse);
 function checkboxfalse() {
     $("cb_true").checked = false;
     falseAnswerlabel("feedback4_5");
 }
 
+//page navigator -------------------------------------------------------------------------------------------------------
 function setPageNumber(number) {
     $("page_number").value = number;
 }
-
 function page_changer(id){
     if (event["keyCode"] === 13) {
         var url = "book_3_" + $(id).value + ".html";
