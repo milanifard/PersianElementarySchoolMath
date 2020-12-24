@@ -68,7 +68,13 @@ function notCorrect(id){
 
 
  
+  function chcol(id , colorcode,bordcolorcode){
+    document.getElementById(id).style.background = colorcode;
+    document.getElementById(id).style.color = colorcode;
+    document.getElementById(id).style.borderColor =bordcolorcode ;
 
+
+  }
   
 
 // pagination
