@@ -81,15 +81,6 @@ function debounce(func) {
 }
 
 
-// dark mode
-window.onkeypress = function (e) {
-    e = e || window.event;
-    if (e.key === "d") {
-        console.log("d pressed")
-        document.documentElement.classList.toggle('dark-mode')
-    }
-}
-
 // ****************************
 // check answers
 // ***********************
