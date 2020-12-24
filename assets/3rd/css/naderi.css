@@ -64,7 +64,7 @@ input[type=number] {
 
 @font-face {
     font-family: 'Koodak';
-    src: url("../../fonts/Koodak.ttf") format("woff");
+    src: url("../../fonts/KoodakBold.ttf");
 }
 
 .page-left-border {
