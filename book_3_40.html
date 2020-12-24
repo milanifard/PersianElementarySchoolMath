@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/tabadkani.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/3rd/js/tabadkani.js"></script>
     <title>ریاضی سوم دبستان - صفحه چهل</title>
 </head>
@@ -17,7 +18,7 @@
             <div id="farhange_neveshtan_content">از پدر یا مادر خود مقداری پول بگیرید. با آن پول چیزی بخرید. پول را به فروشنده
                 بدهید و باقیمانده ی آن را از او پس بگیرید. ماجرای این خرید خود را به اضافه ی
                 مقدار پولی که داشته اید، چیزی که خریده اید و مقدار پول باقیمانده را بنویسید.
-                <textarea id="farhange_neveshtan_ta" rows="5" cols="63" lang="fa" dir="rtl"></textarea>
+                <textarea id="farhange_neveshtan_ta"  lang="fa" dir="rtl"></textarea>
             </div>
             <img id="turtle-img" src="assets/3rd/images/tabadkani/wr.png">
         </div>
@@ -170,15 +171,21 @@
         </pre>
             </p>
         </div>
-        <div class="page-navigator">
-            <div class="previous-page">
-                <a href="book_3_39.html">< صفحه قبل</a>
+        <div class="pagination-container">
+            <div class="page-number-button">
+                <!-- using next/prev icons from font awesome -->
+                <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
             </div>
-            <div class="next-page">
-                <a href="book_3_41.html">صفحه بعد ></a>
+
+            <div class="page-number" id="page-number-40">
+                <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
             </div>
+
+            <div class="page-number-button">
+                <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
+            </div>
+
         </div>
-        <div class="page-number">۴۰</div>
     </div>
 </div>
 
