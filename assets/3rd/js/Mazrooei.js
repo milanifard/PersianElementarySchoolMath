@@ -37,9 +37,155 @@ function guess_checker(id) {
     }
 }
 
-if (page_no === "124") {
+if (page_no === "127") {
 
     /* --------  The Q1-Q2 page 124  ----------------------------- */
+    function graph_hover(id)
+    {
+        let graph=$(id)
+        graph.onmouseenter = function () {
+            if(graph.style.backgroundColor!="green")
+                graph.style.backgroundColor = "rgba(0, 255, 0, 0.2)";
+        }
+        graph.onmouseout = function () {
+            if(graph.style.backgroundColor!="green")
+            {
+            graph.style.backgroundColor = "rgba(26, 180, 241, 0.2)";
+            }
+        }
+    }
+    let graph1=0;
+    let graph2=0;
+    let graph3=0;
+    let graph4=0;
+    function graph_clicked(id,num)
+    {
+        let graph=$(id)
+        let Q1_2_feedback=$("Q1_3_feedback")
+        if(graph.style.backgroundColor === "green")
+        {
+            graph.style.backgroundColor = "rgba(26, 180, 241, 0.2)";
+            switch(num)
+            {
+                case 1:
+                    graph1-=1;
+                    break;
+                case 2:
+                    graph2-=1;
+                    break;
+                case 3:
+                    graph3-=1;
+                    break;
+                case 4:
+                    graph4-=1;
+                    break;            
+            }
+        }
+        else
+        {
+            graph.style.backgroundColor = "green";
+            switch(num)
+            {
+                case 1:
+                    graph1+=1;
+                    break;
+                case 2:
+                    graph2+=1;
+                    break;
+                case 3:
+                    graph3+=1;
+                    break;
+                case 4:
+                    graph4+=1;
+                    break;            
+            }
+        }
+        if(graph1!=0&&graph2!=0&&graph3!=0&&graph4!=0)
+        {
+            if(graph1===2&&graph2===2&&graph3===3&&graph4===1)
+            {
+                Q1_3_feedback.textContent ="آفرین عزیزم. درست حل کردی.";
+                Q1_3_feedback.classList.add("shaking-animation");
+                Q1_3_feedback.style.color = getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
+            }
+            else
+            {
+                Q1_3_feedback.textContent ="دقت کن عزيزم. دوباره تلاش کن.";
+                Q1_3_feedback.classList.add("shaking-animation");
+                Q1_3_feedback.style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
+            }
+        }
+    }
+
+    function Q1_bar_input(id,num)
+    {
+        let Q1_2_feedback=$("Q1_2_feedback")
+        let Q1_4=$(id);
+        let q1_graph=$("graph"+num);
+        var adad=(Q1_4.value+"%");
+        q1_graph.style.height=adad;
+        if(num=="1")
+        {
+            if(Q1_4.value!=20)
+            {
+                Q1_2_feedback.textContent ="دقت کن عزيزم. دوباره تلاش کن.";
+                Q1_2_feedback.classList.add("shaking-animation");
+                Q1_2_feedback.style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
+            }
+            else
+            {
+                Q1_2_feedback.textContent ="آفرین عزیزم. درست حل کردی.";
+                Q1_2_feedback.classList.add("shaking-animation");
+                Q1_2_feedback.style.color = getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
+            }
+        }
+        if(num=="2")
+        {
+            if(Q1_4.value!=20)
+            {
+                Q1_2_feedback.textContent ="دقت کن عزيزم. دوباره تلاش کن.";
+                Q1_2_feedback.classList.add("shaking-animation");
+                Q1_2_feedback.style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
+            }
+            else
+            {
+                Q1_2_feedback.textContent ="آفرین عزیزم. درست حل کردی.";
+                Q1_2_feedback.classList.add("shaking-animation");
+                Q1_2_feedback.style.color = getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
+            }
+        }
+        if(num=="3")
+        {
+            if(Q1_4.value!=30)
+            {
+                Q1_2_feedback.textContent ="دقت کن عزيزم. دوباره تلاش کن.";
+                Q1_2_feedback.classList.add("shaking-animation");
+                Q1_2_feedback.style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
+            }
+            else
+            {
+                Q1_2_feedback.textContent ="آفرین عزیزم. درست حل کردی.";
+                Q1_2_feedback.classList.add("shaking-animation");
+                Q1_2_feedback.style.color = getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
+            }
+        }
+        if(num=="4")
+        {
+            if(Q1_4.value!=10)
+            {
+                Q1_2_feedback.textContent ="دقت کن عزيزم. دوباره تلاش کن.";
+                Q1_2_feedback.classList.add("shaking-animation");
+                Q1_2_feedback.style.color = getComputedStyle(document.documentElement).getPropertyValue('--red_level2');
+            }
+            else
+            {
+                Q1_2_feedback.textContent ="آفرین عزیزم. درست حل کردی.";
+                Q1_2_feedback.classList.add("shaking-animation");
+                Q1_2_feedback.style.color = getComputedStyle(document.documentElement).getPropertyValue('--green_level3');
+            }
+        }
+       
+    }
 
     let Q1_color_picker_items = ["Q1_yellow_color", "Q1_blue_color", "Q1_red_color", "Q1_green_color"];
     let Q2_color_picker_items = ["Q2_yellow_color", "Q2_red_color", "Q2_blue_color", "Q2_green_color"];
@@ -49,7 +195,7 @@ if (page_no === "124") {
         let [colors, Q_feedback] = (function () {
             switch (question_id) {
                 case "P124-Q1":
-                    return [Q1_color_picker_items, $("Q1_feedback")];
+                    return [Q1_color_picker_items, $("Q1_1_feedback")];
 
                 case "P124-Q2":
                     return [Q2_color_picker_items, $("Q2_feedback")];
@@ -91,9 +237,9 @@ if (page_no === "124") {
         check_circle_sectors(question_id);
     }
 
-    let Q1_ans = {"yellow": 3, "blue": 5, "red": 2, "green": 2};
+    let Q1_ans = {"yellow": 3, "blue": 2, "red": 1, "green": 2};
     let Q2_ans = {"yellow": 3, "blue": 2, "red": 5, "green": 2};
-    let Q1_sectors_id = ["Q1_sector1", "Q1_sector2", "Q1_sector3", "Q1_sector4", "Q1_sector5", "Q1_sector6", "Q1_sector7", "Q1_sector8", "Q1_sector9", "Q1_sector10", "Q1_sector11", "Q1_sector12"];
+    let Q1_sectors_id = ["Q1_sector1", "Q1_sector2", "Q1_sector3", "Q1_sector4", "Q1_sector5", "Q1_sector6", "Q1_sector7", "Q1_sector8"];
     let Q2_sectors_id = ["Q2_sector1", "Q2_sector2", "Q2_sector3", "Q2_sector4", "Q2_sector5", "Q2_sector6", "Q2_sector7", "Q2_sector8", "Q2_sector9", "Q2_sector10", "Q2_sector11", "Q2_sector12"];
 
     function check_circle_sectors(question_id) {
@@ -104,7 +250,7 @@ if (page_no === "124") {
         let [ans, sectors_id, check_count, Q_feedback, Q_img] = (function () {
             switch (question_id) {
                 case "P124-Q1":
-                    return [Q1_ans, Q1_sectors_id, Q1_P124_check_count, $("Q1_feedback"), $("Q1_clock_img")];
+                    return [Q1_ans, Q1_sectors_id, Q1_P124_check_count, $("Q1_1_feedback"), $("Q1_clock_img")];
 
                 case "P124-Q2":
                     return [Q2_ans, Q2_sectors_id, Q2_P124_check_count, $("Q2_feedback"), $("Q2_book_img")];
@@ -196,7 +342,6 @@ else if (page_no === "125") {
         })();
 
         if (color_picker_item != null) {
-
             switch (color_picker_item.id) {
                 case colors[0]:
                     $(id).style.backgroundColor = color_picker_item.style.backgroundColor;
@@ -305,7 +450,7 @@ else if (page_no === "125") {
     $('Q2_blue_input').addEventListener('input', check_ans_Q2);
 
     function check_ans_Q2(e) {
-        if (e.target.value == 50) {
+        if (e.target.value === 50) {
             $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--green_level2');
         } else {
             $(e.target.id).style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--red_level1');
