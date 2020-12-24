@@ -343,18 +343,15 @@ span>img{
 }
 .yellow_shadow_radio {
 
-    background-color:white;
-    box-shadow:15px 30px 20px -10px rgba(0, 0, 0, 0.4), inset -20px -40px 40px 30px rgba(255, 235, 59, 0.3);
+    box-shadow: 0 6px 10px 0 rgba(255, 235, 59, 0.9);
 }
 
 .red_shadow_radio {
-    background-color:white;
-    box-shadow:15px 30px 20px -10px rgba(0, 0, 0, 0.4), inset -20px -40px 40px 30px rgba(244, 67, 54, 0.3);
+    box-shadow: 0 6px 10px 0 rgba(244, 67, 54, 0.9);
 }
 
 .green_shadow_radio {
-    background-color:white;
-    box-shadow:15px 30px 20px -10px rgba(0, 0, 0, 0.4), inset -20px -40px 40px 30px rgba(57, 220, 57, 0.3);
+    box-shadow: 0 3px 10px 0 rgba(57, 220, 57, 0.9);
 }
 
 
@@ -441,14 +438,14 @@ span>img{
 .show_btn {
     background-color: lightblue;
     position: relative;
-    width: 10vw;
+    width: 18vw;
     height: 3vw;
     border-color: #104ed3;
 }
 .hide_btn {
     background-color: lightblue;
     position: relative;
-    width: 15vw;
+    width: 18vw;
     height: 3vw;
     border-color: #104ed3;
 }
