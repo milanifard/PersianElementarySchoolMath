@@ -34,6 +34,10 @@
 
 }
 /*-----------------------------------*/
+@font-face {
+    font-family: 'zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
 
 .right-border{
 
