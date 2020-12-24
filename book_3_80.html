@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه‌ی ۸۰ - ریاضی سوم دبستان</title>
+    <link rel="stylesheet" href="assets/3rd/css/Sargolzehi.css">
+    <script src="assets/3rd/js/Sargolzehi.js"></script>
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="margin: 0;">
+<div>
+    <div class="right-border">
+        <div id="background-right" class="default-background"></div>
+
+        <div id="activity_item">
+            <img class="activity-image" src="assets/3rd/images/activity.png" alt="activity_image">
+            <div class="activity-text">حلّ مسئله</div>
+        </div>
+
+        <div class="question-container">
+            <div id="question-1" class="question-text">
+                1- رضا 4 بسته‌ی 6تایی شکلات قهوه‌ای و 3 بسته‌ی 4تایی شکلات شیری دارد.
+                <br>
+                رضا چند شکلات دارد؟
+                <br>
+                <span style="color: #56c1ed">
+                1- تعداد شکلات‌های قهوه‌ای را پیدا کنید.
+                </span>
+                <br>
+                <span style="color: #e85b9a">
+                2- تعداد شکلات‌های شیری را پیدا کنید.
+                </span>
+                <br>
+                <span style="color: #f19869;">
+                3- تعداد شکلات‌های رضا را پیدا کنید.
+                </span>
+            </div>
+
+            <img src="assets/3rd/images/Sargolzehi/Chocolate.png"
+                 style="position: absolute; top: 13vw; left: 30vw; width: 15vw" alt="Chocolate">
+            <img src="assets/3rd/images/Sargolzehi/Pencil.png"
+                 style="position: absolute; top: 5.5vw; left: 23.5vw; width: 10vw" alt="Pencil">
+
+            <div class="form-inline">
+                <label for="p80-q1-answer" class="text mx-3">پاسخ:</label>
+                <input type="text" class="form-control col-sm-3" id="p80-q1-answer" style="font-size: 1vw">
+                <button type="submit" class="btn btn-primary px-4 mx-3" style="font-size: 1vw" onclick="checkQ1Answer()">ثبت</button>
+            </div>
+
+            <div>
+                <span id="p80-q1-response" class="text mx-3"></span>
+            </div>
+        </div >
+
+        <div class="question-container">
+            <div id="question-2" class="question-text">
+                2- سپیده 2 دسته گل رز قرمز خرید که هر دسته‌ی آن 3 شاخه گل داشت. او 3 دسته گل رز سفید
+                هم خرید که در هر دسته‌ی آن 4 شاخه گل بود. سپیده چند شاخه گل خریده است؟
+                <br>
+            </div>
+            <form class="text">
+                <div class="form-group row">
+                    <label for="p80-q2-p1" class="col-sm-1" style="color: #56c1ed;">1- </label>
+                    <div class="col-sm-11">
+                        <input type="text" id="p80-q2-p1" class="form-control col-sm-6" style="font-size: 1.5vw"
+                               placeholder="تعداد شاخه‌های گل رز قرمز را پیدا کنید.">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="p80-q2-p2" class="col-sm-1" style="color: #e85b9a;">2- </label>
+                    <div class="col-sm-11">
+                        <input type="text" id="p80-q2-p2" class="form-control col-sm-6" style="font-size: 1.5vw"
+                               placeholder="تعداد شاخه‌های گل رز سفید را پیدا کنید.">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="p80-q2-p3" class="col-sm-1" style="color: #f19869;">3- </label>
+                    <div class="col-sm-11">
+                        <input type="text" id="p80-q2-p3" class="form-control col-sm-6" style="font-size: 1.5vw"
+                               placeholder="تعداد شاخه‌های گل سپیده را پیدا کنید.">
+                    </div>
+                </div>
+            </form>
+
+            <img src="assets/3rd/images/Sargolzehi/Vases.png"
+                 style="position: absolute; top: 43vw; left: 13vw; width: 18vw;
+                  border: 0.2vw solid red; border-radius: 5%;" alt="Vases">
+            <img src="assets/3rd/images/Sargolzehi/Roses.png"
+                 style="position: absolute; top: 46vw; left: 27vw; width: 15vw" alt="Roses">
+
+            <div class="form-inline">
+                <label for="p80-q2-answer" class="text mx-3">پاسخ:</label>
+                <input type="text" class="form-control col-sm-3" id="p80-q2-answer" style="font-size: 1vw">
+                <button type="submit" class="btn btn-primary px-4 mx-3" style="font-size: 1vw" onclick="checkQ2Answer()">ثبت</button>
+            </div>
+
+            <div>
+                <span id="p80-q2-response" class="text mx-3"></span>
+            </div>
+        </div >
+
+        <div class="question-container">
+            <div id="question-3" class="question-text">
+                3- حسن 15 عکس ماشین دارد. برادرش 5 عکس ماشین کمتر از او دارد.
+                <br>
+                این دو برادر روی هم چند عکس ماشین دارند؟
+            </div>
+
+            <img src="assets/3rd/images/Sargolzehi/Cars.png" class="image"
+                 style="position: absolute; top: 73vw; left: 13vw; width: 18vw;" alt="Vases">
+
+            <div class="form-inline">
+                <label for="p80-q3-answer" class="text mx-3">پاسخ:</label>
+                <input type="text" class="form-control col-sm-3" id="p80-q3-answer" style="font-size: 1vw">
+                <button type="submit" class="btn btn-primary px-4 mx-3" style="font-size: 1vw" onclick="checkQ3Answer()">ثبت</button>
+            </div>
+
+            <div>
+                <span id="p80-q3-response" class="text mx-3"></span>
+            </div>
+
+            <div>
+                <br><br><br><br>
+            </div>
+        </div >
+
+
+    </div>
+</div>
+</body>
+</html>
