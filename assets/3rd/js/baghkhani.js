@@ -1,5 +1,5 @@
 function getValue(i, x) {
-    answers = [56, 38, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 16, 27, 28, 22, 20];
+    answers = [56, 38, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 16, 27, 28, 22, 20, 40];
     var obj = document.getElementById(x)
     obj.classList.remove('error');
     obj.classList.remove('correct');
@@ -289,6 +289,42 @@ function guess_check(o) {
         obj.style.color = "#d35d6e";
         obj.style.boxShadow = "4px 4px 10px #d35d6e";
         var obj = document.getElementById("labelguess1");
+        obj.style.color = "#000000";
+        obj.style.boxShadow = "4px 4px 10px #000000";
+
+    } else if (o == 2) {
+        var obj = document.getElementById("labelguess5");
+
+        obj.style.color = "#d35d6e";
+        obj.style.boxShadow = "4px 4px 10px #d35d6e";
+        var obj = document.getElementById("labelguess6");
+        obj.style.color = "#000000";
+        obj.style.boxShadow = "4px 4px 10px #000000";
+
+    } else if (o == 3) {
+        var obj = document.getElementById("labelguess6");
+
+        obj.style.color = "#3b9e3a";
+        obj.style.boxShadow = "4px 4px 10px #3b9e3a";
+        var obj = document.getElementById("labelguess5");
+        obj.style.color = "#000000";
+        obj.style.boxShadow = "4px 4px 10px #000000";
+
+    } else if (o == 4) {
+        var obj = document.getElementById("labelguess7");
+
+        obj.style.color = "#3b9e3a";
+        obj.style.boxShadow = "4px 4px 10px #3b9e3a";
+        var obj = document.getElementById("labelguess8");
+        obj.style.color = "#000000";
+        obj.style.boxShadow = "4px 4px 10px #000000";
+
+    } else if (o == 5) {
+        var obj = document.getElementById("labelguess8");
+
+        obj.style.color = "#d35d6e";
+        obj.style.boxShadow = "4px 4px 10px #d35d6e";
+        var obj = document.getElementById("labelguess7");
         obj.style.color = "#000000";
         obj.style.boxShadow = "4px 4px 10px #000000";
 

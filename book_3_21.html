@@ -20,7 +20,7 @@
 
                 <div class="qboxActivity">
                     <p Class="question1page20">
-                        <span class="qnum">1-</span> باتوجه به نیمه رنگ شده وخط تقارن نیمه دیگر هرشکل را رنگ کنید.
+                        <span class="qnum">1-</span> باتوجه به تصاویر داده شده کدام یک شکل های داده شده را به صورت متقارن رنگ آمیزی کرده است ؟شماره آن را در قسمت مربوط به آن تصویر وارد کنید.
                     </p>
                 </div>
                 <div class="clearfix"></div>
@@ -29,40 +29,40 @@
                 <table>
                     <tr>
                         <td>
-                            <image class="imagTagharon6 " src="assets/3rd/images/baghkhani/color1.png"></image>
+                            <image class="imagTagharon6 " src="assets/3rd/images/baghkhani/Tagharon7colorfalse.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon6 " src="assets/3rd/images/baghkhani/color9.png"></image>
-                        </td>
-
-
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="numSelection">(1)</span>
-                        </td>
-                        <td>
-                            <span class="numSelection">(2)</span>
-
+                            <image class="imagTagharon6 " src="assets/3rd/images/baghkhani/Tagharon7color.png"></image>
                         </td>
 
 
                     </tr>
                     <tr>
                         <td>
-                            <image class="imagTagharon6 " src="assets/3rd/images/baghkhani/color1.png"></image>
+                            <span class="numSelection num_select">(1)</span>
                         </td>
                         <td>
-                            <image class="imagTagharon6 " src="assets/3rd/images/baghkhani/color9.png"></image>
+                            <span class="numSelection num_select">(2)</span>
+
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <image class="imagTagharon6 " src="assets/3rd/images/baghkhani/Tagharon6color.png"></image>
+                        </td>
+                        <td>
+                            <image class="imagTagharon6 " src="assets/3rd/images/baghkhani/Tagharon6false.png"></image>
                         </td>
 
                     </tr>
                     <tr>
                         <td>
-                            <span class="numSelection">(1)</span>
+                            <span class="numSelection num_select">(3)</span>
                         </td>
                         <td>
-                            <span class="numSelection">(2)</span>
+                            <span class="numSelection num_select">(4)</span>
 
                         </td>
 
@@ -77,10 +77,10 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" id="Check" value="" class="input-style" onchange="getValue(3,'Check')">
+                            <input type="text" id="Check" value="" class="input-style num_select" onchange="getValue(3,'Check')">
                         </td>
                         <td>
-                            <input type="text" id="Check1" value="" class="input-style" onchange="getValue(4,'Check1')">
+                            <input type="text" id="Check1" value="" class="input-style num_select" onchange="getValue(4,'Check1')">
 
                         </td>
                     </tr>
@@ -90,12 +90,24 @@
             <div class="clearfix"></div>
             <div class="box-level1">
                 <div class="text-config text-config1">
-                    <span class="qnum">2-</span> یک ورق کاغذ بردارید و آن را تا بزنید.با قیچی قسمتی از <br> آن را مانند شکل رو به رو ببرید. سپس این قسمت را باز کنید.<br> آیا شکلی که به این ترتیب به دست می آید خط تقارن دارد؟<br> به همین ترتیب شکل های دیگری
-                    درست کنید.
+                    <span class="qnum">2-</span> یک ورق کاغذ بردارید و آن را تا بزنید.با قیچی قسمتی از <br> آن را مانند شکل رو به رو ببرید. سپس این قسمت را باز کنید.<br> آیا شکلی که به این ترتیب به دست می آید خط تقارن دارد؟
+
                 </div>
                 <div class="box-level2">
                     <img class='img' src="assets/3rd/images/baghkhani/human.png">
                 </div>
+                <table>
+                    <tr>
+                        <div class='containp21'>
+                            <input class="radiobox radiobox2" type="radio" name="guessn" id="guess5" onclick="guess_check(2);" />
+                            <label dir="rtl" for="guess5" id="labelguess5">بله</label>
+
+
+                            <input class="radiobox radiobox2" type="radio" name="guessn" id="guess6" onclick="guess_check(3);" />
+                            <label dir="rtl" for="guess6" id="labelguess6">خیر</label>
+                        </div>
+                    </tr>
+                </table>
             </div>
             <div class="clearfix"></div>
             <div class="box-level1">
@@ -105,12 +117,25 @@
                 <div class="box-level2">
                     <img class='imgHuman2' src="assets/3rd/images/baghkhani/human2.png">
                 </div>
+                <table>
+                    <tr>
+                        <div class='containp21'>
+                            <input class="radiobox radiobox2" type="radio" name="guesshuman" id="guess7" onclick="guess_check(4);" />
+                            <label dir="rtl" for="guess7" id="labelguess7">یک آدمک کامل </label>
+
+
+                            <input class="radiobox radiobox2" type="radio" name="guesshuman" id="guess8" onclick="guess_check(5);" />
+                            <label dir="rtl" for="guess8" id="labelguess8">فقط سر و دست آدمک ایجاد میشود</label>
+                        </div>
+                    </tr>
+                </table>
+
             </div>
             <div class="clearfix"></div>
             <div class="qbox">
 
                 <p class="question">
-                    <span class="qnum">3-</span> نیمه دیگر شکل های زیر راطوری بکشیدکه خط قرمز خط تقارن هر شکل باشد.<br>سپس تعداد مربع های شکل های کامل را بشماریدو کنار هر کدام بنویسید
+                    <span class="qnum">3-</span> نیمه دیگر شکل های زیر راطوری انتخاب کنید که خط قرمز خط تقارن هر شکل باشد.<br>سپس تعداد مربع های شکل های کامل را بشماریدو کنار هر کدام بنویسید
                 </p>
             </div>
             <div class="clearfix"></div>
@@ -119,13 +144,13 @@
                 <table>
                     <tr>
                         <td>
-                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/butterfly.png"></image>
+                            <image class="imagTagharon imagtaghar  imagheight" src="assets/3rd/images/baghkhani/border1.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color1.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight " src="assets/3rd/images/baghkhani/border1true.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color9.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight " src="assets/3rd/images/baghkhani/border1false.png"></image>
                         </td>
 
 
@@ -165,13 +190,13 @@
 
                     <tr>
                         <td>
-                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/butterfly.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight" src="assets/3rd/images/baghkhani/border2.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color1.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight" src="assets/3rd/images/baghkhani/border2false.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color9.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight " src="assets/3rd/images/baghkhani/border2true.png"></image>
                         </td>
 
 
@@ -211,13 +236,13 @@
 
                     <tr>
                         <td>
-                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/butterfly.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight" src="assets/3rd/images/baghkhani/border3.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color1.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight " src="assets/3rd/images/baghkhani/border3true.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color9.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight" src="assets/3rd/images/baghkhani/border3false.png"></image>
                         </td>
 
 
@@ -256,13 +281,13 @@
                     </tr>
                     <tr>
                         <td>
-                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/butterfly.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight" src="assets/3rd/images/baghkhani/border4.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color1.png"></image>
+                            <image class="imagTagharon imagtaghar  imagheight " src="assets/3rd/images/baghkhani/border4true.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color9.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight" src="assets/3rd/images/baghkhani/border4false.png"></image>
                         </td>
 
 
@@ -301,13 +326,13 @@
                     </tr>
                     <tr>
                         <td>
-                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/butterfly.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight" src="assets/3rd/images/baghkhani/border5.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color1.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight " src="assets/3rd/images/baghkhani/border5false.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color9.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight" src="assets/3rd/images/baghkhani/border5true.png"></image>
                         </td>
 
 
@@ -346,13 +371,13 @@
                     </tr>
                     <tr>
                         <td>
-                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/butterfly.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight" src="assets/3rd/images/baghkhani/border6.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color1.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight " src="assets/3rd/images/baghkhani/border6true.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color9.png"></image>
+                            <image class="imagTagharon imagtaghar imagheight" src="assets/3rd/images/baghkhani/border6false.png"></image>
                         </td>
 
 
@@ -391,13 +416,13 @@
                     </tr>
                     <tr>
                         <td>
-                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/butterfly.png"></image>
+                            <image class="imagTagharon imagtaghar" src="assets/3rd/images/baghkhani/border7.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color1.png"></image>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/border7false.png"></image>
                         </td>
                         <td>
-                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/color9.png"></image>
+                            <image class="imagTagharon imagtaghar " src="assets/3rd/images/baghkhani/border7true.png"></image>
                         </td>
 
 

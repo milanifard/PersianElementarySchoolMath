@@ -68,7 +68,6 @@ body {
     left: -11vw;
 }
 
-/* page 58 style*/
 .title-fasl{
     background-color: #A088BA;
     border-radius: 1vw;
@@ -93,9 +92,30 @@ body {
     left: 36vw;
     top: -1.2vw;
 }
+
 .page{
     margin-top: 2vw;
     position: relative;
+}
+
+/* worm */
+.worm-image{
+    width: 12vw;
+    height: 8vw;
+    position: absolute;
+    right: 5vw;
+    /* left: 37vw; */
+    top: -5vw;
+}
+
+/* tamrin */
+.tamrin-image{
+    width: 16vw;
+    height: 18vw;
+    position: absolute;
+    right: -3vw;
+    /* left: 37vw; */
+    top: 1vw;
 }
 
 /* pagination*/
@@ -192,6 +212,7 @@ body {
     /*position: absolute;*/
     margin-left: 10vw;
     margin-top: 0.5vw;
+    outline: none;
 }
 
 .q6-answer-text-area {
@@ -282,7 +303,7 @@ body {
 }
 
 .papers-image {
-    width: 29vw;
+    width: 26vw;
     height: 7vw;
     position: absolute;
     top: 4vw;
@@ -290,7 +311,7 @@ body {
 }
 
 .short-answer-area {
-    width: 7vw;
+    width: 9vw;
     height: 3vw;
     margin: 0 0.5vw 0 0.5vw;
     padding: 0 0.5vw 0 0.5vw;
@@ -304,6 +325,7 @@ body {
     border-radius: 1vw;
     background-color: #f8f8f8;
     resize: none;
+    outline: none;
 }
 
 /* q5 */
@@ -607,6 +629,7 @@ body {
 .parent-q-farhang{
     position: relative;
     margin-top: 12vw;
+    margin-bottom: 12vw;
 }
 
 .question-text-farhang{
@@ -618,4 +641,10 @@ body {
     margin-right: 2vw;
     margin-top: 1vw;
     white-space: pre-wrap;
+}
+ 
+.what-is-the-problem-answer{
+    position:absolute;
+    right: 2vw;
+    margin-bottom: 20vw;
 }
