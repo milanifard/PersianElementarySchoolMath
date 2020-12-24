@@ -6,11 +6,11 @@
     <title>صفحه ۹۴ - سوم ابتدایی</title>
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="assets/3rd/js/jquery.min.js"></script>
-    <script src="assets/3rd/js/parsasal/parsasal.js"></script>
-    <script src="assets/3rd/js/parsasal/page94.js"></script>
-    <script src="assets/3rd/js/parsasal/paper-full.min.js"></script>
-    <script type="text/paperscript" canvas="canvas" src="assets/3rd/js/parsasal/chain-canvas.js"></script>
+    <script src="./assets/3rd/js/jquery.min.js"></script>
+    <script src="./assets/3rd/js/parsasal/parsasal.js"></script>
+    <script src="./assets/3rd/js/parsasal/page94.js"></script>
+    <script src="./assets/3rd/js/parsasal/paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="chain-canvas" src="./assets/3rd/js/parsasal/chain-canvas.js"></script>
     <link rel="icon" href="./assets/3rd/images/favicon.png">
     <meta name="author" content="Parsa Salehipour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +21,10 @@
     <div class="container-full">
 
         <nav id="main-header">
-            <a type="submit" class="next-page btn btn-default">صفحه بعدی</a>
-            <h3>مرور فصل</h3>
             <a type="submit" class="prev-page btn btn-default">صفحه قبلی</a>
+
+            <h3>مرور فصل</h3>
+            <a type="submit" class="next-page btn btn-default">صفحه بعدی</a>
         </nav>
 
         <div id="page-body">
@@ -46,7 +47,7 @@
                                 روش کار خود را توضیح دهید. می‌تونید از این نخ و خط کش هم استفاده کنید.
                             </p>
                         </div>
-                    
+
                         <div class="col-lg-3 col-md-4">
                             <div class="row  justify-content-end">
                                 <div class="col-12">
@@ -60,10 +61,19 @@
                         </div>
 
                     </div>
-                    <canvas id="canvas" resize></canvas>
-                    <img src="/assets/3rd/images/parsasal/ruler-image.png" alt="ruler image" id="ruler"
+                    <div id="canvas-overlay">
+                        <div id="canvas-overlay-elements">
+                            <p>برای جا به جا کردن نخ بدون تغییر شکل آن دکمه شیفت را نگه داشته و نخ را تکان دهید.</p>
+                            <p>برای علامت زدن یک نقطه روی نخ، برروی نخ دوبار کلیک کنید..</p>
+                            <button id="understood-btn" type="button" class="btn btn-success">فهمیدم</button>
+
+                        </div>
+                        <canvas id="chain-canvas" resize></canvas>
+                    </div>
+
+                    <img src="./assets/3rd/images/parsasal/ruler-image.png" alt="ruler image" id="ruler"
                         style="display: none;">
-                    <img src="/assets/3rd/images/parsasal/curved-line.png" alt="curved line image" id="curved-line"
+                    <img src="./assets/3rd/images/parsasal/curved-line.png" alt="curved line image" id="curved-line"
                         style="display: none;">
                     <div class="row">
                         <textarea placeholder="پاسخ" class="explain-textarea" name="farhange_neveshtan_input"
@@ -164,6 +174,8 @@
 
                         </div>
                     </div>
+                    <textarea placeholder="پاسخ" class="explain-textarea mt-4" name="farhange_neveshtan_input"
+                        id="triangles_explain_input"></textarea>
                     <div class="info-message">
 
                         <i class="fa fa-info-circle align-self-center"></i>
@@ -278,7 +290,7 @@
         </div>
         <div class="pagination-container">
             <div class="page-number-button">
-                <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+                <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
             </div>
 
             <div class="page-number">
@@ -286,7 +298,7 @@
             </div>
 
             <div class="page-number-button">
-                <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+                <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
             </div>
 
         </div>

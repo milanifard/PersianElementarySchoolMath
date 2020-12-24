@@ -40,13 +40,14 @@ function correct_type1(inp_id,input_val,true_radio,false_radio){
     }
 }
 
-function correct_type2(input_ids,values){
+function correct_type2(group_name,values){
+    input_ids = document.getElementsByName(group_name);
 
     if (input_ids.length!==values.length){
         return;
     }
     for (i=0;i<input_ids.length;i++){
-        var current_id = input_ids[i];
+        var current_id = input_ids[i].id;
 
         current_item = $(current_id);
         current_item.classList.remove("normal_shadow");

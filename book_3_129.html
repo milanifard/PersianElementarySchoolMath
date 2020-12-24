@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amirhosein_Mazrooei">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/Mazrooei.css">
+    <title>ریاضی سوم دبستان</title>
+
+</head>
+<body style="margin: 0;">
+<div>
+    <div class="left-border">
+        <div class="background-style" style="left: -10vw;"></div>
+
+        <div id="activity_item">
+            <img class="activity-image" src="assets/3rd/images/girl_and_teacher_activity.png" alt="activity_image" style="margin: 1vw 2vw 0 0;">
+            <div class="activity-text">تمرین</div>
+        </div>
+
+        <div id="Q1_container">
+            <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw">تعداد دختران و پسران دو مهد کودک پویا و شبنم در جدول زیر آمده است. می خواهیم این اطلّاعات را<br>در دو نمودار دایره ای و ستونی نشان دهیم. نمودارهای زیر را کامل کنید.</div>
+
+            <div class="simple-table-border" style="float: right;margin-right: 5vw; margin-top: 6vw; border: 1vw solid var(--pink_cherry);width: 28vw;">
+                <table id="table" class="simple-table" style="float: left;width: 25vw;margin-right:20vw;margin-left: 1.5vw;">
+                    <tr>
+                        <td colspan="2" class="simple-td-blue">پویا</td>
+
+                        <td colspan="2" class="simple-td-blue">شبنم</td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td class="simple-td-blue">پسر</td>
+                        <td class="simple-td-blue">دختر</td>
+                        <td class="simple-td-blue">پسر</td>
+                        <td class="simple-td-blue">دختر</td>
+                    </tr>
+
+                    <tr>
+                        <td class="simple-td-blue"style="background-color: var(--yellow_level3_border);">۱۰</td>
+                        <td class="simple-td-blue"style="background-color: var(--blue_level1);">۲۰</td>
+                        <td class="simple-td-blue"style="background-color: var(--red_level1);">۴۰</td>
+                        <td class="simple-td-blue"style="background-color: var(--green_level2);">۳۰</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="float: none;margin-right: 10vw">
+                <div id="Q1_1_feedback" class="text-config"> </div>
+            </div>
+            <div id="circle_Q1">
+                <div  class="wrapper" style="float:left;">
+                    <div id="Q1_sector1" class="sector" style="transform: rotate(0deg) skew(54deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector2" class="sector" style="transform: rotate(36deg) skew(54deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>    
+                    <div id="Q1_sector3" class="sector" style="transform: rotate(72deg) skew(54deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector4" class="sector" style="transform: rotate(108deg) skew(54deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector5" class="sector" style="transform: rotate(144deg) skew(54deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector6" class="sector" style="transform: rotate(180deg) skew(54deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector7" class="sector" style="transform: rotate(216deg) skew(54deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector8" class="sector" style="transform: rotate(252deg) skew(54deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector9" class="sector" style="transform: rotate(288deg) skew(54deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+                    <div id="Q1_sector10" class="sector" style="transform: rotate(324deg) skew(54deg);" onclick="sector_coloring(id, 'P124-Q1');" onmouseover="hover(id)"></div>
+
+
+                </div>
+                <div style="float: left;margin-left: 5vw;">
+                    <div id="Q1_yellow_color" class="color-picker" style="background-color: var(--yellow_level3_border); margin-top: 2.5vw" onclick="color_picker(id)"></div>
+                    <div id="Q1_blue_color" class="color-picker" style="background-color: var(--blue_level1);" onclick="color_picker(id)"></div>
+                    <div id="Q1_red_color" class="color-picker" style="background-color: var(--red_level1);" onclick="color_picker(id)"></div>
+                    <div id="Q1_green_color" class="color-picker" style="background-color: var(--green_level2);" onclick="color_picker(id)"></div>
+                </div>
+
+
+            </div>
+
+            <div style="float: left; margin-left: 25vw ;margin-top:10vw;margin-bottom: 15vw;">
+                <div style="float: none;margin-right: 10vw">
+                    <div id="Q1_2_feedback" class="text-config"> </div>
+                </div>
+                <div class="box">
+                    <div class="skill">
+                        <div class="graph" id="graph1">
+                            
+                        </div>
+                        <div class="percent">
+                            <input id="percent1" style="width: 3vw; height: 1vw; font-size: 1vw;" onchange=Q1_bar_input(id,1) type="number"  value="0"  min="0" max="100">
+                        </div>
+                        <div class="name">پسر</div>
+                    </div>
+                    <div class="school" style="left: 25%;">پویا</div>
+                    <div class="skill">
+                        <div class="graph"id="graph2">
+                            
+                        </div>
+                        <div class="percent">
+                            <input id="percent2" style="width: 3vw; height: 1vw; font-size: 1vw;" onchange=Q1_bar_input(id,2) type="number"  value="0"  min="0" max="100">
+                        </div>
+                        <div class="name">دختر</div>
+                    </div>
+                    <div class="skill">
+                        <div class="graph" id="graph3">
+                            
+                        </div>
+                        <div class="percent">
+                            <input id="percent3" style="width: 3vw; height: 1vw; font-size: 1vw;" onchange=Q1_bar_input(id,3) type="number"  value="0"  min="0" max="100">
+                        </div>
+                        <div class="name">پسر</div>
+                    </div>
+                    <div class="school" style="left: 75%;">شبنم</div>
+                    <div class="skill">
+                        <div class="graph"id="graph4">
+                        </div>
+                        <div class="percent">
+                            <input id="percent4" style="width: 3vw; height: 1vw; font-size: 1vw;" onchange=Q1_bar_input(id,4) type="number"  value="0"  min=0 max=100>
+                        </div>
+                        <div class="name">دختر</div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="Q1_129" style="float: right; width: 40%;margin-bottom: -20vw;" class="text-config questions-text-config">به نظر شما کدام نمودار بهتر است؟
+                <input  id="Response" style="float: right; width: 30vw; height: 2vw; font-size: 2vw;"type="text"><br>
+                چرا؟
+                <input  id="Response" style="float: right; width: 30vw; height: 2vw; font-size: 2vw;"type="text">
+                <br>
+                <p style="margin-top:-2vw">در مجموع تعداد دخترها بیشتر است یا پسرها؟</p>
+                <div id="Q1_3_feedback" style="text-align: center; margin-top:-6vw" class="text-config"> </div>
+                <div class="radio-container"style="height: 1vw; margin-top:-7vw" >
+                    <label class="text-config"><input class="radio-btn-style" type="radio" name="guess" value="right" id="boys" onclick="stdudent_gender_check(id)">پسرها</label>
+                </div>
+                <div class="radio-container" style="height: 1vw;margin-top:-2vw">
+                    <label class="text-config"><input class="radio-btn-style" type="radio" name="guess" value="left" id="girls" onclick="stdudent_gender_check(id)">دخترها</label>
+                </div>
+                <div class="radio-container" style="height: 1vw;margin-top:-2vw">
+                    <label class="text-config"><input class="radio-btn-style" type="radio" name="guess" value="left" id="equal" onclick="stdudent_gender_check(id)">برابر</label>
+                </div>
+                <p>برای پاسخ به سوال بالا کدام نمودار مناسب تر است؟</p>
+                <input  id="Response" style="margin-top: -4vw; float: right; width: 30vw; height: 2vw; font-size: 2vw;"type="text">
+            </div>
+            <div id="Q2_container" style="clear: right; margin-bottom: 62.5vw;">    
+                <div id="guess_box_level1" class="guess-box-level1" style="float: right;margin-right: 5vw; width: 80vw;height: 37vw;">
+                    <div class="guess-box-text-left" >خلاّق باش</div>
+                    <img style="margin-top: -4.5vw;margin-left: 18vw; width: 18vw" src="assets/3rd/images/Mazrooei/pencils.PNG" >
+                    <div class="text-config" style="padding-top: 5vw;margin-top: -4vw;">آجرچینی های زیر را به صورت متقارن رنگ آمیزی کنید.</div>
+                    <img style="float:right;margin-right: 1vw;margin-top: 5vw; width: 78vw" src="assets/3rd/images/Mazrooei/bricks.PNG" >
+                </div>
+            </div>
+        </div>
+
+            <div class="page-number" style="left: -5vw; right: auto">۱۲۹</div>
+            <div class="page-no-input">
+                <div style="float: left; margin-right: 2vw; margin-top: 1vw">
+                    <a href="book_3_130.html">
+                        <img style="width: 3vw" src="assets/3rd/images/left-arrow.png" alt="next_page" onclick="">
+                    </a>
+                </div>
+                <div class="page-number" style="float: left; position: relative; padding: 0.1vw 1vw; right: 0; bottom: 0">
+                    <input style="width: 5vw; font-size: 1.5vw; background-color: var(--orange_level2); text-align: center; color: white" type="number" name="page_number" id="page_switcher">
+                </div>
+                <div style="float: left; margin-left: 2vw; margin-top: 1vw">
+                    <a href="book_3_128.html">
+                        <img style="width: 3vw" src="assets/3rd/images/right-arrow.png" alt="next_page">
+                    </a>
+                </div>
+            </div>
+    </div>
+</div>
+
+</body>
+
+<script src="assets/3rd/js/Mazrooei.js" type="text/javascript" params="129"></script>
+
+</html>

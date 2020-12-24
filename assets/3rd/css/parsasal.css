@@ -9113,11 +9113,6 @@ a {
   margin: auto;
 }
 
-.dark-mode {
-  -webkit-filter: invert(1) hue-rotate(180deg);
-          filter: invert(1) hue-rotate(180deg);
-}
-
 .color1 {
   background-color: #F13F52;
 }
@@ -9132,14 +9127,14 @@ body {
 
 @media (min-width: 992px) {
   .container-full {
-    width: 80% !important;
+    width: 90% !important;
     margin: auto;
   }
 }
 
 @media (min-width: 1200px) {
   .container-full {
-    width: 70% !important;
+    width: 80% !important;
     margin: auto;
   }
 }
@@ -9361,6 +9356,10 @@ hr {
   font-size: 30px;
 }
 
+#triangles_explain_input {
+  min-height: 5em;
+}
+
 .hover-glow:hover {
   border-color: #66afe9;
   -webkit-box-shadow: 0 0 8px skyblue;
@@ -9434,6 +9433,47 @@ canvas[resize] {
   border-radius: 10px;
 }
 
+#chain-canvas {
+  margin-top: 50px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+#canvas-overlay p {
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#canvas-overlay #understood-btn {
+  position: relative;
+  width: 5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#canvas-overlay-elements {
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 /* Reset Select */
 select {
   -webkit-appearance: none;
@@ -9464,6 +9504,7 @@ select::-ms-expand {
   line-height: 3;
   overflow: hidden;
   border-radius: .25em;
+  text-align: left;
 }
 
 select {
@@ -9474,6 +9515,7 @@ select {
   color: #fff;
   cursor: pointer;
   text-align: left;
+  text-align-last: left;
 }
 
 /* Arrow */
@@ -9497,31 +9539,31 @@ select {
 
 @font-face {
   font-family: 'Zar';
-  src: url("/assets/fonts/Zar.eot");
+  src: url("../../fonts/Zar.eot");
   /* IE9 Compat Modes */
-  src: url("/assets/fonts/Zar.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Zar.woff2") format("woff2"), url("/assets/fonts/Zar.woff") format("woff"), url("/assets/fonts/Zar.ttf") format("truetype"), url("/assets/fonts/Zar.svg#svgFontName") format("svg");
+  src: url("../../fonts/Zar.eot?#iefix") format("embedded-opentype"), url("../../fonts/Zar.woff2") format("woff2"), url("../../fonts/Zar.woff") format("woff"), url("../../fonts/Zar.ttf") format("truetype"), url("../../fonts/Zar.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'ZarBold';
-  src: url("/assets/fonts/ZarBold.eot");
+  src: url("../../fonts/ZarBold.eot");
   /* IE9 Compat Modes */
-  src: url("/assets/fonts/ZarBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/ZarBold.woff2") format("woff2"), url("/assets/fonts/ZarBold.woff") format("woff"), url("/assets/fonts/ZarBold.ttf") format("truetype"), url("/assets/fonts/ZarBold.svg#svgFontName") format("svg");
+  src: url("../../fonts/ZarBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/ZarBold.woff2") format("woff2"), url("../../fonts/ZarBold.woff") format("woff"), url("../../fonts/ZarBold.ttf") format("truetype"), url("../../fonts/ZarBold.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'Faraz';
-  src: url("/assets/fonts/Faraz.eot");
+  src: url("../../fonts/Faraz.eot");
   /* IE9 Compat Modes */
-  src: url("/assets/fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Faraz.woff2") format("woff2"), url("/assets/fonts/Faraz.woff") format("woff"), url("/assets/fonts/Faraz.ttf") format("truetype"), url("/assets/fonts/Faraz.svg#svgFontName") format("svg");
+  src: url("../../fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("../../fonts/Faraz.woff2") format("woff2"), url("../../fonts/Faraz.woff") format("woff"), url("../../fonts/Faraz.ttf") format("truetype"), url("../../fonts/Faraz.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'Koodak';
-  src: url("/assets/fonts/KoodakBold.ttf");
+  src: url("../../fonts/KoodakBold.ttf");
 }
 
 * {
@@ -9641,7 +9683,12 @@ html {
 
 .page-number-button {
   width: 3em;
-  color: white;
+}
+
+@media (min-width: 1024px) {
+  .page-number-button {
+    color: white;
+  }
 }
 
 .page-number-button a {

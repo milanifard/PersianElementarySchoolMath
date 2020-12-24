@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <head lang="far">
     <title> ریاضی سوم، صفحه 137</title>
-    
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <link href="assets/3rd/css/naderi.css" rel="stylesheet">
     <link href='http://www.fontonline.ir/css/BNazanin.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/3rd/js/Naderi.js"></script>
+    <script src="assets/3rd/js/pagination.js"></script>
 
 </head>
 <body>
-    <div class="page-left-border" style="border: 3px solid green;">
+    <div class="page-left-border">
         <div class="background-left"></div>
-        <div id="content_137" style="border: 2px solid red;">
+        <div id="content_137">
             <div>
                 <img id="activity_cover_136"class="activity-cover" src="assets/3rd/images/activity.png" alt="activity_image">
                 <div class="activity-title" >فعّالیت</div>
@@ -157,7 +158,7 @@
             </div>
             <div class="text right_q_container">
                 حاصل ضرب هرعدد در صفر چه عددی میشود؟
-                <span><input id="q2p137_4" class="tiny_number_in" type="number" onchange="q2p137_4()"></span>
+                <span><input id="q2p137_4" class="tiny_number_in" type="number" onchange="check_me('q2p137_4',0)"></span>
             </div>
             <img id="pen_img" src="assets/3rd/images/Naderi/pen.png" alt="pen_image">
             <div >
@@ -290,16 +291,24 @@
             </div>
             
         </div>
-        <!-- <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br> -->
         <div class="page-number_left">137</div>
     </div>
+    <div class="pagination-container">
+        <div class="page-number-button">
+            <!-- using next/prev icons from font awesome -->
+            <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
+        </div>
+    
+        <div class="page-number">
+            <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+        </div>
+    
+        <div class="page-number-button">
+            <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
+        </div>
+    
+    </div>
+    <div class="back"></div>
+
 </body>
 </html>

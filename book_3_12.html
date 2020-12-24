@@ -6,12 +6,11 @@
     <link rel="stylesheet" href="./assets/3rd/css/eftekharii.css">
     <title>ریاضی سوم دبستان - صفحه دوازده</title>
 </head>
-<body>
-
+<body onload="setPageNumber(12)">
 <div class="main">
     <div class="content-box">
         <div class="page-topic">
-            <div class="topic-title topic-title-practice">تمرین</div>
+            <div class="topic-title topic-title-practice set_koodak_font">تمرین</div>
             <img class="topic-image-practice" src="assets/3rd/images/girl_and_teacher_activity.png">
         </div>
         <p>
@@ -33,47 +32,63 @@
             <span class="pull-left">100</span>
             <div class="pull-left">
                 <img class="guider" src="assets/3rd/images/eftekhari/curveguider.png">
-                <p class="text-center" style="margin-top: -2vw">200+</p>
+                <p class="text-center negative-margin-top">200+</p>
             </div>
             <span class="pull-left">300</span>
             <div class="pull-left">
                 <img class="guider" src="assets/3rd/images/eftekhari/curveguider.png">
-                <p class="text-center" style="margin-top: -2vw">200+</p>
+                <p class="text-center negative-margin-top">200+</p>
             </div>
             <span class="pull-left">500</span>
             <img class="guider pull-left" src="assets/3rd/images/eftekhari/curveguider.png">
-            <input class="input-large-style" style="width: 7vw">
+            <input id="inp17_1" class="input-large-style" style="width: 7vw" type="number"
+                   onkeypress="setTextBlack(id)">
             <img class="guider pull-left" src="assets/3rd/images/eftekhari/curveguider.png">
             <p class="pull-left">
                 عددها
-                <input class="input-large-style" style="width: 3vw; float: none">
+                <input id="inp17_2" class="input-large-style width3" type="number" onkeypress="setTextBlack(id)">
                 تا
-                <input class="input-large-style" style="width: 3vw ; float: none">
+                <input id="inp17_3" class="input-large-style width3" type="number" onkeypress="setTextBlack(id)">
                 اضافه می شوند
             </p>
+            <div class="pull-left">
+                <input class="submit submit-third-page pull-left" type="submit" value="ثبت" id="submit3_1"
+                       onclick="checkAnswer3_1()">
+            </div>
+            <div class="clearfix"></div>
+            <span class="feedback pull-right" id="feedback3_1"></span>
         </div>
+
+
         <div class="input-row pull-left">
             <span class="pull-left">450</span>
             <div class="pull-left">
                 <img class="guider" src="assets/3rd/images/eftekhari/curveguider.png">
-                <p class="text-center" style="margin-top: -2vw">100+</p>
+                <p class="text-center negative-margin-top">100+</p>
             </div>
             <span class="pull-left">550</span>
             <div class="pull-left">
                 <img class="guider" src="assets/3rd/images/eftekhari/curveguider.png">
-                <p class="text-center" style="margin-top: -2vw">100+</p>
+                <p class="text-center negative-margin-top">100+</p>
             </div>
             <span class="pull-left">650</span>
             <img class="guider pull-left" src="assets/3rd/images/eftekhari/curveguider.png">
-            <input class="input-large-style" style="width: 7vw">
+            <input id="inp18_1" class="input-large-style" style="width: 7vw" type="number"
+                   onkeypress="setTextBlack(id)">
             <img class="guider pull-left" src="assets/3rd/images/eftekhari/curveguider.png">
             <p class="pull-left">
                 عددها
-                <input class="input-large-style" style="width: 3vw; float: none">
+                <input id="inp18_2" class="input-large-style width3" type="number" onkeypress="setTextBlack(id)">
                 تا
-                <input class="input-large-style" style="width: 3vw ; float: none">
+                <input id="inp18_3" class="input-large-style width3" type="number" onkeypress="setTextBlack(id)">
                 اضافه می شوند
             </p>
+            <div class="pull-left">
+                <input class="submit submit-third-page pull-left" type="submit" value="ثبت" id="submit3_2"
+                       onclick="checkAnswer3_2()">
+            </div>
+            <div class="clearfix"></div>
+            <span class="feedback pull-right" id="feedback3_2"></span>
         </div>
         <p class="pull-right">
             <span class="question-number">2.</span>
@@ -87,42 +102,60 @@
         <div class="third-forth-page">
             <div class="input-row pull-left">
                 <span class="pull-left">، 39 ،26 ،13 ،0 </span>
-                <input class="input-large-style" style="width: 3vw ; float: left">
+                <input id="inp19_1" class="input-large-style leftwidth3" type="number" onkeypress="setTextBlack(id)">
                 <span class="pull-left">،</span>
-                <input class="input-large-style" style="width: 3vw ; float: left">
+                <input id="inp19_2" class="input-large-style leftwidth3" type="number" onkeypress="setTextBlack(id)">
                 <span class="pull-left">،</span>
-                <input class="input-large-style" style="width: 3vw ; float: left">
+                <input id="inp19_3" class="input-large-style leftwidth3" type="number" onkeypress="setTextBlack(id)">
                 <input class="input-large-style" value="عددها 13 تا 13 تا اضافه می شوند" readonly>
+                <div class="pull-left">
+                    <input class="submit submit-third-page pull-left" type="submit" value="ثبت" id="submit3_3"
+                           onclick="checkAnswer3_3()">
+                </div>
+                <div class="clearfix"></div>
+                <span class="feedback pull-right" id="feedback3_3"></span>
             </div>
             <div class="input-row pull-left">
                 <span class="pull-left">، 27 ،18 ،9 ،0 </span>
-                <input class="input-large-style" style="width: 3vw ; float: left">
+                <input id="inp20_1" class="input-large-style leftwidth3" type="number" onkeypress="setTextBlack(id)">
                 <span class="pull-left">،</span>
-                <input class="input-large-style" style="width: 3vw ; float: left">
+                <input id="inp20_2" class="input-large-style leftwidth3" type="number" onkeypress="setTextBlack(id)">
                 <span class="pull-left">،</span>
-                <input class="input-large-style" style="width: 3vw ; float: left">
+                <input id="inp20_3" class="input-large-style leftwidth3" type="number" onkeypress="setTextBlack(id)">
                 <p class="pull-left">
                     عددها
-                    <input class="input-large-style" style="width: 3vw; float: none">
+                    <input id="inp20_4" class="input-large-style width3" type="number" onkeypress="setTextBlack(id)">
                     تا
-                    <input class="input-large-style" style="width: 3vw ; float: none">
+                    <input id="inp20_5" class="input-large-style width3" type="number" onkeypress="setTextBlack(id)">
                     اضافه می شوند
                 </p>
+                <div class="pull-left">
+                    <input class="submit submit-third-page pull-left" type="submit" value="ثبت" id="submit3_4"
+                           onclick="checkAnswer3_4()">
+                </div>
+                <div class="clearfix"></div>
+                <span class="feedback pull-right" id="feedback3_4"></span>
             </div>
             <div class="input-row pull-left">
                 <span class="pull-left">، 34 ،23 ،12 ،1 </span>
-                <input class="input-large-style" style="width: 3vw ; float: left">
+                <input id="inp21_1" class="input-large-style leftwidth3" type="number" onkeypress="setTextBlack(id)">
                 <span class="pull-left">،</span>
-                <input class="input-large-style" style="width: 3vw ; float: left">
+                <input id="inp21_2" class="input-large-style leftwidth3" type="number" onkeypress="setTextBlack(id)">
                 <span class="pull-left">،</span>
-                <input class="input-large-style" style="width: 3vw ; float: left">
+                <input id="inp21_3" class="input-large-style leftwidth3" type="number" onkeypress="setTextBlack(id)">
                 <p class="pull-left">
                     عددها
-                    <input class="input-large-style" style="width: 3vw; float: none">
+                    <input id="inp21_4" class="input-large-style width3" type="number" onkeypress="setTextBlack(id)">
                     تا
-                    <input class="input-large-style" style="width: 3vw ; float: none">
+                    <input id="inp21_5" class="input-large-style width3" type="number" onkeypress="setTextBlack(id)">
                     اضافه می شوند
                 </p>
+                <div class="pull-left">
+                    <input class="submit submit-third-page pull-left" type="submit" value="ثبت" id="submit3_5"
+                           onclick="checkAnswer3_5()">
+                </div>
+                <div class="clearfix"></div>
+                <span class="feedback pull-right" id="feedback3_5"></span>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -132,43 +165,63 @@
         </p>
         <div class="input-row pull-right">
             <span class="pull-right">1. </span>
-            <input class="input-large-style" style="width: 3vw ; float: right; margin-left: 5vw ">
+            <input id="inp22_1" class="input-large-style days_input" onkeypress="setTextBlack(id)">
             <span class="pull-right">2. </span>
-            <input class="input-large-style" style="width: 3vw ; float: right; margin-left: 5vw ">
+            <input id="inp22_2" class="input-large-style days_input" onkeypress="setTextBlack(id)">
             <span class="pull-right">3. </span>
-            <input class="input-large-style" style="width: 3vw ; float: right; margin-left: 5vw ">
+            <input id="inp22_3" class="input-large-style days_input" onkeypress="setTextBlack(id)">
             <span class="pull-right">4. </span>
-            <input class="input-large-style" style="width: 3vw ; float: right; margin-left: 5vw ">
+            <input id="inp22_4" class="input-large-style days_input" onkeypress="setTextBlack(id)">
+            <div class="pull-right">
+                <input class="submit submit-third-page pull-right" type="submit" value="ثبت" id="submit3_6"
+                       onclick="checkAnswer3_6()">
+            </div>
+            <span class="feedback pull-right" id="feedback3_6"></span>
+
         </div>
         <div class="clearfix"></div>
-
         <div class="content-box creative">
-            <div class="topic-title topic-title-creative">خلاق باش</div>
+            <div class="topic-title topic-title-creative set_koodak_font">خلاق باش</div>
             <div class="clearfix"></div>
             <div class="third-forth-page pull-left">
                 <p class="pull-right">به کمک ماشین حساب یا به طور ذهنی جواب جمع های زیر را پیدا کنید.</p>
                 <div class="clearfix"></div>
                 <span class="pull-left">=4+7+5+3</span>
-                <input class="input-style creative-input-style pull-left">
-                <input class="input-style creative-input-style pull-right">
+                <input id="inp23_1" class="input-style creative-input-style pull-left"
+                       onkeyUp="checkAnswer_creative(id,'feedback4_1',19)">
+                <input id="inp23_2" class="input-style creative-input-style pull-right"
+                       onkeyUp="checkAnswer_creative(id,'feedback4_2',19)">
                 <span class="pull-right">=3+4+7+5</span>
                 <div class="clearfix"></div>
+                <span class="feedback pull-left" id="feedback4_1"></span>
+                <span class="feedback pull-right" id="feedback4_2"></span>
+                <div class="clearfix"></div>
+
                 <span class="pull-left">=3+5+7+4</span>
-                <input class="input-style creative-input-style pull-left">
-                <input class="input-style creative-input-style pull-right">
+                <input id="inp23_3" class="input-style creative-input-style pull-left"
+                       onkeyUp="checkAnswer_creative(id,'feedback4_3',19)">
+                <input id="inp23_4" class="input-style creative-input-style pull-right"
+                       onkeyUp="checkAnswer_creative(id,'feedback4_4',19)">
                 <span class="pull-right">=3+7+5+4</span>
+                <div class="clearfix"></div>
+                <span class="feedback pull-left" id="feedback4_3"></span>
+                <span class="feedback pull-right" id="feedback4_4"></span>
                 <div class="clearfix"></div>
                 <p class="pull-right">با دیدن حاصل جمع ها چه نتیجه ای می گیرید؟</p>
                 <div class="clearfix"></div>
                 <p class="pull-right text-red">جا به جایی اعداد در جمع تاثیری</p>
                 <form>
-                <label>
-                    <input type="checkbox" name="دارد" value="value" style="margin-right: 1vw">
-                    دارد</label>
                     <label>
-                        <input type="checkbox" name="ندارد" value="value" style="margin-right: 1vw">
+                        <input id="cb_false" class="checkbox_style" type="checkbox" name="دارد" value="value"
+                               onclick="checkbox_answer('feedback4_5')">
+                        دارد</label>
+                    <label>
+                        <input id="cb_true" class="checkbox_style" type="checkbox" name="ندارد" value="value"
+                               onclick="checkbox_answer('feedback4_5')">
                         ندارد</label>
+                    <span class="feedback pull-left" id="feedback4_5"></span>
                 </form>
+
             </div>
             <div class="clearfix"></div>
             <div class="third-forth-page pull-left" style="margin-top: 2vw">
@@ -176,14 +229,25 @@
                     حاصل را به طور ذهنی به دست آورید.</p>
                 <div class="clearfix"></div>
                 <span class="pull-left">=2+5+8+5</span>
-                <input class="input-style creative-input-style pull-left">
-                <input class="input-style creative-input-style pull-right">
+                <input id="inp24_1" class="input-style creative-input-style pull-left"
+                       onkeyUp="checkAnswer_creative(id,'feedback4_6',20)">
+                <input id="inp24_2" class="input-style creative-input-style pull-right"
+                       onkeyUp="checkAnswer_creative(id,'feedback4_7',25)">
                 <span class="pull-right">=7+8+3+2+5</span>
                 <div class="clearfix"></div>
+                <span class="feedback pull-left" id="feedback4_6"></span>
+                <span class="feedback pull-right" id="feedback4_7"></span>
+                <div class="clearfix"></div>
                 <span class="pull-left">=4+6+7+1+2</span>
-                <input class="input-style creative-input-style pull-left">
-                <input class="input-style creative-input-style pull-right">
+                <input id="inp24_3" class="input-style creative-input-style pull-left"
+                       onkeyUp="checkAnswer_creative(id,'feedback4_8',20)">
+                <input id="inp24_4" class="input-style creative-input-style pull-right"
+                       onkeyUp="checkAnswer_creative(id,'feedback4_9',30)">
                 <span class="pull-right">=1+2+3+7+8+9</span>
+                <div class="clearfix"></div>
+                <span class="feedback pull-left" id="feedback4_8"></span>
+                <span class="feedback pull-right" id="feedback4_9"></span>
+                <div class="clearfix"></div>
             </div>
             <div class="one-forth-page pull-right">
                 <img class="calman-size" src="assets/3rd/images/eftekhari/calman.png">
@@ -191,16 +255,18 @@
         </div>
         <div class="clearfix"></div>
         <div class="page-navigator">
-            <div class="previous-page">
-                <a href="book_3_11.html">< صفحه قبل</a>
-            </div>
-            <div class="next-page">
-                <a href="book_3_13.html">صفحه بعد ></a>
-            </div>
+            <a href="book_3_11.html" class="change-page">
+                <
+            </a>
+            <input id="page_number" class="page-number" onkeyUp="page_changer(id)" type="number">
+            <a href="book_3_13.html" class="change-page">
+                >
+            </a>
         </div>
-        <div class="page-number">12</div>
+        <div class="clearfix"></div>
     </div>
 
 </div>
+<script src="assets/3rd/js/eftekhari.js" type="text/javascript"></script>
 </body>
 </html>

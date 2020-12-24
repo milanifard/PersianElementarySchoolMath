@@ -151,7 +151,7 @@ function changeColor(inp, val) {
     if (inp) {
         inp.addEventListener("change", function (event) {
             if (inp.value == val) {
-                pictureChange('./assets/3rd/images/sheikholeslami/' + val + '_table.png');
+                pictureChange('./assets/3rd/images/Sheikholeslami/' + val + '_table.png');
             }
         });
     }
