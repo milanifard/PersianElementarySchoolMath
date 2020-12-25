@@ -302,6 +302,9 @@ body{
 .img_width16{
     width:16.5vw;
 }
+.img_width25{
+    width:25vw;
+}
 
 .frac {
     display: inline-block;
