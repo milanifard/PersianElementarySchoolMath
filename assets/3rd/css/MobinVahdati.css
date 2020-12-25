@@ -392,7 +392,7 @@ hr {
     border: none;
     border-bottom: 2px solid #79c2d2;
     border-radius: 0.6vw 0.6vw 0.3vw 0.3vw;
-    width: 100%;
+    width: 12vw;
     font-size: 1.8vw;
     font-family: Koodak;
 }
@@ -407,7 +407,7 @@ hr {
 .bubble-field {
     text-align: center;
     font-size: 1.8vw;
-    border: 2px solid #79c2d2;
+    border: 2px solid #0000;
     border-radius: 1.5vw;
     font-family: Koodak;
     width: 4vw;
