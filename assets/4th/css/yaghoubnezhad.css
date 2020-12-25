@@ -1,0 +1,143 @@
+:root {
+    --yellow_level1: #fffce0;
+    --yellow_level2: #ffdd2b;
+    --yellow_level3: #fecc4e;
+    --yellow_level4: #fcb94b;
+
+    --red_level1: #f0595b;
+    --red_level2: #c8242b;
+    --red_level3: #b31c0f;
+
+    --blue_level0: #d4effb;
+    --blue_level1: #6bcff6;
+    --blue_level2: #77bfd1;
+    --blue_level3: #5cb6cd;
+
+    --green_level0: #d2e287;
+    --green_level1: #bbd75e;
+    --green_level2: #87c765;
+    --green_level3: #44b869;
+    --green_level4: #3ab54a;
+
+    --orange_level1: #efeadb;
+    --orange_level2: #fcb94b;
+    --orange_level3: #ff7322;
+
+    --purple: #b09ac9;
+
+    --pink_level0: #fbdfeb;
+    --pink: #f287b6;
+
+}
+@font-face {
+    font-family: 'Zar';
+    src: url('../../fonts/Zar.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/Zar.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../fonts/Zar.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../fonts/Zar.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../fonts/Zar.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../fonts/Zar.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'ZarBold';
+    src: url('../../fonts/ZarBold.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/ZarBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../fonts/ZarBold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../fonts/ZarBold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../fonts/ZarBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../fonts/ZarBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Faraz';
+    src: url('../../fonts/Faraz.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/Faraz.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../fonts/Faraz.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../fonts/Faraz.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../fonts/Faraz.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../fonts/Faraz.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Yekan';
+    src: url('../../fonts/Yekan.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/Yekan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../fonts/Yekan.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../fonts/Yekan.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../fonts/Yekan.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../fonts/Yekan.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+.header {
+    width: 100%;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.header-box {
+    /* margin-top: 130px; */
+    font-family: 'Yekan','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 4em;
+    background-color: lightblue;
+    margin-bottom:70px;
+    z-index: 1;
+    padding:0 40px;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    border-radius: 0 0 30px 30px;
+    position: relative;
+}
+.header-box-text {
+    position: absolute;
+    color: var(--orange_level3);
+    bottom: -44px;
+}
+.header-box-stroke {
+    margin: 0;
+    color: var(--orange_level1);
+    -webkit-text-stroke: 25px var(--orange_level1);
+}
+.headr-line {
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    border: 5px solid lightgray;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 0 30px 0 0 ;
+    top: 160px;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.headr-line-img {
+    width: 13vw;
+    transform: translateY(52%);
+    margin-right: 10px;  
+}
+.headr-line-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin-right: -15px;
+}
+.question-one {
+    direction: rtl;
+    display: flex;
+    width: 75%;
+    font-family: 'Yekan','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    align-items: flex-start;
+}
+.question-one-text {
+    width: 85%;
+    margin: 0;
+}
