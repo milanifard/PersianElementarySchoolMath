@@ -250,7 +250,7 @@ input[type="text"]:focus {
   padding-right: 9vw;
 }
 
-.pic2 {
+.pic-girl_and_teacher_activity {
   width: 11vw;
   height: 13vw;
   margin-right: -2vw;
@@ -259,7 +259,7 @@ input[type="text"]:focus {
   z-index: 1;
 }
 
-.tamrin {
+.tamrin-page130 {
   font-size: 1.8vw;
   margin-right: 10vw;
   margin-top: -7vw;
@@ -272,7 +272,7 @@ input[type="text"]:focus {
   z-index: 2;
 }
 
-.sabadeShir {
+.pic-milkBasket {
   width: 22w;
   height: 22vw;
   margin-top: -5vw;
@@ -411,4 +411,11 @@ td {
   background-color: rgb(190, 226, 235);
   display: inline-block;
   position: relative;
+}
+.redBackground-title {
+    height: 1.5vw;
+    width: 22vw;
+    background-color: #c8242b;;
+    margin-right: 29vw;
+    margin-top: -1vw;
 }
