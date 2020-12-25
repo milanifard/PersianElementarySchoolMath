@@ -1,0 +1,43 @@
+.page-no-input {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 25vw;
+    // position: absolute;
+    // right: 0;
+    // left: 0;
+    // bottom: -7vw;
+    margin: auto;
+
+    #next_btn {
+        // float: left; 
+        margin-right: 1.5vw;
+    }
+
+    #pre_btn {
+        // float: left; 
+        margin-left: 1.5vw;
+    }
+
+    div {
+        .page-number-input{
+
+            background-color: #fcb94b;
+            border-radius: 2.5vw;
+            border: 0.9vw double white;
+        
+            text-align: center;
+            font-size: 2vw;
+            color: white;
+        
+            padding: 0.1vw 0.5vw;
+            // float: left;
+            width: 5vw
+        }
+    }
+    
+    
+}
+
+.arrow {
+    width: 3vw
+}

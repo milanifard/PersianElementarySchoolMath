@@ -1,17 +1,19 @@
 .tableQuestionContainer {
-    float: right;
+    // float: right;
     .fractionalQuestionContainer {
-        float: bottom;
+        display: flex;
+        flex-direction: row;
+        // float: bottom;
         div {
-            padding-right: 8vw; 
-            float: right; 
+            // padding-right: 8vw; 
+            // float: right; 
             margin-top: 0;
        }
        
        input {
             width: 5vw; 
             font-size: 1.8vw; 
-            float: right;
+            // float: right;
        } 
     }
 }

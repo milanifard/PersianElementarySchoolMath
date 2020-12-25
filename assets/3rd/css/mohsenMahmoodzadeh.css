@@ -1,3 +1,15 @@
+.background-style {
+  width: 100vw;
+  height: 28vw;
+  background-image: repeating-linear-gradient(to bottom, #fcc441, #fcc441 1vw, #ffd61e 0vw, #ffd61e 2.5vw);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -12vw;
+  z-index: -1;
+  left: -10vw;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +17,11 @@
 
 .right-page-border {
   width: 90vw;
-  height: 80vw;
+  height: 100vw;
   max-width: 100%;
   border: 0.8vw double #ffdd2b;
-  border-top-left-radius: 5vw;
-  border-bottom-left-radius: 5vw;
+  border-top-left-radius: 4vw;
+  border-bottom-left-radius: 4vw;
   border-right: none;
   margin: 5vw 0 0 10vw;
   background-color: #fff;
@@ -44,29 +56,33 @@
   top: -1vw;
 }
 
-.activity-container {
-  width: 25%;
-}
-.activity-container .activity-header {
-  display: flex;
-  flex-direction: row;
-}
-.activity-container .activity-header .activity-image-container {
-  z-index: 2;
-}
-.activity-container .activity-header .activity-image-container .activity-image {
-  width: 13vw;
-}
-.activity-container .activity-header .activity-title-container {
+.activity-text {
   background-color: #fecc4e;
   border-radius: 1.5vw;
+  padding: 0.25vw 10vw 0.25vw 3vw;
+  position: absolute;
+  right: 5vw;
+  top: 2.5vw;
   z-index: 1;
+  margin-right: 2vw;
+  height: 5vw;
+  width: 8vw;
 }
-.activity-container .activity-header .activity-title-container .activity-title {
-  color: #fff;
-  font-family: Koodak;
-  font-size: 2.5vw;
+.activity-text p {
   text-align: center;
+  font-family: Koodak;
+  font-size: 28px;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.activity-image {
+  width: 13vw;
+  position: absolute;
+  right: -2.3vw;
+  top: 1vw;
+  z-index: 2;
+  margin-right: 5vw;
 }
 
 .tableContainer, #Table4-container, #Table3-container, #Table2-container, #Table1-container {
@@ -96,12 +112,10 @@
 
 #Table1-container {
   background-color: #ffd61e;
-  border-radius: 8px;
+  border-radius: 15px;
   width: 50vw;
   max-width: 100%;
-  margin: auto auto;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  margin: 0 auto;
   float: right;
 }
 #Table1-container .table {
@@ -111,7 +125,8 @@
   border: solid 2px #e55726;
 }
 #Table1-container .table tr .td {
-  font-family: Koodak;
+  font-family: Zar;
+  font-weight: bold;
   text-align: center;
   background-color: #fff;
   border-color: #e55726;
@@ -236,6 +251,10 @@
   src: url("/assets/fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Faraz.woff2") format("woff2"), url("/assets/fonts/Faraz.woff") format("woff"), url("/assets/fonts/Faraz.ttf") format("truetype"), url("/assets/fonts/Faraz.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
+@font-face {
+  font-family: Koodak;
+  src: url("../../fonts/KoodakBold.ttf");
+}
 .tableContainer, #Table1-container, #Table2-container, #Table3-container, #Table4-container {
   background-color: white;
 }
@@ -263,12 +282,10 @@
 
 #Table1-container {
   background-color: #ffd61e;
-  border-radius: 8px;
+  border-radius: 15px;
   width: 50vw;
   max-width: 100%;
-  margin: auto auto;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  margin: 0 auto;
   float: right;
 }
 #Table1-container .table {
@@ -278,7 +295,8 @@
   border: solid 2px #e55726;
 }
 #Table1-container .table tr .td {
-  font-family: Koodak;
+  font-family: Zar;
+  font-weight: bold;
   text-align: center;
   background-color: #fff;
   border-color: #e55726;
@@ -392,8 +410,6 @@
 .question-text-config {
   padding-right: 5vw;
   padding-left: 3vw;
-  padding-bottom: 2vw;
-  margin-top: 2vw;
 }
 
 .question-num {
@@ -402,7 +418,6 @@
 
 #Question-1 {
   padding-right: 1vw;
-  float: right;
 }
 
 .circleContainer, #Circle1 {
@@ -421,7 +436,6 @@
 }
 
 #Circle1 {
-  float: left;
   margin-top: 5vw;
   border: 2px solid #000;
   animation-fill-mode: forwards;
@@ -454,17 +468,6 @@
 }
 
 #clock-needle:after {
-  width: 0;
-  height: 0;
-  border-bottom: 0.5vw solid transparent;
-  border-top: 0.5vw solid transparent;
-  border-left: 1.1vw solid #000;
-  display: inline-block;
-  vertical-align: middle;
-  content: "";
-}
-
-#clock-needle:before {
   width: 4vw;
   height: 0.3vw;
   background-color: #000;
@@ -473,26 +476,192 @@
   content: "";
 }
 
+#clock-needle:before {
+  width: 0;
+  height: 0;
+  border-bottom: 0.5vw solid transparent;
+  border-top: 8px solid transparent;
+  border-left: 8px solid #000;
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+}
+
 #clock-needle {
   position: absolute;
-  margin-left: 16.4vw;
-  margin-top: 9.5vw;
+  margin-right: 3vw;
+  margin-top: 4.5vw;
   transform: rotate(-45deg);
 }
 
-.tableQuestionContainer {
-  float: right;
-}
 .tableQuestionContainer .fractionalQuestionContainer {
-  float: bottom;
+  display: flex;
+  flex-direction: row;
 }
 .tableQuestionContainer .fractionalQuestionContainer div {
-  padding-right: 8vw;
-  float: right;
   margin-top: 0;
 }
 .tableQuestionContainer .fractionalQuestionContainer input {
   width: 5vw;
   font-size: 1.8vw;
-  float: right;
+}
+
+.page-no-input {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 25vw;
+  margin: auto;
+}
+.page-no-input #next_btn {
+  margin-right: 1.5vw;
+}
+.page-no-input #pre_btn {
+  margin-left: 1.5vw;
+}
+.page-no-input div .page-number-input {
+  background-color: #fcb94b;
+  border-radius: 2.5vw;
+  border: 0.9vw double white;
+  text-align: center;
+  font-size: 2vw;
+  color: white;
+  padding: 0.1vw 0.5vw;
+  width: 5vw;
+}
+
+.arrow {
+  width: 3vw;
+}
+
+.right-page-num {
+  background-color: #f8b044;
+  width: 7vw;
+  height: 5vh;
+  border: 2px double white;
+  border-radius: 35px;
+  position: relative;
+  top: -6.25vh;
+  right: 86vw;
+}
+.right-page-num p {
+  color: white;
+  text-align: center;
+  font-family: Zar;
+}
+
+#activity-circle {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#question-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#question-2-3-images {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+#question-2-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+#cube-coin {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10vw;
+  margin-top: 5vw;
+}
+
+#cube {
+  width: 7vw;
+  height: 7vw;
+}
+
+#coin {
+  width: 7vw;
+  height: 7vw;
+  margin-right: 7vw;
+}
+
+#guess-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffddf;
+  border-radius: 15px;
+  border: 1.5px solid #fcc441;
+  margin-right: 5vw;
+  margin-left: 3vw;
+  height: 31vh;
+}
+
+#guess-text-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+#guess-text-question {
+  padding-top: 5px;
+}
+#guess-text-question p {
+  font-family: Zar;
+  font-size: 1.5vw;
+}
+
+#guess-text-label {
+  background-color: #fcc441;
+  color: white;
+  width: 10vw;
+  position: relative;
+  right: 45px;
+  border-left: 2vw solid #f8b044;
+}
+#guess-text-label p {
+  font-family: Koodak;
+  font-size: 1.5vw;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#candle-cylindrical {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#candle-box {
+  padding-right: 25px;
+  margin-top: 25px;
+}
+
+#candle {
+  width: 8vw;
+  height: 7vw;
+}
+
+#cylindrical-box {
+  padding-left: 25px;
+}
+
+#cylindrical {
+  width: 30vw;
+  height: 10vw;
+}
+
+#TableQuestion1-container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 7vw;
+  margin-top: 2vw;
+}
+
+.textarea {
+  height: 10vh;
+  width: 50vw;
 }
