@@ -8,7 +8,7 @@
     <title>ریاضی سوم دبستان</title>
 </head>
 
-<body style="margin: 0;">
+<body >
     
 <div>
     <div class="right-border">
@@ -20,40 +20,95 @@
             <div class="problem-text">حلّ مسئله</div>
         </div>
 
-        <div id="Q1_container">
-            <div id="Q1" class="text-config questions-text-config" style="padding-top: 6vw; padding-right: 15vw; margin-top: 3vw">۱ـ با چهار کارت که روی آن ها رقم های ۳،۲،۵و ۸ نوشته شده است، همه عدد های ۴ رقمی را بسازید.
-                چند تا از آن ها زوج اند؟</div>
-       
         
+            <div id="Q1" class="text-config questions-text-config"><span class="number_ofQ">۱_ </span>با چهار کارت که روی آن ها رقم های ۳،۲،۵و ۸ نوشته شده است، همه عدد های ۴ رقمی را بسازید. چند تا از آن ها زوج اند؟ (می توانید با جا به جا کارت ها اعداد را بسازید.)</div>
 
-        <div class="empty">
-            <div class="fill" id="0" ondragstart="reply_click(this.id)" draggable="true"></div>
+        <div class="flex_row">
+            <form class="first_form">
+                <input id="p134_q1" class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_p134_q1()"><span class="ok">تصحیح</span></button>
+            </form>
         </div>
-        <div class="empty">
-            <div class="fill" id="1" ondragstart="reply_click(this.id)" draggable="true"></div>
+
+        <div class="text-config questions-text-config hint">برای نوشتن تمام عددها از راهبرد الگوسازی استفاده کنید.</div>
+
+         <div class="container">
+            <div draggable="true" class="box eight" id="0" ondrop="reply_click(this.id)" ondragstart="start(this.id)">۸</div>
+            <div draggable="true" class="box five" id="1" ondrop="reply_click(this.id)" ondragstart="start(this.id)">۵</div>
+            <div draggable="true" class="box two" id="2" ondrop="reply_click(this.id)" ondragstart="start(this.id)">۲</div>
+            <div draggable="true" class="box three" id="3" ondrop="reply_click(this.id)" ondragstart="start(this.id)">۳</div>
         </div>
-        <div class="empty">
-            <div class="fill" id="2" ondragstart="reply_click(this.id)" draggable="true"></div>
+
+        <div class="text-config questions-text-config"><span class="number_ofQ">۲_ </span>بزرگترین عدد ۴ رقمی را بنویسید.</div>
+        <div class="flex_row ">
+            <form class="form">
+                <input id="p134_q2" class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_p134_q2()"><span class="ok">تصحیح</span></button>
+            </form>
         </div>
-        <div class="empty">
-            <div class="fill" id="3" ondragstart="reply_click(this.id)" draggable="true"></div>
+
+        <div class="text-config questions-text-config">بزرگترین عدد ۴ رقمی را که در آن هیچ رقمی تکرار نشده باشد، بنویسید.</div>
+        <div class="flex_row">
+            <form class="form">
+                <input id="p134_q3" class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_p134_q3()"><span class="ok">تصحیح</span></button>
+            </form>
         </div>
+        <div class="text-config questions-text-config">کوچکترین عدد ۴ رقمی را بنویسید.</div>
+        <div class="flex_row">
+            <form class="form">
+                <input id="p134_q4" class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_p134_q4()"><span class="ok">تصحیح</span></button>
+            </form>
+        </div>
+        <div class="text-config questions-text-config">کوچکترین عدد زوج ۴ رقمی را که در آن هیچ رقمی تکرار نشده باشد، بنویسید.</div>
+        <div class="flex_row">
+            <form class="form">
+                <input id="p134_q5" class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_p134_q5()"><span class="ok">تصحیح</span></button>
+            </form>
+        </div>
+        <div class="text-config questions-text-config">حالا کوچکترین عدد ۴ رقمی را که در آن هیچ رقمی تکرار نشده باشد، بنویسید.</div>
+        <div class="flex_row">
+            <form class="form">
+                <input id="p134_q6" class="form__field normal_shadow" type="text" placeholder="پاسخ">
+                <button class="btn btn--primary btn--inside uppercase" type="button" onclick="correct_p134_q6()"><span class="ok">تصحیح</span></button>
+            </form>
+        </div>
+
+        <div class="text-config questions-text-config hint">با توجّه به اطّلاعات مسئله، از رقم های ۰ تا ۹ چگونه استفاده می کنید؟توضیح دهید.</div>
         <br>
 
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        
-            
 
+        <div class="anscontainer">
+            <textarea placeholder="  پاسخ :" dir="rtl"></textarea>
+          </div>
+
+          <img class="numbers_img" src="./assets/3rd/images/Mehregan/numbers-p134.png" alt="bricks" >
+
+          <img class="footer1_img" src="./assets/3rd/images/Mehregan/footer1.png" alt="footer2" >
+        <div class="text-config questions-text-config footer1_hint">برای پیدا کردن پاسخ یک مسئله تمام حالت های ممکن را در نظر بگیرید. سپس با توجّه به شرایط مسئله، <span class="hint">حالت های نامطلوب</span> را کنار بگذارید.</div>
 
         <div class="page-number">۱۳۴</div>
-    </div>
+        <div class="page-no-input">
+            <div id="next_btn">
+                <a href="book_3_135.html">
+                    <img src="assets/3rd/images/left-arrow.png" alt="next_page" style="width: 3vw">
+                </a>
+            </div>
+            <div>
+                <input class="page-number-input" type="number" name="page_number" id="page_switcher" style="width: 5vw">
+            </div>
+            <div id="pre_btn">
+                <a href="book_3_133.html">
+                    <img src="assets/3rd/images/right-arrow.png" alt="next_page" style="width: 3vw">
+                </a>
+            </div>
+        </div>
 </div>
-<script src="./assets/3rd/js/Mehregan.js"></script>
+
 </body>
 
 
-
+<script src="./assets/3rd/js/Mehregan.js"></script>
 </html>

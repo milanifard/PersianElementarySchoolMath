@@ -2,60 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="author" content="Alireza Aghelan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ریاضی سوم دبستان</title>
     <link rel="stylesheet" href="./assets/3rd/css/Aghelan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
-
-<span id="p3background"></span>
-
+<div id="p3background"></div>
 
 <main id="p3content">
 
-
-    <img id="pencil" src="./assets/3rd/images/Aghelan/pencil.png">
-    <img id="polygonal" src="./assets/3rd/images/Aghelan/polygonal.png">
-    <img id="matches" src="./assets/3rd/images/Aghelan/matches.png">
-    <img id="thought" src="./assets/3rd/images/Aghelan/thought.png">
-    <img id="man" src="./assets/3rd/images/Aghelan/man.png">
-
+<img id="pencil" src="./assets/3rd/images/Aghelan/pencil.png">
+<img id="polygonal" src="./assets/3rd/images/Aghelan/polygonal.png">
+<img id="matches" src="./assets/3rd/images/Aghelan/matches.png">
+<img id="thought" src="./assets/3rd/images/Aghelan/thought.png">
+<img id="man" src="./assets/3rd/images/Aghelan/man.png">
 
 <h1 id="page3header" class="text">حل مسئله ی ساده تر</h1>
+<div id="p3b"></div>
 
-
-<span id="p3q1" class="text"> 1ــ تعداد قطر های یک 20 ضلعی بیشتر است یا یک 19 ضلعی؟</span>
+<span id="p3q1" class="text"> <span class="q">1ــ</span> تعداد قطر های یک 20 ضلعی بیشتر است یا یک 19 ضلعی؟</span>
 <div id="p3t1" class="text">
-    برای پاسخ دادن به این سؤال بهتر است قطر های سه ضلعی، چهارضلعی ، پنج ضلعی و شش ضلعی را رسم کنید.
+    برای پاسخ دادن به این سؤال بهتر است تعداد قطر های سه ضلعی، چهارضلعی ، پنج ضلعی و شش ضلعی را برسی کنید.
     <br>
     سپس برای مسئله ی اصلی پاسخ پیدا کنید.
 </div>
 <input type="text" id="p3a1" class="answer" size="9">
 <input type="button" id="p3r1" class="review" value="ثبت پاسخ" onclick="check(this.id)">
-<span id="p3f1" class="feedback"></span>
+<span id="p3f1_1" class="feedback"></span>
+<span id="p3f1_2" class="feedback"></span>
 
-
-<span id="p3q2" class="text">2ــ شکل های زیر با ترتیب و الگوی مشخص ساخته می شوند.</span>
+<span id="p3q2" class="text"><span class="q">2ــ</span> شکل های زیر با ترتیب و الگوی مشخص ساخته می شوند.</span>
 <span id="p3q2_1" class="text">اگر شکل دهم با 28 چوب کبریت ساخته شود، شکل یازدهم با چند چوب کبریت ساخته می شود؟</span>
 <input type="text" id="p3a2_1" class="answer" size="7">
 <input type="button" id="p3r2_1" class="review" value="ثبت پاسخ" onclick="check(this.id)">
-<span id="p3f2_1" class="feedback"></span>
 <span id="p3q2_2" class="text">آیا لازم است شکل دهم و یازدهم را بکشید؟</span>
 <input type="text" id="p3a2_2" class="answer" size="5">
 <input type="button" id="p3r2_2" class="review" value="ثبت پاسخ" onclick="check(this.id)">
+<span id="p3f2_1_1" class="feedback"></span>
+<span id="p3f2_1_2" class="feedback"></span>
 <span id="p3f2_2_1" class="feedback"></span>
 <span id="p3f2_2_2" class="feedback"></span>
 <span id="p3f2_2_3" class="feedback"></span>
-
 
 <span id="n1" class="numb">1</span>
 <span id="n2" class="numb">2</span>
 <span id="n3" class="numb">3</span>
 <span id="n4" class="numb">4</span>
-
 
 <div id="p3text" class="text">
      ساده کردن مسئله و «حل مسئله ی ساده تر» کمک می کند که الگوها و نظم های مسئله
@@ -63,15 +59,26 @@
     آشکار شوند تا به کمک آن ها بتوانیم پاسخ مسئله ی اصلی را پیدا کنیم.
 </div>
 
+</main>
 
-<span id="p3numb" class="pnumb"></span>
+<div class="pagination-container" id="pg3">
 
+    <div class="page-number-button">
+        <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
+    </div>
 
+    <div class="page-number">
+        <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+    </div>
+
+    <div class="page-number-button">
+        <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
+    </div>
+
+</div>
 
 
 <script src="./assets/3rd/js/Aghelan.js"></script>
-
-</main>
 
 </body>
 </html>

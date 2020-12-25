@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="MohadeseJabbari">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/Habashi.css">
+    <title>ریاضی سوم دبستان صفحه‌ی 56</title>
+</head>
+
+<body>
+<div class="border_right">
+
+    <img class="class_work-image" src="assets/3rd/images/classwork.png" alt="activity_image">
+    <div class="class_work_text">کار در کلاس</div>
+
+    <div class="page">
+        <span class="padding_left">
+            به کمک شکل در
+            <input type="text" id="q1_input4" value="" class="input_style_circle " disabled>
+             علامت < یا > یا = قرار دهید.
+        </span>
+
+        <div class="bar-row-container">
+
+            <!--      column one      -->
+            <div class="column-container">
+
+                <!--    row one        -->
+                <div class="container-box bar-row-container">
+                    <div class="frac">
+                        <span>2</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">5</span>
+                    </div>
+                    <input type="text" id="1_input" value="" maxlength="1" class="input_style_circle "
+                           onchange="check_value(0,'1_input')">
+                    <div class="frac">
+                        <span>1</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">2</span>
+                    </div>
+                </div>
+
+                <!--    row two        -->
+                <div class="container-box bar-row-container">
+                    <div class="frac">
+                        <span>2</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">6</span>
+                    </div>
+                    <input type="text" id="2_input" value="" maxlength="1" class="input_style_circle "
+                           onchange="check_value(1,'2_input')">
+                    <div class="frac">
+                        <span>1</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">3</span>
+                    </div>
+                </div>
+
+                <!--     row three        -->
+                <div class="container-box bar-row-container">
+                    <div class="frac">
+                        <span>2</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">6</span>
+                    </div>
+                    <input type="text" id="3_input" value="" maxlength="1" class="input_style_circle "
+                           onchange="check_value(2,'3_input')">
+                    <div class="frac">
+                        <span>3</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">4</span>
+                    </div>
+                </div>
+
+                <!--     row four        -->
+                <div class="container-box bar-row-container">
+                    <div class="frac">
+                        <span>1</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">3</span>
+                    </div>
+                    <input type="text" id="4_input" value="" maxlength="1" class="input_style_circle "
+                           onchange="check_value(2,'4_input')">
+                    <div class="frac">
+                        <span>2</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--      column two      -->
+            <div class="column-container">
+
+                <!--    row one        -->
+                <div class="container-box bar-row-container">
+                    <div class="frac padding_left">
+                        <span>1</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">2</span>
+                    </div>
+                    <div><img class="container-bar" src="assets/3rd/images/Habashi/half.PNG" alt="container_image">
+                    </div>
+                </div>
+
+                <!--    row two        -->
+                <div class="container-box bar-row-container">
+                    <div class="frac padding_left">
+                        <span>1</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">2</span>
+                    </div>
+                    <img class="container-bar" src="assets/3rd/images/Habashi/oneTthird.png" alt="container_image">
+                </div>
+
+                <!--     row three        -->
+                <div class="container-box bar-row-container">
+                    <div class="frac padding_left">
+                        <span>2</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">5</span>
+                    </div>
+                    <img class="container-bar" src="assets/3rd/images/Habashi/twoFifth.png" alt="container_image">
+                </div>
+
+                <!--     row four        -->
+                <div class="container-box bar-row-container">
+                    <div class="frac padding_left">
+                        <span>3</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">4</span>
+                    </div>
+                    <img class="container-bar" src="assets/3rd/images/Habashi/threeForth.png" alt="container_image">
+                </div>
+
+                <!--     row five        -->
+                <div class="container-box bar-row-container">
+                    <div class="frac padding_left">
+                        <span>2</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">6</span>
+                    </div>
+                    <img class="container-bar" src="assets/3rd/images/Habashi/twoSixth.PNG" alt="container_image">
+                </div>
+            </div>
+        </div>
+        <div>
+            <img class="container-image-snake padding_left" src="assets/3rd/images/Habashi/snake.png"
+                 alt="container_image">
+        </div>
+
+
+        <div id="box">
+            <h3 class="header-title">انجام بده</h3>
+            <span class="padding_left"> در همه ساعت‌ها عقربه‌ی بزرگ به اندازه ۱۵ دقیقه حرکت کرده‌است.<br></span>
+            <span class="padding_left">اگر عقربه بزرگُ، ۱۵ دقیقه حرکت کند، همیشه یک نوع زاویه درست می‌شود؟ چه نوع زاویه‌ای؟</span>
+            <div class="image-row-container">
+                <img class="img_width15" src="assets/3rd/images/Habashi/clock3.PNG">
+                <img class="img_width10 rotate_270" src="assets/3rd/images/Habashi/clock1.PNG">
+                <img class="img_width10 rotate_150" src="assets/3rd/images/Habashi/clock1.PNG">
+                <img class="img_width10 rotate_90" src="assets/3rd/images/Habashi/clock1.PNG">
+            </div>
+        </div>
+    </div>
+
+    <span class="number_of_page">
+            56
+        </span>
+
+
+    <div class="page-no-input">
+        <div id="next_btn">
+            <a href="book_3_55.html">
+                <img src="assets/3rd/images/left-arrow.png" alt="last_page" style="width: 3vw">
+            </a>
+        </div>
+        <div>
+            <input class="page-number-input " value="56" type="number" name="page_number" id="page_switcher"
+                   style="width: 5vw">
+        </div>
+        <div id="pre_btn">
+            <a href="book_3_57.html">
+                <img src="assets/3rd/images/right-arrow.png" alt="next_page" style="width: 3vw">
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="assets/3rd/js/Habashi.js"></script>
+
+</body>
+
+
+</html>

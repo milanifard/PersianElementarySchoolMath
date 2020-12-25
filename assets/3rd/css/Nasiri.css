@@ -1,16 +1,53 @@
 :root{
-
+    --dark-pink:rgb(247,155,134);
     --light-pink:rgb(252,210,192);
+    --lighter-pink:rgb(252,230,211);
     --pink:rgb(253,199,171);
-    --blue:rgb(92,182,206)
+    --blue:rgb(92,182,206);
+    --light-blue:rgb(198,234,251);
+    --lime:rgb(231,241,205);
 }
+
+@font-face{
+    font-family: 'Zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Koodak';
+    src: url("../../fonts/KoodakBold.ttf");
+}
+*{
+    font-family: 'Zar';
+}
+
+/* all pages background*/
+input {
+    font-family: 'Koodak';
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 p,
 h5,
 span {
     font-family: 'zar';
+    font-size: 1.5vw;
+}
+h6{
+    font-size: 2.4vw;
 }
 h5{
-    font-size: 1.5vw;
+    font-size: 2.7vw;
 }
 p.question {
     font-size: 1.5vw;
@@ -38,11 +75,12 @@ span.question {
     justify-content: flex-end;
 }
 
+
 .flex_between {
     justify-content: space-between;
 }
 .flex_center{
-    align-content: center;
+    align-items: center;
 }
 .flex_center_self{
     align-self: center;
@@ -50,6 +88,10 @@ span.question {
 .flex_close{
     justify-content: space-around;
 }
+.flex_rev_row{
+    flex-flow: row-reverse;
+}
+
 .main_title {
     background-color: var(--pink);
     width: 30vw;
@@ -104,16 +146,33 @@ span.question {
     border-radius: 1vw;
     position: relative;
     background-color: white;
-    z-index: 5;
 }
-.content {
+.main_right {
+    margin-left: -6vw;
+    margin-right: 7vw;
+    border-right: 0.8vw double var(--pink);
+    border-top: 0.7vw double var(--pink);
+    border-bottom: 0.7vw double var(--pink);
+    border-radius: 1vw;
+    position: relative;
+    background-color: white;
+}
+.content_left {
     margin-top: 7vw;
     margin-right: 17vw;
+    width: 70%;
+}
+.content_right {
+    position: relative;
+    right: 5vw;
+    margin-top: 7vw;
+    margin-left: 15vw;
     width: 70%;
 }
 p.question {
     font-size: 1.5vw;
     text-align: right;
+    direction: rtl;
 }
 .question_container{
     margin-left: -4vw;
@@ -127,11 +186,21 @@ span.question {
     position: relative;
     width: 5vw;
     height: 2vh;
+    font-size: 3vw;
 }
 .image_container{
     width: 12vw;
     height: 10vw;
 }
+.page_img_container{
+    width: 3vw;
+}
+.page_div{
+    position: relative;
+    right: -27vw;
+    top: 4.5vw;
+}
+
 div>img{
     width: 10vw;
     height: 10vw;
@@ -171,7 +240,7 @@ span>img{
     background: var(--pink);
     color: black;
     border-radius: 2px;
-    padding: 0.6vw 1vw;
+    padding: 0.3vw 1vw;
 }
 
 .btn--primary:hover {
@@ -188,71 +257,75 @@ span>img{
 }
 .answer_field {
     width: 2.5vw;
+    height: 1vw;
     background: #fff;
     color: #424242;
-    font-size: 0.8vw;
+    font-size: 1.8vw;
     border: 0;
     outline: 0;
     padding: 1vw 1.5vw;
 }
 .radio_btn{
     width: 1.5vw;
+    font-size: 1vw;
 }
 
 
-/* page number box */
+/* pagination*/
 
 .pagination-container {
     direction: rtl;
-    font-size: 24px;
+    /* font-size: 24px; */
     justify-content: center;
     text-align: center;
     display: flex;
     align-items: center;
     overflow: visible;
-    height: 3em;
+    height: 5vw;
     /* to adjust page changer position , adjust position of this element */
+    position: relative;
+    top: 6vw;
+
 }
 
 .page-number {
     /* substitute your color */
-    z-index: 20;
-    background-color: var(--middle-green);
-    border-radius: 2em;
-    width: 5.8em;
+    background-color:var(--pink);
+    border-radius: 2vw;
+    width: 10vw;
     color: white;
-    border: 0.35em double white;
-    /* font-family: Koodak; */
-    padding: 0 1.1em;
+    border: 0.6vw double white;
+    /* Koodak font should be imported*/
+    font-family: 'Koodak';
+    padding: 0 1.1vw;
     position: relative;
     display: flex;
     box-sizing: border-box;
+
 }
 
 .page-number input {
     /* substitute your color */
-    background-color: var(--dark-green);
+    background-color: var(--pink);
     border: none;
     width: 100%;
     text-align: center;
-    font-size: 2vw;
+    font-size: 2.35vw;
     color: white;
 }
 
 .page-number-button {
-    width: 3em;
+    width: 5vw;
     display: flex;
-    color: white;
+    color: black;
     justify-content: center;
 }
 
-.page-number-button>a {
-    color: white;
-    font-size: 2.5em;
+.page-number-button > a {
+    color: black;
+    font-size: 4.5vw;
     display: flex;
 }
-
-
 
 .normal_shadow {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -267,5 +340,164 @@ span>img{
 }
 
 .green_shadow {
-    box-shadow: 0 6px 10px 0 rgba(205, 220, 57, 0.8);
+    box-shadow: 0 3px 10px 0 rgba(57, 220, 57, 0.8);
+}
+.yellow_shadow_radio {
+
+    box-shadow: 0 6px 10px 0 rgba(255, 235, 59, 0.9);
+}
+
+.red_shadow_radio {
+    box-shadow: 0 6px 10px 0 rgba(244, 67, 54, 0.9);
+}
+
+.green_shadow_radio {
+    box-shadow: 0 3px 10px 0 rgba(57, 220, 57, 0.9);
+}
+
+
+
+.bottom_box {
+    width: 100%;
+    border-radius: 30px;
+    border: 3px solid var(--pink);
+    background-color: var(--lighter-pink);
+    padding-right: 4vw;
+    position: relative;
+    right: 2vw;
+}
+.blue_box {
+    width: 100%;
+    border-radius: 30px;
+    border: 3px solid var(--light-blue);
+    background-color: var(--light-blue);
+    padding-right: 4vw;
+    position: relative;
+    right: 2vw;
+}
+.lime_box {
+    width: 100%;
+    border-radius: 30px;
+    border: 3px solid var(--lime);
+    background-color: var(--lime);
+    padding-right: 4vw;
+    position: relative;
+    right: 2vw;
+}
+.bottom_box1 {
+    width: 70vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+.title_box {
+    background-color: var(--dark-pink);
+    width: 9vw;
+    height: 3.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1vw;
+    border-radius: 10px;
+    font-size: 2vw;
+    color: white;
+    position: relative;
+    right: -3vw;
+    order: 3;
+}
+.page_three_q{
+    position: relative;
+    right: -10vw;
+}
+.left_side_btn{
+    margin-right: 3vw;
+}
+.background-style-right{
+    width: 110vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, var(--pink), var(--pink) 1vw, var(--light-pink) 0vw, var(--light-pink) 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+    left: -10vw;
+}
+.background-style-left{
+    width: 110vw;
+    height: 54.3vw;
+    background-image: repeating-linear-gradient(0deg, var(--pink), var(--pink) 1vw, var(--light-pink) 0vw, var(--light-pink) 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+    right: -10vw;
+}
+.questions-number {
+    color: var(--dark-pink);
+}
+.show_btn {
+    background-color: lightblue;
+    position: relative;
+    width: 18vw;
+    height: 3vw;
+    border-color: #104ed3;
+}
+.hide_btn {
+    background-color: lightblue;
+    position: relative;
+    width: 18vw;
+    height: 3vw;
+    border-color: #104ed3;
+}
+.hint_text {
+    font-family: BNazanin,'BNazanin', 'zar';
+    font-size: 1.8vw;
+    direction: rtl;
+
+    /* white-space: pre-wrap; */
+}
+.hint {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1vw dotted black; /* If you want dots under the hoverable text */
+}
+#box_img{
+    position: relative;
+    width: 20vw;
+    height: 15vw;
+    left: 10vw;
+}
+#frog_img{
+    position: relative;
+    width: 15vw;
+    height: 15vw;
+    margin-left: -10vw;
+    margin-right: 3vw;
+}
+#clock_img{
+    position: relative;
+    width: 12vw;
+    height: 15vw;
+    margin-right: 6vw;
+    left: -18vw;
+}
+
+#tri_img{
+    position: relative;
+    margin-right: 6vw;
+    left: -18vw;
+    top: -2vw;
+}
+#tile_img{
+    width: 3.4vw;
+    height: 1.7vw;
+}
+
+#check_img{
+    width: 30vw;
+    height: 20vw;
+}
+#page3_q1{
+    margin-right: 2vw;
 }

@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="./assets/3rd/css/parsasal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/3rd/sass/parsasal/tangram_styles.css">
-    <script src="assets/3rd/js/jquery.min.js"></script>
-    <script src="assets/3rd/js/parsasal/jquery-ui.min.js"></script>
-    <script src="assets/3rd/js/parsasal/tangram_script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
-        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
-        crossorigin="anonymous"></script>
-    <script src="assets/3rd/js/parsasal/parsasal.js"></script>
+    <script src="./assets/3rd/js/jquery.min.js"></script>
+    <script src="./assets/3rd/js/parsasal/jquery-ui.min.js"></script>
+    <script src="./assets/3rd/js/parsasal/tangram_script.js"></script>
+    <script src="./assets/3rd/js/parsasal/jquery.ui.touch-punch.min.js" integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+    crossorigin="anonymous"></script>
+    <script src="./assets/3rd/js/parsasal/parsasal.js"></script>
     <link rel="icon" href="./assets/3rd/images/favicon.png">
     <meta name="author" content="Parsa Salehipour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,8 +23,9 @@
     <div class="container-full">
         
         <nav id="main-header">
-            <a type="submit" class="next-page btn btn-default">صفحه بعدی</a>
             <a type="submit" class="prev-page btn btn-default">صفحه قبلی</a>
+            <a type="submit" class="next-page btn btn-default">صفحه بعدی</a>
+            
         </nav>
         <div id="page-body">
 
@@ -37,7 +37,6 @@
 
                     </div>
 
-                    <button type="button" class="btn btn-info">بررسی پاسخ</button>
                 </header>
 
                 <div class="masale">
@@ -72,7 +71,7 @@
                                 <p>برای چرخوندن شکل ها می‌تونی کلیک کنی</p>
                             </div>
                         </div>
-                        <script src="./assets/3rd/sass/parsasal/tangram_script.js"></script>
+                        <script src="./assets/3rd/js/parsasal/tangram_script.js"></script>
 
 
                     </div>
@@ -114,7 +113,7 @@
         </div>
         <div class="pagination-container">
             <div class="page-number-button">
-                <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+                <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
             </div>
 
             <div class="page-number">
@@ -122,7 +121,7 @@
             </div>
 
             <div class="page-number-button">
-                <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+                <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
             </div>
 
         </div>
