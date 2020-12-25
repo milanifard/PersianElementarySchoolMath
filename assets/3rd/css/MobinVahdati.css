@@ -381,8 +381,20 @@ hr {
 }
 
 .cross-input {
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #79c2d2;
+    border-radius: 0.6vw 0.6vw 0.3vw 0.3vw;
     width: 100%;
     font-size: 1.8vw;
+    font-family: Koodak;
+}
+
+.field {
+    text-align: center;
+    font-size: 1.8vw;
+    border: 2px solid #79c2d2;
+    border-radius: 1.5vw;
     font-family: Koodak;
 }
 
@@ -424,6 +436,8 @@ hr {
 }
 
 .btn--primary {
+    width: auto;
+    margin: auto;
     background: var(--light-green);
     color: #fff;
     border-radius: 8px;
@@ -438,11 +452,6 @@ hr {
     background: var(--middle-green);
     box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
-
-.btn--inside {
-    margin-left: -3.5vw;
-}
-
 
 #activity_img {
     margin-right: 5vw;
@@ -474,12 +483,17 @@ hr {
 
 .ClassWorkQuestionDiv {
     display: flex;
+    justify-content: center;
+    flex-flow: row;
     direction: ltr;
     margin-left: 2vw;
 }
 
 
 .ClassWorkSegment {
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
     margin-left: 2vw;
     margin-right: 2vw;
     flex-grow: 1;
@@ -541,26 +555,36 @@ hr {
     color: #F69B86;
 }
 
-input{
-    text-align: center;
-    width: 10vw;
-    border: none;
-    font-size: 1.75vw;
-    border-bottom: 2px solid #79c2d2;
-    border-radius: 0.6vw 0.6vw 0.3vw 0.3vw;
-}
-
 .bubble-image{
     width: 4vw;
+}
+
+.arrow {
+    height: 1vw;
+    width: auto;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 #ExerciseQuestion1 {
     margin-top: 10vw;
     margin-right: 12.5vw;
 }
+#PencilSetD {
+    width: 15vw;
+    position: absolute;
+    top: 15vw;
+    left: 3vw;
+}
 #ExerciseQuestion2 {
     margin-top: 5vw;
     margin-right: 12.5vw;
+}
+#PencilSet {
+    width: 10vw;
+    position: absolute;
+    top: 18vw;
+    right: 0;
 }
 #ExerciseQuestion3 {
     margin-top: 8vw;
@@ -569,6 +593,12 @@ input{
 #ExerciseQuestion4 {
     margin-top: 3vw;
     margin-right: 2vw;
+}
+#FunFar {
+    width: 25vw;
+    position: absolute;
+    top: 50vw;
+    left: 3vw;
 }
 #ExerciseQuestion5 {
     margin-top: 12vw;
@@ -583,4 +613,9 @@ input{
     margin-right: 2vw;
     margin-bottom: 14vw;
 }
-
+#FatBoy {
+    width: 10vw;
+    position: absolute;
+    bottom: 0;
+    left: 9vw;
+}
