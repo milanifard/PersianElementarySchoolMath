@@ -193,3 +193,190 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.question-two {
+    direction: rtl;
+    display: flex;
+    width: 90%;
+    font-family: 'koodak','Yekan','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    direction: rtl;
+}
+.tringle-machine-containre {
+    display: flex;
+    position: relative;
+    align-items: center;
+    align-self: center;
+}
+.tringle-machine-containre p{   
+    position: absolute;
+    color: #fb3199;
+    top: 0;
+}
+.tringle-machine-leftText {
+    left: 0;
+}
+.tringle-machine-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tringle-machine-input input{
+    -moz-appearance: textfield;
+    outline: none;
+    border: none;
+    width: 150px;
+    margin-left: 20px;
+    height: 30px;
+    line-height: 50px;
+    font-size: 17px;
+    border-bottom: 2px #fb3199 solid;
+    margin-top: 70px;
+    text-align: center;   
+}
+.tringle-machine-input input:nth-child(2){
+    margin-top: 100px;
+}
+.tringle-machine-input input:nth-child(3){
+    margin-top: 150px;
+}
+.quetion-three {
+    margin-top: 80px;
+    direction: rtl;
+    display: flex;
+    width: 80%;
+    font-family: 'koodak','Yekan','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    direction: rtl;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px lightgray solid;
+    position: relative;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+.quetion-three>img {
+    position: absolute;
+    top: -200px;
+    right: -70px;
+}
+.cloud-machine {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 100px;
+    align-self: flex-end;
+}
+.cloud-machine-row {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.cloud-machine-item {
+    display: flex;
+    align-items: center;
+}
+.cloud-machine-item input {
+    -moz-appearance: textfield;
+    outline: none;
+    border: none;
+    width: 150px;
+    margin-left: 20px;
+    height: 30px;
+    line-height: 50px;
+    font-size: 17px;
+    border-bottom: 2px lightblue solid;
+    text-align: center; 
+}
+.section-two-text{
+    align-self: flex-start;
+    margin-right: 20%;
+}
+
+.flesh-container {
+    margin-right: 70px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.flesh-container-col {  
+    display: flex;
+
+}
+.flesh-container-col table, th, td {
+    border: 4px #ff7322 solid;
+    border-collapse: collapse;
+    width: 100px;
+    height: 70px;
+}
+.flesh-container-col table input {
+    -moz-appearance: textfield;
+    outline: none;
+    border: none;
+    width: 98%;
+    margin-left: 20px;
+    height: 100%;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center; 
+}
+.flesh-container-col img{
+    width: auto;
+    height: 170px;
+    margin: 0 10px;
+    margin-top: 30px;
+}
+footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #00b9f2;
+}
+footer div {
+    width: 150px;
+    height:80px;
+    border-radius:30px;
+    color: white;
+    margin-right: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    font-family: 'koodak','Courier New', Courier, monospace;
+    background-color: #e2dcc2;
+}
+.confirm-sec {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.confirm-btn{
+    font-family: 'koodak','Courier New', Courier, monospace;
+    width: 400px;
+    font-size: 30px;
+    cursor: pointer;
+    height: 70px;
+    background-color: rgb(113, 189, 113);
+    border: none;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    transition: 1s;
+}
+.confirm-btn:hover {
+    width: 700px;
+    transition: 1s;
+}
