@@ -288,7 +288,7 @@ input[type="text"]:focus {
   z-index: 1;
 }
 
-.nemoodar1 {
+.pieChart {
   width: 30vw;
   height: 30vw;
   margin-right: 55vw;
@@ -296,13 +296,13 @@ input[type="text"]:focus {
   position: absolute;
 }
 
-.nemoodar2 {
+.columnChart {
   width: 60%;
   height: 30vw;
   min-height: 150px;
 }
 
-.nemoodar3 {
+.pic-columnChart {
   width: 30vw;
   height: 18vw;
   margin-right: 50vw;
@@ -316,7 +316,7 @@ input[type="radio"] {
   position: relative;
 }
 
-input[type="radio"]:nth-child(5n + 4) {
+input[type="radio"]:nth-child(1) {
   margin-right: 0.2vw;
 }
 
@@ -330,7 +330,7 @@ input[type="radio"]:after {
   border: 2px solid white;
 }
 
-input[type="radio"]:nth-child(5n):checked:after {
+input[type="radio"]:nth-child(7):checked:after {
   width: 2.4vw;
   height: 2.4vw;
   background-color: green;
@@ -340,7 +340,7 @@ input[type="radio"]:nth-child(5n):checked:after {
   border: 2px solid white;
 }
 
-input[type="radio"]:nth-child(5n):checked {
+input[type="radio"]:nth-child(7):checked {
   animation-name: correct;
   animation-duration: 0.5s;
 }
@@ -360,12 +360,12 @@ input[type="radio"]:checked:after {
   border: 2px solid white;
 }
 
-.nemoodar4 {
+.chart4 {
   width: 15%;
   margin-left: 7vw;
 }
 
-.miveh {
+.pic-fruit {
   width: 20vw;
   height: 15vw;
   margin-top: 2vw;
@@ -405,4 +405,10 @@ td {
   width: 15vw;
   margin-right: 70vw;
   margin-top: -2vw;
+}
+.lineAnswer {
+  height: 0.2vh;
+  background-color: rgb(190, 226, 235);
+  display: inline-block;
+  position: relative;
 }
