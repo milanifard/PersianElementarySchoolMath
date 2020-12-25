@@ -2,7 +2,7 @@
 
 
     --purple: #b09ac9;
-
+    --white: #FFFFFF;
     --purple-dark:#957dac;
     --purple-light:#a48cb6;
     --purple--box--background:#e9e2ef ;
@@ -244,6 +244,9 @@ body{
 .width50{
     width: 50vw;
 }
+.width40{
+    width: 40vw;
+}
 
 .input_style_line{
     text-align: center;
@@ -464,7 +467,6 @@ body{
     right: 2vw;
     padding-bottom: 5vw;
     padding-top: 2vw ;
-
     font-family: Zar,Faraz;
     font-size: 2vw;
     direction: rtl;
@@ -473,7 +475,20 @@ body{
 #charity_box{
     margin-left: 1vw ;
 }
+#white_box{
+    background-color:var(--white);
+    border: 2px solid var(--purple);
+    border-radius: 3vw;
+    position: absolute;
+    left:2vw;
+    right: 2vw;
+    padding-bottom: 5vw;
+    padding-top: 2vw ;
+    font-family: Zar,Faraz;
+    font-size: 2vw;
+    direction: rtl;
 
+}
 #next_btn{float: left; margin-right: 1.5vw;}
 #pre_btn{float: left; margin-left: 1.5vw;}
 
