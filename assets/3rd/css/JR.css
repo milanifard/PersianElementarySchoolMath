@@ -41,6 +41,7 @@
 }
 
 
+
 .number-config {
     font-family: Zar;
     font-size: 2vw;
@@ -76,6 +77,48 @@
     padding-bottom: 5vw;
 }
 
+.A_1_71_picture {
+    width: 32vw;
+    height: 20vw;
+
+}
+
+.Q1_71_pic{
+    padding-left: 5vw;
+    width: 30vw;
+    height: 6vw;
+
+
+}
+
+#Q3_71_numpos{
+    padding-left: 10vw
+}
+
+#Q5_71_numpos{
+    padding-left: 15vw
+}
+
+#Q1_71_pos{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+#last_p_p71{
+    padding-right: 8vw;
+}
+
+
+.Q2_num_pos{
+
+    padding-right: 20vw;
+}
+
+
+.Q3_num_pos{
+
+}
 
 .Images_justify_spacearound{
     display: flex;
@@ -86,6 +129,12 @@
 .Images_justify_spacebetween{
     display: flex;
     justify-content: space-between;
+
+}
+
+.Images_justify_center{
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -116,11 +165,39 @@
     margin-top: 1vw;
 }
 
+#Activity_1_71{
+    padding-top: 0vw;
+    padding-right: 18vw;
+    margin-top: 1vw;
+    /*style="padding-top: 2vw; padding-right: 4vw; margin-top: 1vw"*/
+}
+
+#Q-7_1 {
+    padding-top: 4vw;
+    padding-right: 6vw;
+    margin-top: 1vw;
+}
+
 #Q_2_70 {
     /*style="padding-top: 28vw; padding-right: 4vw; margin-top: 3vw*/
     padding-top: 28vw;
     padding-right: 4vw;
     margin-top: 3vw;
+}
+
+#Q1_71 {
+
+    padding-top: 5vw;
+    padding-right: 8vw;
+
+}
+
+
+#Q1_71_p2{
+
+    padding-top: 8vw;
+    padding-right: -6vw;
+    padding-left: 0vw;
 }
 
 .homework-image{
@@ -129,6 +206,28 @@
     right: -2.3vw;
     bottom: 7vw;
     z-index: 2;
+}
+
+.class_work-images{
+    width: 13vw;
+    position: absolute;
+    right: -1.5vw;
+    top: 33vw;
+    z-index: 2;
+}
+
+.class_work_text{
+    background-color: var(--pink_level2);
+    border-radius: 1.5vw;
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.25vw;
+    color: white;
+    padding: 0 2vw 0 1vw;
+    position: absolute;
+    right: 7vw;
+    top: 34vw;
+    z-index: 1;
 }
 
 .homework-text{
@@ -145,15 +244,7 @@
     z-index: 1;
 }
 
-#home_work-p71{
-    width: 13vw;
-    position: absolute;
-    right: -2.3vw;
-    top: 7vw;
-    z-index: 2;
 
-
-}
 
 
 
