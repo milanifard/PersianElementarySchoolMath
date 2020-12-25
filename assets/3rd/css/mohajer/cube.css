@@ -1,9 +1,3 @@
-#wrapD3Cube {
-    width: 250px;
-    height: 213px;
-    margin: 20px auto;
-    background-color: #EEE;
-}
 .mydiv {
   position: absolute;
   z-index: 9;
@@ -11,9 +5,9 @@
 }
 
 .D3Cube {
-    width: 112px;
-    height: 112px;
-    top: 50px;
+    width: 7.48vw;
+    height: 7.48vw;
+    top: 3.34vw;
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -32,45 +26,45 @@
     position: absolute;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    width: 112px;
-    height: 112px;
+    width: 7.48vw;
+    height: 7.48vw;
     float: left;
     overflow: hidden;
     opacity: 0.85;
 }
 .side1 {
-    transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
-    -moz-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
-    -webkit-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(3.74vw);
+    -moz-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(3.74vw);
+    -webkit-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(3.74vw);
     background-color: #FFF;
 }
 .side2 {
-    transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
-    -moz-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
-    -webkit-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(3.74vw);
+    -moz-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(3.74vw);
+    -webkit-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(3.74vw);
     background-color: #ffaf1c;
 }
 .side3 {
-    transform: translateX(0px) translateY(0px) translateZ(56px);
-    -moz-transform: translateX(0px) translateY(0px) translateZ(56px);
-    -webkit-transform: translateX(0px) translateY(0px) translateZ(56px);
+    transform: translateX(0px) translateY(0px) translateZ(3.74vw);
+    -moz-transform: translateX(0px) translateY(0px) translateZ(3.74vw);
+    -webkit-transform: translateX(0px) translateY(0px) translateZ(3.74vw);
     background-color: #58d568;
 }
 .side4 {
-    transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
-    -moz-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
-    -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(3.74vw);
+    -moz-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(3.74vw);
+    -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(3.74vw);
     background-color: #ed3030;
 }
 .side5 {
-    transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
-    -moz-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
-    -webkit-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
+    transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(3.74vw);
+    -moz-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(3.74vw);
+    -webkit-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(3.74vw);
     background-color: #1c5ffe;
 }
 .side6 {
-    transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
-    -moz-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
-    -webkit-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(3.74vw);
+    -moz-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(3.74vw);
+    -webkit-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(3.74vw);
     background-color: #f2f215;
 }
