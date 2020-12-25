@@ -40,6 +40,17 @@
 
 }
 
+
+.number-config {
+    font-family: Zar;
+    font-size: 2vw;
+    white-space: pre-wrap;
+}
+
+#home_work_info_p70{
+    padding-right: 4vw;
+}
+
 .Images_Q2_p70_p1{
 
     width: 9vw;
@@ -86,7 +97,7 @@
 
 .Images_justify_right{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 
 }
 
@@ -229,15 +240,25 @@ p1{
     border-color: #d07fa5;
 }
 .the-pencile{
-    width: 15vw;
-    height: 20vw;
+    width: 10vw;
+    height: 15vw;
+    /*
     position: absolute;
     margin-left: 2vw;
+
+     */
     /* position: absolute;
      right: 40.3vw;
      top: 10vw;
      z-index: 2;*/
 }
+
+.Q1_picture {
+    width: 40vw;
+    height: 20vw;
+    padding-right: 20vw;
+}
+
 .my-Medad-Image{
     width: 40vw;
     height: 20vw;
