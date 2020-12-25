@@ -82,6 +82,13 @@ html, body {
     justify-content: center;
     position: relative;
 }
+.header2 {
+    width: 100%;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
 .header-box {
     /* margin-top: 130px; */
     font-family: 'koodak','Yekan','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -120,17 +127,69 @@ html, body {
     justify-content: flex-end;
     align-items: flex-end;
 }
+.headr-line2 {
+    position: relative;
+    margin-top: 150px;
+    width: 90%;
+    height: 150px;
+    border: 5px solid lightgray;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 30px 0 0 0 ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
 .headr-line-img {
     width: 13vw;
     transform: translateY(52%);
     margin-right: 10px;  
 }
+.headr-line-img2 {
+    position: absolute;
+    right: 100px;
+    width: 13vw;
+    justify-self: flex-start;
+    transform: translateY(52%);
+    margin-right: 10px; 
+}
+.question-one-answer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 80%;
+}
+.question-one-answer input {
+    -moz-appearance: textfield;
+    outline: none;
+    border: none;
+    width: 400px;
+    margin-left: 20px;
+    height: 30px;
+    line-height: 50px;
+    font-size: 17px;
+    border-bottom: 2px #fb3199 solid;
+    text-align: center; 
+}
+.question-two-answer {
+    display: flex;
+    width: 85%;
+    flex-direction: row-reverse;
+}
+
 .headr-line-dot {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background-color: lightgray;
     margin-right: -15px;
+}
+.headr-line-dot2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin-left: -15px;
 }
 .question-one {
     direction: rtl;
@@ -185,9 +244,6 @@ html, body {
     outline: none;
     text-align: center;
 }
-/* .each-tringle svg {
-    align-self: flex;
-} */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -318,6 +374,59 @@ input::-webkit-inner-spin-button {
     border-collapse: collapse;
     width: 100px;
     height: 70px;
+}
+.question-two-answer table,tr,td {
+    border:4px black solid;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+}
+.question-two-sec-two {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.question-two-sec-two-left {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.question-two-sec-two-left table,tr,td {
+    border:4px #ff7322 solid;
+    border-collapse: collapse;
+ }
+.question-two-sec-two-left input {
+    -moz-appearance: textfield;
+    outline: none;
+    border: none;
+    width: 150px;
+    margin-left: 20px;
+    height: 30px;
+    line-height: 50px;
+    font-size: 17px;
+    border-bottom: 2px lightblue solid;
+    text-align: center; 
+}
+.question-two-sec-two-left img {
+    width: auto;
+    height: 150px;
+    margin-top: 70px;
+}
+.question-two-answer table td{
+    width: 100px;
+    height: 50px;
+}
+.question-two-answer table td:last-child{
+    background-color: #bad967;
+}
+.question-two-answer table td input {
+    -moz-appearance: textfield;
+    outline: none;
+    border: none;
+    width: 98%;
+    margin-left: 20px;
+    height: 100%;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center; 
 }
 .flesh-container-col table input {
     -moz-appearance: textfield;
