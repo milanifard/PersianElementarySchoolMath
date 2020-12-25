@@ -412,13 +412,14 @@ body{
 
     background-color: var(--yellow_level4_guessbox);
     border-radius: 2.5vw;
-    border: 0.9vw double white;
+    border: 0.9vw double black;
 
     text-align: center;
     font-size: 2vw;
-    color: white;
+    color: black;
 
     padding: 0.1vw 0.5vw;
+    margin-bottom: 0.2vw;
     float: left;
 }
 .image-row-container {
