@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="author" content="Reza Mohajer">
   <title>page 131</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,14 +41,24 @@
         </span>
       </p>
 
-      <img src="assets/3rd/images/mohajer/nemoodar.png" class="nemoodar">
+      <img src="assets/3rd/images/mohajer/chart1-page130.png" class="chart1-page130">
       <p>
         <span style="color: rgb(252,189,129);">3- </span>نمودار دایره‌ای روبه‌رو نشان می‌دهد که مریم یک شبانه‌روز خود را
         چگونه گذرانده است.
       </p>
       <p> یک نمودار ستونی رسم کنید و این اطّلاعات را در آن قرار دهید .</p>
-      <p> چگونه اطّلاعات نمودار را به عدد تبدیل می‌کنید؟ توضیح دهید.</p><br>
-
+      <p> چگونه اطّلاعات نمودار را به عدد تبدیل می‌کنید؟ توضیح دهید.
+        <span>
+          <input type="text" style="width: 40vw;">
+          <span style="width:40vw;" class="lineAnswer"></span>
+        </span>
+      </p>
+      <p>
+        <span>
+          <input type="text" style="width: 77vw;">
+          <span style="width:77vw;" class="lineAnswer"></span>
+        </span>
+      </p><br>
       <div id="chart1" class="pieChart"></div>
 
       <div id="chartdiv" class="columnChart"></div>
@@ -89,27 +100,16 @@
       <br>
     </div>
     <div class="pageNumber-container" style="margin-right: 78vw;">
-      <a class='fas fa-angle-double-right	' title="پایان" href="book_3_147.html"></a>
-      <a class='fas fa-angle-right' title="بعدی" href="book_3_132.html"></a>
+      <a class='fas fa-angle-double-right	'  title="شروع" href="book_3_10.html"></a>
+      <a class='fas fa-angle-right'title="قبلی" href="book_3_130.html"></a>
       <input type="number" onkeydown="enterPage(this)" class="pageNumber-content" value="131">
-      <a class='fas fa-angle-left' title="قبلی" href="book_3_130.html"></a>
-      <a class='fas fa-angle-double-left' title="شروع" href="book_3_10.html"></a>
+      <a class='fas fa-angle-left'  title="بعدی" href="book_3_132.html"></a>
+      <a class='fas fa-angle-double-left'title="پایان" href="book_3_147.html"></a>
     </div>
   </div>
   <div class="background-style" style="margin-top: -15vw;"></div>
 </body>
 
-
-<script>
-
-  function checkInput(element, correct) {
-    var value = element.value;
-    if (value == correct)
-      element.style.color = 'green'
-    else element.style.color = 'red';
-  }
-  alert(document.querySelector('input[name="gender"]:checked').value);
-</script>
 <script>
   data = [
     {
@@ -133,6 +133,5 @@
 </script>
 <script src="assets/3rd/js/mohajer/pieChart-page131.js"></script>
 <script src="assets/3rd/js/mohajer/script.js"></script>
-
 
 </html>

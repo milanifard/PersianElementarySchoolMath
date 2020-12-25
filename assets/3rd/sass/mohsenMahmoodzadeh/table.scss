@@ -1,204 +1,205 @@
 .tableContainer {
-    background-color: white;
-    .table {
-        // width: 80%;
-        // height: 80%;
-        // margin: 0 3vw 0 3vw;
-        // margin: 10px 50px;
-        border-collapse: collapse;
-        // font-size: 1.5vw;
-        font-family: Koodak;
-      tr {
-          .td {
-            border: solid 2px $table_border_color;
-            font-family: Zar;
-            
-            margin: 0;
-            text-align: center;
-            // padding: 0.7vw;
-            // border: 0.3vw solid #f89f6d;
-            
-            // font-family: Koodak;
-            
+  background-color: white;
+  .table {
+      // width: 80%;
+      // height: 80%;
+      // margin: 0 3vw 0 3vw;
+      // margin: 10px 50px;
+      border-collapse: collapse;
+      // font-size: 1.5vw;
+      font-family: Koodak;
+    tr {
+        .td {
+          border: solid 2px $table_border_color;
+          font-family: Zar;
+          
+          margin: 0;
+          text-align: center;
+          // padding: 0.7vw;
+          // border: 0.3vw solid #f89f6d;
+          
+          // font-family: Koodak;
+          
 
-            div {
-                .color-picker {
-                    width: 1.5vw;
-                    height: 1.5vw;
-                    border: 0.2vw solid #b09ac9;
-                    border-radius: 2vw;
-                    position: relative;
-                    margin-top: 0.5vw;
-                }
-            }
+          div {
+              .color-picker {
+                  width: 1.5vw;
+                  height: 1.5vw;
+                  border: 0.2vw solid #b09ac9;
+                  border-radius: 2vw;
+                  position: relative;
+                  margin-top: 0.5vw;
+              }
           }
-          .td-row-name {
-              background-color: white;
-          }
+        }
+        .td-row-name {
+            background-color: white;
+        }
 
-      }  
-    }
+    }  
+  }
 }
 
 #Table1-container {
-    @extend .tableContainer;
-    background-color: $table1_background_color;
-    border-radius: 8px;
-    width: 50vw;
-    // height: 7vw;
-    max-width: 100%;
-    margin: auto auto;
-    padding-top: 3px; 
-    padding-bottom: 3px;
-    float: right;
-    .table {
-      width: 90%;
-      margin: 10px 20px;
+  @extend .tableContainer;
+  background-color: $table1_background_color;
+  border-radius: 15px;
+  width: 50vw;
+  // height: 7vw;
+  max-width: 100%;
+  margin: 0 auto;
+  // padding-top: 3px; 
+  // padding-bottom: 3px;
+  float: right;
+  .table {
+    width: 90%;
+    margin: 10px 20px;
 
-      background-color: $white;
-      border: solid 2px $table_border_color;
-      
-      tr {
-          .td {
-            font-family: Koodak;
-            text-align: center;
-            background-color: $white;  
-            border-color: $table1_border_color;
-            div {
-                .color-picker {
-                    width: 1vw;
-                    height: 1vw;
-                    border: 0.2vw solid #b09ac9;
-                    border-radius: 2vw;
-                    position: relative;
-                    margin-top: 0.5vw;
-                }
-                .red-color-td {
-                  background-color: $table1_colorPicker_red; 
-                  // float: left;
-                  margin: 2px auto;
-                }
+    background-color: $white;
+    border: solid 2px $table_border_color;
+    
+    tr {
+        .td {
+          font-family: Zar;
+          font-weight: bold;
+          text-align: center;
+          background-color: $white;  
+          border-color: $table1_border_color;
+          div {
+              .color-picker {
+                  width: 1vw;
+                  height: 1vw;
+                  border: 0.2vw solid #b09ac9;
+                  border-radius: 2vw;
+                  position: relative;
+                  margin-top: 0.5vw;
+              }
+              .red-color-td {
+                background-color: $table1_colorPicker_red; 
+                // float: left;
+                margin: 2px auto;
+              }
 
-                .green-color-td {
-                  background-color: $table1_colorPicker_green;
-                  // float: left;
-                  // margin-left: 0.5vw; 
-                  // margin-right: -2vw;
-                  margin: 2px auto;
-                }
+              .green-color-td {
+                background-color: $table1_colorPicker_green;
+                // float: left;
+                // margin-left: 0.5vw; 
+                // margin-right: -2vw;
+                margin: 2px auto;
+              }
 
-                .blue-color-td {
-                  background-color: $table1_colorPicker_blue;
-                  // float: left;
-                  // margin-left: 0.5vw; 
-                  // margin-right: -2vw;
-                  margin: 2px auto;
-                }
-            }
+              .blue-color-td {
+                background-color: $table1_colorPicker_blue;
+                // float: left;
+                // margin-left: 0.5vw; 
+                // margin-right: -2vw;
+                margin: 2px auto;
+              }
           }
-          .td-title-name {
-              background-color: white;
-          }
+        }
+        .td-title-name {
+            background-color: white;
+        }
 
-      }  
-      }
+    }  
+    }
 }
 
 #Table2-container {
-    @extend .tableContainer;
-    background-color: $table2_background_color;
-    // border-color: $table2_border_color;
-    
+  @extend .tableContainer;
+  background-color: $table2_background_color;
+  // border-color: $table2_border_color;
+  
 }
 
 #Table3-container {
-    @extend .tableContainer;
-    background-color: $table3_background_color;
+  @extend .tableContainer;
+  background-color: $table3_background_color;
 
-    .table {
-      tr {
-          .td {
-            font-family: Koodak;
-            text-align: center;
-            background-color: $table3_background_title_td_color;  
-            border-color: $table3_border_color;
-            div {
-                .color-picker {
-                    width: 1.5vw;
-                    height: 1.5vw;
-                    border: 0.2vw solid #b09ac9;
-                    border-radius: 2vw;
-                    position: relative;
-                    margin-top: 0.5vw;
-                }
-                .red-color-td {
-                  background-color: $table3_colorPicker_red; 
-                  float: left;
-                }
+  .table {
+    tr {
+        .td {
+          font-family: Koodak;
+          text-align: center;
+          background-color: $table3_background_title_td_color;  
+          border-color: $table3_border_color;
+          div {
+              .color-picker {
+                  width: 1.5vw;
+                  height: 1.5vw;
+                  border: 0.2vw solid #b09ac9;
+                  border-radius: 2vw;
+                  position: relative;
+                  margin-top: 0.5vw;
+              }
+              .red-color-td {
+                background-color: $table3_colorPicker_red; 
+                float: left;
+              }
 
-                .blue-color-td {
-                  background-color: $table3_colorPicker_blue;
-                  float: left;
-                  margin-left: 0.5vw; 
-                  margin-right: -2vw;
-                }
-            }
+              .blue-color-td {
+                background-color: $table3_colorPicker_blue;
+                float: left;
+                margin-left: 0.5vw; 
+                margin-right: -2vw;
+              }
           }
-          .td-title-name {
-              background-color: white;
-          }
+        }
+        .td-title-name {
+            background-color: white;
+        }
 
-      }  
-    }
+    }  
+  }
 }
 
 #Table4-container {
-    @extend .tableContainer;
-    background-color: $table4_background_color;
+  @extend .tableContainer;
+  background-color: $table4_background_color;
 
-    .table {
-      tr {
-        .td-title-name {
-          background-color: $table4_background_title_td_color;
+  .table {
+    tr {
+      .td-title-name {
+        background-color: $table4_background_title_td_color;
+      }
+        .td {
+          border-color: $table4_border_color;
+          font-family: Koodak;
+          text-align: center;
+          background-color: white;  
+          div {
+              .color-picker {
+                  width: 1.5vw;
+                  height: 1.5vw;
+                  border: 0.2vw solid #b09ac9;
+                  border-radius: 2vw;
+                  position: relative;
+                  margin-top: 0.5vw;
+              }
+              .red-color-td {
+                background-color: $table4_colorPicker_red; 
+                float: left;
+              }
+
+              .green-color-td {
+                background-color: $table4_colorPicker_green;
+                float: left;
+                margin-left: 0.5vw; 
+                margin-right: -2vw;
+              }
+
+              .blue-color-td {
+                background-color: $table4_colorPicker_blue;
+                float: left;
+                margin-left: 0.5vw; 
+                margin-right: -2vw;
+              }
+          }
         }
-          .td {
-            border-color: $table4_border_color;
-            font-family: Koodak;
-            text-align: center;
-            background-color: white;  
-            div {
-                .color-picker {
-                    width: 1.5vw;
-                    height: 1.5vw;
-                    border: 0.2vw solid #b09ac9;
-                    border-radius: 2vw;
-                    position: relative;
-                    margin-top: 0.5vw;
-                }
-                .red-color-td {
-                  background-color: $table4_colorPicker_red; 
-                  float: left;
-                }
+        .td-title-name {
+            background-color: white;
+        }
 
-                .green-color-td {
-                  background-color: $table4_colorPicker_green;
-                  float: left;
-                  margin-left: 0.5vw; 
-                  margin-right: -2vw;
-                }
-
-                .blue-color-td {
-                  background-color: $table4_colorPicker_blue;
-                  float: left;
-                  margin-left: 0.5vw; 
-                  margin-right: -2vw;
-                }
-            }
-          }
-          .td-title-name {
-              background-color: white;
-          }
-
-      }  
-    }
+    }  
+  }
 }
