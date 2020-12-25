@@ -480,6 +480,7 @@ body{
     margin-left: 1vw ;
 }
 #white_box{
+    width: 35vw;
     background-color:var(--white);
     border: 2px solid var(--purple);
     border-radius: 3vw;
