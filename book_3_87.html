@@ -1,44 +1,148 @@
-<!--reza barzgar-->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/3rd/css/page_border.css">
-    <title>ریاضی سوم دبستان</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/3rd/css/Sangin.css">
+    <script src="assets/3rd/js/Sangin.js"></script>
+    <title>87</title>
 </head>
-<body class="page-bg">
-<div class="page-border">
-    <div class="outer-number">
-        <div class="page-number">
-            فعالیت
+<body>
+<!--kind activity-->
+<div class="activity">
+    <div class="activity_text flex_row">
+        <div class="activity_title">
+            <p>تمرین</p>
         </div>
-    </div>
-
-    <div class="inner-div">
-
-        1-	نام هر شکل را بنویسیدو محیط آنرا به کمک ضرب پیدا کنید.
-        a.	شکل سمت چپ چند قطر دارد؟
-        <br>
-        2-	طول خط های شکسته را پیدا کنید.
-        a.	در کدام شکل محیط را بدست آورده اید. چرا؟
-        <br>
-        3-	یک مزرعه مستطیل شکل 24 متر طول(درازا) و 10 متر عرض(پهنا) دارد. اگر بخواهیم دور این مزرعه را نرده بکشیم، یه چند متر نرده نیاز داریم؟
-
-    </div>
-    <div class="inner-div" >
-        تقریب بزن:
-        میخواهیم طول یک خط خمیده را پیدا کنیم. برای این کار اپتدا چند نقطه را روی این خط انتخاب می‌کنیم.سپس آن‌ها را به هم وصل میکنیم. بعد هم طول پاره‌خط ها را اندازه می‌گیریم و با هم جمع می‌کنیم.
-        آیا مجموع طول این پاره‌خط ها به طور تقریبی با طول خمیده آن برابر است؟
-        چگونه میتوانیم دقت این اندازه‌گیری را بالا ببریم.
-
-    </div>
-    <div class="outer-number-left" style="border-color: #ed474d" >
-        <div class="page-number" style="background-color: #ed474d">
-            87
+        <div>
+            <img src="assets/3rd/images/girl_and_teacher_activity.png">
         </div>
     </div>
 </div>
 
+<!--question-->
+
+<div class="main-left flex_row flex_end" >
+    <div class="content">
+        <div class="question_part q1">
+            <div class="question_content">
+                <div class="content_text float70" dir="rtl">
+                    <p>
+                        <span class="red">1_</span> نام هر شکل را بنویسید و محیط آن را به کمک ضرب پیدا کنید
+                    </p>
+                    <p>شکل سمت چپ چند قطر دارد؟</p>
+                </div>
+            </div>
+            <div class="answer_to_question">
+                <div class="float33 flex-center-column" >
+                    <img src="assets/3rd/images/Sangin/p_87_1.png" class="img_question">
+                    <span>نام شکل: <input type="text" dir="rtl" placeholder="نام شکل" class="input-style" id="p87_q1_i1_p1" onchange="p87_question1()"></span>
+                    <span>محیط: <input type="number" dir="ltr" placeholder="محیط" class="input-style" id="p87_q1_i1_p2"  pattern="[0_9]" title="فقط عدد وارد کنید" onchange="p87_question1()"></span>
+                    <span>تعداد قطرها: <input type="number" dir="ltr" placeholder="تعداد قطرها" class="input-style" id="p87_q1_i1_p3"  pattern="[0-9]" title="فقط عدد وارد کنید" onchange="p87_question1()"></span>
+                </div>
+                <div class="float33 flex-center-column" >
+                    <img src="assets/3rd/images/Sangin/p_87_2.png" class="img_question">
+                    <span>نام شکل: <input type="text" dir="rtl" placeholder="نام شکل" class="input-style" id="p87_q1_i2_p1" onchange="p87_question1()"></span>
+                    <span>محیط: <input type="number" dir="ltr" placeholder="محیط" class="input-style" id="p87_q1_i2_p2" pattern="[0_9]" title="فقط عدد وارد کنید" onchange="p87_question1()"></span>
+                </div>
+                <div class="float33 flex-center-column" >
+                    <img src="assets/3rd/images/Sangin/p_87_3.png" class="img_question">
+                    <span>نام شکل: <input type="text" dir="rtl" placeholder="نام شکل" class="input-style" id="p87_q1_i3_p1" onchange="p87_question1()"></span>
+                    <span>محیط: <input type="number" dir="ltr" placeholder="محیط" class="input-style" id="p87_q1_i3_p2" pattern="[0_9]" title="فقط عدد وارد کنید" onchange="p87_question1()"></span>
+                </div>
+                <div class="float100 ">
+                    <div class="float33 flex-center-column bg_success">
+                        <p class="success-color">مجموع جواب های درست : <span id="total_sucesss" class="success-color"></span></p>
+                    </div>
+                    <div class="float33 flex-center-column">
+                        <p>مجموع جواب های نادرست : <span id="total_mistake"></span></p>
+                    </div>
+                    <div class="float33 flex-center-column">
+                        <p>مجموع جواب های داده نشده : <span id="total_not_answered"></span></p>
+                    </div>
+                </div>
+                <div class="float100 flex-center-column red">
+                    <input type="button" onclick="p87_question1()" value="ثبت پاسخ">
+                </div>
+            </div>
+        </div>
+
+        <div class="question_part">
+            <div class="question_content">
+                <div class="content_text float70" dir="rtl">
+                    <p>
+                        <span class="red">2_</span>طول خط های شکسته را پیدا کنید
+                    </p>
+                </div>
+            </div>
+            <div class="answer_to_question">
+                <div class="float25 flex-center-column" >
+                    <img src="assets/3rd/images/Sangin/p_87_4.png" class="img_question">
+                    <input type="number" dir="ltr" placeholder="طول خط" class="input-style " id="p87_q2_i1"  pattern="[0_9]" title="فقط عدد وارد کنید" onchange="p87_question2()">
+                </div>
+                <div class="float25 flex-center-column" >
+                    <img src="assets/3rd/images/Sangin/p_87_5.png" class="img_question">
+                    <input type="number" dir="ltr" placeholder="طول خط" class="input-style " id="p87_q2_i2"  pattern="[0_9]" title="فقط عدد وارد کنید" onchange="p87_question2()">
+                </div>
+                <div class="float25 flex-center-column" >
+                    <img src="assets/3rd/images/Sangin/p_87_6.png" class="img_question">
+                    <input type="number" dir="ltr" placeholder="طول خط" class="input-style " id="p87_q2_i3"  pattern="[0_9]" title="فقط عدد وارد کنید" onchange="p87_question2()">
+                </div>
+                <div class="float25 flex-center-column" >
+                    <img src="assets/3rd/images/Sangin/p_87_7.png" class="img_question">
+                    <input type="number" dir="ltr" placeholder="طول خط" class="input-style " id="p87_q2_i4"  pattern="[0_9]" title="فقط عدد وارد کنید" onchange="p87_question2()">
+                </div>
+            </div>
+            <div class="answer_to_question">
+                <div class="content_text float70" dir="rtl">
+                    <p>در کدام شکل محیط را به دست آورده اید؟چرا؟</p>
+                    <input type="text" dir="rtl" placeholder="پاسخ" class="input-style " id="p87_q2" onchange="p87_question2()">
+                </div>
+            </div>
+        </div>
+
+        <div class="question_part">
+            <div class="question_content">
+                <div class="float30">
+                    <img src="assets/3rd/images/Sangin/p_87_8.png" class="img_question">
+                </div>
+                <div class="content_text float70" dir="rtl">
+                    <p>
+                        <span class="red">3_</span>یک مزرعه مستطیل شکل 24 متری طول (<span class="red">درازا</span>) و 10 متر عرض ( <span class="red">پهنا</span> ) دارد . اگر بخواهیم دور این مزرعه را نرده بکشیم، به چند متر نرده نیاز داریم؟
+                    </p>
+                    <input type="number" dir="auto" placeholder="پاسخ" class="input-style " id="p87_q3" pattern="[0_9]" title="فقط عدد وارد کنید" onchange="p87_question3()">
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_box">
+            <div class="box-base tip-abs bold">تقریب بزن</div>
+            <div class="box-base tip-abs-fill"></div>
+            <div class="box_body">
+
+                <div class="question_content">
+                    <div class="float100" dir="rtl">
+                        <p class="float70">
+                            میخواهیم طول یک خط خمیده را پیدا کنیم. برای این کار، ابتدا چند نقطه را روی این خط انتخاب می کنیم.سپس آن ها را به هم وصل می کنیم. بعد طول پاره خط ها را اندازه می گیریم و با هم جمع می کنیم.
+                        </p>
+                        <img  src="assets/3rd/images/Sangin/p_87_9.png" class="float30" style="margin-top: 4vw">
+                        <p class="float70">آیا مجموع طول پاره خط ها به طور تقریبی با طول خط خمیده برابر است؟</p>
+                        <input type="text" dir="rtl" placeholder="پاسخ" class="input-style float70" id="p87_p1" onchange="p87_question()">
+                        <p class="float70">چگونه می توانیم دقت این اندازه گیری را بالا ببریم؟</p>
+                        <input type="text" dir="rtl" placeholder="پاسخ" class="input-style float70" id="p87_p2" onchange="p87_question()">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-base flex-center page-num right">87</div>
+    </div>
+</div>
+
+<!--bot-->
+<div class="zebra-bg"></div>
+<!--test-->
 </body>
 </html>

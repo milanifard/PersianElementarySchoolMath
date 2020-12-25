@@ -1,48 +1,26 @@
-.title-style{
-
-    background-color: $yellow_level3_border;
-    border-radius: 2vw;
-
-    text-align: center;
-    font-family: Koodak;
-    font-size: 3vw;
-    color: $black;
-
-    padding: 0 2vw;
-    position: absolute;
-    right: 35vw;
-    left: 35vw;
-    top: -3.3vw;
-}
-
-.that-ridiculous-red-parts-in-title{
-    height: 1vw;
-
-    background-color: $red_level2;
-    color: $red_level2;
-    border-style: solid;
-
-    position: absolute;
-    right: 34vw;
-    left: 34vw;
-    top: -1.2vw;
-}
-
 .activity-text{
-
-    background-color: $yellow_level3_border;
+    p {
+        text-align: center;
+        font-family: Koodak;
+        // font-size: 2.5vw;
+        font-size: 28px;
+        color: $white;
+        margin-top: 15px;
+        // margin-left: 20px;
+    }
+    background-color: $background_title_color;
     border-radius: 1.5vw;
 
-    text-align: center;
-    font-family: Koodak;
-    font-size: 2.5vw;
-    color: $white;
-
-    padding: 0 5vw 0 3vw;
+    padding: 0.25vw 10vw 0.25vw 3vw;
     position: absolute;
-    right: 8vw;
+    right: 5vw;
     top: 2.5vw;
     z-index: 1;
+    margin-right: 2vw;
+    // float: right;
+
+    height: 5vw;
+    width: 8vw;
 }
 
 .activity-image{
@@ -50,6 +28,7 @@
     width: 13vw;
     position: absolute;
     right: -2.3vw;
-    top: 0.5vw;
+    top: 1vw;
     z-index: 2;
+    margin-right: 5vw;
 }

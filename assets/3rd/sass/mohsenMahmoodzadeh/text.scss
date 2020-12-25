@@ -1,0 +1,24 @@
+.text-config {
+    font-family: Zar;
+    font-size: 2vw;
+    direction: rtl;
+    white-space: pre-wrap;
+}
+
+.question-text-config {
+    padding-right: 5vw;
+    padding-left: 3vw;
+    // padding-bottom: 2vw;
+    // margin-top: 2vw;
+}
+
+.question-num {
+    color: $question_number_color;
+}
+
+#Question-1 {
+    // padding-top: 1vw; 
+    padding-right: 1vw; 
+    // margin-top: 3vw; 
+    // float: right
+}

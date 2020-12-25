@@ -23,16 +23,17 @@
 
         <div class="Q1-68-container">
             <div class="Q168-question">
-                <div id="Q1-69" class="text questions-text Q1-68-question-text"><span class="questions-number">۱ــ </span>در مورد روش های پیدا کردن حاصل ضرب دو عدد در کلاس گفت‌و‌گو کنید. آن‌گاه یکی از روش ها را انتخاب کنید و دلیل این انتخاب را توضیح دهید. سپس، حاضل ضرب‌های زیر را با هر روشی که دوست دارید، به‌دست آورید.</div>
+                <div id="Q1-69" class="text questions-text Q1-68-question-text"><span class="questions-number">۱ــ </span>در مورد روش های پیدا کردن حاصل ضرب دو عدد در کلاس گفت‌و‌گو کنید. آن‌گاه یکی از روش ها را انتخاب کنید و دلیل این انتخاب را توضیح دهید. سپس، حاصل ضرب‌های زیر را با هر روشی که دوست دارید، به‌دست آورید.</div>
             </div>
 
             <div>
-                <input class=" input-xsmall-style" type="number" style="margin: 0vw 30vw 2vw 1vw;">
+                <input id="Q1-68-right" class=" input-xsmall-style" type="number" style="margin: 0vw 30vw 2vw 1vw;" onkeyup="javascript: q1_68_r(this.value);">
                 <span class="text">=۷&times۵</span>
-                <input class=" input-xsmall-style" type="number" style="margin: 0vw 24vw 2vw 1vw;">
+                <input id="Q1-68-left" class=" input-xsmall-style" type="number" style="margin: 0vw 24vw 2vw 1vw;" onkeyup="javascript: q1_68_l(this.value);">
                 <span class="text">=۶&times۴</span>
             </div>
         </div>
+
 
 
 
@@ -40,13 +41,14 @@
             <div class="Q268-question">
                 <div id="Q2-69" class="text questions-text Q2-68-question-text" style="padding-top: 0vw; padding-right: 10vw; margin-top: 0vw;"><span class="questions-number">۲ــ </span>جدول‌های ضرب را کامل کنید.</div>
             </div>
+            <br>
 
             <div class="Q2-68-table">
                 <table style="margin-top: -4vw;">
                     <tr>
                         <td style="padding: 0vw 6vw 0vw 6vw;">
                             <span class="jadval-zarb" style="padding-top: 8vw; padding-right: 20vw; padding-bottom:3vw; margin-top: 2vw; float:center; float: center;">
-                                <table table border=1 frame=void rules=rows float=right;>
+                                <table class="text" table border=1 frame=void rules=rows float=right;>
                                     <tr>
                                         <td class="text">۹</td>
                                         <td class="text">۸</td>
@@ -59,14 +61,14 @@
                                         <td style="font-size: 3vw; color: rgb(189, 18, 18);">&times;</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
+                                        <td><input id="Q2-68-r-9" type="number"></td>
+                                        <td><input id="Q2-68-r-8" type="number"></td>
+                                        <td><input id="Q2-68-r-7" type="number"></td>
+                                        <td><input id="Q2-68-r-6" type="number"></td>
+                                        <td><input id="Q2-68-r-5" type="number"></td>
+                                        <td><input id="Q2-68-r-4" type="number"></td>
+                                        <td><input id="Q2-68-r-3" type="number"></td>
+                                        <td><input id="Q2-68-r-2" type="number"></td>
               
                                         <td class="text">۴</td>
                                     </tr>
@@ -74,7 +76,7 @@
                                     <tr>
                                         <!-- <td></td> -->
                                         <td colspan="9" style="background-color: white; border-color: white;">
-                                            <input class=" text jadval-submit" type="submit" value="ثبت">
+                                            <input id=Q2-68-submit-r name=Q2-68-submit-r class=" text jadval-submit" type="submit" value="ثبت" onclick="javascript: q2_68_r();" style="margin-right:  -14vw">
                                         </td>
                                     </tr>
                                 </table>
@@ -91,23 +93,23 @@
                                         <td style="font-size: 3vw; color: rgb(189, 18, 18);">&times;</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
+                                        <td><input id="Q2-68-l-2-7" type="number"></td>
+                                        <td><input id="Q2-68-l-2-6" type="number"></td>
+                                        <td><input id="Q2-68-l-2-5" type="number"></td>
               
                                         <td class="text">۲</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td> 
+                                        <td><input id="Q2-68-l-3-7"type="number"></td>
+                                        <td><input id="Q2-68-l-3-6"type="number"></td>
+                                        <td><input id="Q2-68-l-3-5"type="number"></td> 
                                         <td class="text">۳</td>
                                     </tr>
             
                                     <tr>
                                         <!-- <td></td> -->
                                         <td colspan="4" style="background-color: white; border-color: white;">
-                                            <input class="text jadval-submit" type="submit" value="ثبت">
+                                            <input class="text jadval-submit" type="submit" value="ثبت" onclick="javascript: q2_68_l();">
                                         </td>
                                     </tr>
                                 </table>
@@ -127,135 +129,135 @@
                 <table class="text Q3-68-table">
                     <tr>
                         <td>
-                            <input class=" input-xsmall-style" type="number">
+                            <input id="Q3-68-1-4" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(1, 4, this.value);">
                             <span>=۴&times۱</span>
                         </td >
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-1-3" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(1, 3, this.value);">
                             <span>=۳&times۱</span>
                         </td>
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-1-2" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(1, 2, this.value);">
                             <span>=۲&times۱</span>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input class=" input-xsmall-style" type="number">
+                            <input id="Q3-68-2-4" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(2, 4, this.value);">
                             <span>=۴&times۲</span>
                         </td >
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-2-3" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(2, 3, this.value);">
                             <span>=۳&times۲</span>
                         </td>
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-2-2" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(2, 2, this.value);">
                             <span>=۲&times۲</span>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input class=" input-xsmall-style" type="number">
+                            <input id="Q3-68-3-4" class="input-xsmall-style" type="number" onkeyup="javascript: q3_68(3, 4, this.value);">
                             <span>=۴&times۳</span>
                         </td >
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-3-3" class="input-xsmall-style" type="number" onkeyup="javascript: q3_68(3, 3, this.value);">
                             <span>=۳&times۳</span>
                         </td>
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-3-2" class="input-xsmall-style" type="number" onkeyup="javascript: q3_68(3, 2, this.value);">
                             <span>=۲&times۳</span>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input class=" input-xsmall-style" type="number">
+                            <input id="Q3-68-4-4" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(4, 4, this.value);">
                             <span>=۴&times۴</span>
                         </td >
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-4-3" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(4, 3, this.value);">
                             <span>=۳&times۴</span>
                         </td>
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-4-2" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(4, 2, this.value);">
                             <span>=۲&times۴</span>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input class=" input-xsmall-style" type="number">
+                            <input id="Q3-68-5-4" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(5, 4, this.value);">
                             <span>=۴&times۵</span>
                         </td >
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-5-3" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(5, 3, this.value);">
                             <span>=۳&times۵</span>
                         </td>
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
-                            <span>=۲&times۶</span>
+                            <input id="Q3-68-5-2" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(5, 2, this.value);">
+                            <span>=۲&times۵</span>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input class=" input-xsmall-style" type="number">
+                            <input id="Q3-68-6-4" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(6, 4, this.value);">
                             <span>=۴&times۶</span>
                         </td >
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-6-3" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(6, 3, this.value);">
                             <span>=۳&times۶</span>
                         </td>
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-6-2" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(6, 2, this.value);">
                             <span>=۲&times۶</span>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input class=" input-xsmall-style" type="number">
+                            <input id="Q3-68-7-4" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(7, 4, this.value);">
                             <span>=۴&times۷</span>
                         </td >
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-7-3"class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(7, 3, this.value);">
                             <span>=۳&times۷</span>
                         </td>
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-7-2"class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(7, 2, this.value);">
                             <span>=۲&times۷</span>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input class=" input-xsmall-style" type="number">
+                            <input id="Q3-68-8-4" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(8, 4, this.value);">
                             <span>=۴&times۸</span>
                         </td >
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-8-3" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(8, 3, this.value);">
                             <span>=۳&times۸</span>
                         </td>
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-8-2" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(8, 2, this.value);">
                             <span>=۲&times۸</span>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input class=" input-xsmall-style" type="number">
+                            <input id="Q3-68-9-4" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(9, 4, this.value);">
                             <span>=۴&times۹</span>
                         </td >
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-9-3" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(9, 3, this.value);" >
                             <span>=۳&times۹</span>
                         </td>
                         <td>
-                            <input class=" input-xsmall-style" type="number" >
+                            <input id="Q3-68-9-2" class=" input-xsmall-style" type="number" onkeyup="javascript: q3_68(9, 2, this.value);">
                             <span>=۲&times۹</span>
                         </td>
                     </tr>
@@ -265,13 +267,18 @@
             </div>
         </div>
 
-
-    
-
-
         <div class="page-number" style="left: -5vw; left: auto;">۶۸</div>
+        <div class="page-navigator">
+            <div class="next-page">
+                <a href="book_3_69.html">صفحه بعد &gt;&gt;</a>
+            </div>
+            <div class="previous-page">
+                <a href="book_3_67.html"> &lt;&lt; صفحه قبل </a>
+            </div>
+        </div>
 
     </div>
 </div>
+<script src="./assets/3rd/js/radmanesh.js"></script>
 </body>
 </html>

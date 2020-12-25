@@ -27,3 +27,8 @@
          url('/assets/fonts/Faraz.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('/assets/fonts/Faraz.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
+@font-face{
+    font-family: Koodak;
+    src: url("../../fonts/KoodakBold.ttf");
+}

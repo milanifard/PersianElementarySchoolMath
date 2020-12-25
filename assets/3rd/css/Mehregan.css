@@ -361,7 +361,7 @@ form>div>span {
 }
 
 .green_shadow {
-  box-shadow: 0 6px 10px 0 rgba(205, 220, 57, 0.8);
+  box-shadow: 0 6px 10px 0 rgba(130, 220, 57, 0.8);
 }
 
 
@@ -479,10 +479,12 @@ form>div>span {
 }
 
 .shapes_img{
-  width: 38vw; 
-  float: right;
-  padding-right: 29vw;
-  margin-left: 7vw;
+  width: 38vw;
+  height: 28.5vw; 
+  /* float: left; */
+  /* padding-right: -2vw; */
+margin-right: -6vw;
+  /* margin-left: 7vw; */
 
 }
 .shapes_input{
@@ -499,46 +501,46 @@ form>div>span {
 }
 
 .rec1{
-  position: absolute;
-  bottom: 77vw;
-  left: 37vw;
+  position: relative;
+  right: 10vw;
+  top: 6vw;
 }
 .rec2{
-  position: absolute;
-  bottom: 72vw;
-  left: 37vw;
+  position: relative;
+  right: 15.2vw;
+  top: 12vw;
 }
 .triangle1{
-  position: absolute;
-  bottom: 60vw;
-  left: 26vw;
+  position: relative;
+  right: 32vw;
+  top: 22vw;
 }
 .triangle2{
-  position: absolute;
-  bottom: 60vw;
-  left: 19vw;
+  position: relative;
+  right: 44vw;
+  top: 22vw;
 }
 .circle{
-  position: absolute;
-  bottom: 74vw;
-  left: 13vw;
+  position: relative;
+  right: 29vw;
+  top: 10vw;
 }
 .rec_circle{
-  position: absolute;
-  bottom: 78vw;
-  left: 21vw;
+  position: relative;
+  right: 46vw;
+  top: 5vw;
 }
 .triangle_circle{
   width: 4vw;
   height: 1.5vw;
-  position: absolute;
-  bottom: 8vw;
-  left: 13.8vw;
+  position: relative;
+  right: 53.5vw;
+  top: 18.7vw;
 }
 .rec_triangle_circle{
-  position: absolute;
-  bottom: 11vw;
-  left: 16.4vw;
+  position: relative;
+  right: 55vw;
+  top: 14vw;
 }
 
 .form1_135{
@@ -589,7 +591,7 @@ form>div>span {
 }
 .p2-p135{
   position: relative;
-  left: 11vw;
+  left: 12vw;
 }
 .multiply_img{
   position: relative;
@@ -602,7 +604,7 @@ form>div>span {
   position: relative;
   width: 8vw;
   height: 4vw;
-  left: 25vw;
+  left: 23vw;
   bottom: 0vw;
 }
 .p135-q2-btn{
@@ -621,6 +623,57 @@ form>div>span {
   position: relative;
   left: 70vw;
 
+}
+.footer2_hint{
+  position: relative;
+  width: 67vw;
+  height: 5vw;
+  margin-left: 10vw;
+  margin-right: 6vw;
+  margin-bottom: -2vw;
+  background-color: white;
+  border-top: 0.4vw double #f19684;
+  border-right: 0.4vw double #f19684;
+  text-align: ltr;
+    vertical-align: middle;
+    line-height: 7vw; 
+
+}
+.footer2_img{
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  bottom: -2.2vw;
+  left: 6vw;
+  z-index: 2;
+}
+
+.footer1_hint{
+  position: relative;
+  height: 5vw;
+  margin-right: 13vw;
+  margin-left: 6vw;
+  margin-bottom: -2vw;
+  /* width: 67vw;
+  height: 5vw;
+  margin-left: 6vw;
+  margin-right: 10vw;
+  margin-bottom: -2vw; */
+  background-color: white;
+  border-top: 0.4vw double #f19684;
+  border-left: 0.4vw double #f19684;
+  text-align: ltr;
+    vertical-align: middle;
+    line-height: 3.5vw; 
+
+}
+.footer1_img{
+  width: 11vw;
+  height: 12vw;
+  position: absolute;
+  bottom: -2.2vw;
+  left: 72vw;
+  z-index: 2;
 }
 
 

@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <title>کتاب ریاضی سوم دبستان</title>
     <link rel="stylesheet" href="./assets/3rd/css/ZeinabJalai.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/3rd/js/ZeinabJalali.js"></script>
 </head>
 <body>
 
@@ -11,22 +14,90 @@
         <div class="Rectangle_1">
             <div class="textreqtitle"> کاربرد کسر در اندازه گیری</div>
         </div>
+        <p class="leftcorner">
+            <br><br>
+        </p>
+        <p class="rightcorner">
+            <br><br>
+        </p>
         <div class="MainBoxchild">
-            <br><br>     <br><br>
-            <br><br>     <br><br>
 
-            <br><br>     <br><br>
-            <br><br>     <br><br>
-            <br><br>     <br><br>
-            <br><br>     <br><br>
-
-            <div class="pagenumparpar">
-                <div class="pagenumpar">
-                    <div class="pagenum">49
-                    </div>
-                </div>
+            <div id="content">
+                <img src="./assets/3rd/images/activity.png" class="activity-image">
+                <p class="activity-border">
+                    فعالیت
+                </p>
             </div>
+            <div>
+                <img src="assets/3rd/images/ZeinabJalai/kasr1.JPG" class="kasr1">
+            </div>
+            <div class="text t1">1- طول این مداد را با خط کش اندازه گرفته ایم. جاهای خالی را پر کنید. </div>
+            <div class="text t2">
+                طول مداد از
+                <input class="question q1" id="q1">
+                سانتی متر بیشتر و از
+                <input class="question q2" id="q2">
+                کمتر است.
+                <input type="submit" value="تصحیح" onclick="correct(document.getElementById('q1').value,document.getElementById('q2').value,'n','n','n','n','n','n')" class="check">
+            </div>
+            <div class="text t3">
+                طول مداد چند میلی متر بیشتر از 5 سانتی متر است؟
+                <input class="question g3" id="q3">
+
+                <input type="submit" value="تصحیح" onclick="correct('n','n',document.getElementById('q3').value,'n','n','n','n','n')" class="check">
+            </div>
+            <div class="text t4">
+                یعنی چه کسری از یک سانتی متر؟
+                <input class="question q4" id="q4">
+                <p class="line"></p>
+                <div class="ten">10</div>
+                <input type="submit" value="تصحیح" onclick="correct('n','n','n',document.getElementById('q4').value,'n','n','n','n')" class="check c3">
+            </div>
+            <div class="text t5">
+                طول مداد
+                <input class="question q5" id="q5">
+                سانتی متر و
+                <input class="question q6" id="q6">
+                میلی متر است.
+                <input type="submit" value="تصحیح" onclick="correct('n','n','n','n',document.getElementById('q5').value,document.getElementById('q6').value,'n','n')" class="check">
+            </div>
+            <div class="text t6">
+                یعنی طول مداد
+                <input class="question q7" id="q7">
+                سانتی متر و
+                <input class="question q8" id="q8">
+                <p class="line"></p>
+                <div class="ten">10</div>
+                <div class="t7">میلی متر است.  </div>
+                <input type="submit" value="تصحیح" onclick="correct('n','n','n','n','n','n',document.getElementById('q7').value,document.getElementById('q8').value)" class="check c7">
+            </div>
+            <br><br>     <br><br>
+            <br><br>     <br><br>
+            <br><br>     <br><br>
+            <br><br>     <br><br>
+
+<!--            <div class="pagenumparpar">-->
+<!--                <div class="pagenumpar">-->
+<!--                    <div class="pagenum">49-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
+    </div>
+    <div class="pagination-container">
+        <div class="page-number-button">
+            <!-- using next/prev icons from font awesome -->
+            <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+        </div>
+
+        <div class="page-number">
+            <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
+        </div>
+
+        <div class="page-number-button">
+            <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+        </div>
+
     </div>
 
 </body>

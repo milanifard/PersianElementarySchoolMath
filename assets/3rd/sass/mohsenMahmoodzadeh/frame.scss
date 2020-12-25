@@ -1,28 +1,79 @@
-.left-border{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// .left-page-border {
+    
+//     width: 90vw;
+//     height: 80vw;
+//     max-width: 100%;
+
+//     border: 0.8vw double $border_page_color;
+//     border-top-right-radius: 5vw;
+//     border-bottom-right-radius: 5vw;
+//     border-left: none;
+
+//     margin: 5vw 0 0 10vw;
+
+//     background-color: $white;
+
+//     position: relative;
+// }
+
+
+.right-page-border {
+    
     width: 90vw;
+    height: 100vw;
     max-width: 100%;
 
-    border: 0.8vw double var($yellow_level2_border);
-
-    margin: 6vw 0 0 10vw;
+    border: 0.8vw double $border_page_color;
+    border-top-left-radius: 4vw;
+    border-bottom-left-radius: 4vw;
     border-right: none;
-    border-top-left-radius: 5vw;
-    border-bottom-left-radius: 5vw;
-    position: relative;
+
+    margin: 5vw 0 0 10vw;
+
     background-color: $white;
-}
 
-.right-border{
-
-    width: 90vw;
-    max-width: 100%;
-
-    border: 0.8vw double var(--yellow_level2_border);
-
-    margin: 6vw 10vw 0 0;
-    border-left: none;
-    border-top-right-radius: 5vw;
-    border-bottom-right-radius: 5vw;
     position: relative;
-    background-color: white;
 }
+
+
+
+.title-style{
+
+    background-color: $background_title_color;
+    border-radius: 2vw;
+    width: 6vw;
+    height: 4vw;
+
+    padding: 0 2vw;
+    position: absolute;
+    right: 40vw;
+    left: 40vw;
+    top: -2vw;
+    p {
+        color: $black;
+        text-align: center;
+        font-size: 3vw;
+        font-family: Koodak;
+    }
+}
+
+.that-ridiculous-red-parts-in-title{
+    height: 1.5vw;
+
+    background-color: $page_title_bar;
+    color: $page_title_bar;
+
+    position: absolute;
+    right: 39.5vw;
+    left: 39.5vw;
+    top: -1vw; 
+}
+
+// .page-num {
+
+// }

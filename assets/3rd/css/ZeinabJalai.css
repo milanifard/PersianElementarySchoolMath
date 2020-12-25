@@ -1,15 +1,14 @@
 body{
-
-    padding-left: 100px;
-    padding-top: 120px;
-    padding-bottom: 100px;
-    background-image: linear-gradient(180deg, #b59ec8 5%, #a088ba 5%, #a088ba 10%, #b59ec8 10%, #b59ec8 15%, #a088ba 15%, #a088ba 20%, #b59ec8 20%, #b59ec8 25%, #a088ba 25%, #a088ba 30%, #b59ec8 30%, #b59ec8 35%, #a088ba 35%, #a088ba 40%, #b59ec8 40%, #b59ec8 45%, #a088ba 45%, #a088ba 50%, #b59ec8 50%, #b59ec8 55%, #a088ba 55%, #a088ba 60%, #b59ec8 60%, #b59ec8 65%, #a088ba 65%, #a088ba 70%, #b59ec8 70%, #b59ec8 75%, #a088ba 75%, #a088ba 80%, #b59ec8 80%, #b59ec8 85%, #a088ba 85%, #a088ba 90%, #b59ec8 90%, #b59ec8 95%, #a088ba 95%, #a088ba 100%);
-    background-size: 100vw 25vw;
+    padding-left: 5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /*background-image: linear-gradient(180deg, #b59ec8 5%, #a088ba 5%, #a088ba 10%, #b59ec8 10%, #b59ec8 15%, #a088ba 15%, #a088ba 20%, #b59ec8 20%, #b59ec8 25%, #a088ba 25%, #a088ba 30%, #b59ec8 30%, #b59ec8 35%, #a088ba 35%, #a088ba 40%, #b59ec8 40%, #b59ec8 45%, #a088ba 45%, #a088ba 50%, #b59ec8 50%, #b59ec8 55%, #a088ba 55%, #a088ba 60%, #b59ec8 60%, #b59ec8 65%, #a088ba 65%, #a088ba 70%, #b59ec8 70%, #b59ec8 75%, #a088ba 75%, #a088ba 80%, #b59ec8 80%, #b59ec8 85%, #a088ba 85%, #a088ba 90%, #b59ec8 90%, #b59ec8 95%, #a088ba 95%, #a088ba 100%);*/
+    background-image: linear-gradient(180deg, #b59ec8 3.13%, #a088ba 3.13%, #a088ba 6.25%, #b59ec8 6.25%, #b59ec8 9.38%, #a088ba 9.38%, #a088ba 12.50%, #b59ec8 12.50%, #b59ec8 15.63%, #a088ba 15.63%, #a088ba 18.75%, #b59ec8 18.75%, #b59ec8 21.88%, #a088ba 21.88%, #a088ba 25%, #b59ec8 25%, #b59ec8 28.13%, #a088ba 28.13%, #a088ba 31.25%, #b59ec8 31.25%, #b59ec8 34.38%, #a088ba 34.38%, #a088ba 37.50%, #b59ec8 37.50%, #b59ec8 40.63%, #a088ba 40.63%, #a088ba 43.75%, #b59ec8 43.75%, #b59ec8 46.88%, #a088ba 46.88%, #a088ba 50%, #b59ec8 50%, #b59ec8 53.13%, #a088ba 53.13%, #a088ba 56.25%, #b59ec8 56.25%, #b59ec8 59.38%, #a088ba 59.38%, #a088ba 62.50%, #b59ec8 62.50%, #b59ec8 65.63%, #a088ba 65.63%, #a088ba 68.75%, #b59ec8 68.75%, #b59ec8 71.88%, #a088ba 71.88%, #a088ba 75%, #b59ec8 75%, #b59ec8 78.13%, #a088ba 78.13%, #a088ba 81.25%, #b59ec8 81.25%, #b59ec8 84.38%, #a088ba 84.38%, #a088ba 87.50%, #b59ec8 87.50%, #b59ec8 90.63%, #a088ba 90.63%, #a088ba 93.75%, #b59ec8 93.75%, #b59ec8 96.88%, #a088ba 96.88%, #a088ba 100%);
+    background-size: 120vw 40vh;
     background-position: bottom;
     background-repeat: no-repeat;
 }
 .MainBox{
-
     background-color: #fff;
     border: 3px solid #A088BA;
     border-radius: 30px;
@@ -19,11 +18,9 @@ body{
     padding-left: 1px;
     padding-top: 1px;
     padding-bottom: 1px;
-    width: 85vw;
-
+    width: 95vw;
 }
 .MainBoxchild{
-
     background-color: #fff;
     border: 1px solid #A088BA;
     border-radius: 27px;
@@ -36,30 +33,27 @@ body{
     border-radius: 30px;
     background-color: #CEB4D5;
     position: absolute;
-    width: 309px;
-    height: 67px;
-    margin-left: 25%;
-    margin-top: -38px;
+    width: 31.5vw;
+    height: 10vh;
+    margin-left: 30vw;
+    margin-top: -6vh;
 }
 
 .textreqtitle{
-
     font-weight: bold;
     color: black;
-    font-size: 25px;
+    font-size: 3vw;
     text-align: center;
     height: 100%;
-    padding: 6%;
+    padding-top: 2vh;
 }
 .pagenumparpar{
-
     border: white 2px solid;
     width: 8%;
     border-radius: 12px;
     margin-left: -4.6%;
 }
 .pagenumpar{
-
     border: #A088BA 1px solid;
     border-radius: 10px;
 }
@@ -69,4 +63,197 @@ body{
     text-align: center;
     border: white 1px solid;
     border-radius: 10px;
+}
+
+.pagination-container {
+    direction: rtl;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 3em;
+    /* to adjust page changer position , adjust position of this element */
+
+}
+
+.page-number {
+    /* substitute your color */
+    background-color: #CEB4D5;
+    border-radius: 2em;
+    width: 5.8em;
+    color: white;
+    border: 0.35em double white;
+    font-family: Koodak;
+    padding: 0 1.1em;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.page-number input {
+    /* substitute your color */
+    background-color: #A088BA;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+
+.page-number-button {
+    width: 3em;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.page-number-button > a {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
+
+}
+.leftcorner{
+    background-color: #B03776;
+    position:absolute;
+    width: 2vw;
+    height: 3vh;
+    margin-left: 28.1vw;
+    margin-top: -2vh;
+}
+.rightcorner{
+    background-color: #B03776;
+    position: absolute;
+    width: 2vw;
+    height: 3vh;
+    margin-left: 61.4vw;
+    margin-top: -2vh;
+}
+#content {
+     position: relative;
+ }
+#content img {
+    z-index: 1;
+    position: absolute;
+    top: 0vh;
+    right: 0vh;
+    width: 15vw;
+    height: 20vh;
+}
+#content p{
+    position: absolute;
+    top: -1vh;
+    right: 14vw;
+    background-color: #B59EC8;
+    border-radius: 10px;
+    width: 10vw;
+    height: 5vh;
+    border-right: 0px solid white ;
+    z-index: 0;
+    text-align: center;
+    color: #ffffff;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-top: 3px;
+    font-size: 2vw;
+}
+.text{
+    font-size: 1.5vw;
+    direction: rtl;
+}
+.t1{
+    position: relative;
+    top: 10vh;
+    right: 15vw;
+}
+.kasr1{
+    position: absolute ;
+    top: 20vh;
+    left: 10vw;
+    width: 30vw;
+    height: 20vh;
+}
+.t2{
+    position: relative;
+    top: 20vh;
+    right: 15vw;
+}
+.t3{
+    position: relative;
+    top: 25vh;
+    right: 15vw;
+}
+.question{
+    font-size: 1.5vw;
+    width: 5vw;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+}
+.check{
+    font-size: 1.5vw;
+}
+.t4{
+    position: relative;
+    top: 30vh;
+    right: 15vw;
+}
+.q4,.q8{
+    position: relative;
+    top: -2vh;
+    border: none;
+}
+.line{
+    border: 1px solid black;
+    position: relative;
+    background-color: black;
+    top: -4vh;
+    right: 17vw;
+    width: 5.25vw;
+}
+.ten{
+    position: relative;
+    top: -6vh;
+    right: 19vw;
+    font-size: 1.5vw;
+}
+.c3 {
+    position: relative;
+    top: -12vh;
+    right: 23vw;
+}
+.t5{
+    position: relative;
+    top: 23vh;
+    right: 15vw;
+}
+.t6{
+    position: relative;
+    top: 28vh;
+    right: 15vw;
+}
+.t6>.line{
+    top: -4vh;
+    right: 19vw;
+}
+.t6>.ten{
+    top: -6vh;
+    right: 21vw;
+}
+.t7{
+    position: relative;
+    top: -12vh;
+    right: 25vw;
+}
+.c7{
+    position: relative;
+    top: -15.5vh;
+    right: 32.5vw;
+}
+.q8{
+    position: relative;
+    right: -0.40vw;~
 }

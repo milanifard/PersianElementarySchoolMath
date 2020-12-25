@@ -8,49 +8,258 @@
     <title>ریاضی سوم دبستان</title>
 </head>
 <body>
-    <!-- <div class="left-border">
-        <div class="background-style"></div>
+    <div>
+
+        <div class="right-page-border">
+            <div class="background-style"></div>
+            
+            <div>
+                <div class="that-ridiculous-red-parts-in-title"></div>
+                <div class="title-style">
+                    <p>
+                        احتمال
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div id="activity-circle">
+                <!-- style="display: flex; flex-direction: row-reverse;" -->
+                    <div> 
+                            <img class="activity-image" src="./assets/3rd/images/activity.png" alt="activity_image">
+                            <div class="activity-text">
+                                <p>
+                                    فعّالیت
+                                </p>
+                            </div>
+                        </div>
+            
+                        <div id="Circle1" class="circleContainer" onclick="rotation(id)">
+                            <div id="Slice1" class="circleSlice"></div>
+                            <div id="Slice2" class="circleSlice"></div>
+                            <div id="Slice3" class="circleSlice"></div>
+                            <div id="Slice4" class="circleSlice"></div>
+                            <div id="clock-needle"></div>
+                        </div>
+                        
+            </div>
+
+            <div id="question-1">
+                    <!-- style="display: flex; flex-direction: column" -->
+                    <div id="Question-1" class="text-config questions-text-config">
+                            <span class="question-num">1_</span> چرخنده ی روبه رو را می چرخانیم تا عقربه ی آن روی یک رنگ بایستد؛ رنگ را یادداشت می کنیم.<br>چند حالت ممکن است برای ایستادن عقربه روی یک رنگ اتفاق بیفتد؟ <br>این آزمایش را 10 بار انجام دهید و جدول زیر را کامل کنید.
+                        </div>
+                        
+                        <div id="Table1-container" class="tableContainer">
+                            <table class="table">
+                                <tr>
+                                    <td class="td td-title-name">آزمایش</td>
+                                    <td class="td">1</td>
+                                    <td class="td">2</td>
+                                    <td class="td">3</td>
+                                    <td class="td">4</td>
+                                    <td class="td">5</td>
+                                    <td class="td">6</td>
+                                    <td class="td">7</td>
+                                    <td class="td">8</td>
+                                    <td class="td">9</td>
+                                    <td class="td">10</td>
+                                </tr>
+                                <tr>
+                                    <td class="td td-title-name">رنگ</td>
+                                    <td id="Q1_td1" class="td">
+                                        <div>
+                                            <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td1', id)"></div>
+                                            <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td1', id)"></div>
+                                            <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td1', id)"></div>
+                                        </div>
+                                    </td>
+                                    <td id="Q1_td2" class="td">
+                                        <div>
+                                                <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td2', id)"></div>
+                                                <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td2', id)"></div>
+                                                <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td2', id)"></div>
+                                        </div>
+                                    </td>
+                                    <td id="Q1_td3" class="td">
+                                        <div>
+                                                <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td3', id)"></div>
+                                                <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td3', id)"></div>
+                                                <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td3', id)"></div>
+                                        </div>
+                                    </td>
+                                    <td id="Q1_td4" class="td">
+                                        <div>
+                                            <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td4', id)"></div>
+                                            <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td4', id)"></div>
+                                            <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td4', id)"></div>
+                                        </div>
+                                    </td>
+                                    
+                                    <td id="Q1_td5" class="td">
+                                        <div>
+                                            <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td5', id)"></div>
+                                            <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td5', id)"></div>
+                                            <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td5', id)"></div>
+                                        </div>
+                                    </td>
+                                    <td id="Q1_td6" class="td">
+                                        <div>
+                                            <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td6', id)"></div>
+                                            <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td6', id)"></div>
+                                            <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td6', id)"></div>
+                                        </div>
+                                    </td>
+                                    <td id="Q1_td7" class="td">
+                                        <div>
+                                            <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td7', id)"></div>
+                                            <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td7', id)"></div>
+                                            <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td7', id)"></div>
+                                        </div>
+                                    </td>
+                                    
+                                    <td id="Q1_td8" class="td">
+                                        <div>
+                                            <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td8', id)"></div>
+                                            <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td8', id)"></div>
+                                            <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td8', id)"></div>
+                                        </div>
+                                    </td>
+                                    <td id="Q1_td9" class="td">
+                                        <div>
+                                            <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td9', id)"></div>
+                                            <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td9', id)"></div>
+                                            <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td9', id)"></div>
+                                        </div>
+                                    </td>
+                                    
+                                    <td id="Q1_td10" class="td">
+                                        <div>
+                                            <div class="color-picker red-color-td" onclick="color_picker(id), coloring_table('Q1_td10', id)"></div>
+                                            <div class="color-picker green-color-td" onclick="color_picker(id), coloring_table('Q1_td10', id)"></div>
+                                            <div class="color-picker blue-color-td" onclick="color_picker(id), coloring_table('Q1_td10', id)"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
         
-        <div id="title">
-            <div class="that-ridiculous-red-parts-in-title"></div>
-            <div class="title-style">احتمال</div>
+                        <div id="TableQuestion1-container" class="tableQuestionContainer">
+                            <!-- style="display: flex; flex-direction: row; margin-right: 7vw; margin-top: 3vw;" -->
+                            <div class="fractionalQuestionContainer">
+                                <!-- style="display: flex; flex-direction: row;" -->
+                                <div class="text-config questions-text-config">چه کسری از آزمایش ها رنگ قرمز است؟</div>
+                                <input type="number" min="0" max="10">
+                                <div class="text-config"> / </div>
+                                <input type="number" min="0" max="10">
+                            </div>
+                            <div class="fractionalQuestionContainer">
+                                <!-- style="display: flex; flex-direction: row;" -->
+                                <div class="text-config questions-text-config" >چه کسری آبی؟</div>
+                                <input type="number" min="0" max="10">
+                                <div class="text-config" > / </div>
+                                <input type="number" min="0" max="10">
+                            </div>
+                            <div class="fractionalQuestionContainer">
+                                <!-- style="display: flex; flex-direction: row;" -->
+                                <div class="text-config questions-text-config" >چه کسری سبز؟</div>
+                                <input type="number" min="0" max="10">
+                                <div class="text-config" > / </div>
+                                <input type="number" min="0" max="10">
+                            </div>
+                        </div>
+            </div>
+
+            <div id="question-2-3-images">
+                <!-- style="display: flex; flex-direction: row; align-content: space-around;" -->
+                <div id="question-2-3">
+                    <!-- style="display: flex; flex-direction: column;" -->
+                    <div id="Question-2" class="text-config questions-text-config">
+                        <span class="question-num">2_</span> یک تاس را می اندازیم؟ چند حالت ممکن است اتفاق بیفتد؟ چرا؟
+                        <textarea class="textarea" name="question-2" id="" cols="30" rows="30"></textarea>
+                    </div>
+
+                    <div id="Question-3" class="text-config questions-text-config">
+                        <span class="question-num">3_</span> یک سکه را بالا می اندازیم. چند حالت برای آن اتفاق می افتد؟
+                        <textarea class="textarea" name="question-3" id="" cols="30" rows="30"></textarea>
+                    </div>
+                </div>
+
+                <div id="cube-coin">
+                    <!-- style="display: flex; flex-direction: column; margin-right: 10vw; margin-top: 5vw;" -->
+                    <img id="cube" src="./assets/3rd/images/Mahmoodzadeh/121/07.png" alt="cube">
+                    <!-- style="width: 7vw; height: 7vw;" -->
+                    <img id="coin" src="./assets/3rd/images/barzgar/100riali transparent.png" alt="coin">
+                    <!-- style="width: 7vw; height: 7vw; margin-right: 7vw;" -->
+                </div>
+            </div>
+
+            <div id="guess-box">
+                <!-- style="display: flex; flex-direction: column; background-color:#fffddf; border-radius: 15px; border: 1.5px solid #fcc441; margin-right: 5vw; margin-left: 3vw; height: 31vh;" -->
+                <div id="guess-text-box">
+                    <!-- style="display: flex; flex-direction: row; justify-content: space-between; padding-right: 25px;" -->
+                    <div id="guess-text-question">
+                        <!-- style="padding-top: 5px;" -->
+                        <p>
+                            <!-- style="font-family: Zar; font-size: 1.5vw;" -->
+                            استوانه های زیر با مقواهای هم اندازه ساخته شده اند.
+                            <br>
+                            توضیح دهید چگونه این اتفاق افتاده است.
+                        </p> 
+                    </div>
+                    <div id="guess-text-label">
+                        <!-- style="background-color: #fcc441; color: white; width: 10vw; position: relative; right: 45px; border-left: 2vw solid #f8b044;" -->
+                        <p>
+                            <!-- style="font-family: Zar; font-size: 1.5vw; text-align: center; padding-top: 15px;" -->
+                            خلاق باش
+                        </p>
+                    </div>
+                </div>
+                <div id="candle-cylindrical">
+                    <!-- style="display: flex; flex-direction: row; justify-content: space-between;" -->
+                    <div id="candle-box">
+                        <!-- style="padding-right: 25px; margin-top: 25px;" -->
+                        <img id="candle" src="./assets/3rd/images/Mahmoodzadeh/121/06.png" alt="candles">
+                        <!-- style="width: 8vw; height: 7vw;" -->
+                    </div>
+                    <div id="cylindrical-box">
+                        <!-- style="padding-left: 25px;" -->
+                        <img id="cylindrical" src="./assets/3rd/images/Mahmoodzadeh/121/02.png" alt="cylindrical">
+                        <!--  style="width: 30vw; height: 10vw;" -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="right-page-num">
+            <!-- style="background-color: #f8b044; width: 7vw; height: 5vh; border: 2px double white; border-radius: 35px; position: relative; top: -6.25vh; right: 86vw;" -->
+            <p>
+                <!-- style="color: white; text-align: center; font-family: Zar;" -->
+                121
+            </p>
         </div>
 
-        <div id="activity_item">
-            <img class="activity-image" src="assets/3rd/images/activity.png" alt="activity_image">
-            <div class="activity-text">فعّالیت</div>
+        <div class="page-no-input">
+            <div id="next_btn">
+                <a href="book_3_122.html">
+                    <img class="arrow" src="./assets/3rd/images/left-arrow.png" alt="next_page">
+                    <!-- style="width: 3vw" -->
+                </a>
+            </div>
+            <div>
+                <input class="page-number-input" type="number" name="page_number" id="page_switcher">
+                <!-- style="width: 5vw" -->
+            </div>
+            <div id="pre_btn">
+                <a href="book_3_120.html">
+                    <img class="arrow" src="./assets/3rd/images/right-arrow.png" alt="prev_page">
+                    <!-- style="width: 3vw" -->
+                </a>
+            </div>
         </div>
-    </div> -->
-    <div class="table-container">
-        <table class="table">
-            <tr class="table-row">
-                <td class="table-data" width="(100/11)%">آزمایش</td>
-                <td class="table-data" width="(100/11)%">1</td>
-                <td class="table-data" width="(100/11)%">2</td>
-                <td class="table-data" width="(100/11)%">3</td>
-                <td class="table-data" width="(100/11)%">4</td>
-                <td class="table-data" width="(100/11)%">5</td>
-                <td class="table-data" width="(100/11)%">6</td>
-                <td class="table-data" width="(100/11)%">7</td>
-                <td class="table-data" width="(100/11)%">8</td>
-                <td class="table-data" width="(100/11)%">9</td>
-                <td class="table-data" width="(100/11)%">10</td>
-            </tr>
-            <tr class="table-row">
-                <td class="table-data" width="(100/11)%">رنگ</td>
-                <td class="table-data" width="(100/11)%"></td>
-                <td class="table-data" width="(100/11)%"></td>
-                <td class="table-data" width="(100/11)%"></td>
-                <td class="table-data" width="(100/11)%"></td>
-                <td class="table-data" width="(100/11)%"></td>
-                <td class="table-data" width="(100/11)%"></td>
-                <td class="table-data" width="(100/11)%"></td>
-                <td class="table-data" width="(100/11)%"></td>
-                <td class="table-data" width="(100/11)%"></td>
-                <td class="table-data" width="(100/11)%"></td>
-            </tr>
-        </table>
     </div>
     
 </body>
+
+<script src="./mohsenMahmoodzadeh.js" type="text/javascript" params="121"></script>
 </html>
