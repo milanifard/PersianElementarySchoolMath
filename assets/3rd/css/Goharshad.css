@@ -33,15 +33,26 @@
 
 }
 
-body{margin: 0;}
+body {
+    margin: 0;
+}
 
-/* In order to ignore input top-down btn */
-input[type='number'] {-moz-appearance:textfield;}
+@font-face {
+    font-family: 'zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {-webkit-appearance: none;}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
 
-#right-frame{
+#right-frame {
 
     width: 90vw;
     max-width: 100%;
@@ -56,7 +67,7 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     background-color: white;
 }
 
-.left-frame{
+.left-frame {
     width: 90vw;
     max-width: 100%;
 
@@ -70,7 +81,7 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     background-color: white;
 }
 
-.frame-background{
+.frame-background {
 
     width: 100vw;
     height: 53vw;
@@ -84,7 +95,7 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     z-index: -1;
 }
 
-.page-number{
+.page-number {
 
     background-color: var(--yellow_level4_guessbox);
     border-radius: 2.5vw;
@@ -100,10 +111,12 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     bottom: -0.5vw;
     right: -5vw;
 }
-#header{
+
+#header {
     font-family: Koodak;
 }
-#header-container{
+
+#header-container {
 
     background-color: var(--yellow_level3_border);
     border-radius: 2vw;
@@ -120,7 +133,8 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     top: -3.3vw;
 }
 
-#header-around{
+
+#header-around {
     height: 1.5vw;
 
     background-color: var(--red_level2);
@@ -132,7 +146,7 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     top: -1.2vw;
 }
 
-.activity-label{
+.activity-label {
 
     background-color: var(--yellow_level3_border);
     border-radius: 1.5vw;
@@ -149,7 +163,7 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     z-index: 1;
 }
 
-.activity-icon{
+.activity-icon {
 
     width: 13vw;
     position: absolute;
@@ -158,50 +172,67 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     z-index: 2;
 }
 
-.text-config{
-    font-family: Zar;
+.text-config {
+    font-family: 'zar', serif;
     font-size: 2vw;
     direction: rtl;
-    white-space: pre-wrap;
 }
 
-.questions-text-config{
+.questions-text-config {
     padding-right: 5vw;
     padding-left: 3vw;
     padding-bottom: 2vw;
     margin-top: 2vw;
 }
 
-#q1-orange-container{
-    background-color: orange;
+.inline-q {
+    direction: rtl;
+    margin: 2vw;
 }
-.table-container{
-    border-radius: 8px;
+
+
+
+#q1-orange-container {
+    background-color: orangered;
+}
+
+#q2-orange-container {
+    background-color: orangered;
+}
+
+.q1-table-container {
+    border-radius: 10px;
     width: 75vw;
     max-width: 75%;
     height: 240px;
     margin: auto auto;
     padding: 20px;
 }
-.class-table{
-    width: 65vw;
+
+.q2-table-container {
+    border-radius: 10px;
+    width: 75vw;
+    max-width: 75%;
+    height: 100px;
     margin: auto auto;
-    border-collapse: collapse;
-    font-size: 1.5vw;
-    direction: rtl;
-    font-family: Koodak;
-    table-layout: fixed;
+    padding: 20px; /*l*/
 }
 
-table td {
-    position: relative;
+.class-table {
+    width: 55vw;
+    margin: auto auto;
+    font-size: 1.5vw;
+    direction: rtl;
+    font-family: 'zar', serif;
+    table-layout: fixed;
+    border-collapse: collapse;
 }
 
 table td input {
     position: absolute;
     display: block;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     margin: 0;
     height: 100%;
     width: 100%;
@@ -210,49 +241,34 @@ table td input {
     box-sizing: border-box;
 }
 
-td{
+td {
+    position: relative;
     padding: 0.7vw;
     border: 0.25vw solid #000000;
     font-size: 1.5vw;
-    font-family: Koodak;
+    font-family: 'zar';
     text-align: center;
 }
 
-.simple-table{
+.simple-table {
     width: 65vw;
     margin: 0 3vw 0 3vw;
     border-collapse: collapse;
     font-size: 1.5vw;
-    font-family: Koodak;
+    font-family: 'zar';
 }
 
-.simple-td{
+.green-td {
     padding: 0.7vw;
-    border: 0.3vw solid var(--orange_level3);
+    border: 0.2vw solid #000000;
     font-size: 1.5vw;
-    font-family: Koodak;
+    font-family: 'zar';
     text-align: center;
-}
-
-.simple-td-green{
-    padding: 0.7vw;
-    border: 0.3vw solid var(--green_level4);
-    font-size: 1.5vw;
-    font-family: Koodak;
-    text-align: center;
-}
-
-.simple-table-border{
-    float: left;
-    border: 1vw solid var(--orange_level2);
-    border-radius: 2vw;
-    padding: 1vw;
-    width: 30vw;
-    margin-left: 5vw;
+    background-color: green;
 }
 
 .shaking-animation {
-    animation: shake 1.5s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -276,7 +292,7 @@ td{
     }
 }
 
-.page-no-input{
+.page-no-input {
 
     width: 25vw;
 
@@ -287,19 +303,47 @@ td{
     margin: auto;
 }
 
-#Q1{padding-top: 6vw; padding-right: 15vw; margin-top: 3vw;}
+#Q1 {
+    padding-top: 6vw;
+    padding-right: 15vw;
+    margin-top: 3vw;
+}
 
-.color-picker-container{float: left; margin-left: -12vw;}
+.color-picker-container {
+    float: left;
+    margin-left: -12vw;
+}
 
-#Q1_clock_img{width: 10vw; padding-left: 7vw; padding-top: 1vw;}
-#Q2{padding-top: 2vw;}
+#Q1_clock_img {
+    position: relative;
+    bottom: 2vw;
+    float: left;
+    width: 20vw;
+    padding-left: 7vw;
+    padding-top: 1vw;
+}
 
-.colored-td-yellow{background-color: var(--yellow_level3_border);}
-.colored-td-red{background-color: var(--red_level1);}
-.colored-td-blue{background-color: var(--blue_level1);}
-.colored-td-green{background-color: var(--green_level2);}
+#Q2 {
+    padding-top: 2vw;
+}
 
-.page-number-input{
+.colored-td-yellow {
+    background-color: var(--yellow_level3_border);
+}
+
+.colored-td-red {
+    background-color: var(--red_level1);
+}
+
+.colored-td-blue {
+    background-color: var(--blue_level1);
+}
+
+.colored-td-green {
+    background-color: var(--green_level2);
+}
+
+.page-number-input {
 
     background-color: var(--yellow_level4_guessbox);
     border-radius: 2.5vw;
@@ -313,7 +357,14 @@ td{
     float: left;
 }
 
-#next_btn{float: left; margin-right: 1.5vw;}
-#pre_btn{float: left; margin-left: 1.5vw;}
+#next_btn {
+    float: left;
+    margin-right: 1.5vw;
+}
+
+#pre_btn {
+    float: left;
+    margin-left: 1.5vw;
+}
 
 /* page 125 */
