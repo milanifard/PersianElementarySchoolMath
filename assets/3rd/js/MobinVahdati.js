@@ -80,6 +80,18 @@ class CanvasHandler {
                 context.strokeStyle = 'black'; // initial brush color
                 context.strokeRect(mouseXs - STROKE_SIZE, mouseYs - STROKE_SIZE, count(mouseXe + Math.ceil(CELL_SIZE / 2) - mouseXs) * CELL_SIZE, count(mouseYe + Math.ceil(CELL_SIZE / 2) - mouseYs) * CELL_SIZE);
                 context.strokeStyle = '#44B869'; // initial brush color
+
+                context.clearRect(mouseXs - STROKE_SIZE, mouseYs - STROKE_SIZE, count(mouseXe + Math.ceil(CELL_SIZE / 2) - mouseXs) * CELL_SIZE, count(mouseYe + Math.ceil(CELL_SIZE / 2) - mouseYs) * CELL_SIZE);
+
+                for (let i = 0; i < count(mouseX + Math.ceil(CELL_SIZE / 2) - mouseXs); i++) {
+                    for (let j = 0; j < count(mouseY + Math.ceil(CELL_SIZE / 2) - mouseYs); j++) {
+                        let x = mouseXs + (i * CELL_SIZE);
+                        let y = mouseYs + (j * CELL_SIZE);
+
+                        context.fillRect(x, y, CELL_SIZE - STROKE_SIZE * 2, CELL_SIZE - STROKE_SIZE * 2);
+                        context.strokeRect(x, y, CELL_SIZE - STROKE_SIZE * 2, CELL_SIZE - STROKE_SIZE * 2);
+                    }
+                }
             }
             isDrawing = false;
             if (Date.now() - time < 500) {
@@ -87,6 +99,9 @@ class CanvasHandler {
                 obj.correct = true;
                 obj.groupCount = 0;
             }else{
+                if (h * w <= 0) {
+                    return;
+                }
 
                 console.log(h)
                 console.log(w)
@@ -339,7 +354,7 @@ function correct_e7(){
     }
 }
 
-document.getElementsbyID("page_switcher").onkeypress = function (e) {
+document.getElementById("page_switcher").onkeypress = function (e) {
 
     if (e.which === 13) {
 
@@ -351,6 +366,6 @@ document.getElementsbyID("page_switcher").onkeypress = function (e) {
         tag.id = "switch";
         document.body.appendChild(tag);
 
-        $("switch").click();
+        document.getElementById("switch").click();
     }
 }
