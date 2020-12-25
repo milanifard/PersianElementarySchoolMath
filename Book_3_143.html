@@ -218,8 +218,10 @@
                             <input id="PB5Sub1" class="cross-input">
                             <br>
                             <input id="PB5Sub2" class="cross-input" type="number">
-                            <hr>
+                            <br>
                             <input id="PB5Sub3" class="cross-input" type="number">
+                            <hr>
+                            <input id="PB5Sub4" class="cross-input" type="number">
                         </div>
                         <button class="btn btn--primary uppercase" type="button" onclick="correct_q13()"
                                 style="margin: 0 auto; position: absolute; bottom: 2vw;"><span class="ok">تصحیح</span></button>
@@ -237,23 +239,23 @@
                     <img src="assets/3rd/images/MobinVahdati/pencil.png" style="width: 16vw; margin-top: 4vw">
                     <div class="text-config-no-wrap" style="direction: ltr; margin-left: 2vw">
                         <div style="display: flex; align-items: center">21×189<img src="assets/3rd/images/MobinVahdati/arrow.png" class="arrow">
-                            20×200= <input id="PC1Sub1" class="cross-input" type="number" style="margin: 2vw">
+                            20×200= <input onchange="correct_pc1()" id="PC1Sub1" class="field" type="number" style="margin: 2vw">
                         </div>
                         <div style="display: flex; align-items: center">341×176<img src="assets/3rd/images/MobinVahdati/arrow.png" class="arrow">
-                            300×200=<input id="PC1Sub2" class="cross-input" type="number" style="margin: 2vw"></div>
+                            300×200=<input onchange="correct_pc2()" id="PC1Sub2" class="field" type="number" style="margin: 2vw"></div>
                         <div style="display: flex; align-items: center">29×410<img src="assets/3rd/images/MobinVahdati/arrow.png" class="arrow">
-                            <input id="PC1Sub3" class="cross-input" type="number" style="margin: 2vw">×<input id="PC1Sub4" class="cross-input" type="number" style="margin: 2vw">= <input id="PC1Sub5" class="cross-input" type="number" style="margin: 2vw">
+                            <input onchange="correct_pc3()" id="PC1Sub3" class="cross-input" type="number" style="margin: 2vw">×<input onchange="correct_pc4()" id="PC1Sub4" class="cross-input" type="number" style="margin: 2vw">= <input onchange="correct_pc5()" id="PC1Sub5" class="field" type="number" style="margin: 2vw">
                         </div>
                         <div style="display: flex; align-items: center">9×407<img src="assets/3rd/images/MobinVahdati/arrow.png" class="arrow">
-                            <input id="PC1Sub6" class="cross-input" type="number" style="margin: 2vw">×<input id="PC1Sub7" class="cross-input" type="number" style="margin: 2vw">= <input id="PC1Sub8" class="cross-input" type="number" style="margin: 2vw">
+                            <input onchange="correct_pc6()" id="PC1Sub6" class="cross-input" type="number" style="margin: 2vw">×<input onchange="correct_pc7()" id="PC1Sub7" class="cross-input" type="number" style="margin: 2vw">= <input onchange="correct_pc8()" id="PC1Sub8" class="field" type="number" style="margin: 2vw">
                         </div>
 
                         <div id="guess_box_feedback" class="text-config"></div>
                     </div>
                 </div>
 
-                <div class="text-config guess_box_question", style="display: flex"><span class="colorNumberSpan">۲ــ </span>دبستان کوشش 12 کلاس دارد. هر کلاس 32 دانش‌آموز دارد.
-                    این دبستان به‌طور تقریبی چند دانش‌آموز دارد؟<input id="PC2" class="cross-input" type="number" style="width: 10vw; margin: 2vw">
+                <div class="text-config"><span class="colorNumberSpan">۲ــ </span>دبستان کوشش 12 کلاس دارد. هر کلاس 32 دانش‌آموز دارد.
+                    این دبستان به‌طور تقریبی چند دانش‌آموز دارد؟<input onchange="correct_pc9()" id="PC2" class="field" type="number" style="width: 10vw; margin: 2vw">
                 </div>
             </div>
 

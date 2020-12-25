@@ -276,6 +276,109 @@ function correct_q14(){
     }
 }
 
+// Page 143
+
+function correct_pc1(){
+    let elementById = document.getElementById('PC1Sub1');
+    if(elementById.value === "4000"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+}
+
+function correct_pc2(){
+    let elementById = document.getElementById('PC1Sub2');
+    if(elementById.value === "60000"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+}
+
+function correct_pc3(){
+    let elementById = document.getElementById('PC1Sub3');
+    if(elementById.value === "30"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+}
+
+function correct_pc4(){
+    let elementById = document.getElementById('PC1Sub4');
+    if(elementById.value === "400"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+}
+
+function correct_pc5(){
+    let elementById = document.getElementById('PC1Sub5');
+    if(elementById.value === "12000"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+}
+
+function correct_pc6(){
+    let elementById = document.getElementById('PC1Sub6');
+    if(elementById.value === "10"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+}
+
+function correct_pc7(){
+    let elementById = document.getElementById('PC1Sub7');
+    if(elementById.value === "400"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+}
+
+function correct_pc8(){
+    let elementById = document.getElementById('PC1Sub8');
+    if(elementById.value === "4000"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+}
+
+function correct_pc9(){
+    let elementById = document.getElementById('PC1Sub9');
+    if(elementById.value === "300"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+}
+
+// Page 144
+
 function correct_e1(){
     console.log("LOG")
     let elementById = document.getElementById('E1');
