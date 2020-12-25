@@ -1,10 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="author" content="Hamed-Goharshad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/3rd/css/Goharshad.css">
+    <!--<link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css">-->
+  <!--  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js"></script>-->
 </head>
 <body>
+<div>
+    <div class="left-frame">
+        <div class="background-style background-style-margin"></div>
+        <div id="activity_item">
+            <img id="activity_img" class="activity-image" src="assets/3rd/images/classwork.png" alt="activity_image">
+            <div id="activity_txt" class="activity-text">کار در کلاس</div>
+        </div>
 
+        <div id="Q1_container">
+            <div id="Q1_119" class="text-config questions-text-config">دمای هوای یک شهر در روزها و ساعتهای مختلف یک هفته
+                در جدول زیر نشان داده شده است.
+                هرچه هوا گرمتر باشد، عددی که دمای هوا را نشان میدهد، بیشتر است
+            </div>
+            <div>
+                <img id="Q1_119_img_sun" src="assets/3rd/images/goharshad/Page-2-Image-6.png" alt="sun">
+            </div>
+
+            <div id="Q1_table_container">
+                <span><img id="Q1_Thermometer" src="assets/3rd/images/goharshad/temp-img-119.png"
+                           alt="pencil"></span>
+                <span>
+                         <div id="table_container_119">
+                            <table id="table_119" class="class-table" dir="rtl">
+                        <tr>
+                            <td class="colored-td-green">روز / ساعت</td>
+                            <td class="colored-td-blue">4 صبح</td>
+                            <td class="colored-td-blue">8 صبح</td>
+                            <td class="colored-td-blue">12 ظهر</td>
+                            <td class="colored-td-blue">4 بعد از ظهر</td>
+                            <td class="colored-td-blue">8 بعد از ظهر</td>
+                            <td class="colored-td-blue">12 شب</td>
+                        </tr>
+                        <tr>
+                            <td class="colored-td-yellow">شنبه</td>
+                            <td class="simple-td">2</td>
+                            <td class="simple-td">4</td>
+                            <td class="simple-td">12</td>
+                            <td class="simple-td">16</td>
+                            <td class="simple-td">10</td>
+                            <td class="simple-td">5</td>
+                        </tr>
+                        <tr>
+                            <td class="colored-td-yellow">یک شنبه</td>
+                            <td class="simple-td">0</td>
+                            <td class="simple-td">2</td>
+                            <td class="simple-td">10</td>
+                            <td class="simple-td">8</td>
+                            <td class="simple-td">8</td>
+                            <td class="simple-td">4</td>
+                        </tr>
+                        <tr>
+                            <td class="colored-td-yellow">دوشنبه</td>
+                            <td class="simple-td">1</td>
+                            <td class="simple-td">2</td>
+                            <td class="simple-td">8</td>
+                            <td class="simple-td">10</td>
+                            <td class="simple-td">6</td>
+                            <td class="simple-td">4</td>
+                        </tr>
+                        <tr>
+                            <td class="colored-td-yellow">سه شنبه</td>
+                            <td class="simple-td">2</td>
+                            <td class="simple-td">4</td>
+                            <td class="simple-td">14</td>
+                            <td class="simple-td">12</td>
+                            <td class="simple-td">10</td>
+                            <td class="simple-td">8</td>
+                        </tr>
+                        <tr>
+                            <td class="colored-td-yellow">چهارشنبه</td>
+                            <td class="simple-td">3</td>
+                            <td class="simple-td">4</td>
+                            <td class="simple-td">18</td>
+                            <td class="simple-td">15</td>
+                            <td class="simple-td">12</td>
+                            <td class="simple-td">7</td>
+                        </tr>
+                                <tr>
+                            <td class="colored-td-yellow">پنج شنبه</td>
+                            <td class="simple-td">4</td>
+                            <td class="simple-td">5</td>
+                            <td class="simple-td">18</td>
+                            <td class="simple-td">17</td>
+                            <td class="simple-td">15</td>
+                            <td class="simple-td">10</td>
+                                </tr>
+                                <tr>
+                            <td class="colored-td-yellow">جمعه</td>
+                            <td class="simple-td">4</td>
+                            <td class="simple-td">6</td>
+                            <td class="simple-td">17</td>
+                            <td class="simple-td">15</td>
+                            <td class="simple-td">12</td>
+                            <td class="simple-td">9</td>
+                        </tr>
+                    </table>
+                         </div>
+                </span>
+            </div>
+
+            <div id="desc_Q1_199_1" class="text-config questions-text-config">
+                <span>بیشترین دما در چه روز و چه ساعتی بوده است؟</span>
+                <span>روز : </span>
+                <span>
+                    <select class="form-control">
+                    <option>شنبه</option>
+                    <option>یکشنبه</option>
+                    <option>دوشنبه</option>
+                    <option>سه شنبه</option>
+                    <option>چهارشنبه</option>
+                    <option>پنج شنبه</option>
+                    <option>جمعه</option>
+                </select>
+                </span>
+                <span>ساعت : </span>
+                <span>
+                    <select class="form-control">
+                    <option>4 صبح</option>
+                    <option>8 صبح</option>
+                    <option>12 ظهر</option>
+                    <option>4 بعد از ظهر</option>
+                    <option>8 بعد از ظهر</option>
+                    <option>12 شب</option>
+                </select>
+                </span>
+
+            </div>
+            <div id="desc_Q1_199_2" class="text-config questions-text-config">
+                <span>کمترین دما در چه روز و چه ساعتی بوده است؟</span>
+                <span>روز : </span>
+                <span>
+                    <select class="form-control">
+                    <option>شنبه</option>
+                    <option>یکشنبه</option>
+                    <option>دوشنبه</option>
+                    <option>سه شنبه</option>
+                    <option>چهارشنبه</option>
+                    <option>پنج شنبه</option>
+                    <option>جمعه</option>
+                </select>
+                </span>
+                <span>ساعت : </span>
+                <span>
+                    <select class="form-control">
+                    <option>4 صبح</option>
+                    <option>8 صبح</option>
+                    <option>12 ظهر</option>
+                    <option>4 بعد از ظهر</option>
+                    <option>8 بعد از ظهر</option>
+                    <option>12 شب</option>
+                </select>
+                </span>
+            </div>
+
+            <div id="desc_Q1_199_3" class="text-config questions-text-config">
+                <span>بیشترین تغییرات دما در روزهای شنبه، دوشنبه و چهارشنبه در چه زمانی اتّفاق افتاده است؟</span>
+                <div>
+                    <span>شنبه از ساعت : </span>
+                    <span>
+                    <select class="form-control">
+                    <option>4 صبح</option>
+                    <option>8 صبح</option>
+                    <option>12 ظهر</option>
+                    <option>4 بعد از ظهر</option>
+                    <option>8 بعد از ظهر</option>
+                    <option>12 شب</option>
+                </select>
+                </span>
+                    <span> الی </span>
+                    <span>
+                    <select class="form-control">
+                    <option>4 صبح</option>
+                    <option>8 صبح</option>
+                    <option>12 ظهر</option>
+                    <option>4 بعد از ظهر</option>
+                    <option>8 بعد از ظهر</option>
+                    <option>12 شب</option>
+                </select>
+                </span>
+                </div>
+                <div>
+                    <span>دوشنبه از ساعت : </span>
+                    <span>
+                    <select class="form-control">
+                    <option>4 صبح</option>
+                    <option>8 صبح</option>
+                    <option>12 ظهر</option>
+                    <option>4 بعد از ظهر</option>
+                    <option>8 بعد از ظهر</option>
+                    <option>12 شب</option>
+                </select>
+                </span>
+                    <span> الی </span>
+                    <span>
+                    <select class="form-control">
+                    <option>4 صبح</option>
+                    <option>8 صبح</option>
+                    <option>12 ظهر</option>
+                    <option>4 بعد از ظهر</option>
+                    <option>8 بعد از ظهر</option>
+                    <option>12 شب</option>
+                </select>
+                </span>
+                </div>
+                <div>
+                    <span>چهارشنبه از ساعت : </span>
+                    <span>
+                    <select class="form-control">
+                    <option>4 صبح</option>
+                    <option>8 صبح</option>
+                    <option>12 ظهر</option>
+                    <option>4 بعد از ظهر</option>
+                    <option>8 بعد از ظهر</option>
+                    <option>12 شب</option>
+                </select>
+                </span>
+                    <span> الی </span>
+                    <span>
+                    <select class="form-control">
+                    <option>4 صبح</option>
+                    <option>8 صبح</option>
+                    <option>12 ظهر</option>
+                    <option>4 بعد از ظهر</option>
+                    <option>8 بعد از ظهر</option>
+                    <option>12 شب</option>
+                </select>
+                </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="guess_box_level1" class="guess-box-level1">
+            <div class="guess-box-text-left">بگرد و پیدا کن</div>
+            <span class="text-config center-vertical" style="right: 5vw">به شکلهای مقابل
+                <span style="color: #d365aa">استوانه </span>
+                میگویند.
+            </span>
+            <span>
+                    <img class="center-vertical" style="right: 35%;top: 30%;width: 15vw;" src="assets/3rd/images/goharshad/cylindrical.png"/>
+                </span>
+            <div class="text-config " style="position: absolute; bottom: 2vw;right: 5vw;">
+                در تصویر روبه رو شکل های استوانه ای را با علامت
+                <span style="color: #d365aa;font-weight: bold;">×</span>
+                مشخص کنید.
+            </div>
+            <div class="guess-box-level2">
+                <img class="rounded-image" src="assets/3rd/images/goharshad/Page-2-Image-7.png" style="width: 30vw;">
+            </div>
+
+            <div id="guess_box_feedback" class="text-config"></div>
+
+        </div>
+
+        <div class="page-number page-number-left">119</div>
+        <div class="page-no-input">
+            <div id="next_btn">
+                <a href="book_3_120.html">
+                    <img src="assets/3rd/images/left-arrow.png" alt="next_page" style="width: 3vw">
+                </a>
+            </div>
+            <div>
+                <input class="page-number-input" type="number" name="page_number" id="page_switcher"
+                       style="width: 5vw">
+            </div>
+            <div id="pre_btn">
+                <a href="book_3_118.html">
+                    <img src="assets/3rd/images/right-arrow.png" alt="next_page" style="width: 3vw">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
+<script src="assets/3rd/js/Goharshad.js" type="text/javascript"></script>
 </html>

@@ -15,7 +15,7 @@
 
 #Circle1 {
     @extend .circleContainer;
-    float: left; 
+    // float: left; 
     margin-top: 5vw; 
     border: 2px solid $black; 
     animation-fill-mode: forwards;
@@ -54,11 +54,9 @@
 }
 
 #clock-needle:after{
-    width: 0;
-    height: 0;
-    border-bottom: 0.5vw solid transparent;
-    border-top: 0.5vw solid transparent;
-    border-left: 1.1vw solid $black;
+    width: 4vw;
+    height: 0.3vw;
+    background-color: $black;
     display: inline-block;
     vertical-align: middle;
     content: "";
@@ -66,18 +64,25 @@
 }
 
 #clock-needle:before{
-    width: 4vw;
-    height: 0.3vw;
-    background-color: $black;
+    width: 0;
+    height: 0;
+    border-bottom: 0.5vw solid transparent;
+    // border-top: 0.5vw solid transparent;
+    // border-left: 1.1vw solid $black;
+    border-top: 8px solid transparent;
+    border-left: 8px solid $black;
     display: inline-block;
     vertical-align: middle;
     content: "";
+
+    
 }
 
 
 #clock-needle {
     position:absolute; 
-    margin-left: 16.4vw; 
-    margin-top: 9.5vw; 
+    // margin-left: 1vw; 
+    margin-right: 3vw;
+    margin-top: 4.5vw; 
     transform: rotate(-45deg)
 }
