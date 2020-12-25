@@ -33,13 +33,9 @@
 
 }
 
+/*Global*/
 body {
     margin: 0;
-}
-
-@font-face {
-    font-family: 'zar';
-    src: url("../../fonts/Zar.woff") format("woff");
 }
 
 input[type='number'] {
@@ -49,183 +45,6 @@ input[type='number'] {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-}
-
-
-#right-frame {
-
-    width: 90vw;
-    max-width: 100%;
-
-    border: 0.8vw double var(--yellow_level2_border);
-
-    margin: 6vw 10vw 0 0;
-    border-left: none;
-    border-top-right-radius: 5vw;
-    border-bottom-right-radius: 5vw;
-    position: relative;
-    background-color: white;
-}
-
-.left-frame {
-    width: 90vw;
-    max-width: 100%;
-
-    border: 0.8vw double var(--yellow_level2_border);
-
-    margin: 6vw 0 0 10vw;
-    border-right: none;
-    border-top-left-radius: 5vw;
-    border-bottom-left-radius: 5vw;
-    position: relative;
-    background-color: white;
-}
-
-.frame-background {
-
-    width: 100vw;
-    height: 53vw;
-
-    background-image: repeating-linear-gradient(0deg, var(--yellow_level2_border), var(--yellow_level2_border) 1vw, var(--yellow_level3_border) 0vw, var(--yellow_level3_border) 2.5vw);
-    background-position: bottom;
-    background-repeat: no-repeat;
-
-    position: absolute;
-    bottom: -12vw;
-    z-index: -1;
-}
-
-.page-number {
-
-    background-color: var(--yellow_level4_guessbox);
-    border-radius: 2.5vw;
-    border: 0.9vw double white;
-
-    text-align: center;
-    font-size: 2vw;
-    font-family: Koodak;
-    color: white;
-
-    padding: 0 3vw;
-    position: absolute;
-    bottom: -0.5vw;
-    right: -5vw;
-}
-
-#header {
-    font-family: Koodak;
-}
-
-#header-container {
-
-    background-color: var(--yellow_level3_border);
-    border-radius: 2vw;
-
-    text-align: center;
-    font-family: Koodak;
-    font-size: 3vw;
-    color: black;
-
-    padding: 0 2vw;
-    position: absolute;
-    right: 33vw;
-    left: 33vw;
-    top: -3.3vw;
-}
-
-
-#header-around {
-    height: 1.5vw;
-
-    background-color: var(--red_level2);
-    color: var(--red_level2);
-
-    position: absolute;
-    right: 32vw;
-    left: 32vw;
-    top: -1.2vw;
-}
-
-.activity-label {
-
-    background-color: var(--yellow_level3_border);
-    border-radius: 1.5vw;
-
-    text-align: center;
-    font-family: Koodak;
-    font-size: 2.5vw;
-    color: white;
-
-    padding: 0 11vw 0 3vw;
-    position: absolute;
-    right: 2vw;
-    top: 2.5vw;
-    z-index: 1;
-}
-
-.activity-icon {
-
-    width: 13vw;
-    position: absolute;
-    right: -2.3vw;
-    top: 0.5vw;
-    z-index: 2;
-}
-
-.text-config {
-    font-family: 'zar', serif;
-    font-size: 2vw;
-    direction: rtl;
-}
-
-.questions-text-config {
-    padding-right: 5vw;
-    padding-left: 3vw;
-    padding-bottom: 2vw;
-    margin-top: 2vw;
-}
-
-.inline-q {
-    direction: rtl;
-    margin: 2vw;
-}
-
-
-
-#q1-orange-container {
-    background-color: orangered;
-}
-
-#q2-orange-container {
-    background-color: orangered;
-}
-
-.q1-table-container {
-    border-radius: 10px;
-    width: 75vw;
-    max-width: 75%;
-    height: 240px;
-    margin: auto auto;
-    padding: 20px;
-}
-
-.q2-table-container {
-    border-radius: 10px;
-    width: 75vw;
-    max-width: 75%;
-    height: 100px;
-    margin: auto auto;
-    padding: 20px; /*l*/
-}
-
-.class-table {
-    width: 55vw;
-    margin: auto auto;
-    font-size: 1.5vw;
-    direction: rtl;
-    font-family: 'zar', serif;
-    table-layout: fixed;
-    border-collapse: collapse;
 }
 
 table td input {
@@ -243,88 +62,148 @@ table td input {
 
 td {
     position: relative;
-    padding: 0.7vw;
     border: 0.25vw solid #000000;
     font-size: 1.5vw;
-    font-family: 'zar';
+    font-family: Zar, serif;
     text-align: center;
+    background-clip: padding-box;
 }
 
-.simple-table {
-    width: 65vw;
-    margin: 0 3vw 0 3vw;
-    border-collapse: collapse;
-    font-size: 1.5vw;
-    font-family: 'zar';
+/**************Fonts***************/
+@font-face {
+    font-family: Zar;
+    src: url("../../fonts/Zar.woff") format("woff");
 }
 
-.green-td {
-    padding: 0.7vw;
-    border: 0.2vw solid #000000;
-    font-size: 1.5vw;
-    font-family: 'zar';
+@font-face {
+    font-family: Koodak;
+    src: url("../../fonts/KoodakBold.ttf");
+}
+
+/******************Classes******************/
+.background-style-margin {
+    left: -10vw;
+}
+
+.background-style {
+    width: 100vw;
+    height: 53vw;
+    background-image: repeating-linear-gradient(0deg, var(--yellow_level2_border), var(--yellow_level2_border) 1vw, var(--yellow_level3_border) 0vw, var(--yellow_level3_border) 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+}
+
+.left-frame {
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double var(--yellow_level2_border);
+    margin: 6vw 0 0 10vw;
+    border-right: none;
+    border-top-left-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+
+.activity-image {
+    width: 13vw;
+    position: absolute;
+    right: -2.3vw;
+    top: 0.5vw;
+    z-index: 2;
+}
+
+.activity-text {
+    background-color: var(--yellow_level3_border);
+    border-radius: 1.5vw;
     text-align: center;
-    background-color: green;
+    font-family: Koodak, serif;
+    font-size: 2.5vw;
+    color: white;
+    padding: 0 11vw 0 3vw;
+    position: absolute;
+    right: 2vw;
+    top: 2.5vw;
+    z-index: 1;
 }
 
-.shaking-animation {
-    animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-}
+.frame-background {
 
-@keyframes shake {
-    10%, 90% {
-        transform: translate3d(-1px, 0, 0);
-    }
+    width: 100vw;
+    height: 53vw;
 
-    20%, 80% {
-        transform: translate3d(2px, 0, 0);
-    }
-
-    30%, 50%, 70% {
-        transform: translate3d(-4px, 0, 0);
-    }
-
-    40%, 60% {
-        transform: translate3d(4px, 0, 0);
-    }
-}
-
-.page-no-input {
-
-    width: 25vw;
+    background-image: repeating-linear-gradient(0deg, var(--yellow_level2_border), var(--yellow_level2_border) 1vw, var(--yellow_level3_border) 0vw, var(--yellow_level3_border) 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
 
     position: absolute;
-    right: 0;
-    left: 0;
-    bottom: -7vw;
-    margin: auto;
+    bottom: -12vw;
+    z-index: -1;
 }
 
-#Q1 {
-    padding-top: 6vw;
-    padding-right: 15vw;
-    margin-top: 3vw;
+.page-number {
+    background-color: var(--yellow_level4_guessbox);
+    border-radius: 2.5vw;
+    border: 0.9vw double white;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Koodak, serif;
+    color: white;
+    padding: 0 3vw;
+    position: absolute;
+    bottom: -0.5vw;
+    right: -5vw;
 }
 
-.color-picker-container {
-    float: left;
-    margin-left: -12vw;
+.text-config {
+    font-family: Zar, serif;
+    font-size: 2vw;
+    direction: rtl;
 }
 
-#Q1_clock_img {
-    position: relative;
-    bottom: 2vw;
-    float: left;
-    width: 20vw;
-    padding-left: 7vw;
-    padding-top: 1vw;
+.questions-text-config {
+    padding-right: 5vw;
+    padding-left: 3vw;
+    padding-bottom: 2vw;
+    margin-top: 2vw;
 }
 
-#Q2 {
-    padding-top: 2vw;
+.inline-q {
+    direction: rtl;
+    margin: 2vw;
+
+}
+
+.q1-table-container {
+    border-radius: 10px;
+    width: 75vw;
+    max-width: 75%;
+    height: 240px;
+    margin: auto auto;
+    padding: 20px;
+}
+
+
+.q2-table-container {
+    border-radius: 10px;
+    width: 75vw;
+    max-width: 75%;
+    height: 100px;
+    margin: auto auto;
+    padding: 20px; /*l*/
+}
+
+.class-table {
+    width: 55vw;
+    margin: auto auto;
+    font-size: 1.5vw;
+    direction: rtl;
+    font-family: Zar, serif;
+    table-layout: fixed;
+    border-collapse: collapse;
 }
 
 .colored-td-yellow {
@@ -357,6 +236,198 @@ td {
     float: left;
 }
 
+.simple-table {
+    width: 65vw;
+    margin: 0 3vw 0 3vw;
+    border-collapse: collapse;
+    font-size: 1.5vw;
+    font-family: Zar, serif;
+}
+
+.green-td {
+    padding: 0.7vw;
+    border: 0.2vw solid #000000;
+    font-size: 1.5vw;
+    font-family: Zar, serif;
+    text-align: center;
+    background-color: green;
+}
+
+.shaking-animation {
+    animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.color-picker-container {
+    float: left;
+    margin-left: -12vw;
+}
+
+.page-no-input {
+
+    width: 25vw;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -7vw;
+    margin: auto;
+}
+
+.rotate-img {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-10deg);
+}
+
+.page-number-left {
+    left: -5vw;
+    right: auto;
+}
+
+.orange_background {
+    background-color: orangered;
+}
+
+.simple-td {
+    font-size: 1.5vw;
+    font-family: Zar, serif;
+    text-align: center;
+    background-color: white;
+}
+
+.guess-box-level1 {
+    background-color: var(--yellow_level1_guessbox);
+    border: 0.4vw solid var(--yellow_level4_guessbox);
+    border-radius: 4vw;
+
+    position: relative;
+    padding: 1.5vw;
+    margin: 18vw 1.5vw 6vw 7vw;
+}
+
+.guess-box-text-left {
+    background-color: var(--yellow_level3_border);
+    border-radius: 0 01.5vw 1.5vw 0;
+    border-left: 2vw solid var(--yellow_level4_guessbox);
+
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.5vw;
+    color: white;
+
+    padding: 0 2vw 0 3vw;
+    position: absolute;
+    left: -1.5vw;
+    top: 3vw;
+    z-index: 1;
+}
+
+.rounded-image {
+    border-radius: 2vw;
+}
+
+.guess-box-level2 {
+    width: 70vw;
+    position: relative;
+    padding: 1.5vw;
+    margin-top: 2vw;
+    margin-right: 30vw;
+}
+
+.center-vertical {
+    position: absolute;
+    top: 50%;
+}
+
+/*********************IDs*******************/
+#right_frame {
+    width: 90vw;
+    max-width: 100%;
+    border: 0.8vw double var(--yellow_level2_border);
+    margin: 6vw 10vw 0 0;
+    border-left: none;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    position: relative;
+    background-color: white;
+}
+
+#header {
+    font-family: Koodak, serif;
+}
+
+#activity_img {
+    margin-right: 5vw;
+}
+
+#activity_txt {
+    margin-right: 3vw;
+    float: right;
+}
+
+#header_container {
+    background-color: var(--yellow_level3_border);
+    border-radius: 2vw;
+    text-align: center;
+    font-family: Koodak, serif;
+    font-size: 3vw;
+    color: black;
+    padding: 0 2vw;
+    position: absolute;
+    right: 33vw;
+    left: 33vw;
+    top: -3.3vw;
+}
+
+#header-around {
+    height: 1.5vw;
+    background-color: var(--red_level2);
+    color: var(--red_level2);
+    position: absolute;
+    right: 32vw;
+    left: 32vw;
+    top: -1.2vw;
+}
+
+#q1-orange-container {
+    background-color: orangered;
+}
+
+#q2-orange-container {
+    background-color: orangered;
+}
+
+#Q1 {
+    padding-top: 6vw;
+    padding-right: 15vw;
+    margin-top: 3vw;
+}
+
+#Q1_119 {
+    padding-top: 6vw;
+    padding-right: 17vw;
+    margin-top: 3vw;
+    float: right;
+}
+
+#Q1_clock_img {
+    position: relative;
+    bottom: 2vw;
+    float: left;
+    width: 20vw;
+    padding-left: 7vw;
+    padding-top: 1vw;
+}
+
+#Q2 {
+    padding-top: 2vw;
+}
+
 #next_btn {
     float: left;
     margin-right: 1.5vw;
@@ -367,4 +438,54 @@ td {
     margin-left: 1.5vw;
 }
 
-/* page 125 */
+#Q1_Thermometer {
+    position: absolute;
+    width: 5vw;
+    right: 12vw;
+}
+
+#Q1_119_img_sun {
+    position: relative;
+    width: 10vw;
+    top: -3vw;
+    left: 5vw;
+}
+
+#table_container_119 {
+    border-radius: 10px;
+    width: 75vw;
+    height: 55%;
+    max-width: 75%;
+    margin: auto auto;
+    padding: 20px;
+    background-color: #ffbaad;
+}
+
+#table_119 {
+    position: relative;
+    left: -5vw;
+}
+
+#guess_box_level1 {
+    clear: both;
+    left: -6vw;
+    margin-top: 2vw;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
