@@ -133,8 +133,8 @@
 }
 
 .guess-box-level1{
-    background-color: #e1f4fd;
-    border: 0.4vw solid #79c2d2;
+    background-color: var(--pink_level1);
+    border: 0.4vw solid var(--pink_level2);
     border-radius: 4vw;
     position: relative;
     padding: 1.5vw;
@@ -156,9 +156,9 @@
 }
 
 .guess-box-text-right{
-    background-color: #0c9ec3;
+    background-color: var(--pink_level3);
     border-radius: 1.5vw 0 0 1.5vw;
-    border-right: 2vw solid #79c2d2;
+    border-right: 2vw solid var(--pink_level2);
 
     text-align: center;
     font-family: Koodak;
@@ -171,6 +171,22 @@
     top: 1vw;
     z-index: 1;
 }
+
+.small-answer-box {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    resize: none;
+    width: 4vw;
+    height: 2vw;
+    border-color: #A5CDE0;
+    direction: ltr;
+    background-color: transparent;
+    text-align: center; }
+.small-answer-box:focus {
+    outline: none; }
+
+
 
 .Images_justify_center{
     display: flex;
@@ -198,6 +214,9 @@
 .Image_align_ {
     display: flex;
 }
+
+.ltr {
+    direction: ltr !important; }
 
 #Q_1_70 {
     padding-top: 4vw;
@@ -238,6 +257,14 @@
     padding-top: 8vw;
     padding-right: -6vw;
     padding-left: 0vw;
+}
+
+#lastPic71{
+    width: 40vw;
+    height: 30vw;
+    position: absolute;
+    padding-left: 8vw;
+    padding-bottom: -20vw;
 }
 
 .homework-image{

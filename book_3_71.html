@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="math">
-    <meta name="author" content="Jaber Rashki Ghale No">
+    <meta name="author" content="Jaber Rashki GhaleNo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ریاضی سوم دبستان-صفحه ۷۱ </title>
     <script src="assets/3rd/js/JR.js"></script>
@@ -25,19 +25,46 @@
         با نوشتن حاصل ضرب، درست بودن تساویهای زیر را بررسی کنید.
     </div>
 
-    <div id="Picture1_P71" class="Images_justify_center">
+    <div id="Picture1_P71" class="Images_justify_spacearound">
         <div>
             <picture>
                 <img src="assets/3rd/images/JR/71/left_rectangle_ver2.png" class="A_1_71_picture">
             </picture>
+            <div class="Images_justify_left number-config ">
+                <div >
+                 (۱*۷)+(۴*۷)=۵*۷
+                    <div class="Images_justify_left">
+                    <input id="page_71_A_first_1" class="small-answer-box mr-1 ml-1">
+                    +
+                    <input id="page_71_A_first_2" class="small-answer-box mr-1 ml-1">
+                    =
+                    <input id="page_71_A_first_3" class="small-answer-box mr-1 ml-1">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div>
             <picture>
                 <img src="assets/3rd/images/JR/71/right_rectangle_ver2.png" class="A_1_71_picture">
             </picture>
+            <div class="Images_justify_right number-config ">
+                <div >
 
+                    (۶*۵)+(۲*۵)= ۸*۵
+                    <div class="Images_justify_right">
+
+                    <input id="page_71_A_second_1" class="small-answer-box mr-1 ml-1" onchange="javascript: test_answer_type3(0,'page_71_A_second_1')">
+                    +
+                    <input id="page_71_A_second_2" class="small-answer-box mr-1 ml-1" onchange="javascript: test_answer_type3(1,'page_71_A_second_2')">
+                    =
+                    <input id="page_71_A_second_3" class="small-answer-box mr-1 ml-1" onchange="javascript: test_answer_type3(2,'page_71_A_second_3')">
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     </div>
 
     <div id="home_work-p71">
@@ -66,17 +93,37 @@
         <span class="NumberColor"> ۲- </span>  با توجه به سوال بالا و جدول ضرب صفحه ی ۶۹، حاصل ضرب های جدید را به دست آورید.
     </div>
 
-    <div class="Q2_num_pos Images_justify_spacearound number-config ">
+    <div class="Images_justify_center number-config Q2_num_pos">
         <div > ۶*۵= (۵*۵)+(۱*۵)= </div>
+        <input id="page_71_Q2_first_1" class="small-answer-box  mr-1 ml-1">
+        +
+        <input id="page_71_Q2_first_2" class="small-answer-box mr-1 ml-1">
+        =
+        <input id="page_71_Q2_first_3" class="small-answer-box mr-1 ml-1">
+
     </div>
 
-    <div class="Q2_num_pos Images_justify_spacearound number-config ">
+    <div class="Images_justify_center number-config Q2_num_pos">
         <div > ۸*۶= (۵*۶)+(۳*۶)= </div>
+        <input id="page_71_Q2_second_1" class="small-answer-box mr-1 ml-1">
+        +
+        <input id="page_71_Q2_second_2" class="small-answer-box mr-1 ml-1">
+        =
+        <input id="page_71_Q2_second_3" class="small-answer-box mr-1 ml-1">
+
     </div>
 
-    <div class="Q2_num_pos Images_justify_spacearound number-config ">
+    <div class="Images_justify_center number-config Q2_num_pos">
         <div > ۹*۵= (۵*۷)+(۴*۷)= </div>
+        <input id="page_71_Q2_third_1" class="small-answer-box mr-1 ml-1" onchange="javascript: test_answer_type2(0,'page_71_Q5_third_1')">
+        +
+        <input id="page_71_Q2_third_2" class="small-answer-box mr-1 ml-1" onchange="javascript: test_answer_type2(1,'page_71_Q5_third_1')">
+        =
+        <input id="page_71_Q2_third_3" class="small-answer-box mr-1 ml-1" onchange="javascript: test_answer_type2(2,'page_71_Q5_third_1')">
+
     </div>
+
+
 
 
     <div id="Q3_71" class="text-config questions-text-config">
@@ -84,7 +131,13 @@
     </div>
 
     <div id="Q3_71_numpos" class="Images_justify_left number-config " >
-        <div > ۹*۸= (  *  )= </div>
+        <div > ۹*۸=  </div>
+        (
+        <input id="page_71_Q3_1" class="small-answer-box mr-1 ml-1">
+        *
+        <input id="page_71_Q3_2" class="small-answer-box mr-1 ml-1">
+        )
+        <div> +(۶*۸) </div>
     </div>
 
     <div id="Q4_71" class="text-config questions-text-config">
@@ -98,10 +151,20 @@
 
     <div id="Q5_71_numpos" class="Images_justify_center number-config " >
         <div > ۹*۸= (۵*۸)+(۴*۸) = </div>
+        <input id="page_71_Q5_third_1" class="small-answer-box mr-1 ml-1" onchange="javascript: test_answer(1,'page_71_Q5_third_1')">
+        +
+        <input id="page_71_Q5_third_2" class="small-answer-box mr-1 ml-1" onchange="javascript: test_answer(2,'page_71_Q5_third_1')">
+        =
+        <input id="page_71_Q5_third_3" class="small-answer-box mr-1 ml-1" onchange="javascript: test_answer(3,'page_71_Q5_third_1')">
     </div>
 
     <p id="last_p_p71" class="text-config"> ضرب های ۵*۸ و ۴*۸ را در درس قبل یاد گرفته اید.</p>
 
+    <div id="lastPic71">
+        <picture>
+            <img src="assets/3rd/images/JR/71/Sheep.png">
+        </picture>
+    </div>
 
 </div>
 
