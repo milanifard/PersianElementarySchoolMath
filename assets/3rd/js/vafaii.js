@@ -1,4 +1,8 @@
 const p2e = s => s.replace(/[۰-۹]/g, d => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d))
+let cup1_flowers = 0;
+let cup2_flowers = 0;
+let cup3_flowers = 0;
+let cup4_flowers = 0;
 
 document.addEventListener('keypress', function (e) {
     if (e.key === 'Enter'){
@@ -58,15 +62,98 @@ function check145_2() {
         parseInt(inputBox2.value) === 1,
         inputBox2
     );
+    check_cups();
 }
 
-function addFlower() {
-    console.log("add");
+function addFlower(cup_num) {
+
+    switch (cup_num){
+        case 1:
+            if (cup1_flowers === 7 || cup1_flowers+cup2_flowers+cup3_flowers+cup4_flowers === 17){
+                //fe'lan do nothing
+            }else {
+                cup1_flowers++;
+                document.getElementById('cup-1').src = "assets/3rd/images/vafaii/".concat(cup1_flowers.toString()).concat("-flower.png");
+            }
+            break;
+        case 2:
+            if (cup2_flowers === 7|| cup1_flowers+cup2_flowers+cup3_flowers+cup4_flowers === 17){
+                //fe'lan do nothing
+            }else {
+                cup2_flowers++;
+                document.getElementById('cup-2').src = "assets/3rd/images/vafaii/".concat(cup2_flowers.toString()).concat("-flower.png");
+            }
+            break;
+        case 3:
+            if (cup3_flowers === 7|| cup1_flowers+cup2_flowers+cup3_flowers+cup4_flowers === 17){
+                //fe'lan do nothing
+            }else {
+                cup3_flowers++;
+                document.getElementById('cup-3').src = "assets/3rd/images/vafaii/".concat(cup3_flowers.toString()).concat("-flower.png");
+            }
+            break;
+        case 4:
+            if (cup4_flowers === 7|| cup1_flowers+cup2_flowers+cup3_flowers+cup4_flowers === 17){
+                //fe'lan do nothing
+            }else {
+                cup4_flowers++;
+                document.getElementById('cup-4').src = "assets/3rd/images/vafaii/".concat(cup4_flowers.toString()).concat("-flower.png");
+            }
+            break;
+    }
+
 }
 
-function removeFlower() {
-    console.log("remove");
+function removeFlower(cup_num) {
+    switch (cup_num){
+        case 1:
+            if (cup1_flowers === 0){
+                //fe'lan do nothing
+            }else {
+                cup1_flowers--;
+                document.getElementById('cup-1').src = "assets/3rd/images/vafaii/".concat(cup1_flowers.toString()).concat("-flower.png");
+            }
+            break;
+        case 2:
+            if (cup2_flowers === 0){
+                //fe'lan do nothing
+            }else {
+                cup2_flowers--;
+                document.getElementById('cup-2').src = "assets/3rd/images/vafaii/".concat(cup2_flowers.toString()).concat("-flower.png");
+            }
+            break;
+        case 3:
+            if (cup3_flowers === 0){
+                //fe'lan do nothing
+            }else {
+                cup3_flowers--;
+                document.getElementById('cup-3').src = "assets/3rd/images/vafaii/".concat(cup3_flowers.toString()).concat("-flower.png");
+            }
+            break;
+        case 4:
+            if (cup4_flowers === 0){
+                //fe'lan do nothing
+            }else {
+                cup4_flowers--;
+                document.getElementById('cup-4').src = "assets/3rd/images/vafaii/".concat(cup4_flowers.toString()).concat("-flower.png");
+            }
+            break;
+    }}
+
+function check_cups(){
+    if (cup1_flowers === 0 && cup2_flowers === 0 && cup3_flowers === 0 && cup4_flowers === 0 ){
+        document.getElementById("cups_result").textContent = "گلدونا نبايد خالي باشنا!" ;
+        document.getElementById("cups_result").style.color = "#e28718"  ;
+    }
+    else if (cup1_flowers === 4 && cup2_flowers === 4 && cup3_flowers === 4 && cup4_flowers === 4 ){
+        document.getElementById("cups_result").textContent = "آفرین" ;
+        document.getElementById("cups_result").style.color = "green"  ;
+    }else   {
+        document.getElementById("cups_result").textContent = "بيشتر دقت كن!" ;
+        document.getElementById("cups_result").style.color = "red"  ;
+    }
 }
+
 
 function checkDivisions() {
     divisionBoxes = document.querySelectorAll('.divide');

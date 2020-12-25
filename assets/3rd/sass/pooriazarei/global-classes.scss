@@ -1,37 +1,17 @@
-$light_blue: #A5CDE0;
-$dark_blue: #64B1C7;
-$green: #84B954;
-$darker_pink: #d17fa7;
-$dark_pink: #D17FA6;
-$light_pink: #DC9FBC;
-$lighter_pink: #fdebf3;
-$purple: #784a90;
-
-body {
-	direction: rtl;
-	margin: 32px 0 32px 0;
-}
-
-img {
-	width: 100%;
-}
-
-#smallCube {
-	width: 60px;
-}
-
 .title-style{
     background-color: $light_pink;
-    border-radius: 3vw;
+    border-radius: 4vw;
     text-align: center;
-    font-size: 3vw;
-    color: black;
-    padding: 1vw;
-	position: absolute;
-	width: 18vw;
+    font-size: 4vw;
+	color: #fff;
+	-webkit-text-stroke: .01vw #000;
+    padding: .5vw;
+    font-weight: bold;
+    position: absolute;
+    width: 20vw;
     right: 40vw;
-	top: 3vw;
-	z-index: 1;
+    top: 3vw;
+    z-index: 1;
 }
 
 .behind-title-style {
@@ -40,7 +20,7 @@ img {
     color: $green;
     border-style: solid;
 	position: absolute;
-	width: 20vw;
+	width: 22vw;
     right: 39vw;
     left: 34vw;
 	top: 6vw;
@@ -78,31 +58,11 @@ img {
     z-index: 1;
 }
 
-#rightArrow {
-	cursor: pointer;
-	border-right: .3vw solid $purple;
-	border-bottom: .3vw solid $purple;
-	width: 1.5vw;
-    height: 1.5vw;
-	transform: rotate(-45deg);
-	margin-bottom: -8px;
-}
-
-#leftArrow {
-	cursor: pointer;
-	border-left: .3vw solid $purple;
-	border-top: .3vw solid $purple;
-	width: 1.5vw;
-    height: 1.5vw;
-	transform: rotate(-45deg);
-	margin-top: 8px;
-}
-
 .right-border-template {
 	width: 90vw;
     max-width: 90vw;
     border: 0.8vw double $dark_pink;
-    margin: 6vw 8.4vw 0 0;
+    margin: 6vw 8.9vw 0 0;
     border-left: none;
     border-top-right-radius: 5vw;
     border-bottom-right-radius: 5vw;
@@ -124,7 +84,7 @@ img {
 
 .page-number-on-bottom {
 	box-sizing: border-box;
-    background-color: $darker_pink;
+    background-color: $dark_pink;
     border-radius: 2em;
     width: 5.8em;
     color: #fff;
@@ -149,7 +109,7 @@ img {
 }
 
 .background-style-left {
-	width: 98.4vw;
+	width: 98.9vw;
 	height: 40vw;
 	position: absolute;
     background-image: repeating-linear-gradient(0deg, $dark_pink, $dark_pink 1vw, $light_pink 0vw, $light_pink 2.5vw);
@@ -194,65 +154,14 @@ img {
 	}
 }
 
-ol {
-	margin-right: -24px;
-}
-
 .page-number-wrapper {
 	margin-top: -3vw;
-}
-
-#readingCulture {
-	right: -4.3vw;
 }
 
 .reading-culture {
 	li {
 		margin-left: 8px;
 	}
-}
-
-#readingCultureImg {
-	position: absolute;
-	width: 20vw;
-    left: 4vw;
-    top: -6vw;
-}
-
-#wormImage {
-	position: absolute;
-    width: 10vw;
-    right: 0vw;
-    top: -7.5vw;
-}
-
-#vectorImagePage_78 {
-	width: 40vw;
-	margin-top: -1vw;
-}
-
-#ladybirdBeetleImg {
-    position: absolute;
-	width: 16vw;
-    left: -2vw;
-    top: 8vw;
-}
-
-#girlAndMotherImg {
-	position: absolute;
-    width: 15vw;
-    right: -7vw;
-    top: 0vw;
-    z-index: 1;
-}
-
-#patternTitlePage_76 {
-	margin-right: 8vw
-}
-
-#flowerPotPage_76 {
-	width: 24vw;
-    margin-top: 3vw;
 }
 
 .square-wrapper {
@@ -274,14 +183,11 @@ ol {
     height: 2vw;
 }
 
-p {
-	margin: 0;
-}
-
 .circle {
 	position: relative;
-	width: 10px;
-	height: 10px;
+	width: 1vw;
+	height: 1vw;
+	margin-right: 3vw;
 	-moz-border-radius: 7.5px;
 	-webkit-border-radius: 7.5px;
 	border-radius: 7.5px;
@@ -291,28 +197,28 @@ p {
 	&::before {
 		content: '';
 		display: inline-block;
-		width: 10px;
-		height: 10px;
+		width: 1vw;
+		height: 1vw;
 		-moz-border-radius: 7.5px;
 		-webkit-border-radius: 7.5px;
 		border-radius: 7.5px;
 		background-color: $purple;
-		left: 8px;
-		top: 9px;
+		left: 1vw;
+		top: 1vw;
 		position: absolute;
 	}
 
 	&::after {
 		content: '';
 		display: inline-block;
-		width: 10px;
-		height: 10px;
+		width: 1vw;
+		height: 1vw;
 		-moz-border-radius: 7.5px;
 		-webkit-border-radius: 7.5px;
 		border-radius: 7.5px;
-		left: -8px;
+		left: -1vw;
 		position: absolute;
-		top: 9px;
+		top: 1vw;
 		background-color: $purple;
 	}
 }

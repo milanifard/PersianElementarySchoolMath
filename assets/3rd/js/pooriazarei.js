@@ -9,16 +9,38 @@ $('document').ready(function () {
 	
 
 	$('#rightArrow').on('click', function () {
-		pageNumber++;
-		window.location.pathname = "book_3_" + pageNumber + ".html";
+		pageNumber--;
+		window.location.replace("book_3_" + pageNumber + ".html");
 	});
 
 	$('#leftArrow').on('click', function () {
-		pageNumber--;
-		window.location.pathname = "book_3_" + pageNumber + ".html";
+		pageNumber++;
+		window.location.replace("book_3_" + pageNumber + ".html");;
 	});
 
 	// Page 76
+
+	$('#page_76_questionOne').on('input', function (e) {
+		// نکاه میکنیم ببینیم عدد کوچکتر که سه هست ضرب در چند میشه بزرگتر که دوازده هست و میشه چهار.
+		let val = e.target.value;
+
+		if ((val.includes('3') || val.includes('۳') || val.includes('سه')) && (val.includes('4') || val.includes('۴') || val.includes('چهار')) && (val.includes('12') || val.includes('۱۲') || val.includes('دوازده')) && (val.includes('عدد') || val.includes('عددی') || val.includes('چند')) && (val.includes('ضرب') || val.includes('در'))) {
+			$('#page_76_questionOne').css('color', 'green');
+		} else {
+			$('#page_76_questionOne').css('color', 'red');
+		}
+	});
+
+	$('#page_76_questionTwo').on('input', function (e) {
+		// نکاه میکنیم ببینیم عدد کوچکتر که سه هست ضرب در چند میشه بزرگتر که دوازده هست و میشه چهار.
+		let val = e.target.value;
+
+		if ((val.includes('3') || val.includes('۳') || val.includes('سه')) && (val.includes('4') || val.includes('۴') || val.includes('چهار')) && (val.includes('8') || val.includes('۸') || val.includes('هشت')) && (val.includes('2') || val.includes('۲') || val.includes('دو')) && (val.includes('16') || val.includes('۱۶') || val.includes('شانزده') || val.includes('شونزده')) && (val.includes('جمع') || val.includes('علاوه') || val.includes('اضافه')) && (val.includes('ضرب') || val.includes('در')) && (val.includes('تقصیم') || val.includes('قسمت') || val.includes('بر'))) {
+			$('#page_76_questionTwo').css('color', 'green');
+		} else {
+			$('#page_76_questionTwo').css('color', 'red');
+		}
+	});
 
 	for (let index = 1; index < 7; index++) {
 		$('#page_76_firstPattern_' + index).on('input', function () {
@@ -53,6 +75,14 @@ $('document').ready(function () {
 			$('#page_76_questionTwoPartTwo').css('color', 'green');
 		} else {
 			$('#page_76_questionTwoPartTwo').css('color', 'red');
+		}
+	});
+
+	$('#page_76_lastQuestion').on('input', function (e) {
+		if (e.target.value.length >= 60) {
+			$('#page_76_lastQuestion').css('color', 'green');
+		} else {
+			$('#page_76_lastQuestion').css('color', 'red');
 		}
 	});
 	
@@ -151,10 +181,26 @@ $('document').ready(function () {
 	});
 	
 	$('#page_77_secondQuestionPartSix_3').on('input', function () {
-		if ($('#page_77_secondQuestionPartSix_3').val() == 30) {
+		if (($('#page_77_secondQuestionPartSix_3').val() == 30) || $('#page_77_secondQuestionPartSix_3').val() == '۳۰') {
 			$('#page_77_secondQuestionPartSix_3').css('color', 'green');
 		} else {
 			$('#page_77_secondQuestionPartSix_3').css('color', 'red');
+		}
+	});
+
+	$('#page_77_thirdQuestionPartOne').on('input', function () {
+		if (($('#page_77_thirdQuestionPartOne').val() == 9) || $('#page_77_thirdQuestionPartOne').val() == '۹') {
+			$('#page_77_thirdQuestionPartOne').css('color', 'green');
+		} else {
+			$('#page_77_thirdQuestionPartOne').css('color', 'red');
+		}
+	});
+
+	$('#page_77_thirdQuestionPartTwo').on('input', function (e) {
+		if (e.target.value.length > 40) {
+			$('#page_77_thirdQuestionPartTwo').css('color', 'green');
+		} else {
+			$('#page_77_thirdQuestionPartTwo').css('color', 'red');
 		}
 	});
 	

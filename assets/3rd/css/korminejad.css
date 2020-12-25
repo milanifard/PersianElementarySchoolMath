@@ -77,11 +77,11 @@ body {
 
 
 .left-border {
-    width: 90vw;
+    width: 88vw;
     max-width: 100%;
     border: 0.8vw double var(--orange-bg-level1);
 
-    margin: 6vw 0 0 10vw;
+    margin: 6vw 0 0 9vw;
     border-right: none;
     border-top-left-radius: 5vw;
     border-bottom-left-radius: 5vw;
@@ -92,12 +92,12 @@ body {
 
 .right-border{
 
-    width: 90vw;
+    width: 89vw;
     max-width: 100%;
 
     border: 0.8vw double var(--orange-bg-level1);
 
-    margin: 6vw 10vw 0 0;
+    margin: 6vw 9vw 0 0;
     border-left: none;
     border-top-right-radius: 5vw;
     border-bottom-right-radius: 5vw;
@@ -107,7 +107,7 @@ body {
 
 .background-style {
 
-    width: 100vw;
+    width: 99vw;
     height: 53vw;
 
     background-image: repeating-linear-gradient(0deg, var(--yellow-bg-level2), var(--yellow-bg-level2) 1vw, var(--orange-bg-level1) 0vw, var(--orange-bg-level1) 2.5vw);
@@ -874,6 +874,9 @@ body {
     direction: ltr;
     text-align: center;
     position: static;
+
+    font-family: B Zar;
+    font-size: 2vw;
 }
  
 
@@ -901,7 +904,7 @@ body {
 
 
 /* ================= Next Page ========================== */
-.writing-67-container{
+.writing-112-container{
     /* border: 0.3vw solid red; */
     margin: 10vw 0vw 0vw 2vw;
 }
@@ -1252,11 +1255,38 @@ body {
     /* border: 0.3vw solid red; */
 }
 
+
+#Q1-112-submit{
+font-size: 2vw;
+margin-right: 15vw;
+margin-top: -8vw;
+background-color: var(--yellow-bg-level2);
+width: 10vw;
+border-radius: 1vw;
+color: white;
+
+border: none;
+outline: none;
+}
+
+
+#Q1-112-submit:hover{
+background-color: var(--orange-bg-level1);
+box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+}
+
+.Q-112-td{
+    background-color: white; 
+    border-color: white;
+}
+
+/* ----------- */
+
 /* -------------- */
 .question{
     padding: 10vw 2vw 1vw 0vw; 
     text-align: justify; 
-    max-width: 72vw; 
+    max-width: 40vw; 
     text-justify: inter-word; 
     line-height: 2.7vw;
 }
@@ -1304,6 +1334,25 @@ body {
     margin-right: 0vw;
 }
 
+#Q2-112-submit{
+    font-size: 2vw;
+    margin-right: 7vw;
+    margin-top: -8vw;
+    background-color: var(--yellow-bg-level2);
+    width: 10vw;
+    border-radius: 1vw;
+    color: white;
+    
+    border: none;
+    outline: none;
+    }
+    
+    
+#Q2-112-submit:hover{
+    background-color: var(--orange-bg-level1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    }
+
 
 /* ============================= */
 .Q3-113-question{
@@ -1335,6 +1384,27 @@ body {
     padding-top: 0vw;
     padding-right: 0vw;
 }
+
+
+#Q3-113-submit{
+    font-size: 2vw;
+    margin-right: -20vw;
+    margin-top: -7vw;
+    margin-bottom: 3vw;
+    background-color: var(--yellow-bg-level2);
+    width: 10vw;
+    border-radius: 1vw;
+    color: white;
+    
+    border: none;
+    outline: none;
+    }
+    
+    
+#Q3-113-submit:hover{
+    background-color: var(--orange-bg-level1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    }
 
 /* ------- */
 
@@ -1370,7 +1440,40 @@ body {
     padding-right: 0vw;
 }
 
+
+#Q4-113-submit{
+    font-size: 2vw;
+    margin-right: -20vw;
+    margin-top: -7vw;
+    margin-bottom: 3vw;
+    background-color: var(--yellow-bg-level2);
+    width: 10vw;
+    border-radius: 1vw;
+    color: white;
+    
+    border: none;
+    outline: none;
+    }
+    
+    
+#Q4-113-submit:hover{
+    background-color: var(--orange-bg-level1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    }
 /* -------- */
+
+.Q5-113-answer-container{
+    /* margin-bottom: -1vw; */
+    margin-left: 0vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+    /* border: 0.3vw solid red; */
+
+    padding-left: 30vw;
+    padding-top: 0vw;
+    padding-right: 0vw;
+}
 
 .Q5-113-container{
     max-width: 76vw;
@@ -1385,7 +1488,47 @@ body {
     margin-right: 9vw;
 }
 
+#Q5-113-submit{
+    font-size: 2vw;
+    margin-right: -18vw;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    background-color: var(--yellow-bg-level2);
+    width: 10vw;
+    border-radius: 1vw;
+    color: white;
+    
+    border: none;
+    outline: none;
+    }
+    
+    
+#Q5-113-submit:hover{
+    background-color: var(--orange-bg-level1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    }
 
+
+
+#Q6-113-submit{
+    font-size: 2vw;
+    margin-right: -18vw;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    background-color: var(--yellow-bg-level2);
+    width: 10vw;
+    border-radius: 1vw;
+    color: white;
+    
+    border: none;
+    outline: none;
+    }
+        
+        
+#Q6-113-submit:hover{
+    background-color: var(--orange-bg-level1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    }
 /* ================ */
 
 .moamma-title{
@@ -1500,4 +1643,50 @@ body {
     height: 5.4vw;
 
     position: absolute;
+}
+
+
+.page-navigator {
+    width: 100%;
+    margin: 7vw auto ;
+    /* margin-left: 40vw; */
+    padding: 5vw 0vw 0vw ;
+}
+
+.previous-page {
+    display: block;
+    float: right;
+    position: absolute;
+
+}
+
+.previous-page a {
+    text-decoration: none;
+    color: var(--main_color);
+    font-size: 3vw;
+    font-family: B Zar;
+}
+
+.previous-page a:hover {
+    text-decoration: none;
+    color: olive;
+    font-size: 3vw;
+}
+
+.next-page {
+    display: block;
+    float: left;
+}
+
+.next-page a {
+    text-decoration: none;
+    color: var(--main_color);
+    font-size: 3vw;
+    font-family: B Zar;
+}
+
+.next-page a:hover {
+    text-decoration: none;
+    color: olive;
+    font-size: 3vw;
 }

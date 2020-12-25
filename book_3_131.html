@@ -1,9 +1,138 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title></title>
+  <title>page 131</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/3rd/css/mohajer.css">
+  <script src="assets/3rd/js/mohajer/core.js"></script>
+  <script src="assets/3rd/js/mohajer/charts.js"></script>
+  <script src="assets/3rd/js/mohajer/animated.js"></script>
+  <script src="assets/3rd/js/mohajer/mohajer.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
+
 <body>
-    test
+  <div class="right-border">
+    <div>
+      <p> <span style="color: rgb(252,189,129);">2- </span>
+        مدّت زمانی که طول می‌کشد تا دانش‌آموزان مدرسه‌ی دانش از خانه به
+        مدرسه بروند،در نمودار زیر مشخّص شده است.</p>
+      <p> اکثر این دانش‌آموزان، بیشتر از 10 دقیقه در راه‌اند.
+      </p>
+      <p>
+        به نظر شما، چه تعدادی از این دانش‌آموزان بهتر است با سرویس به خانه بروند؟
+        <span>
+          <input type="text" id="input1" style="width: 5vw; text-align: center;" onKeyUp="checkInput(this,12)">
+          <span style="width:5vw;" class="lineAnswer"></span>
+        </span>
+        چرا؟
+        <span>
+          <input type="text" style="width: 20vw;">
+          <span style="width:20vw;" class="lineAnswer"></span>
+        </span>
+      </p>
+      <p>
+        <span style="position:absolute;">
+          <input type="text" style="width: 50vw;">
+          <span style="width:50vw;" class="lineAnswer"></span>
+        </span>
+      </p>
+
+      <img src="assets/3rd/images/mohajer/nemoodar.png" class="nemoodar">
+      <p>
+        <span style="color: rgb(252,189,129);">3- </span>نمودار دایره‌ای روبه‌رو نشان می‌دهد که مریم یک شبانه‌روز خود را
+        چگونه گذرانده است.
+      </p>
+      <p> یک نمودار ستونی رسم کنید و این اطّلاعات را در آن قرار دهید .</p>
+      <p> چگونه اطّلاعات نمودار را به عدد تبدیل می‌کنید؟ توضیح دهید.</p><br>
+
+      <div id="chart1" class="pieChart"></div>
+
+      <div id="chartdiv" class="columnChart"></div>
+      <p> <span style="color: rgb(252,189,129);">4- </span>
+        لادن از دوستانش درباره‌ی آبمیوه‌ی مورد علاقه‌شان پرسید و با توجّه به پاسخ‌های آن‌ها نمودار ستونی زیر را رسم کرد.
+      </p>
+      <div>
+        <img src="assets/3rd/images/mohajer/fruit.png" class="pic-fruit">
+        <img src="assets/3rd/images/mohajer/chart3.png" class="pic-columnChart">
+      </div>
+
+      <p>
+        کدامیک از این نمودارهای دایره‌ای به‌طور تقریبی همان اطّلاعات را نشان می‌دهد؟
+        <span style="width:11vw;" class="lineAnswer"></span>
+        چرا؟
+        <span>
+          <input type="text" style="width: 15vw;">
+          <span style="width:15vw;" class="lineAnswer">
+          </span>
+        </span>
+      </p>
+      <p>
+        <span>
+          <input type="text" style="width: 78vw;">
+          <div style="width:78vw;" class="lineAnswer">
+          </div>
+        </span>
+      </p>
+      <p>
+        <input type="radio" name="chart4">
+        <img src="assets/3rd/images/mohajer/chart4_1.png" class="chart4">
+        <input type="radio" name="chart4">
+        <img src="assets/3rd/images/mohajer/chart4_2.png" class="chart4">
+        <input type="radio" name="chart4">
+        <img src="assets/3rd/images/mohajer/chart4_3.png" class="chart4">
+        <input type="radio" name="chart4">
+        <img src="assets/3rd/images/mohajer/chart4_4.png" class="chart4">
+      </p>
+      <br>
+    </div>
+    <div class="pageNumber-container" style="margin-right: 78vw;">
+      <a class='fas fa-angle-double-right	' title="پایان" href="book_3_147.html"></a>
+      <a class='fas fa-angle-right' title="بعدی" href="book_3_132.html"></a>
+      <input type="number" onkeydown="enterPage(this)" class="pageNumber-content" value="131">
+      <a class='fas fa-angle-left' title="قبلی" href="book_3_130.html"></a>
+      <a class='fas fa-angle-double-left' title="شروع" href="book_3_10.html"></a>
+    </div>
+  </div>
+  <div class="background-style" style="margin-top: -15vw;"></div>
 </body>
+
+
+<script>
+
+  function checkInput(element, correct) {
+    var value = element.value;
+    if (value == correct)
+      element.style.color = 'green'
+    else element.style.color = 'red';
+  }
+  alert(document.querySelector('input[name="gender"]:checked').value);
+</script>
+<script>
+  data = [
+    {
+      country: "رفت و آمد",
+      visits: 5
+    },
+    {
+      country: "خواب و استراحت",
+      visits: 5
+    },
+    {
+      country: "درس خواندن در مدرسه",
+      visits: 5
+    },
+    {
+      country: "تکلیف، تلویزیون و بازی",
+      visits: 5
+    }
+  ];
+  var widthMax = 25;  
+</script>
+<script src="assets/3rd/js/mohajer/pieChart-page131.js"></script>
+<script src="assets/3rd/js/mohajer/script.js"></script>
+
+
 </html>

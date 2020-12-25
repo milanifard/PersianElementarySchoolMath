@@ -57,6 +57,16 @@ input[type=number] {
 
 }
 
+@font-face {
+    font-family: 'zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Koodak';
+    src: url("../../fonts/KoodakBold.ttf");
+}
+
 .page-left-border {
     width: 90vw;
     max-width: 100%;
@@ -142,7 +152,7 @@ input[type=number] {
     background-color: var(--pink_level2);
     border-radius: 1.5vw;
     text-align: center;
-    font-family:BNazanin,'BNazanin';
+    font-family: 'Koodak';
 
     font-size: 2.5vw;
     color: white;
@@ -158,8 +168,7 @@ input[type=number] {
     border-radius: 1.5vw;
 
     text-align: center;
-    font-family:BNazanin,'BNazanin';
-    /* font-family: Koodak; */
+    font-family: 'Koodak';
     font-size: 1.9em;
     color: white;
 
@@ -172,13 +181,15 @@ input[type=number] {
     margin-right: 10vw;
 }
 
+#tamrin_138_cover{
+    padding-right: 8vw; margin-right: 2vw;
+}
 #top136title{
     background-color: var(--pink_level2);
     border-radius: 1.5vw;
 
     text-align: center;
-    font-family:BNazanin,'BNazanin';
-    /* font-family: Koodak; */
+    font-family:BNazanin,'BNazanin', 'zar';
     font-size: 2.5vw;
     color: black;
 
@@ -192,8 +203,7 @@ input[type=number] {
     color: var(--pink);
 }
 .text {
-    font-family:BNazanin,'BNazanin';
-    /* font-family: BNazanin; */
+    font-family: BNazanin,'BNazanin', 'zar';
     font-size: 1.8em;
     direction: rtl;
 
@@ -207,12 +217,35 @@ input[type=number] {
     margin-top: -6vw;
     margin-bottom: 2vh;  
 }
+#little_red_img{
+    width: 12vw;
+    float: right; 
+    position: relative;  
+    margin-top:5vw; 
+    margin-right: -18vw;
+}
 
 #pen_img{
     width: 12em;
     /* height: 10vh; */
     margin-top: -7vw;
     float: left;
+}
+#quran_img{
+    width: 12em;
+    position: relative;
+    /* margin-top: -7vw; */
+    float: left;
+}
+
+#boz_img{
+    width: 20em;
+    position: relative;
+    margin-right: 2vw;
+    /* margin-top: -7vw; */
+    float: left;
+    border: solid pink;
+    border-radius: 5%;
 }
 #colored_pencil_image {
     /* position: absolute; */
@@ -226,6 +259,11 @@ input[type=number] {
     margin-top: 3vw;
 }
 
+.brick_img{
+    width: 11vw;
+    height: 11vw;
+}
+/* =============================== */
 .answer_line{
     display: block;
     height: 1px;
@@ -239,11 +277,13 @@ input[type=number] {
 table, td, th {
     text-align: left;
     font-size: 1.4em;
-    font-family:BNazanin,'BNazanin';
-  }
+    font-family:BNazanin,'BNazanin', 'zar';
 
+  }
+th{
+    width: 11vw;
+}
 table {
-    /* font-family:Kodak ; */
     margin-top: 2vw;
     width: 100%;
     border-collapse: collapse;
@@ -266,6 +306,12 @@ table {
     padding-right: 5vw;
     margin-top: 9vw;
 }
+.normal_content{
+    /* position: relative; */
+    padding-left: 1.8vw;
+    padding-right: 5vw;
+    margin-top: 1vw;
+}
 
 #content_137{
     /* position: relative; */
@@ -284,6 +330,13 @@ table {
     margin-top: 1.5vw;
 }
 
+#Q1p138_container{
+    position: relative; margin-right: 15vw;
+}
+#Q1p138_container #Q1_description {
+    position:relative;
+    right:3vw;
+}
 #content_136 #Q1_description {
     float: right;
     /* font-size: 2vw; */
@@ -323,8 +376,8 @@ table {
     border-right: 2vw solid var(--pink_level2);
 
     text-align: center;
-    font-family:BNazanin,'BNazanin';
-    /* font-family: Koodak; */
+    /* font-family:BNazanin,'BNazanin'; */
+    font-family: Koodak;
     font-size: 2.5vw;
     color: white;
     float: right;
@@ -341,9 +394,7 @@ table {
 
 .creative_content{
     margin-top: 1vw;
-    margin-right: 13vw;
-    /* margin-block-start: auto; */
-    /* font-family: BNazanin, 'BNazanin'; */
+    margin-right: 16vw;
     
 }
 .page-number_right {
@@ -354,7 +405,6 @@ table {
 
     text-align: center;
     font-size: 2.1vw;
-    /* font-family: Koodak; */
     color: white;
 
     padding: 0 3vw;
@@ -425,15 +475,94 @@ table {
   }
   .shape_container_l{
     float: left;
-    margin-right: 5vw;
+    margin-right: 4vw;
     margin-top: 2vw;
     height: 13vw;
   }
   .tiny_number_in{
-    width: 2vw;
+    border: solid pink;
+    width: 1.9vw;
   }
   .med_number_in{
     height: 3vw;
     width:  4.5vw;
-    font-size: 3vw;
+    font-size: 2vw;
+    border: solid pink;
+    text-align: left;
   }
+
+  .num_container_137{
+      position: relative;
+      width: 5vw;
+      height: 4vw;
+      background-color: var(--blue_level3);
+      border-radius: 20%;
+      font-size: 2em;
+      text-align: center;
+      float: left;
+      margin-right: 1vw;
+  }
+#cal_137{
+    margin-top: 2vw;
+    position: relative;
+    font-size: 2em;
+    padding-right: 10vw;
+    /* text-align: left; */
+    /* right: 60vw; */
+}
+
+
+/* Page Changer Classes */
+
+.pagination-container {
+    direction: rtl;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    height: 3em;
+    /* to adjust page changer position , adjust position of this element */
+    
+}
+
+.page-number {
+    /* substitute your color */
+    background-color: var(--pink);
+    border-radius: 2em;
+    width: 5.8em;
+    color: white;
+    border: 0.35em double white;
+    /* Koodak font should be imported*/
+    font-family: Koodak;
+    padding: 0 1.1em;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.page-number input {
+    /* substitute your color */
+    background-color: var(--pink_level3);
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+
+.page-number-button {
+    width: 3em;
+    display: flex;
+    color: var(--pink_level3);
+    justify-content: center;
+}
+
+.page-number-button > a {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
+
+}

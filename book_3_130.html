@@ -3,13 +3,18 @@
 
 <head>
     <title>page 130</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/mohajer.css">
-
+    <script src="assets/3rd/js/mohajer/core.js"></script>
+    <script src="assets/3rd/js/mohajer/charts.js"></script>
+    <script src="assets/3rd/js/mohajer/animated.js"></script>
+    <script src="assets/3rd/js/mohajer/mohajer.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
 <body>
-    <div class="right-border">
+    <div class="left-border">
 
         <div>
             <div class="that-ridiculous-red-parts-in-title"></div>
@@ -26,19 +31,35 @@
                         <span style="color: rgb(252,189,129);">1- </span> نمودار دایره ای در تمرین ٣ صفحه ی 126 را چگونه
                         رنگ کردید؟ توضیح دهید.
                         <br>
-                        <div style="width:55vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;">
-                        </div>
-                        <br>
-                        <div style="width:55vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;">
-                        </div>
-                        <br>
+
+                        <span>
+                            <input type="text" style="width: 55vw;" style="text-align: right;">
+                            <div
+                                style="width:55vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;position: relative;">
+                            </div>
+                        </span> <br>
+
+                        <span>
+                            <input type="text" style="width: 55vw;" style="text-align: right;">
+                            <div
+                                style="width:55vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;position: relative;">
+                            </div>
+                        </span> <br>
                         <br> <span style="color: rgb(252,189,129);">2- </span> دو جمله بنویسید که در آنها کلمه ی
-                        »احتمال« یا »شانس« به کار رفته باشد.
-                        <div style="width:55vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;">
-                        </div>
+                        «احتمال» یا «شانس» به کار رفته باشد.
                         <br>
-                        <div style="width:55vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;">
-                        </div>
+                        <span>
+                            <input type="text" style="width: 55vw;" style="text-align: right;">
+                            <div
+                                style="width:55vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;position: relative;">
+                            </div>
+                        </span> <br>
+                        <span>
+                            <input type="text" style="width: 55vw;" style="text-align: right;">
+                            <div
+                                style="width:55vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;position: relative;">
+                            </div>
+                        </span>
 
                     </div>
 
@@ -85,28 +106,89 @@
                     این مغازه دار در چه روزی کمترین مقدار شیر را فروخته است؟
                     <br>
                     چرا روز پنجشنبه فروش شیر بیشتر بوده است؟
+
+                    <span>
+                        <input type="text" id="input1" style="width: 27.5vw;" onKeyUp="checkInput(this,12)">
+                        <div
+                            style="width:27.5vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;position: relative;">
+                        </div>
+                    </span>
                     <br>
                     به نظر شما، بهتر است این مغازه دار هر روز چند بطری شیر
                     <br>
                     برای فروش بیاورد؟
-                    <div style="width:20vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;"></div>
-                    چرا؟
-                    <div style="width:20vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;"></div>
-                    <br>
-                    <div style="width:56vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;"></div>
-                    <img src="assets/3rd/images/mohajer/2.png" class="sabadeShir">
-                    <div class="page-number">130</div>
+                    <span>
+                        <input type="text" id="input1" style="width: 10vw;" onKeyUp="checkInput(this,12)">
+                        <div
+                            style="width:10vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;position: relative;">
+                        </div>
+                    </span> چرا؟
+                    <span>
+                        <input type="text" id="input1" style="width: 30vw;" onKeyUp="checkInput(this,12)">
+                        <div
+                            style="width:30vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;position: relative;">
+                        </div>
+                    </span> <br>
+                    <span>
+                        <input type="text" id="input1" style="width: 56vw;" onKeyUp="checkInput(this,12)">
+                        <div
+                            style="width:56vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;position: relative;">
+                        </div>
+                    </span> <img src="assets/3rd/images/mohajer/2.png" class="sabadeShir">
 
 
+
+                    <div id="chartdiv" class="nemoodar2"></div>
+                    <script>
+                        data = [
+                            {
+                                country: "شنبه",
+                                visits: 5
+                            },
+                            {
+                                country: "یکشنبه",
+                                visits: 5
+                            },
+                            {
+                                country: "دوشنبه",
+                                visits: 5
+                            },
+                            {
+                                country: "سه‌شنبه",
+                                visits: 5
+                            },
+                            {
+                                country: "چهار‌شنبه",
+                                visits: 5
+                            },
+                            {
+                                country: "پنجشنبه",
+                                visits: 5
+                            },
+
+                        ];
+                        var widthMax = 50;  
+                    </script>
+                    <script src="assets/3rd/js/mohajer/script.js">
+
+                    </script>
+                    <div class="pageNumber-container">
+                        <a class='fas fa-angle-double-right	' title="پایان" style='' href="book_3_147.html"></a>
+                        <a class='fas fa-angle-right' title="بعدی" style='' href="book_3_131.html"></a>
+                        <input type="number" onkeydown="enterPage(this)" class="pageNumber-content" value="130">
+                        <a class='fas fa-angle-left' title="قبلی" style='' href="book_3_129.html"></a>
+                        <a class='fas fa-angle-double-left' title="شروع" style='' href="book_3_10.html"></a>
+
+                    </div>
 
                 </div>
             </div>
 
         </div>
-     
-        <div class="background-style"></div>
 
-</div>
+        <div class="background-style" style="margin-top: -32vw;"></div>
+
+    </div>
 
 </body>
 

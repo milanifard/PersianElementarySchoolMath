@@ -18,13 +18,13 @@
             <div class="right-background-style">
                 <div class="pagination-container">
                     <div class="page-number-button">
-                        <a type="submit" class="next-page"><i class="fa fa-angle-right"></i></a>
+                        <a type="submit" class="prev-page"><i class="fa fa-angle-right"></i></a>
                     </div>
                     <div class="page-number">
                         <input type="number" id="page-number-input" onfocusout="loadPageChanger()">
                     </div>
                     <div class="page-number-button">
-                        <a type="submit" class="prev-page"><i class="fa fa-angle-left"></i></a>
+                        <a type="submit" class="next-page"><i class="fa fa-angle-left"></i></a>
                     </div>
                 </div>
             </div>
@@ -32,13 +32,13 @@
             <div class="container page">
 <!--                q7-->
                 <div class="q7-parent">
-                    <div class="question-text">۵- شکل روبرو چند زاویه دارد؟<input type="text" class="short-answer-area"> زاویه راست آن را مشخص کنید.</div>
+                    <div class="question-text">۵- شکل روبرو چند زاویه دارد؟<input type="number" class="short-answer-area" id="angel-shape-count" onchange="angle_shape_count()"> زاویه راست آن را مشخص کنید.</div>
                     <img class="shape-image" src="./assets/3rd/images/najmeHabibi/shape.jpg" alt="ذوزنقه">
                 </div>
 
 <!--                q8-->
                 <div class="q8-parent">
-                    <div class="question-text">۶- دهانه پرگار چقدر باز شده است؟<input type="text" class="short-answer-area"><br>با این پرگار یک دایره بکشید؛ شعاع آن چند سانتی‌متر است؟<input type="text" class="short-answer-area"></div>
+                    <div class="question-text">۶- دهانه پرگار چقدر باز شده است؟<input type="number" class="short-answer-area" id="pargar-cm1" onchange="pargar_cm1()"><br>با این پرگار یک دایره بکشید؛ شعاع آن چند سانتی‌متر است؟<input type="number" class="short-answer-area" id="pargar-cm2" onchange="pargar_cm2()"></div>
                     <img class="pargar-image" src="./assets/3rd/images/najmeHabibi/pargar.jpg" alt="پرگار">
                 </div>
 
@@ -52,17 +52,17 @@
                 <div class="q10-parent">
                     <div class="question-text">۸- کدام یک از شکل‌های زیر به قسمت‌های مساوی تقسیم شده است؟ ۲ قسمت این شکل‌ها را رنگ کنید و کسر مربوط به آن را بنویسید.</div>
                    <img class="green-shapes-image" src="./assets/3rd/images/najmeHabibi/shapes.png" alt="شکل‌ها">
-                   <input type="text" class="short-answer-area shape1-answer">
-                   <input type="text" class="short-answer-area shape2-answer">
-                   <input type="text" class="short-answer-area shape3-answer">
-                   <input type="text" class="short-answer-area shape4-answer">
-                   <input type="text" class="short-answer-area shape5-answer">
-                   <input type="text" class="short-answer-area shape6-answer">
+                   <input type="text" class="short-answer-area shape1-answer" id="tri-shape1" onchange="tri_shape1()">
+                   <input type="text" class="short-answer-area shape2-answer" id="cir-shape1" onchange="cir_shape1()">
+                   <input type="text" class="short-answer-area shape3-answer" id="rec-shape1" onchange="rec_shape1()">
+                   <input type="text" class="short-answer-area shape4-answer" id="cir-shape2" onchange="cir_shape2()">
+                   <input type="text" class="short-answer-area shape5-answer" id="rec-shape2" onchange="rec_shape2()">
+                   <input type="text" class="short-answer-area shape6-answer" id="tri-shape2" onchange="tri_shape2()">
                 </div>
 
 <!--                q11-->
                 <div class="q11-parent">
-                    <div class="question-text">۹- چه کسری از این دایره نارنجی است؟<input type="text" class="short-answer-area"><br>چه کسری از آن سبز است؟<input type="text" class="short-answer-area"><br>چه کسری صورتی است؟<input type="text" class="short-answer-area"></div>
+                    <div class="question-text">۹- چه کسری از این دایره نارنجی است؟<input type="text" class="short-answer-area" id="orange-percentage" onchange="orange_percentage()"><br>چه کسری از آن سبز است؟<input type="text" class="short-answer-area" id="green-area" onchange="green_area()"><br>چه کسری صورتی است؟<input type="text" class="short-answer-area" id="pink-area" onchange="pink_area()"></div>
                     <img class="circle1-image" src="./assets/3rd/images/najmeHabibi/circle1.jpg" alt="دایره ۱">
                 </div>
 
@@ -77,10 +77,10 @@
                         <div class="question-text circle-text-2">۱/۲</div>
                         <div class="question-text">زمان‌هایی را که ساعت‌ها نشان می‌دهند، با ربع و نیم بنویسید.</div>
                         <img class="clocks-image" src="./assets/3rd/images/najmeHabibi/clocks.jpg" alt="ساعت ها">    
-                        <input type="text" class="short-answer-area clock1-answer">
-                        <input type="text" class="short-answer-area clock2-answer">
-                        <input type="text" class="short-answer-area clock3-answer">
-                        <input type="text" class="short-answer-area clock4-answer">
+                        <input type="text" class="short-answer-area clock1-answer" id="clock1-percentage" onchange="clock1_percentage()">
+                        <input type="text" class="short-answer-area clock2-answer" id="clock2-percentage" onchange="clock2_percentage()">
+                        <input type="text" class="short-answer-area clock3-answer" id="clock3-percentage" onchange="clock3_percentage()">
+                        <input type="text" class="short-answer-area clock4-answer" id="clock4-percentage" onchange="clock4_percentage()">
                 </div>
             </div>
             
