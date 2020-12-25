@@ -1,384 +1,408 @@
-@font-face {
-    font-family: "koodak";
-    src: url("../../fonts/naskh/Far_KoodkBd.ttf") format( "woff");
+* {
+  direction: rtl;
+  font-family: koodak;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-* {
-    direction: rtl;
-    font-family: koodak;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "koodak";
+  src: url("../../fonts/naskh/Far_KoodkBd.ttf") format("woff");
 }
 
 .farhangeKhandan {
-    background-color: rgb(255, 252, 224);
-    width: 90%;
-    padding: 9vw 2vw 2vw 2vw;
-    border-radius: 5vw;
-    border: 0.3vw solid rgb(254, 204, 78);
-    margin-top: -10vw;
-    margin-right: 0.7vw;
+  background-color: rgb(255, 252, 224);
+  width: 90%;
+  padding: 9vw 2vw 2vw 2vw;
+  border-radius: 5vw;
+  border: 0.3vw solid rgb(254, 204, 78);
+  margin-top: -10vw;
+  margin-right: 0.7vw;
 }
 
 .pic_worm {
-    position: absolute;
-    width: 12vw;
-    top: -7.2vw;
-    height: 12.5vw;
-    right: 3vw;
+  position: absolute;
+  width: 12vw;
+  top: -7.2vw;
+  height: 12.5vw;
+  right: 3vw;
 }
 
 .pic_boy {
-    position: absolute;
-    width: 25vw;
-    left: 12vw;
-    margin-top: -22vw;
+  position: absolute;
+  width: 25vw;
+  left: 12vw;
+  margin-top: -22vw;
 }
 
 html,
 body {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 @keyframes correct {
-    from {
-        transform: rotate(0deg)
-    }
-    to {
-        transform: rotate(180deg)
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
 }
 
 @keyframes incorrect {
-    0% {
-        transform: rotate(0deg)
-    }
-    25% {
-        transform: rotate(-30deg)
-    }
-    75% {
-        transform: rotate(+30deg)
-    }
-    100% {
-        transform: rotate(0deg)
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(+30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-input[type='text'] {
-    border: none;
-    text-align: right;
-    font-size: 1.5vw;
-    position: absolute;
-    margin-top: 0.2vw;
-    color: blue;
+input[type="text"] {
+  border: none;
+  text-align: right;
+  font-size: 1.5vw;
+  position: absolute;
+  margin-top: 0.2vw;
+  color: blue;
 }
 
-input[type='text']:focus {
-    position: absolute;
-    z-index: 1;
+input[type="text"]:focus {
+  position: absolute;
+  z-index: 1;
 }
 
 .right-border {
-    width: 90vw;
-    height: auto;
-    border: 0.8vw double #ffdd2b;
-    border-right: none;
-    border-top-left-radius: 5vw;
-    border-bottom-left-radius: 5vw;
-    background-color: white;
-    font-size: 1.8vw;
-    position: relative;
-    padding-right: 5vw;
-    top: 5vw;
-    right: 0px;
+  width: 90vw;
+  height: auto;
+  border: 0.8vw double #ffdd2b;
+  border-right: none;
+  border-top-left-radius: 5vw;
+  border-bottom-left-radius: 5vw;
+  background-color: white;
+  font-size: 1.8vw;
+  position: relative;
+  padding-right: 5vw;
+  top: 5vw;
+  right: 0px;
 }
 
 .left-border {
-    width: 90vw;
-    height: auto;
-    border: 0.8vw double #ffdd2b;
-    border-left: none;
-    border-top-right-radius: 5vw;
-    border-bottom-right-radius: 5vw;
-    font-size: 1.8vw;
-    background-color: white;
-    position: absolute;
-    top: 5vw;
-    left: 0px
+  width: 90vw;
+  height: auto;
+  border: 0.8vw double #ffdd2b;
+  border-left: none;
+  border-top-right-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+  font-size: 1.8vw;
+  background-color: white;
+  position: absolute;
+  top: 5vw;
+  left: 0px;
 }
 
 .background-style {
-    width: 100vw;
-    height: 40vw;
-    background-image: repeating-linear-gradient(0deg, #ffdd2b, #ffdd2b 1vw, #fecc4e 0vw, #fecc4e 2.5vw);
-    background-repeat: no-repeat;
-    left: 0;
-    position: absolute;
-    z-index: -1;
+  width: 100vw;
+  height: 40vw;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #ffdd2b,
+    #ffdd2b 1vw,
+    #fecc4e 0vw,
+    #fecc4e 2.5vw
+  );
+  background-repeat: no-repeat;
+  left: 0;
+  position: absolute;
+  z-index: -1;
 }
 
-.input-pagenumber {
-    width: 20%;
+.pageNumber-content {
+  width: 35%;
+  font-size: 1.8vw;
+  height: 4vw;
+  border-radius: 50%;
+  border: 0.1vw solid #fcb94b;
+  text-align: center;
 }
 
-.page-number {
-    background-color: #fcb94b;
-    border-radius: 2.5vw;
-    width: 13vw;
-    border: 0.9vw double white;
-    text-align: center;
-    font-size: 1.7vw;
-    color: white;
-    margin-right: -16vw;
-    margin-top: -5vw;
-    padding: 0vw 0.3vw;
+.pageNumber-container {
+  background-color: #fcb94b;
+  border-radius: 2.5vw;
+  width: 13vw;
+  border: 0.9vw double white;
+  text-align: center;
+  font-size: 1.7vw;
+  color: white;
+  margin-right: -16vw;
+  margin-top: -5vw;
+  padding: 0vw 0.2vw;
 }
 
 .title-style {
-    background-color: #fecc4e;
-    border-radius: 2vw;
-    width: 20vw;
-    text-align: center;
-    font-size: 3vw;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    margin-right: 30vw;
-    margin-top: -3.5vw;
+  background-color: #fecc4e;
+  border-radius: 2vw;
+  width: 20vw;
+  text-align: center;
+  font-size: 3vw;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  margin-right: 30vw;
+  margin-top: -3.5vw;
 }
 
 .activity-text {
-    background-color: #fecc4e;
-    border-radius: 1.5vw;
-    text-align: center;
-    font-size: 2.5vw;
-    color: white;
-    padding: 0 11vw 0 3vw;
-    right: 2vw;
-    top: 2.5vw;
-    z-index: 1;
+  background-color: #fecc4e;
+  border-radius: 1.5vw;
+  text-align: center;
+  font-size: 2.5vw;
+  color: white;
+  padding: 0 11vw 0 3vw;
+  right: 2vw;
+  top: 2.5vw;
+  z-index: 1;
 }
 
 .farhangeNeveshtan-title {
-    background-color: rgb(239, 237, 236);
-    border-radius: 1.5vw 0 0 1.5vw;
-    text-align: center;
-    font-size: 2.3vw;
-    color: black;
-    margin-top: -4vw;
-    margin-right: 3vw;
-    padding-left: 2.5vw;
-    padding-right: 0.7vw;
-    position: absolute;
-    display: inline-block;
+  background-color: rgb(239, 237, 236);
+  border-radius: 1.5vw 0 0 1.5vw;
+  text-align: center;
+  font-size: 2.3vw;
+  color: black;
+  margin-top: -4vw;
+  margin-right: 3vw;
+  padding-left: 2.5vw;
+  padding-right: 0.7vw;
+  position: absolute;
+  display: inline-block;
 }
 
 .rectangle {
-    width: 3vw;
-    height: 4vw;
-    background-color: #fecc4e;
-    margin-top: 5vw;
-    position: relative;
-    z-index: 1;
+  width: 3vw;
+  height: 4vw;
+  background-color: #fecc4e;
+  margin-top: 5vw;
+  position: relative;
+  z-index: 1;
 }
 
 .kafshdoozak {
-    width: 30vw;
-    height: 40vw;
-    position: absolute;
-    top: 5vw;
-    left: 2vw;
+  width: 30vw;
+  height: 40vw;
+  position: absolute;
+  top: 5vw;
+  left: 2vw;
 }
 
 .rectangle-white {
-    width: 60vw;
-    height: 30vw;
-    border-radius: 4vw;
-    padding: 3vw 2vw 0 0;
-    font-size: 1.8vw;
-    border-style: dotted;
-    border: 0.5vw dotted rgb(107, 207, 246);
-    background-color: white;
-    margin-top: -2vw;
+  width: 60vw;
+  height: 30vw;
+  border-radius: 4vw;
+  padding: 3vw 2vw 0 0;
+  font-size: 1.8vw;
+  border-style: dotted;
+  border: 0.5vw dotted rgb(107, 207, 246);
+  background-color: white;
+  margin-top: -2vw;
 }
 
 .farhangeNeveshtan-content {
-    width: 75vw;
-    height: 35vw;
-    border-radius: 2vw;
-    padding: 5vw 1vw 0 0;
-    font-size: 1.8vw;
-    background-color: rgb(225, 244, 252);
-    margin-top: -5vw;
-    margin-right: 2vw;
-    margin-bottom: 6vw;
+  width: 75vw;
+  height: 35vw;
+  border-radius: 2vw;
+  padding: 5vw 1vw 0 0;
+  font-size: 1.8vw;
+  background-color: rgb(225, 244, 252);
+  margin-top: -5vw;
+  margin-right: 2vw;
+  margin-bottom: 6vw;
 }
 
 .rectangle-tamrin {
-    width: 17vw;
-    height: 4vw;
-    background-color: #fecc4e;
-    color: white;
-    margin-bottom: 2.5vw;
-    font-size: 2.3vw;
-    position: relative;
-    z-index: 1;
-    border-radius: 1.5vw 0 0 1.5vw;
-    padding-right: 9vw;
+  width: 17vw;
+  height: 4vw;
+  background-color: #fecc4e;
+  color: white;
+  margin-bottom: 2.5vw;
+  font-size: 2.3vw;
+  position: relative;
+  z-index: 1;
+  border-radius: 1.5vw 0 0 1.5vw;
+  padding-right: 9vw;
 }
 
 .pic2 {
-    width: 11vw;
-    height: 13vw;
-    margin-right: -2vw;
-    margin-top: -6.5vw;
-    position: relative;
-    z-index: 1;
+  width: 11vw;
+  height: 13vw;
+  margin-right: -2vw;
+  margin-top: -6.5vw;
+  position: relative;
+  z-index: 1;
 }
 
 .tamrin {
-    font-size: 1.8vw;
-    margin-right: 10vw;
-    margin-top: -7vw;
+  font-size: 1.8vw;
+  margin-right: 10vw;
+  margin-top: -7vw;
 }
 
 .activity-image {
-    width: 13vw;
-    right: -2.3vw;
-    top: 0.5vw;
-    z-index: 2;
+  width: 13vw;
+  right: -2.3vw;
+  top: 0.5vw;
+  z-index: 2;
 }
 
 .sabadeShir {
-    width: 22w;
-    height: 22vw;
-    margin-top: -5vw;
-    ;
-    position: absolute;
-    z-index: 1;
+  width: 22w;
+  height: 22vw;
+  margin-top: -5vw;
+  position: absolute;
+  z-index: 1;
 }
 
 .nemoodar {
-    width: 25vw;
-    height: 17vw;
-    margin-right: 57vw;
-    position: relative;
-    z-index: 1;
+  width: 25vw;
+  height: 17vw;
+  margin-right: 57vw;
+  position: relative;
+  z-index: 1;
 }
 
 .nemoodar1 {
-    width: 30vw;
-    height: 30vw;
-    margin-right: 55vw;
-    margin-top: -2vw;
-    position: absolute;
+  width: 30vw;
+  height: 30vw;
+  margin-right: 55vw;
+  margin-top: -2vw;
+  position: absolute;
 }
 
 .nemoodar2 {
-    width: 60%;
-    height: 30vw;
-    min-height: 150px;
+  width: 60%;
+  height: 30vw;
+  min-height: 150px;
 }
 
 .nemoodar3 {
-    width: 30vw;
-    height: 18vw;
-    margin-right: 50vw;
+  width: 30vw;
+  height: 18vw;
+  margin-right: 50vw;
 }
 
-input[type='radio'] {
-    width: 2.4vw;
-    height: 2.4vw;
-    margin-right: -3vw;
-    margin-top: 6vw;
-    position: relative;
+input[type="radio"] {
+  width: 2.4vw;
+  height: 2.4vw;
+  margin-right: -3vw;
+  margin-top: 6vw;
+  position: relative;
 }
 
-input[type='radio']:nth-child(5n+4) {
-    margin-right: 0.2vw;
+input[type="radio"]:nth-child(5n + 4) {
+  margin-right: 0.2vw;
 }
 
-input[type='radio']:after {
-    width: 2.4vw;
-    height: 2.4vw;
-    background-color: #d1d3d1;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
+input[type="radio"]:after {
+  width: 2.4vw;
+  height: 2.4vw;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
 }
 
-input[type='radio']:nth-child(5n):checked:after {
-    width: 2.4vw;
-    height: 2.4vw;
-    background-color: green;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
+input[type="radio"]:nth-child(5n):checked:after {
+  width: 2.4vw;
+  height: 2.4vw;
+  background-color: green;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
 }
 
-input[type='radio']:nth-child(5n):checked {
-    animation-name: correct;
-    animation-duration: 0.5s;
+input[type="radio"]:nth-child(5n):checked {
+  animation-name: correct;
+  animation-duration: 0.5s;
 }
 
-input[type='radio']:checked {
-    animation-name: incorrect;
-    animation-duration: 0.5s;
+input[type="radio"]:checked {
+  animation-name: incorrect;
+  animation-duration: 0.5s;
 }
 
-input[type='radio']:checked:after {
-    width: 2.4vw;
-    height: 2.4vw;
-    background-color: red;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
+input[type="radio"]:checked:after {
+  width: 2.4vw;
+  height: 2.4vw;
+  background-color: red;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
 }
 
 .nemoodar4 {
-    width: 15%;
-    margin-left: 7vw;
+  width: 15%;
+  margin-left: 7vw;
 }
 
 .miveh {
-    width: 20vw;
-    height: 15vw;
-    margin-top: 2vw;
-    position: absolute;
+  width: 20vw;
+  height: 15vw;
+  margin-top: 2vw;
+  position: absolute;
 }
 
 .text-config {
-    font-family: Zar;
-    font-size: 2vw;
-    direction: rtl;
-    white-space: pre-wrap;
+  font-family: Zar;
+  font-size: 2vw;
+  direction: rtl;
+  white-space: pre-wrap;
 }
 
 .questions-text-config {
-    padding-right: 5vw;
-    padding-left: 3vw;
-    padding-bottom: 2vw;
-    margin-top: 2vw;
+  padding-right: 5vw;
+  padding-left: 3vw;
+  padding-bottom: 2vw;
+  margin-top: 2vw;
 }
 
 table {
-    border-collapse: collapse;
-    border: 1px solid #ddd;
-    margin-top: 2vw;
-    margin-bottom: 3vw;
-    width: 80%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+  width: 80%;
 }
 
 th,
 td {
-    text-align: center;
-    border: 1px solid rgb(92, 182, 205);
-    padding: 3px;
+  text-align: center;
+  border: 1px solid rgb(92, 182, 205);
+  padding: 3px;
+}
+
+.pic-cube1 {
+  width: 15vw;
+  margin-right: 70vw;
+  margin-top: -2vw;
 }
