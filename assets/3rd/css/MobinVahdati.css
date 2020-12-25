@@ -336,8 +336,8 @@ img {
 
 .dialog-test {
     position: relative;
-    top: -7.3vw;
-    left: 2vw;
+    top: -4.5vw;
+    left: -1.5vw;
 }
 
 
@@ -403,6 +403,14 @@ hr {
     border: 2px solid #79c2d2;
     border-radius: 1.5vw;
     font-family: Koodak;
+}
+.bubble-field {
+    text-align: center;
+    font-size: 1.8vw;
+    border: 2px solid #79c2d2;
+    border-radius: 1.5vw;
+    font-family: Koodak;
+    width: 4vw;
 }
 
 #cr1 {
@@ -510,11 +518,20 @@ hr {
 .d1 {
     position: relative;
     top: 5vw;
+    margin-right: 2vw;
+    /*margin-left: 2vw;*/
 }
-
+.d1 > img{
+    width: 7vw;
+}
 .d2 {
     position: relative;
-    top: -5vw;
+    top: 1vw;
+    margin-right: 2vw;
+    /*margin-left: 2vw;*/
+}
+.d2 > img{
+    width: 7vw;
 }
 
 .dotted-border {
