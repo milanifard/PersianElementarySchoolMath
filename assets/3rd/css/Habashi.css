@@ -85,7 +85,7 @@ body{
 
 .number_of_page{
     background-color: var(--purple-dark);
-    border-radius: 2.5vw;
+    border-radius: 1.5vw;
     border: 0.5vw double white;
 
     text-align: center;
@@ -101,7 +101,7 @@ body{
 
 .number_of_left_page{
     background-color: var(--purple-dark);
-    border-radius: 2.5vw;
+    border-radius: 1.5vw;
     border: 0.5vw double white;
 
     text-align: center;
@@ -114,6 +114,17 @@ body{
     bottom: -0.5vw;
     left: -5vw;
 }
+.input-1[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.input-2::-webkit-outer-spin-button,
+.input-3::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+
 
 .rtl_dir{
     direction: rtl;
@@ -388,22 +399,6 @@ body{
     margin: auto;
 }
 
-.page-number{
-
-    background-color: var(--yellow_level4_guessbox);
-    border-radius: 2.5vw;
-    border: 0.9vw double white;
-
-    text-align: center;
-    font-size: 2vw;
-    font-family: Koodak;
-    color: white;
-
-    padding: 0 3vw;
-    position: absolute;
-    bottom: -0.5vw;
-    right: -5vw;
-}
 .padding_left{
     padding-right: 8vw;
 }
