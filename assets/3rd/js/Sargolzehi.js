@@ -51,6 +51,27 @@ function show(id) {
     let item = document.getElementById(id);
     console.log(item);
     item.style.visibility = 'visible';
+    checkBoxComplete(id);
+}
+
+function checkBoxComplete(id) {
+    var boxId = id.substring(0, id.lastIndexOf('-'));
+    var box = document.getElementById(boxId);
+
+    var item;
+    var i = 1;
+    var complete = true;
+    do {
+        item = document.getElementById(boxId + '-i' + i++);
+        if (item != null && item.style.visibility === 'hidden') {
+            complete = false;
+            break;
+        }
+    } while (item != null)
+
+    if (complete) {
+        box.style.backgroundColor = '#bfffbf';
+    }
 }
 
 function checkAnswer(id, answer) {
