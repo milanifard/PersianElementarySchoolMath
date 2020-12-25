@@ -102,6 +102,7 @@ input[type="text"]:focus {
   font-size: 1.8vw;
   position: relative;
   padding-right: 5vw;
+  padding-top: 2vw;
   top: 5vw;
   right: 0px;
 }
@@ -280,12 +281,15 @@ input[type="text"]:focus {
   z-index: 1;
 }
 
-.nemoodar {
+.chart1-page130 {
   width: 25vw;
   height: 17vw;
   margin-right: 57vw;
   position: relative;
   z-index: 1;
+}
+img:hover{
+    transform:scale(1.05,1.05);
 }
 
 .pieChart {
