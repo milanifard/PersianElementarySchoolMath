@@ -2,13 +2,14 @@
 
 
     --purple: #b09ac9;
-
+    --white: #FFFFFF;
     --purple-dark:#957dac;
     --purple-light:#a48cb6;
     --purple--box--background:#e9e2ef ;
     --purple--title: #cab1d4;
     --under--title :#b41777;
     --blue--line :#b6d9ea;
+    --transparent : #00000000;
 
 }
 
@@ -16,13 +17,29 @@
     margin : 0;
     padding: 0;
 }
+@font-face {
+    font-family: 'BNazanin';
+    src: url('http://fontonline.ir/fonts/BNazanin.eot?#') format('eot'),
+    url('http://fontonline.ir/fonts/BNazanin.ttf') format('truetype'),
+    url('http://fontonline.ir/fonts/BNazanin.woff') format('woff');
+}
 
 @font-face {
     font-family: Zar;
-    src: url("../../fonts/Zar.woff") format("woff");
-
+    src: url("../../fonts/Zar.ttf");
 }
 
+@font-face {
+    font-family: 'Faraz';
+    src: url("/assets/fonts/Faraz.eot");
+    src: url("/assets/fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Faraz.woff2") format("woff2"), url("/assets/fonts/Faraz.woff") format("woff"), url("/assets/fonts/Faraz.ttf") format("truetype"), url("/assets/fonts/Faraz.svg#svgFontName") format("svg")
+}
+
+@font-face {
+    font-family: persianNum;
+    src: url('/assets/fonts/Farsi-Digits/Samim-FD.ttf');
+    font-weight: normal;
+}
 
 body{
     background-image: repeating-linear-gradient(0deg,var(--purple-dark), var(--purple-dark) 1vw, var(--purple-light) 0vw , var(--purple-light) 2.5vw);
@@ -46,7 +63,7 @@ body{
 }
 .border_left{
     width: 90%;
-    padding: 70% 0;
+    padding: 0 0 48% 0 ;
     background: white;
     border: 0.8vw double var(--purple-dark) ;
     border-radius: 4vw 0 0 4vw;
@@ -56,6 +73,12 @@ body{
     margin-bottom: 22vw;
     border-right: none;
 
+}
+.padding_bootom{
+    padding-bottom: 60vw;
+}
+.color_red{
+    color: var(--under--title);
 }
 
 
@@ -67,13 +90,33 @@ body{
 
     text-align: center;
     font-size: 2vw;
-    font-family: koodak;
+    font-family: Zar;
     color: white;
 
     padding: 0 3vw;
     position: absolute;
     bottom: -0.5vw;
     right: -5vw;
+}
+
+.number_of_left_page{
+    background-color: var(--purple-dark);
+    border-radius: 2.5vw;
+    border: 0.5vw double white;
+
+    text-align: center;
+    font-size: 2vw;
+    font-family: Zar;
+    color: white;
+
+    padding: 0 3vw;
+    position: absolute;
+    bottom: -0.5vw;
+    left: -5vw;
+}
+
+.rtl_dir{
+    direction: rtl;
 }
 
 .activity-text{
@@ -106,7 +149,7 @@ body{
     width: fit-content;
 
     text-align: center;
-    font-family: Koodak;
+    font-family: Zar;
     font-size: 3.3vw;
     color: black;
 
@@ -187,34 +230,40 @@ body{
     margin:0 1vw;
 
 }
+.input_style_whole_line{
+    text-align: center;
+    font-size:2vw;
+    font-family: ZAR,Faraz;
+    width: 70vw;
+    line-grid: create;
+
+    background-color: #00000000;
+    border : none;
+    border-bottom: 2px solid var(--blue--line);
+    border-radius: 0.5vw;
+    /*width: 8vw;*/
+    height: 4vw;
+}
+.width50{
+    width: 50vw;
+}
+.width40{
+    width: 40vw;
+}
 
 .input_style_line{
     text-align: center;
     font-size:2vw;
     font-family: ZAR,Faraz;
 
+    line-grid: create;
 
-    background-color: #00000000;
+    background-color: var(--transparent);
     border : none;
     border-bottom: 2px solid var(--blue--line);
     border-radius: 0.5vw;
     width: 8vw;
     height: 4vw;
-}
-
-#box{
-    background-color:var(--purple--box--background);
-    border: 2px solid var(--purple);
-    border-radius: 5vw;
-    position: absolute;
-    left:5vw;
-    right: 2vw;
-    padding-bottom: 5vw;
-    padding-top: 2vw ;
-
-    font-family: ZAR,koodak,Faraz;
-    font-size: 2vw;
-    direction: rtl;
 }
 .container-box{
     display: flex;
@@ -253,6 +302,9 @@ body{
 .img_width16{
     width:16.5vw;
 }
+.img_width25{
+    width:25vw;
+}
 
 .frac {
     display: inline-block;
@@ -279,7 +331,7 @@ body{
     border-right: 2vw solid var(--purple-dark);
     text-align: center;
     font-size: 2.25vw;
-    font-family: K;
+    font-family: Zar;
     color: white;
     font-weight: bold;
     padding: 8px;
@@ -297,13 +349,14 @@ body{
     border-left: 2vw solid var(--purple-dark);
     text-align: center;
     font-size: 2.25vw;
-    font-family: Koodak;
+    font-family: Zar;
     color: white;
     font-weight: bold;
     padding: 8px;
     width: 16vw;
     position: relative;
-    left: -66.5vw;
+    left: -2vw;
+    float: left;
     top: 1vw;
     margin-bottom: 2vw;
     z-index: 1;
@@ -337,7 +390,7 @@ body{
 
     text-align: center;
     font-size: 2vw;
-    font-family: Koodak;
+    font-family: Zar;
     color: white;
 
     padding: 0 3vw;
@@ -381,10 +434,21 @@ body{
     margin:1vw 5vw 0 2vw;
 
 }
+
+.bar-row-container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+}
 .row-container_left{
     display: block;
     flex-direction: row;
-    justify-content: right;
+    float: left;
+    justify-content: left;
     align-items: center;
     flex-wrap: wrap;
     align-content: space-between;
@@ -401,6 +465,36 @@ body{
 
 }
 
+#box{
+    background-color:var(--purple--box--background);
+    border: 2px solid var(--purple);
+    border-radius: 3vw;
+    position: absolute;
+    left:2vw;
+    right: 2vw;
+    padding-bottom: 5vw;
+    padding-top: 2vw ;
+    font-family: Zar,Faraz;
+    font-size: 2vw;
+    direction: rtl;
+}
+
+#charity_box{
+    margin-left: 1vw ;
+}
+#white_box{
+    width: 35vw;
+    background-color:var(--white);
+    border: 2px solid var(--purple);
+    border-radius: 3vw;
+    left:2vw;
+    right: 2vw;
+    padding-bottom: 5vw;
+    font-family: Zar,Faraz;
+    font-size: 2vw;
+    direction: rtl;
+
+}
 #next_btn{float: left; margin-right: 1.5vw;}
 #pre_btn{float: left; margin-left: 1.5vw;}
 

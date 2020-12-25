@@ -23,9 +23,9 @@ a {
   src: url("../../fonts/naskh/Far_KoodkBd.ttf") format("woff");
 }
 
-.farhangeKhandan {
+.farhangeKhandan-container {
   background-color: rgb(255, 252, 224);
-  width: 90%;
+  width: 92%;
   padding: 9vw 2vw 2vw 2vw;
   border-radius: 5vw;
   border: 0.3vw solid rgb(254, 204, 78);
@@ -33,7 +33,7 @@ a {
   margin-right: 0.7vw;
 }
 
-.pic_worm {
+.pic-worm {
   position: absolute;
   width: 12vw;
   top: -7.2vw;
@@ -41,7 +41,7 @@ a {
   right: 3vw;
 }
 
-.pic_boy {
+.pic-boy {
   position: absolute;
   width: 25vw;
   left: 12vw;
@@ -102,6 +102,7 @@ input[type="text"]:focus {
   font-size: 1.8vw;
   position: relative;
   padding-right: 5vw;
+  padding-top: 2vw;
   top: 5vw;
   right: 0px;
 }
@@ -250,7 +251,7 @@ input[type="text"]:focus {
   padding-right: 9vw;
 }
 
-.pic2 {
+.pic-girl_and_teacher_activity {
   width: 11vw;
   height: 13vw;
   margin-right: -2vw;
@@ -259,7 +260,7 @@ input[type="text"]:focus {
   z-index: 1;
 }
 
-.tamrin {
+.tamrin-page130 {
   font-size: 1.8vw;
   margin-right: 10vw;
   margin-top: -7vw;
@@ -272,7 +273,7 @@ input[type="text"]:focus {
   z-index: 2;
 }
 
-.sabadeShir {
+.pic-milkBasket {
   width: 22w;
   height: 22vw;
   margin-top: -5vw;
@@ -280,15 +281,18 @@ input[type="text"]:focus {
   z-index: 1;
 }
 
-.nemoodar {
+.chart1-page130 {
   width: 25vw;
   height: 17vw;
   margin-right: 57vw;
   position: relative;
   z-index: 1;
 }
+img:hover{
+    transform:scale(1.05,1.05);
+}
 
-.nemoodar1 {
+.pieChart {
   width: 30vw;
   height: 30vw;
   margin-right: 55vw;
@@ -296,13 +300,13 @@ input[type="text"]:focus {
   position: absolute;
 }
 
-.nemoodar2 {
+.columnChart {
   width: 60%;
   height: 30vw;
   min-height: 150px;
 }
 
-.nemoodar3 {
+.pic-columnChart {
   width: 30vw;
   height: 18vw;
   margin-right: 50vw;
@@ -316,7 +320,7 @@ input[type="radio"] {
   position: relative;
 }
 
-input[type="radio"]:nth-child(5n + 4) {
+input[type="radio"]:nth-child(1) {
   margin-right: 0.2vw;
 }
 
@@ -330,7 +334,7 @@ input[type="radio"]:after {
   border: 2px solid white;
 }
 
-input[type="radio"]:nth-child(5n):checked:after {
+input[type="radio"]:nth-child(7):checked:after {
   width: 2.4vw;
   height: 2.4vw;
   background-color: green;
@@ -340,7 +344,7 @@ input[type="radio"]:nth-child(5n):checked:after {
   border: 2px solid white;
 }
 
-input[type="radio"]:nth-child(5n):checked {
+input[type="radio"]:nth-child(7):checked {
   animation-name: correct;
   animation-duration: 0.5s;
 }
@@ -360,12 +364,12 @@ input[type="radio"]:checked:after {
   border: 2px solid white;
 }
 
-.nemoodar4 {
+.chart4 {
   width: 15%;
   margin-left: 7vw;
 }
 
-.miveh {
+.pic-fruit {
   width: 20vw;
   height: 15vw;
   margin-top: 2vw;
@@ -405,4 +409,17 @@ td {
   width: 15vw;
   margin-right: 70vw;
   margin-top: -2vw;
+}
+.lineAnswer {
+  height: 0.2vh;
+  background-color: rgb(190, 226, 235);
+  display: inline-block;
+  position: relative;
+}
+.redBackground-title {
+  height: 1.5vw;
+  width: 22vw;
+  background-color: #c8242b;
+  margin-right: 29vw;
+  margin-top: -1vw;
 }

@@ -2,26 +2,28 @@
 <html>
 
 <head>
+  <meta name="author" content="Reza Mohajer">
   <title>page 132</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/3rd/css/mohajer.css">
+  <link rel="stylesheet" href="./assets/3rd/css/mohajer/cube.css">
+
   <script src="assets/3rd/js/mohajer/core.js"></script>
   <script src="assets/3rd/js/mohajer/charts.js"></script>
   <script src="assets/3rd/js/mohajer/animated.js"></script>
   <script src="assets/3rd/js/mohajer/mohajer.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
+  <script src="assets/3rd/js/mohajer/dragable.js"></script>
 </head>
 
 <body>
-  <div class="left-border">
+  <div class=" left-border">
     <div>
-      <img src="assets/3rd/images/mohajer/worm.png" class="pic_worm">
+      <img src="assets/3rd/images/mohajer/worm.png" class="pic-worm">
       <div>
         <div class="rectangle"></div>
-        <div class="farhangeNeveshtan-title">سرگرمی و معّما</div>
+        <div class="farhangeNeveshtan-title" style="background-color: rgb(255, 221, 43);">سرگرمی و معّما</div>
       </div>
       <div style="padding-right:2vw;padding-top:2vw;">
         <p>چهار مکعّب چینه برداریدو تمام حالت‌هایی را که این مکعّب‌ها می‌توانند کنار هم قرار بگیرند، پیدا کنید.</p>
@@ -29,46 +31,246 @@
         <img src="assets/3rd/images/mohajer/cube_1.png" class="pic-cube1">
         <p>توجّه داشته باشید که شکل‌های زیر نیز همان حالت را نشان می‌دهند.چهار مکعّب فقط در هوا چرخیده‌اند.</p>
         <img src="assets/3rd/images/mohajer/cube_2.png" style="width: 100%;">
-        <p>با راهبرد الگوسازی می‌توانید همه‌ی حالت‌های ممکن را پیدا کنید.</p>
+        <p>با راهبرد الگوسازی می‌توانید همه‌ی حالت‌های ممکن را پیدا کنید .
+          <span style="color: red;">(مکعب‌ها قابلیت کشیده‌شدن دارند)</span>
+        </p>
       </div>
       <br> <br>
-      <div>
-        <div class="rectangle"></div>
-        <div class="farhangeNeveshtan-title">فرهنگ خواندن</div>
+
+
+      <div class='mydiv' id='cube1' style="top:55.21vw;left:14.90vw">
+        <div class='D3Cube'>
+          <div class='side1'></div>
+          <div class='side2'></div>
+          <div class='side3'></div>
+          <div class='side4'></div>
+          <div class='side5'></div>
+          <div class='side6'></div>
+        </div>
+      </div>
+      <div class='mydiv' id='cube2' style="top:57.28vw;left:10.7vw">
+        <div class='D3Cube'>
+          <div class='side1'></div>
+          <div class='side2'></div>
+          <div class='side3'></div>
+          <div class='side4'></div>
+          <div class='side5'></div>
+          <div class='side6'></div>
+        </div>
       </div>
 
+      <div class='mydiv' id='cube3' style="top:48.32vw;left:15vw">
+        <div class='D3Cube'>
+          <div class='side1'></div>
+          <div class='side2'></div>
+          <div class='side3'></div>
+          <div class='side4'></div>
+          <div class='side5'></div>
+          <div class='side6'></div>
+        </div>
+      </div>
 
-      <div style="padding-right:2vw;padding-top:2vw;">
-        <div class="farhangeKhandan">
-          <img src="assets/3rd/images/mohajer/boy.png" class="pic_boy">
-          <p>
-            خداوند جهان را به گونه‌ای آفریده است که توانایی‌ها، استعدادها، هنرها، مهارتها، ثروت ها و حتی پدیده های طبیعی
-            مثل زلزله، سیل و طوفان به طور منظمی توزیع شده‌اند. برای مثال، اگر قد آدم‌ها را در نظر بگیریم، می بینیم که در
-            هر جامعه تعداد محدودی قدبلندند و در مقابل آنها نیز تعدادی قد بسیار کوتاهی دارند. بقیه ی آدم‌ها هم دارای قد
-            متوسطی هستند. پس توزيع قد آدم ها یک نظم دارد. کوتاه قد، متوسط، بلند قد. در مورد هوش هم همین طور است. تعدادی
-            از انسان ها هوش فوق العاده‌ای دارند. در برابر آنها نیز تعدادی هستند که هوش پایینی دارند. اما اغلب انسان‌ها
-            دارای هوش متوسط‌اند و با تلاش و پشتکار و به خصوص داشتن نظم در کارهایشان می توانند به موفقیت
-            برسند.
+      <div class='mydiv' id='cube4' style="top:50.46vw;left:10.7vw">
+        <div class='D3Cube'>
+          <div class='side1'></div>
+          <div class='side2'></div>
+          <div class='side3'></div>
+          <div class='side4'></div>
+          <div class='side5'></div>
+          <div class='side6'></div>
+        </div>
+      </div>
+      <div>
 
-          </p>
-
+        <div class='mydiv' id='cube5' style="top:53.87vw;left:61.16vw">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+        <div class='mydiv' id='cube6' style="top:55.6vw;left:66.9vw">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
         </div>
 
-      </div>
-      <div class="pageNumber-container" style="margin-right: -6vw;margin-top: 0.1vw;">
-        <a class='fas fa-angle-double-right	' title="پایان" href="book_3_147.html"></a>
-        <a class='fas fa-angle-right' title="بعدی" href="book_3_133.html"></a>
-        <input type="number" onkeydown="enterPage(this)" class="pageNumber-content" value="132">
-        <a class='fas fa-angle-left' title="قبلی" href="book_3_131.html"></a>
-        <a class='fas fa-angle-double-left' title="شروع" href="book_3_10.html"></a>
+        <div class='mydiv' id='cube7' style="top:57.2vw;left:72.79vw">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
 
+        <div class='mydiv' id='cube8' style="top:59vw;left:78.60vw">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+
+        <div class='mydiv' id='cube9' style="top:72.74vw;left:56.29vw">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+        <div class='mydiv' id='cube10' style="top:81.22vw;left:62.44vw">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+
+        <div class='mydiv' id='cube11' style="top:89.78vw;left:68.60vw">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+
+        <div class='mydiv' id='cube12' style="top:98.2vw;left:74.47vw">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+        <div class='mydiv' id='cube13' style="top:82.36vw;left:11.76vw">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+        <div class='mydiv' id='cube14' style="top:84.16vw;left:17.64vw">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+
+        <div class='mydiv' id='cube15' style="top:85.83vw;left:23.19vw">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+
+        <div class='mydiv' id='cube16' style="top:77.48vw;left:17.58vw">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+
+
+        <script>
+
+          for (i = 1; i < 17; i++)
+            dragElement(document.getElementById('cube' + i));
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+          <div class="rectangle"></div>
+          <div class="farhangeNeveshtan-title" style="background-color: rgb(255, 221, 43);">فرهنگ خواندن</div>
+        </div>
+        <div style="padding: 2vw 2vw 0 0;">
+          <div class="farhangeKhandan-container">
+            <img src="assets/3rd/images/mohajer/boy.png" class="pic-boy">
+            <p>
+              خداوند جهان را به گونه‌ای آفریده است که توانایی‌ها، استعدادها، هنرها، مهارتها، ثروت ها و حتی پدیده های
+              طبیعی
+              مثل زلزله، سیل و طوفان به طور منظمی توزیع شده‌اند. برای مثال، اگر قد آدم‌ها را در نظر بگیریم، می بینیم که
+              در
+              هر جامعه تعداد محدودی قدبلندند و در مقابل آنها نیز تعدادی قد بسیار کوتاهی دارند. بقیه ی آدم‌ها هم دارای قد
+              متوسطی هستند. پس توزيع قد آدم ها یک نظم دارد. کوتاه قد، متوسط، بلند قد. در مورد هوش هم همین طور است.
+              تعدادی
+              از انسان ها هوش فوق العاده‌ای دارند. در برابر آنها نیز تعدادی هستند که هوش پایینی دارند. اما اغلب انسان‌ها
+              دارای هوش متوسط‌اند و با تلاش و پشتکار و به خصوص داشتن نظم در کارهایشان می توانند به موفقیت
+              برسند.
+
+            </p>
+
+          </div>
+
+        </div>
+        <div class="pageNumber-container" style="margin-right: -6vw;margin-top: 0.1vw;">
+          <a class='fas fa-angle-double-right	' title="شروع" href="book_3_10.html"></a>
+          <a class='fas fa-angle-right' title="قبلی" href="book_3_131.html"></a>
+          <input type="number" onkeydown="enterPage(this)" class="pageNumber-content" value="132">
+          <a class='fas fa-angle-left' title="بعدی" href="book_3_133.html"></a>
+          <a class='fas fa-angle-double-left' title="پایان" href="book_3_147.html"></a>
+
+        </div>
       </div>
+      <div class="background-style" style="margin-top: -32.2vw;"></div>
+
     </div>
-    <div class="background-style" style="margin-top: -32.2vw;"></div>
-
-  </div>
 
 </body>
-
 
 </html>
