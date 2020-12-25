@@ -1,0 +1,78 @@
+#smallCube {
+	width: 60px;
+}
+
+#readingCulture {
+	right: -4.3vw;
+}
+
+#rightArrow {
+	cursor: pointer;
+	border-right: .3vw solid $purple;
+	border-bottom: .3vw solid $purple;
+	width: 1.5vw;
+    height: 1.5vw;
+	transform: rotate(-45deg);
+	margin-bottom: -8px;
+}
+
+#leftArrow {
+	cursor: pointer;
+	border-left: .3vw solid $purple;
+	border-top: .3vw solid $purple;
+	width: 1.5vw;
+    height: 1.5vw;
+	transform: rotate(-45deg);
+	margin-top: 8px;
+}
+
+#readingCultureImg {
+	position: absolute;
+	width: 20vw;
+    left: 4vw;
+    top: -6vw;
+}
+
+#wormImage {
+	position: absolute;
+    width: 10vw;
+    right: 0vw;
+    top: -7.5vw;
+}
+
+#vectorImagePage_78 {
+	width: 40vw;
+	margin-top: -1vw;
+}
+
+#ladybirdBeetleImg {
+    position: absolute;
+	width: 16vw;
+    left: -2vw;
+    top: 8vw;
+}
+
+#girlAndMotherImg {
+	position: absolute;
+    width: 15vw;
+    right: -7vw;
+    top: 0vw;
+    z-index: 1;
+}
+
+#patternTitlePage_76 {
+	margin-right: 8vw;
+	
+	span {
+		color: $darker_pink;
+	}
+}
+
+#flowerPotPage_76 {
+	width: 24vw;
+    margin-top: 3vw;
+}
+
+#circlesWrapperPage_78 {
+	margin-left: 1vw;
+}

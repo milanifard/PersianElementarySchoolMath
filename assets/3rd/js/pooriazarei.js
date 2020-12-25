@@ -9,12 +9,12 @@ $('document').ready(function () {
 	
 
 	$('#rightArrow').on('click', function () {
-		pageNumber++;
+		pageNumber--;
 		window.location.replace("book_3_" + pageNumber + ".html");
 	});
 
 	$('#leftArrow').on('click', function () {
-		pageNumber--;
+		pageNumber++;
 		window.location.replace("book_3_" + pageNumber + ".html");;
 	});
 

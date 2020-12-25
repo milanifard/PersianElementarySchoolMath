@@ -3,16 +3,20 @@
 
 <head>
     <title>page 130</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/3rd/css/mohajer.css">
-
+    <script src="assets/3rd/js/mohajer/core.js"></script>
+    <script src="assets/3rd/js/mohajer/charts.js"></script>
+    <script src="assets/3rd/js/mohajer/animated.js"></script>
+    <script src="assets/3rd/js/mohajer/mohajer.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
 <body>
-    <div class="right-border">
-
+    <div class="left-border">
         <div>
-            <div class="that-ridiculous-red-parts-in-title"></div>
+            <div class="redBackground-title"></div>
             <div class="title-style">مرور فصل</div>
         </div>
         <div>
@@ -20,26 +24,46 @@
                 <div class="rectangle"></div>
                 <div class="farhangeNeveshtan-title">فرهنگ نوشتن</div>
             </div>
-            <div id="farhangeNeveshtan">
+            <div>
                 <div class="farhangeNeveshtan-content">
                     <div class="rectangle-white">
-                        <span style="color: rgb(252,189,129);">1- </span> نمودار دایره ای در تمرین ٣ صفحه ی 126 را چگونه
-                        رنگ کردید؟ توضیح دهید.
-                        <br>
-                        <div style="width:55vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;">
-                        </div>
-                        <br>
-                        <div style="width:55vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;">
-                        </div>
-                        <br>
-                        <br> <span style="color: rgb(252,189,129);">2- </span> دو جمله بنویسید که در آنها کلمه ی
-                        »احتمال« یا »شانس« به کار رفته باشد.
-                        <div style="width:55vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;">
-                        </div>
-                        <br>
-                        <div style="width:55vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;">
-                        </div>
-
+                        <p>
+                            <span style="color: rgb(252,189,129);">1- </span> نمودار دایره ای در تمرین ٣ صفحه ی 126 را
+                            چگونه
+                            رنگ کردید؟ توضیح دهید.
+                        </p>
+                        <p>
+                            <span>
+                                <input type="text" style="width: 55vw;">
+                                <span style="width:55vw;" class="lineAnswer">
+                                </span>
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                <input type="text" style="width: 55vw;">
+                                <span style="width:55vw;" class="lineAnswer">
+                                </span>
+                            </span>
+                        </p>
+                        <p>
+                            <span style="color: rgb(252,189,129);">2- </span> دو جمله بنویسید که در آنها کلمه ی
+                            «احتمال» یا «شانس» به کار رفته باشد.
+                        </p>
+                        <p>
+                            <span>
+                                <input type="text" style="width: 55vw;">
+                                <span style="width:55vw;" class="lineAnswer">
+                                </span>
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                <input type="text" style="width: 55vw;">
+                                <span style="width:55vw;" class="lineAnswer">
+                                </span>
+                            </span>
+                        </p>
                     </div>
 
                     <img src="assets/3rd/images/mohajer/1.png" class="kafshdoozak">
@@ -52,10 +76,11 @@
             <div class="rectangle-tamrin">
                 تمرین
             </div>
-            <img src="assets/3rd/images/girl_and_teacher_activity.png" class="pic2">
-            <div class="tamrin">
-                <span style="color: rgb(252,189,129);">1- </span>مغازه داری تعداد بطری های شیر را که در روزهای مختلف
-                هفته فروخته، در جدول زیر ثبت کرده است.
+            <img src="assets/3rd/images/girl_and_teacher_activity.png" class="pic-girl_and_teacher_activity">
+            <div class="tamrin-page130">
+                <p> <span style="color: rgb(252,189,129);">1- </span>مغازه داری تعداد بطری های شیر را که در روزهای مختلف
+                    هفته فروخته، در جدول زیر ثبت کرده است.</p>
+
                 <table>
                     <tr>
                         <th style="  background-color: rgb(107,207,246);">روز</th>
@@ -75,39 +100,89 @@
                         <td>30</td>
                         <td>40</td>
                     </tr>
-
-                    </tr>
                 </table>
-                <div>
-                    اطلاعات جدول را در یک نمودار ستونی قرار دهید.
+                <p> اطلاعات جدول را در یک نمودار ستونی قرار دهید.
+                </p>
+                <p> این مغازه دار در چه روزی کمترین مقدار شیر را فروخته است؟
+                    <span>
+                        <input type="text" id="input1" style="width: 18.3vw;" onKeyUp="checkInput(this,'سه شنبه')">
+                        <span style="width:18.3vw;" class="lineAnswer">
+                        </span>
+                    </span>
+                </p>
+                <p> چرا روز پنجشنبه فروش شیر بیشتر بوده است؟
+                    <span>
+                        <input type="text" style="width: 27.5vw;">
+                        <span style="width:27.5vw;" class="lineAnswer">
+                        </span>
+                    </span>
+                </p>
+                <p> به نظر شما، بهتر است این مغازه دار هر روز چند بطری شیر
+                </p>
+                <p> برای فروش بیاورد؟
+                    <span>
+                        <input type="text" id="input1" style="width: 10vw;">
+                        <span style="width:10vw;" class="lineAnswer"></span>
+                    </span> چرا؟
+                    <span>
+                        <input type="text" id="input1" style="width: 30vw;">
+                        <span style="width:30vw;" class="lineAnswer"></span>
+                    </span>
+                </p>
+                <span>
+                    <input type="text" id="input1" style="width: 56vw;">
+                    <span style=" width:56vw;" class="lineAnswer"></span>
+                </span>
 
-                    <br>
-                    این مغازه دار در چه روزی کمترین مقدار شیر را فروخته است؟
-                    <br>
-                    چرا روز پنجشنبه فروش شیر بیشتر بوده است؟
-                    <br>
-                    به نظر شما، بهتر است این مغازه دار هر روز چند بطری شیر
-                    <br>
-                    برای فروش بیاورد؟
-                    <div style="width:20vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;"></div>
-                    چرا؟
-                    <div style="width:20vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;"></div>
-                    <br>
-                    <div style="width:56vw;height:0.2vh;background-color:rgb(190,226,235);display: inline-block;"></div>
-                    <img src="assets/3rd/images/mohajer/2.png" class="sabadeShir">
-                    <div class="page-number">130</div>
+                <img src="assets/3rd/images/mohajer/milkBasket.png" class="pic-milkBasket">
 
+                <div id="chartdiv" class="columnChart"></div>
 
+                <div class="pageNumber-container">
+                    <a class='fas fa-angle-double-right	' title="پایان" style='' href="book_3_147.html"></a>
+                    <a class='fas fa-angle-right' title="بعدی" style='' href="book_3_131.html"></a>
+                    <input type="number" onkeydown="enterPage(this)" class="pageNumber-content" value="130">
+                    <a class='fas fa-angle-left' title="قبلی" style='' href="book_3_129.html"></a>
+                    <a class='fas fa-angle-double-left' title="شروع" style='' href="book_3_10.html"></a>
 
                 </div>
             </div>
-
         </div>
-     
-        <div class="background-style"></div>
-
-</div>
-
+        <div class="background-style" style="margin-top: -32vw;"></div>
+    </div>
 </body>
+
+
+<script>
+    data = [
+        {
+            country: "شنبه",
+            visits: 5
+        },
+        {
+            country: "یکشنبه",
+            visits: 5
+        },
+        {
+            country: "دوشنبه",
+            visits: 5
+        },
+        {
+            country: "سه‌شنبه",
+            visits: 5
+        },
+        {
+            country: "چهار‌شنبه",
+            visits: 5
+        },
+        {
+            country: "پنجشنبه",
+            visits: 5
+        },
+
+    ];
+    var widthMax = 50;  
+</script>
+<script src="assets/3rd/js/mohajer/script.js"></script>
 
 </html>

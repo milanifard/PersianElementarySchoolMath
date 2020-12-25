@@ -1,40 +1,5 @@
-:root {
-    --pale_orange_level1_guessbox: #FEE6D3;
-    --pale_orange_level2_border: #FCC8AB;
-    --pale_orange_level3_border: #F9B18E;
-    --pale_orange_level4_guessbox: #F69B86;
-
-    --light-green: #bbd75e;
-    --middle-green: #8bc669;
-    --dark-green: #4fac77;
-
-    --red_level1: #f0595b;
-    --red_level2: #26A1B9;
-    --red_level3: #db3f32;
-
-    --blue_level0: #d4effb;
-    --blue_level1: #6bcff6;
-    --blue_level2: #3853a3;
-    --blue_level3: #5cb6cd;
-
-    --green_level0: #d2e287;
-    --green_level1: #bbd75e;
-    --green_level2: #87c765;
-    --green_level3: #44b869;
-    --green_level4: #3ab54a;
-
-    --orange_level1: #fee6d3;
-    --orange_level2: #fcb94b;
-    --orange_level3: #f89f6d;
-
-    --purple: #b09ac9;
-
-    --pink_level0: #fbdfeb;
-    --pink: #f287b6;
-
-    --dynamic_rnd: 0;
-    --dynamic_rnd_last: 0;
-
+#paint-canvas-1, #paint-canvas-2, #paint-canvas-3, #paint-canvas-4, #paint-canvas-5, #paint-canvas-6, #paint-canvas-7 {
+    cursor: crosshair;
 }
 
 @font-face {
@@ -55,22 +20,32 @@
     src: url("/assets/fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Faraz.woff2") format("woff2"), url("/assets/fonts/Faraz.woff") format("woff"), url("/assets/fonts/Faraz.ttf") format("truetype"), url("/assets/fonts/Faraz.svg#svgFontName") format("svg")
 }
 
-@font-face
-{
-    font-family:persianNum; src:url('/assets/fonts/Farsi-Digits/Samim-FD.ttf'); font-weight:normal;
+@font-face {
+    font-family: persianNum;
+    src: url('/assets/fonts/Farsi-Digits/Samim-FD.ttf');
+    font-weight: normal;
 }
 
-#paint-canvas-1, #paint-canvas-2, #paint-canvas-3, #paint-canvas-4, #paint-canvas-5, #paint-canvas-6, #paint-canvas-7{
-    cursor:crosshair;
+:root {
+    --border-color-1: #FCC8AB;
+    --border-color-2: #F9B18E;
+    --border-color-3: #FCD2C0;
+    --guess-box-color-1: #FEE6D3;
+    --guess-box-color-2: #F69B86;
+
+    --light-green: #bbd75e;
+    --middle-green: #8bc669;
+
+    --red_level2: #26A1B9;
 }
 
 * {
-    margin : 0;
+    margin: 0;
     padding: 0;
 }
 
-body{
-    background-image: repeating-linear-gradient(0deg, var(--pale_orange_level2_border), var(--pale_orange_level2_border) 1vw, var(--pale_orange_level3_border) 0vw, var(--pale_orange_level3_border) 2.5vw);
+body {
+    background-image: repeating-linear-gradient(0deg, var(--border-color-1), var(--border-color-1) 1vw, var(--border-color-3) 0vw, var(--border-color-3) 2.5vw);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100% 40%;
@@ -78,14 +53,25 @@ body{
 }
 
 /* In order to ignore input top-down btn */
-.input-1[type='number'] {-moz-appearance:textfield;}
+.input-1[type='number'] {
+    -moz-appearance: textfield;
+}
+
 .input-2::-webkit-outer-spin-button,
-.input-3::-webkit-inner-spin-button {-webkit-appearance: none;}
+.input-3::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 
-.right-border{
+.right-border {
     width: 90vw;
-    border: 0.27vw solid var(--pale_orange_level2_border);
+    border: 0.27vw solid var(--border-color-1);
 
     margin: 8vw 0 0 0;
     border-left: none;
@@ -95,10 +81,10 @@ body{
     background-color: white;
 }
 
-.right-inner-border{
+.right-inner-border {
     width: 89.75vw;
 
-    border: 0.12vw solid var(--pale_orange_level2_border);
+    border: 0.12vw solid var(--border-color-1);
 
     margin: 0.2vw 0 0 0;
     border-left: none;
@@ -108,12 +94,17 @@ body{
     background-color: white;
 }
 
-.left-border{
+.page-number-left {
+    left: -5vw;
+    right: auto;
+}
+
+.left-border {
     width: 90vw;
 
-    border: 0.8vw double var(--pale_orange_level2_border);
+    border: 0.27vw solid var(--border-color-1);
 
-    margin: 6vw 0 0 10vw;
+    margin: 6vw 0 0 0;
     border-right: none;
     border-top-left-radius: 5vw;
     border-bottom-left-radius: 5vw;
@@ -121,18 +112,42 @@ body{
     background-color: white;
 }
 
-/*.background-style{*/
+.left-inner-border {
+    width: 89.75vw;
 
-/*    position: absolute;*/
-/*    bottom: -12vw;*/
-/*    z-index: -1;*/
-/*}*/
+    border: 0.12vw solid var(--border-color-1);
 
-.page-number{
+    margin: 0.2vw 0 0 0;
+    border-right: none;
+    border-top-left-radius: 4.5vw;
+    border-bottom-left-radius: 4.5vw;
+    position: relative;
+    background-color: white;
+}
+
+.background-style {
+
+    width: 100vw;
+    height: 53vw;
+
+    background-image: repeating-linear-gradient(0deg, var(--border-color-1), var(--border-color-1) 1vw, var(--border-color-2) 0vw, var(--border-color-2) 2.5vw);
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    bottom: -12vw;
+    z-index: -1;
+}
+
+.background-style-margin {
+    left: -10vw;
+}
+
+.page-number {
     font-family: Koodak;
-    background-color: var(--pale_orange_level4_guessbox);
-    border-radius: 2.5vw;
-    border: 0.9vw double white;
+    background-color: var(--border-color-1);
+    border-radius: 1.5vw;
+    border: 0.4vw double white;
 
     text-align: center;
     font-size: 2vw;
@@ -140,12 +155,12 @@ body{
 
     padding: 0 3vw;
     position: absolute;
-    bottom: -0.5vw;
+    bottom: 0vw;
     right: -5vw;
 }
 
-.title-style{
-    background-color: var(--pale_orange_level3_border);
+.title-style {
+    background-color: var(--border-color-2);
     border-radius: 3vw;
     width: fit-content;
 
@@ -157,7 +172,7 @@ body{
     padding: 0.8vw 2vw 0.8vw 2vw;
 }
 
-.title_container{
+.title_container {
     height: 1.5vw;
     width: fit-content;
 
@@ -174,8 +189,8 @@ body{
     top: -1.1vw;
 }
 
-.activity-text{
-    background-color: var(--pale_orange_level3_border);
+.activity-text {
+    background-color: var(--border-color-2);
     border-radius: 1.5vw;
 
     text-align: center;
@@ -190,7 +205,7 @@ body{
     z-index: 1;
 }
 
-.activity-image{
+.activity-image {
     width: 13vw;
     position: absolute;
     right: -1.85vw;
@@ -198,19 +213,25 @@ body{
     z-index: 2;
 }
 
-.text-config{
+.text-config {
     font-family: Zar;
     font-size: 2vw;
     direction: rtl;
-    white-space: pre-wrap;
+    /*white-space: pre-wrap;*/
 }
 
-.questions-text-config{
+.text-config-no-wrap {
+    font-family: Zar;
+    font-size: 2vw;
+    direction: rtl;
+}
+
+.questions-text-config {
     font-size: 2.3vw;
 }
 
 .shaking-animation {
-    animation: shake 1.5s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -235,7 +256,7 @@ body{
 }
 
 
-.page-no-input{
+.page-no-input {
     align-items: center;
     alignment: center;
     align-content: center;
@@ -248,12 +269,13 @@ body{
     margin: auto;
 }
 
-.image_q1_2{
+.image_q1_2 {
     width: 56vw;
     height: auto;
     z-index: -1;
 }
-.image_q1_3{
+
+.image_q1_3 {
     width: 72vw;
     height: auto;
     z-index: -1;
@@ -305,13 +327,23 @@ body{
 
 }
 
+.dialog-test {
+    position: relative;
+    top: -7.3vw;
+    left: 2vw;
+}
+
 
 /* Page 142 */
-#Q1{padding-top: 6vw; padding-right: 12vw; margin-top: 3vw;}
+#Q1 {
+    padding-top: 6vw;
+    padding-right: 12vw;
+    margin-top: 3vw;
+}
 
-.page-number-input{
+.page-number-input {
     font-family: Koodak;
-    background-color: var(--pale_orange_level4_guessbox);
+    background-color: var(--guess-box-color-2);
     border-radius: 2.5vw;
     border: 0.9vw double white;
 
@@ -326,11 +358,19 @@ body{
 .cross-text {
     text-align: left;
     font-family: Zar;
-
+    /*width: fit-content;*/
     font-size: 2.2vw;
 }
 
-#crosses_container{
+.cross-text > div {
+    text-align: left;
+    font-family: Zar;
+
+    font-size: 2.2vw;
+    margin-left: 3vw;
+}
+
+#crosses_container {
     width: 7vw;
     max-width: 13vw;
     padding-left: 8vw;
@@ -341,7 +381,7 @@ hr {
 }
 
 .cross-input {
-    width: 4vw;
+    width: 100%;
     font-size: 1.8vw;
     font-family: Koodak;
 }
@@ -349,18 +389,23 @@ hr {
 #cr1 {
     margin-top: 7.5vw;
 }
+
 #cr2 {
 }
+
 #cr3 {
 }
+
 #cr4 {
 }
 
-#next_btn{float: left;
+#next_btn {
+    float: left;
     margin: 1vw 1.5vw auto auto;
 }
 
-#pre_btn{float: left;
+#pre_btn {
+    float: left;
     margin: 1vw auto auto 1.5vw;
 }
 
@@ -396,5 +441,146 @@ hr {
 
 .btn--inside {
     margin-left: -3.5vw;
+}
+
+
+#activity_img {
+    margin-right: 5vw;
+}
+
+#activity_txt {
+    margin-right: 3vw;
+    float: right;
+}
+
+.page-number-left {
+    left: -5vw;
+    right: auto;
+}
+
+.background-style-margin {
+    left: -10vw;
+}
+
+#box_end {
+    clear: both;
+    margin-bottom: 0;
+}
+
+#ClassWorkP1Question {
+    margin-top: 2vw;
+    padding-right: 33vw;
+}
+
+.ClassWorkQuestionDiv {
+    display: flex;
+    direction: ltr;
+    margin-left: 2vw;
+}
+
+
+.ClassWorkSegment {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.d1 {
+    position: relative;
+    top: 5vw;
+}
+
+.d2 {
+    position: relative;
+    top: -5vw;
+}
+
+.dotted-border {
+    border: 0.6vw dotted #F69B86;
+    border-radius: 4vw;
+
+    position: relative;
+    padding: 1.5vw;
+    margin: 2vw 7vw 0vw 1.5vw;
+}
+
+
+.guess-box {
+    background-color: var(--guess-box-color-1);
+    border: 0.2vw solid var(--guess-box-color-2);
+    border-radius: 4vw;
+
+    position: relative;
+    padding: 1.5vw;
+    margin: 4vw 7vw 3vw 1.5vw;
+}
+
+.guess-box-text-left {
+    background-color: var(--border-color-2);
+    border-radius: 0 1.5vw 1.5vw 0;
+    border-left: 1.5vw solid var(--guess-box-color-2);
+
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.5vw;
+    color: white;
+
+    padding: 0 2vw 0 3vw;
+    position: absolute;
+    left: -1.5vw;
+    top: 3vw;
+    z-index: 1;
+}
+
+.guess_box_question {
+    padding-right: 2vw;
+}
+
+.colorNumberSpan {
+    color: #F69B86;
+}
+
+input{
+    text-align: center;
+    width: 10vw;
+    border: none;
+    font-size: 1.75vw;
+    border-bottom: 2px solid #79c2d2;
+    border-radius: 0.6vw 0.6vw 0.3vw 0.3vw;
+}
+
+.bubble-image{
+    width: 4vw;
+}
+
+#ExerciseQuestion1 {
+    margin-top: 10vw;
+    margin-right: 12.5vw;
+}
+#ExerciseQuestion2 {
+    margin-top: 5vw;
+    margin-right: 12.5vw;
+}
+#ExerciseQuestion3 {
+    margin-top: 8vw;
+    margin-right: 2vw;
+}
+#ExerciseQuestion4 {
+    margin-top: 3vw;
+    margin-right: 2vw;
+}
+#ExerciseQuestion5 {
+    margin-top: 12vw;
+    margin-right: 2vw;
+}
+#ExerciseQuestion6 {
+    margin-top: 6vw;
+    margin-right: 2vw;
+}
+#ExerciseQuestion7 {
+    margin-top: 7vw;
+    margin-right: 2vw;
+    margin-bottom: 14vw;
 }
 
