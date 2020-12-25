@@ -278,6 +278,92 @@ function correct_q14(){
 
 // Page 143
 
+function correct_pa3(){
+    let elementById = document.getElementById('PA3Sub1');
+    if(elementById.value === "120"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+    elementById = document.getElementById('PA3Sub2');
+    if(elementById.value === "6"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+    elementById = document.getElementById('PA3Sub3');
+    if(elementById.value === "126"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+    elementById = document.getElementById('PA3Sub4');
+    if(elementById.value === "3x40"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+    elementById = document.getElementById('PA3Sub5');
+    if(elementById.value === "3x2"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+}
+
+function correct_pa4(){
+    let elementById = document.getElementById('PA4Sub1');
+    if(elementById.value === "210"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+    elementById = document.getElementById('PA4Sub2');
+    if(elementById.value === "35"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+    elementById = document.getElementById('PA4Sub3');
+    if(elementById.value === "245"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+    elementById = document.getElementById('PA4Sub4');
+    if(elementById.value === "7x30"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+    elementById = document.getElementById('PA4Sub5');
+    if(elementById.value === "7x5"){
+        elementById.style.backgroundColor = GREEN;
+    } else if (elementById.value === "") {
+        elementById.style.backgroundColor = TRANS;
+    }else {
+        elementById.style.backgroundColor = RED;
+    }
+}
+
 function correct_pb2(){
     let elementById = document.getElementById('PB2Sub1');
     if(elementById.value === "250"){

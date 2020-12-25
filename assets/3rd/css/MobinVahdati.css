@@ -336,8 +336,8 @@ img {
 
 .dialog-test {
     position: relative;
-    top: -4.5vw;
-    left: -1.5vw;
+    top: -5vw;
+    left: -2vw;
 }
 
 
@@ -492,7 +492,7 @@ hr {
 }
 
 #ClassWorkP1Question {
-    margin-top: 2vw;
+    margin-top: 3vw;
     padding-right: 33vw;
 }
 
@@ -502,6 +502,16 @@ hr {
     flex-flow: row;
     direction: ltr;
     margin-left: 2vw;
+}
+
+
+.ClassWorkQuestionPADiv {
+    display: flex;
+    justify-content: left;
+    flex-flow: row;
+    direction: ltr;
+    margin-left: 5vw;
+    margin-top: 2vw;
 }
 
 
@@ -517,21 +527,21 @@ hr {
 
 .d1 {
     position: relative;
-    top: 5vw;
+    top: 4vw;
     margin-right: 2vw;
     /*margin-left: 2vw;*/
 }
 .d1 > img{
-    width: 7vw;
+    width: 9vw;
 }
 .d2 {
     position: relative;
-    top: 1vw;
+    top: -0.5vw;
     margin-right: 2vw;
     /*margin-left: 2vw;*/
 }
 .d2 > img{
-    width: 7vw;
+    width: 9vw;
 }
 
 .dotted-border {
