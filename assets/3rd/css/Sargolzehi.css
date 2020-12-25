@@ -1,5 +1,20 @@
+@font-face {
+    font-family: 'Zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Koodak';
+    src: url("../../fonts/Ansari/B Koodak.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Nazanin';
+    src: url("../../fonts/Ansari/B Nazanin.ttf") format("truetype");
+}
+
 .text {
-    font-family: "B Nazanin", sans-serif;
+    font-family: "Nazanin", sans-serif;
     font-size: 2vw;
     direction: rtl;
     text-align: justify;
@@ -7,7 +22,7 @@
 
 .chapter-text {
     color: blueviolet;
-    font-family: "B Koodak", sans-serif;
+    font-family: "Koodak", sans-serif;
     font-size: 4vw;
     direction: rtl;
     text-align: justify;
@@ -64,7 +79,7 @@
     background-color: #e55459;
     border-radius: 1vw 0 0 1vw;
     text-align: center;
-    font-family: "B Koodak", sans-serif;
+    font-family: "Koodak", sans-serif;
     font-size: 2.25vw;
     color: white;
     padding: 0 6vw 0 1.8vw;
@@ -116,7 +131,7 @@
 }
 
 .question-text {
-    font-family: "B Zar", sans-serif;
+    font-family: "Zar", sans-serif;
     font-size: 2vw;
 }
 
@@ -142,7 +157,7 @@
 }
 
 .page-number input {
-    font-family: 'B Koodak', sans-serif;
+    font-family: 'Koodak', sans-serif;
     background-color: #00b344;
     border: none;
     width: 100%;
@@ -194,7 +209,7 @@
 
 .review-text {
     text-align: center;
-    font-family: "B Koodak", sans-serif;
+    font-family: "Koodak", sans-serif;
     font-weight: bold;
     font-size: 2.5vw;
 }
@@ -253,7 +268,7 @@
 .page-number-text {
     padding-top: 0.7vw;
     text-align: center;
-    font-family: "B Koodak", sans-serif;
+    font-family: "Koodak", sans-serif;
     font-size: 2vw;
     color: white;
 }
@@ -274,7 +289,7 @@
 .tip-box-text {
     width: 53vw;
     height: 8vw;
-    font-family: "B Zar", sans-serif;
+    font-family: "Zar", sans-serif;
     font-size: 1.8vw;
     direction: rtl;
     padding-top: 1vw;
