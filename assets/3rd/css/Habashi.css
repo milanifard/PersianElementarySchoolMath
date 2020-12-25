@@ -90,7 +90,7 @@ body{
 
     text-align: center;
     font-size: 2vw;
-    font-family: Zar;
+    font-family: koodak;
     color: white;
 
     padding: 0 3vw;
@@ -106,7 +106,7 @@ body{
 
     text-align: center;
     font-size: 2vw;
-    font-family: Zar;
+    font-family: koodak;
     color: white;
 
     padding: 0 3vw;
@@ -124,13 +124,19 @@ body{
     right: 10vw;
     top: 2vw;
 }
+.practice-test{
+    padding: 0vw 10vw 0vw 2vw;
+    right: 5vw;
+    top: 2vw;
+}
 .header_text{
     background-color: var(--purple-light);
     border-radius: 1vw;
     position: absolute;
     z-index: 1;
     text-align: center;
-    font-family: ZAR;
+    font-family: Koodak;
+    padding-bottom: 0.5vw;
     font-size: 2.5vw;
     color: white;
 }
@@ -149,7 +155,7 @@ body{
     width: fit-content;
 
     text-align: center;
-    font-family: Zar;
+    font-family: Koodak;
     font-size: 3.3vw;
     color: black;
 
@@ -185,7 +191,8 @@ body{
     z-index: 1;
 
     text-align: center;
-    font-family: ZAR;
+    font-family: Koodak;
+    padding-bottom: 0.5vw;
     font-size: 2.5vw;
     color: white;
 }
@@ -255,7 +262,6 @@ body{
     text-align: center;
     font-size:2vw;
     font-family: ZAR,Faraz;
-
     line-grid: create;
 
     background-color: var(--transparent);
@@ -331,7 +337,7 @@ body{
     border-right: 2vw solid var(--purple-dark);
     text-align: center;
     font-size: 2.25vw;
-    font-family: Zar;
+    font-family: Koodak;
     color: white;
     font-weight: bold;
     padding: 8px;
@@ -349,7 +355,7 @@ body{
     border-left: 2vw solid var(--purple-dark);
     text-align: center;
     font-size: 2.25vw;
-    font-family: Zar;
+    font-family: Koodak;
     color: white;
     font-weight: bold;
     padding: 8px;
@@ -390,7 +396,7 @@ body{
 
     text-align: center;
     font-size: 2vw;
-    font-family: Zar;
+    font-family: Koodak;
     color: white;
 
     padding: 0 3vw;
@@ -406,13 +412,14 @@ body{
 
     background-color: var(--yellow_level4_guessbox);
     border-radius: 2.5vw;
-    border: 0.9vw double white;
+    border: 0.9vw double black;
 
     text-align: center;
     font-size: 2vw;
-    color: white;
+    color: black;
 
     padding: 0.1vw 0.5vw;
+    margin-bottom: 0.2vw;
     float: left;
 }
 .image-row-container {
