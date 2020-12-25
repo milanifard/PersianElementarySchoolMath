@@ -6,20 +6,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/3rd/css/mohajer.css">
+  <link rel="stylesheet" href="./assets/3rd/css/mohajer/cube.css">
+
   <script src="assets/3rd/js/mohajer/core.js"></script>
   <script src="assets/3rd/js/mohajer/charts.js"></script>
   <script src="assets/3rd/js/mohajer/animated.js"></script>
   <script src="assets/3rd/js/mohajer/mohajer.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="assets/3rd/js/mohajer/dragable.js"></script>
 </head>
 
 <body>
-  <div class="left-border">
+  <div class=" left-border">
     <div>
-      <img src="assets/3rd/images/mohajer/worm.png" class="pic_worm">
+      <img src="assets/3rd/images/mohajer/worm.png" class="pic-worm">
       <div>
         <div class="rectangle"></div>
-        <div class="farhangeNeveshtan-title">سرگرمی و معّما</div>
+        <div class="farhangeNeveshtan-title" style="background-color: rgb(255, 221, 43);">سرگرمی و معّما</div>
       </div>
       <div style="padding-right:2vw;padding-top:2vw;">
         <p>چهار مکعّب چینه برداریدو تمام حالت‌هایی را که این مکعّب‌ها می‌توانند کنار هم قرار بگیرند، پیدا کنید.</p>
@@ -30,20 +33,132 @@
         <p>با راهبرد الگوسازی می‌توانید همه‌ی حالت‌های ممکن را پیدا کنید.</p>
       </div>
       <br> <br>
+
+
+
+
+
+
       <div>
-        <div class="rectangle"></div>
-        <div class="farhangeNeveshtan-title">فرهنگ خواندن</div>
+        <div class='mydiv' id='cube1' style="top:826px;left:223px">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+        <div class='mydiv' id='cube2' style="top:857px;left:161px">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+
+        <div class='mydiv' id='cube3' style="top:723px;left:224px">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+
+        <div class='mydiv' id='cube4' style="top:754px;left:160px">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+      </div>
+      <div>
+
+        <div class='mydiv' id='cube1' style="top:826px;left:223px">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+        <div class='mydiv' id='cube2' style="top:857px;left:161px">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+
+        <div class='mydiv' id='cube3' style="top:723px;left:224px">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
+
+        <div class='mydiv' id='cube4' style="top:754px;left:160px">
+          <div class='D3Cube'>
+            <div class='side1'></div>
+            <div class='side2'></div>
+            <div class='side3'></div>
+            <div class='side4'></div>
+            <div class='side5'></div>
+            <div class='side6'></div>
+          </div>
+        </div>
       </div>
 
 
-      <div style="padding-right:2vw;padding-top:2vw;">
-        <div class="farhangeKhandan">
-          <img src="assets/3rd/images/mohajer/boy.png" class="pic_boy">
+      <script>
+
+        for (i = 1; i < 10; i++)
+          dragElement(document.getElementById('cube' + i));
+      </script>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div>
+        <div class="rectangle"></div>
+        <div class="farhangeNeveshtan-title" style="background-color: rgb(255, 221, 43);">فرهنگ خواندن</div>
+      </div>
+      <div style=" padding-right:2vw;padding-top:2vw;">
+        <div class="farhangeKhandan-container">
+          <img src="assets/3rd/images/mohajer/boy.png" class="pic-boy">
           <p>
-            خداوند جهان را به گونه‌ای آفریده است که توانایی‌ها، استعدادها، هنرها، مهارتها، ثروت ها و حتی پدیده های طبیعی
-            مثل زلزله، سیل و طوفان به طور منظمی توزیع شده‌اند. برای مثال، اگر قد آدم‌ها را در نظر بگیریم، می بینیم که در
+            خداوند جهان را به گونه‌ای آفریده است که توانایی‌ها، استعدادها، هنرها، مهارتها، ثروت ها و حتی پدیده های
+            طبیعی
+            مثل زلزله، سیل و طوفان به طور منظمی توزیع شده‌اند. برای مثال، اگر قد آدم‌ها را در نظر بگیریم، می بینیم که
+            در
             هر جامعه تعداد محدودی قدبلندند و در مقابل آنها نیز تعدادی قد بسیار کوتاهی دارند. بقیه ی آدم‌ها هم دارای قد
-            متوسطی هستند. پس توزيع قد آدم ها یک نظم دارد. کوتاه قد، متوسط، بلند قد. در مورد هوش هم همین طور است. تعدادی
+            متوسطی هستند. پس توزيع قد آدم ها یک نظم دارد. کوتاه قد، متوسط، بلند قد. در مورد هوش هم همین طور است.
+            تعدادی
             از انسان ها هوش فوق العاده‌ای دارند. در برابر آنها نیز تعدادی هستند که هوش پایینی دارند. اما اغلب انسان‌ها
             دارای هوش متوسط‌اند و با تلاش و پشتکار و به خصوص داشتن نظم در کارهایشان می توانند به موفقیت
             برسند.

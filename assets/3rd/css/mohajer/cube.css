@@ -4,6 +4,11 @@
     margin: 20px auto;
     background-color: #EEE;
 }
+.mydiv {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+}
 
 .D3Cube {
     width: 112px;
@@ -21,6 +26,7 @@
     transform-style: preserve-3d;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    
 }
 .D3Cube > div {
     position: absolute;
