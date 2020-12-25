@@ -95,7 +95,7 @@
 
 .left-border {
     border: 0.8vw double #e35459;
-    margin: 6vw 0 0 10vw;
+    margin: 6vw 0 0 8vw;
     padding-left: 10vw;
     direction: rtl;
     border-right: none;
@@ -111,7 +111,7 @@
 }
 
 .question-2-container {
-    margin: 0 8vw 2vw 10vw;
+    margin: 0 8vw 2vw 5vw;
     direction: rtl;
 }
 
@@ -208,4 +208,16 @@
     justify-content: center;
     padding: 1vw;
     margin-bottom: 1vw;
+}
+
+.question-little-box {
+    border: 0.3vw dashed #e35459;
+    width: 55vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    margin-bottom: 1vw;
+    margin-right: 2vw;
 }
