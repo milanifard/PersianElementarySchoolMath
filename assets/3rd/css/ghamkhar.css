@@ -45,15 +45,15 @@
 
 @font-face {
     font-family: 'zar';
-    src: url("../../../fonts/Zar.woff") format("woff");
+    src: url("../../fonts/Zar.woff") format("woff");
 }
 @font-face {
     font-family: koodak;
-    src: url("../../../fonts/Ansari/B Koodak.ttf");
+    src: url("../../fonts/Ansari/B Koodak.ttf");
 }
 @font-face {
     font-family: nazanin;
-    src: url("../../../fonts/Ansari/B Nazanin.ttf");
+    src: url("../../fonts/Ansari/B Nazanin.ttf");
 }
 .border_page_even_top {
     max-width: 100%;
