@@ -45,15 +45,15 @@
 
 @font-face {
     font-family: 'zar';
-    src: url("fonts/Zar.woff") format("woff");
+    src: url("../../../fonts/Zar.woff") format("woff");
 }
 @font-face {
     font-family: koodak;
-    src: url("fonts/Ansari/B Koodak.ttf");
+    src: url("../../../fonts/Ansari/B Koodak.ttf");
 }
 @font-face {
     font-family: nazanin;
-    src: url("fonts/Ansari/B Nazanin.ttf");
+    src: url("../../../fonts/Ansari/B Nazanin.ttf");
 }
 .border_page_even_top {
     max-width: 100%;
@@ -159,7 +159,8 @@
 }
 hr{
     width: 6vw;
-    margin-left: 0vw;
+    margin-top: -0.1vw;
+    margin-bottom: -0.1vw;
 }
 #question_four{
     width: 10vw;
@@ -354,9 +355,12 @@ margin-right: -0.5vw;
     justify-content: center;
     font-size: 2vw;
     margin-top: 3vw;
+    margin-bottom: 5vw;
+    font-family: nazanin;
 
-    margin-bottom: 15vw;
-
+}
+#classwork_table_104{
+    border-spacing: 4vw;
 }
 #classwork-equations2{
     display: flex;
@@ -369,20 +373,33 @@ margin-right: -0.5vw;
 
 #classwork-equations2 mtd,#classwork-equations2 mi {
     margin-left: 0vw;
-    font-family: nazanin;
+
 
 
 }
 #classwork-equations2 mo + mi {
     margin-left: 0vw;
-    font-family: nazanin;
+
 }
 #classwork-equations2 mo{
-    font-family: nazanin;
+
     margin-left: 0vw;
     margin-right: 0vw;
 }
 
+.question_2_page_104{
+    font-family: nazanin;
+    font-size: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.question_2_page_104_table{
+    font-family: nazanin;
+    font-size: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 2vw;
+}
 
 
 
@@ -450,6 +467,11 @@ margin-right: -0.5vw;
 }
 input{
     width: 5vw;
+    direction: rtl;
+    font-family: nazanin;
+    font-size: 2vw;
+    height: 1.8vw;
+    width: 4vw;
 }
 
 .cloud_text p{
@@ -520,6 +542,18 @@ input{
     font-family: nazanin;
     font-size: 2vw;
 
+}
+.top_num{
+    margin-left: 1vw;
+}
+.three_digit{
+    margin-left: 0.6vw;
+}
+.two_digit{
+    margin-left: 1.5vw;
+}
+.one_digit{
+    margin-left: 2.5vw;
 }
 
 /*
