@@ -288,10 +288,9 @@ input[type="text"]:focus {
   position: relative;
   z-index: 1;
 }
-img:hover{
-    transform:scale(1.05,1.05);
+img:not([src="assets/3rd/images/mohajer/cube_2.png"]):hover {
+  transform: scale(1.05, 1.05);
 }
-
 .pieChart {
   width: 30vw;
   height: 30vw;

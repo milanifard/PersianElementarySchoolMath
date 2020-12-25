@@ -1,5 +1,20 @@
+@font-face {
+    font-family: 'Zar';
+    src: url("../../fonts/Zar.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Koodak';
+    src: url("../../fonts/Ansari/B Koodak.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Nazanin';
+    src: url("../../fonts/Ansari/B Nazanin.ttf") format("truetype");
+}
+
 .text {
-    font-family: "B Nazanin", sans-serif;
+    font-family: "Nazanin", sans-serif;
     font-size: 2vw;
     direction: rtl;
     text-align: justify;
@@ -7,7 +22,7 @@
 
 .chapter-text {
     color: blueviolet;
-    font-family: "B Koodak", sans-serif;
+    font-family: "Koodak", sans-serif;
     font-size: 4vw;
     direction: rtl;
     text-align: justify;
@@ -64,7 +79,7 @@
     background-color: #e55459;
     border-radius: 1vw 0 0 1vw;
     text-align: center;
-    font-family: "B Koodak", sans-serif;
+    font-family: "Koodak", sans-serif;
     font-size: 2.25vw;
     color: white;
     padding: 0 6vw 0 1.8vw;
@@ -95,7 +110,7 @@
 
 .left-border {
     border: 0.8vw double #e35459;
-    margin: 6vw 0 0 10vw;
+    margin: 6vw 0 0 8vw;
     padding-left: 10vw;
     direction: rtl;
     border-right: none;
@@ -106,17 +121,17 @@
 }
 
 .question-container {
-    margin: 8.5vw 8vw 8.5vw 24vw;
+    margin: 8.5vw 8vw 8.5vw 8vw;
     direction: rtl;
 }
 
 .question-2-container {
-    margin: 0 8vw 2vw 10vw;
+    margin: 0 8vw 2vw 5vw;
     direction: rtl;
 }
 
 .question-text {
-    font-family: "B Zar", sans-serif;
+    font-family: "Zar", sans-serif;
     font-size: 2vw;
 }
 
@@ -125,7 +140,7 @@
     justify-content: center;
     display: flex;
     height: 5vw;
-    margin-top: 2vw;
+    margin-top: 1.5vw;
 }
 
 .page-number {
@@ -142,7 +157,7 @@
 }
 
 .page-number input {
-    font-family: 'B Koodak', sans-serif;
+    font-family: 'Koodak', sans-serif;
     background-color: #00b344;
     border: none;
     width: 100%;
@@ -157,6 +172,7 @@
     color: white;
     justify-content: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .page-number-button > a {
@@ -193,7 +209,7 @@
 
 .review-text {
     text-align: center;
-    font-family: "B Koodak", sans-serif;
+    font-family: "Koodak", sans-serif;
     font-weight: bold;
     font-size: 2.5vw;
 }
@@ -207,4 +223,100 @@
     justify-content: center;
     padding: 1vw;
     margin-bottom: 1vw;
+}
+
+.question-little-box {
+    border: 0.3vw dashed #e35459;
+    width: 55vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    margin-bottom: 1vw;
+    margin-right: 2vw;
+}
+
+.page-number-box {
+    width: 9vw;
+    height: 4vw;
+    margin: auto;
+    display: flex;
+    position: relative;
+    bottom: 5vw;
+}
+
+.page-number-right-box {
+    right: -39vw;
+}
+
+.page-number-left-box {
+    left: -39vw;
+}
+
+.page-number-filed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e15459;
+    width: 9vw;
+    height: 4vw;
+    border-radius: 1.5vw;
+    border: 0.5vw double white;
+}
+
+.page-number-text {
+    padding-top: 0.7vw;
+    text-align: center;
+    font-family: "Koodak", sans-serif;
+    font-size: 2vw;
+    color: white;
+}
+
+.tip-box {
+    height: 8vw;
+    margin: auto;
+    display: flex;
+    position: relative;
+    bottom: -4vw;
+    background-color: white;
+    border: 0.4vw double #e15459;
+    align-items: center;
+    justify-content: center;
+    right: 2vw;
+}
+
+.tip-box-text {
+    width: 53vw;
+    height: 8vw;
+    font-family: "Zar", sans-serif;
+    font-size: 1.8vw;
+    direction: rtl;
+    padding-top: 1vw;
+    display: flex;
+    position: relative;
+}
+
+.tip-box-text-right {
+    right: -2vw;
+}
+
+.tip-box-text-left {
+    left: -2vw;
+}
+
+.tip-box-photo {
+    display: flex;
+    position: relative;
+    width: 12vw;
+}
+
+.tip-box-photo-right {
+    right: -3vw;
+    bottom: 3.6vw;
+}
+
+.tip-box-photo-left {
+    left: -3vw;
+    bottom: 1.7vw;
 }
