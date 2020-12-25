@@ -221,3 +221,40 @@
     margin-bottom: 1vw;
     margin-right: 2vw;
 }
+
+.page-number-box {
+    width: 9vw;
+    height: 4vw;
+    margin: auto;
+    display: flex;
+    position: relative;
+    bottom: 5vw;
+    right: -39vw;
+}
+
+.page-number-right-box {
+    right: -39vw;
+}
+
+.page-number-left-box {
+    left: -39vw;
+}
+
+.page-number-filed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e15459;
+    width: 9vw;
+    height: 4vw;
+    border-radius: 1.5vw;
+    border: 0.5vw double white;
+}
+
+.page-number-text {
+    padding-top: 0.7vw;
+    text-align: center;
+    font-family: "B Koodak", sans-serif;
+    font-size: 2vw;
+    color: white;
+}
