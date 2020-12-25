@@ -46,10 +46,20 @@ function checkQ3Answer() {
     }
 }
 
-// )age 81
+// Page 81
 function show(id) {
     let item = document.getElementById(id);
     console.log(item);
     item.style.visibility = 'visible';
+}
+
+function checkAnswer(id, answer) {
+    let box = document.getElementById(id);
+    let userAns = box.value;
+    if (userAns === answer) {
+        box.style.backgroundColor = '#c9ff63';
+    } else {
+        box.style.backgroundColor = '#ff8c8c';
+    }
 }
 
