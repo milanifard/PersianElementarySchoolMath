@@ -132,6 +132,46 @@
 
 }
 
+.guess-box-level1{
+    background-color: #e1f4fd;
+    border: 0.4vw solid #79c2d2;
+    border-radius: 4vw;
+    position: relative;
+    padding: 1.5vw;
+    margin: 18vw 1.5vw 5vw 7vw;
+}
+.guess-box-text-left {
+    background-color: #0c9ec3;
+    border-radius: 0 01.5vw 1.5vw 0;
+    border-left: 2vw solid #79c2d2;
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.25vw;
+    color: white;
+    padding: 0 2vw 0 3vw;
+    position: absolute;
+    left: -1.5vw;
+    top: 1vw;
+    z-index: 1;
+}
+
+.guess-box-text-right{
+    background-color: #0c9ec3;
+    border-radius: 1.5vw 0 0 1.5vw;
+    border-right: 2vw solid #79c2d2;
+
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.25vw;
+    color: white;
+
+    padding: 0 3vw 0 2vw;
+    position: absolute;
+    right: -2vw;
+    top: 1vw;
+    z-index: 1;
+}
+
 .Images_justify_center{
     display: flex;
     justify-content: center;
