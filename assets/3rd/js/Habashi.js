@@ -28,20 +28,6 @@ function getCurrentPageFromURL()
 let current_page = getCurrentPageFromURL()
 console.log("current page : " + current_page)
 
-function prevPage()
-{
-    if (current_page > 1)
-    {
-        current_page--;
-        changePage(current_page);
-    }
-}
-
-function nextPage()
-{
-    current_page++;
-    changePage(current_page);
-}
 
 function changePage(page)
 {
