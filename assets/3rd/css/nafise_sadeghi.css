@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Zar";
+  src: url("../../fonts/Zar.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Zar.eot?#iefix") format("embedded-opentype"), url("../../fonts/Zar.woff2") format("woff2"), url("../../fonts/Zar.woff") format("woff"), url("../../fonts/Zar.ttf") format("truetype"), url("../../fonts/Zar.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "Faraz";
+  src: url("../../fonts/Faraz.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Faraz.eot?#iefix") format("embedded-opentype"), url("../../fonts/Faraz.woff2") format("woff2"), url("../../fonts/Faraz.woff") format("woff"), url("../../fonts/Faraz.ttf") format("truetype"), url("../../fonts/Faraz.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+* {
+  direction: rtl;
+  font-family: "Zar";
+  font-size: 1.2rem;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  display: block;
+  height: 100px;
+}
+
+.page-content {
+  padding: 0 30px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.section-header .section-title {
+  background-color: red;
+  width: fit-content;
+  height: fit-content;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+.section-header .section-image-container {
+  z-index: 1;
+}
+.section-header .section-image-container img {
+  height: 150px;
+}
+.section-header:after {
+  content: "";
+  height: 4px;
+  background-color: red;
+  position: absolute;
+  z-index: 0;
+  right: 10px;
+  left: 10px;
+  top: 92px;
+}
+.section-header.no-image:after {
+  display: none;
+}
+
+.row {
+  width: 100%;
+  text-align: right;
+  margin: 8px 0;
+}
+
+.auto-margin-for-center {
+  margin: 0 auto;
+}
+
+.vertical-space {
+  width: 100%;
+  float: right;
+  height: 1px;
+  margin: 15px 0;
+}
+
+.question-small {
+  margin: 10px auto 0;
+  display: flex;
+  justify-content: center;
+}
+.question-small input {
+  width: 60px;
+}
+.question-small div {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.input-inline-small {
+  width: 30px;
+  display: inline;
+  margin: 0 5px;
+  border: none;
+  position: relative;
+  border-bottom: solid 1px #e0e0e0;
+  height: 30px;
+}
+
+.height-300 {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
