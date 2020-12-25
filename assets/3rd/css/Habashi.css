@@ -74,6 +74,9 @@ body{
     border-right: none;
 
 }
+.padding_bootom{
+    padding-bottom: 60vw;
+}
 .color_red{
     color: var(--under--title);
 }
@@ -349,7 +352,8 @@ body{
     padding: 8px;
     width: 16vw;
     position: relative;
-    left: -66.5vw;
+    left: -2vw;
+    float: left;
     top: 1vw;
     margin-bottom: 2vw;
     z-index: 1;
@@ -479,11 +483,9 @@ body{
     background-color:var(--white);
     border: 2px solid var(--purple);
     border-radius: 3vw;
-    position: absolute;
     left:2vw;
     right: 2vw;
     padding-bottom: 5vw;
-    padding-top: 2vw ;
     font-family: Zar,Faraz;
     font-size: 2vw;
     direction: rtl;
