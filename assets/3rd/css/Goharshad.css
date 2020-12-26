@@ -47,8 +47,11 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
+input{
+    width: 20vw;
+}
 table td input {
-    position: absolute;
+    /*position: absolute;*/
     display: block;
     top: 0;
     left: 0;
@@ -56,7 +59,7 @@ table td input {
     height: 100%;
     width: 100%;
     border: none;
-    padding: 10px;
+    padding: 0.2vw;
     box-sizing: border-box;
 }
 
@@ -174,26 +177,6 @@ td {
 .inline-q {
     direction: rtl;
     margin: 2vw;
-
-}
-
-.q1-table-container {
-    border-radius: 10px;
-    width: 75vw;
-    max-width: 75%;
-    height: 240px;
-    margin: auto auto;
-    padding: 20px;
-}
-
-
-.q2-table-container {
-    border-radius: 10px;
-    width: 75vw;
-    max-width: 75%;
-    height: 100px;
-    margin: auto auto;
-    padding: 20px; /*l*/
 }
 
 .class-table {
@@ -220,6 +203,14 @@ td {
 
 .colored-td-green {
     background-color: var(--green_level2);
+}
+
+.colored-td-light-green {
+    background-color: rgba(224, 255, 218, 0.81);
+}
+
+.colored-td-purple {
+    background-color: rgba(195, 154, 255, 0.81);
 }
 
 .page-number-input {
@@ -304,7 +295,6 @@ td {
     background-color: var(--yellow_level1_guessbox);
     border: 0.4vw solid var(--yellow_level4_guessbox);
     border-radius: 4vw;
-
     position: relative;
     padding: 1.5vw;
     margin: 18vw 1.5vw 6vw 7vw;
@@ -339,9 +329,36 @@ td {
     margin-right: 30vw;
 }
 
+.image-size-for-guess-box {
+    width: 45vw;
+}
+
+
 .center-vertical {
     position: absolute;
     top: 50%;
+}
+
+.first_question {
+    margin-top: 8vw;
+    margin-right: 8vw;
+}
+
+.guess-box-text-right {
+    background-color: var(--yellow_level3_border);
+    border-radius: 1.5vw 0 0 1.5vw;
+    border-right: 2vw solid var(--yellow_level4_guessbox);
+
+    text-align: center;
+    font-family: Koodak;
+    font-size: 2.5vw;
+    color: white;
+
+    padding: 0 3vw 0 2vw;
+    position: absolute;
+    right: -2vw;
+    top: 1vw;
+    z-index: 1;
 }
 
 /*********************IDs*******************/
@@ -395,12 +412,25 @@ td {
 }
 
 #q1-orange-container {
+    font-weight: bold;
+    border-radius: 2vw;
+    width: 60vw;
+    max-width: 75%;
+    height: 20%;
+    margin: auto auto;
+    padding: 1.5vw;
     background-color: orangered;
 }
 
 #q2-orange-container {
-    background-color: orangered;
-}
+    font-weight: bold;
+    border-radius: 2vw;
+    width: 60vw;
+    max-width: 75%;
+    height: 20%;
+    margin: auto auto;
+    padding: 1.5vw;
+    background-color: orangered;}
 
 #Q1 {
     padding-top: 6vw;
@@ -426,6 +456,10 @@ td {
 
 #Q2 {
     padding-top: 2vw;
+}
+
+#Q2_120 {
+    float: right;
 }
 
 #next_btn {
@@ -470,6 +504,81 @@ td {
     clear: both;
     left: -6vw;
     margin-top: 2vw;
+}
+
+#Q1_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#Q1_118 {
+    position: relative;
+    right: 25%;
+    top: 1.5vw;
+}
+
+#Q1_table {
+    padding-top: 3vw;
+    float: left;
+}
+
+#Q1_table_container_120 {
+    float: left;
+    border-radius: 10px;
+    width: 60vw;
+    max-width: 75%;
+    padding: 2vw;
+    margin-left: 10vw;
+    background-color: rgba(124, 185, 0, 0.59);
+}
+
+#Q1_table_120 {
+    float: left;
+    width: 35vw;
+}
+
+#Q1_table_120 td {
+    border: 0.25vw solid #1e8900;
+}
+
+#Q1_balls_img {
+    position: absolute;
+    width: 20vw;
+    right: 5vw;
+    top: 19vw;
+}
+
+#Q2_table_container_120 {
+    float: left;
+    border-radius: 2vw;
+    width: 25vw;
+    height: 25%;
+    max-width: 75%;
+    padding: 1.5vw;
+    margin-left: 10vw;
+    margin-bottom: 3vw;
+    background-color: rgba(160, 45, 255, 0.91);
+}
+
+#Q2_table_120 {
+    width: 20vw;
+    position: relative;
+}
+
+#Q2_table_120 td {
+    border: 0.3vw solid #8e21cb;
+}
+
+#Q2_desc_120 {
+    float: right;
+}
+
+#Q2_box_120 {
+    border: 0.3vw solid limegreen;
+    background-color: white;
+    border-radius: 3vw;
+    width: 100%;
 }
 
 @keyframes shake {
