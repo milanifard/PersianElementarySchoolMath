@@ -1,46 +1,3 @@
-:root {
-    --yellow_level1_guessbox: #ffe4d4;
-    --orange_level2_border: #f89e48;
-    --orange_level3_border: #fdb94a;
-    --orange_level4_guessbox: #fcb94b;
-
-    --green: #1ECD97;
-    --gray: #bbbbbb;
-
-    --red_level1: #f0595b;
-    --red_level2: #c8242b;
-    --red_level3: #db3f32;
-
-    --pink_level1: #fdebf3;
-    --pink_level2: #dc93b0;
-    --pink_level3: #b03776;
-
-    --blue_level0: #d4effb;
-    --blue_level1: #6bcff6;
-    --blue_level2: #3853a3;
-    --blue_level3: #5cb6cd;
-
-    --green_level0: #d2e287;
-    --green_level1: #bbd75e;
-    --green_level2: #87c765;
-    --green_level3: #44b869;
-    --green_level4: #3ab54a;
-
-    --orange_level1: #f06522;
-    --orange_level2: #fcb94b;
-    --orange_level3: #f89f6d;
-
-    --purple: #b09ac9;
-
-    --pink_level0: #fbdfeb;
-    --pink_level1: #d47fa8;
-    --pink: #f287b6;
-
-    --main_color: #47a758;
-
-    --dynamic_rnd: 0;
-    --dynamic_rnd_last: 0;
-}
 
 
 @font-face {
@@ -555,7 +512,17 @@ input{
 .one_digit{
     margin-left: 2.5vw;
 }
+#bottom_box_shapes_inputs{
+    display: flex;
+    justify-content: center;
 
+}
+.bottom_input{
+    margin-left: 12vw;
+    margin-right: 12vw;
+    width: 10vw;
+    text-align: center;
+}
 /*
 
 #first\ question+p :first-letter{
