@@ -426,3 +426,8 @@ td {
   margin-right: 29vw;
   margin-top: -1vw;
 }
+.correct{
+  text-align: center;
+  width: 15vw;
+  height: 2vw;
+}

@@ -59,6 +59,7 @@
           <span style="width:77vw;" class="lineAnswer"></span>
         </span>
       </p><br>
+      <div class="correct" id="correct1" ></div>
       <div id="chart1" class="pieChart"></div>
 
       <div id="chartdiv" class="columnChart"></div>
@@ -113,20 +114,38 @@
 <script>
   data = [
     {
-      country: "رفت و آمد",
-      visits: 5
+      key: "رفت و آمد",
+      value: 5
     },
     {
-      country: "خواب و استراحت",
-      visits: 5
+      key: "خواب و استراحت",
+      value: 5
     },
     {
-      country: "درس خواندن در مدرسه",
-      visits: 5
+      key: "درس خواندن در مدرسه",
+      value: 5
     },
     {
-      country: "تکلیف، تلویزیون و بازی",
-      visits: 5
+      key: "تکلیف، تلویزیون و بازی",
+      value: 5
+    }
+  ];
+  dataCorrect = [
+    {
+      key: "رفت و آمد",
+      value: 4
+    },
+    {
+      key: "خواب و استراحت",
+      value: 8
+    },
+    {
+      key: "درس خواندن در مدرسه",
+      value: 6
+    },
+    {
+      key: "تکلیف، تلویزیون و بازی",
+      value: 6
     }
   ];
   var widthMax = 25;  

@@ -26,7 +26,7 @@ chart.rtl = true;
 
 // category axis
 var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
-categoryAxis.dataFields.category = "country";
+categoryAxis.dataFields.category = "key";
 categoryAxis.renderer.grid.template.disabled = true;
 categoryAxis.renderer.minGridDistance = 50;
 
@@ -41,8 +41,8 @@ valueAxis.renderer.minWidth = 1;
 
 // series
 var series = chart.series.push(new am4charts.ColumnSeries());
-series.dataFields.categoryX = "country";
-series.dataFields.valueY = "visits";
+series.dataFields.categoryX = "key";
+series.dataFields.valueY = "value";
 series.tooltip.pointerOrientation = "vertical";
 series.tooltip.dy = -8;
 series.sequencedInterpolation = true;
@@ -89,17 +89,41 @@ bullet.events.on("drag", event => {
   handleDrag(event);
 });
 
+
+var dataCurrent = [];
 bullet.events.on("dragstop", event => {
   handleDrag(event);
   var dataItem = event.target.dataItem;
   dataItem.column.isHover = false;
   event.target.isHover = false;
+ 
+dataCurrent[dataItem.categoryX]=Math.round(dataItem.valueY);
+
+
+
+
+if (Object.keys(dataCurrent).length == dataCorrect.length){
+for (ele of dataCorrect){
+
+if (dataCurrent[ele.key] != ele.value){
+document.getElementById("correct1").innerHTML = "عزیزم دقت کن 🤔";
+document.getElementById("correct1").style.color="red";
+return 1;
+}
+}
+document.getElementById("correct1").innerHTML = "آفرین عزیزم 👏";
+document.getElementById("correct1").style.color="green";
+
+
+}
+
 });
 
 function handleDrag(event) {
   var dataItem = event.target.dataItem;
   // convert coordinate to value
   var value = valueAxis.yToValue(event.target.pixelY);
+
   // set new value
   dataItem.valueY = value;
   // make column hover

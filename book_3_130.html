@@ -136,14 +136,15 @@
                 </span>
 
                 <img src="assets/3rd/images/mohajer/milkBasket.png" class="pic-milkBasket">
-
+                <br>
+                <div class="correct" id="correct1"></div>
                 <div id="chartdiv" class="columnChart"></div>
 
                 <div class="pageNumber-container">
-                    <a class='fas fa-angle-double-right	' title="شروع"  href="book_3_10.html"></a>
+                    <a class='fas fa-angle-double-right	' title="شروع" href="book_3_10.html"></a>
                     <a class='fas fa-angle-right' title="قبلی" href="book_3_129.html"></a>
                     <input type="number" onkeydown="enterPage(this)" class="pageNumber-content" value="130">
-                    <a class='fas fa-angle-left'  title="بعدی"  href="book_3_131.html"></a>
+                    <a class='fas fa-angle-left' title="بعدی" href="book_3_131.html"></a>
                     <a class='fas fa-angle-double-left' title="پایان" href="book_3_147.html"></a>
 
                 </div>
@@ -157,28 +158,54 @@
 <script>
     data = [
         {
-            country: "شنبه",
-            visits: 5
+            key: "شنبه",
+            value: 5
         },
         {
-            country: "یکشنبه",
-            visits: 5
+            key: "یکشنبه",
+            value: 5
         },
         {
-            country: "دوشنبه",
-            visits: 5
+            key: "دوشنبه",
+            value: 5
         },
         {
-            country: "سه‌شنبه",
-            visits: 5
+            key: "سه‌شنبه",
+            value: 5
         },
         {
-            country: "چهار‌شنبه",
-            visits: 5
+            key: "چهار‌شنبه",
+            value: 5
         },
         {
-            country: "پنجشنبه",
-            visits: 5
+            key: "پنجشنبه",
+            value: 5
+        },
+
+    ]; dataCorrect = [
+        {
+            key: "شنبه",
+            value: 30
+        },
+        {
+            key: "یکشنبه",
+            value: 25
+        },
+        {
+            key: "دوشنبه",
+            value: 35
+        },
+        {
+            key: "سه‌شنبه",
+            value: 15
+        },
+        {
+            key: "چهار‌شنبه",
+            value: 30
+        },
+        {
+            key: "پنجشنبه",
+            value: 40
         },
 
     ];
